@@ -1,21 +1,6 @@
 var searchData=
 [
-  ['waitforblockready_0',['waitForBlockReady',['../_board_8c.html#aad31f000666d013342cff25b91bb69c4',1,'Board.c']]],
-  ['waitforblocktrigger_1',['waitForBlockTrigger',['../_board_8c.html#a064863a7da68c4911ad62314afaf852e',1,'Board.c']]],
-  ['waitformeasureready_2',['waitForMeasureReady',['../_board_8c.html#ac0ce5c69a608f540ed7d4d83f280abb0',1,'Board.c']]],
-  ['write_5fto_5fdisc_3',['write_to_disc',['../structcamera__settings.html#a87115a7a52a7b6f474bb12ab3a2db076',1,'camera_settings']]],
-  ['writebitsdma_5f32_4',['writeBitsDma_32',['../_board_8c.html#a6868b09ffcff1d8e1a84c1eaecebd451',1,'Board.c']]],
-  ['writebitsdma_5f8_5',['writeBitsDma_8',['../_board_8c.html#a6b76c2e1248ac010b0a93b6bb33c304a',1,'Board.c']]],
-  ['writebitss0_5f32_6',['writeBitsS0_32',['../_board_8c.html#a81f8aa3e9e6f5cdcd46508e44e9f36c3',1,'Board.c']]],
-  ['writebitss0_5f32_5fallboards_7',['writeBitsS0_32_allBoards',['../_board_8c.html#a5d4e0b33423c93ceb589f00d73e2cdb1',1,'Board.c']]],
-  ['writebitss0_5f8_8',['writeBitsS0_8',['../_board_8c.html#a6f8bf1937b1741d55a599ca97ae41a2d',1,'Board.c']]],
-  ['writeregister_5f32_5fallboards_9',['writeRegister_32_allBoards',['../_board_8c.html#a54a6ee6701e43cbd1aabb6812369f0b0',1,'Board.c']]],
-  ['writeregister_5f8_5fallboards_10',['writeRegister_8_allBoards',['../_board_8c.html#ac0af70b2d7568d3fbd865a285073b011',1,'Board.c']]],
-  ['writeregisterdma_5f32_11',['writeRegisterDma_32',['../_board_8c.html#ae5171b3834452da70a5260fccb6b1b0c',1,'Board.c']]],
-  ['writeregisterdma_5f8_12',['writeRegisterDma_8',['../_board_8c.html#a816be708db585b0c7b3b302db20ec980',1,'Board.c']]],
-  ['writeregisters0_5f16_13',['writeRegisterS0_16',['../_board_8c.html#ab65e8476b5622f51c51892d8e569c1fb',1,'Board.c']]],
-  ['writeregisters0_5f32_14',['writeRegisterS0_32',['../_board_8c.html#a0f8e1a4a11622a06ee89e27d1b00965b',1,'Board.c']]],
-  ['writeregisters0_5f32_5fallboards_15',['writeRegisterS0_32_allBoards',['../_board_8c.html#ad2e115e09508586fe11c9859a1ba9023',1,'Board.c']]],
-  ['writeregisters0_5f8_16',['writeRegisterS0_8',['../_board_8c.html#a7ca683ce298e15950d2ecb51fd4ec35e',1,'Board.c']]],
-  ['writeregisters0_5f8_5fallboards_17',['writeRegisterS0_8_allBoards',['../_board_8c.html#a9190c7882c49d57eadb1e5a13e3fbff5',1,'Board.c']]]
+  ['valmsg_0',['ValMsg',['../_board__ll_8c.html#a114f200536b78ce833eb1fc0e0231e94',1,'Board_ll.c']]],
+  ['verifydata_1',['VerifyData',['../_board__ll_8c.html#a47505a02ea693c2a8c7aeb342f8b4ff7',1,'Board_ll.c']]],
+  ['vfreq_2',['vfreq',['../structcamera__settings.html#a2e34276300a6c0e2a56a8404b73ad8de',1,'camera_settings']]]
 ];

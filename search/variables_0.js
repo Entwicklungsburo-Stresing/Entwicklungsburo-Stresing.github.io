@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['adc_5fcustom_5fpattern_0',['adc_custom_pattern',['../structcamera__settings.html#a54be4b6539b096109c43abdf0a489fb7',1,'camera_settings']]],
-  ['adc_5fgain_1',['adc_gain',['../structcamera__settings.html#a41cdd5f01634be12f124d513081a1249',1,'camera_settings']]],
-  ['adc_5fmode_2',['adc_mode',['../structcamera__settings.html#af7e1f7b31ae0973dc8a3ca8579f851aa',1,'camera_settings']]]
+  ['_5f_5fimagebase_0',['__ImageBase',['../_direct2d_viewer_8h.html#aa18247f58cfcd71b4b5e6e8463122029',1,'Direct2dViewer.h']]],
+  ['_5fshow_5fmsg_1',['_SHOW_MSG',['../_board__ll_8c.html#a39517006ca67f401ab40cf6660d5e182',1,'Board_ll.c']]]
 ];

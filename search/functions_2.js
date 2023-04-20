@@ -17,9 +17,16 @@ var searchData=
   ['cam3030_5fadc_5fsetlfns_14',['Cam3030_ADC_SetLFNS',['../_board_8c.html#a41ef3c9d29ac2be5225cdca11abbe696',1,'Board.c']]],
   ['cam3030_5fadc_5fsetsamplemode_15',['Cam3030_ADC_SetSampleMode',['../_board_8c.html#a495a76af80eb7f30417eb96f0fe290d1',1,'Board.c']]],
   ['cam3030_5fadc_5ftwowiremodeen_16',['Cam3030_ADC_twoWireModeEN',['../_board_8c.html#a67e6926953409c3ac312c7a6f074bc6f',1,'Board.c']]],
-  ['checkfifoflags_17',['checkFifoFlags',['../_board_8c.html#acde22752198e4f821be897161640b1c7',1,'Board.c']]],
-  ['checkfifooverflow_18',['checkFifoOverflow',['../_board_8c.html#a62973f46dc931b92acfa24cd688cfb2d',1,'Board.c']]],
-  ['clearalluserregs_19',['ClearAllUserRegs',['../_board_8c.html#a232b6673c9b4740eb158f8a360cd8372',1,'Board.c']]],
-  ['closeshutter_20',['CloseShutter',['../_board_8c.html#a30a9ae7641e3cb286aed45def27becef',1,'Board.c']]],
-  ['countblocksbyhardware_21',['countBlocksByHardware',['../_board_8c.html#a32728c700f4e2059f724cbe5b0dbc018',1,'Board.c']]]
+  ['checkdriverhandle_17',['checkDriverHandle',['../_board__ll_8c.html#a8ff452741c66bee1d8560669621389fa',1,'Board_ll.c']]],
+  ['checkescapekeystate_18',['checkEscapeKeyState',['../_board__ll_8c.html#a01679920cd63a7360486c1a1b9d70644',1,'Board_ll.c']]],
+  ['checkfifoflags_19',['checkFifoFlags',['../_board_8c.html#acde22752198e4f821be897161640b1c7',1,'Board.c']]],
+  ['checkfifooverflow_20',['checkFifoOverflow',['../_board_8c.html#a62973f46dc931b92acfa24cd688cfb2d',1,'Board.c']]],
+  ['checkspacekeystate_21',['checkSpaceKeyState',['../_board__ll_8c.html#aa5decd9522e1a35770a23375724a3604',1,'Board_ll.c']]],
+  ['cleanupdma_22',['CleanupDma',['../_board__ll_8c.html#acd24b30183d82710c9f5b7ddc6ac7c36',1,'Board_ll.c']]],
+  ['cleanupdriver_23',['CleanupDriver',['../_board__ll_8c.html#a94fe957badde25d4f8fbfd7dc772ccf6',1,'Board_ll.c']]],
+  ['clearalluserregs_24',['ClearAllUserRegs',['../_board_8c.html#a232b6673c9b4740eb158f8a360cd8372',1,'Board.c']]],
+  ['closefile_25',['closeFile',['../_board__ll_8c.html#a87d849f446e344dc16d127b9fef9e91e',1,'Board_ll.c']]],
+  ['closeshutter_26',['CloseShutter',['../_board_8c.html#a30a9ae7641e3cb286aed45def27becef',1,'Board.c']]],
+  ['copyrestdata_27',['copyRestData',['../_board__ll_8c.html#a19a74d50b17830b71a1ab6d5d726649d',1,'Board_ll.c']]],
+  ['countblocksbyhardware_28',['countBlocksByHardware',['../_board_8c.html#a32728c700f4e2059f724cbe5b0dbc018',1,'Board.c']]]
 ];

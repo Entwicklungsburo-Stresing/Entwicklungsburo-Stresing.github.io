@@ -1,7 +1,11 @@
 var searchData=
 [
-  ['fft_5flines_0',['fft_lines',['../structcamera__settings.html#a74f4f26e7f43bf7f40bef828ac5849e0',1,'camera_settings']]],
-  ['fft_5fmode_1',['fft_mode',['../structcamera__settings.html#a9a5b9370309e2391bdc0bdfbf7e9df15',1,'camera_settings']]],
-  ['file_5fpath_2',['file_path',['../structcamera__settings.html#a87267de87e955bd0f244798f48d0c6df',1,'camera_settings']]],
-  ['file_5fsplit_5fmode_3',['file_split_mode',['../structcamera__settings.html#aa37537f15873eac7c11573ac53df7e73',1,'camera_settings']]]
+  ['dac_5foutput_0',['dac_output',['../structcamera__settings.html#a896e0122d7e47c2a92b3efff651cf5fc',1,'camera_settings']]],
+  ['deviceinfo_1',['deviceInfo',['../_board__ll_8c.html#ac0838b4d9733238be143a515e9ef87eb',1,'Board_ll.c']]],
+  ['direct2dviewer_2',['Direct2dViewer',['../_board__ll_8c.html#ac40bdc1357c03d4fb2a969f94127d854',1,'Board_ll.c']]],
+  ['dma_5fbuffer_5fsize_5fin_5fscans_3',['dma_buffer_size_in_scans',['../structcamera__settings.html#a8f2833d2036671abc6382415794d6032',1,'camera_settings']]],
+  ['dmabuffer_4',['dmaBuffer',['../_board__ll_8c.html#a5728f564c05db18e8391a06b23ffc193',1,'Board_ll.c']]],
+  ['dmabufferinfos_5',['dmaBufferInfos',['../_board__ll_8c.html#aac22a4b779b386fc06959b0425df967d',1,'Board_ll.c']]],
+  ['dmabufferpartreadpos_6',['dmaBufferPartReadPos',['../_board__ll_8c.html#a20f213ff470a10da9e3fc5e02a5e3fcb',1,'Board_ll.c']]],
+  ['dmabuffersizeinbytes_7',['dmaBufferSizeInBytes',['../_board__ll_8c.html#a46ac00793481ea345e649b9066468fec',1,'Board_ll.c']]]
 ];

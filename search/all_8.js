@@ -1,27 +1,8 @@
 var searchData=
 [
-  ['initboard_0',['InitBoard',['../_board_8c.html#aa41d2b1fe1421140dd4319376df9c74f',1,'Board.c']]],
-  ['initcamera_1',['InitCamera',['../_board_8c.html#ac85d988c47fdbbacdaf516a3d637c37c',1,'Board.c']]],
-  ['initcamera3001_2',['InitCamera3001',['../_board_8c.html#add095772f75bd59d2d43c543f64dd5b5',1,'Board.c']]],
-  ['initcamera3010_3',['InitCamera3010',['../_board_8c.html#af74dbde4b0f587fa738bdfa8cd1e6ab2',1,'Board.c']]],
-  ['initcamera3030_4',['InitCamera3030',['../_board_8c.html#ad0ca0b761817fb17e480e4e89b218c57',1,'Board.c']]],
-  ['initcamerageneral_5',['InitCameraGeneral',['../_board_8c.html#ab6abb6b3a9c894547119d7009888165d',1,'Board.c']]],
-  ['initdriver_6',['InitDriver',['../_board_8c.html#ac20307d4499cd244f8b0e04656261e4a',1,'Board.c']]],
-  ['initgpx_7',['InitGPX',['../_board_8c.html#a18684ff8c4d7cbfc2a7cb4104249cee2',1,'Board.c']]],
-  ['initmeasurement_8',['InitMeasurement',['../_board_8c.html#a690fcfefd2d5c8563f1e7b1573b749b2',1,'Board.c']]],
-  ['initpcieboard_9',['InitPcieBoard',['../_board_8c.html#aee64812ea151fd482e82bfe967922a31',1,'Board.c']]],
-  ['initsoftware_10',['InitSoftware',['../_board_8c.html#a0336ba6d9d3ac9b4b91bf784742ab458',1,'Board.c']]],
-  ['ioctrl_5fimpact_5fstart_5fpixel_11',['ioctrl_impact_start_pixel',['../structcamera__settings.html#a9da76423332a875434a8524c0aeb652d',1,'camera_settings']]],
-  ['ioctrl_5foutput_5fdelay_5fin_5f5ns_12',['ioctrl_output_delay_in_5ns',['../structcamera__settings.html#ac94651a8fd6a297c587d72e273ec94a6',1,'camera_settings']]],
-  ['ioctrl_5foutput_5fwidth_5fin_5f5ns_13',['ioctrl_output_width_in_5ns',['../structcamera__settings.html#af4293e692205ee2c2985e239990358d6',1,'camera_settings']]],
-  ['ioctrl_5fsetalloutputs_14',['IOCtrl_setAllOutputs',['../_board_8c.html#a281d5a61c5eb47344e7a5c29ec4448f8',1,'Board.c']]],
-  ['ioctrl_5fsetimpactstartpixel_15',['IOCtrl_setImpactStartPixel',['../_board_8c.html#aeec86716b223da055caad331cd33bd58',1,'Board.c']]],
-  ['ioctrl_5fsetoutput_16',['IOCtrl_setOutput',['../_board_8c.html#ab3b560a9c795effeacff19c3bde08a72',1,'Board.c']]],
-  ['ioctrl_5fsett0_17',['IOCtrl_setT0',['../_board_8c.html#a77a7edcb851a21b20363e8895a0a1576',1,'Board.c']]],
-  ['ioctrl_5ft0_5fperiod_5fin_5f10ns_18',['ioctrl_T0_period_in_10ns',['../structcamera__settings.html#a7884cc77b6263bfaea25f24215bfe83e',1,'camera_settings']]],
-  ['is_5fcooled_5fcam_19',['is_cooled_cam',['../structcamera__settings.html#a736814da511a5a55f18739b76415fa74',1,'camera_settings']]],
-  ['is_5fhs_5fir_20',['is_hs_ir',['../structcamera__settings.html#abcd8b239d6e3ba9fea8fc908b44a77d2',1,'camera_settings']]],
-  ['isblockon_21',['isBlockOn',['../_board_8c.html#af78b4018fa3efb26bfd7a4b35a1f7f21',1,'Board.c']]],
-  ['ismeasureon_22',['isMeasureOn',['../_board_8c.html#ab6754e6743cf456aa2d0d3e62091d74f',1,'Board.c']]],
-  ['istimeron_23',['IsTimerOn',['../_board_8c.html#a345eb42e31fba376d7ae59c50df2ae69',1,'Board.c']]]
+  ['hdev_0',['hDev',['../_board__ll_8c.html#a95e5ce1ec04291b8f044ebb7f5fad961',1,'Board_ll.c']]],
+  ['hdev_5ftmp_1',['hDev_tmp',['../_board__ll_8c.html#af1596c04862a8b8ceb69e28cbbfc7b8b',1,'Board_ll.c']]],
+  ['hinst_5fthiscomponent_2',['HINST_THISCOMPONENT',['../_direct2d_viewer_8h.html#a53cf7ffb5ff6b778335db18cdfa0f691',1,'Direct2dViewer.h']]],
+  ['hprocess_3',['hProcess',['../_board__ll_8c.html#aa3b10793a01a95be6cc327e4930ca85b',1,'Board_ll.c']]],
+  ['hthread_4',['hThread',['../_board__ll_8c.html#aa89959e7cb66df199c4a92fa6f2ea23d',1,'Board_ll.c']]]
 ];

@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['maxpciecards_0',['MAXPCIECARDS',['../struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59',1,'struct.h']]],
-  ['measurement_5fsettings_1',['measurement_settings',['../structmeasurement__settings.html',1,'']]],
-  ['measurement_5fsettings_5fmatlab_2',['measurement_settings_matlab',['../structmeasurement__settings__matlab.html',1,'']]],
-  ['mshut_3',['mshut',['../structcamera__settings.html#a2479a72c2b8d6682318520e54b09abfa',1,'camera_settings']]]
+  ['largetoint_0',['LargeToInt',['../_board__ll_8c.html#a97e2ce22aa3e24496369d500338ff2f4',1,'Board_ll.c']]],
+  ['led_5foff_1',['led_off',['../structcamera__settings.html#a1b70539f225998b06fe9af05148e6fc3',1,'camera_settings']]],
+  ['ledoff_2',['LedOff',['../_board_8c.html#ac2cbe64da96f4e41b7eabc421baa297a',1,'Board.c']]],
+  ['lines_5fbinning_3',['lines_binning',['../structcamera__settings.html#a11b33889efd68e6ad8216c48d2941a8e',1,'camera_settings']]],
+  ['lscpciej_5fstresing_5fdriver_5fname_4',['LSCPCIEJ_STRESING_DRIVER_NAME',['../_board__ll_8c.html#a0129113144790654cc32a2dd83ab6e9c',1,'Board_ll.c']]]
 ];

@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['camcnt_0',['camcnt',['../structcamera__settings.html#a4738ff8e4057123c2c7136a8ac585bea',1,'camera_settings']]],
-  ['camera_5fsettings_1',['camera_settings',['../structmeasurement__settings.html#ad65c4dc98e4420a70d80fa40c3c1d88e',1,'measurement_settings']]],
-  ['camera_5fsystem_2',['camera_system',['../structcamera__settings.html#ab782cf8240d4a3400170ade96a4d11fd',1,'camera_settings']]],
-  ['cont_5fpause_5fin_5fmicroseconds_3',['cont_pause_in_microseconds',['../structmeasurement__settings.html#a6b38daf0440f5d5ac2609a56f9314e96',1,'measurement_settings::cont_pause_in_microseconds()'],['../structmeasurement__settings__matlab.html#acee38bfd8aa2c1160a5eab94601a747a',1,'measurement_settings_matlab::cont_pause_in_microseconds()']]],
-  ['contiuous_5fmeasurement_4',['contiuous_measurement',['../structmeasurement__settings.html#a2536f3ccf75e724e85d4d268ef1cd7c8',1,'measurement_settings::contiuous_measurement()'],['../structmeasurement__settings__matlab.html#a6bce989bcd341c59f2ac7b2c4bcff660',1,'measurement_settings_matlab::contiuous_measurement()']]]
+  ['bdat_5fin_5f10ns_0',['bdat_in_10ns',['../structcamera__settings.html#ad2139e71363af04fb3558bbc94057bbb',1,'camera_settings']]],
+  ['bec_5fin_5f10ns_1',['bec_in_10ns',['../structcamera__settings.html#a41e4ecc9c93c9d84bcdf7dd92a0ced4c',1,'camera_settings']]],
+  ['board_5fsel_2',['board_sel',['../structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb',1,'measurement_settings::board_sel()'],['../structmeasurement__settings__matlab.html#a1d80b48d6c6d557aec027edb47d70533',1,'measurement_settings_matlab::board_sel()']]],
+  ['bslope_3',['bslope',['../structcamera__settings.html#aad2f5116d777038bcb58543db3caf877',1,'camera_settings']]],
+  ['bti_5fmode_4',['bti_mode',['../structcamera__settings.html#a6578f775f4bbad6da1ec2d85323a8458',1,'camera_settings']]],
+  ['btime_5fin_5fmicrosec_5',['btime_in_microsec',['../structcamera__settings.html#a2c83fba5f72159010fc146c2c52209de',1,'camera_settings']]]
 ];

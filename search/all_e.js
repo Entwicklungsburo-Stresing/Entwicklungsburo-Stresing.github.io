@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['pixel_0',['pixel',['../structcamera__settings.html#ad487b9bad9fa6aca6b18b4742c8ce417',1,'camera_settings']]],
-  ['polldmabuffertouserbuffer_1',['PollDmaBufferToUserBuffer',['../_board_8c.html#a6d992a63422fa1d74ad5f302204ffe6e',1,'Board.c']]],
-  ['pulsebits0_5f32_2',['pulseBitS0_32',['../_board_8c.html#a76d966efe71c1f1ce29dbd1db7f7d07f',1,'Board.c']]],
-  ['pulsebits0_5f8_3',['pulseBitS0_8',['../_board_8c.html#ab255b55763d0b63b2b9f5fc06ca0b5d3',1,'Board.c']]]
+  ['oldpriclass_0',['oldPriClass',['../_board__ll_8c.html#a9b38f8724520f3c3724690dfa6ce0e6a',1,'Board_ll.c']]],
+  ['oldthreadlevel_1',['oldThreadLevel',['../_board__ll_8c.html#a942fa18d161e25f0189758bde771ba4a',1,'Board_ll.c']]],
+  ['openfile_2',['openFile',['../_board__ll_8c.html#acf99ecfb75e0b3bae34caded22ff5367',1,'Board_ll.c']]],
+  ['openshutter_3',['OpenShutter',['../_board_8c.html#aff3a95788b7373294b77102a9eb39d77',1,'Board.c']]],
+  ['outtrighigh_4',['OutTrigHigh',['../_board_8c.html#a17c3f95217ca811a23a37998a141db78',1,'Board.c']]],
+  ['outtriglow_5',['OutTrigLow',['../_board_8c.html#a8cf2cbfa432ee37a742eae389648b39d',1,'Board.c']]],
+  ['outtrigpulse_6',['OutTrigPulse',['../_board_8c.html#a41019bd7d6f9a27dec94a03cc88f9f65',1,'Board.c']]]
 ];

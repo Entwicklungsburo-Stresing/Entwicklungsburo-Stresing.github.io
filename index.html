@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>EBST_CAM: Main Page</title>
+<title>EBST_CAM: Entwicklungsbüro Stresing software documentation</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,10 +69,42 @@ $(function() {
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">EBST_CAM Documentation</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">Entwicklungsbüro Stresing software documentation </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_mainpage"></a> This documentation is about the <a href="https://github.com/Entwicklungsburo-Stresing">software</a> for operating the specialized line scan cameras of <a href="https://stresing.de">Entwicklungsbüro Stresing</a>. For instructions about compiling have a look at the readme in the <a href="https://github.com/Entwicklungsburo-Stresing/EBST_CAM">EBST_CAM</a> repository. For more detailed information about your camera refer to your given manual FLbook.pdf.</p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+How to use Stresing software</h1>
+<p>There are two possibilities to use this software.</p>
+<ol type="1">
+<li>Use the compiled library ESLSCDLL.dll and operate the camera from your software with DLL calls. There are some examples available that are operating the camera with the DLL for <a href="https://github.com/Entwicklungsburo-Stresing/lv64">LabVIEW</a>, <a href="https://github.com/Entwicklungsburo-Stresing/stresing_python">Python</a> and <a href="https://github.com/Entwicklungsburo-Stresing/stresing_matlab">Matlab</a>.</li>
+<li>Include the source files in your project and compile it as one software project. Escam and lsc-cli are using this way to operate the camera, both located in the <a href="https://github.com/Entwicklungsburo-Stresing/EBST_CAM">EBST_CAM</a> repository.</li>
+</ol>
+<p>Have a look at the block diagrams at the bottom of this page. They are illustrating both ways of using the Stresing software.</p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+How to operate Stresing cameras</h1>
+<p>For a simple measurement the following DLL calls should be used. While including the source code of the project, the calls are similar just without the DLL in the function name. For a complete API documentation go to the DLL documentation <a href="_e_s_l_s_c_d_l_l_8c.html">page</a>.</p>
+<ol type="1">
+<li><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#a82c8db212e9619147eb6c2a350b1a0bf">DLLInitDriver</a>: Initialize the driver. Call it once at startup.</li>
+<li><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#af30938c7517f1a2aa31682ab0aac017e">DLLInitBoard</a>: Initialize PCIe board. Call it once at startup.</li>
+<li>[DLLSetGlobalSettings] or <a class="el" href="_e_s_l_s_c_d_l_l_8c.html#ab3c6d7837b6df1ee2405993d3dc9977f">DLLSetGlobalSettings_matlab</a>: Set settings parameter according to your camera system. Call it once at startup and every time you changed settings.</li>
+<li><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#a85271159edd73833ee4154857a722741">DLLInitMeasurement</a>: Initialize Hardware and Software for the Measurement. Call it once at startup and every time you changed settings.</li>
+<li><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#a462d2947ed8950c41026ea83f11ad5a3">DLLStartMeasurement_blocking</a> or <a class="el" href="_e_s_l_s_c_d_l_l_8c.html#a0b92b1f99bc3e02d6029edbf0433afe8">DLLStartMeasurement_nonblocking</a>: Start the measurement. Call it every time you want to measure.</li>
+<li><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#ad9e890a46b6b2768b356b5f94f189ca1">DLLAbortMeasurement</a>: Use this call, if you want to abort the measurement.</li>
+<li><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#aa426ac9792a52a11355dc8b4676aa1db">DLLReturnFrame</a>, <a class="el" href="_e_s_l_s_c_d_l_l_8c.html#a4453ba3229186464a51ee8f8dac96b9b">DLLCopyAllData</a>, or <a class="el" href="_e_s_l_s_c_d_l_l_8c.html#aee957a0960b7965acc943dda732c9176">DLLCopyOneBlock</a>: Get the data with one of the following 3 calls. Call it how many times you want.</li>
+<li><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#a6de4e38fbc35ee4e86547eee9a9b8169">DLLExitDriver</a>: Before exiting your software, use this call for cleanup.</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Software structure</h1>
+<p><img src="software_structure.drawio.svg" alt="" style="pointer-events: none;" class="inline" title="software structure as block diagram"/>    </p>
+<h1><a class="anchor" id="autotoc_md4"></a>
+Software structure of Escam</h1>
+<div class="image">
+<object type="image/svg+xml" data="escam.drawio.svg" style="pointer-events: none;"></object>
+<div class="caption">
+escam structure as block diagram</div></div>
+     </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
