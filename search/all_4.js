@@ -50,7 +50,7 @@ var searchData=
   ['dllreadregisters0_5f8_47',['DLLreadRegisterS0_8',['../_e_s_l_s_c_d_l_l_8c.html#a8156130d2362f21072c2c431fc457761',1,'ESLSCDLL.c']]],
   ['dllresetbits0_5f32_48',['DLLresetBitS0_32',['../_e_s_l_s_c_d_l_l_8c.html#ae408922b97abfc7b41932d1a02dcefaa',1,'ESLSCDLL.c']]],
   ['dllresetdsc_49',['DLLResetDSC',['../_e_s_l_s_c_d_l_l_8c.html#a9a2adce0312aba8ec6e535d37e80a122',1,'ESLSCDLL.c']]],
-  ['dllreturnframe_50',['DLLReturnFrame',['../_e_s_l_s_c_d_l_l_8c.html#abd94e2c14e3df91b676246774d6ee144',1,'ESLSCDLL.c']]],
+  ['dllreturnframe_50',['DLLReturnFrame',['../_e_s_l_s_c_d_l_l_8c.html#aa426ac9792a52a11355dc8b4676aa1db',1,'ESLSCDLL.c']]],
   ['dllsetbits0_5f32_51',['DLLsetBitS0_32',['../_e_s_l_s_c_d_l_l_8c.html#afd704a2840ed55143901b6108f08bd64',1,'ESLSCDLL.c']]],
   ['dllsetbtimer_52',['DLLSetBTimer',['../_e_s_l_s_c_d_l_l_8c.html#a4bddc88ef969ea44d3fd1da49285b443',1,'ESLSCDLL.c']]],
   ['dllsetcontinuousmeasurement_53',['DLLSetContinuousMeasurement',['../_e_s_l_s_c_d_l_l_8c.html#afa828f161568b989ed8dcc93ac348693',1,'ESLSCDLL.c']]],

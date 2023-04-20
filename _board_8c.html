@@ -187,9 +187,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:a0f8e1a4a11622a06ee89e27d1b00965b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write 4 byte of a register in S0 space.  <br /></td></tr>
 <tr class="separator:a0f8e1a4a11622a06ee89e27d1b00965b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2e115e09508586fe11c9859a1ba9023"><td class="memItemLeft" align="right" valign="top">es_status_codes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#ad2e115e09508586fe11c9859a1ba9023">writeRegisterS0_32_allBoards</a> (uint32_t board_sel, uint32_t data, uint16_t address)</td></tr>
-<tr class="memdesc:ad2e115e09508586fe11c9859a1ba9023"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write 4 byte of a register in S0 space.  <br /></td></tr>
+<tr class="memdesc:ad2e115e09508586fe11c9859a1ba9023"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write 4 bytes of a register in S0 space.  <br /></td></tr>
 <tr class="separator:ad2e115e09508586fe11c9859a1ba9023"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54a6ee6701e43cbd1aabb6812369f0b0"><td class="memItemLeft" align="right" valign="top">es_status_codes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a54a6ee6701e43cbd1aabb6812369f0b0">writeRegister_32_allBoards</a> (uint32_t board_sel, uint32_t data, uint16_t address)</td></tr>
+<tr class="memdesc:a54a6ee6701e43cbd1aabb6812369f0b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write 4 bytes of a register.  <br /></td></tr>
 <tr class="separator:a54a6ee6701e43cbd1aabb6812369f0b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab65e8476b5622f51c51892d8e569c1fb"><td class="memItemLeft" align="right" valign="top">es_status_codes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#ab65e8476b5622f51c51892d8e569c1fb">writeRegisterS0_16</a> (uint32_t drvno, uint16_t data, uint16_t address)</td></tr>
 <tr class="memdesc:ab65e8476b5622f51c51892d8e569c1fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write 2 bytes of a register in S0 space.  <br /></td></tr>
@@ -201,6 +202,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a9190c7882c49d57eadb1e5a13e3fbff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the same 1 byte to a register in S0 space of all boards.  <br /></td></tr>
 <tr class="separator:a9190c7882c49d57eadb1e5a13e3fbff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0af70b2d7568d3fbd865a285073b011"><td class="memItemLeft" align="right" valign="top">es_status_codes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#ac0af70b2d7568d3fbd865a285073b011">writeRegister_8_allBoards</a> (uint32_t board_sel, uint8_t data, uint16_t address)</td></tr>
+<tr class="memdesc:ac0af70b2d7568d3fbd865a285073b011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the same 1 byte to a register of all boards.  <br /></td></tr>
 <tr class="separator:ac0af70b2d7568d3fbd865a285073b011"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae8fdad18b7b5aa76b05e981cbfb4cb3"><td class="memItemLeft" align="right" valign="top">es_status_codes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#aae8fdad18b7b5aa76b05e981cbfb4cb3">readRegisterS0_32</a> (uint32_t drvno, uint32_t *data, uint16_t address)</td></tr>
 <tr class="memdesc:aae8fdad18b7b5aa76b05e981cbfb4cb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read 4 bytes of a register in S0 space.  <br /></td></tr>
@@ -809,7 +811,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Use this function to abort measurement. </p>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes: -es_no_error -es_register_read_failed -es_register_write_failed </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
+<li>es_no_error</li>
+<li>es_register_read_failed</li>
+<li>es_register_write_failed </li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
@@ -1977,7 +1984,7 @@ es_status_codes<ul>
     <tr><td class="paramname">ctrlBits</td><td>4 control bits </td></tr>
     <tr><td class="paramname">addrBits</td><td>4 address bits </td></tr>
     <tr><td class="paramname">dataBits</td><td>16 data bits </td></tr>
-    <tr><td class="paramname">feature</td><td>4 feature bits </td></tr>
+    <tr><td class="paramname">featureBits</td><td>4 feature bits </td></tr>
   </table>
   </dd>
 </dl>
@@ -2518,7 +2525,7 @@ es_status_codes<ul>
     <tr><td class="paramname">sample</td><td>sample number (0 ... (nos-1)) </td></tr>
     <tr><td class="paramname">block</td><td>block number (0 ... (nob-1)) </td></tr>
     <tr><td class="paramname">camera_pos</td><td>camera position (0 ... (CAMCNT-1)) </td></tr>
-    <tr><td class="paramname">struct</td><td>special_pixels Pointer to struct special_pixel, where the all special pixel information will be written. </td></tr>
+    <tr><td class="paramname">sp</td><td>struct special_pixels Pointer to struct special_pixel, where the all special pixel information will be written. </td></tr>
   </table>
   </dd>
 </dl>
@@ -5120,7 +5127,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Set bit to 0 in register at memory address. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramname">board_sel</td><td>select PCIe boards bitwise: bit 0 - board 0... </td></tr>
     <tr><td class="paramname">bitnumber</td><td>0...31, 0 is LSB, 31 MSB </td></tr>
     <tr><td class="paramname">address</td><td>register address. Only 4 byte steps are valid. </td></tr>
   </table>
@@ -5878,7 +5885,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Set bit to 1 in S0 register at memory address. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramname">board_sel</td><td>select PCIe boards bitwise: bit 0 - board 0... </td></tr>
     <tr><td class="paramname">bitnumber</td><td>0...31, 0 is LSB, 31 MSB </td></tr>
     <tr><td class="paramname">address</td><td>register address. Only 4 byte steps are valid. </td></tr>
   </table>
@@ -6143,7 +6150,6 @@ with frame rate 8kHz = min. 125µs exp time
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
-    <tr><td class="paramname">camcount</td><td>camera count </td></tr>
   </table>
   </dd>
 </dl>
@@ -7847,15 +7853,13 @@ If RX_VALID raises again for cool status values, it doesn't effect ENFFW when RX
 <p>Returns when block on bit is 0. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">board_sel</td><td>select PCIe boards bitwise: bit 0 - board 0... </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error<ul>
+<li>es_no_error</li>
 <li>es_register_read_failed </li>
-</ul>
-</li>
 </ul>
 </dd></dl>
 
@@ -7911,15 +7915,13 @@ If RX_VALID raises again for cool status values, it doesn't effect ENFFW when RX
 <p>Returns when measure on bit is 0. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">board_sel</td><td>select PCIe boards bitwise: bit 0 - board 0... </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error<ul>
+<li>es_no_error</li>
 <li>es_register_read_failed </li>
-</ul>
-</li>
 </ul>
 </dd></dl>
 
@@ -7966,9 +7968,9 @@ If RX_VALID raises again for cool status values, it doesn't effect ENFFW when RX
 <p>Set specified bits to 1 in DMA register at memory address. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td></td></tr>
-    <tr><td class="paramname">bitmask</td><td></td></tr>
-    <tr><td class="paramname">address</td><td></td></tr>
+    <tr><td class="paramname">data</td><td>4 bytes (32 bits) data to write </td></tr>
+    <tr><td class="paramname">bitmask</td><td>Bitmask to select specific bits, which should be written. 0xFFFFFFFF - all bits 32 bits are written, 0 - no bits are written. </td></tr>
+    <tr><td class="paramname">address</td><td>Address of the register in DMA space. </td></tr>
     <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
   </table>
   </dd>
@@ -8025,9 +8027,9 @@ If RX_VALID raises again for cool status values, it doesn't effect ENFFW when RX
 <p>Set specified bits to 1 in DMA register at memory address. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td></td></tr>
-    <tr><td class="paramname">bitmask</td><td></td></tr>
-    <tr><td class="paramname">address</td><td></td></tr>
+    <tr><td class="paramname">data</td><td>1 bytes (8 bits) data to write </td></tr>
+    <tr><td class="paramname">bitmask</td><td>Bitmask to select specific bits, which should be written. 0xFF - all bits 8 bits are written, 0 - no bits are written. </td></tr>
+    <tr><td class="paramname">address</td><td>Address of the register in DMA space. </td></tr>
     <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
   </table>
   </dd>
@@ -8084,9 +8086,9 @@ If RX_VALID raises again for cool status values, it doesn't effect ENFFW when RX
 <p>Set specified bits to 1 in S0 register at memory address. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td></td></tr>
-    <tr><td class="paramname">bitmask</td><td></td></tr>
-    <tr><td class="paramname">address</td><td></td></tr>
+    <tr><td class="paramname">data</td><td>4 bytes (32 bits) data to write </td></tr>
+    <tr><td class="paramname">bitmask</td><td>Bitmask to select specific bits, which should be written. 0xFFFFFFFF - all bits 32 bits are written, 0 - no bits are written. </td></tr>
+    <tr><td class="paramname">address</td><td>Address of the register in S0 space. </td></tr>
     <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
   </table>
   </dd>
@@ -8143,10 +8145,10 @@ If RX_VALID raises again for cool status values, it doesn't effect ENFFW when RX
 <p>Set specified bits to 1 in S0 register at memory address. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td></td></tr>
-    <tr><td class="paramname">bitmask</td><td></td></tr>
-    <tr><td class="paramname">address</td><td></td></tr>
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">board_sel</td><td>select PCIe boards bitwise: bit 0 - board 0... </td></tr>
+    <tr><td class="paramname">data</td><td>4 bytes (32 bits) data to write </td></tr>
+    <tr><td class="paramname">bitmask</td><td>Bitmask to select specific bits, which should be written. 0xFFFFFFFF - all bits 32 bits are written, 0 - no bits are written. </td></tr>
+    <tr><td class="paramname">address</td><td>Address of the register in S0 space. </td></tr>
   </table>
   </dd>
 </dl>
@@ -8202,9 +8204,9 @@ If RX_VALID raises again for cool status values, it doesn't effect ENFFW when RX
 <p>Set specified bits to 1 in S0 register at memory address. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td></td></tr>
-    <tr><td class="paramname">bitmask</td><td></td></tr>
-    <tr><td class="paramname">address</td><td></td></tr>
+    <tr><td class="paramname">data</td><td>1 bytes (8 bits) data to write </td></tr>
+    <tr><td class="paramname">bitmask</td><td>Bitmask to select specific bits, which should be written. 0xFF - all bits 8 bits are written, 0 - no bits are written. </td></tr>
+    <tr><td class="paramname">address</td><td>Address of the register in S0 space. </td></tr>
     <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
   </table>
   </dd>
@@ -8252,6 +8254,21 @@ If RX_VALID raises again for cool status values, it doesn't effect ENFFW when RX
       </table>
 </div><div class="memdoc">
 
+<p>Write 4 bytes of a register. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board_sel</td><td>select PCIe boards bitwise: bit 0 - board 0... </td></tr>
+    <tr><td class="paramname">data</td><td>4 byte of data to write. </td></tr>
+    <tr><td class="paramname">address</td><td>Address of the register to write. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
+<li>es_no_error</li>
+<li>es_register_read_failed </li>
+</ul>
+</dd></dl>
+
 </div>
 </div>
 <a id="ac0af70b2d7568d3fbd865a285073b011" name="ac0af70b2d7568d3fbd865a285073b011"></a>
@@ -8285,6 +8302,21 @@ If RX_VALID raises again for cool status values, it doesn't effect ENFFW when RX
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Write the same 1 byte to a register of all boards. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board_sel</td><td>select PCIe boards bitwise: bit 0 - board 0... </td></tr>
+    <tr><td class="paramname">data</td><td>1 byte data to write. </td></tr>
+    <tr><td class="paramname">address</td><td>Address of the register to write. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
+<li>es_no_error</li>
+<li>es_register_read_failed </li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
@@ -8516,10 +8548,10 @@ If RX_VALID raises again for cool status values, it doesn't effect ENFFW when RX
       </table>
 </div><div class="memdoc">
 
-<p>Write 4 byte of a register in S0 space. </p>
+<p>Write 4 bytes of a register in S0 space. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">board_sel</td><td>select PCIe boards bitwise: bit 0 - board 0... </td></tr>
     <tr><td class="paramname">data</td><td>Data to write. </td></tr>
     <tr><td class="paramname">address</td><td>Address of the register to read. </td></tr>
   </table>
@@ -8617,8 +8649,9 @@ If RX_VALID raises again for cool status values, it doesn't effect ENFFW when RX
 <p>Write the same 1 byte to a register in S0 space of all boards. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">board_sel</td><td>select PCIe boards bitwise: bit 0 - board 0... </td></tr>
     <tr><td class="paramname">data</td><td>Data to write. </td></tr>
-    <tr><td class="paramname">address</td><td>Address of the register to read. </td></tr>
+    <tr><td class="paramname">address</td><td>Address of the register to write. </td></tr>
   </table>
   </dd>
 </dl>

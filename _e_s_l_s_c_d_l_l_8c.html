@@ -151,9 +151,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae408922b97abfc7b41932d1a02dcefaa"><td class="memItemLeft" align="right" valign="top">DllAccess es_status_codes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#ae408922b97abfc7b41932d1a02dcefaa">DLLresetBitS0_32</a> (uint32_t board_sel, uint32_t bitnumber, uint16_t address)</td></tr>
 <tr class="memdesc:ae408922b97abfc7b41932d1a02dcefaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set bit to 0 in register at memory address.    <br /></td></tr>
 <tr class="separator:ae408922b97abfc7b41932d1a02dcefaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd94e2c14e3df91b676246774d6ee144"><td class="memItemLeft" align="right" valign="top">DllAccess es_status_codes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#abd94e2c14e3df91b676246774d6ee144">DLLReturnFrame</a> (uint32_t board_sel, uint32_t sample, uint32_t block, uint16_t camera, uint16_t *pdest0, uint16_t *pdest1, uint32_t length)</td></tr>
-<tr class="memdesc:abd94e2c14e3df91b676246774d6ee144"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get data of a single measurement.    <br /></td></tr>
-<tr class="separator:abd94e2c14e3df91b676246774d6ee144"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa426ac9792a52a11355dc8b4676aa1db"><td class="memItemLeft" align="right" valign="top">DllAccess es_status_codes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#aa426ac9792a52a11355dc8b4676aa1db">DLLReturnFrame</a> (uint32_t board_sel, uint32_t sample, uint32_t block, uint16_t camera, uint16_t *pdest0, uint16_t *pdest1, uint32_t pixel)</td></tr>
+<tr class="memdesc:aa426ac9792a52a11355dc8b4676aa1db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get data of a single measurement.    <br /></td></tr>
+<tr class="separator:aa426ac9792a52a11355dc8b4676aa1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4453ba3229186464a51ee8f8dac96b9b"><td class="memItemLeft" align="right" valign="top">DllAccess es_status_codes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#a4453ba3229186464a51ee8f8dac96b9b">DLLCopyAllData</a> (uint32_t board_sel, uint16_t *pdest0, uint16_t *pdest1)</td></tr>
 <tr class="memdesc:a4453ba3229186464a51ee8f8dac96b9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies all pixel data to pdest.  <br /></td></tr>
 <tr class="separator:a4453ba3229186464a51ee8f8dac96b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -293,7 +293,12 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Use this function to abort measurement.   </p>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes: -es_no_error -es_register_read_failed -es_register_write_failed   </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
+<li>es_no_error</li>
+<li>es_register_read_failed</li>
+<li>es_register_write_failed   </li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
@@ -2010,8 +2015,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="abd94e2c14e3df91b676246774d6ee144" name="abd94e2c14e3df91b676246774d6ee144"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd94e2c14e3df91b676246774d6ee144">&#9670;&#160;</a></span>DLLReturnFrame()</h2>
+<a id="aa426ac9792a52a11355dc8b4676aa1db" name="aa426ac9792a52a11355dc8b4676aa1db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa426ac9792a52a11355dc8b4676aa1db">&#9670;&#160;</a></span>DLLReturnFrame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2056,7 +2061,7 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
+          <td class="paramname"><em>pixel</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2784,15 +2789,13 @@ Variables</h2></td></tr>
 <p>Returns when block on bit is 0.   </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">board_sel</td><td>select PCIe boards bitwise: bit 0 - board 0... </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error<ul>
+<li>es_no_error</li>
 <li>es_register_read_failed   </li>
-</ul>
-</li>
 </ul>
 </dd></dl>
 
@@ -2817,15 +2820,13 @@ Variables</h2></td></tr>
 <p>Returns when measure on bit is 0.   </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">board_sel</td><td>select PCIe boards bitwise: bit 0 - board 0... </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error<ul>
+<li>es_no_error</li>
 <li>es_register_read_failed   </li>
-</ul>
-</li>
 </ul>
 </dd></dl>
 
