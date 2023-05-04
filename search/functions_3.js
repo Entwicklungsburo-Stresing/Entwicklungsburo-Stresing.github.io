@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['dac8568_5fenableinternalreference_0',['DAC8568_enableInternalReference',['../_board_8c.html#ae07ca17825a3cdcf77a077ee1232dfd6',1,'Board.c']]],
-  ['dac8568_5fsenddata_1',['DAC8568_sendData',['../_board_8c.html#a79206d811cecaf49d4eb4240e9a24313',1,'Board.c']]],
-  ['dac8568_5fsetalloutputs_2',['DAC8568_setAllOutputs',['../_board_8c.html#ac6ce7756b16e5af20ad729b924d43d0d',1,'Board.c']]],
-  ['dac8568_5fsetoutput_3',['DAC8568_setOutput',['../_board_8c.html#afd27cfed62a9c6d42528c7d4cc54b9e4',1,'Board.c']]],
+  ['dac8568_5fenableinternalreference_0',['DAC8568_enableInternalReference',['../_board_8c.html#a25dfa6b6bf41c5e1ccef01f652fbb19e',1,'Board.c']]],
+  ['dac8568_5fsenddata_1',['DAC8568_sendData',['../_board_8c.html#a0d9acc2eff67745f7a2ddf4e3d4422f1',1,'Board.c']]],
+  ['dac8568_5fsetalloutputs_2',['DAC8568_setAllOutputs',['../_board_8c.html#a0f07ae4608067b92a1e4287d2572a24a',1,'Board.c']]],
+  ['dac8568_5fsetoutput_3',['DAC8568_setOutput',['../_board_8c.html#a1f1c1756ae204a3f7166dbc0040dfb9a',1,'Board.c']]],
   ['deinit2dviewer_4',['Deinit2dViewer',['../_board__ll_8c.html#ad135e7b2b2218bc4b0f8d23c48dedd19',1,'Board_ll.c']]],
   ['direct2dviewer_5',['Direct2dViewer',['../class_direct2d_viewer.html#a7a9bc8a513c180eaab64d8602f9acc37',1,'Direct2dViewer']]],
   ['direct2dviewer_5fdelete_6',['Direct2dViewer_delete',['../_direct2d_viewer__c_8cpp.html#aefd97f2552c90c38b1f0a68cffdd1f73',1,'Direct2dViewer_c.cpp']]],
@@ -26,7 +26,7 @@ var searchData=
   ['dllconverterrorcodetomsg_23',['DLLConvertErrorCodeToMsg',['../_e_s_l_s_c_d_l_l_8c.html#a9ff235b66c6ca068d623ff8c6ad4d280',1,'ESLSCDLL.c']]],
   ['dllcopyalldata_24',['DLLCopyAllData',['../_e_s_l_s_c_d_l_l_8c.html#a4453ba3229186464a51ee8f8dac96b9b',1,'ESLSCDLL.c']]],
   ['dllcopyoneblock_25',['DLLCopyOneBlock',['../_e_s_l_s_c_d_l_l_8c.html#aee957a0960b7965acc943dda732c9176',1,'ESLSCDLL.c']]],
-  ['dlldac8568_5fsetalloutputs_26',['DLLDAC8568_setAllOutputs',['../_e_s_l_s_c_d_l_l_8c.html#a7674c8d2c27b6b061e75409783b6ee6f',1,'ESLSCDLL.c']]],
+  ['dlldac8568_5fsetalloutputs_26',['DLLDAC8568_setAllOutputs',['../_e_s_l_s_c_d_l_l_8c.html#a846e455b7f3675e70854960057b14555',1,'ESLSCDLL.c']]],
   ['dlldeinit2dviewer_27',['DLLDeinit2dViewer',['../_e_s_l_s_c_d_l_l_8c.html#ab3010e43041194d853897a3013f5bf74',1,'ESLSCDLL.c']]],
   ['dllerrmsgboxoff_28',['DLLErrMsgBoxOff',['../_e_s_l_s_c_d_l_l_8c.html#aa1ba0308244e750d851a2a3fe410c632',1,'ESLSCDLL.c']]],
   ['dllerrmsgboxon_29',['DLLErrMsgBoxOn',['../_e_s_l_s_c_d_l_l_8c.html#a926f3a778eacfd63e2fe0b927b5cc137',1,'ESLSCDLL.c']]],

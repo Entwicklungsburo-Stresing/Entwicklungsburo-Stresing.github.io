@@ -177,9 +177,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a88e2bb548e4ac5d3baa1372586b1c6df"><td class="memItemLeft" align="right" valign="top">DllAccess es_status_codes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#a88e2bb548e4ac5d3baa1372586b1c6df">DLLAboutS0</a> (uint32_t drvno)</td></tr>
 <tr class="memdesc:a88e2bb548e4ac5d3baa1372586b1c6df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read registers of space0. Space0 are the control registers of the PCIe board.    <br /></td></tr>
 <tr class="separator:a88e2bb548e4ac5d3baa1372586b1c6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7674c8d2c27b6b061e75409783b6ee6f"><td class="memItemLeft" align="right" valign="top">DllAccess es_status_codes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#a7674c8d2c27b6b061e75409783b6ee6f">DLLDAC8568_setAllOutputs</a> (uint32_t board_sel, uint8_t location, uint32_t *output0, uint32_t *output1, uint32_t *output2, uint32_t *output3, uint32_t *output4, uint8_t reorder_channel)</td></tr>
-<tr class="memdesc:a7674c8d2c27b6b061e75409783b6ee6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all outputs of the DAC8568 on PCB 2189-7.    <br /></td></tr>
-<tr class="separator:a7674c8d2c27b6b061e75409783b6ee6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a846e455b7f3675e70854960057b14555"><td class="memItemLeft" align="right" valign="top">DllAccess es_status_codes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#a846e455b7f3675e70854960057b14555">DLLDAC8568_setAllOutputs</a> (uint32_t board_sel, uint8_t location, uint8_t cameraPosition, uint32_t *output0, uint32_t *output1, uint32_t *output2, uint32_t *output3, uint32_t *output4, uint8_t reorder_channel)</td></tr>
+<tr class="memdesc:a846e455b7f3675e70854960057b14555"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all outputs of the DAC8568 on PCB 2189-7.    <br /></td></tr>
+<tr class="separator:a846e455b7f3675e70854960057b14555"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac51f480d3fee094a707439c40f148f49"><td class="memItemLeft" align="right" valign="top">DllAccess void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#ac51f480d3fee094a707439c40f148f49">DLLFreeMemInfo</a> (uint64_t *pmemory_all, uint64_t *pmemory_free)</td></tr>
 <tr class="memdesc:ac51f480d3fee094a707439c40f148f49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the free and installed memory info.    <br /></td></tr>
 <tr class="separator:ac51f480d3fee094a707439c40f148f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -690,8 +690,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7674c8d2c27b6b061e75409783b6ee6f" name="a7674c8d2c27b6b061e75409783b6ee6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7674c8d2c27b6b061e75409783b6ee6f">&#9670;&#160;</a></span>DLLDAC8568_setAllOutputs()</h2>
+<a id="a846e455b7f3675e70854960057b14555" name="a846e455b7f3675e70854960057b14555"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a846e455b7f3675e70854960057b14555">&#9670;&#160;</a></span>DLLDAC8568_setAllOutputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -707,6 +707,12 @@ Variables</h2></td></tr>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cameraPosition</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -757,6 +763,7 @@ Variables</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
     <tr><td class="paramname">location</td><td>Switch for the different locations of DAC85689. See enum DAC8568_location in enum.h for details. </td></tr>
+    <tr><td class="paramname">cameraPosition</td><td>This is describing the camera position when there are mumltiple cameras in line. Possible values: 0....8. This parameter is only used when location == DAC8568_camera. </td></tr>
     <tr><td class="paramname">output</td><td>all output values that will be converted to analog voltage (0 ... 0xFFFF) </td></tr>
     <tr><td class="paramname">reorder_channels</td><td>used to reorder DAC channels for high speed camera </td></tr>
   </table>

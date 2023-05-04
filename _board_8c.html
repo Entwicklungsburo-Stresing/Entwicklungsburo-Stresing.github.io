@@ -313,9 +313,9 @@ Functions</h2></td></tr>
 <tr class="separator:a91d5c99f79cdc0542e205ed7f1efb4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a553f5fd9cd73059b68e2942e4fc5f13f"><td class="memItemLeft" align="right" valign="top">es_status_codes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a553f5fd9cd73059b68e2942e4fc5f13f">Cam3010_ADC_sendTestPattern</a> (uint32_t drvno, uint16_t custom_pattern)</td></tr>
 <tr class="separator:a553f5fd9cd73059b68e2942e4fc5f13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0ca0b761817fb17e480e4e89b218c57"><td class="memItemLeft" align="right" valign="top">es_status_codes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#ad0ca0b761817fb17e480e4e89b218c57">InitCamera3030</a> (uint32_t drvno, uint8_t adc_mode, uint16_t custom_pattern, uint8_t adc_gain, uint32_t *dac_output, bool is_hs_ir)</td></tr>
-<tr class="memdesc:ad0ca0b761817fb17e480e4e89b218c57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init routine for Camera System 3030.  <br /></td></tr>
-<tr class="separator:ad0ca0b761817fb17e480e4e89b218c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6ef392d48c3085d096c2bd5f5c2d1b0"><td class="memItemLeft" align="right" valign="top">es_status_codes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#af6ef392d48c3085d096c2bd5f5c2d1b0">InitCamera3030</a> (uint32_t drvno, uint8_t adc_mode, uint16_t custom_pattern, uint8_t adc_gain, uint32_t **dac_output, bool is_hs_ir)</td></tr>
+<tr class="memdesc:af6ef392d48c3085d096c2bd5f5c2d1b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init routine for Camera System 3030.  <br /></td></tr>
+<tr class="separator:af6ef392d48c3085d096c2bd5f5c2d1b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5db45ef70b7e42c976e1e75d65c61f06"><td class="memItemLeft" align="right" valign="top">es_status_codes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a5db45ef70b7e42c976e1e75d65c61f06">Cam3030_ADC_reset</a> (uint32_t drvno)</td></tr>
 <tr class="memdesc:a5db45ef70b7e42c976e1e75d65c61f06"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADC reset routine for Camera System 3030.  <br /></td></tr>
 <tr class="separator:a5db45ef70b7e42c976e1e75d65c61f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -354,18 +354,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a48cbcfeea2d1715c014e1c249e1ef384"><td class="memItemLeft" align="right" valign="top">es_status_codes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a48cbcfeea2d1715c014e1c249e1ef384">SetTemp</a> (uint32_t drvno, uint8_t level)</td></tr>
 <tr class="memdesc:a48cbcfeea2d1715c014e1c249e1ef384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set temperature level for cooled cameras.  <br /></td></tr>
 <tr class="separator:a48cbcfeea2d1715c014e1c249e1ef384"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79206d811cecaf49d4eb4240e9a24313"><td class="memItemLeft" align="right" valign="top">es_status_codes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a79206d811cecaf49d4eb4240e9a24313">DAC8568_sendData</a> (uint32_t drvno, uint8_t location, uint8_t ctrlBits, uint8_t addrBits, uint16_t dataBits, uint8_t featureBits)</td></tr>
-<tr class="memdesc:a79206d811cecaf49d4eb4240e9a24313"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends data to DAC8568.  <br /></td></tr>
-<tr class="separator:a79206d811cecaf49d4eb4240e9a24313"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6ce7756b16e5af20ad729b924d43d0d"><td class="memItemLeft" align="right" valign="top">es_status_codes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#ac6ce7756b16e5af20ad729b924d43d0d">DAC8568_setAllOutputs</a> (uint32_t drvno, uint8_t location, uint32_t *output, bool reorder_channels)</td></tr>
-<tr class="memdesc:ac6ce7756b16e5af20ad729b924d43d0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all outputs of the DAC8568 on PCB 2189-7.  <br /></td></tr>
-<tr class="separator:ac6ce7756b16e5af20ad729b924d43d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd27cfed62a9c6d42528c7d4cc54b9e4"><td class="memItemLeft" align="right" valign="top">es_status_codes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#afd27cfed62a9c6d42528c7d4cc54b9e4">DAC8568_setOutput</a> (uint32_t drvno, uint8_t location, uint8_t channel, uint16_t output)</td></tr>
-<tr class="memdesc:afd27cfed62a9c6d42528c7d4cc54b9e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the output of the DAC8568 on PCB 2189-7.  <br /></td></tr>
-<tr class="separator:afd27cfed62a9c6d42528c7d4cc54b9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae07ca17825a3cdcf77a077ee1232dfd6"><td class="memItemLeft" align="right" valign="top">es_status_codes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#ae07ca17825a3cdcf77a077ee1232dfd6">DAC8568_enableInternalReference</a> (uint32_t drvno, uint8_t location)</td></tr>
-<tr class="memdesc:ae07ca17825a3cdcf77a077ee1232dfd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the internal reference in static mode.  <br /></td></tr>
-<tr class="separator:ae07ca17825a3cdcf77a077ee1232dfd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d9acc2eff67745f7a2ddf4e3d4422f1"><td class="memItemLeft" align="right" valign="top">es_status_codes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a0d9acc2eff67745f7a2ddf4e3d4422f1">DAC8568_sendData</a> (uint32_t drvno, uint8_t location, uint8_t cameraPosition, uint8_t ctrlBits, uint8_t addrBits, uint16_t dataBits, uint8_t featureBits)</td></tr>
+<tr class="memdesc:a0d9acc2eff67745f7a2ddf4e3d4422f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends data to DAC8568.  <br /></td></tr>
+<tr class="separator:a0d9acc2eff67745f7a2ddf4e3d4422f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f07ae4608067b92a1e4287d2572a24a"><td class="memItemLeft" align="right" valign="top">es_status_codes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a0f07ae4608067b92a1e4287d2572a24a">DAC8568_setAllOutputs</a> (uint32_t drvno, uint8_t location, uint8_t cameraPosition, uint32_t *output, bool reorder_channels)</td></tr>
+<tr class="memdesc:a0f07ae4608067b92a1e4287d2572a24a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all outputs of the DAC8568 on PCB 2189-7.  <br /></td></tr>
+<tr class="separator:a0f07ae4608067b92a1e4287d2572a24a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f1c1756ae204a3f7166dbc0040dfb9a"><td class="memItemLeft" align="right" valign="top">es_status_codes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a1f1c1756ae204a3f7166dbc0040dfb9a">DAC8568_setOutput</a> (uint32_t drvno, uint8_t location, uint8_t cameraPosition, uint8_t channel, uint16_t output)</td></tr>
+<tr class="memdesc:a1f1c1756ae204a3f7166dbc0040dfb9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the output of the DAC8568 on PCB 2189-7.  <br /></td></tr>
+<tr class="separator:a1f1c1756ae204a3f7166dbc0040dfb9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25dfa6b6bf41c5e1ccef01f652fbb19e"><td class="memItemLeft" align="right" valign="top">es_status_codes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a25dfa6b6bf41c5e1ccef01f652fbb19e">DAC8568_enableInternalReference</a> (uint32_t drvno, uint8_t location, uint8_t cameraPosition)</td></tr>
+<tr class="memdesc:a25dfa6b6bf41c5e1ccef01f652fbb19e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the internal reference in static mode.  <br /></td></tr>
+<tr class="separator:a25dfa6b6bf41c5e1ccef01f652fbb19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc77b2c63e144dacc59b279417337063"><td class="memItemLeft" align="right" valign="top">es_status_codes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#adc77b2c63e144dacc59b279417337063">SetBEC</a> (uint32_t drvno, uint32_t ecin10ns)</td></tr>
 <tr class="memdesc:adc77b2c63e144dacc59b279417337063"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exposure control (EC) signal is used for mechanical shutter or sensors with EC function.  <br /></td></tr>
 <tr class="separator:adc77b2c63e144dacc59b279417337063"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1883,8 +1883,8 @@ es_status_codes<ul>
 
 </div>
 </div>
-<a id="ae07ca17825a3cdcf77a077ee1232dfd6" name="ae07ca17825a3cdcf77a077ee1232dfd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae07ca17825a3cdcf77a077ee1232dfd6">&#9670;&#160;</a></span>DAC8568_enableInternalReference()</h2>
+<a id="a25dfa6b6bf41c5e1ccef01f652fbb19e" name="a25dfa6b6bf41c5e1ccef01f652fbb19e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25dfa6b6bf41c5e1ccef01f652fbb19e">&#9670;&#160;</a></span>DAC8568_enableInternalReference()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1899,7 +1899,13 @@ es_status_codes<ul>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>location</em>&#160;</td>
+          <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cameraPosition</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1914,6 +1920,7 @@ es_status_codes<ul>
   <table class="params">
     <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
     <tr><td class="paramname">location</td><td>Switch for the different locations of DAC85689. See enum DAC8568_location in enum.h for details. </td></tr>
+    <tr><td class="paramname">cameraPosition</td><td>This is describing the camera position when there are mumltiple cameras in line. Possible values: 0....8. This parameter is only used when location == DAC8568_camera. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1926,8 +1933,8 @@ es_status_codes<ul>
 
 </div>
 </div>
-<a id="a79206d811cecaf49d4eb4240e9a24313" name="a79206d811cecaf49d4eb4240e9a24313"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79206d811cecaf49d4eb4240e9a24313">&#9670;&#160;</a></span>DAC8568_sendData()</h2>
+<a id="a0d9acc2eff67745f7a2ddf4e3d4422f1" name="a0d9acc2eff67745f7a2ddf4e3d4422f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d9acc2eff67745f7a2ddf4e3d4422f1">&#9670;&#160;</a></span>DAC8568_sendData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1943,6 +1950,12 @@ es_status_codes<ul>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cameraPosition</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1982,6 +1995,7 @@ es_status_codes<ul>
   <table class="params">
     <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
     <tr><td class="paramname">location</td><td>Switch for the different locations of DAC85689. See enum DAC8568_location in enum.h for details. </td></tr>
+    <tr><td class="paramname">cameraPosition</td><td>This is describing the camera position when there are mumltiple cameras in line. Possible values: 0....8. This parameter is only used when location == DAC8568_camera. </td></tr>
     <tr><td class="paramname">ctrlBits</td><td>4 control bits </td></tr>
     <tr><td class="paramname">addrBits</td><td>4 address bits </td></tr>
     <tr><td class="paramname">dataBits</td><td>16 data bits </td></tr>
@@ -2000,8 +2014,8 @@ es_status_codes<ul>
 
 </div>
 </div>
-<a id="ac6ce7756b16e5af20ad729b924d43d0d" name="ac6ce7756b16e5af20ad729b924d43d0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6ce7756b16e5af20ad729b924d43d0d">&#9670;&#160;</a></span>DAC8568_setAllOutputs()</h2>
+<a id="a0f07ae4608067b92a1e4287d2572a24a" name="a0f07ae4608067b92a1e4287d2572a24a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f07ae4608067b92a1e4287d2572a24a">&#9670;&#160;</a></span>DAC8568_setAllOutputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2017,6 +2031,12 @@ es_status_codes<ul>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cameraPosition</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2043,6 +2063,7 @@ es_status_codes<ul>
   <table class="params">
     <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
     <tr><td class="paramname">location</td><td>Switch for the different locations of DAC85689. See enum DAC8568_location in enum.h for details. </td></tr>
+    <tr><td class="paramname">cameraPosition</td><td>This is describing the camera position when there are mumltiple cameras in line. Possible values: 0....8. This parameter is only used when location == DAC8568_camera. </td></tr>
     <tr><td class="paramname">output</td><td>all output values that will be converted to analog voltage (0 ... 0xFFFF) </td></tr>
     <tr><td class="paramname">reorder_channels</td><td>used to reorder DAC channels for high speed camera </td></tr>
   </table>
@@ -2057,8 +2078,8 @@ es_status_codes<ul>
 
 </div>
 </div>
-<a id="afd27cfed62a9c6d42528c7d4cc54b9e4" name="afd27cfed62a9c6d42528c7d4cc54b9e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd27cfed62a9c6d42528c7d4cc54b9e4">&#9670;&#160;</a></span>DAC8568_setOutput()</h2>
+<a id="a1f1c1756ae204a3f7166dbc0040dfb9a" name="a1f1c1756ae204a3f7166dbc0040dfb9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f1c1756ae204a3f7166dbc0040dfb9a">&#9670;&#160;</a></span>DAC8568_setOutput()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2074,6 +2095,12 @@ es_status_codes<ul>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>location</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cameraPosition</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2100,6 +2127,7 @@ es_status_codes<ul>
   <table class="params">
     <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
     <tr><td class="paramname">location</td><td>Switch for the different locations of DAC85689. See enum DAC8568_location in enum.h for details. </td></tr>
+    <tr><td class="paramname">cameraPosition</td><td>This is describing the camera position when there are mumltiple cameras in line. Possible values: 0....8. This parameter is only used when location == DAC8568_camera. </td></tr>
     <tr><td class="paramname">channel</td><td>select one of eight output channel (0 ... 7) </td></tr>
     <tr><td class="paramname">output</td><td>output value that will be converted to analog voltage (0 ... 0xFFFF) </td></tr>
   </table>
@@ -3654,8 +3682,8 @@ with frame rate 8kHz = min. 125µs exp time
 
 </div>
 </div>
-<a id="ad0ca0b761817fb17e480e4e89b218c57" name="ad0ca0b761817fb17e480e4e89b218c57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0ca0b761817fb17e480e4e89b218c57">&#9670;&#160;</a></span>InitCamera3030()</h2>
+<a id="af6ef392d48c3085d096c2bd5f5c2d1b0" name="af6ef392d48c3085d096c2bd5f5c2d1b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6ef392d48c3085d096c2bd5f5c2d1b0">&#9670;&#160;</a></span>InitCamera3030()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3687,7 +3715,7 @@ with frame rate 8kHz = min. 125µs exp time
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramtype">uint32_t **&#160;</td>
           <td class="paramname"><em>dac_output</em>, </td>
         </tr>
         <tr>

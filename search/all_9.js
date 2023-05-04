@@ -4,7 +4,7 @@ var searchData=
   ['initcamera_1',['InitCamera',['../_board_8c.html#ac85d988c47fdbbacdaf516a3d637c37c',1,'Board.c']]],
   ['initcamera3001_2',['InitCamera3001',['../_board_8c.html#add095772f75bd59d2d43c543f64dd5b5',1,'Board.c']]],
   ['initcamera3010_3',['InitCamera3010',['../_board_8c.html#af74dbde4b0f587fa738bdfa8cd1e6ab2',1,'Board.c']]],
-  ['initcamera3030_4',['InitCamera3030',['../_board_8c.html#ad0ca0b761817fb17e480e4e89b218c57',1,'Board.c']]],
+  ['initcamera3030_4',['InitCamera3030',['../_board_8c.html#af6ef392d48c3085d096c2bd5f5c2d1b0',1,'Board.c']]],
   ['initdriver_5',['InitDriver',['../_board_8c.html#ac20307d4499cd244f8b0e04656261e4a',1,'Board.c']]],
   ['initgpx_6',['InitGPX',['../_board_8c.html#a18684ff8c4d7cbfc2a7cb4104249cee2',1,'Board.c']]],
   ['inithrcounter_7',['InitHRCounter',['../_board__ll_8c.html#a94100cee85307b5db9cfb31f36eadd42',1,'Board_ll.c']]],
