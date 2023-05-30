@@ -18,7 +18,7 @@ var searchData=
   ['cam3030_5fadc_5fsetsamplemode_15',['Cam3030_ADC_SetSampleMode',['../_board_8c.html#a495a76af80eb7f30417eb96f0fe290d1',1,'Board.c']]],
   ['cam3030_5fadc_5ftwowiremodeen_16',['Cam3030_ADC_twoWireModeEN',['../_board_8c.html#a67e6926953409c3ac312c7a6f074bc6f',1,'Board.c']]],
   ['camcnt_17',['camcnt',['../structcamera__settings.html#a4738ff8e4057123c2c7136a8ac585bea',1,'camera_settings']]],
-  ['camera_5fsettings_18',['camera_settings',['../structmeasurement__settings.html#ad65c4dc98e4420a70d80fa40c3c1d88e',1,'measurement_settings::camera_settings()'],['../structcamera__settings.html',1,'camera_settings']]],
+  ['camera_5fsettings_18',['camera_settings',['../structmeasurement__settings.html#ad65c4dc98e4420a70d80fa40c3c1d88e',1,'measurement_settings::camera_settings'],['../structcamera__settings.html',1,'camera_settings']]],
   ['camera_5fsystem_19',['camera_system',['../structcamera__settings.html#ab782cf8240d4a3400170ade96a4d11fd',1,'camera_settings']]],
   ['checkdriverhandle_20',['checkDriverHandle',['../_board__ll_8c.html#a8ff452741c66bee1d8560669621389fa',1,'Board_ll.c']]],
   ['checkescapekeystate_21',['checkEscapeKeyState',['../_board__ll_8c.html#a01679920cd63a7360486c1a1b9d70644',1,'Board_ll.c']]],
@@ -30,8 +30,8 @@ var searchData=
   ['clearalluserregs_27',['ClearAllUserRegs',['../_board_8c.html#a232b6673c9b4740eb158f8a360cd8372',1,'Board.c']]],
   ['closefile_28',['closeFile',['../_board__ll_8c.html#a87d849f446e344dc16d127b9fef9e91e',1,'Board_ll.c']]],
   ['closeshutter_29',['CloseShutter',['../_board_8c.html#a30a9ae7641e3cb286aed45def27becef',1,'Board.c']]],
-  ['cont_5fpause_5fin_5fmicroseconds_30',['cont_pause_in_microseconds',['../structmeasurement__settings__matlab.html#acee38bfd8aa2c1160a5eab94601a747a',1,'measurement_settings_matlab::cont_pause_in_microseconds()'],['../structmeasurement__settings.html#a6b38daf0440f5d5ac2609a56f9314e96',1,'measurement_settings::cont_pause_in_microseconds()']]],
-  ['contiuous_5fmeasurement_31',['contiuous_measurement',['../structmeasurement__settings.html#a2536f3ccf75e724e85d4d268ef1cd7c8',1,'measurement_settings::contiuous_measurement()'],['../structmeasurement__settings__matlab.html#a6bce989bcd341c59f2ac7b2c4bcff660',1,'measurement_settings_matlab::contiuous_measurement()']]],
+  ['cont_5fpause_5fin_5fmicroseconds_30',['cont_pause_in_microseconds',['../structmeasurement__settings__matlab.html#acee38bfd8aa2c1160a5eab94601a747a',1,'measurement_settings_matlab::cont_pause_in_microseconds'],['../structmeasurement__settings.html#a6b38daf0440f5d5ac2609a56f9314e96',1,'measurement_settings::cont_pause_in_microseconds']]],
+  ['contiuous_5fmeasurement_31',['contiuous_measurement',['../structmeasurement__settings.html#a2536f3ccf75e724e85d4d268ef1cd7c8',1,'measurement_settings::contiuous_measurement'],['../structmeasurement__settings__matlab.html#a6bce989bcd341c59f2ac7b2c4bcff660',1,'measurement_settings_matlab::contiuous_measurement']]],
   ['copyrestdata_32',['copyRestData',['../_board__ll_8c.html#a19a74d50b17830b71a1ab6d5d726649d',1,'Board_ll.c']]],
   ['countblocksbyhardware_33',['countBlocksByHardware',['../_board_8c.html#a32728c700f4e2059f724cbe5b0dbc018',1,'Board.c']]]
 ];

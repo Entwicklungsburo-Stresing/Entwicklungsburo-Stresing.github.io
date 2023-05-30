@@ -7,7 +7,7 @@ var searchData=
   ['dac_5foutput_4',['dac_output',['../structcamera__settings.html#ae07edd364b59e28459848d9f3f33c0d9',1,'camera_settings']]],
   ['deinit2dviewer_5',['Deinit2dViewer',['../_board__ll_8c.html#ad135e7b2b2218bc4b0f8d23c48dedd19',1,'Board_ll.c']]],
   ['deviceinfo_6',['deviceInfo',['../_board__ll_8c.html#ac0838b4d9733238be143a515e9ef87eb',1,'Board_ll.c']]],
-  ['direct2dviewer_7',['Direct2dViewer',['../_board__ll_8c.html#ac40bdc1357c03d4fb2a969f94127d854',1,'Direct2dViewer():&#160;Board_ll.c'],['../class_direct2d_viewer.html#a7a9bc8a513c180eaab64d8602f9acc37',1,'Direct2dViewer::Direct2dViewer()'],['../class_direct2d_viewer.html',1,'Direct2dViewer']]],
+  ['direct2dviewer_7',['Direct2dViewer',['../_board__ll_8c.html#ac40bdc1357c03d4fb2a969f94127d854',1,'Direct2dViewer:&#160;Board_ll.c'],['../class_direct2d_viewer.html#a7a9bc8a513c180eaab64d8602f9acc37',1,'Direct2dViewer::Direct2dViewer()'],['../class_direct2d_viewer.html',1,'Direct2dViewer']]],
   ['direct2dviewer_2ecpp_8',['Direct2dViewer.cpp',['../_direct2d_viewer_8cpp.html',1,'']]],
   ['direct2dviewer_2eh_9',['Direct2dViewer.h',['../_direct2d_viewer_8h.html',1,'']]],
   ['direct2dviewer_5fc_2ecpp_10',['Direct2dViewer_c.cpp',['../_direct2d_viewer__c_8cpp.html',1,'']]],
