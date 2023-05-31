@@ -27,6 +27,7 @@ var searchData=
   ['clearalluserregs_24',['ClearAllUserRegs',['../_board_8c.html#a232b6673c9b4740eb158f8a360cd8372',1,'Board.c']]],
   ['closefile_25',['closeFile',['../_board__ll_8c.html#a87d849f446e344dc16d127b9fef9e91e',1,'Board_ll.c']]],
   ['closeshutter_26',['CloseShutter',['../_board_8c.html#a30a9ae7641e3cb286aed45def27becef',1,'Board.c']]],
-  ['copyrestdata_27',['copyRestData',['../_board__ll_8c.html#a19a74d50b17830b71a1ab6d5d726649d',1,'Board_ll.c']]],
-  ['countblocksbyhardware_28',['countBlocksByHardware',['../_board_8c.html#a32728c700f4e2059f724cbe5b0dbc018',1,'Board.c']]]
+  ['converterrorcodetomsg_27',['ConvertErrorCodeToMsg',['../es__status__codes_8h.html#a8a8ec78a4c9848d7ee63d93b71a41208',1,'ConvertErrorCodeToMsg(es_status_codes status):&#160;es_status_codes.c'],['../es__status__codes_8c.html#a8a8ec78a4c9848d7ee63d93b71a41208',1,'ConvertErrorCodeToMsg(es_status_codes status):&#160;es_status_codes.c']]],
+  ['copyrestdata_28',['copyRestData',['../_board__ll_8c.html#a19a74d50b17830b71a1ab6d5d726649d',1,'Board_ll.c']]],
+  ['countblocksbyhardware_29',['countBlocksByHardware',['../_board_8c.html#a32728c700f4e2059f724cbe5b0dbc018',1,'Board.c']]]
 ];

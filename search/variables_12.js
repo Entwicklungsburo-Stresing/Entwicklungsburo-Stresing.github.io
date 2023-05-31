@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['use_5fec_0',['use_ec',['../structcamera__settings.html#a57bdf078457a4d9f54e09afedecc21dd',1,'camera_settings']]],
-  ['use_5fsoftware_5fpolling_1',['use_software_polling',['../structcamera__settings.html#a7d6d06fc3f59976df702bfda1e7bc0d1',1,'camera_settings']]]
+  ['temp_5flevel_0',['temp_level',['../structcamera__settings.html#a5949285bc39a601900f8d975444e492d',1,'camera_settings']]],
+  ['ticnt_1',['ticnt',['../structcamera__settings.html#ac12f30ac115c4defea18c2fa26f99040',1,'camera_settings']]],
+  ['tocnt_2',['tocnt',['../structcamera__settings.html#a9d36d06df4f4506a30632260bf6b1939',1,'camera_settings']]],
+  ['tor_3',['tor',['../structcamera__settings.html#ac9a0cd5c6fc15fb192e18d623cffca0d',1,'camera_settings']]],
+  ['tps_4',['TPS',['../_board__ll_8c.html#ab65ac38eb1793dbc218e64f6e5509390',1,'Board_ll.c']]],
+  ['trigger_5fmode_5fcc_5',['trigger_mode_cc',['../structcamera__settings.html#a8970bc7451430f3f980021da1d74f2cd',1,'camera_settings']]]
 ];

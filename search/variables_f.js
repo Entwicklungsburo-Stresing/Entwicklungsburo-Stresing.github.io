@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['region_5fsize_0',['region_size',['../structcamera__settings.html#ae0651b65badf3f724a98858623a93975',1,'camera_settings']]]
+  ['pixel_0',['pixel',['../structcamera__settings.html#ad487b9bad9fa6aca6b18b4742c8ce417',1,'camera_settings']]]
 ];

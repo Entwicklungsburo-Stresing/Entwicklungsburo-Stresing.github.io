@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['mshut_0',['mshut',['../structcamera__settings.html#a2479a72c2b8d6682318520e54b09abfa',1,'camera_settings']]],
-  ['mutexuserbuffer_1',['mutexUserBuffer',['../_board__ll_8c.html#a865f453b860d97ada49b6509ad61bded',1,'Board_ll.c']]]
+  ['led_5foff_0',['led_off',['../structcamera__settings.html#a1b70539f225998b06fe9af05148e6fc3',1,'camera_settings']]],
+  ['lines_5fbinning_1',['lines_binning',['../structcamera__settings.html#a11b33889efd68e6ad8216c48d2941a8e',1,'camera_settings']]]
 ];
