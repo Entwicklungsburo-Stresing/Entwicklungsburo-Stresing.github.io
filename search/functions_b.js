@@ -25,7 +25,7 @@ var searchData=
   ['resetmeasureon_22',['resetMeasureOn',['../_board_8c.html#a481357723bd6f73de879673d312f59df',1,'Board.c']]],
   ['resetpartialbinning_23',['ResetPartialBinning',['../_board_8c.html#afde3a168a54c3dada091d8edfa07352c',1,'Board.c']]],
   ['resetpriority_24',['ResetPriority',['../_board__ll_8c.html#a6d1fe7b2ee38ccba3c5cd1c4577fb857',1,'Board_ll.c']]],
-  ['returnframe_25',['ReturnFrame',['../_board_8c.html#a60d1c4d50bb1697d9a402c90f8a31122',1,'Board.c']]],
+  ['returnframe_25',['ReturnFrame',['../_board_8c.html#a3e6150945ca37b27bff3be2d754d1975',1,'Board.c']]],
   ['returnstartmeasurement_26',['ReturnStartMeasurement',['../_board_8c.html#a85504654d0abecbf9b6089ab6d096ab6',1,'Board.c']]],
   ['rsfifo_27',['RSFifo',['../_board_8c.html#a9a79acf143b23e30fe78edf7ba89474e',1,'Board.c']]]
 ];

@@ -250,7 +250,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:aed5e5784a3ea7ef0bd77ad0191d823ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set DMA register.  <br /></td></tr>
 <tr class="separator:aed5e5784a3ea7ef0bd77ad0191d823ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30a9ae7641e3cb286aed45def27becef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a30a9ae7641e3cb286aed45def27becef">CloseShutter</a> (uint32_t drvno)</td></tr>
-<tr class="memdesc:a30a9ae7641e3cb286aed45def27becef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the IFC Bit of Interface for sensors with shutter function. IFC=low.  <br /></td></tr>
+<tr class="memdesc:a30a9ae7641e3cb286aed45def27becef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the IFC bit of interface for sensors with shutter function. IFC=low.  <br /></td></tr>
 <tr class="separator:a30a9ae7641e3cb286aed45def27becef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac567799641070ea0cffe5373cc528269"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#ac567799641070ea0cffe5373cc528269">SetSEC</a> (uint32_t drvno, uint32_t ecin10ns)</td></tr>
 <tr class="memdesc:ac567799641070ea0cffe5373cc528269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exposure control (EC) signal is used for mechanical shutter or sensors with EC function.  <br /></td></tr>
@@ -358,7 +358,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a0d9acc2eff67745f7a2ddf4e3d4422f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends data to DAC8568.  <br /></td></tr>
 <tr class="separator:a0d9acc2eff67745f7a2ddf4e3d4422f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f07ae4608067b92a1e4287d2572a24a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a0f07ae4608067b92a1e4287d2572a24a">DAC8568_setAllOutputs</a> (uint32_t drvno, uint8_t location, uint8_t cameraPosition, uint32_t *output, bool reorder_channels)</td></tr>
-<tr class="memdesc:a0f07ae4608067b92a1e4287d2572a24a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all outputs of the DAC8568 on PCB 2189-7.  <br /></td></tr>
+<tr class="memdesc:a0f07ae4608067b92a1e4287d2572a24a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all outputs of the DAC8568 in camera 3030 or on PCIe board.  <br /></td></tr>
 <tr class="separator:a0f07ae4608067b92a1e4287d2572a24a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f1c1756ae204a3f7166dbc0040dfb9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a1f1c1756ae204a3f7166dbc0040dfb9a">DAC8568_setOutput</a> (uint32_t drvno, uint8_t location, uint8_t cameraPosition, uint8_t channel, uint16_t output)</td></tr>
 <tr class="memdesc:a1f1c1756ae204a3f7166dbc0040dfb9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the output of the DAC8568 on PCB 2189-7.  <br /></td></tr>
@@ -442,11 +442,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:ac20307d4499cd244f8b0e04656261e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the driver.  <br /></td></tr>
 <tr class="separator:ac20307d4499cd244f8b0e04656261e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac82bfa2c1dada573145ec331d493cd92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#ac82bfa2c1dada573145ec331d493cd92">ExitDriver</a> ()</td></tr>
-<tr class="memdesc:ac82bfa2c1dada573145ec331d493cd92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit driver.  <br /></td></tr>
+<tr class="memdesc:ac82bfa2c1dada573145ec331d493cd92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit driver. Call this before exiting software for cleanup.  <br /></td></tr>
 <tr class="separator:ac82bfa2c1dada573145ec331d493cd92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60d1c4d50bb1697d9a402c90f8a31122"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a60d1c4d50bb1697d9a402c90f8a31122">ReturnFrame</a> (uint32_t drvno, uint32_t sample, uint32_t block, uint16_t camera, uint16_t *pdest, uint32_t pixel)</td></tr>
-<tr class="memdesc:a60d1c4d50bb1697d9a402c90f8a31122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get data of a single measurement.  <br /></td></tr>
-<tr class="separator:a60d1c4d50bb1697d9a402c90f8a31122"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e6150945ca37b27bff3be2d754d1975"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a3e6150945ca37b27bff3be2d754d1975">ReturnFrame</a> (uint32_t drvno, uint32_t sample, uint32_t block, uint16_t camera, uint32_t pixel, uint16_t *pdest)</td></tr>
+<tr class="memdesc:a3e6150945ca37b27bff3be2d754d1975"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get data of a single measurement.  <br /></td></tr>
+<tr class="separator:a3e6150945ca37b27bff3be2d754d1975"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e1f3b14daba680086195e0c8a3b70a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a3e1f3b14daba680086195e0c8a3b70a4">GetIndexOfPixel</a> (uint32_t drvno, uint16_t pixel, uint32_t sample, uint32_t block, uint16_t camera, uint64_t *pIndex)</td></tr>
 <tr class="memdesc:a3e1f3b14daba680086195e0c8a3b70a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of a pixel located in userBuffer.  <br /></td></tr>
 <tr class="separator:a3e1f3b14daba680086195e0c8a3b70a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -460,7 +460,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a9e45a4be942db4f4480b7f0322586417"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate needed RAM in MB for given nos and nob.  <br /></td></tr>
 <tr class="separator:a9e45a4be942db4f4480b7f0322586417"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72a4a5406e212b386ef75e3167d3e763"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a72a4a5406e212b386ef75e3167d3e763">CalcTrms</a> (uint32_t drvno, uint32_t firstSample, uint32_t lastSample, uint32_t TRMS_pixel, uint16_t CAMpos, double *mwf, double *trms)</td></tr>
-<tr class="memdesc:a72a4a5406e212b386ef75e3167d3e763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Online calculate TRMS noise val of pix.  <br /></td></tr>
+<tr class="memdesc:a72a4a5406e212b386ef75e3167d3e763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate TRMS noise value of one pixel.  <br /></td></tr>
 <tr class="separator:a72a4a5406e212b386ef75e3167d3e763"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7636b1f74550d192bce6206bbd22a0e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a7636b1f74550d192bce6206bbd22a0e1">GetRmsVal</a> (uint32_t nos, uint16_t *TRMSVals, double *mwf, double *trms)</td></tr>
 <tr class="separator:a7636b1f74550d192bce6206bbd22a0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -546,10 +546,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:a6d992a63422fa1d74ad5f302204ffe6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function copies valid data from DMA buffer to user buffer.  <br /></td></tr>
 <tr class="separator:a6d992a63422fa1d74ad5f302204ffe6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a263e1e188e75bac4db2f16c27cd00443"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a263e1e188e75bac4db2f16c27cd00443">GetCurrentScanNumber</a> (uint32_t drvno, int64_t *sample, int64_t *block)</td></tr>
-<tr class="memdesc:a263e1e188e75bac4db2f16c27cd00443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives scan and block number of the last scan written to userBuffer.    <br /></td></tr>
+<tr class="memdesc:a263e1e188e75bac4db2f16c27cd00443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives scan and block number of the last scan written to userBuffer.  <br /></td></tr>
 <tr class="separator:a263e1e188e75bac4db2f16c27cd00443"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e6019475c067ef679e5837a87b31938"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a2e6019475c067ef679e5837a87b31938">GetScanNumber</a> (uint32_t drvno, int64_t offset, int64_t *sample, int64_t *block)</td></tr>
-<tr class="memdesc:a2e6019475c067ef679e5837a87b31938"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives scan and block number of the last scan written to userBuffer.  <br /></td></tr>
+<tr class="memdesc:a2e6019475c067ef679e5837a87b31938"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives scan and block number of the last scan written to userBuffer.    <br /></td></tr>
 <tr class="separator:a2e6019475c067ef679e5837a87b31938"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9e88198ce10067262558831782d3952"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#ad9e88198ce10067262558831782d3952">SetTicnt</a> (uint32_t drvno, uint8_t divider)</td></tr>
 <tr class="memdesc:ad9e88198ce10067262558831782d3952"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the trigger input divider.  <br /></td></tr>
@@ -569,6 +569,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a1e5bc7c3e755d854464c7448cd596687"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a1e5bc7c3e755d854464c7448cd596687">GetVerifiedDataDialog</a> (struct verify_data_parameter *vd, char **resultString)</td></tr>
 <tr class="separator:a1e5bc7c3e755d854464c7448cd596687"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb8d7f2eb58a969aed5630b6e5732a12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#abb8d7f2eb58a969aed5630b6e5732a12">SetContinuousMeasurement</a> (bool on)</td></tr>
+<tr class="memdesc:abb8d7f2eb58a969aed5630b6e5732a12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control looping the measurement.  <br /></td></tr>
 <tr class="separator:abb8d7f2eb58a969aed5630b6e5732a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a165104ce85ff0726d47b9f0acf383c08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a165104ce85ff0726d47b9f0acf383c08">GetCameraStatusOverTemp</a> (uint32_t drvno, uint32_t sample, uint32_t block, uint16_t camera_pos, bool *overTemp)</td></tr>
 <tr class="memdesc:a165104ce85ff0726d47b9f0acf383c08"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the bit overTemp of a specific scan.  <br /></td></tr>
@@ -701,7 +702,7 @@ Functions</h2></td></tr>
 <li>win4 : vendor ID = EBST</li>
 <li>win5 : PCI board version (same as label on PCI board) <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">stringPtr</td><td>string with driver information is given back here </td></tr>
   </table>
   </dd>
@@ -748,7 +749,7 @@ Functions</h2></td></tr>
 <p>Reads registers 0 to 12 of TDC-GPX chip. Time delay counter option. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">stringPtr</td><td></td></tr>
   </table>
   </dd>
@@ -839,7 +840,7 @@ Functions</h2></td></tr>
 <p>Allocate user memory.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -991,10 +992,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Online calculate TRMS noise val of pix. </p>
+<p>Calculate TRMS noise value of one pixel. </p>
 <p>Calculates RMS of TRMS_pixel in the range of samples from firstSample to lastSample. Only calculates RMS from one block. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">firstSample</td><td>start sample to calculate RMS. 0...(nos-2). Typical value: 10, to skip overexposed first samples </td></tr>
     <tr><td class="paramname">lastSample</td><td>last sample to calculate RMS. firstSample+1...(nos-1). </td></tr>
     <tr><td class="paramname">TRMS_pixel</td><td>pixel for calculating noise (0...(PIXEL-1)) </td></tr>
@@ -1553,7 +1554,7 @@ Called by InitCamera3030
 <p>Set the IFC mode of camera 3030. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">ifc_mode</td><td>See cam_adaddr_ifc_mode of enum cam_addresses in <a class="el" href="enum_8h.html">enum.h</a> for details. </td></tr>
   </table>
   </dd>
@@ -1731,7 +1732,7 @@ or use on e-lab test computer desktop LabView folder lv64hs (bool switch in 3030
 <p>Checks content of FIFO. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">valid</td><td>Is true (not 0) if FIFO keeps &gt;= 1 complete lines (linecounter&gt;0). </td></tr>
   </table>
   </dd>
@@ -1773,7 +1774,7 @@ or use on e-lab test computer desktop LabView folder lv64hs (bool switch in 3030
 <p>Check ovl flag (overflow of FIFO). </p>
 <p>If occurred stays active until a call of FFRS. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">overflow</td><td></td></tr>
   </table>
   </dd>
@@ -1807,7 +1808,7 @@ es_status_codes<ul>
 <p>Clears DAT and EC. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -1835,10 +1836,10 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the IFC Bit of Interface for sensors with shutter function. IFC=low. </p>
+<p>Sets the IFC bit of interface for sensors with shutter function. IFC=low. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -1870,7 +1871,7 @@ es_status_codes<ul>
 <p>Sends signal to hardware to count blocks. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -1918,7 +1919,7 @@ es_status_codes<ul>
 <p>Enable the internal reference in static mode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">location</td><td>Switch for the different locations of DAC85689. See enum DAC8568_location in <a class="el" href="enum_8h.html">enum.h</a> for details. </td></tr>
     <tr><td class="paramname">cameraPosition</td><td>This is describing the camera position when there are mumltiple cameras in line. Possible values: 0....8. This parameter is only used when location == DAC8568_camera. </td></tr>
   </table>
@@ -1993,7 +1994,7 @@ es_status_codes<ul>
 <p>Mapping of bits in DAC8568: 4 prefix, 4 control, 4 address, 16 data, 4 feature.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">location</td><td>Switch for the different locations of DAC85689. See enum DAC8568_location in <a class="el" href="enum_8h.html">enum.h</a> for details. </td></tr>
     <tr><td class="paramname">cameraPosition</td><td>This is describing the camera position when there are mumltiple cameras in line. Possible values: 0....8. This parameter is only used when location == DAC8568_camera. </td></tr>
     <tr><td class="paramname">ctrlBits</td><td>4 control bits </td></tr>
@@ -2058,11 +2059,11 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Sets all outputs of the DAC8568 on PCB 2189-7. </p>
+<p>Sets all outputs of the DAC8568 in camera 3030 or on PCIe board. </p>
 <p>Use this function to set the outputs, because it is resorting the channel numeration correctly. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
-    <tr><td class="paramname">location</td><td>Switch for the different locations of DAC85689. See enum DAC8568_location in <a class="el" href="enum_8h.html">enum.h</a> for details. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">location</td><td>Switch for the different locations of DAC85689. See <a class="el" href="enum_8h.html#a111696cd9ed6a9809d06ce828bd4e4d0">enum DAC8568_location</a> in <a class="el" href="enum_8h.html">enum.h</a> for details. </td></tr>
     <tr><td class="paramname">cameraPosition</td><td>This is describing the camera position when there are mumltiple cameras in line. Possible values: 0....8. This parameter is only used when location == DAC8568_camera. </td></tr>
     <tr><td class="paramname">output</td><td>all output values that will be converted to analog voltage (0 ... 0xFFFF) </td></tr>
     <tr><td class="paramname">reorder_channels</td><td>used to reorder DAC channels for high speed camera </td></tr>
@@ -2125,7 +2126,7 @@ es_status_codes<ul>
 <p>Sets the output of the DAC8568 on PCB 2189-7. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">location</td><td>Switch for the different locations of DAC85689. See enum DAC8568_location in <a class="el" href="enum_8h.html">enum.h</a> for details. </td></tr>
     <tr><td class="paramname">cameraPosition</td><td>This is describing the camera position when there are mumltiple cameras in line. Possible values: 0....8. This parameter is only used when location == DAC8568_camera. </td></tr>
     <tr><td class="paramname">channel</td><td>select one of eight output channel (0 ... 7) </td></tr>
@@ -2161,7 +2162,7 @@ es_status_codes<ul>
 <p>Triggers one camera read by calling this function. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -2359,7 +2360,7 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Exit driver. </p>
+<p>Exit driver. Call this before exiting software for cleanup. </p>
 <dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
 <li>es_invalid_driver_number</li>
 <li>es_invalid_driver_handle</li>
@@ -2388,10 +2389,9 @@ es_status_codes<ul>
 </div><div class="memdoc">
 
 <p>This function inserts data to user buffer for developing purpose. </p>
-<p>This function is used in escam when no camera is connected.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -2417,7 +2417,7 @@ es_status_codes<ul>
 <p>Test if SFP module is there and fiber is linked up. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -2485,7 +2485,7 @@ es_status_codes<ul>
 <p>Returns the address of a pixel located in userBuffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">pixel</td><td>position in one scan (0...(PIXEL-1)) </td></tr>
     <tr><td class="paramname">sample</td><td>position in samples (0...(nos-1)) </td></tr>
     <tr><td class="paramname">block</td><td>position in blocks (0...(nob-1)) </td></tr>
@@ -2550,11 +2550,11 @@ es_status_codes<ul>
 <p>The information impact signal 2 is given in the special pixels pixel_impact_signal_2_low and pixel_impact_signal_2_high. Impact signal 2 is either TDC 2 or DSC 2, depending on the PCIe daughter board.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sample</td><td>sample number (0 ... (nos-1)) </td></tr>
     <tr><td class="paramname">block</td><td>block number (0 ... (nob-1)) </td></tr>
     <tr><td class="paramname">camera_pos</td><td>camera position (0 ... (CAMCNT-1)) </td></tr>
-    <tr><td class="paramname">sp</td><td>struct special_pixels Pointer to struct special_pixel, where the all special pixel information will be written. </td></tr>
+    <tr><td class="paramname">sp</td><td>struct special_pixels Pointer to struct special_pixel, where all special pixel information will be written. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2616,7 +2616,7 @@ es_status_codes<ul>
 <p>The information block index is given in the special pixels pixel_block_index_low and pixel_block_index_high_s1_s2.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sample</td><td>sample number (0 ... (nos-1)) </td></tr>
     <tr><td class="paramname">block</td><td>block number (0 ... (nob-1)) </td></tr>
     <tr><td class="paramname">camera_pos</td><td>camera position (0 ... (CAMCNT-1)) </td></tr>
@@ -2682,7 +2682,7 @@ es_status_codes<ul>
 <p>The information over temperature is given in the special pixel camera status (pixel_camera_status) in bit pixel_camera_status_bit_over_temp.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sample</td><td>sample number (0 ... (nos-1)) </td></tr>
     <tr><td class="paramname">block</td><td>block number (0 ... (nob-1)) </td></tr>
     <tr><td class="paramname">camera_pos</td><td>camera position (0 ... (CAMCNT-1)) </td></tr>
@@ -2748,7 +2748,7 @@ es_status_codes<ul>
 <p>The information temperature good is given in the special pixel camera status (pixel_camera_status) in bit pixel_camera_status_bit_temp_good. This bit is used only in cooled cameras.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sample</td><td>sample number (0 ... (nos-1)) </td></tr>
     <tr><td class="paramname">block</td><td>block number (0 ... (nob-1)) </td></tr>
     <tr><td class="paramname">camera_pos</td><td>camera position (0 ... (CAMCNT-1)) </td></tr>
@@ -2798,14 +2798,13 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Gives scan and block number of the last scan written to userBuffer.   </p>
-<p>When USE_SOFTWARE_POLLING is true this function converts scanCounterTotal to scan and block. This is necessary, because scanCounterTotal is just counting each scan not regarding camcnt and blocks. When USE_SOFTWARE_POLLING is false the scan and block number of the last interrupt is given.</p>
+<p>Gives scan and block number of the last scan written to userBuffer. </p>
+<p>When settings parameter USE_SOFTWARE_POLLING is true this function converts scanCounterTotal to scan and block. This is necessary, because scanCounterTotal is just counting each scan not regarding camcnt and blocks. When USE_SOFTWARE_POLLING is false the scan and block number of the last interrupt is given.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
-    <tr><td class="paramname">offset</td><td>from current scan number </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sample</td><td>Scan number of the last scan in userBuffer. -1 when no scan has been written yet, otherwise 0...(nos-1) </td></tr>
-    <tr><td class="paramname">block</td><td>Block number of the last scan in userBuffer. -1 when no scans has been written yet, otherwise 0...(nob-1)   </td></tr>
+    <tr><td class="paramname">block</td><td>Block number of the last scan in userBuffer. -1 when no scans has been written yet, otherwise 0...(nob-1) </td></tr>
   </table>
   </dd>
 </dl>
@@ -2853,9 +2852,9 @@ es_status_codes<ul>
 <p>return all values of Delay Stage Counter </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">DSCNumber</td><td>1: DSC 1; 2: DSC 2 </td></tr>
-    <tr><td class="paramname">ADSC</td><td>actual DSC </td></tr>
+    <tr><td class="paramname">ADSC</td><td>current DSC </td></tr>
     <tr><td class="paramname">LDSC</td><td>last DSC </td></tr>
   </table>
   </dd>
@@ -2912,7 +2911,7 @@ es_status_codes<ul>
 <p>The information impact signal 1 is given in the special pixels pixel_impact_signal_1_low and pixel_impact_signal_1_high. Impact signal 1 is either TDC 1 or DSC 1, depending on the PCIe daughter board.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sample</td><td>sample number (0 ... (nos-1)) </td></tr>
     <tr><td class="paramname">block</td><td>block number (0 ... (nob-1)) </td></tr>
     <tr><td class="paramname">camera_pos</td><td>camera position (0 ... (CAMCNT-1)) </td></tr>
@@ -2978,7 +2977,7 @@ es_status_codes<ul>
 <p>The information impact signal 2 is given in the special pixels pixel_impact_signal_2_low and pixel_impact_signal_2_high. Impact signal 2 is either TDC 2 or DSC 2, depending on the PCIe daughter board.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sample</td><td>sample number (0 ... (nos-1)) </td></tr>
     <tr><td class="paramname">block</td><td>block number (0 ... (nob-1)) </td></tr>
     <tr><td class="paramname">camera_pos</td><td>camera position (0 ... (CAMCNT-1)) </td></tr>
@@ -3049,7 +3048,7 @@ es_status_codes<ul>
 <p>Returns the index of a pixel located in userBuffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">pixel</td><td>position in one scan (0...(PIXEL-1)) </td></tr>
     <tr><td class="paramname">sample</td><td>position in samples (0...(nos-1)) </td></tr>
     <tr><td class="paramname">block</td><td>position in blocks (0...(nob-1)) </td></tr>
@@ -3095,7 +3094,7 @@ es_status_codes<ul>
 <p>Read DSC flag in PCIEFLAGS register. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">isDsc</td><td>DSC flag is written to this bool*. TRUE: DSC board detected, FALSE: no DSC board detected </td></tr>
   </table>
   </dd>
@@ -3137,7 +3136,7 @@ es_status_codes<ul>
 <p>Read TDC flag in PCIEFLAGS register. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">isTdc</td><td>TDC flag is written to this bool*. TRUE: TDC board detected, FALSE: no TDC board detected </td></tr>
   </table>
   </dd>
@@ -3169,7 +3168,7 @@ es_status_codes<ul>
 <p>For the rest part of the buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -3309,7 +3308,7 @@ es_status_codes<ul>
 <p>The information S1 is given in the special pixel pixel_block_index_high_s1_s2 in bit pixel_block_index_high_s1_s2_bit_s1.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sample</td><td>sample number (0 ... (nos-1)) </td></tr>
     <tr><td class="paramname">block</td><td>block number (0 ... (nob-1)) </td></tr>
     <tr><td class="paramname">camera_pos</td><td>camera position (0 ... (CAMCNT-1)) </td></tr>
@@ -3375,7 +3374,7 @@ es_status_codes<ul>
 <p>The information S2 is given in the special pixel pixel_block_index_high_s1_s2 in bit pixel_block_index_high_s1_s2_bit_s2.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sample</td><td>sample number (0 ... (nos-1)) </td></tr>
     <tr><td class="paramname">block</td><td>block number (0 ... (nob-1)) </td></tr>
     <tr><td class="paramname">camera_pos</td><td>camera position (0 ... (CAMCNT-1)) </td></tr>
@@ -3441,7 +3440,7 @@ es_status_codes<ul>
 <p>The information block index is given in the special pixels pixel_scan_index_low and pixel_scan_index_high.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sample</td><td>sample number (0 ... (nos-1)) </td></tr>
     <tr><td class="paramname">block</td><td>block number (0 ... (nob-1)) </td></tr>
     <tr><td class="paramname">camera_pos</td><td>camera position (0 ... (CAMCNT-1)) </td></tr>
@@ -3497,14 +3496,14 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Gives scan and block number of the last scan written to userBuffer. </p>
-<p>When USE_SOFTWARE_POLLING is true this function converts scanCounterTotal to scan and block. This is necessary, because scanCounterTotal is just counting each scan not regarding camcnt and blocks. When USE_SOFTWARE_POLLING is false the scan and block number of the last interrupt is given.</p>
+<p>Gives scan and block number of the last scan written to userBuffer.   </p>
+<p>When settings parameter USE_SOFTWARE_POLLING is true this function converts scanCounterTotal to scan and block. This is necessary, because scanCounterTotal is just counting each scan not regarding camcnt and blocks. When USE_SOFTWARE_POLLING is false the scan and block number of the last interrupt is given.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
-    <tr><td class="paramname">offset</td><td>from current scan number </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sample</td><td>Scan number of the last scan in userBuffer. -1 when no scan has been written yet, otherwise 0...(nos-1) </td></tr>
-    <tr><td class="paramname">block</td><td>Block number of the last scan in userBuffer. -1 when no scans has been written yet, otherwise 0...(nob-1) </td></tr>
+    <tr><td class="paramname">block</td><td>Block number of the last scan in userBuffer. -1 when no scans has been written yet, otherwise 0...(nob-1)   </td></tr>
+    <tr><td class="paramname">offset</td><td>from current scan number </td></tr>
   </table>
   </dd>
 </dl>
@@ -3584,7 +3583,7 @@ es_status_codes<ul>
 <p>Initialize camera registers. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -3811,7 +3810,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Initialize the TDC-GPX chip. TDC: time delay counter option. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">delay</td><td>GPX offset is used to increase accuracy. A counter value can be added, usually 1000. </td></tr>
   </table>
   </dd>
@@ -3929,7 +3928,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Set parameters of all pulses output of IOCTRL. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">width_in_5ns</td><td>Set width of pulse in 5ns steps. Array with 7 entries. </td></tr>
     <tr><td class="paramname">delay_in_5ns</td><td>Set delay of pulse in 5ns steps. Array with 7 entries. </td></tr>
   </table>
@@ -3973,7 +3972,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Set the pixel where IOCtrl starts inserting its data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">startPixel</td><td>Position of IOCtrl data in pixel </td></tr>
   </table>
   </dd>
@@ -4029,7 +4028,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Set paramters of one pulse output of IOCTRL. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">number</td><td>Number of output: 1 ... 7 </td></tr>
     <tr><td class="paramname">width_in_5ns</td><td>Set width of pulse in 5ns steps. </td></tr>
     <tr><td class="paramname">delay_in_5ns</td><td>Set delay of pulse in 5ns steps. </td></tr>
@@ -4076,7 +4075,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Set period of IOCtrl pulse outputs base frequency T0. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">period_in_10ns</td><td>Period of T0 in 10ns steps. </td></tr>
   </table>
   </dd>
@@ -4120,16 +4119,14 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Check if blockon bit is set. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">blockOn</td><td>True when blockon bit is set. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error<ul>
+<li>es_no_error</li>
 <li>es_register_read_failed </li>
-</ul>
-</li>
 </ul>
 </dd></dl>
 
@@ -4164,16 +4161,14 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Check if measure on bit is set. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">measureOn</td><td>True when measureon bit is set. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error<ul>
+<li>es_no_error</li>
 <li>es_register_read_failed </li>
-</ul>
-</li>
 </ul>
 </dd></dl>
 
@@ -4208,7 +4203,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Checks if timer is active (Bit30 of XCK-Reg). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">on</td><td></td></tr>
   </table>
   </dd>
@@ -4287,7 +4282,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Open shutter for sensors with EC (exposure control) / sets IFC signal = high. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -4317,13 +4312,13 @@ with frame rate 8kHz = min. 125µs exp time
 </div><div class="memdoc">
 
 <p>Set trigger out(Reg CtrlA:D3) of PCIe board. Can be used to control timing issues in software. </p>
-<p>The Reg TOR:D31 must have been set to 1 and D30:D27 to zero to see the signal -&gt; see manual. Functions is not optimized for 2 cams. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The Reg TOR:D31 must have been set to 1 and D30:D27 to zero to see the signal -&gt; see manual. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes<ul>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
 <li>es_no_error</li>
 <li>es_register_read_failed</li>
 <li>es_register_write_failed </li>
@@ -4349,14 +4344,16 @@ with frame rate 8kHz = min. 125µs exp time
 </div><div class="memdoc">
 
 <p>Reset trigger out(Reg CtrlA:D3) of PCI board. Can be used to control timing issues in software. </p>
-<p>The Reg TOR:D31 must have been set to 1 and D30:D27 to zero to see the signal -&gt; see manual. Functions is not optimized for 2 cams. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The Reg TOR:D31 must have been set to 1 and D30:D27 to zero to see the signal -&gt; see manual. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error </li>
+<li>es_no_error</li>
+<li>es_register_read_failed</li>
+<li>es_register_write_failed </li>
 </ul>
 </dd></dl>
 
@@ -4391,12 +4388,12 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Pulses trigger out(Reg CtrlA:D3) of PCI board. Can be used to control timing issues in software. </p>
 <p>The Reg TOR:D31 must have been set to 1 and D30:D27 to zero to see the signal -&gt; see manual </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">PulseWidth</td><td>duration of pulse in ms </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes<ul>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
 <li>es_no_error</li>
 <li>es_register_read_failed</li>
 <li>es_register_write_failed </li>
@@ -4585,7 +4582,7 @@ with frame rate 8kHz = min. 125µs exp time
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes<ul>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
 <li>es_no_error</li>
 <li>es_register_read_failed </li>
 </ul>
@@ -4727,7 +4724,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Read 4 bytes of a register in DMA space. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">data</td><td>Read buffer. </td></tr>
     <tr><td class="paramname">address</td><td>Address of the register to read. </td></tr>
   </table>
@@ -4776,7 +4773,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Read 1 byte of a register in DMA space. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">data</td><td>Read buffer. </td></tr>
     <tr><td class="paramname">address</td><td>Address of the register to read. </td></tr>
   </table>
@@ -4825,7 +4822,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Read 2 bytes of a register in S0 space. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">data</td><td>Read buffer. </td></tr>
     <tr><td class="paramname">address</td><td>Address of the register to read. </td></tr>
   </table>
@@ -4874,7 +4871,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Read 4 bytes of a register in S0 space. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">data</td><td>Read buffer. </td></tr>
     <tr><td class="paramname">address</td><td>Address of the register to read. </td></tr>
   </table>
@@ -4972,7 +4969,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Read 1 byte of a register in S0 space. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">data</td><td>Read buffer. </td></tr>
     <tr><td class="paramname">address</td><td>Address of the register to read. </td></tr>
   </table>
@@ -5029,10 +5026,8 @@ with frame rate 8kHz = min. 125µs exp time
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
 <li>es_no_error</li>
-<li>es_register_read_failed<ul>
+<li>es_register_read_failed</li>
 <li>es_register_write_failed </li>
-</ul>
-</li>
 </ul>
 </dd></dl>
 
@@ -5081,10 +5076,8 @@ with frame rate 8kHz = min. 125µs exp time
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
 <li>es_no_error</li>
-<li>es_register_read_failed<ul>
+<li>es_register_read_failed</li>
 <li>es_register_write_failed </li>
-</ul>
-</li>
 </ul>
 </dd></dl>
 
@@ -5133,10 +5126,8 @@ with frame rate 8kHz = min. 125µs exp time
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
 <li>es_no_error</li>
-<li>es_register_read_failed<ul>
+<li>es_register_read_failed</li>
 <li>es_register_write_failed </li>
-</ul>
-</li>
 </ul>
 </dd></dl>
 
@@ -5161,7 +5152,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Resets BlockOn bit in PCIEFLAGS and notifies UI about it. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -5191,7 +5182,7 @@ with frame rate 8kHz = min. 125µs exp time
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board). </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0. </td></tr>
   </table>
   </dd>
 </dl>
@@ -5233,7 +5224,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>reset Delay Stage Counter </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">DSCNumber</td><td>1: DSC 1; 2: DSC 2 </td></tr>
   </table>
   </dd>
@@ -5295,7 +5286,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Resets setMeasureOn bit in PCIEFLAGS and notifies UI about it. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -5327,7 +5318,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Turns ARREG off and therefore partial binning too. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -5342,8 +5333,8 @@ with frame rate 8kHz = min. 125µs exp time
 
 </div>
 </div>
-<a id="a60d1c4d50bb1697d9a402c90f8a31122" name="a60d1c4d50bb1697d9a402c90f8a31122"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60d1c4d50bb1697d9a402c90f8a31122">&#9670;&#160;</a></span>ReturnFrame()</h2>
+<a id="a3e6150945ca37b27bff3be2d754d1975" name="a3e6150945ca37b27bff3be2d754d1975"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e6150945ca37b27bff3be2d754d1975">&#9670;&#160;</a></span>ReturnFrame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5375,14 +5366,14 @@ with frame rate 8kHz = min. 125µs exp time
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t *&#160;</td>
-          <td class="paramname"><em>pdest</em>, </td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>pixel</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>pixel</em>&#160;</td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>pdest</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -5395,7 +5386,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Get data of a single measurement. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sample</td><td>sample number ( 0...(nos - 1) ) </td></tr>
     <tr><td class="paramname">block</td><td>block number ( 0...(nob - 1) ) </td></tr>
     <tr><td class="paramname">camera</td><td>camera number ( 0...(CAMCNT - 1) ) </td></tr>
@@ -5460,7 +5451,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>reset FIFO and FFcounter </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -5521,7 +5512,7 @@ with frame rate 8kHz = min. 125µs exp time
 <li>all written to DB0 in Space0 = Long0</li>
 <li>for AD set maddr=01, adaddr address of reg <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">maddr</td><td>master address for specifying device (2 for ADC) </td></tr>
     <tr><td class="paramname">adaddr</td><td>register address </td></tr>
     <tr><td class="paramname">data</td><td>data </td></tr>
@@ -5618,7 +5609,7 @@ with frame rate 8kHz = min. 125µs exp time
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fkt</td><td>=0 reset to db=0, fkt=1 set to g1..g8 </td></tr>
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">g1</td><td>channel 1 </td></tr>
     <tr><td class="paramname">g2</td><td>channel 2 </td></tr>
     <tr><td class="paramname">g3</td><td>channel 3 </td></tr>
@@ -5687,7 +5678,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Sets delay after trigger hardware register. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">datin10ns</td><td>Time in 10 ns steps. </td></tr>
   </table>
   </dd>
@@ -5729,7 +5720,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Exposure control (EC) signal is used for mechanical shutter or sensors with EC function. </p>
 <p>Starts after delay after trigger (DAT) signal and is active for ecin10ns. Resets additional delay after trigger with ecin10ns = 0. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">ecin10ns</td><td>Time in 10 ns steps. </td></tr>
   </table>
   </dd>
@@ -5787,10 +5778,8 @@ with frame rate 8kHz = min. 125µs exp time
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
 <li>es_no_error</li>
-<li>es_register_read_failed<ul>
+<li>es_register_read_failed</li>
 <li>es_register_write_failed </li>
-</ul>
-</li>
 </ul>
 </dd></dl>
 
@@ -5839,10 +5828,8 @@ with frame rate 8kHz = min. 125µs exp time
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
 <li>es_no_error</li>
-<li>es_register_read_failed<ul>
+<li>es_register_read_failed</li>
 <li>es_register_write_failed </li>
-</ul>
-</li>
 </ul>
 </dd></dl>
 
@@ -5891,10 +5878,8 @@ with frame rate 8kHz = min. 125µs exp time
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
 <li>es_no_error</li>
-<li>es_register_read_failed<ul>
+<li>es_register_read_failed</li>
 <li>es_register_write_failed </li>
-</ul>
-</li>
 </ul>
 </dd></dl>
 
@@ -5919,7 +5904,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Sets BlockOn bit in PCIEFLAGS and notifies UI about it. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -5961,7 +5946,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Sets slope for block trigger. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">slope</td><td><ul>
 <li>0: negative slope</li>
 <li>1: positive slope</li>
@@ -6008,7 +5993,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Chooses trigger input for block trigger input (BTI) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">bti_mode</td><td>Defines the input mode for BTI.<ul>
 <li>0: I</li>
 <li>1: S1</li>
@@ -6063,7 +6048,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Sets time for block timer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">btime_in_microseconds</td><td>Block time in microseconds. </td></tr>
   </table>
   </dd>
@@ -6095,7 +6080,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Set cam count. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -6130,7 +6115,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>When there are more cameras in line, the cameras are handing their positions one to another.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -6159,6 +6144,14 @@ with frame rate 8kHz = min. 125µs exp time
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Control looping the measurement. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">on</td><td>1: measurement runs in a loop, 0: measurement only runs once. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -6197,7 +6190,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>set direction of Delay Stage Counter </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">DSCNumber</td><td>1: DSC 1; 2: DSC 2 </td></tr>
     <tr><td class="paramname">dir</td><td>true: up; false: down </td></tr>
   </table>
@@ -6226,7 +6219,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Set DMA register. </p>
 <p>Sets DMA_BUFFER_SIZE_IN_SCANS, DMA_DMASPERINTR, NOS, NOB, CAMCNT </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -6308,7 +6301,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Set DMA Start Mode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">start_by_hardware</td><td>true: every XCK h-&gt;l starts DMA by hardware, false: by software </td></tr>
   </table>
   </dd>
@@ -6346,7 +6339,7 @@ with frame rate 8kHz = min. 125µs exp time
 <p>Sets the bit EN EC 3030 in register SEC. </p>
 <p>This bit changes the signal IFC to a specialized 3030 version when SEC is used. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">enable</td><td>true: bit = 1, false: bit = 0 </td></tr>
   </table>
   </dd>
@@ -6567,7 +6560,7 @@ Legacy cameras will only look for bit0.
 <p>Sets setMeasureOn bit in PCIEFLAGS and notifies UI about it. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -6609,7 +6602,7 @@ Legacy cameras will only look for bit0.
 <p>Sets TOR to sshut when mshut is true. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">mshut</td><td><ul>
 <li>true: TOR is set to sshut</li>
 <li>false: TOR is set by settings_struct.camera_settings[drvno].tor </li>
@@ -6691,7 +6684,7 @@ Legacy cameras will only look for bit0.
 <p>Set pixel count. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -6735,7 +6728,7 @@ Legacy cameras will only look for bit0.
 <p>Sets delay after trigger hardware register. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">datin10ns</td><td>Time in 10 ns steps. </td></tr>
   </table>
   </dd>
@@ -6777,7 +6770,7 @@ Legacy cameras will only look for bit0.
 <p>Exposure control (EC) signal is used for mechanical shutter or sensors with EC function. </p>
 <p>Starts after delay after trigger (DAT) signal and is active for ecin10ns. Resets additional delay after trigger with ecin10ns = 0. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">ecin10ns</td><td>Time in 10 ns steps. </td></tr>
   </table>
   </dd>
@@ -6822,7 +6815,7 @@ Legacy cameras will only look for bit0.
 <p>Controls whether the reset sensor signal is during XCK or after. </p>
 <p>This setting only has an effect, when sensor type is PDA, no SEC is used and SetSensorResetEnable is set to true. When these conditions are met, this function controls, whether the reset signal is done during XCK or after. The exact time when the reset is done for the early case, is determined by a counter in the PCIe board. The reset pulse is being aimed to be after the TG pulse of 3030. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">enable_early</td><td><ul>
 <li>true: during XCK</li>
 <li>false: after XCK </li>
@@ -6871,7 +6864,7 @@ Legacy cameras will only look for bit0.
 <p>Enables or disables the generation of the sensor reset signal IFC. </p>
 <p>This setting only has an effect, when sensor type is PDA and no SEC is used. When these two conditions are met, this function controls, whether a reset signal is sent or not. The length of the reset signal is controlled by <a class="el" href="_board_8c.html#a962b6125c4872c7315bc1611a7bce105" title="Controls whether the reset sensor signal is short (380 ns) or long (800 ns).">SetSensorResetShort()</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">enable</td><td><ul>
 <li>true: send sensor reset signal</li>
 <li>false: don't send sensor reset signal </li>
@@ -6920,7 +6913,7 @@ Legacy cameras will only look for bit0.
 <p>Controls whether the reset sensor signal is short (380 ns) or long (800 ns). </p>
 <p>This setting only has an effect, when sensor type is PDA, no SEC is used and SetSensorResetEnable is set to true. When these conditions are met, this function controls, whether the reset signal is short or long. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">enable_short</td><td><ul>
 <li>true: 380ns</li>
 <li>false: 800ns </li>
@@ -6967,7 +6960,7 @@ Legacy cameras will only look for bit0.
 <p>Sets sensor type (Reg TOR:D25 -&gt; manual). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sensor_type</td><td>Determines sensor type.<ul>
 <li>0: PDA (line sensor)</li>
 <li>1: FFT (area sensor) </li>
@@ -7015,7 +7008,7 @@ Legacy cameras will only look for bit0.
 <p>Set the external trigger slope for scan trigger (PCI Reg CrtlA:D5 -&gt; manual). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sslope</td><td>Choose slope:<ul>
 <li>0: high slope</li>
 <li>1: low slope</li>
@@ -7064,7 +7057,7 @@ Legacy cameras will only look for bit0.
 <p>Chooses trigger input for scan trigger input (STI) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sti_mode</td><td>Defines the input mode for STI.<ul>
 <li>0: I</li>
 <li>1: S1</li>
@@ -7115,7 +7108,7 @@ Legacy cameras will only look for bit0.
 <p>Sets time for scan timer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">stime_in_microseconds</td><td>Scan time in microseconds. </td></tr>
   </table>
   </dd>
@@ -7158,7 +7151,7 @@ Legacy cameras will only look for bit0.
 <p>Set temperature level for cooled cameras. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">level</td><td>level 0..7 / 0=off, 7=min -&gt; see cooling manual </td></tr>
   </table>
   </dd>
@@ -7202,7 +7195,7 @@ Legacy cameras will only look for bit0.
 <p>Set the trigger input divider. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">divider</td><td><ul>
 <li>=0: disable this function (every trigger is used)</li>
 <li>&gt;0: omit n trigger </li>
@@ -7248,7 +7241,7 @@ Legacy cameras will only look for bit0.
 <p>Set the trigger output divider. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">divider</td><td>7 bit value<ul>
 <li>=0: disable this function (every trigger is used)</li>
 <li>&gt;0: use every n'th trigger </li>
@@ -7294,7 +7287,7 @@ Legacy cameras will only look for bit0.
 <p>Set signal of output port of PCIe card. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">tor</td><td>select output signal. See enum tor_out in <a class="el" href="enum_8h.html">enum.h</a> for options. </td></tr>
   </table>
   </dd>
@@ -7343,7 +7336,7 @@ Legacy cameras will only look for bit0.
 <p>For FFTs: Setup area mode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">lines_binning</td><td>Determines how many lines are binned (summed) when reading camera in area mode. </td></tr>
     <tr><td class="paramname">vfreq</td><td>Frequency for vertical clock. </td></tr>
   </table>
@@ -7393,7 +7386,7 @@ Legacy cameras will only look for bit0.
 <p>For FFTs: Setup full binning. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">lines</td><td>Lines in camera. </td></tr>
     <tr><td class="paramname">vfreq</td><td>Frequency for vertical clock. </td></tr>
   </table>
@@ -7460,7 +7453,7 @@ Legacy cameras will only look for bit0.
 <p>Initializes region of interest. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">number_of_regions</td><td>determines how many region of interests are initialized, choose 2 to 8 </td></tr>
     <tr><td class="paramname">lines</td><td>number of total lines in camera </td></tr>
     <tr><td class="paramname">keep</td><td>kept regions are determined by bits of keep </td></tr>
@@ -7513,7 +7506,7 @@ Legacy cameras will only look for bit0.
 <p>Set REG VCLKCTRL for FFT sensors. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">lines</td><td>number of vertical lines </td></tr>
     <tr><td class="paramname">vfreq</td><td>vertical clock frequency </td></tr>
   </table>
@@ -7568,7 +7561,7 @@ Legacy cameras will only look for bit0.
 <p>sets Vertical Partial Binning in registers R10,R11 and R12. Only for FFT sensors. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">range</td><td>specifies R 1..5 </td></tr>
     <tr><td class="paramname">lines</td><td>number of vertical clocks for next read </td></tr>
     <tr><td class="paramname">keep</td><td>TRUE if scan should be written to FIFO </td></tr>
@@ -7657,7 +7650,7 @@ Legacy cameras will only look for bit0.
 <p>Set XCK delay. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">xckdelay_in_10ns</td><td>XCK delay </td></tr>
   </table>
   </dd>
@@ -7690,10 +7683,8 @@ Legacy cameras will only look for bit0.
 <p>This function is starting the measurement and returns when the measurement is done. </p>
 <p>When there are multiple boards, all boards are starting the measurement. Create a new thread for calling this function, when you don't want to have a blocking call.</p>
 <dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error<ul>
+<li>es_no_error</li>
 <li>es_register_read_failed</li>
-</ul>
-</li>
 <li>es_camera_not_found</li>
 <li>es_register_write_failed</li>
 <li>es_already_running</li>
@@ -7723,7 +7714,7 @@ Legacy cameras will only look for bit0.
 <p>Sets Scan Timer on. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -7757,7 +7748,7 @@ Legacy cameras will only look for bit0.
 <p>Stop S Timer. </p>
 <p>Clear Bit30 of XCK-Reg: 0= timer off </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -7863,7 +7854,7 @@ Legacy cameras will only look for bit0.
 <p>Wait in loop until block trigger occurs. If block trigger high: return If block trigger low: wait for hi Checks only PCIE board no 1. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. May only work for 1 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0. May only work for 1 </td></tr>
   </table>
   </dd>
 </dl>
@@ -7950,7 +7941,7 @@ Legacy cameras will only look for bit0.
     <tr><td class="paramname">data</td><td>4 bytes (32 bits) data to write </td></tr>
     <tr><td class="paramname">bitmask</td><td>Bitmask to select specific bits, which should be written. 0xFFFFFFFF - all bits 32 bits are written, 0 - no bits are written. </td></tr>
     <tr><td class="paramname">address</td><td>Address of the register in DMA space. </td></tr>
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0. </td></tr>
   </table>
   </dd>
 </dl>
@@ -8009,7 +8000,7 @@ Legacy cameras will only look for bit0.
     <tr><td class="paramname">data</td><td>1 bytes (8 bits) data to write </td></tr>
     <tr><td class="paramname">bitmask</td><td>Bitmask to select specific bits, which should be written. 0xFF - all bits 8 bits are written, 0 - no bits are written. </td></tr>
     <tr><td class="paramname">address</td><td>Address of the register in DMA space. </td></tr>
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0. </td></tr>
   </table>
   </dd>
 </dl>
@@ -8068,16 +8059,14 @@ Legacy cameras will only look for bit0.
     <tr><td class="paramname">data</td><td>4 bytes (32 bits) data to write </td></tr>
     <tr><td class="paramname">bitmask</td><td>Bitmask to select specific bits, which should be written. 0xFFFFFFFF - all bits 32 bits are written, 0 - no bits are written. </td></tr>
     <tr><td class="paramname">address</td><td>Address of the register in S0 space. </td></tr>
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>es_status_codes<ul>
 <li>es_no_error</li>
-<li>es_register_read_failed<ul>
+<li>es_register_read_failed</li>
 <li>es_register_write_failed </li>
-</ul>
-</li>
 </ul>
 </dd></dl>
 
@@ -8133,10 +8122,8 @@ Legacy cameras will only look for bit0.
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>es_status_codes<ul>
 <li>es_no_error</li>
-<li>es_register_read_failed<ul>
+<li>es_register_read_failed</li>
 <li>es_register_write_failed </li>
-</ul>
-</li>
 </ul>
 </dd></dl>
 
@@ -8186,16 +8173,14 @@ Legacy cameras will only look for bit0.
     <tr><td class="paramname">data</td><td>1 bytes (8 bits) data to write </td></tr>
     <tr><td class="paramname">bitmask</td><td>Bitmask to select specific bits, which should be written. 0xFF - all bits 8 bits are written, 0 - no bits are written. </td></tr>
     <tr><td class="paramname">address</td><td>Address of the register in S0 space. </td></tr>
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>es_status_codes<ul>
 <li>es_no_error</li>
-<li>es_register_read_failed<ul>
+<li>es_register_read_failed</li>
 <li>es_register_write_failed </li>
-</ul>
-</li>
 </ul>
 </dd></dl>
 
@@ -8334,7 +8319,7 @@ Legacy cameras will only look for bit0.
 <p>Write 4 bytes to a register in DMA space. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">data</td><td>Read buffer. </td></tr>
     <tr><td class="paramname">address</td><td>Address of the register to read. </td></tr>
   </table>
@@ -8383,7 +8368,7 @@ Legacy cameras will only look for bit0.
 <p>Write 1 byte to a register in DMA space. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">data</td><td>Read buffer. </td></tr>
     <tr><td class="paramname">address</td><td>Address of the register to read. </td></tr>
   </table>
@@ -8432,7 +8417,7 @@ Legacy cameras will only look for bit0.
 <p>Write 2 bytes of a register in S0 space. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">data</td><td>Data to write. </td></tr>
     <tr><td class="paramname">address</td><td>Address of the register to read. </td></tr>
   </table>
@@ -8481,7 +8466,7 @@ Legacy cameras will only look for bit0.
 <p>Write 4 byte of a register in S0 space. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">data</td><td>Data to write. </td></tr>
     <tr><td class="paramname">address</td><td>Address of the register to read. </td></tr>
   </table>
@@ -8579,7 +8564,7 @@ Legacy cameras will only look for bit0.
 <p>Write 1 byte of a register in S0 space. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">data</td><td>Data to write. </td></tr>
     <tr><td class="paramname">address</td><td>Address of the register to read. </td></tr>
   </table>
