@@ -39,7 +39,7 @@ var searchData=
   ['dllgetallspecialpixelinformation_36',['DLLGetAllSpecialPixelInformation',['../_e_s_l_s_c_d_l_l_8c.html#adb1935ff48fc51bebca32f283d2fe357',1,'ESLSCDLL.c']]],
   ['dllgetallspecialpixelinformation_5fmultipleboards_37',['DLLGetAllSpecialPixelInformation_multipleBoards',['../_e_s_l_s_c_d_l_l_8c.html#adc148396027050c00fdde690a3eab1f0',1,'ESLSCDLL.c']]],
   ['dllgetcurrentscannumber_38',['DLLGetCurrentScanNumber',['../_e_s_l_s_c_d_l_l_8c.html#a79a1ea8d164b02336350f228840b1c02',1,'ESLSCDLL.c']]],
-  ['dllgetcurrentscannumber_5fmutlipleboards_39',['DLLGetCurrentScanNumber_mutlipleBoards',['../_e_s_l_s_c_d_l_l_8c.html#a5b1894f0952937c886a559b71589d8e1',1,'ESLSCDLL.c']]],
+  ['dllgetcurrentscannumber_5fmultipleboards_39',['DLLGetCurrentScanNumber_multipleBoards',['../_e_s_l_s_c_d_l_l_8c.html#afe353a9293f63379dfbef70500b437e0',1,'ESLSCDLL.c']]],
   ['dllgetdsc_40',['DLLGetDSC',['../_e_s_l_s_c_d_l_l_8c.html#aff26d82ea5df6a2dd1a0a09709f3700f',1,'ESLSCDLL.c']]],
   ['dllgetdsc_5fmultipleboards_41',['DLLGetDSC_multipleBoards',['../_e_s_l_s_c_d_l_l_8c.html#a703858807d136f7abd2991d17e103eb2',1,'ESLSCDLL.c']]],
   ['dllgetgammablack_42',['DLLGetGammaBlack',['../_e_s_l_s_c_d_l_l_8c.html#a01ec22454cbba97eb4056c4c5d071080',1,'ESLSCDLL.c']]],
