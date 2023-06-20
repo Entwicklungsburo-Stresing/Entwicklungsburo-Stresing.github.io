@@ -70,6 +70,6 @@ var searchData=
   ['sti_5fi_67',['sti_I',['../enum_8h.html#a06a0803ec08f3c97c06b073449195772a8a57d3dc98beaa0bb0635911bf340b39',1,'enum.h']]],
   ['sti_5fs1_68',['sti_S1',['../enum_8h.html#a06a0803ec08f3c97c06b073449195772a66f22812f6b80965f0058ed52059d078',1,'enum.h']]],
   ['sti_5fs2_69',['sti_S2',['../enum_8h.html#a06a0803ec08f3c97c06b073449195772a006d0b97bf6ee18e93a3481c9adc87f5',1,'enum.h']]],
-  ['sti_5fstimer_70',['sti_STimer',['../enum_8h.html#a06a0803ec08f3c97c06b073449195772a8ef1e8da5911430f6487c240f981d735',1,'enum.h']]],
-  ['sti_5funused_71',['sti_unused',['../enum_8h.html#a06a0803ec08f3c97c06b073449195772abf8fd0c164b0aa5549377368dfaa903f',1,'enum.h']]]
+  ['sti_5fs2_5fenable_5fi_70',['sti_S2_enable_I',['../enum_8h.html#a06a0803ec08f3c97c06b073449195772a4186edf95b4ddf28c99c58f4f21c2f5d',1,'enum.h']]],
+  ['sti_5fstimer_71',['sti_STimer',['../enum_8h.html#a06a0803ec08f3c97c06b073449195772a8ef1e8da5911430f6487c240f981d735',1,'enum.h']]]
 ];
