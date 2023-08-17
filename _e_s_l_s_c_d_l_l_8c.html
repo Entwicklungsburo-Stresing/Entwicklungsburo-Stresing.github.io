@@ -110,7 +110,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a0b92b1f99bc3e02d6029edbf0433afe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is starting the measurement and returns immediately.  <br /></td></tr>
 <tr class="separator:a0b92b1f99bc3e02d6029edbf0433afe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9e890a46b6b2768b356b5f94f189ca1"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#ad9e890a46b6b2768b356b5f94f189ca1">DLLAbortMeasurement</a> ()</td></tr>
-<tr class="memdesc:ad9e890a46b6b2768b356b5f94f189ca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this function to abort measurement.    <br /></td></tr>
+<tr class="memdesc:ad9e890a46b6b2768b356b5f94f189ca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets abortMeasurementFlag to true.    <br /></td></tr>
 <tr class="separator:ad9e890a46b6b2768b356b5f94f189ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae43af881924838479b0d1a97b67a91b3"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#ae43af881924838479b0d1a97b67a91b3">DLLReturnFrame</a> (uint32_t drvno, uint32_t sample, uint32_t block, uint16_t camera, uint32_t pixel, uint16_t *pdest)</td></tr>
 <tr class="memdesc:ae43af881924838479b0d1a97b67a91b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get data of a single measurement.    <br /></td></tr>
@@ -340,13 +340,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Use this function to abort measurement.   </p>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed</li>
-<li>es_register_write_failed   </li>
-</ul>
-</dd></dl>
+<p>Sets abortMeasurementFlag to true.   </p>
+<dl class="section return"><dt>Returns</dt><dd>es_no_error   </dd></dl>
 
 </div>
 </div>
