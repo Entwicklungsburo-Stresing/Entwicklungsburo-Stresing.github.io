@@ -601,6 +601,14 @@ Functions</h2></td></tr>
 <tr class="memitem:a21ed7f6d5dd052d0ba1918210c672dd0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a21ed7f6d5dd052d0ba1918210c672dd0">GetAllSpecialPixelInformation</a> (uint32_t drvno, uint32_t sample, uint32_t block, uint16_t camera_pos, struct special_pixels *sp)</td></tr>
 <tr class="memdesc:a21ed7f6d5dd052d0ba1918210c672dd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the all special pixel information of a specific scan.  <br /></td></tr>
 <tr class="separator:a21ed7f6d5dd052d0ba1918210c672dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cf72e66ef4047dc56645b7d17e9a673"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a5cf72e66ef4047dc56645b7d17e9a673">readScanFrequencyBit</a> (uint32_t drvno, bool *scanFrequencyTooHigh)</td></tr>
+<tr class="separator:a5cf72e66ef4047dc56645b7d17e9a673"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a881715ce483b0da0a852b9066cfa895d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a881715ce483b0da0a852b9066cfa895d">resetScanFrequencyBit</a> (uint32_t drvno)</td></tr>
+<tr class="separator:a881715ce483b0da0a852b9066cfa895d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a549daa1fa778deaa594ad7c68fb6b353"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a549daa1fa778deaa594ad7c68fb6b353">readBlockFrequencyBit</a> (uint32_t drvno, bool *blockFrequencyTooHigh)</td></tr>
+<tr class="separator:a549daa1fa778deaa594ad7c68fb6b353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1394cd1f1bb8b3e464e0a703108934a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a1394cd1f1bb8b3e464e0a703108934a7">resetBlockFrequencyBit</a> (uint32_t drvno)</td></tr>
+<tr class="separator:a1394cd1f1bb8b3e464e0a703108934a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e8cded490905c4d66560a92224d62ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a3e8cded490905c4d66560a92224d62ef">GetOneBlockOfOneCamera</a> (uint32_t drvno, uint32_t block, uint16_t camera, uint16_t **address)</td></tr>
 <tr class="separator:a3e8cded490905c4d66560a92224d62ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af71d35ca7f87eba4cc34dc6a5b0fc192"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#af71d35ca7f87eba4cc34dc6a5b0fc192">SetAllInterruptsDone</a> (uint32_t drvno)</td></tr>
@@ -4539,6 +4547,34 @@ with frame rate 8kHz = min. 125µs exp time
 
 </div>
 </div>
+<a id="a549daa1fa778deaa594ad7c68fb6b353" name="a549daa1fa778deaa594ad7c68fb6b353"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a549daa1fa778deaa594ad7c68fb6b353">&#9670;&#160;</a></span>readBlockFrequencyBit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> readBlockFrequencyBit </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>drvno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>blockFrequencyTooHigh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a0e8c02f6b164b0a306556a2d6bd659cd" name="a0e8c02f6b164b0a306556a2d6bd659cd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0e8c02f6b164b0a306556a2d6bd659cd">&#9670;&#160;</a></span>readBlockTriggerState()</h2>
 
@@ -4989,6 +5025,34 @@ with frame rate 8kHz = min. 125µs exp time
 
 </div>
 </div>
+<a id="a5cf72e66ef4047dc56645b7d17e9a673" name="a5cf72e66ef4047dc56645b7d17e9a673"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cf72e66ef4047dc56645b7d17e9a673">&#9670;&#160;</a></span>readScanFrequencyBit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> readScanFrequencyBit </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>drvno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>scanFrequencyTooHigh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a143839ab35a87710c38d54a5b7768193" name="a143839ab35a87710c38d54a5b7768193"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a143839ab35a87710c38d54a5b7768193">&#9670;&#160;</a></span>resetBitS0_32()</h2>
 
@@ -5136,6 +5200,24 @@ with frame rate 8kHz = min. 125µs exp time
 <li>es_register_write_failed </li>
 </ul>
 </dd></dl>
+
+</div>
+</div>
+<a id="a1394cd1f1bb8b3e464e0a703108934a7" name="a1394cd1f1bb8b3e464e0a703108934a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1394cd1f1bb8b3e464e0a703108934a7">&#9670;&#160;</a></span>resetBlockFrequencyBit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> resetBlockFrequencyBit </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>drvno</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -5336,6 +5418,24 @@ with frame rate 8kHz = min. 125µs exp time
 </li>
 </ul>
 </dd></dl>
+
+</div>
+</div>
+<a id="a881715ce483b0da0a852b9066cfa895d" name="a881715ce483b0da0a852b9066cfa895d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a881715ce483b0da0a852b9066cfa895d">&#9670;&#160;</a></span>resetScanFrequencyBit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> resetScanFrequencyBit </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>drvno</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

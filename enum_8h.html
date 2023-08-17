@@ -234,12 +234,21 @@ Enumerations</h2></td></tr>
 , <a class="el" href="enum_8h.html#a4816b5a52f9fa101d0450bf3c30a499fa9f7b07b0309a3ccc3abb240ee2ef18c1">PCIeAddr_devStatCtrl</a> = 0x60
  }</td></tr>
 <tr class="separator:a4816b5a52f9fa101d0450bf3c30a499f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7296599e20191806254da574ee841f01"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enum_8h.html#a7296599e20191806254da574ee841f01">BTRIGREG_bits</a> { <a class="el" href="enum_8h.html#a7296599e20191806254da574ee841f01aa9a7d636f4b26022c05d2f62f71ffe91">BTRIGREG_bit_SWTRIG</a> = 0x40
-, <a class="el" href="enum_8h.html#a7296599e20191806254da574ee841f01a43080fb6b4775054cc56b02808d2e503">BTRIGREG_bit_RSFIFO</a> = 0x80
-, <a class="el" href="enum_8h.html#a7296599e20191806254da574ee841f01ad85ed4ae03adc80ecc4c57d2a81f53e6">BTRIGREG_bitindex_SWTRIG</a> = 6
-, <a class="el" href="enum_8h.html#a7296599e20191806254da574ee841f01acf50efae00f1b6bc69bed8d6daf3d743">BTRIGREG_bitindex_RSFIFO</a> = 7
+<tr class="memitem:a7c0d9a0c154df511925edd39bb0dc89e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enum_8h.html#a7c0d9a0c154df511925edd39bb0dc89e">FFCTRL_bits</a> { <br />
+&#160;&#160;<a class="el" href="enum_8h.html#a7c0d9a0c154df511925edd39bb0dc89eaa217420eeb3c27100ad39c2777b4cf7b">FFCTRL_bit_SWTRIG</a> = 0x40
+, <a class="el" href="enum_8h.html#a7c0d9a0c154df511925edd39bb0dc89ea540c27cc9e263e9710024f3b30d755b1">FFCTRL_bit_RSFIFO</a> = 0x80
+, <a class="el" href="enum_8h.html#a7c0d9a0c154df511925edd39bb0dc89ea7cbd9bd335f29b95e5897dfd57dddc81">FFCTRL_bitindex_SWTRIG</a> = 6
+, <a class="el" href="enum_8h.html#a7c0d9a0c154df511925edd39bb0dc89ea05e792eac1a1543313934d9f7fc7e6ae">FFCTRL_bitindex_RSFIFO</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="enum_8h.html#a7c0d9a0c154df511925edd39bb0dc89eac1424cb3781465c3ff533144e6d12dfd">FFCTRL_bitindex_scan_reset</a> = 5
+, <a class="el" href="enum_8h.html#a7c0d9a0c154df511925edd39bb0dc89ea009fed6b6baba2c93a2da8126a37ca1e">FFCTRL_bitindex_block_reset</a> = 4
+<br />
  }</td></tr>
-<tr class="separator:a7296599e20191806254da574ee841f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a7c0d9a0c154df511925edd39bb0dc89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae13229bb2b0ba650f0993cffedb730e1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enum_8h.html#ae13229bb2b0ba650f0993cffedb730e1">FF_FLAGS_bits</a> { <a class="el" href="enum_8h.html#ae13229bb2b0ba650f0993cffedb730e1a0ceca6244d0f2579213831b756f38fcb">FF_FLAGS_bitindex_scan_read</a> = 2
+, <a class="el" href="enum_8h.html#ae13229bb2b0ba650f0993cffedb730e1ab8f31dc13a3be1a34cd66d9dcc1e7a96">FF_FLAGS_bitindex_block_read</a> = 1
+ }</td></tr>
+<tr class="separator:ae13229bb2b0ba650f0993cffedb730e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adff611e76872eeef6e83b6d94b66f9c7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enum_8h.html#adff611e76872eeef6e83b6d94b66f9c7">s0_addresses</a> { <br />
 &#160;&#160;<a class="el" href="enum_8h.html#adff611e76872eeef6e83b6d94b66f9c7a1764a5bd788f2f8bc3593155676bc729">S0Addr_DBR</a> = 0x0
 , <a class="el" href="enum_8h.html#adff611e76872eeef6e83b6d94b66f9c7ab8b58bfd78906f9f73792d3d959ff478">S0Addr_CTRLA</a> = 0x4
@@ -727,26 +736,6 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a id="a7296599e20191806254da574ee841f01" name="a7296599e20191806254da574ee841f01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7296599e20191806254da574ee841f01">&#9670;&#160;</a></span>BTRIGREG_bits</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="enum_8h.html#a7296599e20191806254da574ee841f01">BTRIGREG_bits</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7296599e20191806254da574ee841f01aa9a7d636f4b26022c05d2f62f71ffe91" name="a7296599e20191806254da574ee841f01aa9a7d636f4b26022c05d2f62f71ffe91"></a>BTRIGREG_bit_SWTRIG&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7296599e20191806254da574ee841f01a43080fb6b4775054cc56b02808d2e503" name="a7296599e20191806254da574ee841f01a43080fb6b4775054cc56b02808d2e503"></a>BTRIGREG_bit_RSFIFO&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7296599e20191806254da574ee841f01ad85ed4ae03adc80ecc4c57d2a81f53e6" name="a7296599e20191806254da574ee841f01ad85ed4ae03adc80ecc4c57d2a81f53e6"></a>BTRIGREG_bitindex_SWTRIG&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7296599e20191806254da574ee841f01acf50efae00f1b6bc69bed8d6daf3d743" name="a7296599e20191806254da574ee841f01acf50efae00f1b6bc69bed8d6daf3d743"></a>BTRIGREG_bitindex_RSFIFO&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
 <a id="a274478421a886deec0c23954d8dd4e5c" name="a274478421a886deec0c23954d8dd4e5c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a274478421a886deec0c23954d8dd4e5c">&#9670;&#160;</a></span>cam_addresses</h2>
 
@@ -1081,6 +1070,46 @@ Enumerations</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="accb7b2e1538d49bc394c8f7783d8e509a4a9d98cf5b6a11f71128ab4023cd7fca" name="accb7b2e1538d49bc394c8f7783d8e509a4a9d98cf5b6a11f71128ab4023cd7fca"></a>DMAsPerIntr_bitindex_counter_reset&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="accb7b2e1538d49bc394c8f7783d8e509a341d31f0b5c59ca91d438b6e763590dc" name="accb7b2e1538d49bc394c8f7783d8e509a341d31f0b5c59ca91d438b6e763590dc"></a>DMAsPerIntr_bit_counter_reset&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ae13229bb2b0ba650f0993cffedb730e1" name="ae13229bb2b0ba650f0993cffedb730e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae13229bb2b0ba650f0993cffedb730e1">&#9670;&#160;</a></span>FF_FLAGS_bits</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="enum_8h.html#ae13229bb2b0ba650f0993cffedb730e1">FF_FLAGS_bits</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae13229bb2b0ba650f0993cffedb730e1a0ceca6244d0f2579213831b756f38fcb" name="ae13229bb2b0ba650f0993cffedb730e1a0ceca6244d0f2579213831b756f38fcb"></a>FF_FLAGS_bitindex_scan_read&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae13229bb2b0ba650f0993cffedb730e1ab8f31dc13a3be1a34cd66d9dcc1e7a96" name="ae13229bb2b0ba650f0993cffedb730e1ab8f31dc13a3be1a34cd66d9dcc1e7a96"></a>FF_FLAGS_bitindex_block_read&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a7c0d9a0c154df511925edd39bb0dc89e" name="a7c0d9a0c154df511925edd39bb0dc89e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c0d9a0c154df511925edd39bb0dc89e">&#9670;&#160;</a></span>FFCTRL_bits</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="enum_8h.html#a7c0d9a0c154df511925edd39bb0dc89e">FFCTRL_bits</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7c0d9a0c154df511925edd39bb0dc89eaa217420eeb3c27100ad39c2777b4cf7b" name="a7c0d9a0c154df511925edd39bb0dc89eaa217420eeb3c27100ad39c2777b4cf7b"></a>FFCTRL_bit_SWTRIG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7c0d9a0c154df511925edd39bb0dc89ea540c27cc9e263e9710024f3b30d755b1" name="a7c0d9a0c154df511925edd39bb0dc89ea540c27cc9e263e9710024f3b30d755b1"></a>FFCTRL_bit_RSFIFO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7c0d9a0c154df511925edd39bb0dc89ea7cbd9bd335f29b95e5897dfd57dddc81" name="a7c0d9a0c154df511925edd39bb0dc89ea7cbd9bd335f29b95e5897dfd57dddc81"></a>FFCTRL_bitindex_SWTRIG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7c0d9a0c154df511925edd39bb0dc89ea05e792eac1a1543313934d9f7fc7e6ae" name="a7c0d9a0c154df511925edd39bb0dc89ea05e792eac1a1543313934d9f7fc7e6ae"></a>FFCTRL_bitindex_RSFIFO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7c0d9a0c154df511925edd39bb0dc89eac1424cb3781465c3ff533144e6d12dfd" name="a7c0d9a0c154df511925edd39bb0dc89eac1424cb3781465c3ff533144e6d12dfd"></a>FFCTRL_bitindex_scan_reset&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7c0d9a0c154df511925edd39bb0dc89ea009fed6b6baba2c93a2da8126a37ca1e" name="a7c0d9a0c154df511925edd39bb0dc89ea009fed6b6baba2c93a2da8126a37ca1e"></a>FFCTRL_bitindex_block_reset&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

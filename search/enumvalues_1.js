@@ -9,9 +9,5 @@ var searchData=
   ['bti_5fi_6',['bti_I',['../enum_8h.html#a88d34fdca244141b49fcaf54f2d97363ae3e686f8f655223a1c70878846810d52',1,'enum.h']]],
   ['bti_5fs1_7',['bti_S1',['../enum_8h.html#a88d34fdca244141b49fcaf54f2d97363a61bca85750088bd3f46ffe2f425c5bbf',1,'enum.h']]],
   ['bti_5fs1s2_8',['bti_S1S2',['../enum_8h.html#a88d34fdca244141b49fcaf54f2d97363a5eb74bef97fe66846db9fd28e811a647',1,'enum.h']]],
-  ['bti_5fs2_9',['bti_S2',['../enum_8h.html#a88d34fdca244141b49fcaf54f2d97363a5879bf4c0aad3807d8a4f4faa0fb9d7a',1,'enum.h']]],
-  ['btrigreg_5fbit_5frsfifo_10',['BTRIGREG_bit_RSFIFO',['../enum_8h.html#a7296599e20191806254da574ee841f01a43080fb6b4775054cc56b02808d2e503',1,'enum.h']]],
-  ['btrigreg_5fbit_5fswtrig_11',['BTRIGREG_bit_SWTRIG',['../enum_8h.html#a7296599e20191806254da574ee841f01aa9a7d636f4b26022c05d2f62f71ffe91',1,'enum.h']]],
-  ['btrigreg_5fbitindex_5frsfifo_12',['BTRIGREG_bitindex_RSFIFO',['../enum_8h.html#a7296599e20191806254da574ee841f01acf50efae00f1b6bc69bed8d6daf3d743',1,'enum.h']]],
-  ['btrigreg_5fbitindex_5fswtrig_13',['BTRIGREG_bitindex_SWTRIG',['../enum_8h.html#a7296599e20191806254da574ee841f01ad85ed4ae03adc80ecc4c57d2a81f53e6',1,'enum.h']]]
+  ['bti_5fs2_9',['bti_S2',['../enum_8h.html#a88d34fdca244141b49fcaf54f2d97363a5879bf4c0aad3807d8a4f4faa0fb9d7a',1,'enum.h']]]
 ];
