@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['readblockfrequencybit_0',['readBlockFrequencyBit',['../_board_8c.html#a549daa1fa778deaa594ad7c68fb6b353',1,'Board.c']]],
+  ['readblockfrequencybit_0',['ReadBlockFrequencyBit',['../_board_8c.html#ad4decf7ddece1723821c083b8373a22d',1,'Board.c']]],
   ['readblocktriggerstate_1',['readBlockTriggerState',['../_board_8c.html#a0e8c02f6b164b0a306556a2d6bd659cd',1,'Board.c']]],
   ['readconfig_5f32_2',['readConfig_32',['../_board__ll_8c.html#a7a37c8fa3fa5136f1291dbbf759b3cc2',1,'Board_ll.c']]],
   ['readgpxctrl_3',['ReadGPXCtrl',['../_board_8c.html#a519c7fc7f1502959e831f9dedf1745f5',1,'Board.c']]],
@@ -14,12 +14,12 @@ var searchData=
   ['readregisters0_5f32_11',['readRegisterS0_32',['../_board_8c.html#aae8fdad18b7b5aa76b05e981cbfb4cb3',1,'Board.c']]],
   ['readregisters0_5f32_5fallboards_12',['readRegisterS0_32_allBoards',['../_board_8c.html#a33e652c201bfba22aa6f5755443bf197',1,'Board.c']]],
   ['readregisters0_5f8_13',['readRegisterS0_8',['../_board_8c.html#aae21a9cc46c182724c49f373dba4f5ec',1,'Board.c']]],
-  ['readscanfrequencybit_14',['readScanFrequencyBit',['../_board_8c.html#a5cf72e66ef4047dc56645b7d17e9a673',1,'Board.c']]],
+  ['readscanfrequencybit_14',['ReadScanFrequencyBit',['../_board_8c.html#a2c2eabe7281f30577012c5ea9b658dca',1,'Board.c']]],
   ['repaintwindow_15',['repaintWindow',['../class_direct2d_viewer.html#ab1e069e1a726164ef7f8c836f0d13e31',1,'Direct2dViewer']]],
   ['resetbits0_5f32_16',['resetBitS0_32',['../_board_8c.html#a143839ab35a87710c38d54a5b7768193',1,'Board.c']]],
   ['resetbits0_5f32_5fallboards_17',['resetBitS0_32_allBoards',['../_board_8c.html#a5dd4808697742e6484760deadd573332',1,'Board.c']]],
   ['resetbits0_5f8_18',['resetBitS0_8',['../_board_8c.html#adfe4e2e35b832876e45aac648773c003',1,'Board.c']]],
-  ['resetblockfrequencybit_19',['resetBlockFrequencyBit',['../_board_8c.html#a1394cd1f1bb8b3e464e0a703108934a7',1,'Board.c']]],
+  ['resetblockfrequencybit_19',['ResetBlockFrequencyBit',['../_board_8c.html#a711bca6c8f59a5a8830d0176b67de85c',1,'Board.c']]],
   ['resetblockon_20',['resetBlockOn',['../_board_8c.html#abff011e338f026bb1489663b2da738e9',1,'Board.c']]],
   ['resetbufferwritepos_21',['ResetBufferWritePos',['../_board__ll_8c.html#a6002342f8c9cb02d5db3c9d0e5d85f4d',1,'Board_ll.c']]],
   ['resetdma_22',['ResetDma',['../_board_8c.html#a9d5d3b97191042a24cb79d6cc52c4133',1,'Board.c']]],
@@ -28,7 +28,7 @@ var searchData=
   ['resetmeasureon_25',['resetMeasureOn',['../_board_8c.html#a481357723bd6f73de879673d312f59df',1,'Board.c']]],
   ['resetpartialbinning_26',['ResetPartialBinning',['../_board_8c.html#afde3a168a54c3dada091d8edfa07352c',1,'Board.c']]],
   ['resetpriority_27',['ResetPriority',['../_board__ll_8c.html#a6d1fe7b2ee38ccba3c5cd1c4577fb857',1,'Board_ll.c']]],
-  ['resetscanfrequencybit_28',['resetScanFrequencyBit',['../_board_8c.html#a881715ce483b0da0a852b9066cfa895d',1,'Board.c']]],
+  ['resetscanfrequencybit_28',['ResetScanFrequencyBit',['../_board_8c.html#ab5a76129795901d456afe799a8cb311d',1,'Board.c']]],
   ['returnframe_29',['ReturnFrame',['../_board_8c.html#a3e6150945ca37b27bff3be2d754d1975',1,'Board.c']]],
   ['returnstartmeasurement_30',['ReturnStartMeasurement',['../_board_8c.html#a85504654d0abecbf9b6089ab6d096ab6',1,'Board.c']]],
   ['rsfifo_31',['RSFifo',['../_board_8c.html#a9a79acf143b23e30fe78edf7ba89474e',1,'Board.c']]]
