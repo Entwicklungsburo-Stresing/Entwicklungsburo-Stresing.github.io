@@ -234,6 +234,12 @@ Functions</h2></td></tr>
 <tr class="memitem:aae21a9cc46c182724c49f373dba4f5ec" id="r_aae21a9cc46c182724c49f373dba4f5ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#aae21a9cc46c182724c49f373dba4f5ec">readRegisterS0_8</a> (uint32_t drvno, uint8_t *data, uint16_t address)</td></tr>
 <tr class="memdesc:aae21a9cc46c182724c49f373dba4f5ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read 1 byte of a register in S0 space.  <br /></td></tr>
 <tr class="separator:aae21a9cc46c182724c49f373dba4f5ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa96a3b5ecb9794d7aa6d42bbb20196ab" id="r_aa96a3b5ecb9794d7aa6d42bbb20196ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#aa96a3b5ecb9794d7aa6d42bbb20196ab">ReadBitS0_32</a> (uint32_t drvno, uint16_t address, uint8_t bitnumber, bool *isBitHigh)</td></tr>
+<tr class="memdesc:aa96a3b5ecb9794d7aa6d42bbb20196ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read 1 bit of 1 of 4 bytes.  <br /></td></tr>
+<tr class="separator:aa96a3b5ecb9794d7aa6d42bbb20196ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a393f87ea48b0c822bf5e692023f1befa" id="r_a393f87ea48b0c822bf5e692023f1befa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a393f87ea48b0c822bf5e692023f1befa">ReadBitS0_8</a> (uint32_t drvno, uint16_t address, uint8_t bitnumber, bool *isBitHigh)</td></tr>
+<tr class="memdesc:a393f87ea48b0c822bf5e692023f1befa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read 1 bit of a byte.  <br /></td></tr>
+<tr class="separator:a393f87ea48b0c822bf5e692023f1befa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff3a95788b7373294b77102a9eb39d77" id="r_aff3a95788b7373294b77102a9eb39d77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#aff3a95788b7373294b77102a9eb39d77">OpenShutter</a> (uint32_t drvno)</td></tr>
 <tr class="memdesc:aff3a95788b7373294b77102a9eb39d77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open shutter for sensors with EC (exposure control) / sets IFC signal = high.  <br /></td></tr>
 <tr class="separator:aff3a95788b7373294b77102a9eb39d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4553,6 +4559,118 @@ with frame rate 8kHz = min. 125µs exp time
 <li>es_register_write_failed </li>
 </ul>
 </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="aa96a3b5ecb9794d7aa6d42bbb20196ab" name="aa96a3b5ecb9794d7aa6d42bbb20196ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa96a3b5ecb9794d7aa6d42bbb20196ab">&#9670;&#160;</a></span>ReadBitS0_32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> ReadBitS0_32 </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>drvno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bitnumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>isBitHigh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read 1 bit of 1 of 4 bytes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIE card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">address</td><td>Address of the register to read. </td></tr>
+    <tr><td class="paramname">bitnumber</td><td>Address of the bit to read. </td></tr>
+    <tr><td class="paramname">isBitHigh</td><td>Tells if bit is high or low. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
+<li>es_no_error</li>
+<li>es_register_read_failed </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a393f87ea48b0c822bf5e692023f1befa" name="a393f87ea48b0c822bf5e692023f1befa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a393f87ea48b0c822bf5e692023f1befa">&#9670;&#160;</a></span>ReadBitS0_8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> ReadBitS0_8 </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>drvno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>bitnumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>isBitHigh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read 1 bit of a byte. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIE card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">address</td><td>Address of the register to read. </td></tr>
+    <tr><td class="paramname">bitnumber</td><td>Address of the bit to read. </td></tr>
+    <tr><td class="paramname">isBitHigh</td><td>Tells if bit is high or low. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
+<li>es_no_error</li>
+<li>es_register_read_failed </li>
 </ul>
 </dd></dl>
 
