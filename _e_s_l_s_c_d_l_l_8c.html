@@ -169,6 +169,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a2e6c316cd7a66a061579176bb89621ad" id="r_a2e6c316cd7a66a061579176bb89621ad"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#a2e6c316cd7a66a061579176bb89621ad">DLLResetBlockFrequencyBit</a> (uint32_t drvno)</td></tr>
 <tr class="memdesc:a2e6c316cd7a66a061579176bb89621ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the BlockFrequency bit.    <br /></td></tr>
 <tr class="separator:a2e6c316cd7a66a061579176bb89621ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c719ad60977be2c602eeffa2ea7897" id="r_a44c719ad60977be2c602eeffa2ea7897"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#a44c719ad60977be2c602eeffa2ea7897">DLLFindCam</a> (uint32_t drvno)</td></tr>
+<tr class="memdesc:a44c719ad60977be2c602eeffa2ea7897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if SFP module is there and fiber is linked up.    <br /></td></tr>
+<tr class="separator:a44c719ad60977be2c602eeffa2ea7897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afde18cf2907ec2a205a55c099215228c" id="r_afde18cf2907ec2a205a55c099215228c"><td class="memItemLeft" align="right" valign="top">DllAccess double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#afde18cf2907ec2a205a55c099215228c">DLLCalcRamUsageInMB</a> (uint32_t nos, uint32_t nob)</td></tr>
 <tr class="memdesc:afde18cf2907ec2a205a55c099215228c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate needed RAM in MB for given nos and nob.    <br /></td></tr>
 <tr class="separator:afde18cf2907ec2a205a55c099215228c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1158,6 +1161,40 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This function inserts data to user buffer for developing purpose. </p>
+
+</div>
+</div>
+<a id="a44c719ad60977be2c602eeffa2ea7897" name="a44c719ad60977be2c602eeffa2ea7897"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44c719ad60977be2c602eeffa2ea7897">&#9670;&#160;</a></span>DLLFindCam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLFindCam </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>drvno</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Test if SFP module is there and fiber is linked up.   </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
+<li>es_no_error</li>
+<li>es_register_read_failed</li>
+</ul>
+</dd></dl>
+<ul>
+<li>es_camera_not_found   </li>
+</ul>
 
 </div>
 </div>
