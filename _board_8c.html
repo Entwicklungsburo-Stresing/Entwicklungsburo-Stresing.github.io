@@ -619,12 +619,16 @@ Functions</h2></td></tr>
 <tr class="memdesc:a21ed7f6d5dd052d0ba1918210c672dd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the all special pixel information of a specific scan.  <br /></td></tr>
 <tr class="separator:a21ed7f6d5dd052d0ba1918210c672dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c2eabe7281f30577012c5ea9b658dca" id="r_a2c2eabe7281f30577012c5ea9b658dca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a2c2eabe7281f30577012c5ea9b658dca">ReadScanFrequencyBit</a> (uint32_t drvno, bool *scanFrequencyTooHigh)</td></tr>
+<tr class="memdesc:a2c2eabe7281f30577012c5ea9b658dca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the ScanFrequency bit and checks if its high or low.  <br /></td></tr>
 <tr class="separator:a2c2eabe7281f30577012c5ea9b658dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5a76129795901d456afe799a8cb311d" id="r_ab5a76129795901d456afe799a8cb311d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#ab5a76129795901d456afe799a8cb311d">ResetScanFrequencyBit</a> (uint32_t drvno)</td></tr>
+<tr class="memdesc:ab5a76129795901d456afe799a8cb311d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the ScanFrequency bit.  <br /></td></tr>
 <tr class="separator:ab5a76129795901d456afe799a8cb311d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4decf7ddece1723821c083b8373a22d" id="r_ad4decf7ddece1723821c083b8373a22d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#ad4decf7ddece1723821c083b8373a22d">ReadBlockFrequencyBit</a> (uint32_t drvno, bool *blockFrequencyTooHigh)</td></tr>
+<tr class="memdesc:ad4decf7ddece1723821c083b8373a22d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the BlockFrequency bit and checks if its high or low.  <br /></td></tr>
 <tr class="separator:ad4decf7ddece1723821c083b8373a22d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a711bca6c8f59a5a8830d0176b67de85c" id="r_a711bca6c8f59a5a8830d0176b67de85c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a711bca6c8f59a5a8830d0176b67de85c">ResetBlockFrequencyBit</a> (uint32_t drvno)</td></tr>
+<tr class="memdesc:a711bca6c8f59a5a8830d0176b67de85c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the BlockFrequency bit.  <br /></td></tr>
 <tr class="separator:a711bca6c8f59a5a8830d0176b67de85c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e8cded490905c4d66560a92224d62ef" id="r_a3e8cded490905c4d66560a92224d62ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#a3e8cded490905c4d66560a92224d62ef">GetOneBlockOfOneCamera</a> (uint32_t drvno, uint32_t block, uint16_t camera, uint16_t **address)</td></tr>
 <tr class="separator:a3e8cded490905c4d66560a92224d62ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4702,6 +4706,20 @@ with frame rate 8kHz = min. 125µs exp time
       </table>
 </div><div class="memdoc">
 
+<p>Reads the BlockFrequency bit and checks if its high or low. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">blockFrequencyTooHigh</td><td>True when BlockFrequency bit is set. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
+<li>es_no_error</li>
+<li>es_register_read_failed </li>
+</ul>
+</dd></dl>
+
 </div>
 </div>
 <a id="a0e8c02f6b164b0a306556a2d6bd659cd" name="a0e8c02f6b164b0a306556a2d6bd659cd"></a>
@@ -5180,6 +5198,20 @@ with frame rate 8kHz = min. 125µs exp time
       </table>
 </div><div class="memdoc">
 
+<p>Reads the ScanFrequency bit and checks if its high or low. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">scanFrequencyTooHigh</td><td>True when scanFrequency bit is set </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
+<li>es_no_error</li>
+<li>es_register_read_failed </li>
+</ul>
+</dd></dl>
+
 </div>
 </div>
 <a id="a143839ab35a87710c38d54a5b7768193" name="a143839ab35a87710c38d54a5b7768193"></a>
@@ -5347,6 +5379,22 @@ with frame rate 8kHz = min. 125µs exp time
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Resets the BlockFrequency bit. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
+<li>es_no_error</li>
+<li>es_register_read_failed<ul>
+<li>es_register_write_failed </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
@@ -5565,6 +5613,22 @@ with frame rate 8kHz = min. 125µs exp time
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Resets the ScanFrequency bit. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
+<li>es_no_error</li>
+<li>es_register_read_failed<ul>
+<li>es_register_write_failed </li>
+</ul>
+</li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
