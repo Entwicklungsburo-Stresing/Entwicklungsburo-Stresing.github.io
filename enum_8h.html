@@ -104,7 +104,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36a71979384b23c09ff9e7993909f4eba0c">PCIEFLAGS_bit_XCKI</a> = 0x01
 , <a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36a07772643d9a66cc53bd86ffe151e2604">PCIEFLAGS_bit_INTTRIG</a> = 0x02
 , <a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36a83be73ad0beefcac971dc356e429d049">PCIEFLAGS_bit_ENRSTIMERHW</a> = 0x04
-, <a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36ae82e688af9ae3bb3e7ce800b43eece05">PCIEFLAGS_bit_INTRSR</a> = 0x08
+, <a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36a5408ac1d1055b617ab0541fa4c9e623e">PCIEFLAGS_bit_USE_ENFFW_PROTECT</a> = 0x08
 , <br />
 &#160;&#160;<a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36a57e66d5ceea609f2a9d958b0537a835d">PCIEFLAGS_bit_BLOCKTRIG</a> = 0x10
 , <a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36a52caba18a09ed771529808f1cfe19236">PCIEFLAGS_bit_MEASUREON</a> = 0x20
@@ -112,18 +112,31 @@ Enumerations</h2></td></tr>
 , <a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36ab0b8bfe9e36f3044c32a9b18da64ea79">PCIEFLAGS_bit_IS_TDC</a> = 0x100
 , <br />
 &#160;&#160;<a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36aca7eebed32c8b3f67f357bbc47a2f1a6">PCIEFLAGS_bit_IS_DSC</a> = 0x200
+, <a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36a472539496f43146a4cddce5571237356">PCIEFLAGS_bit_linkup_sfp3</a> = 0x4000000
+, <a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36af6f3cf3d7967e3fbae65b6a34bac4515">PCIEFLAGS_bit_error_sfp3</a> = 0x8000000
+, <a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36ad0b7d8e406640bcf13461d362936ea3b">PCIEFLAGS_bit_linkup_sfp2</a> = 0x10000000
+, <br />
+&#160;&#160;<a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36abc2e3cf932ea5d49cb24db7321ca4641">PCIEFLAGS_bit_error_sfp2</a> = 0x20000000
+, <a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36a89c72ee6e87a161be9ae9e10d0f60bd5">PCIEFLAGS_bit_linkup_sfp1</a> = 0x40000000
 , <a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36ad89ba029afef992d82e18fa3a102a39a">PCIEFLAGS_bit_error_sfp1</a> = 0x80000000
 , <a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36a600812dfa8c18e7d73415307dfb7be1a">PCIEFLAGS_bitindex_XCKI</a> = 0
-, <a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36a1b88699a59ac0416976f517603f1119a">PCIEFLAGS_bitindex_INTTRIG</a> = 1
 , <br />
-&#160;&#160;<a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36a1e0da9cee5f523ee69a35c17476c9eb5">PCIEFLAGS_bitindex_ENRSTIMERHW</a> = 2
-, <a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36a898e02c76903dabf927691234c2a0ce9">PCIEFLAGS_bitindex_INTRSR</a> = 3
+&#160;&#160;<a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36a1b88699a59ac0416976f517603f1119a">PCIEFLAGS_bitindex_INTTRIG</a> = 1
+, <a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36a1e0da9cee5f523ee69a35c17476c9eb5">PCIEFLAGS_bitindex_ENRSTIMERHW</a> = 2
+, <a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36aeda51979a162dcf731ae5ee559868707">PCIEFLAGS_bitindex_USE_ENFFW_PROTECT</a> = 3
 , <a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36a15ed960feaef28833264e767de96abfb">PCIEFLAGS_bitindex_BLOCKTRIG</a> = 4
-, <a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36aac34a3af42460646b43ac2b23b03a50a">PCIEFLAGS_bitindex_MEASUREON</a> = 5
 , <br />
-&#160;&#160;<a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36ab402211cbc0d00f7fe9d015ea64b8ceb">PCIEFLAGS_bitindex_BLOCKON</a> = 6
+&#160;&#160;<a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36aac34a3af42460646b43ac2b23b03a50a">PCIEFLAGS_bitindex_MEASUREON</a> = 5
+, <a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36ab402211cbc0d00f7fe9d015ea64b8ceb">PCIEFLAGS_bitindex_BLOCKON</a> = 6
 , <a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36acb8d2ed3adf7343df7c0377fa43d1658">PCIEFLAGS_bitindex_IS_TDC</a> = 8
 , <a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36a850dbe1d4da2519540e0ef450409eb62">PCIEFLAGS_bitindex_IS_DSC</a> = 9
+, <br />
+&#160;&#160;<a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36adb8c31d57895a650554fd3f2155c267f">PCIEFLAGS_bitindex_linkup_sfp3</a> = 26
+, <a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36abe0be7d671163f1448eb51598dbec758">PCIEFLAGS_bitindex_error_sfp3</a> = 27
+, <a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36acad413fb3bb12ea013c511028d7cd4a7">PCIEFLAGS_bitindex_linkup_sfp2</a> = 28
+, <a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36a6fec1facc26b98407b951c930ae67b9f">PCIEFLAGS_bitindex_error_sfp2</a> = 29
+, <br />
+&#160;&#160;<a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36a10edd5431e8e5706d9aae4c314100c95">PCIEFLAGS_bitindex_linkup_sfp1</a> = 30
 , <a class="el" href="enum_8h.html#a6bc885c4218720decc551938cb009a36a600ad5adbc8bab66adc6b864d03ee74d">PCIEFLAGS_bitindex_error_sfp1</a> = 31
 <br />
  }</td></tr>
@@ -1231,22 +1244,32 @@ Enumerations</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36a71979384b23c09ff9e7993909f4eba0c" name="a6bc885c4218720decc551938cb009a36a71979384b23c09ff9e7993909f4eba0c"></a>PCIEFLAGS_bit_XCKI&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36a07772643d9a66cc53bd86ffe151e2604" name="a6bc885c4218720decc551938cb009a36a07772643d9a66cc53bd86ffe151e2604"></a>PCIEFLAGS_bit_INTTRIG&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36a83be73ad0beefcac971dc356e429d049" name="a6bc885c4218720decc551938cb009a36a83be73ad0beefcac971dc356e429d049"></a>PCIEFLAGS_bit_ENRSTIMERHW&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36ae82e688af9ae3bb3e7ce800b43eece05" name="a6bc885c4218720decc551938cb009a36ae82e688af9ae3bb3e7ce800b43eece05"></a>PCIEFLAGS_bit_INTRSR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36a5408ac1d1055b617ab0541fa4c9e623e" name="a6bc885c4218720decc551938cb009a36a5408ac1d1055b617ab0541fa4c9e623e"></a>PCIEFLAGS_bit_USE_ENFFW_PROTECT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36a57e66d5ceea609f2a9d958b0537a835d" name="a6bc885c4218720decc551938cb009a36a57e66d5ceea609f2a9d958b0537a835d"></a>PCIEFLAGS_bit_BLOCKTRIG&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36a52caba18a09ed771529808f1cfe19236" name="a6bc885c4218720decc551938cb009a36a52caba18a09ed771529808f1cfe19236"></a>PCIEFLAGS_bit_MEASUREON&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36a8d62538c05238768082e633a0b3da40c" name="a6bc885c4218720decc551938cb009a36a8d62538c05238768082e633a0b3da40c"></a>PCIEFLAGS_bit_BLOCKON&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36ab0b8bfe9e36f3044c32a9b18da64ea79" name="a6bc885c4218720decc551938cb009a36ab0b8bfe9e36f3044c32a9b18da64ea79"></a>PCIEFLAGS_bit_IS_TDC&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36aca7eebed32c8b3f67f357bbc47a2f1a6" name="a6bc885c4218720decc551938cb009a36aca7eebed32c8b3f67f357bbc47a2f1a6"></a>PCIEFLAGS_bit_IS_DSC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36a472539496f43146a4cddce5571237356" name="a6bc885c4218720decc551938cb009a36a472539496f43146a4cddce5571237356"></a>PCIEFLAGS_bit_linkup_sfp3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36af6f3cf3d7967e3fbae65b6a34bac4515" name="a6bc885c4218720decc551938cb009a36af6f3cf3d7967e3fbae65b6a34bac4515"></a>PCIEFLAGS_bit_error_sfp3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36ad0b7d8e406640bcf13461d362936ea3b" name="a6bc885c4218720decc551938cb009a36ad0b7d8e406640bcf13461d362936ea3b"></a>PCIEFLAGS_bit_linkup_sfp2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36abc2e3cf932ea5d49cb24db7321ca4641" name="a6bc885c4218720decc551938cb009a36abc2e3cf932ea5d49cb24db7321ca4641"></a>PCIEFLAGS_bit_error_sfp2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36a89c72ee6e87a161be9ae9e10d0f60bd5" name="a6bc885c4218720decc551938cb009a36a89c72ee6e87a161be9ae9e10d0f60bd5"></a>PCIEFLAGS_bit_linkup_sfp1&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36ad89ba029afef992d82e18fa3a102a39a" name="a6bc885c4218720decc551938cb009a36ad89ba029afef992d82e18fa3a102a39a"></a>PCIEFLAGS_bit_error_sfp1&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36a600812dfa8c18e7d73415307dfb7be1a" name="a6bc885c4218720decc551938cb009a36a600812dfa8c18e7d73415307dfb7be1a"></a>PCIEFLAGS_bitindex_XCKI&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36a1b88699a59ac0416976f517603f1119a" name="a6bc885c4218720decc551938cb009a36a1b88699a59ac0416976f517603f1119a"></a>PCIEFLAGS_bitindex_INTTRIG&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36a1e0da9cee5f523ee69a35c17476c9eb5" name="a6bc885c4218720decc551938cb009a36a1e0da9cee5f523ee69a35c17476c9eb5"></a>PCIEFLAGS_bitindex_ENRSTIMERHW&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36a898e02c76903dabf927691234c2a0ce9" name="a6bc885c4218720decc551938cb009a36a898e02c76903dabf927691234c2a0ce9"></a>PCIEFLAGS_bitindex_INTRSR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36aeda51979a162dcf731ae5ee559868707" name="a6bc885c4218720decc551938cb009a36aeda51979a162dcf731ae5ee559868707"></a>PCIEFLAGS_bitindex_USE_ENFFW_PROTECT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36a15ed960feaef28833264e767de96abfb" name="a6bc885c4218720decc551938cb009a36a15ed960feaef28833264e767de96abfb"></a>PCIEFLAGS_bitindex_BLOCKTRIG&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36aac34a3af42460646b43ac2b23b03a50a" name="a6bc885c4218720decc551938cb009a36aac34a3af42460646b43ac2b23b03a50a"></a>PCIEFLAGS_bitindex_MEASUREON&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36ab402211cbc0d00f7fe9d015ea64b8ceb" name="a6bc885c4218720decc551938cb009a36ab402211cbc0d00f7fe9d015ea64b8ceb"></a>PCIEFLAGS_bitindex_BLOCKON&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36acb8d2ed3adf7343df7c0377fa43d1658" name="a6bc885c4218720decc551938cb009a36acb8d2ed3adf7343df7c0377fa43d1658"></a>PCIEFLAGS_bitindex_IS_TDC&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36a850dbe1d4da2519540e0ef450409eb62" name="a6bc885c4218720decc551938cb009a36a850dbe1d4da2519540e0ef450409eb62"></a>PCIEFLAGS_bitindex_IS_DSC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36adb8c31d57895a650554fd3f2155c267f" name="a6bc885c4218720decc551938cb009a36adb8c31d57895a650554fd3f2155c267f"></a>PCIEFLAGS_bitindex_linkup_sfp3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36abe0be7d671163f1448eb51598dbec758" name="a6bc885c4218720decc551938cb009a36abe0be7d671163f1448eb51598dbec758"></a>PCIEFLAGS_bitindex_error_sfp3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36acad413fb3bb12ea013c511028d7cd4a7" name="a6bc885c4218720decc551938cb009a36acad413fb3bb12ea013c511028d7cd4a7"></a>PCIEFLAGS_bitindex_linkup_sfp2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36a6fec1facc26b98407b951c930ae67b9f" name="a6bc885c4218720decc551938cb009a36a6fec1facc26b98407b951c930ae67b9f"></a>PCIEFLAGS_bitindex_error_sfp2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36a10edd5431e8e5706d9aae4c314100c95" name="a6bc885c4218720decc551938cb009a36a10edd5431e8e5706d9aae4c314100c95"></a>PCIEFLAGS_bitindex_linkup_sfp1&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6bc885c4218720decc551938cb009a36a600ad5adbc8bab66adc6b864d03ee74d" name="a6bc885c4218720decc551938cb009a36a600ad5adbc8bab66adc6b864d03ee74d"></a>PCIEFLAGS_bitindex_error_sfp1&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
