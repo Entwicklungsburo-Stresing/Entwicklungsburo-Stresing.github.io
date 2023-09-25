@@ -96,9 +96,50 @@ How to operate Stresing cameras</h1>
 <li><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#a6de4e38fbc35ee4e86547eee9a9b8169">DLLExitDriver</a>: Before exiting your software, use this call for cleanup.</li>
 </ol>
 <h1><a class="anchor" id="autotoc_md3"></a>
+How to use escam</h1>
+<h2><a class="anchor" id="autotoc_md4"></a>
+Setting up escam</h2>
+<p>After opening the program, you will be greeted by the main page. To configure the settings for the camera, open the 'Settings' tab at the top and choose 'Edit' and the 'General' tab of the settings will open. The first time you start the program on your PC, the initial values have to be imported. We have saved your setup in a config.ini file in the escam folder. So import this file at the first start. These values are stored then in windows (registry) and you do not need to import it again.</p>
+<h2><a class="anchor" id="autotoc_md5"></a>
+General</h2>
+<p>In the 'General' tab you can choose the amount of samples the camera should take in a block, and the amount of blocks. To edit the samples amount, edit the number at 'nos'. To edit the blocks amount, edit the number at 'nob'. For the concept of scans and blocks please see the manual. For a first try just enter scans 500 and blocks 1.</p>
+<h2><a class="anchor" id="autotoc_md6"></a>
+Camera Settings</h2>
+<p>When opening the 'Camera Settings' tab you start at the 'Measurement' tab, where you can configure which trigger is used, if you want to trigger the samples/blocks external or configure a time at which the samples/blocks should start.</p>
+<h3><a class="anchor" id="autotoc_md7"></a>
+Measurement</h3>
+<p>The 'Measurement' tab is where you can configure the settings related to the measurement.</p>
+<h4><a class="anchor" id="autotoc_md8"></a>
+external Trigger:</h4>
+<p>In the 'Measurement' tab you can set the sti (scan trigger input) and bti (block trigger input) you can change the values from STimer or BTimer to I, S1 or S2, depending on where you have connected your trigger to the PCIe-Board. The associated stimer/btimer field should gray out when changing the input.</p>
+<h4><a class="anchor" id="autotoc_md9"></a>
+Use STimer and/or BTimer:</h4>
+<p>If you want to use the internal timer, you can set STimer or BTimer. Set the sti/bti to STimer and BTimer and configure the time at which it should trigger at the stimer/btimer field. The time is displayed as microseconds, so if you want to trigger every millisecond, the value should be 1.000 microseconds. Use stimer to set the time between 2 reads (exposure time for the sensor). The btimer is only needed if the blocks are &gt; 1. In this case btime sets the distance between 2 blocks.</p>
+<h3><a class="anchor" id="autotoc_md10"></a>
+Camera Setup</h3>
+<p>The 'Camera Setup' tab is where you can configure escam to your camera.</p>
+<h4><a class="anchor" id="autotoc_md11"></a>
+SENSOR TYPE</h4>
+<p>Depending on the Type of your Sensor, pick PDA or FFT. All sensors are PDA except the FFTs with more than 1 line.</p>
+<h4><a class="anchor" id="autotoc_md12"></a>
+CAMERA SYSTEM</h4>
+<p>Depending on your Camera System, pick 3001, 3010 or 3030</p>
+<h4><a class="anchor" id="autotoc_md13"></a>
+CAMCNT</h4>
+<p>If you have 1 Camera you can leave this number at 1, if you have multiple cameras change the number to the amount of cameras you have connected to your pc.</p>
+<h4><a class="anchor" id="autotoc_md14"></a>
+PIXEL</h4>
+<p>Depending on the Sensor you have, choose the amount of pixels your Sensor has. It is recommended to scroll through the values since there is a small set of valid numbers.</p>
+<h4><a class="anchor" id="autotoc_md15"></a>
+cooled camera</h4>
+<p>If your camera is cooled, tick the checkbox and set the camera cooling level to your desired amount.</p>
+<h4><a class="anchor" id="autotoc_md16"></a>
+START</h4>
+<p>Push the start button to start one block of scans. If you want a continuous run, set the loop button. After each block a new circle is started until you press the space or ESC key. ESC stops immediately, space after the block is done.</p>
+<h1><a class="anchor" id="autotoc_md17"></a>
 Software structure</h1>
 <p><img src="software_structure.drawio.svg" alt="" style="pointer-events: none;" class="inline" title="software structure as block diagram"/>    </p>
-<h1><a class="anchor" id="autotoc_md4"></a>
+<h1><a class="anchor" id="autotoc_md18"></a>
 Software structure of Escam</h1>
 <div class="image">
 <object type="image/svg+xml" data="escam.drawio.svg" style="pointer-events: none;"></object>

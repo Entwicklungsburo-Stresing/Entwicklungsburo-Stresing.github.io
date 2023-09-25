@@ -5,7 +5,7 @@ var searchData=
   ['enum_2eh_2',['enum.h',['../enum_8h.html',1,'']]],
   ['errmsgboxoff_3',['ErrMsgBoxOff',['../_board__ll_8c.html#a122e78ae5bb9cc93a227d461075170c2',1,'Board_ll.c']]],
   ['errmsgboxon_4',['ErrMsgBoxOn',['../_board__ll_8c.html#a28f92fa001dc71e32b9afa7a01f5471a',1,'Board_ll.c']]],
-  ['errormsg_5',['errormsg',['../es__status__codes_8c.html#a477e81a8b56666e2c5907144c1207cd4',1,'errorMsg:&#160;es_status_codes.c'],['../_board__ll_8c.html#a7d946ab1c24cd90b2106731df3ac6d0e',1,'ErrorMsg(char ErrMsg[100]):&#160;Board_ll.c']]],
+  ['errormsg_5',['errormsg',['../_board__ll_8c.html#a7d946ab1c24cd90b2106731df3ac6d0e',1,'ErrorMsg(char ErrMsg[100]):&#160;Board_ll.c'],['../es__status__codes_8c.html#a477e81a8b56666e2c5907144c1207cd4',1,'errorMsg:&#160;es_status_codes.c']]],
   ['es_5fabortion_6',['es_abortion',['../es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14daabed4bd1bb01f361865e12160672abe40',1,'es_status_codes.h']]],
   ['es_5fallocating_5fmemory_5ffailed_7',['es_allocating_memory_failed',['../es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14daa211d34854b63fc7abd512cdaa1858c72',1,'es_status_codes.h']]],
   ['es_5falready_5frunning_8',['es_already_running',['../es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14daa48e4dc8e75572a564e8c74701b9d617f',1,'es_status_codes.h']]],
@@ -36,8 +36,9 @@ var searchData=
   ['es_5fstatus_5fcodes_2eh_33',['es_status_codes.h',['../es__status__codes_8h.html',1,'']]],
   ['es_5funknown_5ferror_34',['es_unknown_error',['../es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14daa6cd81b3381d5466cb204330773c4ca53',1,'es_status_codes.h']]],
   ['es_5funlocking_5fdma_5ffailed_35',['es_unlocking_dma_failed',['../es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14daa8ba563b8b63028a496b8ffba80cfcfbf',1,'es_status_codes.h']]],
-  ['escam_36',['Software structure of Escam',['../index.html#autotoc_md4',1,'']]],
+  ['escam_36',['escam',['../index.html#autotoc_md3',1,'How to use escam'],['../index.html#autotoc_md4',1,'Setting up escam'],['../index.html#autotoc_md18',1,'Software structure of Escam']]],
   ['eslscdll_2ec_37',['ESLSCDLL.c',['../_e_s_l_s_c_d_l_l_8c.html',1,'']]],
   ['exitdriver_38',['ExitDriver',['../_board_8c.html#ac82bfa2c1dada573145ec331d493cd92',1,'Board.c']]],
-  ['exttrig_39',['exttrig',['../enum_8h.html#a6a3ccfcf43caf6fed8b584bd16d37712a03dea9a7850802818e5420ad08a106d3',1,'enum.h']]]
+  ['external_20trigger_3a_39',['external Trigger:',['../index.html#autotoc_md8',1,'']]],
+  ['exttrig_40',['exttrig',['../enum_8h.html#a6a3ccfcf43caf6fed8b584bd16d37712a03dea9a7850802818e5420ad08a106d3',1,'enum.h']]]
 ];

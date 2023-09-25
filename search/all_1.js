@@ -52,6 +52,7 @@ var searchData=
   ['adc_5fltc2271_5fregaddr_5freset_49',['adc_ltc2271_regaddr_reset',['../enum_8h.html#a274478421a886deec0c23954d8dd4e5ca6c331254340cb5b371f666d23171cd08',1,'enum.h']]],
   ['adc_5fmode_50',['adc_mode',['../structcamera__settings.html#af7e1f7b31ae0973dc8a3ca8579f851aa',1,'camera_settings::adc_mode'],['../enum_8h.html#a51acd785c14953090a3507d4fa8e5939',1,'adc_mode:&#160;enum.h']]],
   ['allocateusermemory_51',['allocateUserMemory',['../_board_8c.html#aa8172691bc3e992910f5ff610f7d6055',1,'Board.c']]],
-  ['area_5fmode_52',['area_mode',['../enum_8h.html#aa32cab85e7c1dce831869df57e6de198a322132ec60ef92afd82ebd8b5833ffe9',1,'enum.h']]],
-  ['assert_53',['Assert',['../_direct2d_viewer_8h.html#a65b2d8df471769bc63eb180f240b144d',1,'Direct2dViewer.h']]]
+  ['and_20or_20btimer_3a_52',['Use STimer and/or BTimer:',['../index.html#autotoc_md9',1,'']]],
+  ['area_5fmode_53',['area_mode',['../enum_8h.html#aa32cab85e7c1dce831869df57e6de198a322132ec60ef92afd82ebd8b5833ffe9',1,'enum.h']]],
+  ['assert_54',['Assert',['../_direct2d_viewer_8h.html#a65b2d8df471769bc63eb180f240b144d',1,'Direct2dViewer.h']]]
 ];

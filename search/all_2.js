@@ -8,8 +8,8 @@ var searchData=
   ['blockindex_5fbits_5',['BLOCKINDEX_bits',['../enum_8h.html#af45903e5fc01a3627c9f18c63bcaf049',1,'enum.h']]],
   ['board_2ec_6',['Board.c',['../_board_8c.html',1,'']]],
   ['board_5fll_2ec_7',['Board_ll.c',['../_board__ll_8c.html',1,'']]],
-  ['board_5fsel_8',['board_sel',['../structmeasurement__settings__matlab.html#a1d80b48d6c6d557aec027edb47d70533',1,'measurement_settings_matlab::board_sel'],['../structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb',1,'measurement_settings::board_sel']]],
-  ['bslope_9',['bslope',['../structcamera__settings.html#aad2f5116d777038bcb58543db3caf877',1,'camera_settings::bslope'],['../enum_8h.html#a07819fc2fdc2eccaccc603a32da96412',1,'bslope:&#160;enum.h']]],
+  ['board_5fsel_8',['board_sel',['../structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb',1,'measurement_settings::board_sel'],['../structmeasurement__settings__matlab.html#a1d80b48d6c6d557aec027edb47d70533',1,'measurement_settings_matlab::board_sel']]],
+  ['bslope_9',['bslope',['../enum_8h.html#a07819fc2fdc2eccaccc603a32da96412',1,'bslope:&#160;enum.h'],['../structcamera__settings.html#aad2f5116d777038bcb58543db3caf877',1,'camera_settings::bslope']]],
   ['bslope_5fboth_10',['bslope_both',['../enum_8h.html#a07819fc2fdc2eccaccc603a32da96412a0952824a300b32293f01e488f8f46c43',1,'enum.h']]],
   ['bslope_5fneg_11',['bslope_neg',['../enum_8h.html#a07819fc2fdc2eccaccc603a32da96412a995d52f9d94a04b8dce7957075329003',1,'enum.h']]],
   ['bslope_5fpos_12',['bslope_pos',['../enum_8h.html#a07819fc2fdc2eccaccc603a32da96412a4f631a3ca702bc15ac3b6f597c26df86',1,'enum.h']]],
@@ -20,6 +20,7 @@ var searchData=
   ['bti_5fs1s2_17',['bti_S1S2',['../enum_8h.html#a88d34fdca244141b49fcaf54f2d97363a5eb74bef97fe66846db9fd28e811a647',1,'enum.h']]],
   ['bti_5fs2_18',['bti_S2',['../enum_8h.html#a88d34fdca244141b49fcaf54f2d97363a5879bf4c0aad3807d8a4f4faa0fb9d7a',1,'enum.h']]],
   ['btime_5fin_5fmicrosec_19',['btime_in_microsec',['../structcamera__settings.html#a2c83fba5f72159010fc146c2c52209de',1,'camera_settings']]],
-  ['byte_5fto_5fbinary_20',['BYTE_TO_BINARY',['../_board_8c.html#aa28480bfa03957b4f284c13e800ca8b0',1,'Board.c']]],
-  ['byte_5fto_5fbinary_5fpattern_21',['BYTE_TO_BINARY_PATTERN',['../_board_8c.html#ae8b243fdac3715a3da7c98b9a380eaa5',1,'Board.c']]]
+  ['btimer_3a_20',['Use STimer and/or BTimer:',['../index.html#autotoc_md9',1,'']]],
+  ['byte_5fto_5fbinary_21',['BYTE_TO_BINARY',['../_board_8c.html#aa28480bfa03957b4f284c13e800ca8b0',1,'Board.c']]],
+  ['byte_5fto_5fbinary_5fpattern_22',['BYTE_TO_BINARY_PATTERN',['../_board_8c.html#ae8b243fdac3715a3da7c98b9a380eaa5',1,'Board.c']]]
 ];
