@@ -1,12 +1,22 @@
 var searchData=
 [
-  ['scanresult_0',['scanResult',['../_board__ll_8c.html#a6ed5330abf4660f88020dcc1ce7926c1',1,'Board_ll.c']]],
-  ['sdat_5fin_5f10ns_1',['sdat_in_10ns',['../structcamera__settings.html#afdbb58aa78c6d9d9210c244507de9c68',1,'camera_settings']]],
-  ['sec_5fin_5f10ns_2',['sec_in_10ns',['../structcamera__settings.html#adef56c9e33dc855c930fd7d44588cbcd',1,'camera_settings']]],
-  ['sensor_5fgain_3',['sensor_gain',['../structcamera__settings.html#ac7aefaf11767a16726f85379d288895b',1,'camera_settings']]],
-  ['sensor_5ftype_4',['sensor_type',['../structcamera__settings.html#a3c95b63babcb2222a271e2cd42b6e057',1,'camera_settings']]],
-  ['shortrs_5',['shortrs',['../structcamera__settings.html#a29f5676f11094ab4c5289499e206c00c',1,'camera_settings']]],
-  ['sslope_6',['sslope',['../structcamera__settings.html#a6f55940576ecb2bced3027d38676ea5c',1,'camera_settings']]],
-  ['sti_5fmode_7',['sti_mode',['../structcamera__settings.html#afeb4693c3f62bd567f9063c0412035b5',1,'camera_settings']]],
-  ['stime_5fin_5fmicrosec_8',['stime_in_microsec',['../structcamera__settings.html#a7a10d3d25fafe652f0f6b349f9c2a5fb',1,'camera_settings']]]
+  ['s1state_0',['s1State',['../structspecial__pixels.html#a107cbb65ce4e3db6931d281b1e46e0ae',1,'special_pixels']]],
+  ['s2state_1',['s2State',['../structspecial__pixels.html#a36f918f4356fddac50f5358de8f422ec',1,'special_pixels']]],
+  ['sample_5fcnt_2',['sample_cnt',['../structverify__data__parameter.html#aa802f0aca4cdf2eb1acd39a6a8a7dbb8',1,'verify_data_parameter']]],
+  ['scancountertotal_3',['scancountertotal',['../globals_8c.html#aeb4ab164f87614736d4e4b13c33c9bd4',1,'scanCounterTotal:&#160;globals.c'],['../globals_8h.html#aeb4ab164f87614736d4e4b13c33c9bd4',1,'scanCounterTotal:&#160;globals.c']]],
+  ['scanindex_4',['scanIndex',['../structspecial__pixels.html#a35130c9065643e294fc050e9bd077987',1,'special_pixels']]],
+  ['scanindex2_5',['scanIndex2',['../structspecial__pixels.html#aaa555cb3040f43aeca746d0d6b5f4bec',1,'special_pixels']]],
+  ['scanresult_6',['scanResult',['../_board__ll_8c.html#a6ed5330abf4660f88020dcc1ce7926c1',1,'Board_ll.c']]],
+  ['sdat_5fin_5f10ns_7',['sdat_in_10ns',['../structcamera__settings.html#afdbb58aa78c6d9d9210c244507de9c68',1,'camera_settings']]],
+  ['sec_5fin_5f10ns_8',['sec_in_10ns',['../structcamera__settings.html#adef56c9e33dc855c930fd7d44588cbcd',1,'camera_settings']]],
+  ['sensor_5fgain_9',['sensor_gain',['../structcamera__settings.html#ac7aefaf11767a16726f85379d288895b',1,'camera_settings']]],
+  ['sensor_5freset_5flength_5fin_5f8_5fns_10',['sensor_reset_length_in_8_ns',['../structcamera__settings.html#aedc4cfe30db8d9e7b62155534ac60dec',1,'camera_settings']]],
+  ['sensor_5ftype_11',['sensor_type',['../structcamera__settings.html#a3c95b63babcb2222a271e2cd42b6e057',1,'camera_settings']]],
+  ['settings_5fstruct_12',['settings_struct',['../globals_8c.html#af3b701c44f042f5169109f69acbe8d01',1,'settings_struct:&#160;globals.c'],['../globals_8h.html#af3b701c44f042f5169109f69acbe8d01',1,'settings_struct:&#160;globals.c']]],
+  ['shortrs_13',['shortrs',['../structcamera__settings.html#a29f5676f11094ab4c5289499e206c00c',1,'camera_settings']]],
+  ['split_5fmode_14',['split_mode',['../structfile__header.html#ae0f4d820497a8b527703992eada5a83c',1,'file_header']]],
+  ['sslope_15',['sslope',['../structcamera__settings.html#a6f55940576ecb2bced3027d38676ea5c',1,'camera_settings']]],
+  ['start_5ftimestamp_16',['start_timestamp',['../globals_8h.html#ac4d084be9a8b4b7d84a8ba52be25e064',1,'start_timestamp:&#160;globals.c'],['../globals_8c.html#ac4d084be9a8b4b7d84a8ba52be25e064',1,'start_timestamp:&#160;globals.c']]],
+  ['sti_5fmode_17',['sti_mode',['../structcamera__settings.html#afeb4693c3f62bd567f9063c0412035b5',1,'camera_settings']]],
+  ['stime_5fin_5fmicrosec_18',['stime_in_microsec',['../structcamera__settings.html#a7a10d3d25fafe652f0f6b349f9c2a5fb',1,'camera_settings']]]
 ];

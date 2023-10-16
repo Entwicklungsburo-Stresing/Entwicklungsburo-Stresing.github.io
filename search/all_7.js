@@ -11,8 +11,8 @@ var searchData=
   ['getdmabuffersizeinbytes_8',['getDmaBufferSizeInBytes',['../_board__ll_8c.html#aa7e4308fafab91ed6faedaa92a935f67',1,'Board_ll.c']]],
   ['getdsc_9',['GetDSC',['../_board_8c.html#ae14f77ebd68a86d475b527a4c275b163',1,'Board.c']]],
   ['getfileheaderfromfile_10',['getFileHeaderFromFile',['../_board__ll_8c.html#a70ca723ad61645c892cfb166831a3d3a',1,'Board_ll.c']]],
-  ['getgammablack_11',['getgammablack',['../class_direct2d_viewer.html#a85de5b74a95a40dd71d9ffd44bb394bf',1,'Direct2dViewer::GetGammaBlack()'],['../_board__ll_8c.html#a0df90d52ea90499ce5eb2486c8eefe57',1,'GetGammaBlack():&#160;Board_ll.c']]],
-  ['getgammawhite_12',['getgammawhite',['../class_direct2d_viewer.html#aa4e00912b4c1dfc82cc0919bd611ec5d',1,'Direct2dViewer::GetGammaWhite()'],['../_board__ll_8c.html#a65941dc2c6e53b25927f12e67b703799',1,'GetGammaWhite():&#160;Board_ll.c']]],
+  ['getgammablack_11',['getgammablack',['../_board__ll_8c.html#a0df90d52ea90499ce5eb2486c8eefe57',1,'GetGammaBlack():&#160;Board_ll.c'],['../class_direct2d_viewer.html#a85de5b74a95a40dd71d9ffd44bb394bf',1,'Direct2dViewer::GetGammaBlack()']]],
+  ['getgammawhite_12',['getgammawhite',['../_board__ll_8c.html#a65941dc2c6e53b25927f12e67b703799',1,'GetGammaWhite():&#160;Board_ll.c'],['../class_direct2d_viewer.html#aa4e00912b4c1dfc82cc0919bd611ec5d',1,'Direct2dViewer::GetGammaWhite()']]],
   ['getimpactsignal1_13',['GetImpactSignal1',['../_board_8c.html#a4b50d39812cee8a2aea999877d7d0511',1,'Board.c']]],
   ['getimpactsignal2_14',['GetImpactSignal2',['../_board_8c.html#afeb426a6679273f10e28f6f1fa9df820',1,'Board.c']]],
   ['getindexofpixel_15',['GetIndexOfPixel',['../_board_8c.html#a3e1f3b14daba680086195e0c8a3b70a4',1,'Board.c']]],
@@ -30,5 +30,8 @@ var searchData=
   ['getvirtualdmaaddress_27',['getVirtualDmaAddress',['../_board__ll_8c.html#a46239bcacf764bc860faf531d74ce29e',1,'Board_ll.c']]],
   ['getwindowhandler_28',['getWindowHandler',['../class_direct2d_viewer.html#a80b76d2c3f1cb0b01be97f1b28827f43',1,'Direct2dViewer']]],
   ['ghmutex_29',['ghMutex',['../_board__ll_8c.html#a1c5994d155a9550cec19ba7091b41775',1,'Board_ll.c']]],
-  ['gpx_5foffset_30',['gpx_offset',['../structcamera__settings.html#ad9e618626ec640a5733b33745e844d15',1,'camera_settings']]]
+  ['global_5fvars_30',['global_vars',['../structglobal__vars.html',1,'']]],
+  ['globals_2ec_31',['globals.c',['../globals_8c.html',1,'']]],
+  ['globals_2eh_32',['globals.h',['../globals_8h.html',1,'']]],
+  ['gpx_5foffset_33',['gpx_offset',['../structcamera__settings.html#ad9e618626ec640a5733b33745e844d15',1,'camera_settings']]]
 ];

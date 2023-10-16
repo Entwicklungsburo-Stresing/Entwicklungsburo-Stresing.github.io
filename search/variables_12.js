@@ -1,9 +1,25 @@
 var searchData=
 [
-  ['temp_5flevel_0',['temp_level',['../structcamera__settings.html#a5949285bc39a601900f8d975444e492d',1,'camera_settings']]],
-  ['ticnt_1',['ticnt',['../structcamera__settings.html#ac12f30ac115c4defea18c2fa26f99040',1,'camera_settings']]],
-  ['tocnt_2',['tocnt',['../structcamera__settings.html#a9d36d06df4f4506a30632260bf6b1939',1,'camera_settings']]],
-  ['tor_3',['tor',['../structcamera__settings.html#ac9a0cd5c6fc15fb192e18d623cffca0d',1,'camera_settings']]],
-  ['tps_4',['TPS',['../_board__ll_8c.html#ab65ac38eb1793dbc218e64f6e5509390',1,'Board_ll.c']]],
-  ['trigger_5fmode_5fcc_5',['trigger_mode_cc',['../structcamera__settings.html#a8970bc7451430f3f980021da1d74f2cd',1,'camera_settings']]]
+  ['temp_5fdata_5favailable_0',['temp_data_available',['../globals_8c.html#a7df219f4963bd53babcc563be0dfc2ad',1,'globals.c']]],
+  ['temp_5flevel_1',['temp_level',['../structcamera__settings.html#a5949285bc39a601900f8d975444e492d',1,'camera_settings']]],
+  ['temp_5fnumberofinterrupts_2',['temp_numberOfInterrupts',['../globals_8c.html#aee10f3ee746a88b3ed3b571574c51a6c',1,'globals.c']]],
+  ['temp_5fscancountertotal_3',['temp_scanCounterTotal',['../globals_8c.html#a8ff25cc90722ea167a3ed9bbe8065b0f',1,'globals.c']]],
+  ['temp_5ftimeron_4',['temp_timerOn',['../globals_8c.html#ac7ed0c7d06760df305e80ba321559da3',1,'globals.c']]],
+  ['temp_5fuserbuffer_5',['temp_userBuffer',['../globals_8c.html#a6c70e82d3a09090dc6c8f191b68d2ec7',1,'globals.c']]],
+  ['temp_5fuserbufferendptr_6',['temp_userBufferEndPtr',['../globals_8c.html#a323e126db53d5fc8bdaf6993ff9f786a',1,'globals.c']]],
+  ['temp_5fuserbufferwritepos_7',['temp_userBufferWritePos',['../globals_8c.html#a641bbad35ea3a2bca86555de001466d2',1,'globals.c']]],
+  ['temp_5fuserbufferwritepos_5flast_8',['temp_userBufferWritePos_last',['../globals_8c.html#ab504375f780f5c7c9275f8314ea8b7b9',1,'globals.c']]],
+  ['tempgood_9',['tempGood',['../structspecial__pixels.html#abad58c7db9fdbfc3f747d0816b36c207',1,'special_pixels']]],
+  ['ticnt_10',['ticnt',['../structcamera__settings.html#ac12f30ac115c4defea18c2fa26f99040',1,'camera_settings']]],
+  ['timeron_11',['timeron',['../globals_8h.html#af15269ff90986dd874dc8775f8e8417a',1,'timerOn:&#160;globals.c'],['../globals_8c.html#af15269ff90986dd874dc8775f8e8417a',1,'timerOn:&#160;globals.c']]],
+  ['timestamp_12',['timestamp',['../structfile__header.html#ac4a7ee4e4d986ebaf0376ea4c06843cc',1,'file_header']]],
+  ['tmp_5facamcnt_13',['tmp_aCAMCNT',['../globals_8c.html#a05300df16cbd74b85f11dc3a2f0e3d8b',1,'globals.c']]],
+  ['tmp_5fallinterruptsdone_14',['tmp_allInterruptsDone',['../globals_8c.html#a9bb88bdfcf1f5dffe0595ec3ac9e2b27',1,'globals.c']]],
+  ['tmp_5fapixel_15',['tmp_aPIXEL',['../globals_8c.html#a0f50df47d56b2345157a1be92483385a',1,'globals.c']]],
+  ['tmp_5fnob_16',['tmp_Nob',['../globals_8c.html#a4296eb0ad9e761e0902bf32c2f565926',1,'globals.c']]],
+  ['tmp_5fnosbp_17',['tmp_Nosbp',['../globals_8c.html#ae35ab6903e47b285430751eba91d3efb',1,'globals.c']]],
+  ['tocnt_18',['tocnt',['../structcamera__settings.html#a9d36d06df4f4506a30632260bf6b1939',1,'camera_settings']]],
+  ['tor_19',['tor',['../structcamera__settings.html#ac9a0cd5c6fc15fb192e18d623cffca0d',1,'camera_settings']]],
+  ['tps_20',['TPS',['../_board__ll_8c.html#ab65ac38eb1793dbc218e64f6e5509390',1,'Board_ll.c']]],
+  ['trigger_5fmode_5fcc_21',['trigger_mode_cc',['../structcamera__settings.html#a8970bc7451430f3f980021da1d74f2cd',1,'camera_settings']]]
 ];

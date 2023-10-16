@@ -192,16 +192,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="enum_8h.html#a2731ca4d4660751a6d4c6bfadd9a1fc7a551c7ceb9172d4fb3d2a1435f60fd07b">CTRLC_bit_I</a> = 0x01
 , <a class="el" href="enum_8h.html#a2731ca4d4660751a6d4c6bfadd9a1fc7a65b653665f35413bb7aac210de9c0daa">CTRLC_bit_S1</a> = 0x02
 , <a class="el" href="enum_8h.html#a2731ca4d4660751a6d4c6bfadd9a1fc7a17d4b768b8e8ef399a307ba1c5116943">CTRLC_bit_S2</a> = 0x04
-, <a class="el" href="enum_8h.html#a2731ca4d4660751a6d4c6bfadd9a1fc7a4e9496d91ad2b46154fa4916975e85e8">CTRLC_bit_early_reset</a> = 0x08
+, <a class="el" href="enum_8h.html#a2731ca4d4660751a6d4c6bfadd9a1fc7af9f8a96d62cf20dad592aa9f150951d2">CTRLC_bit_eoi</a> = 0x10
 , <br />
-&#160;&#160;<a class="el" href="enum_8h.html#a2731ca4d4660751a6d4c6bfadd9a1fc7af9f8a96d62cf20dad592aa9f150951d2">CTRLC_bit_eoi</a> = 0x10
-, <a class="el" href="enum_8h.html#a2731ca4d4660751a6d4c6bfadd9a1fc7a77d1bc4d943e8f1234318ad83f9957c5">CTRLC_bit_eoi_chb</a> = 0x20
+&#160;&#160;<a class="el" href="enum_8h.html#a2731ca4d4660751a6d4c6bfadd9a1fc7a77d1bc4d943e8f1234318ad83f9957c5">CTRLC_bit_eoi_chb</a> = 0x20
 , <a class="el" href="enum_8h.html#a2731ca4d4660751a6d4c6bfadd9a1fc7af404b45739190c09dea1483e5c3f5a39">CTRLC_bitindex_I</a> = 0
 , <a class="el" href="enum_8h.html#a2731ca4d4660751a6d4c6bfadd9a1fc7a543178f9ebf2a07edc630184b68e9ad9">CTRLC_bitindex_S1</a> = 1
+, <a class="el" href="enum_8h.html#a2731ca4d4660751a6d4c6bfadd9a1fc7a0f2ea5d22322e709979914348f02cc33">CTRLC_bitindex_S2</a> = 2
 , <br />
-&#160;&#160;<a class="el" href="enum_8h.html#a2731ca4d4660751a6d4c6bfadd9a1fc7a0f2ea5d22322e709979914348f02cc33">CTRLC_bitindex_S2</a> = 2
-, <a class="el" href="enum_8h.html#a2731ca4d4660751a6d4c6bfadd9a1fc7a624733346e7a3cf43fa170e9bb6f27d3">CTRLC_bitindex_early_reset</a> = 3
-, <a class="el" href="enum_8h.html#a2731ca4d4660751a6d4c6bfadd9a1fc7a7008569a34c7878e7478700d1950a55e">CTRLC_bitindex_eoi</a> = 4
+&#160;&#160;<a class="el" href="enum_8h.html#a2731ca4d4660751a6d4c6bfadd9a1fc7a7008569a34c7878e7478700d1950a55e">CTRLC_bitindex_eoi</a> = 4
 , <a class="el" href="enum_8h.html#a2731ca4d4660751a6d4c6bfadd9a1fc7a9dd1129a5a3cda5f550bf4600e55423f">CTRLC_bitindex_eoi_chb</a> = 5
 <br />
  }</td></tr>
@@ -217,24 +215,17 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="separator:a8ec4afb43d4a98ded88462a3fdac6d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcb683f3db9e272452850b6fd6e9e070" id="r_abcb683f3db9e272452850b6fd6e9e070"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enum_8h.html#abcb683f3db9e272452850b6fd6e9e070">TOR_MSB_bits</a> { <br />
-&#160;&#160;<a class="el" href="enum_8h.html#abcb683f3db9e272452850b6fd6e9e070a33d4f55eac0f99347ebe41032284fae3">TOR_MSB_bit_ISFFT</a> = 0x01
-, <a class="el" href="enum_8h.html#abcb683f3db9e272452850b6fd6e9e070a65d4196f4c75a044d27ef0f58c23159e">TOR_MSB_bit_SENDRS</a> = 0x02
-, <a class="el" href="enum_8h.html#abcb683f3db9e272452850b6fd6e9e070acd76c9f1b967bf68371f0c1e2790b168">TOR_MSB_bit_SHORTRS</a> = 0x04
-, <a class="el" href="enum_8h.html#abcb683f3db9e272452850b6fd6e9e070a969660f6af511b1e6934c1722c48b1aa">TOR_MSB_bit_TOSEL</a> = 0x08
-, <br />
-&#160;&#160;<a class="el" href="enum_8h.html#abcb683f3db9e272452850b6fd6e9e070a2ca8efc5a0324e937ed0b6a3335b631f">TOR_MSB_bit_TO0</a> = 0x10
+&#160;&#160;<a class="el" href="enum_8h.html#abcb683f3db9e272452850b6fd6e9e070a969660f6af511b1e6934c1722c48b1aa">TOR_MSB_bit_TOSEL</a> = 0x08
+, <a class="el" href="enum_8h.html#abcb683f3db9e272452850b6fd6e9e070a2ca8efc5a0324e937ed0b6a3335b631f">TOR_MSB_bit_TO0</a> = 0x10
 , <a class="el" href="enum_8h.html#abcb683f3db9e272452850b6fd6e9e070a639c8170549041605762864af218d3fb">TOR_MSB_bit_TO1</a> = 0x20
 , <a class="el" href="enum_8h.html#abcb683f3db9e272452850b6fd6e9e070ada38f0a4f4d25461344debdbf2d4a733">TOR_MSB_bit_TO2</a> = 0x40
-, <a class="el" href="enum_8h.html#abcb683f3db9e272452850b6fd6e9e070ad477b4a7d32dd82731acd75bf282fb1d">TOR_MSB_bit_TO3</a> = 0x80
 , <br />
-&#160;&#160;<a class="el" href="enum_8h.html#abcb683f3db9e272452850b6fd6e9e070aa89e5a5a789e618e7f61635bd9f9ac2d">TOR_MSB_bitindex_ISFFT</a> = 0
-, <a class="el" href="enum_8h.html#abcb683f3db9e272452850b6fd6e9e070a63df83ebd7b72d544113572adec57d2f">TOR_MSB_bitindex_SENDRS</a> = 1
-, <a class="el" href="enum_8h.html#abcb683f3db9e272452850b6fd6e9e070a61c9def63f22592d4fbb6f2b47680a33">TOR_MSB_bitindex_SHORTRS</a> = 2
+&#160;&#160;<a class="el" href="enum_8h.html#abcb683f3db9e272452850b6fd6e9e070ad477b4a7d32dd82731acd75bf282fb1d">TOR_MSB_bit_TO3</a> = 0x80
 , <a class="el" href="enum_8h.html#abcb683f3db9e272452850b6fd6e9e070a773c9f37810ede1c3f686d780492f057">TOR_MSB_bitindex_TOSEL</a> = 3
-, <br />
-&#160;&#160;<a class="el" href="enum_8h.html#abcb683f3db9e272452850b6fd6e9e070a52455df2ca4853633402285648a963d8">TOR_MSB_bitindex_TO0</a> = 4
+, <a class="el" href="enum_8h.html#abcb683f3db9e272452850b6fd6e9e070a52455df2ca4853633402285648a963d8">TOR_MSB_bitindex_TO0</a> = 4
 , <a class="el" href="enum_8h.html#abcb683f3db9e272452850b6fd6e9e070a787be802ec30f8373f4751d653c49650">TOR_MSB_bitindex_TO1</a> = 5
-, <a class="el" href="enum_8h.html#abcb683f3db9e272452850b6fd6e9e070a79c350c5c772b06faef8f17c34f76f93">TOR_MSB_bitindex_TO2</a> = 6
+, <br />
+&#160;&#160;<a class="el" href="enum_8h.html#abcb683f3db9e272452850b6fd6e9e070a79c350c5c772b06faef8f17c34f76f93">TOR_MSB_bitindex_TO2</a> = 6
 , <a class="el" href="enum_8h.html#abcb683f3db9e272452850b6fd6e9e070aa548861e52967338164c4be38303c9a6">TOR_MSB_bitindex_TO3</a> = 7
 <br />
  }</td></tr>
@@ -340,6 +331,8 @@ Enumerations</h2></td></tr>
 , <a class="el" href="enum_8h.html#adff611e76872eeef6e83b6d94b66f9c7a41e8c3797e6933e36ebfd5d092279149">S0Addr_DAC</a> = 0xAC
 , <a class="el" href="enum_8h.html#adff611e76872eeef6e83b6d94b66f9c7a97590c3dc08198b5edc60c2f9b665eef">S0Addr_CAMSTATUS12</a> = 0xB0
 , <a class="el" href="enum_8h.html#adff611e76872eeef6e83b6d94b66f9c7a31907db69f74e39041a3213a6d6a49c6">S0Addr_CAMSTATUS34</a> = 0xB4
+, <br />
+&#160;&#160;<a class="el" href="enum_8h.html#adff611e76872eeef6e83b6d94b66f9c7a0694822028f927970ffbd57a0c8a6705">S0Addr_CAMERA_TYPE</a> = 0xB8
 <br />
  }</td></tr>
 <tr class="separator:adff611e76872eeef6e83b6d94b66f9c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -372,13 +365,13 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="enum_8h.html#a274478421a886deec0c23954d8dd4e5ca69121ef35ecc8ca9bf51529008910ae3">cam_adaddr_pixel</a> = 0x01
 , <a class="el" href="enum_8h.html#a274478421a886deec0c23954d8dd4e5ca5a7070d1ed412936fab5223d1de07b50">cam_adaddr_trig_in</a> = 0x02
-, <a class="el" href="enum_8h.html#a274478421a886deec0c23954d8dd4e5ca652cc57ee9e83201042870d282dab24f">cam_adaddr_useEC</a> = 0x03
+, <a class="el" href="enum_8h.html#a274478421a886deec0c23954d8dd4e5cabf4ac2bf667f8421f9df18ea9b1b308b">cam_adaddr_unused</a> = 0x03
 , <a class="el" href="enum_8h.html#a274478421a886deec0c23954d8dd4e5ca615cf62040ce0c03694031ec01f442da">cam_adaddr_vclk</a> = 0x04
 , <br />
 &#160;&#160;<a class="el" href="enum_8h.html#a274478421a886deec0c23954d8dd4e5caaa11b9b9b9b35e3d890a9a33648610df">cam_adaddr_LEDoff</a> = 0x05
 , <a class="el" href="enum_8h.html#a274478421a886deec0c23954d8dd4e5caf88ce9a5e4c3f6ed87f5ff5c2fee0375">cam_adaddr_coolTemp</a> = 0x06
 , <a class="el" href="enum_8h.html#a274478421a886deec0c23954d8dd4e5ca9d774a1b5195bdda8d3aeb98ce0100b6">cam_adaddr_sample_mode</a> = 0x07
-, <a class="el" href="enum_8h.html#a274478421a886deec0c23954d8dd4e5ca4716fc292e94dec709beeb4923464423">cam_adaddr_ifc_mode</a> = 0x08
+, <a class="el" href="enum_8h.html#a274478421a886deec0c23954d8dd4e5caa0cc15423952afc82702e57ae6f9b445">cam_adaddr_sensor_reset_length_in_8_ns</a> = 0x08
 , <br />
 &#160;&#160;<a class="el" href="enum_8h.html#a274478421a886deec0c23954d8dd4e5caca4c4e9235d324d2d4bc36da2825f03a">cam_adaddr_vclks_amount1</a> = 0x9
 , <a class="el" href="enum_8h.html#a274478421a886deec0c23954d8dd4e5ca90e8ca7f6f7401c6f76bd5fd2d6c0583">cam_adaddr_vclks_amount2</a> = 0xA
@@ -485,8 +478,15 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a88d34fdca244141b49fcaf54f2d97363"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ceb3ea24264a6faa4f32351cb58d41a" id="r_a6ceb3ea24264a6faa4f32351cb58d41a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enum_8h.html#a6ceb3ea24264a6faa4f32351cb58d41a">sensor_type</a> { <a class="el" href="enum_8h.html#a6ceb3ea24264a6faa4f32351cb58d41aa1bffbd83d89217ac715ebe449198ef10">PDAsensor</a> = 0
-, <a class="el" href="enum_8h.html#a6ceb3ea24264a6faa4f32351cb58d41aa4204c0f081288d8772090844d036b33f">FFTsensor</a> = 1
+<tr class="memitem:a6ceb3ea24264a6faa4f32351cb58d41a" id="r_a6ceb3ea24264a6faa4f32351cb58d41a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enum_8h.html#a6ceb3ea24264a6faa4f32351cb58d41a">sensor_type</a> { <br />
+&#160;&#160;<a class="el" href="enum_8h.html#a6ceb3ea24264a6faa4f32351cb58d41aa94e479efd9002ec62311463b9ffdf772">sensor_type_pda</a> = 0
+, <a class="el" href="enum_8h.html#a6ceb3ea24264a6faa4f32351cb58d41aa13dd2773c352d66bcdedcb85a05f60db">sensor_type_ir</a> = 1
+, <a class="el" href="enum_8h.html#a6ceb3ea24264a6faa4f32351cb58d41aac0844018d4ef84317a2a697eab9b7f01">sensor_type_fft</a> = 2
+, <a class="el" href="enum_8h.html#a6ceb3ea24264a6faa4f32351cb58d41aa4c0f2ff3381db278076e451b0625b5d4">sensor_type_cmos</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="enum_8h.html#a6ceb3ea24264a6faa4f32351cb58d41aa4e100373c4b1b26006154c1ec4146dfb">sensor_type_hsvis</a> = 4
+, <a class="el" href="enum_8h.html#a6ceb3ea24264a6faa4f32351cb58d41aa3ab2d71c31ee633ec2e4b64b53e4d3d3">sensor_type_hsir</a> = 5
+<br />
  }</td></tr>
 <tr class="separator:a6ceb3ea24264a6faa4f32351cb58d41a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a334460f1eedac4bbce4cfc1c9bc98219" id="r_a334460f1eedac4bbce4cfc1c9bc98219"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enum_8h.html#a334460f1eedac4bbce4cfc1c9bc98219">camera_system</a> { <a class="el" href="enum_8h.html#a334460f1eedac4bbce4cfc1c9bc98219a948b64b6e3ac3f7b6455cccb9bb074d4">camera_system_3001</a> = 0
@@ -563,16 +563,6 @@ Enumerations</h2></td></tr>
 , <a class="el" href="enum_8h.html#a3dd924cc47685d6aaaaad60f51514b9aa0946dad68dcf9c861b933d4a7837133a">file_filename_full_size</a> = 256
  }</td></tr>
 <tr class="separator:a3dd924cc47685d6aaaaad60f51514b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac32d660edb97c1f369f91e55d72616b" id="r_aac32d660edb97c1f369f91e55d72616b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enum_8h.html#aac32d660edb97c1f369f91e55d72616b">sec_bits</a> { <br />
-&#160;&#160;<a class="el" href="enum_8h.html#aac32d660edb97c1f369f91e55d72616bad6b9d60f251768103ac3c90993f3a44c">sec_bits_sec_in_10ns</a> = 0x3FFFFFFF
-, <a class="el" href="enum_8h.html#aac32d660edb97c1f369f91e55d72616baa32e93c93a8cc4e796dac4c10935e1b0">sec_bit_en_ec_3030</a> = 0x40000000
-, <a class="el" href="enum_8h.html#aac32d660edb97c1f369f91e55d72616ba9f46c4f908008add26a5ea01a63205d1">sec_bit_enable</a> = 0x80000000
-, <a class="el" href="enum_8h.html#aac32d660edb97c1f369f91e55d72616ba432548a9a58712e1a29fe5fb42a43a26">sec_bitindex_en_ec_3030</a> = 30
-, <br />
-&#160;&#160;<a class="el" href="enum_8h.html#aac32d660edb97c1f369f91e55d72616bac5fe6297740142600abc3b8c6d0e7307">sec_bitindex_enable</a> = 31
-<br />
- }</td></tr>
-<tr class="separator:aac32d660edb97c1f369f91e55d72616b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a111696cd9ed6a9809d06ce828bd4e4d0" id="r_a111696cd9ed6a9809d06ce828bd4e4d0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enum_8h.html#a111696cd9ed6a9809d06ce828bd4e4d0">DAC8568_location</a> { <a class="el" href="enum_8h.html#a111696cd9ed6a9809d06ce828bd4e4d0a8fb79ee44544b0c75f0827b45739bcd6">DAC8568_camera</a> = 0
 , <a class="el" href="enum_8h.html#a111696cd9ed6a9809d06ce828bd4e4d0a597af1a07b998030ae8743472cc5e227">DAC8568_pcie</a> = 1
  }</td></tr>
@@ -654,6 +644,12 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a18d7f7730f455fd0052cb848cd0f94ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a692997576b55d00d2e88c568a6f6ceed" id="r_a692997576b55d00d2e88c568a6f6ceed"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enum_8h.html#a692997576b55d00d2e88c568a6f6ceed">camera_type_bits</a> { <a class="el" href="enum_8h.html#a692997576b55d00d2e88c568a6f6ceedadd9d08e13c0f7de9ff488768977ae093">camera_type_sensor_type_bits</a> = 0x0000FFFF
+, <a class="el" href="enum_8h.html#a692997576b55d00d2e88c568a6f6ceeda3c89df8f9a49d73dd59ff52552b77e10">camera_type_camera_system_bits</a> = 0xFFFF0000
+, <a class="el" href="enum_8h.html#a692997576b55d00d2e88c568a6f6ceedac4da96f23746040708a4d3a22a929dd7">camera_type_sensor_type_bit_index</a> = 0
+, <a class="el" href="enum_8h.html#a692997576b55d00d2e88c568a6f6ceeda943d1c69d6a33acf0d136af8d6e988ea">camera_type_camera_system_bit_index</a> = 16
+ }</td></tr>
+<tr class="separator:a692997576b55d00d2e88c568a6f6ceed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a51acd785c14953090a3507d4fa8e5939" name="a51acd785c14953090a3507d4fa8e5939"></a>
@@ -790,7 +786,7 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a274478421a886deec0c23954d8dd4e5caa3248c8ef0bff8276c33c167917d21a6" name="a274478421a886deec0c23954d8dd4e5caa3248c8ef0bff8276c33c167917d21a6"></a>cam_adaddr_gain&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a274478421a886deec0c23954d8dd4e5ca69121ef35ecc8ca9bf51529008910ae3" name="a274478421a886deec0c23954d8dd4e5ca69121ef35ecc8ca9bf51529008910ae3"></a>cam_adaddr_pixel&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a274478421a886deec0c23954d8dd4e5ca5a7070d1ed412936fab5223d1de07b50" name="a274478421a886deec0c23954d8dd4e5ca5a7070d1ed412936fab5223d1de07b50"></a>cam_adaddr_trig_in&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a274478421a886deec0c23954d8dd4e5ca652cc57ee9e83201042870d282dab24f" name="a274478421a886deec0c23954d8dd4e5ca652cc57ee9e83201042870d282dab24f"></a>cam_adaddr_useEC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a274478421a886deec0c23954d8dd4e5cabf4ac2bf667f8421f9df18ea9b1b308b" name="a274478421a886deec0c23954d8dd4e5cabf4ac2bf667f8421f9df18ea9b1b308b"></a>cam_adaddr_unused&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a274478421a886deec0c23954d8dd4e5ca615cf62040ce0c03694031ec01f442da" name="a274478421a886deec0c23954d8dd4e5ca615cf62040ce0c03694031ec01f442da"></a>cam_adaddr_vclk&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a274478421a886deec0c23954d8dd4e5caaa11b9b9b9b35e3d890a9a33648610df" name="a274478421a886deec0c23954d8dd4e5caaa11b9b9b9b35e3d890a9a33648610df"></a>cam_adaddr_LEDoff&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a274478421a886deec0c23954d8dd4e5caf88ce9a5e4c3f6ed87f5ff5c2fee0375" name="a274478421a886deec0c23954d8dd4e5caf88ce9a5e4c3f6ed87f5ff5c2fee0375"></a>cam_adaddr_coolTemp&#160;</td><td class="fielddoc"></td></tr>
@@ -800,11 +796,8 @@ Enumerations</h2></td></tr>
 <li>2: ADC clock = 25 MHz, duty cycle 50%, sensor clock = 12,5 MHz duty cycle 20% </li>
 </ul>
 </td></tr>
-<tr><td class="fieldname"><a id="a274478421a886deec0c23954d8dd4e5ca4716fc292e94dec709beeb4923464423" name="a274478421a886deec0c23954d8dd4e5ca4716fc292e94dec709beeb4923464423"></a>cam_adaddr_ifc_mode&#160;</td><td class="fielddoc"><p>3030: IFC mode controls, whether the IFC signal from the PCIe card is used or the camera uses its own IFC signal.</p><ul>
-<li>0: use PCIe card IFC</li>
-<li>1: do a short (240ns) IFC between TG and horizontal clocks</li>
-<li>2: do a long (800ns) IFC between TG and horizontal clocks </li>
-</ul>
+<tr><td class="fieldname"><a id="a274478421a886deec0c23954d8dd4e5caa0cc15423952afc82702e57ae6f9b445" name="a274478421a886deec0c23954d8dd4e5caa0cc15423952afc82702e57ae6f9b445"></a>cam_adaddr_sensor_reset_length_in_8_ns&#160;</td><td class="fielddoc"><p>Sensor reset length register.</p>
+<p>3030: This register controls the length of the ARG pulse which is done after the TG pulse. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a274478421a886deec0c23954d8dd4e5caca4c4e9235d324d2d4bc36da2825f03a" name="a274478421a886deec0c23954d8dd4e5caca4c4e9235d324d2d4bc36da2825f03a"></a>cam_adaddr_vclks_amount1&#160;</td><td class="fielddoc"><p>stores the amount of vclks generated inside the camera.</p><ul>
 <li>cam_adaddr_vclks_amount1: is used for full binning (fft_lines) or the first region of ROI</li>
@@ -938,6 +931,26 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<a id="a692997576b55d00d2e88c568a6f6ceed" name="a692997576b55d00d2e88c568a6f6ceed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a692997576b55d00d2e88c568a6f6ceed">&#9670;&#160;</a></span>camera_type_bits</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="enum_8h.html#a692997576b55d00d2e88c568a6f6ceed">camera_type_bits</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a692997576b55d00d2e88c568a6f6ceedadd9d08e13c0f7de9ff488768977ae093" name="a692997576b55d00d2e88c568a6f6ceedadd9d08e13c0f7de9ff488768977ae093"></a>camera_type_sensor_type_bits&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a692997576b55d00d2e88c568a6f6ceeda3c89df8f9a49d73dd59ff52552b77e10" name="a692997576b55d00d2e88c568a6f6ceeda3c89df8f9a49d73dd59ff52552b77e10"></a>camera_type_camera_system_bits&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a692997576b55d00d2e88c568a6f6ceedac4da96f23746040708a4d3a22a929dd7" name="a692997576b55d00d2e88c568a6f6ceedac4da96f23746040708a4d3a22a929dd7"></a>camera_type_sensor_type_bit_index&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a692997576b55d00d2e88c568a6f6ceeda943d1c69d6a33acf0d136af8d6e988ea" name="a692997576b55d00d2e88c568a6f6ceeda943d1c69d6a33acf0d136af8d6e988ea"></a>camera_type_camera_system_bit_index&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="aa1814b59cda432645a648ae54ccfdd06" name="aa1814b59cda432645a648ae54ccfdd06"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa1814b59cda432645a648ae54ccfdd06">&#9670;&#160;</a></span>CTRLA_bits</h2>
 
@@ -1015,13 +1028,11 @@ Enumerations</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2731ca4d4660751a6d4c6bfadd9a1fc7a551c7ceb9172d4fb3d2a1435f60fd07b" name="a2731ca4d4660751a6d4c6bfadd9a1fc7a551c7ceb9172d4fb3d2a1435f60fd07b"></a>CTRLC_bit_I&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a2731ca4d4660751a6d4c6bfadd9a1fc7a65b653665f35413bb7aac210de9c0daa" name="a2731ca4d4660751a6d4c6bfadd9a1fc7a65b653665f35413bb7aac210de9c0daa"></a>CTRLC_bit_S1&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a2731ca4d4660751a6d4c6bfadd9a1fc7a17d4b768b8e8ef399a307ba1c5116943" name="a2731ca4d4660751a6d4c6bfadd9a1fc7a17d4b768b8e8ef399a307ba1c5116943"></a>CTRLC_bit_S2&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a2731ca4d4660751a6d4c6bfadd9a1fc7a4e9496d91ad2b46154fa4916975e85e8" name="a2731ca4d4660751a6d4c6bfadd9a1fc7a4e9496d91ad2b46154fa4916975e85e8"></a>CTRLC_bit_early_reset&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a2731ca4d4660751a6d4c6bfadd9a1fc7af9f8a96d62cf20dad592aa9f150951d2" name="a2731ca4d4660751a6d4c6bfadd9a1fc7af9f8a96d62cf20dad592aa9f150951d2"></a>CTRLC_bit_eoi&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a2731ca4d4660751a6d4c6bfadd9a1fc7a77d1bc4d943e8f1234318ad83f9957c5" name="a2731ca4d4660751a6d4c6bfadd9a1fc7a77d1bc4d943e8f1234318ad83f9957c5"></a>CTRLC_bit_eoi_chb&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a2731ca4d4660751a6d4c6bfadd9a1fc7af404b45739190c09dea1483e5c3f5a39" name="a2731ca4d4660751a6d4c6bfadd9a1fc7af404b45739190c09dea1483e5c3f5a39"></a>CTRLC_bitindex_I&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a2731ca4d4660751a6d4c6bfadd9a1fc7a543178f9ebf2a07edc630184b68e9ad9" name="a2731ca4d4660751a6d4c6bfadd9a1fc7a543178f9ebf2a07edc630184b68e9ad9"></a>CTRLC_bitindex_S1&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a2731ca4d4660751a6d4c6bfadd9a1fc7a0f2ea5d22322e709979914348f02cc33" name="a2731ca4d4660751a6d4c6bfadd9a1fc7a0f2ea5d22322e709979914348f02cc33"></a>CTRLC_bitindex_S2&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a2731ca4d4660751a6d4c6bfadd9a1fc7a624733346e7a3cf43fa170e9bb6f27d3" name="a2731ca4d4660751a6d4c6bfadd9a1fc7a624733346e7a3cf43fa170e9bb6f27d3"></a>CTRLC_bitindex_early_reset&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a2731ca4d4660751a6d4c6bfadd9a1fc7a7008569a34c7878e7478700d1950a55e" name="a2731ca4d4660751a6d4c6bfadd9a1fc7a7008569a34c7878e7478700d1950a55e"></a>CTRLC_bitindex_eoi&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a2731ca4d4660751a6d4c6bfadd9a1fc7a9dd1129a5a3cda5f550bf4600e55423f" name="a2731ca4d4660751a6d4c6bfadd9a1fc7a9dd1129a5a3cda5f550bf4600e55423f"></a>CTRLC_bitindex_eoi_chb&#160;</td><td class="fielddoc"></td></tr>
 </table>
@@ -1398,6 +1409,7 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="adff611e76872eeef6e83b6d94b66f9c7a41e8c3797e6933e36ebfd5d092279149" name="adff611e76872eeef6e83b6d94b66f9c7a41e8c3797e6933e36ebfd5d092279149"></a>S0Addr_DAC&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="adff611e76872eeef6e83b6d94b66f9c7a97590c3dc08198b5edc60c2f9b665eef" name="adff611e76872eeef6e83b6d94b66f9c7a97590c3dc08198b5edc60c2f9b665eef"></a>S0Addr_CAMSTATUS12&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="adff611e76872eeef6e83b6d94b66f9c7a31907db69f74e39041a3213a6d6a49c6" name="adff611e76872eeef6e83b6d94b66f9c7a31907db69f74e39041a3213a6d6a49c6"></a>S0Addr_CAMSTATUS34&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adff611e76872eeef6e83b6d94b66f9c7a0694822028f927970ffbd57a0c8a6705" name="adff611e76872eeef6e83b6d94b66f9c7a0694822028f927970ffbd57a0c8a6705"></a>S0Addr_CAMERA_TYPE&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1420,31 +1432,6 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a id="aac32d660edb97c1f369f91e55d72616b" name="aac32d660edb97c1f369f91e55d72616b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac32d660edb97c1f369f91e55d72616b">&#9670;&#160;</a></span>sec_bits</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="enum_8h.html#aac32d660edb97c1f369f91e55d72616b">sec_bits</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This enum is describing the bits of the register SEC at address S0Addr_SEC </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aac32d660edb97c1f369f91e55d72616bad6b9d60f251768103ac3c90993f3a44c" name="aac32d660edb97c1f369f91e55d72616bad6b9d60f251768103ac3c90993f3a44c"></a>sec_bits_sec_in_10ns&#160;</td><td class="fielddoc"><p>The lower 30 bits are describing the length of SEC as unsigned integer in 10 nanosecond steps. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aac32d660edb97c1f369f91e55d72616baa32e93c93a8cc4e796dac4c10935e1b0" name="aac32d660edb97c1f369f91e55d72616baa32e93c93a8cc4e796dac4c10935e1b0"></a>sec_bit_en_ec_3030&#160;</td><td class="fielddoc"><p>This bit changes the signal IFC to a specialized 3030 version when SEC is used. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aac32d660edb97c1f369f91e55d72616ba9f46c4f908008add26a5ea01a63205d1" name="aac32d660edb97c1f369f91e55d72616ba9f46c4f908008add26a5ea01a63205d1"></a>sec_bit_enable&#160;</td><td class="fielddoc"><p>This bit must be set to 1 when you want to use SEC. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aac32d660edb97c1f369f91e55d72616ba432548a9a58712e1a29fe5fb42a43a26" name="aac32d660edb97c1f369f91e55d72616ba432548a9a58712e1a29fe5fb42a43a26"></a>sec_bitindex_en_ec_3030&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aac32d660edb97c1f369f91e55d72616bac5fe6297740142600abc3b8c6d0e7307" name="aac32d660edb97c1f369f91e55d72616bac5fe6297740142600abc3b8c6d0e7307"></a>sec_bitindex_enable&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
 <a id="a6ceb3ea24264a6faa4f32351cb58d41a" name="a6ceb3ea24264a6faa4f32351cb58d41a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6ceb3ea24264a6faa4f32351cb58d41a">&#9670;&#160;</a></span>sensor_type</h2>
 
@@ -1457,10 +1444,14 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6ceb3ea24264a6faa4f32351cb58d41aa1bffbd83d89217ac715ebe449198ef10" name="a6ceb3ea24264a6faa4f32351cb58d41aa1bffbd83d89217ac715ebe449198ef10"></a>PDAsensor&#160;</td><td class="fielddoc"><p>PDA sensor. Set RS after read; for HA S39xx </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6ceb3ea24264a6faa4f32351cb58d41aa94e479efd9002ec62311463b9ffdf772" name="a6ceb3ea24264a6faa4f32351cb58d41aa94e479efd9002ec62311463b9ffdf772"></a>sensor_type_pda&#160;</td><td class="fielddoc"><p>PDA sensor. for HA S39xx </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a6ceb3ea24264a6faa4f32351cb58d41aa4204c0f081288d8772090844d036b33f" name="a6ceb3ea24264a6faa4f32351cb58d41aa4204c0f081288d8772090844d036b33f"></a>FFTsensor&#160;</td><td class="fielddoc"><p>FFT sensor. Set vclk generator; for HA S703x </p>
+<tr><td class="fieldname"><a id="a6ceb3ea24264a6faa4f32351cb58d41aa13dd2773c352d66bcdedcb85a05f60db" name="a6ceb3ea24264a6faa4f32351cb58d41aa13dd2773c352d66bcdedcb85a05f60db"></a>sensor_type_ir&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6ceb3ea24264a6faa4f32351cb58d41aac0844018d4ef84317a2a697eab9b7f01" name="a6ceb3ea24264a6faa4f32351cb58d41aac0844018d4ef84317a2a697eab9b7f01"></a>sensor_type_fft&#160;</td><td class="fielddoc"><p>FFT sensor. for HA S703x </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a6ceb3ea24264a6faa4f32351cb58d41aa4c0f2ff3381db278076e451b0625b5d4" name="a6ceb3ea24264a6faa4f32351cb58d41aa4c0f2ff3381db278076e451b0625b5d4"></a>sensor_type_cmos&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6ceb3ea24264a6faa4f32351cb58d41aa4e100373c4b1b26006154c1ec4146dfb" name="a6ceb3ea24264a6faa4f32351cb58d41aa4e100373c4b1b26006154c1ec4146dfb"></a>sensor_type_hsvis&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6ceb3ea24264a6faa4f32351cb58d41aa3ab2d71c31ee633ec2e4b64b53e4d3d3" name="a6ceb3ea24264a6faa4f32351cb58d41aa3ab2d71c31ee633ec2e4b64b53e4d3d3"></a>sensor_type_hsir&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1639,20 +1630,11 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>TOR MSB 8 bits at 0x2B </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abcb683f3db9e272452850b6fd6e9e070a33d4f55eac0f99347ebe41032284fae3" name="abcb683f3db9e272452850b6fd6e9e070a33d4f55eac0f99347ebe41032284fae3"></a>TOR_MSB_bit_ISFFT&#160;</td><td class="fielddoc"><p>Set to 1 if FFT sensor (sets IFC and VON to generate vclks and ENV) </p>
-</td></tr>
-<tr><td class="fieldname"><a id="abcb683f3db9e272452850b6fd6e9e070a65d4196f4c75a044d27ef0f58c23159e" name="abcb683f3db9e272452850b6fd6e9e070a65d4196f4c75a044d27ef0f58c23159e"></a>TOR_MSB_bit_SENDRS&#160;</td><td class="fielddoc"><p>Set to 1 if sensor needs a clear after read (800ns) is done (PDA and S11490) </p>
-</td></tr>
-<tr><td class="fieldname"><a id="abcb683f3db9e272452850b6fd6e9e070acd76c9f1b967bf68371f0c1e2790b168" name="abcb683f3db9e272452850b6fd6e9e070acd76c9f1b967bf68371f0c1e2790b168"></a>TOR_MSB_bit_SHORTRS&#160;</td><td class="fielddoc"><p>Reset pulse is 100ns when SENDRS is 1 </p>
-</td></tr>
-<tr><td class="fieldname"><a id="abcb683f3db9e272452850b6fd6e9e070a969660f6af511b1e6934c1722c48b1aa" name="abcb683f3db9e272452850b6fd6e9e070a969660f6af511b1e6934c1722c48b1aa"></a>TOR_MSB_bit_TOSEL&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abcb683f3db9e272452850b6fd6e9e070a969660f6af511b1e6934c1722c48b1aa" name="abcb683f3db9e272452850b6fd6e9e070a969660f6af511b1e6934c1722c48b1aa"></a>TOR_MSB_bit_TOSEL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="abcb683f3db9e272452850b6fd6e9e070a2ca8efc5a0324e937ed0b6a3335b631f" name="abcb683f3db9e272452850b6fd6e9e070a2ca8efc5a0324e937ed0b6a3335b631f"></a>TOR_MSB_bit_TO0&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="abcb683f3db9e272452850b6fd6e9e070a639c8170549041605762864af218d3fb" name="abcb683f3db9e272452850b6fd6e9e070a639c8170549041605762864af218d3fb"></a>TOR_MSB_bit_TO1&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="abcb683f3db9e272452850b6fd6e9e070ada38f0a4f4d25461344debdbf2d4a733" name="abcb683f3db9e272452850b6fd6e9e070ada38f0a4f4d25461344debdbf2d4a733"></a>TOR_MSB_bit_TO2&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="abcb683f3db9e272452850b6fd6e9e070ad477b4a7d32dd82731acd75bf282fb1d" name="abcb683f3db9e272452850b6fd6e9e070ad477b4a7d32dd82731acd75bf282fb1d"></a>TOR_MSB_bit_TO3&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abcb683f3db9e272452850b6fd6e9e070aa89e5a5a789e618e7f61635bd9f9ac2d" name="abcb683f3db9e272452850b6fd6e9e070aa89e5a5a789e618e7f61635bd9f9ac2d"></a>TOR_MSB_bitindex_ISFFT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abcb683f3db9e272452850b6fd6e9e070a63df83ebd7b72d544113572adec57d2f" name="abcb683f3db9e272452850b6fd6e9e070a63df83ebd7b72d544113572adec57d2f"></a>TOR_MSB_bitindex_SENDRS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abcb683f3db9e272452850b6fd6e9e070a61c9def63f22592d4fbb6f2b47680a33" name="abcb683f3db9e272452850b6fd6e9e070a61c9def63f22592d4fbb6f2b47680a33"></a>TOR_MSB_bitindex_SHORTRS&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="abcb683f3db9e272452850b6fd6e9e070a773c9f37810ede1c3f686d780492f057" name="abcb683f3db9e272452850b6fd6e9e070a773c9f37810ede1c3f686d780492f057"></a>TOR_MSB_bitindex_TOSEL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="abcb683f3db9e272452850b6fd6e9e070a52455df2ca4853633402285648a963d8" name="abcb683f3db9e272452850b6fd6e9e070a52455df2ca4853633402285648a963d8"></a>TOR_MSB_bitindex_TO0&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="abcb683f3db9e272452850b6fd6e9e070a787be802ec30f8373f4751d653c49650" name="abcb683f3db9e272452850b6fd6e9e070a787be802ec30f8373f4751d653c49650"></a>TOR_MSB_bitindex_TO1&#160;</td><td class="fielddoc"></td></tr>

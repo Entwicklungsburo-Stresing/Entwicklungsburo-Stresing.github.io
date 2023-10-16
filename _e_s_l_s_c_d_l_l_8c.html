@@ -300,10 +300,10 @@ Functions</h2></td></tr>
 <tr class="memitem:afa828f161568b989ed8dcc93ac348693" id="r_afa828f161568b989ed8dcc93ac348693"><td class="memItemLeft" align="right" valign="top">DllAccess void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#afa828f161568b989ed8dcc93ac348693">DLLSetContinuousMeasurement</a> (uint8_t on)</td></tr>
 <tr class="memdesc:afa828f161568b989ed8dcc93ac348693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control looping the measurement.    <br /></td></tr>
 <tr class="separator:afa828f161568b989ed8dcc93ac348693"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb1935ff48fc51bebca32f283d2fe357" id="r_adb1935ff48fc51bebca32f283d2fe357"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#adb1935ff48fc51bebca32f283d2fe357">DLLGetAllSpecialPixelInformation</a> (uint32_t drvno, uint32_t sample, uint32_t block, uint16_t camera_pos, struct special_pixels *sp)</td></tr>
+<tr class="memitem:adb1935ff48fc51bebca32f283d2fe357" id="r_adb1935ff48fc51bebca32f283d2fe357"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#adb1935ff48fc51bebca32f283d2fe357">DLLGetAllSpecialPixelInformation</a> (uint32_t drvno, uint32_t sample, uint32_t block, uint16_t camera_pos, struct <a class="el" href="structspecial__pixels.html">special_pixels</a> *sp)</td></tr>
 <tr class="memdesc:adb1935ff48fc51bebca32f283d2fe357"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the all special pixel information of a specific scan.    <br /></td></tr>
 <tr class="separator:adb1935ff48fc51bebca32f283d2fe357"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc148396027050c00fdde690a3eab1f0" id="r_adc148396027050c00fdde690a3eab1f0"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#adc148396027050c00fdde690a3eab1f0">DLLGetAllSpecialPixelInformation_multipleBoards</a> (uint32_t sample, uint32_t block, uint16_t camera_pos, struct special_pixels *sp0, struct special_pixels *sp1, struct special_pixels *sp2, struct special_pixels *sp3, struct special_pixels *sp4)</td></tr>
+<tr class="memitem:adc148396027050c00fdde690a3eab1f0" id="r_adc148396027050c00fdde690a3eab1f0"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#adc148396027050c00fdde690a3eab1f0">DLLGetAllSpecialPixelInformation_multipleBoards</a> (uint32_t sample, uint32_t block, uint16_t camera_pos, struct <a class="el" href="structspecial__pixels.html">special_pixels</a> *sp0, struct <a class="el" href="structspecial__pixels.html">special_pixels</a> *sp1, struct <a class="el" href="structspecial__pixels.html">special_pixels</a> *sp2, struct <a class="el" href="structspecial__pixels.html">special_pixels</a> *sp3, struct <a class="el" href="structspecial__pixels.html">special_pixels</a> *sp4)</td></tr>
 <tr class="memdesc:adc148396027050c00fdde690a3eab1f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the all special pixel information of a specific scan.  <br /></td></tr>
 <tr class="separator:adc148396027050c00fdde690a3eab1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad537695a309eb016b3d8b59528a7abb9" id="r_ad537695a309eb016b3d8b59528a7abb9"><td class="memItemLeft" align="right" valign="top">DllAccess void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#ad537695a309eb016b3d8b59528a7abb9">DLLFillUserBufferWithDummyData</a> ()</td></tr>
@@ -1344,7 +1344,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct special_pixels *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structspecial__pixels.html">special_pixels</a> *&#160;</td>
           <td class="paramname"><em>sp</em>&#160;</td>
         </tr>
         <tr>
@@ -1363,7 +1363,7 @@ Variables</h2></td></tr>
     <tr><td class="paramname">sample</td><td>sample number (0 ... (nos-1)) </td></tr>
     <tr><td class="paramname">block</td><td>block number (0 ... (nob-1)) </td></tr>
     <tr><td class="paramname">camera_pos</td><td>camera position (0 ... (CAMCNT-1)) </td></tr>
-    <tr><td class="paramname">sp</td><td>struct special_pixels Pointer to struct special_pixel, where all special pixel information will be written. </td></tr>
+    <tr><td class="paramname">sp</td><td>struct <a class="el" href="structspecial__pixels.html">special_pixels</a> Pointer to struct special_pixel, where all special pixel information will be written. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1404,31 +1404,31 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct special_pixels *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structspecial__pixels.html">special_pixels</a> *&#160;</td>
           <td class="paramname"><em>sp0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct special_pixels *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structspecial__pixels.html">special_pixels</a> *&#160;</td>
           <td class="paramname"><em>sp1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct special_pixels *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structspecial__pixels.html">special_pixels</a> *&#160;</td>
           <td class="paramname"><em>sp2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct special_pixels *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structspecial__pixels.html">special_pixels</a> *&#160;</td>
           <td class="paramname"><em>sp3</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct special_pixels *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structspecial__pixels.html">special_pixels</a> *&#160;</td>
           <td class="paramname"><em>sp4</em>&#160;</td>
         </tr>
         <tr>
@@ -1447,11 +1447,11 @@ Variables</h2></td></tr>
     <tr><td class="paramname">sample</td><td>sample number (0 ... (nos-1)) </td></tr>
     <tr><td class="paramname">block</td><td>block number (0 ... (nob-1)) </td></tr>
     <tr><td class="paramname">camera_pos</td><td>camera position (0 ... (CAMCNT-1)) </td></tr>
-    <tr><td class="paramname">sp0</td><td>struct special_pixels for board 0. Pointer to struct special_pixel, where all special pixel information will be written. </td></tr>
-    <tr><td class="paramname">sp1</td><td>struct special_pixels for board 1. Pointer to struct special_pixel, where all special pixel information will be written. </td></tr>
-    <tr><td class="paramname">sp2</td><td>struct special_pixels for board 2. Pointer to struct special_pixel, where all special pixel information will be written. </td></tr>
-    <tr><td class="paramname">sp3</td><td>struct special_pixels for board 3. Pointer to struct special_pixel, where all special pixel information will be written. </td></tr>
-    <tr><td class="paramname">sp4</td><td>struct special_pixels for board 4. Pointer to struct special_pixel, where all special pixel information will be written. </td></tr>
+    <tr><td class="paramname">sp0</td><td>struct <a class="el" href="structspecial__pixels.html">special_pixels</a> for board 0. Pointer to struct special_pixel, where all special pixel information will be written. </td></tr>
+    <tr><td class="paramname">sp1</td><td>struct <a class="el" href="structspecial__pixels.html">special_pixels</a> for board 1. Pointer to struct special_pixel, where all special pixel information will be written. </td></tr>
+    <tr><td class="paramname">sp2</td><td>struct <a class="el" href="structspecial__pixels.html">special_pixels</a> for board 2. Pointer to struct special_pixel, where all special pixel information will be written. </td></tr>
+    <tr><td class="paramname">sp3</td><td>struct <a class="el" href="structspecial__pixels.html">special_pixels</a> for board 3. Pointer to struct special_pixel, where all special pixel information will be written. </td></tr>
+    <tr><td class="paramname">sp4</td><td>struct <a class="el" href="structspecial__pixels.html">special_pixels</a> for board 4. Pointer to struct special_pixel, where all special pixel information will be written. </td></tr>
   </table>
   </dd>
 </dl>

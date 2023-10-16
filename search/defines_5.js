@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['lscpciej_5fstresing_5fdriver_5fname_0',['LSCPCIEJ_STRESING_DRIVER_NAME',['../_board__ll_8c.html#a0129113144790654cc32a2dd83ab6e9c',1,'Board_ll.c']]]
+  ['hinst_5fthiscomponent_0',['HINST_THISCOMPONENT',['../_direct2d_viewer_8h.html#a53cf7ffb5ff6b778335db18cdfa0f691',1,'Direct2dViewer.h']]],
+  ['hwdreq_5fen_1',['HWDREQ_EN',['../globals_8h.html#a4328dd2c98b5971f22b41dc50110143e',1,'globals.h']]]
 ];

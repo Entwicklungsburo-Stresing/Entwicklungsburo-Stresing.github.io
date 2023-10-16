@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['measurement_5fsettings_0',['measurement_settings',['../structmeasurement__settings.html',1,'']]],
-  ['measurement_5fsettings_5fmatlab_1',['measurement_settings_matlab',['../structmeasurement__settings__matlab.html',1,'']]]
+  ['file_5fheader_0',['file_header',['../structfile__header.html',1,'']]]
 ];

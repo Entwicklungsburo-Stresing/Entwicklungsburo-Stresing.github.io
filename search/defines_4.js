@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hinst_5fthiscomponent_0',['HINST_THISCOMPONENT',['../_direct2d_viewer_8h.html#a53cf7ffb5ff6b778335db18cdfa0f691',1,'Direct2dViewer.h']]]
+  ['forcetlps128_0',['FORCETLPS128',['../globals_8h.html#a58c545ee0fe778c422da561d4629a2a7',1,'globals.h']]]
 ];
