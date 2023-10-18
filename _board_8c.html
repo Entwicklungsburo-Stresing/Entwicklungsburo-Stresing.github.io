@@ -127,9 +127,6 @@ Functions</h2></td></tr>
 <tr class="memitem:afe555808fa857389f272d134417c974a" id="r_afe555808fa857389f272d134417c974a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#afe555808fa857389f272d134417c974a">_InitMeasurement</a> (uint32_t drvno)</td></tr>
 <tr class="memdesc:afe555808fa857389f272d134417c974a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize Measurement (using drvno).  <br /></td></tr>
 <tr class="separator:afe555808fa857389f272d134417c974a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab75c83dbe1f3e9045b04c3b6721c8728" id="r_ab75c83dbe1f3e9045b04c3b6721c8728"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#ab75c83dbe1f3e9045b04c3b6721c8728">SetMshut</a> (uint32_t drvno, bool mshut)</td></tr>
-<tr class="memdesc:ab75c83dbe1f3e9045b04c3b6721c8728"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets TOR to sshut when mshut is true.  <br /></td></tr>
-<tr class="separator:ab75c83dbe1f3e9045b04c3b6721c8728"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa709ab810123b5d8e9b0d35837c3379f" id="r_aa709ab810123b5d8e9b0d35837c3379f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board_8c.html#aa709ab810123b5d8e9b0d35837c3379f">SetPixelCountRegister</a> (uint32_t drvno)</td></tr>
 <tr class="memdesc:aa709ab810123b5d8e9b0d35837c3379f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set pixel count.  <br /></td></tr>
 <tr class="separator:aa709ab810123b5d8e9b0d35837c3379f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -6935,53 +6932,6 @@ Legacy cameras will only look for bit0.
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed</li>
-<li>es_register_write_failed </li>
-</ul>
-</dd></dl>
-
-</div>
-</div>
-<a id="ab75c83dbe1f3e9045b04c3b6721c8728" name="ab75c83dbe1f3e9045b04c3b6721c8728"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab75c83dbe1f3e9045b04c3b6721c8728">&#9670;&#160;</a></span>SetMshut()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> SetMshut </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>drvno</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>mshut</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets TOR to sshut when mshut is true. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
-    <tr><td class="paramname">mshut</td><td><ul>
-<li>true: TOR is set to sshut</li>
-<li>false: TOR is set by settings_struct.camera_settings[drvno].tor </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes<ul>
 <li>es_no_error</li>
 <li>es_register_read_failed</li>
 <li>es_register_write_failed </li>
