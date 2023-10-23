@@ -77,6 +77,7 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">globals.h File Reference</div></div>
 </div><!--header-->
@@ -85,7 +86,8 @@ $(function() {
 <code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="struct_8h_source.html">struct.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="enum_8h_source.html">enum.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="enum__settings_8h_source.html">enum_settings.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="enum__hardware_8h_source.html">enum_hardware.h</a>&quot;</code><br />
 </div>
 <p><a href="globals_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -119,6 +121,14 @@ Macros</h2></td></tr>
 <tr class="memitem:a85b0f3ab73b1cd460378ed6236acc2b3" id="r_a85b0f3ab73b1cd460378ed6236acc2b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="globals_8h.html#a85b0f3ab73b1cd460378ed6236acc2b3">DMA_CONTIGBUF</a>&#160;&#160;&#160;true</td></tr>
 <tr class="memdesc:a85b0f3ab73b1cd460378ed6236acc2b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA_CONTIGBUF: DMA buffer type switch.  <br /></td></tr>
 <tr class="separator:a85b0f3ab73b1cd460378ed6236acc2b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a4ba27b32532ad58360b3aeec14e84897" id="r_a4ba27b32532ad58360b3aeec14e84897"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="globals_8h.html#a4ba27b32532ad58360b3aeec14e84897">file_specifications_t</a> { <a class="el" href="globals_8h.html#a4ba27b32532ad58360b3aeec14e84897a0cbddb1cbe6c35a91865e73cac587eaf">file_path_size</a> = 256
+, <a class="el" href="globals_8h.html#a4ba27b32532ad58360b3aeec14e84897a70a8971f7acd1d1a63a4ecc42a1fbbd7">file_timestamp_size</a> = 64
+, <a class="el" href="globals_8h.html#a4ba27b32532ad58360b3aeec14e84897a0946dad68dcf9c861b933d4a7837133a">file_filename_full_size</a> = 256
+ }</td></tr>
+<tr class="separator:a4ba27b32532ad58360b3aeec14e84897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -160,7 +170,7 @@ Variables</h2></td></tr>
 <tr class="separator:aeb4ab164f87614736d4e4b13c33c9bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6ee495fb3bca59a5c624245983fc804" id="r_aa6ee495fb3bca59a5c624245983fc804"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="globals_8h.html#aa6ee495fb3bca59a5c624245983fc804">measurement_cnt</a></td></tr>
 <tr class="separator:aa6ee495fb3bca59a5c624245983fc804"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4d084be9a8b4b7d84a8ba52be25e064" id="r_ac4d084be9a8b4b7d84a8ba52be25e064"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="globals_8h.html#ac4d084be9a8b4b7d84a8ba52be25e064">start_timestamp</a> [<a class="el" href="enum_8h.html#a4ba27b32532ad58360b3aeec14e84897a70a8971f7acd1d1a63a4ecc42a1fbbd7">file_timestamp_size</a>]</td></tr>
+<tr class="memitem:ac4d084be9a8b4b7d84a8ba52be25e064" id="r_ac4d084be9a8b4b7d84a8ba52be25e064"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="globals_8h.html#ac4d084be9a8b4b7d84a8ba52be25e064">start_timestamp</a> [<a class="el" href="globals_8h.html#a4ba27b32532ad58360b3aeec14e84897a70a8971f7acd1d1a63a4ecc42a1fbbd7">file_timestamp_size</a>]</td></tr>
 <tr class="separator:ac4d084be9a8b4b7d84a8ba52be25e064"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a579bf5f9d7b10bdab5b098ff044be523" id="r_a579bf5f9d7b10bdab5b098ff044be523"><td class="memItemLeft" align="right" valign="top">volatile size_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="globals_8h.html#a579bf5f9d7b10bdab5b098ff044be523">data_available</a></td></tr>
 <tr class="separator:a579bf5f9d7b10bdab5b098ff044be523"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -282,6 +292,26 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a4ba27b32532ad58360b3aeec14e84897" name="a4ba27b32532ad58360b3aeec14e84897"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ba27b32532ad58360b3aeec14e84897">&#9670;&#160;</a></span>file_specifications_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="globals_8h.html#a4ba27b32532ad58360b3aeec14e84897">file_specifications_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4ba27b32532ad58360b3aeec14e84897a0cbddb1cbe6c35a91865e73cac587eaf" name="a4ba27b32532ad58360b3aeec14e84897a0cbddb1cbe6c35a91865e73cac587eaf"></a>file_path_size&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4ba27b32532ad58360b3aeec14e84897a70a8971f7acd1d1a63a4ecc42a1fbbd7" name="a4ba27b32532ad58360b3aeec14e84897a70a8971f7acd1d1a63a4ecc42a1fbbd7"></a>file_timestamp_size&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4ba27b32532ad58360b3aeec14e84897a0946dad68dcf9c861b933d4a7837133a" name="a4ba27b32532ad58360b3aeec14e84897a0946dad68dcf9c861b933d4a7837133a"></a>file_filename_full_size&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>
@@ -648,7 +678,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char start_timestamp[<a class="el" href="enum_8h.html#a4ba27b32532ad58360b3aeec14e84897a70a8971f7acd1d1a63a4ecc42a1fbbd7">file_timestamp_size</a>]</td>
+          <td class="memname">char start_timestamp[<a class="el" href="globals_8h.html#a4ba27b32532ad58360b3aeec14e84897a70a8971f7acd1d1a63a4ecc42a1fbbd7">file_timestamp_size</a>]</td>
         </tr>
       </table>
   </td>

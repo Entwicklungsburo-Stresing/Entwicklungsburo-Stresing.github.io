@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['ramp_0',['ramp',['../enum_8h.html#a760a8dafdcddcfadfea0aa3e01159164a89cd38755edb2809cf6ed80b3ba8760d',1,'enum.h']]],
+  ['ramp_0',['ramp',['../enum__settings_8h.html#a760a8dafdcddcfadfea0aa3e01159164a89cd38755edb2809cf6ed80b3ba8760d',1,'enum_settings.h']]],
   ['readbits0_5f32_1',['ReadBitS0_32',['../_board_8c.html#aa96a3b5ecb9794d7aa6d42bbb20196ab',1,'Board.c']]],
   ['readbits0_5f8_2',['ReadBitS0_8',['../_board_8c.html#a393f87ea48b0c822bf5e692023f1befa',1,'Board.c']]],
   ['readblockfrequencybit_3',['ReadBlockFrequencyBit',['../_board_8c.html#ad4decf7ddece1723821c083b8373a22d',1,'Board.c']]],

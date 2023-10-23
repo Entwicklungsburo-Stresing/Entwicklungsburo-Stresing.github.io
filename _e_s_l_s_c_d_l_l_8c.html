@@ -1032,7 +1032,7 @@ Variables</h2></td></tr>
 <p>Sets all outputs of the DAC8568 in camera 3030 or on PCIe board for all PCIe boards. </p>
 <p>Use this function to set the outputs, because it is resorting the channel numeration correctly. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">location</td><td>Switch for the different locations of DAC85689. See enum DAC8568_location in <a class="el" href="enum_8h.html">enum.h</a> for details. </td></tr>
+    <tr><td class="paramname">location</td><td>Switch for the different locations of DAC85689. See enum DAC8568_location in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for details. </td></tr>
     <tr><td class="paramname">cameraPosition</td><td>This is describing the camera position when there are mumltiple cameras in line. Possible values: 0....8. This parameter is only used when location == DAC8568_camera. </td></tr>
     <tr><td class="paramname">output0</td><td>all output values as array for board 0 that will be converted to analog voltage (0 ... 0xFFFF) </td></tr>
     <tr><td class="paramname">output1</td><td>all output values as array for board 1 that will be converted to analog voltage (0 ... 0xFFFF) </td></tr>
@@ -4006,7 +4006,7 @@ Variables</h2></td></tr>
 <p>Set signal of output port of PCIe card for all boards selected by settings parameter board_sel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tor</td><td>select output signal. See enum tor_out in <a class="el" href="enum_8h.html">enum.h</a> for options. </td></tr>
+    <tr><td class="paramname">tor</td><td>select output signal. See enum tor_out in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. </td></tr>
   </table>
   </dd>
 </dl>

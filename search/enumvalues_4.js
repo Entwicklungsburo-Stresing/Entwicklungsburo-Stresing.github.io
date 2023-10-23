@@ -27,5 +27,5 @@ var searchData=
   ['es_5fsetting_5fthread_5fpriority_5ffailed_24',['es_setting_thread_priority_failed',['../es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14daa113f6e9a7609230a20ad7a4205ce6acd',1,'es_status_codes.h']]],
   ['es_5funknown_5ferror_25',['es_unknown_error',['../es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14daa6cd81b3381d5466cb204330773c4ca53',1,'es_status_codes.h']]],
   ['es_5funlocking_5fdma_5ffailed_26',['es_unlocking_dma_failed',['../es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14daa8ba563b8b63028a496b8ffba80cfcfbf',1,'es_status_codes.h']]],
-  ['exttrig_27',['exttrig',['../enum_8h.html#a6d33f21be3f0c5cf91c5d638e8aca086a03dea9a7850802818e5420ad08a106d3',1,'enum.h']]]
+  ['exttrig_27',['exttrig',['../enum__settings_8h.html#a6d33f21be3f0c5cf91c5d638e8aca086a03dea9a7850802818e5420ad08a106d3',1,'enum_settings.h']]]
 ];
