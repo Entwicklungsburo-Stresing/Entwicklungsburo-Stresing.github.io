@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['irqflags_5fbits_0',['IRQFLAGS_bits',['../enum_8h.html#af437166d945f2cc02ca45460ffdf4de0',1,'enum.h']]]
+  ['irqflags_5fbits_5ft_0',['IRQFLAGS_bits_t',['../enum_8h.html#a0199b3f69358efb164ecab6cf03499a6',1,'enum.h']]]
 ];

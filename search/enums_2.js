@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['cam_5faddresses_0',['cam_addresses',['../enum_8h.html#a274478421a886deec0c23954d8dd4e5c',1,'enum.h']]],
-  ['cam_5fmessages_1',['cam_messages',['../enum_8h.html#af452b34e9c42ead0a2b787c0fa00aef9',1,'enum.h']]],
-  ['camera_5fsystem_2',['camera_system',['../enum_8h.html#a334460f1eedac4bbce4cfc1c9bc98219',1,'enum.h']]],
-  ['camera_5ftype_5fbits_3',['camera_type_bits',['../enum_8h.html#a692997576b55d00d2e88c568a6f6ceed',1,'enum.h']]],
-  ['ctrla_5fbits_4',['CTRLA_bits',['../enum_8h.html#aa1814b59cda432645a648ae54ccfdd06',1,'enum.h']]],
-  ['ctrlb_5fbits_5',['CTRLB_bits',['../enum_8h.html#a65156e84de321d33b9a66131d1c598d3',1,'enum.h']]],
-  ['ctrlc_5fbits_6',['CTRLC_bits',['../enum_8h.html#a2731ca4d4660751a6d4c6bfadd9a1fc7',1,'enum.h']]]
+  ['cam_5faddresses_5ft_0',['cam_addresses_t',['../enum_8h.html#a6088fcda9571ea67be3dd49e46438941',1,'enum.h']]],
+  ['cam_5fmessages_5ft_1',['cam_messages_t',['../enum_8h.html#acff84da0b18ed524c2778df0255a60d2',1,'enum.h']]],
+  ['camera_5fsystem_5ft_2',['camera_system_t',['../enum_8h.html#a87d071078d7c7603069e44ced5c5ebfe',1,'enum.h']]],
+  ['camera_5ftype_5fbits_5ft_3',['camera_type_bits_t',['../enum_8h.html#af1f3aee94473361f396c43f6eb5db0f1',1,'enum.h']]],
+  ['ctrla_5fbits_5ft_4',['CTRLA_bits_t',['../enum_8h.html#a16a9c51efaf467545e55657c20b42a0c',1,'enum.h']]],
+  ['ctrlb_5fbits_5ft_5',['CTRLB_bits_t',['../enum_8h.html#a40f704477b6237468213735f0196cedb',1,'enum.h']]],
+  ['ctrlc_5fbits_5ft_6',['CTRLC_bits_t',['../enum_8h.html#a5b73895d5cad296f9fd0ae4237c4933d',1,'enum.h']]]
 ];
