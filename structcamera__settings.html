@@ -235,7 +235,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Block delay after trigger in 10 ns steps. 31 bit. </p>
+<p>Block delay after trigger in 10 ns steps. This is the delay between the trigger starting a block, which is determined by bti_mode and the actual start of the block. 31 bit. </p>
 
 </div>
 </div>
@@ -250,7 +250,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>bec in 10 ns </p>
+<p>Block exposure control in 10 ns. BEC adds a time between the block trigger and the start of the block. Mechanical shutters can be controlled with this setting. 32 bit. </p>
 
 </div>
 </div>
@@ -265,7 +265,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Block trigger slope. See enum bslope in <a class="el" href="enum_8h.html">enum.h</a> for options. </p>
+<p>Block trigger slope. This option determines wether positive, negative or both slopes of a trigger are used. See enum bslope in <a class="el" href="enum_8h.html">enum.h</a> for options. </p>
 
 </div>
 </div>
@@ -295,7 +295,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Block timer in microseconds. Used when bti mode is btimer. 28 bit. </p>
+<p>Block timer in microseconds. Used when bti mode is btimer. When this is the case, btime is the time between two intern triggers starting a block. 28 bit. </p>
 
 </div>
 </div>
@@ -310,7 +310,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Camera count. 1 ... 16. 4 bit. </p>
+<p>Camera count. Camera count is the number of cameras which are connected to one PCIe board. 0 ... 16. 4 bit. </p>
 
 </div>
 </div>
@@ -523,7 +523,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Determines whether the camera is a high speed infrared camera.</p><ul>
+<p>DEPRECATED: This should be set when the camera is a high speed infrared camera.</p><ul>
 <li>=0 no IR</li>
 <li>&gt;0 IR </li>
 </ul>
@@ -586,7 +586,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>DEPRECATED </p>
+<p>DEPRECATED. The setting mshut has been used to turn a mechanical shutter on or off. </p>
 
 </div>
 </div>
@@ -616,7 +616,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Pixel count. Only 64*n are allowed. 16 bit. </p>
+<p>Pixel count. Pixel count is the number of pixels in one sensor. Only 64*n are allowed. 16 bit. </p>
 
 </div>
 </div>
@@ -646,7 +646,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Scan delay after trigger in 10 ns steps. 31 bit. </p>
+<p>Scan delay after trigger in 10 ns steps. This is the delay between the trigger starting a scan, which is determined by sti_mode and the actual start of the scan. 31 bit. </p>
 
 </div>
 </div>
@@ -661,7 +661,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>exposure control in 10 ns steps. 32 bit. </p>
+<p>Scan exposure control in 10 ns steps. SEC adds a time between the trigger and the start of the camera read out (start of XCK). Some sensors use this time for a electronic exposure control. Also mechanical shutters can be controlled with this setting. 32 bit. </p>
 
 </div>
 </div>
@@ -694,7 +694,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This setting controls the length of the reset pulse between two camera readouts. value * 8ns = sensor reset length </p>
+<p>This setting controls the length of the reset pulse between two camera readouts for some sensors. value * 8ns = sensor reset length </p>
 
 </div>
 </div>
@@ -742,7 +742,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Scan trigger slope. See enum sslope in <a class="el" href="enum_8h.html">enum.h</a> for options. </p>
+<p>Scan trigger slope. This option determines wether positive, negative or both slopes of a trigger are used. See enum sslope in <a class="el" href="enum_8h.html">enum.h</a> for options. </p>
 
 </div>
 </div>
@@ -772,7 +772,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Scan timer in microseconds. Used when sti mode is stimer. 28 bit. </p>
+<p>Scan timer in microseconds. Used when sti mode is stimer. When this is the case, stime is the time between two intern triggers starting scans. 28 bit. </p>
 
 </div>
 </div>
@@ -864,7 +864,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>use_software_polling determines which method is used to copy data from DMA to user buffer.</p>
 <ul>
-<li>&gt;0: Use Software Polling. When there is new available data in the DMA buffer, a thread copies the data one scan at a time to the user buffer. Since P222_2 this method is reliable up to about 100kHz. It generates as expected a greater CPU load than the interrupt method.</li>
+<li>&gt;0: Use Software Polling. When there is new available data in the DMA buffer, a thread copies the data one scan at a time to the user buffer. Since P222_2 this method is reliable up to about 100kHz. It generates as expected a greater CPU load than the interrupt method. With this option you can get more recent scans from <a class="el" href="_board_8c.html#a263e1e188e75bac4db2f16c27cd00443" title="Gives scan and block number of the last scan written to userBuffer.">GetCurrentScanNumber()</a>, especially at lower frequencies. For high frequencies &gt; 30kHz this method is not recommended.</li>
 <li>=0: Use Interrupt. Every dma_buffer_size_in_scans/2 scan the interrupt starts a copy process, which copies dma_buffer_size_in_scans/2 scans to the user buffer. 1000 is our default value for dma_buffer_size_in_scans, so interrupt is started every 500 scans. </li>
 </ul>
 
@@ -896,7 +896,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<ul>
+<p>Experimental:</p><ul>
 <li>=0: Don't write measurement data to disc.</li>
 <li>&gt;0: Write measurement data to disc. </li>
 </ul>
@@ -914,7 +914,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>XCK delay in 10 ns steps. 31 bit. </p>
+<p>XCK delay in 10 ns steps. XCK delay is the time between the high slope of XCK and the actual start of the camera read out. 31 bit. </p>
 
 </div>
 </div>
