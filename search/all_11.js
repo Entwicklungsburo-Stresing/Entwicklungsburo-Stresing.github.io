@@ -75,7 +75,7 @@ var searchData=
   ['sendflcam_72',['SendFLCAM',['../_board_8c.html#a7649fc1fd0d3be325315ea3262aa9f0f',1,'Board.c']]],
   ['sensor_20type_73',['SENSOR TYPE',['../index.html#autotoc_md11',1,'']]],
   ['sensor_5fgain_74',['sensor_gain',['../structcamera__settings.html#ac7aefaf11767a16726f85379d288895b',1,'camera_settings']]],
-  ['sensor_5freset_5flength_5fin_5f8_5fns_75',['sensor_reset_length_in_8_ns',['../structcamera__settings.html#aedc4cfe30db8d9e7b62155534ac60dec',1,'camera_settings']]],
+  ['sensor_5freset_5flength_5fin_5f4_5fns_75',['sensor_reset_length_in_4_ns',['../structcamera__settings.html#a249f0f15fbde2e31e9110bc1c3d709bb',1,'camera_settings']]],
   ['sensor_5ftype_76',['sensor_type',['../structcamera__settings.html#a3c95b63babcb2222a271e2cd42b6e057',1,'camera_settings']]],
   ['sensor_5ftype_5fcmos_77',['sensor_type_cmos',['../enum__settings_8h.html#a089f166159fb19f10d81c65c1d8793a2a4c0f2ff3381db278076e451b0625b5d4',1,'enum_settings.h']]],
   ['sensor_5ftype_5ffft_78',['sensor_type_fft',['../enum__settings_8h.html#a089f166159fb19f10d81c65c1d8793a2ac0844018d4ef84317a2a697eab9b7f01',1,'enum_settings.h']]],

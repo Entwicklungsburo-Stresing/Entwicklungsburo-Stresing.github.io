@@ -10,7 +10,7 @@ var searchData=
   ['sdat_5fin_5f10ns_7',['sdat_in_10ns',['../structcamera__settings.html#afdbb58aa78c6d9d9210c244507de9c68',1,'camera_settings']]],
   ['sec_5fin_5f10ns_8',['sec_in_10ns',['../structcamera__settings.html#adef56c9e33dc855c930fd7d44588cbcd',1,'camera_settings']]],
   ['sensor_5fgain_9',['sensor_gain',['../structcamera__settings.html#ac7aefaf11767a16726f85379d288895b',1,'camera_settings']]],
-  ['sensor_5freset_5flength_5fin_5f8_5fns_10',['sensor_reset_length_in_8_ns',['../structcamera__settings.html#aedc4cfe30db8d9e7b62155534ac60dec',1,'camera_settings']]],
+  ['sensor_5freset_5flength_5fin_5f4_5fns_10',['sensor_reset_length_in_4_ns',['../structcamera__settings.html#a249f0f15fbde2e31e9110bc1c3d709bb',1,'camera_settings']]],
   ['sensor_5ftype_11',['sensor_type',['../structcamera__settings.html#a3c95b63babcb2222a271e2cd42b6e057',1,'camera_settings']]],
   ['settings_5fstruct_12',['settings_struct',['../globals_8c.html#af3b701c44f042f5169109f69acbe8d01',1,'settings_struct:&#160;globals.c'],['../globals_8h.html#af3b701c44f042f5169109f69acbe8d01',1,'settings_struct:&#160;globals.c']]],
   ['shortrs_13',['shortrs',['../structcamera__settings.html#a29f5676f11094ab4c5289499e206c00c',1,'camera_settings']]],
