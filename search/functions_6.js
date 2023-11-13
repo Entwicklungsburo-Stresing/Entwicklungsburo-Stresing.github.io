@@ -25,7 +25,9 @@ var searchData=
   ['gets2state_22',['GetS2State',['../_board_8c.html#a34c0bcf77f4e5e0b52f92ce2ac113c4a',1,'Board.c']]],
   ['getscanindex_23',['GetScanIndex',['../_board_8c.html#a00662b21588b15b5c8b446335df8b2f3',1,'Board.c']]],
   ['getscannumber_24',['GetScanNumber',['../_board_8c.html#a2e6019475c067ef679e5837a87b31938',1,'Board.c']]],
-  ['getverifieddatadialog_25',['GetVerifiedDataDialog',['../_board_8c.html#a1e5bc7c3e755d854464c7448cd596687',1,'Board.c']]],
-  ['getvirtualdmaaddress_26',['getVirtualDmaAddress',['../_board__ll_8c.html#a46239bcacf764bc860faf531d74ce29e',1,'Board_ll.c']]],
-  ['getwindowhandler_27',['getWindowHandler',['../class_direct2d_viewer.html#a80b76d2c3f1cb0b01be97f1b28827f43',1,'Direct2dViewer']]]
+  ['gettimestampinmicroseconds_25',['GetTimestampInMicroseconds',['../_board__ll_8c.html#a448c4b7633a0fbb56a8d61cc13efe0b6',1,'Board_ll.c']]],
+  ['gettimestampinticks_26',['GetTimestampInTicks',['../_board__ll_8c.html#ac07c7888590dc77ecaba1069585795b6',1,'Board_ll.c']]],
+  ['getverifieddatadialog_27',['GetVerifiedDataDialog',['../_board_8c.html#a1e5bc7c3e755d854464c7448cd596687',1,'Board.c']]],
+  ['getvirtualdmaaddress_28',['getVirtualDmaAddress',['../_board__ll_8c.html#a46239bcacf764bc860faf531d74ce29e',1,'Board_ll.c']]],
+  ['getwindowhandler_29',['getWindowHandler',['../class_direct2d_viewer.html#a80b76d2c3f1cb0b01be97f1b28827f43',1,'Direct2dViewer']]]
 ];

@@ -4,7 +4,7 @@ var searchData=
   ['waitforblockready_1',['waitForBlockReady',['../_board_8c.html#aad31f000666d013342cff25b91bb69c4',1,'Board.c']]],
   ['waitforblocktrigger_2',['waitForBlockTrigger',['../_board_8c.html#a064863a7da68c4911ad62314afaf852e',1,'Board.c']]],
   ['waitformeasureready_3',['waitForMeasureReady',['../_board_8c.html#ac0ce5c69a608f540ed7d4d83f280abb0',1,'Board.c']]],
-  ['waitfortelapsed_4',['WaitforTelapsed',['../_board__ll_8c.html#a04e54089e3fb50341350f739f0a8a210',1,'Board_ll.c']]],
+  ['waitfortelapsed_4',['WaitforTelapsed',['../_board__ll_8c.html#a364bfc62fe74551a58ef8af9a714d329',1,'Board_ll.c']]],
   ['waittrigger_5',['WaitTrigger',['../_board__ll_8c.html#afcf2c0ff9d0b97692deff2032cd7b28a',1,'Board_ll.c']]],
   ['writebitsdma_5f32_6',['writeBitsDma_32',['../_board_8c.html#a6868b09ffcff1d8e1a84c1eaecebd451',1,'Board.c']]],
   ['writebitsdma_5f8_7',['writeBitsDma_8',['../_board_8c.html#a6b76c2e1248ac010b0a93b6bb33c304a',1,'Board.c']]],

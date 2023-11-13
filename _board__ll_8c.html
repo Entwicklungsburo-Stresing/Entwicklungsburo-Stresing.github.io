@@ -99,9 +99,6 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:acd24b30183d82710c9f5b7ddc6ac7c36" id="r_acd24b30183d82710c9f5b7ddc6ac7c36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board__ll_8c.html#acd24b30183d82710c9f5b7ddc6ac7c36">CleanupDma</a> (uint32_t drvno)</td></tr>
 <tr class="separator:acd24b30183d82710c9f5b7ddc6ac7c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97e2ce22aa3e24496369d500338ff2f4" id="r_a97e2ce22aa3e24496369d500338ff2f4"><td class="memItemLeft" align="right" valign="top">UINT64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board__ll_8c.html#a97e2ce22aa3e24496369d500338ff2f4">LargeToInt</a> (LARGE_INTEGER li)</td></tr>
-<tr class="memdesc:a97e2ce22aa3e24496369d500338ff2f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts Large to Int64.  <br /></td></tr>
-<tr class="separator:a97e2ce22aa3e24496369d500338ff2f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94100cee85307b5db9cfb31f36eadd42" id="r_a94100cee85307b5db9cfb31f36eadd42"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board__ll_8c.html#a94100cee85307b5db9cfb31f36eadd42">InitHRCounter</a> ()</td></tr>
 <tr class="memdesc:a94100cee85307b5db9cfb31f36eadd42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init high resolution counter.  <br /></td></tr>
 <tr class="separator:a94100cee85307b5db9cfb31f36eadd42"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,18 +176,20 @@ Functions</h2></td></tr>
 <tr class="separator:a73ccf418b65829378357ee2badbadb69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44abdeb7e380b09aa933fcd27c7b6694" id="r_a44abdeb7e380b09aa933fcd27c7b6694"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board__ll_8c.html#a44abdeb7e380b09aa933fcd27c7b6694">InitMutex</a> (uint32_t drvno)</td></tr>
 <tr class="separator:a44abdeb7e380b09aa933fcd27c7b6694"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae78d7b3ad9c7be1b2c577dae85d007d6" id="r_ae78d7b3ad9c7be1b2c577dae85d007d6"><td class="memItemLeft" align="right" valign="top">long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board__ll_8c.html#ae78d7b3ad9c7be1b2c577dae85d007d6">ticksTimestamp</a> ()</td></tr>
-<tr class="memdesc:ae78d7b3ad9c7be1b2c577dae85d007d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads system timer.  <br /></td></tr>
-<tr class="separator:ae78d7b3ad9c7be1b2c577dae85d007d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac07c7888590dc77ecaba1069585795b6" id="r_ac07c7888590dc77ecaba1069585795b6"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board__ll_8c.html#ac07c7888590dc77ecaba1069585795b6">GetTimestampInTicks</a> ()</td></tr>
+<tr class="memdesc:ac07c7888590dc77ecaba1069585795b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads system timer.  <br /></td></tr>
+<tr class="separator:ac07c7888590dc77ecaba1069585795b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a448c4b7633a0fbb56a8d61cc13efe0b6" id="r_a448c4b7633a0fbb56a8d61cc13efe0b6"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board__ll_8c.html#a448c4b7633a0fbb56a8d61cc13efe0b6">GetTimestampInMicroseconds</a> ()</td></tr>
+<tr class="separator:a448c4b7633a0fbb56a8d61cc13efe0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcf2c0ff9d0b97692deff2032cd7b28a" id="r_afcf2c0ff9d0b97692deff2032cd7b28a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board__ll_8c.html#afcf2c0ff9d0b97692deff2032cd7b28a">WaitTrigger</a> (uint32_t drvno, bool ExtTrigFlag, bool *SpaceKey, bool *AbrKey)</td></tr>
 <tr class="memdesc:afcf2c0ff9d0b97692deff2032cd7b28a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if trigger or key.  <br /></td></tr>
 <tr class="separator:afcf2c0ff9d0b97692deff2032cd7b28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8d278ee51be246d16d706113012627c" id="r_ae8d278ee51be246d16d706113012627c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board__ll_8c.html#ae8d278ee51be246d16d706113012627c">Tickstous</a> (uint64_t tks)</td></tr>
-<tr class="memdesc:ae8d278ee51be246d16d706113012627c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate ticks to microseconds.  <br /></td></tr>
-<tr class="separator:ae8d278ee51be246d16d706113012627c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04e54089e3fb50341350f739f0a8a210" id="r_a04e54089e3fb50341350f739f0a8a210"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board__ll_8c.html#a04e54089e3fb50341350f739f0a8a210">WaitforTelapsed</a> (long long musec)</td></tr>
-<tr class="memdesc:a04e54089e3fb50341350f739f0a8a210"><td class="mdescLeft">&#160;</td><td class="mdescRight">This functions returns after a time given in microseconds. The time is measured in CPU ticks. The function is escapable by pressing ESC.  <br /></td></tr>
-<tr class="separator:a04e54089e3fb50341350f739f0a8a210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8e9a499c65feb42895a725c33adf23a" id="r_ad8e9a499c65feb42895a725c33adf23a"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board__ll_8c.html#ad8e9a499c65feb42895a725c33adf23a">ConvertTicksToMicroseconds</a> (int64_t ticks)</td></tr>
+<tr class="memdesc:ad8e9a499c65feb42895a725c33adf23a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate ticks to microseconds.  <br /></td></tr>
+<tr class="separator:ad8e9a499c65feb42895a725c33adf23a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a364bfc62fe74551a58ef8af9a714d329" id="r_a364bfc62fe74551a58ef8af9a714d329"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board__ll_8c.html#a364bfc62fe74551a58ef8af9a714d329">WaitforTelapsed</a> (int64_t microseconds)</td></tr>
+<tr class="memdesc:a364bfc62fe74551a58ef8af9a714d329"><td class="mdescLeft">&#160;</td><td class="mdescRight">This functions returns after a time given in microseconds. The time is measured in CPU ticks. The function is escapable by pressing ESC.  <br /></td></tr>
+<tr class="separator:a364bfc62fe74551a58ef8af9a714d329"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01679920cd63a7360486c1a1b9d70644" id="r_a01679920cd63a7360486c1a1b9d70644"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board__ll_8c.html#a01679920cd63a7360486c1a1b9d70644">checkEscapeKeyState</a> ()</td></tr>
 <tr class="separator:a01679920cd63a7360486c1a1b9d70644"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5decd9522e1a35770a23375724a3604" id="r_aa5decd9522e1a35770a23375724a3604"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board__ll_8c.html#aa5decd9522e1a35770a23375724a3604">checkSpaceKeyState</a> ()</td></tr>
@@ -302,8 +301,8 @@ Variables</h2></td></tr>
 <tr class="separator:a6ed5330abf4660f88020dcc1ce7926c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0838b4d9733238be143a515e9ef87eb" id="r_ac0838b4d9733238be143a515e9ef87eb"><td class="memItemLeft" align="right" valign="top">WD_PCI_CARD_INFO&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board__ll_8c.html#ac0838b4d9733238be143a515e9ef87eb">deviceInfo</a> [<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>]</td></tr>
 <tr class="separator:ac0838b4d9733238be143a515e9ef87eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab65ac38eb1793dbc218e64f6e5509390" id="r_ab65ac38eb1793dbc218e64f6e5509390"><td class="memItemLeft" align="right" valign="top">__int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board__ll_8c.html#ab65ac38eb1793dbc218e64f6e5509390">TPS</a> = 0</td></tr>
-<tr class="separator:ab65ac38eb1793dbc218e64f6e5509390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e2c902d8a2f461af1ced8533c3f7b1a" id="r_a9e2c902d8a2f461af1ced8533c3f7b1a"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board__ll_8c.html#a9e2c902d8a2f461af1ced8533c3f7b1a">ticksPerSecond</a> = 0</td></tr>
+<tr class="separator:a9e2c902d8a2f461af1ced8533c3f7b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39517006ca67f401ab40cf6660d5e182" id="r_a39517006ca67f401ab40cf6660d5e182"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board__ll_8c.html#a39517006ca67f401ab40cf6660d5e182">_SHOW_MSG</a> = TRUE</td></tr>
 <tr class="separator:a39517006ca67f401ab40cf6660d5e182"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b38f8724520f3c3724690dfa6ce0e6a" id="r_a9b38f8724520f3c3724690dfa6ce0e6a"><td class="memItemLeft" align="right" valign="top">ULONG&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board__ll_8c.html#a9b38f8724520f3c3724690dfa6ce0e6a">oldPriClass</a> = 0</td></tr>
@@ -817,6 +816,33 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="ad8e9a499c65feb42895a725c33adf23a" name="ad8e9a499c65feb42895a725c33adf23a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8e9a499c65feb42895a725c33adf23a">&#9670;&#160;</a></span>ConvertTicksToMicroseconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t ConvertTicksToMicroseconds </td>
+          <td>(</td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>ticks</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Translate ticks to microseconds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ticks</td><td>ticks of system timer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>microseconds of ticks </dd></dl>
+
+</div>
+</div>
 <a id="a19a74d50b17830b71a1ab6d5d726649d" name="a19a74d50b17830b71a1ab6d5d726649d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a19a74d50b17830b71a1ab6d5d726649d">&#9670;&#160;</a></span>copyRestData()</h2>
 
@@ -1152,6 +1178,43 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a448c4b7633a0fbb56a8d61cc13efe0b6" name="a448c4b7633a0fbb56a8d61cc13efe0b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a448c4b7633a0fbb56a8d61cc13efe0b6">&#9670;&#160;</a></span>GetTimestampInMicroseconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t GetTimestampInMicroseconds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac07c7888590dc77ecaba1069585795b6" name="ac07c7888590dc77ecaba1069585795b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac07c7888590dc77ecaba1069585795b6">&#9670;&#160;</a></span>GetTimestampInTicks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t GetTimestampInTicks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads system timer. </p>
+<p>Read 2x ticks and calculate the difference between the calls in microseconds with DLLTickstous, init timer by calling DLLInitSysTimer before use. </p><dl class="section return"><dt>Returns</dt><dd>act ticks </dd></dl>
+
+</div>
+</div>
 <a id="a46239bcacf764bc860faf531d74ce29e" name="a46239bcacf764bc860faf531d74ce29e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a46239bcacf764bc860faf531d74ce29e">&#9670;&#160;</a></span>getVirtualDmaAddress()</h2>
 
@@ -1186,7 +1249,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Init high resolution counter. </p>
-<dl class="section return"><dt>Returns</dt><dd>TPS ticks per sec </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>ticksPerSecond ticks per sec </dd></dl>
 
 </div>
 </div>
@@ -1317,26 +1380,6 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a97e2ce22aa3e24496369d500338ff2f4" name="a97e2ce22aa3e24496369d500338ff2f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97e2ce22aa3e24496369d500338ff2f4">&#9670;&#160;</a></span>LargeToInt()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">UINT64 LargeToInt </td>
-          <td>(</td>
-          <td class="paramtype">LARGE_INTEGER&#160;</td>
-          <td class="paramname"><em>li</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Converts Large to Int64. </p>
 
 </div>
 </div>
@@ -1928,53 +1971,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae78d7b3ad9c7be1b2c577dae85d007d6" name="ae78d7b3ad9c7be1b2c577dae85d007d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae78d7b3ad9c7be1b2c577dae85d007d6">&#9670;&#160;</a></span>ticksTimestamp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">long long ticksTimestamp </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reads system timer. </p>
-<p>Read 2x ticks and calculate the difference between the calls in microseconds with DLLTickstous, init timer by calling DLLInitSysTimer before use. </p><dl class="section return"><dt>Returns</dt><dd>act ticks </dd></dl>
-
-</div>
-</div>
-<a id="ae8d278ee51be246d16d706113012627c" name="ae8d278ee51be246d16d706113012627c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8d278ee51be246d16d706113012627c">&#9670;&#160;</a></span>Tickstous()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t Tickstous </td>
-          <td>(</td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>tks</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Translate ticks to microseconds. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tks</td><td>ticks of system timer </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>microseconds of tks </dd></dl>
-
-</div>
-</div>
 <a id="a114f200536b78ce833eb1fc0e0231e94" name="a114f200536b78ce833eb1fc0e0231e94"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a114f200536b78ce833eb1fc0e0231e94">&#9670;&#160;</a></span>ValMsg()</h2>
 
@@ -2044,8 +2040,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a04e54089e3fb50341350f739f0a8a210" name="a04e54089e3fb50341350f739f0a8a210"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04e54089e3fb50341350f739f0a8a210">&#9670;&#160;</a></span>WaitforTelapsed()</h2>
+<a id="a364bfc62fe74551a58ef8af9a714d329" name="a364bfc62fe74551a58ef8af9a714d329"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a364bfc62fe74551a58ef8af9a714d329">&#9670;&#160;</a></span>WaitforTelapsed()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2053,8 +2049,8 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">uint8_t WaitforTelapsed </td>
           <td>(</td>
-          <td class="paramtype">long long&#160;</td>
-          <td class="paramname"><em>musec</em></td><td>)</td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>microseconds</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2063,7 +2059,7 @@ Variables</h2></td></tr>
 <p>This functions returns after a time given in microseconds. The time is measured in CPU ticks. The function is escapable by pressing ESC. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">musec</td><td>Time to wait in microseconds. </td></tr>
+    <tr><td class="paramname">microseconds</td><td>Time to wait in microseconds. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2647,14 +2643,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab65ac38eb1793dbc218e64f6e5509390" name="ab65ac38eb1793dbc218e64f6e5509390"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab65ac38eb1793dbc218e64f6e5509390">&#9670;&#160;</a></span>TPS</h2>
+<a id="a9e2c902d8a2f461af1ced8533c3f7b1a" name="a9e2c902d8a2f461af1ced8533c3f7b1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e2c902d8a2f461af1ced8533c3f7b1a">&#9670;&#160;</a></span>ticksPerSecond</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">__int64 TPS = 0</td>
+          <td class="memname">int64_t ticksPerSecond = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">

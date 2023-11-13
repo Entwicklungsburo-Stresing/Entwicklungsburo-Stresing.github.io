@@ -9,6 +9,6 @@ var searchData=
   ['or_20btimer_3a_6',['Use STimer and/or BTimer:',['../index.html#autotoc_md9',1,'']]],
   ['outtrighigh_7',['OutTrigHigh',['../_board_8c.html#a17c3f95217ca811a23a37998a141db78',1,'Board.c']]],
   ['outtriglow_8',['OutTrigLow',['../_board_8c.html#a8cf2cbfa432ee37a742eae389648b39d',1,'Board.c']]],
-  ['outtrigpulse_9',['OutTrigPulse',['../_board_8c.html#a41019bd7d6f9a27dec94a03cc88f9f65',1,'Board.c']]],
+  ['outtrigpulse_9',['OutTrigPulse',['../_board_8c.html#a686b66f43b2b183ab0634e5cc331d25c',1,'Board.c']]],
   ['overtemp_10',['overTemp',['../structspecial__pixels.html#a44373cb95fdb1171781fd624b06b81bd',1,'special_pixels']]]
 ];

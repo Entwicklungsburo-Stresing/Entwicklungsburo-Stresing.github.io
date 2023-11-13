@@ -71,7 +71,7 @@ var searchData=
   ['dllopenshutter_68',['DLLOpenShutter',['../_e_s_l_s_c_d_l_l_8c.html#abba9e520fb23e2d531bb8d2bcf06db67',1,'ESLSCDLL.c']]],
   ['dllouttrighigh_69',['DLLOutTrigHigh',['../_e_s_l_s_c_d_l_l_8c.html#a3ded55f6758d26085c1d4ecb514854d7',1,'ESLSCDLL.c']]],
   ['dllouttriglow_70',['DLLOutTrigLow',['../_e_s_l_s_c_d_l_l_8c.html#a35adfc755ec91ac276f02f9776cb2484',1,'ESLSCDLL.c']]],
-  ['dllouttrigpulse_71',['DLLOutTrigPulse',['../_e_s_l_s_c_d_l_l_8c.html#a74910382a6132d05041d622965962817',1,'ESLSCDLL.c']]],
+  ['dllouttrigpulse_71',['DLLOutTrigPulse',['../_e_s_l_s_c_d_l_l_8c.html#a7ee61184e72bfc07a0017495829216ad',1,'ESLSCDLL.c']]],
   ['dllreadblockfrequencybit_72',['DLLReadBlockFrequencyBit',['../_e_s_l_s_c_d_l_l_8c.html#ab9eb838f2c2e3dcd96cc746eb3a16b08',1,'ESLSCDLL.c']]],
   ['dllreadblockfrequencybit_5fmultipleboards_73',['DLLReadBlockFrequencyBit_multipleBoards',['../_e_s_l_s_c_d_l_l_8c.html#a43789e3fa3b4f97b7f50cd1739b2cced',1,'ESLSCDLL.c']]],
   ['dllreadregisters0_5f32_74',['DLLreadRegisterS0_32',['../_e_s_l_s_c_d_l_l_8c.html#a5a0017c630d5ebbac9910376665be75c',1,'ESLSCDLL.c']]],
@@ -107,8 +107,9 @@ var searchData=
   ['dosoftwaretrigger_104',['DoSoftwareTrigger',['../_board_8c.html#a781ca11b018d3858a12e10f4c3cfc953',1,'Board.c']]],
   ['dumpcamerasettings_105',['dumpCameraSettings',['../_board_8c.html#acf1254fd6e32b794d4d55d6787938b4b',1,'Board.c']]],
   ['dumpdmaregisters_106',['dumpDmaRegisters',['../_board_8c.html#a0c7a2f30cf5ecd617f77bfd83822b9d8',1,'Board.c']]],
-  ['dumpmeasurementsettings_107',['dumpMeasurementSettings',['../_board_8c.html#a16136fe5397efa706c3ecdd5740b477e',1,'Board.c']]],
-  ['dumppciregisters_108',['dumpPciRegisters',['../_board_8c.html#a363e994800d1360363412e158acce93d',1,'Board.c']]],
-  ['dumps0registers_109',['dumpS0Registers',['../_board_8c.html#a5376fb1733148fc9043d48edd8824101',1,'Board.c']]],
-  ['dumptlpregisters_110',['dumpTlpRegisters',['../_board_8c.html#abf4283570c02dc54d141b9854c0987a6',1,'Board.c']]]
+  ['dumphumanreadables0registers_107',['dumpHumanReadableS0Registers',['../_board_8c.html#a4f0bbf531076c540599364fb772d1513',1,'Board.c']]],
+  ['dumpmeasurementsettings_108',['dumpMeasurementSettings',['../_board_8c.html#a16136fe5397efa706c3ecdd5740b477e',1,'Board.c']]],
+  ['dumppciregisters_109',['dumpPciRegisters',['../_board_8c.html#a363e994800d1360363412e158acce93d',1,'Board.c']]],
+  ['dumps0registers_110',['dumpS0Registers',['../_board_8c.html#a5376fb1733148fc9043d48edd8824101',1,'Board.c']]],
+  ['dumptlpregisters_111',['dumpTlpRegisters',['../_board_8c.html#abf4283570c02dc54d141b9854c0987a6',1,'Board.c']]]
 ];
