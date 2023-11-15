@@ -132,7 +132,6 @@ var menudata={children:[
 {text:"i",url:"globals_vars.html#index_i"},
 {text:"m",url:"globals_vars.html#index_m"},
 {text:"n",url:"globals_vars.html#index_n"},
-{text:"o",url:"globals_vars.html#index_o"},
 {text:"s",url:"globals_vars.html#index_s"},
 {text:"t",url:"globals_vars.html#index_t"},
 {text:"u",url:"globals_vars.html#index_u"}]},

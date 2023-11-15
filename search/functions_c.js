@@ -34,7 +34,7 @@ var searchData=
   ['setnosregister_31',['SetNosRegister',['../_board_8c.html#a87196ad58f8d48b46d52901648469a36',1,'Board.c']]],
   ['setpartialbinning_32',['SetPartialBinning',['../_board_8c.html#ac8e3975dd36af287fd395ea71fc35ffc',1,'Board.c']]],
   ['setpixelcountregister_33',['SetPixelCountRegister',['../_board_8c.html#aa709ab810123b5d8e9b0d35837c3379f',1,'Board.c']]],
-  ['setpriority_34',['SetPriority',['../_board__ll_8c.html#aef6d668087461045f605e596792c4690',1,'Board_ll.c']]],
+  ['setpriority_34',['SetPriority',['../_board__ll_8c.html#a528525c2907fd30ddee35895ec5270ba',1,'Board_ll.c']]],
   ['setsdat_35',['SetSDAT',['../_board_8c.html#aa990aedb3c7b59d6abe25de7a905f71d',1,'Board.c']]],
   ['setsec_36',['SetSEC',['../_board_8c.html#ac567799641070ea0cffe5373cc528269',1,'Board.c']]],
   ['setsensortype_37',['SetSensorType',['../_board_8c.html#a5ef6591b3159407b62c4b1a81bcce3d8',1,'Board.c']]],
