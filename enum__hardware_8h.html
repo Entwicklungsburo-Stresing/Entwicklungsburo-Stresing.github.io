@@ -231,8 +231,14 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:ac3a1258fa04db205b71f72f565207db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7edba2515104bc9df9622c38d05b5351" id="r_a7edba2515104bc9df9622c38d05b5351"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enum__hardware_8h.html#a7edba2515104bc9df9622c38d05b5351">XCKMSB_bits_t</a> { <a class="el" href="enum__hardware_8h.html#a7edba2515104bc9df9622c38d05b5351a18e5d9ae516eb2754d1bb18552b3afee">XCKMSB_bit_stimer_on</a> = 0x40
+<tr class="memitem:a7edba2515104bc9df9622c38d05b5351" id="r_a7edba2515104bc9df9622c38d05b5351"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enum__hardware_8h.html#a7edba2515104bc9df9622c38d05b5351">XCKMSB_bits_t</a> { <br />
+&#160;&#160;<a class="el" href="enum__hardware_8h.html#a7edba2515104bc9df9622c38d05b5351a18e5d9ae516eb2754d1bb18552b3afee">XCKMSB_bit_stimer_on</a> = 0x40
+, <a class="el" href="enum__hardware_8h.html#a7edba2515104bc9df9622c38d05b5351a82419149bee66353fe2fddd8d59e525c">XCKMSB_bitindex_reset_ns</a> = 4
+, <a class="el" href="enum__hardware_8h.html#a7edba2515104bc9df9622c38d05b5351a10f84c349b5965acb57e45fa3f789289">XCKMSB_bitindex_reset_ms</a> = 5
 , <a class="el" href="enum__hardware_8h.html#a7edba2515104bc9df9622c38d05b5351a2a22b106e55b453b0192f74294e52cdc">XCKMSB_bitindex_stimer_on</a> = 6
+, <br />
+&#160;&#160;<a class="el" href="enum__hardware_8h.html#a7edba2515104bc9df9622c38d05b5351aa4a160cd6ccfa8fd57d29285529be978">XCKMSB_bitindex_F_EXT_TRIG</a> = 7
+<br />
  }</td></tr>
 <tr class="separator:a7edba2515104bc9df9622c38d05b5351"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93dad6aef0b25937b0730073ec6d888b" id="r_a93dad6aef0b25937b0730073ec6d888b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enum__hardware_8h.html#a93dad6aef0b25937b0730073ec6d888b">pcie_addresses_t</a> { <a class="el" href="enum__hardware_8h.html#a93dad6aef0b25937b0730073ec6d888bada936d1c848d619fe0b98402fccdd5b9">PCIeAddr_devCap</a> = 0x5C
@@ -256,7 +262,8 @@ Enumerations</h2></td></tr>
 , <a class="el" href="enum__hardware_8h.html#a53140745b99b27905d690c659ef583c5acdc57113a0d871c28ef624c7c0620484">FF_FLAGS_bitindex_empty</a> = 6
 , <a class="el" href="enum__hardware_8h.html#a53140745b99b27905d690c659ef583c5af6e16d1938733079b66370cda1e4e5d3">FF_FLAGS_bitindex_full</a> = 5
 , <br />
-&#160;&#160;<a class="el" href="enum__hardware_8h.html#a53140745b99b27905d690c659ef583c5a7f35861231661fb41ef95b20b6e40805">FF_FLAGS_bitindex_overflow</a> = 3
+&#160;&#160;<a class="el" href="enum__hardware_8h.html#a53140745b99b27905d690c659ef583c5a754df1fe8df5957c837f703d2f50bcd5">FF_FLAGS_bitindex_xcki</a> = 4
+, <a class="el" href="enum__hardware_8h.html#a53140745b99b27905d690c659ef583c5a7f35861231661fb41ef95b20b6e40805">FF_FLAGS_bitindex_overflow</a> = 3
 , <a class="el" href="enum__hardware_8h.html#a53140745b99b27905d690c659ef583c5a0ceca6244d0f2579213831b756f38fcb">FF_FLAGS_bitindex_scan_read</a> = 2
 , <a class="el" href="enum__hardware_8h.html#a53140745b99b27905d690c659ef583c5ab8f31dc13a3be1a34cd66d9dcc1e7a96">FF_FLAGS_bitindex_block_read</a> = 1
 <br />
@@ -923,6 +930,7 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5a9b6fa65ac13124d7d5abd69f525ee375" name="a53140745b99b27905d690c659ef583c5a9b6fa65ac13124d7d5abd69f525ee375"></a>FF_FLAGS_bitindex_valid&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5acdc57113a0d871c28ef624c7c0620484" name="a53140745b99b27905d690c659ef583c5acdc57113a0d871c28ef624c7c0620484"></a>FF_FLAGS_bitindex_empty&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5af6e16d1938733079b66370cda1e4e5d3" name="a53140745b99b27905d690c659ef583c5af6e16d1938733079b66370cda1e4e5d3"></a>FF_FLAGS_bitindex_full&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5a754df1fe8df5957c837f703d2f50bcd5" name="a53140745b99b27905d690c659ef583c5a754df1fe8df5957c837f703d2f50bcd5"></a>FF_FLAGS_bitindex_xcki&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5a7f35861231661fb41ef95b20b6e40805" name="a53140745b99b27905d690c659ef583c5a7f35861231661fb41ef95b20b6e40805"></a>FF_FLAGS_bitindex_overflow&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5a0ceca6244d0f2579213831b756f38fcb" name="a53140745b99b27905d690c659ef583c5a0ceca6244d0f2579213831b756f38fcb"></a>FF_FLAGS_bitindex_scan_read&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5ab8f31dc13a3be1a34cd66d9dcc1e7a96" name="a53140745b99b27905d690c659ef583c5ab8f31dc13a3be1a34cd66d9dcc1e7a96"></a>FF_FLAGS_bitindex_block_read&#160;</td><td class="fielddoc"></td></tr>
@@ -1350,7 +1358,10 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7edba2515104bc9df9622c38d05b5351a18e5d9ae516eb2754d1bb18552b3afee" name="a7edba2515104bc9df9622c38d05b5351a18e5d9ae516eb2754d1bb18552b3afee"></a>XCKMSB_bit_stimer_on&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7edba2515104bc9df9622c38d05b5351a82419149bee66353fe2fddd8d59e525c" name="a7edba2515104bc9df9622c38d05b5351a82419149bee66353fe2fddd8d59e525c"></a>XCKMSB_bitindex_reset_ns&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7edba2515104bc9df9622c38d05b5351a10f84c349b5965acb57e45fa3f789289" name="a7edba2515104bc9df9622c38d05b5351a10f84c349b5965acb57e45fa3f789289"></a>XCKMSB_bitindex_reset_ms&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7edba2515104bc9df9622c38d05b5351a2a22b106e55b453b0192f74294e52cdc" name="a7edba2515104bc9df9622c38d05b5351a2a22b106e55b453b0192f74294e52cdc"></a>XCKMSB_bitindex_stimer_on&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7edba2515104bc9df9622c38d05b5351aa4a160cd6ccfa8fd57d29285529be978" name="a7edba2515104bc9df9622c38d05b5351aa4a160cd6ccfa8fd57d29285529be978"></a>XCKMSB_bitindex_F_EXT_TRIG&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
