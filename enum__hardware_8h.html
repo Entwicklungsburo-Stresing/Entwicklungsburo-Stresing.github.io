@@ -216,18 +216,21 @@ Enumerations</h2></td></tr>
 <tr class="separator:a168d45dd57f1bbda9d4f6cb50f270e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3a1258fa04db205b71f72f565207db7" id="r_ac3a1258fa04db205b71f72f565207db7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enum__hardware_8h.html#ac3a1258fa04db205b71f72f565207db7">TOR_MSB_bits_t</a> { <br />
 &#160;&#160;<a class="el" href="enum__hardware_8h.html#ac3a1258fa04db205b71f72f565207db7a9183e388028e1f69d56aa3fbb83012ea">TOR_MSB_BITS_TO</a> = 0xF8
+, <a class="el" href="enum__hardware_8h.html#ac3a1258fa04db205b71f72f565207db7a854872811ad50f63c44e8a577d44bf64">TOR_MSB_bit_ISFFT_LEGACY</a> = 0x01
 , <a class="el" href="enum__hardware_8h.html#ac3a1258fa04db205b71f72f565207db7a969660f6af511b1e6934c1722c48b1aa">TOR_MSB_bit_TOSEL</a> = 0x08
 , <a class="el" href="enum__hardware_8h.html#ac3a1258fa04db205b71f72f565207db7a2ca8efc5a0324e937ed0b6a3335b631f">TOR_MSB_bit_TO0</a> = 0x10
-, <a class="el" href="enum__hardware_8h.html#ac3a1258fa04db205b71f72f565207db7a639c8170549041605762864af218d3fb">TOR_MSB_bit_TO1</a> = 0x20
 , <br />
-&#160;&#160;<a class="el" href="enum__hardware_8h.html#ac3a1258fa04db205b71f72f565207db7ada38f0a4f4d25461344debdbf2d4a733">TOR_MSB_bit_TO2</a> = 0x40
+&#160;&#160;<a class="el" href="enum__hardware_8h.html#ac3a1258fa04db205b71f72f565207db7a639c8170549041605762864af218d3fb">TOR_MSB_bit_TO1</a> = 0x20
+, <a class="el" href="enum__hardware_8h.html#ac3a1258fa04db205b71f72f565207db7ada38f0a4f4d25461344debdbf2d4a733">TOR_MSB_bit_TO2</a> = 0x40
 , <a class="el" href="enum__hardware_8h.html#ac3a1258fa04db205b71f72f565207db7ad477b4a7d32dd82731acd75bf282fb1d">TOR_MSB_bit_TO3</a> = 0x80
-, <a class="el" href="enum__hardware_8h.html#ac3a1258fa04db205b71f72f565207db7a773c9f37810ede1c3f686d780492f057">TOR_MSB_bitindex_TOSEL</a> = 3
-, <a class="el" href="enum__hardware_8h.html#ac3a1258fa04db205b71f72f565207db7a52455df2ca4853633402285648a963d8">TOR_MSB_bitindex_TO0</a> = 4
+, <a class="el" href="enum__hardware_8h.html#ac3a1258fa04db205b71f72f565207db7aa503e1b3aa7d81390b313feb14b8bc6a">TOR_MSB_bitindex_ISFFT_LEGACY</a> = 0
 , <br />
-&#160;&#160;<a class="el" href="enum__hardware_8h.html#ac3a1258fa04db205b71f72f565207db7a787be802ec30f8373f4751d653c49650">TOR_MSB_bitindex_TO1</a> = 5
+&#160;&#160;<a class="el" href="enum__hardware_8h.html#ac3a1258fa04db205b71f72f565207db7a773c9f37810ede1c3f686d780492f057">TOR_MSB_bitindex_TOSEL</a> = 3
+, <a class="el" href="enum__hardware_8h.html#ac3a1258fa04db205b71f72f565207db7a52455df2ca4853633402285648a963d8">TOR_MSB_bitindex_TO0</a> = 4
+, <a class="el" href="enum__hardware_8h.html#ac3a1258fa04db205b71f72f565207db7a787be802ec30f8373f4751d653c49650">TOR_MSB_bitindex_TO1</a> = 5
 , <a class="el" href="enum__hardware_8h.html#ac3a1258fa04db205b71f72f565207db7a79c350c5c772b06faef8f17c34f76f93">TOR_MSB_bitindex_TO2</a> = 6
-, <a class="el" href="enum__hardware_8h.html#ac3a1258fa04db205b71f72f565207db7aa548861e52967338164c4be38303c9a6">TOR_MSB_bitindex_TO3</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="enum__hardware_8h.html#ac3a1258fa04db205b71f72f565207db7aa548861e52967338164c4be38303c9a6">TOR_MSB_bitindex_TO3</a> = 7
 <br />
  }</td></tr>
 <tr class="separator:ac3a1258fa04db205b71f72f565207db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -241,10 +244,94 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a7edba2515104bc9df9622c38d05b5351"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93dad6aef0b25937b0730073ec6d888b" id="r_a93dad6aef0b25937b0730073ec6d888b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enum__hardware_8h.html#a93dad6aef0b25937b0730073ec6d888b">pcie_addresses_t</a> { <a class="el" href="enum__hardware_8h.html#a93dad6aef0b25937b0730073ec6d888bada936d1c848d619fe0b98402fccdd5b9">PCIeAddr_devCap</a> = 0x5C
-, <a class="el" href="enum__hardware_8h.html#a93dad6aef0b25937b0730073ec6d888ba9f7b07b0309a3ccc3abb240ee2ef18c1">PCIeAddr_devStatCtrl</a> = 0x60
+<tr class="memitem:ab6005e570d078f1b87ae9b7a4b706a99" id="r_ab6005e570d078f1b87ae9b7a4b706a99"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99">pcie_configuration_space_t</a> { <br />
+&#160;&#160;<a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a07479b07938607524abc79d50812eb93">PCIeAddr_VendorID</a> = 0x00
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a3d760d2323385caec4b7b80209b39c4d">PCIeAddr_DeviceID</a> = 0x02
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99accdbd71e74e6034bf3ce7d3d2e43011a">PCIeAddr_Command</a> = 0x04
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a7ed78c98372709fb1d45c2ee9a024cc6">PCIeAddr_Status</a> = 0x06
+, <br />
+&#160;&#160;<a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a3bcafd2583d99aced421702c295f89ff">PCIeAddr_RevID</a> = 0x08
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a702611d131b9cbb27a613d4a4ee5ba08">PCIeAddr_ClassCode</a> = 0x09
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a4b4d532b0861e8ac03202e1c19a17388">PCIeAddr_CacheLn</a> = 0x0C
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99ad080d39e57e3daf046af5694783cb2d9">PCIeAddr_LatTimer</a> = 0x0D
+, <br />
+&#160;&#160;<a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99ab563917a9be89a4ef64a00d9eed61cd3">PCIeAddr_Header</a> = 0x0E
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a40e8ab700cbf65cfa6d45d00491caf0e">PCIeAddr_BIST</a> = 0x0F
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a7773473448c41e8f8f19e20521db2f52">PCIeAddr_BaseAddressRegister0</a> = 0x10
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a874ea480836425b31ef4e77fe1f1c66a">PCIeAddr_BaseAddressRegister1</a> = 0x14
+, <br />
+&#160;&#160;<a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a6d11f2c8239fba71a6aab627b967f762">PCIeAddr_BaseAddressRegister2</a> = 0x18
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a581bb0d6516cf1ac839ff30568b0b348">PCIeAddr_BaseAddressRegister3</a> = 0x1C
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a03615ffb8aed77cec28aa33328c302ca">PCIeAddr_BaseAddressRegister4</a> = 0x20
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99ad2d9532a5dcc3d93b0adc90875d92988">PCIeAddr_BaseAddressRegister5</a> = 0x24
+, <br />
+&#160;&#160;<a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a6e3d508a3365796da3c9feecb0d312ad">PCIeAddr_CardbusCisPointer</a> = 0x28
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a10d1113ee3f946644066c9219b396969">PCIeAddr_SubsystemVendorID</a> = 0x2C
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a35b83c52c93f503fba3efbda36a03906">PCIeAddr_SubsystemID</a> = 0x2E
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a181dc9d305726e3d9fd32c709bfcd2ab">PCIeAddr_ExpansionRomBaseAddress</a> = 0x30
+, <br />
+&#160;&#160;<a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a9831e73a8aaac25377abf527d4d8289b">PCIeAddr_CapPTr</a> = 0x34
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99aec3c4f596f1a7d1b267e95bbae78f80d">PCIeAddr_Reserved1</a> = 0x35
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99ae86459f0d23d7e542ffcbd7b93bfe9ac">PCIeAddr_Reserved2</a> = 0x38
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a0e3985135f8f31cbb32b06600cd5e2e7">PCIeAddr_IntrLine</a> = 0x3C
+, <br />
+&#160;&#160;<a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a08e1b765efb99c501a72e9558376a364">PCIeAddr_IntrPin</a> = 0x3D
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99ab2621f37ed695279db619de095584520">PCIeAddr_MinGnt</a> = 0x3E
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99ad421078dd0a440dfee100d85db93f3c4">PCIeAddr_Maxlat</a> = 0x3F
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99af371867e96494e42f7ea03987a5ee36b">PCIeAddr_PMCap</a> = 0x40
+, <br />
+&#160;&#160;<a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99aef53db9dc263bfc69e2fa9ded857e574">PCIeAddr_NxtCap1</a> = 0x41
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a84a20b3c2c9e847fd89dc39e1e017702">PCIeAddr_PMCapability</a> = 0x42
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a2184f9e2853514361e7fbba11f0cb265">PCIeAddr_PMCSR</a> = 0x44
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99af77ff91d762725a8a2b49c3b055ab7fe">PCIeAddr_BSE</a> = 0x46
+, <br />
+&#160;&#160;<a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a75f1ac41fd80afffb5322969cbb10a48">PCIeAddr_Data</a> = 0x47
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a94a1a3404749d82830dc3968fb1119fd">PCIeAddr_MSICap</a> = 0x48
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99ae39c6fd239a76e507f0a53d640a27964">PCIeAddr_NxtCap2</a> = 0x49
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99ac96ca33655b8d1c80599966f18fca5f0">PCIeAddr_MsiControl</a> = 0x4A
+, <br />
+&#160;&#160;<a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a7d4e2946de23d7efc5673ea6d1ef17d8">PCIeAddr_MessageAddressLower</a> = 0x4C
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a033413e04d7bbc9bd4e0e3187bddd74f">PCIeAddr_MessageAddressUpper</a> = 0x50
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a1dd19392d9c6c4e548fe36c52d349f3d">PCIeAddr_MessageData</a> = 0x54
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a126a92295171251a45e5cae6655fe89f">PCIeAddr_Reserved3</a> = 0x56
+, <br />
+&#160;&#160;<a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99ac9788ba23acf55227d28171e26296b78">PCIeAddr_PeCap</a> = 0x58
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a0ceb782cdb1d353fbad76fc525dfb8cb">PCIeAddr_NxtCap3</a> = 0x59
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99aa72d1a2f93bf97b169dc53564ac5f543">PCIeAddr_PeCapabilty</a> = 0x5A
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99abfb48136ccbef9700f16f23bb179e8fb">PCIeAddr_PCIExpressDeviceCapabilities</a> = 0x5C
+, <br />
+&#160;&#160;<a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a0a091fc99aeed4a3f7c2590ae01d29db">PCIeAddr_DeviceControl</a> = 0x60
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a3e0444e0c1bdf91a8d13142c9e2b2953">PCIeAddr_DeviceStatus</a> = 0x62
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a1f8116ad97616180b892844e232d629b">PCIeAddr_PCIExpressLinkCapabilities</a> = 0x64
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a08a98f4d3817435f9e658953980a3dd0">PCIeAddr_LinkControl</a> = 0x68
+, <br />
+&#160;&#160;<a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99af62854916ffdaa7d941580da8521c311">PCIeAddr_LinkStatus</a> = 0x6A
+, <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99a4357123bf36fccf2a8bd67a3998b7d56">PCIeAddr_ReservedLegacyConfigurationSpace</a> = 0x6C
+<br />
  }</td></tr>
-<tr class="separator:a93dad6aef0b25937b0730073ec6d888b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ab6005e570d078f1b87ae9b7a4b706a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30821fd39eadf5b7a8fbe9ff45db801b" id="r_a30821fd39eadf5b7a8fbe9ff45db801b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enum__hardware_8h.html#a30821fd39eadf5b7a8fbe9ff45db801b">PciExpressDeviceCapabilities_bits_t</a> { <a class="el" href="enum__hardware_8h.html#a30821fd39eadf5b7a8fbe9ff45db801ba10909adcf7927a3215cfa040ed2ed136">PciExpressDeviceCapabilities_MaxPayloadSizeSupported_bits</a> = 0x7
+ }</td></tr>
+<tr class="separator:a30821fd39eadf5b7a8fbe9ff45db801b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69d30493bcf4f3a83a16ce1ee7558889" id="r_a69d30493bcf4f3a83a16ce1ee7558889"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enum__hardware_8h.html#a69d30493bcf4f3a83a16ce1ee7558889">MaxPayloadSizeSupported_encoding_t</a> { <br />
+&#160;&#160;<a class="el" href="enum__hardware_8h.html#a69d30493bcf4f3a83a16ce1ee7558889afb67f416a3005c805c2938a261363895">maxPaxloadSize_128bytes</a> = 0
+, <a class="el" href="enum__hardware_8h.html#a69d30493bcf4f3a83a16ce1ee7558889a816e61c2b5ff0f3a2d76e6c96f156260">maxPaxloadSize_256bytes</a> = 1
+, <a class="el" href="enum__hardware_8h.html#a69d30493bcf4f3a83a16ce1ee7558889ad6b7994eb0e204d317a82d6ccfe40fff">maxPaxloadSize_512bytes</a> = 2
+, <a class="el" href="enum__hardware_8h.html#a69d30493bcf4f3a83a16ce1ee7558889a13badb251ed401c95bb98fc707bc1372">maxPaxloadSize_1024bytes</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="enum__hardware_8h.html#a69d30493bcf4f3a83a16ce1ee7558889a2bdc36abd335b97c041c2d4555ae7aa8">maxPaxloadSize_2048bytes</a> = 4
+, <a class="el" href="enum__hardware_8h.html#a69d30493bcf4f3a83a16ce1ee7558889a9c8232d3c84a8b62ca12ddb19eb73559">maxPaxloadSize_4096bytes</a> = 5
+, <a class="el" href="enum__hardware_8h.html#a69d30493bcf4f3a83a16ce1ee7558889a4e4c9abeb91367941d1e0ccf4549b42a">maxPaxloadSize_reserved1</a> = 6
+, <a class="el" href="enum__hardware_8h.html#a69d30493bcf4f3a83a16ce1ee7558889a0fd3d34608d2b7c74748555fcacba0db">maxPaxloadSize_reserved2</a> = 7
+<br />
+ }</td></tr>
+<tr class="separator:a69d30493bcf4f3a83a16ce1ee7558889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27c45d119d78ca12b7e38e47cb02907f" id="r_a27c45d119d78ca12b7e38e47cb02907f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enum__hardware_8h.html#a27c45d119d78ca12b7e38e47cb02907f">DeviceControl_bits_t</a> { <a class="el" href="enum__hardware_8h.html#a27c45d119d78ca12b7e38e47cb02907fa88e19e987ba0a38be1791caf439bc181">deviceControl_maxPayloadSize_bits</a> = 0xE0
+, <a class="el" href="enum__hardware_8h.html#a27c45d119d78ca12b7e38e47cb02907faa50cbfc6b5665ceba05dd9e726d5ad33">deviceControl_maxReadRequestSize_bits</a> = 0x7000
+, <a class="el" href="enum__hardware_8h.html#a27c45d119d78ca12b7e38e47cb02907faf9bf7d20432b6d491a5a577111d6db48">deviceControl_maxPayloadSize_bitindex</a> = 5
+, <a class="el" href="enum__hardware_8h.html#a27c45d119d78ca12b7e38e47cb02907faeff10ae37cc84d9e80b2fb37c4610f5f">deviceControl_maxReadRequestSize_bitindex</a> = 12
+ }</td></tr>
+<tr class="separator:a27c45d119d78ca12b7e38e47cb02907f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae08811acd54cb095986ae911d0f988f5" id="r_ae08811acd54cb095986ae911d0f988f5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enum__hardware_8h.html#ae08811acd54cb095986ae911d0f988f5">FFCTRL_bits_t</a> { <br />
 &#160;&#160;<a class="el" href="enum__hardware_8h.html#ae08811acd54cb095986ae911d0f988f5aa217420eeb3c27100ad39c2777b4cf7b">FFCTRL_bit_SWTRIG</a> = 0x40
 , <a class="el" href="enum__hardware_8h.html#ae08811acd54cb095986ae911d0f988f5a540c27cc9e263e9710024f3b30d755b1">FFCTRL_bit_RSFIFO</a> = 0x80
@@ -852,6 +939,27 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<a id="a27c45d119d78ca12b7e38e47cb02907f" name="a27c45d119d78ca12b7e38e47cb02907f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27c45d119d78ca12b7e38e47cb02907f">&#9670;&#160;</a></span>DeviceControl_bits_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="enum__hardware_8h.html#a27c45d119d78ca12b7e38e47cb02907f">DeviceControl_bits_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>See section 7.8.4, figure 7-14 of the PCI Express Base Specification. <a href="https://astralvx.com/storage/2020/11/PCI_Express_Base_4.0_Rev0.3_February19-2014.pdf">https://astralvx.com/storage/2020/11/PCI_Express_Base_4.0_Rev0.3_February19-2014.pdf</a> </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a27c45d119d78ca12b7e38e47cb02907fa88e19e987ba0a38be1791caf439bc181" name="a27c45d119d78ca12b7e38e47cb02907fa88e19e987ba0a38be1791caf439bc181"></a>deviceControl_maxPayloadSize_bits&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a27c45d119d78ca12b7e38e47cb02907faa50cbfc6b5665ceba05dd9e726d5ad33" name="a27c45d119d78ca12b7e38e47cb02907faa50cbfc6b5665ceba05dd9e726d5ad33"></a>deviceControl_maxReadRequestSize_bits&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a27c45d119d78ca12b7e38e47cb02907faf9bf7d20432b6d491a5a577111d6db48" name="a27c45d119d78ca12b7e38e47cb02907faf9bf7d20432b6d491a5a577111d6db48"></a>deviceControl_maxPayloadSize_bitindex&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a27c45d119d78ca12b7e38e47cb02907faeff10ae37cc84d9e80b2fb37c4610f5f" name="a27c45d119d78ca12b7e38e47cb02907faeff10ae37cc84d9e80b2fb37c4610f5f"></a>deviceControl_maxReadRequestSize_bitindex&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="a8e76e2a560aa415ee8df741caecff6ad" name="a8e76e2a560aa415ee8df741caecff6ad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8e76e2a560aa415ee8df741caecff6ad">&#9670;&#160;</a></span>dma_addresses_t</h2>
 
@@ -977,20 +1085,94 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a id="a93dad6aef0b25937b0730073ec6d888b" name="a93dad6aef0b25937b0730073ec6d888b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93dad6aef0b25937b0730073ec6d888b">&#9670;&#160;</a></span>pcie_addresses_t</h2>
+<a id="a69d30493bcf4f3a83a16ce1ee7558889" name="a69d30493bcf4f3a83a16ce1ee7558889"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69d30493bcf4f3a83a16ce1ee7558889">&#9670;&#160;</a></span>MaxPayloadSizeSupported_encoding_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="enum__hardware_8h.html#a93dad6aef0b25937b0730073ec6d888b">pcie_addresses_t</a></td>
+          <td class="memname">enum <a class="el" href="enum__hardware_8h.html#a69d30493bcf4f3a83a16ce1ee7558889">MaxPayloadSizeSupported_encoding_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>See section 7.8.3, table 7-13 of the PCI Express Base Specification. <a href="https://astralvx.com/storage/2020/11/PCI_Express_Base_4.0_Rev0.3_February19-2014.pdf">https://astralvx.com/storage/2020/11/PCI_Express_Base_4.0_Rev0.3_February19-2014.pdf</a> </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a93dad6aef0b25937b0730073ec6d888bada936d1c848d619fe0b98402fccdd5b9" name="a93dad6aef0b25937b0730073ec6d888bada936d1c848d619fe0b98402fccdd5b9"></a>PCIeAddr_devCap&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a93dad6aef0b25937b0730073ec6d888ba9f7b07b0309a3ccc3abb240ee2ef18c1" name="a93dad6aef0b25937b0730073ec6d888ba9f7b07b0309a3ccc3abb240ee2ef18c1"></a>PCIeAddr_devStatCtrl&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a69d30493bcf4f3a83a16ce1ee7558889afb67f416a3005c805c2938a261363895" name="a69d30493bcf4f3a83a16ce1ee7558889afb67f416a3005c805c2938a261363895"></a>maxPaxloadSize_128bytes&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a69d30493bcf4f3a83a16ce1ee7558889a816e61c2b5ff0f3a2d76e6c96f156260" name="a69d30493bcf4f3a83a16ce1ee7558889a816e61c2b5ff0f3a2d76e6c96f156260"></a>maxPaxloadSize_256bytes&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a69d30493bcf4f3a83a16ce1ee7558889ad6b7994eb0e204d317a82d6ccfe40fff" name="a69d30493bcf4f3a83a16ce1ee7558889ad6b7994eb0e204d317a82d6ccfe40fff"></a>maxPaxloadSize_512bytes&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a69d30493bcf4f3a83a16ce1ee7558889a13badb251ed401c95bb98fc707bc1372" name="a69d30493bcf4f3a83a16ce1ee7558889a13badb251ed401c95bb98fc707bc1372"></a>maxPaxloadSize_1024bytes&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a69d30493bcf4f3a83a16ce1ee7558889a2bdc36abd335b97c041c2d4555ae7aa8" name="a69d30493bcf4f3a83a16ce1ee7558889a2bdc36abd335b97c041c2d4555ae7aa8"></a>maxPaxloadSize_2048bytes&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a69d30493bcf4f3a83a16ce1ee7558889a9c8232d3c84a8b62ca12ddb19eb73559" name="a69d30493bcf4f3a83a16ce1ee7558889a9c8232d3c84a8b62ca12ddb19eb73559"></a>maxPaxloadSize_4096bytes&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a69d30493bcf4f3a83a16ce1ee7558889a4e4c9abeb91367941d1e0ccf4549b42a" name="a69d30493bcf4f3a83a16ce1ee7558889a4e4c9abeb91367941d1e0ccf4549b42a"></a>maxPaxloadSize_reserved1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a69d30493bcf4f3a83a16ce1ee7558889a0fd3d34608d2b7c74748555fcacba0db" name="a69d30493bcf4f3a83a16ce1ee7558889a0fd3d34608d2b7c74748555fcacba0db"></a>maxPaxloadSize_reserved2&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ab6005e570d078f1b87ae9b7a4b706a99" name="ab6005e570d078f1b87ae9b7a4b706a99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6005e570d078f1b87ae9b7a4b706a99">&#9670;&#160;</a></span>pcie_configuration_space_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="enum__hardware_8h.html#ab6005e570d078f1b87ae9b7a4b706a99">pcie_configuration_space_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Addresses of PCIe configuration space. See documentation of Spartan-6 FPGA Integrated Endpoint Block for details. Table 2-2. <a href="https://docs.xilinx.com/v/u/en-US/s6_pcie_ug654">https://docs.xilinx.com/v/u/en-US/s6_pcie_ug654</a> </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a07479b07938607524abc79d50812eb93" name="ab6005e570d078f1b87ae9b7a4b706a99a07479b07938607524abc79d50812eb93"></a>PCIeAddr_VendorID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a3d760d2323385caec4b7b80209b39c4d" name="ab6005e570d078f1b87ae9b7a4b706a99a3d760d2323385caec4b7b80209b39c4d"></a>PCIeAddr_DeviceID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99accdbd71e74e6034bf3ce7d3d2e43011a" name="ab6005e570d078f1b87ae9b7a4b706a99accdbd71e74e6034bf3ce7d3d2e43011a"></a>PCIeAddr_Command&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a7ed78c98372709fb1d45c2ee9a024cc6" name="ab6005e570d078f1b87ae9b7a4b706a99a7ed78c98372709fb1d45c2ee9a024cc6"></a>PCIeAddr_Status&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a3bcafd2583d99aced421702c295f89ff" name="ab6005e570d078f1b87ae9b7a4b706a99a3bcafd2583d99aced421702c295f89ff"></a>PCIeAddr_RevID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a702611d131b9cbb27a613d4a4ee5ba08" name="ab6005e570d078f1b87ae9b7a4b706a99a702611d131b9cbb27a613d4a4ee5ba08"></a>PCIeAddr_ClassCode&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a4b4d532b0861e8ac03202e1c19a17388" name="ab6005e570d078f1b87ae9b7a4b706a99a4b4d532b0861e8ac03202e1c19a17388"></a>PCIeAddr_CacheLn&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99ad080d39e57e3daf046af5694783cb2d9" name="ab6005e570d078f1b87ae9b7a4b706a99ad080d39e57e3daf046af5694783cb2d9"></a>PCIeAddr_LatTimer&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99ab563917a9be89a4ef64a00d9eed61cd3" name="ab6005e570d078f1b87ae9b7a4b706a99ab563917a9be89a4ef64a00d9eed61cd3"></a>PCIeAddr_Header&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a40e8ab700cbf65cfa6d45d00491caf0e" name="ab6005e570d078f1b87ae9b7a4b706a99a40e8ab700cbf65cfa6d45d00491caf0e"></a>PCIeAddr_BIST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a7773473448c41e8f8f19e20521db2f52" name="ab6005e570d078f1b87ae9b7a4b706a99a7773473448c41e8f8f19e20521db2f52"></a>PCIeAddr_BaseAddressRegister0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a874ea480836425b31ef4e77fe1f1c66a" name="ab6005e570d078f1b87ae9b7a4b706a99a874ea480836425b31ef4e77fe1f1c66a"></a>PCIeAddr_BaseAddressRegister1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a6d11f2c8239fba71a6aab627b967f762" name="ab6005e570d078f1b87ae9b7a4b706a99a6d11f2c8239fba71a6aab627b967f762"></a>PCIeAddr_BaseAddressRegister2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a581bb0d6516cf1ac839ff30568b0b348" name="ab6005e570d078f1b87ae9b7a4b706a99a581bb0d6516cf1ac839ff30568b0b348"></a>PCIeAddr_BaseAddressRegister3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a03615ffb8aed77cec28aa33328c302ca" name="ab6005e570d078f1b87ae9b7a4b706a99a03615ffb8aed77cec28aa33328c302ca"></a>PCIeAddr_BaseAddressRegister4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99ad2d9532a5dcc3d93b0adc90875d92988" name="ab6005e570d078f1b87ae9b7a4b706a99ad2d9532a5dcc3d93b0adc90875d92988"></a>PCIeAddr_BaseAddressRegister5&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a6e3d508a3365796da3c9feecb0d312ad" name="ab6005e570d078f1b87ae9b7a4b706a99a6e3d508a3365796da3c9feecb0d312ad"></a>PCIeAddr_CardbusCisPointer&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a10d1113ee3f946644066c9219b396969" name="ab6005e570d078f1b87ae9b7a4b706a99a10d1113ee3f946644066c9219b396969"></a>PCIeAddr_SubsystemVendorID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a35b83c52c93f503fba3efbda36a03906" name="ab6005e570d078f1b87ae9b7a4b706a99a35b83c52c93f503fba3efbda36a03906"></a>PCIeAddr_SubsystemID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a181dc9d305726e3d9fd32c709bfcd2ab" name="ab6005e570d078f1b87ae9b7a4b706a99a181dc9d305726e3d9fd32c709bfcd2ab"></a>PCIeAddr_ExpansionRomBaseAddress&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a9831e73a8aaac25377abf527d4d8289b" name="ab6005e570d078f1b87ae9b7a4b706a99a9831e73a8aaac25377abf527d4d8289b"></a>PCIeAddr_CapPTr&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99aec3c4f596f1a7d1b267e95bbae78f80d" name="ab6005e570d078f1b87ae9b7a4b706a99aec3c4f596f1a7d1b267e95bbae78f80d"></a>PCIeAddr_Reserved1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99ae86459f0d23d7e542ffcbd7b93bfe9ac" name="ab6005e570d078f1b87ae9b7a4b706a99ae86459f0d23d7e542ffcbd7b93bfe9ac"></a>PCIeAddr_Reserved2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a0e3985135f8f31cbb32b06600cd5e2e7" name="ab6005e570d078f1b87ae9b7a4b706a99a0e3985135f8f31cbb32b06600cd5e2e7"></a>PCIeAddr_IntrLine&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a08e1b765efb99c501a72e9558376a364" name="ab6005e570d078f1b87ae9b7a4b706a99a08e1b765efb99c501a72e9558376a364"></a>PCIeAddr_IntrPin&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99ab2621f37ed695279db619de095584520" name="ab6005e570d078f1b87ae9b7a4b706a99ab2621f37ed695279db619de095584520"></a>PCIeAddr_MinGnt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99ad421078dd0a440dfee100d85db93f3c4" name="ab6005e570d078f1b87ae9b7a4b706a99ad421078dd0a440dfee100d85db93f3c4"></a>PCIeAddr_Maxlat&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99af371867e96494e42f7ea03987a5ee36b" name="ab6005e570d078f1b87ae9b7a4b706a99af371867e96494e42f7ea03987a5ee36b"></a>PCIeAddr_PMCap&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99aef53db9dc263bfc69e2fa9ded857e574" name="ab6005e570d078f1b87ae9b7a4b706a99aef53db9dc263bfc69e2fa9ded857e574"></a>PCIeAddr_NxtCap1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a84a20b3c2c9e847fd89dc39e1e017702" name="ab6005e570d078f1b87ae9b7a4b706a99a84a20b3c2c9e847fd89dc39e1e017702"></a>PCIeAddr_PMCapability&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a2184f9e2853514361e7fbba11f0cb265" name="ab6005e570d078f1b87ae9b7a4b706a99a2184f9e2853514361e7fbba11f0cb265"></a>PCIeAddr_PMCSR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99af77ff91d762725a8a2b49c3b055ab7fe" name="ab6005e570d078f1b87ae9b7a4b706a99af77ff91d762725a8a2b49c3b055ab7fe"></a>PCIeAddr_BSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a75f1ac41fd80afffb5322969cbb10a48" name="ab6005e570d078f1b87ae9b7a4b706a99a75f1ac41fd80afffb5322969cbb10a48"></a>PCIeAddr_Data&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a94a1a3404749d82830dc3968fb1119fd" name="ab6005e570d078f1b87ae9b7a4b706a99a94a1a3404749d82830dc3968fb1119fd"></a>PCIeAddr_MSICap&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99ae39c6fd239a76e507f0a53d640a27964" name="ab6005e570d078f1b87ae9b7a4b706a99ae39c6fd239a76e507f0a53d640a27964"></a>PCIeAddr_NxtCap2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99ac96ca33655b8d1c80599966f18fca5f0" name="ab6005e570d078f1b87ae9b7a4b706a99ac96ca33655b8d1c80599966f18fca5f0"></a>PCIeAddr_MsiControl&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a7d4e2946de23d7efc5673ea6d1ef17d8" name="ab6005e570d078f1b87ae9b7a4b706a99a7d4e2946de23d7efc5673ea6d1ef17d8"></a>PCIeAddr_MessageAddressLower&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a033413e04d7bbc9bd4e0e3187bddd74f" name="ab6005e570d078f1b87ae9b7a4b706a99a033413e04d7bbc9bd4e0e3187bddd74f"></a>PCIeAddr_MessageAddressUpper&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a1dd19392d9c6c4e548fe36c52d349f3d" name="ab6005e570d078f1b87ae9b7a4b706a99a1dd19392d9c6c4e548fe36c52d349f3d"></a>PCIeAddr_MessageData&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a126a92295171251a45e5cae6655fe89f" name="ab6005e570d078f1b87ae9b7a4b706a99a126a92295171251a45e5cae6655fe89f"></a>PCIeAddr_Reserved3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99ac9788ba23acf55227d28171e26296b78" name="ab6005e570d078f1b87ae9b7a4b706a99ac9788ba23acf55227d28171e26296b78"></a>PCIeAddr_PeCap&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a0ceb782cdb1d353fbad76fc525dfb8cb" name="ab6005e570d078f1b87ae9b7a4b706a99a0ceb782cdb1d353fbad76fc525dfb8cb"></a>PCIeAddr_NxtCap3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99aa72d1a2f93bf97b169dc53564ac5f543" name="ab6005e570d078f1b87ae9b7a4b706a99aa72d1a2f93bf97b169dc53564ac5f543"></a>PCIeAddr_PeCapabilty&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99abfb48136ccbef9700f16f23bb179e8fb" name="ab6005e570d078f1b87ae9b7a4b706a99abfb48136ccbef9700f16f23bb179e8fb"></a>PCIeAddr_PCIExpressDeviceCapabilities&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a0a091fc99aeed4a3f7c2590ae01d29db" name="ab6005e570d078f1b87ae9b7a4b706a99a0a091fc99aeed4a3f7c2590ae01d29db"></a>PCIeAddr_DeviceControl&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a3e0444e0c1bdf91a8d13142c9e2b2953" name="ab6005e570d078f1b87ae9b7a4b706a99a3e0444e0c1bdf91a8d13142c9e2b2953"></a>PCIeAddr_DeviceStatus&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a1f8116ad97616180b892844e232d629b" name="ab6005e570d078f1b87ae9b7a4b706a99a1f8116ad97616180b892844e232d629b"></a>PCIeAddr_PCIExpressLinkCapabilities&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a08a98f4d3817435f9e658953980a3dd0" name="ab6005e570d078f1b87ae9b7a4b706a99a08a98f4d3817435f9e658953980a3dd0"></a>PCIeAddr_LinkControl&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99af62854916ffdaa7d941580da8521c311" name="ab6005e570d078f1b87ae9b7a4b706a99af62854916ffdaa7d941580da8521c311"></a>PCIeAddr_LinkStatus&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab6005e570d078f1b87ae9b7a4b706a99a4357123bf36fccf2a8bd67a3998b7d56" name="ab6005e570d078f1b87ae9b7a4b706a99a4357123bf36fccf2a8bd67a3998b7d56"></a>PCIeAddr_ReservedLegacyConfigurationSpace&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1037,6 +1219,24 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a1d179386b40162fc96b96c12da077dd8a6fec1facc26b98407b951c930ae67b9f" name="a1d179386b40162fc96b96c12da077dd8a6fec1facc26b98407b951c930ae67b9f"></a>PCIEFLAGS_bitindex_error_sfp2&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1d179386b40162fc96b96c12da077dd8a10edd5431e8e5706d9aae4c314100c95" name="a1d179386b40162fc96b96c12da077dd8a10edd5431e8e5706d9aae4c314100c95"></a>PCIEFLAGS_bitindex_linkup_sfp1&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1d179386b40162fc96b96c12da077dd8a600ad5adbc8bab66adc6b864d03ee74d" name="a1d179386b40162fc96b96c12da077dd8a600ad5adbc8bab66adc6b864d03ee74d"></a>PCIEFLAGS_bitindex_error_sfp1&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a30821fd39eadf5b7a8fbe9ff45db801b" name="a30821fd39eadf5b7a8fbe9ff45db801b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30821fd39eadf5b7a8fbe9ff45db801b">&#9670;&#160;</a></span>PciExpressDeviceCapabilities_bits_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="enum__hardware_8h.html#a30821fd39eadf5b7a8fbe9ff45db801b">PciExpressDeviceCapabilities_bits_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>See section 7.8.3, figure 7-13 of the PCI Express Base Specification. <a href="https://astralvx.com/storage/2020/11/PCI_Express_Base_4.0_Rev0.3_February19-2014.pdf">https://astralvx.com/storage/2020/11/PCI_Express_Base_4.0_Rev0.3_February19-2014.pdf</a> </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a30821fd39eadf5b7a8fbe9ff45db801ba10909adcf7927a3215cfa040ed2ed136" name="a30821fd39eadf5b7a8fbe9ff45db801ba10909adcf7927a3215cfa040ed2ed136"></a>PciExpressDeviceCapabilities_MaxPayloadSizeSupported_bits&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1293,11 +1493,13 @@ Enumerations</h2></td></tr>
 <p>TOR MSB 8 bits at 0x2B </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac3a1258fa04db205b71f72f565207db7a9183e388028e1f69d56aa3fbb83012ea" name="ac3a1258fa04db205b71f72f565207db7a9183e388028e1f69d56aa3fbb83012ea"></a>TOR_MSB_BITS_TO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac3a1258fa04db205b71f72f565207db7a854872811ad50f63c44e8a577d44bf64" name="ac3a1258fa04db205b71f72f565207db7a854872811ad50f63c44e8a577d44bf64"></a>TOR_MSB_bit_ISFFT_LEGACY&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ac3a1258fa04db205b71f72f565207db7a969660f6af511b1e6934c1722c48b1aa" name="ac3a1258fa04db205b71f72f565207db7a969660f6af511b1e6934c1722c48b1aa"></a>TOR_MSB_bit_TOSEL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ac3a1258fa04db205b71f72f565207db7a2ca8efc5a0324e937ed0b6a3335b631f" name="ac3a1258fa04db205b71f72f565207db7a2ca8efc5a0324e937ed0b6a3335b631f"></a>TOR_MSB_bit_TO0&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ac3a1258fa04db205b71f72f565207db7a639c8170549041605762864af218d3fb" name="ac3a1258fa04db205b71f72f565207db7a639c8170549041605762864af218d3fb"></a>TOR_MSB_bit_TO1&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ac3a1258fa04db205b71f72f565207db7ada38f0a4f4d25461344debdbf2d4a733" name="ac3a1258fa04db205b71f72f565207db7ada38f0a4f4d25461344debdbf2d4a733"></a>TOR_MSB_bit_TO2&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ac3a1258fa04db205b71f72f565207db7ad477b4a7d32dd82731acd75bf282fb1d" name="ac3a1258fa04db205b71f72f565207db7ad477b4a7d32dd82731acd75bf282fb1d"></a>TOR_MSB_bit_TO3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac3a1258fa04db205b71f72f565207db7aa503e1b3aa7d81390b313feb14b8bc6a" name="ac3a1258fa04db205b71f72f565207db7aa503e1b3aa7d81390b313feb14b8bc6a"></a>TOR_MSB_bitindex_ISFFT_LEGACY&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ac3a1258fa04db205b71f72f565207db7a773c9f37810ede1c3f686d780492f057" name="ac3a1258fa04db205b71f72f565207db7a773c9f37810ede1c3f686d780492f057"></a>TOR_MSB_bitindex_TOSEL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ac3a1258fa04db205b71f72f565207db7a52455df2ca4853633402285648a963d8" name="ac3a1258fa04db205b71f72f565207db7a52455df2ca4853633402285648a963d8"></a>TOR_MSB_bitindex_TO0&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ac3a1258fa04db205b71f72f565207db7a787be802ec30f8373f4751d653c49650" name="ac3a1258fa04db205b71f72f565207db7a787be802ec30f8373f4751d653c49650"></a>TOR_MSB_bitindex_TO1&#160;</td><td class="fielddoc"></td></tr>
