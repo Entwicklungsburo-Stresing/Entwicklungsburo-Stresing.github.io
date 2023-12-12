@@ -99,9 +99,6 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:acd24b30183d82710c9f5b7ddc6ac7c36" id="r_acd24b30183d82710c9f5b7ddc6ac7c36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board__ll_8c.html#acd24b30183d82710c9f5b7ddc6ac7c36">CleanupDma</a> (uint32_t drvno)</td></tr>
 <tr class="separator:acd24b30183d82710c9f5b7ddc6ac7c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94100cee85307b5db9cfb31f36eadd42" id="r_a94100cee85307b5db9cfb31f36eadd42"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board__ll_8c.html#a94100cee85307b5db9cfb31f36eadd42">InitHRCounter</a> ()</td></tr>
-<tr class="memdesc:a94100cee85307b5db9cfb31f36eadd42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init high resolution counter.  <br /></td></tr>
-<tr class="separator:a94100cee85307b5db9cfb31f36eadd42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab13902e201d7091aeb300faa035523d4" id="r_ab13902e201d7091aeb300faa035523d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board__ll_8c.html#ab13902e201d7091aeb300faa035523d4">isr</a> (uint32_t drvno)</td></tr>
 <tr class="memdesc:ab13902e201d7091aeb300faa035523d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interrupt routine copies data from the DMA buffer to the user buffer. If write to disk is true, the data is also written to disc.  <br /></td></tr>
 <tr class="separator:ab13902e201d7091aeb300faa035523d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -298,8 +295,6 @@ Variables</h2></td></tr>
 <tr class="separator:a6ed5330abf4660f88020dcc1ce7926c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0838b4d9733238be143a515e9ef87eb" id="r_ac0838b4d9733238be143a515e9ef87eb"><td class="memItemLeft" align="right" valign="top">WD_PCI_CARD_INFO&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board__ll_8c.html#ac0838b4d9733238be143a515e9ef87eb">deviceInfo</a> [<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>]</td></tr>
 <tr class="separator:ac0838b4d9733238be143a515e9ef87eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e2c902d8a2f461af1ced8533c3f7b1a" id="r_a9e2c902d8a2f461af1ced8533c3f7b1a"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board__ll_8c.html#a9e2c902d8a2f461af1ced8533c3f7b1a">ticksPerSecond</a> = 0</td></tr>
-<tr class="separator:a9e2c902d8a2f461af1ced8533c3f7b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39517006ca67f401ab40cf6660d5e182" id="r_a39517006ca67f401ab40cf6660d5e182"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board__ll_8c.html#a39517006ca67f401ab40cf6660d5e182">_SHOW_MSG</a> = TRUE</td></tr>
 <tr class="separator:a39517006ca67f401ab40cf6660d5e182"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c5994d155a9550cec19ba7091b41775" id="r_a1c5994d155a9550cec19ba7091b41775"><td class="memItemLeft" align="right" valign="top">HANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_board__ll_8c.html#a1c5994d155a9550cec19ba7091b41775">ghMutex</a> [<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>] = { NULL, NULL, NULL, NULL, NULL }</td></tr>
@@ -1219,26 +1214,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a94100cee85307b5db9cfb31f36eadd42" name="a94100cee85307b5db9cfb31f36eadd42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94100cee85307b5db9cfb31f36eadd42">&#9670;&#160;</a></span>InitHRCounter()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int64_t InitHRCounter </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Init high resolution counter. </p>
-<dl class="section return"><dt>Returns</dt><dd>ticksPerSecond ticks per sec </dd></dl>
 
 </div>
 </div>
@@ -2513,20 +2488,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">WDC_PCI_SCAN_RESULT scanResult</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9e2c902d8a2f461af1ced8533c3f7b1a" name="a9e2c902d8a2f461af1ced8533c3f7b1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e2c902d8a2f461af1ced8533c3f7b1a">&#9670;&#160;</a></span>ticksPerSecond</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int64_t ticksPerSecond = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
