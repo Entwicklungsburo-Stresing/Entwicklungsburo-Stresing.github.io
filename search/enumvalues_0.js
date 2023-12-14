@@ -39,5 +39,7 @@ var searchData=
   ['adc_5fltc2271_5fregaddr_5fcustompattern_5fmsb_36',['adc_ltc2271_regaddr_custompattern_msb',['../enum__hardware_8h.html#a6088fcda9571ea67be3dd49e46438941ac14c23d2b89218e967ab9ee872e29a7b',1,'enum_hardware.h']]],
   ['adc_5fltc2271_5fregaddr_5foutmode_37',['adc_ltc2271_regaddr_outmode',['../enum__hardware_8h.html#a6088fcda9571ea67be3dd49e46438941a1099cc7c71f916c277243e6964ae9484',1,'enum_hardware.h']]],
   ['adc_5fltc2271_5fregaddr_5freset_38',['adc_ltc2271_regaddr_reset',['../enum__hardware_8h.html#a6088fcda9571ea67be3dd49e46438941a6c331254340cb5b371f666d23171cd08',1,'enum_hardware.h']]],
-  ['area_5fmode_39',['area_mode',['../enum__settings_8h.html#a86f1e46308bfcaf8ceccb822f1d72c57a322132ec60ef92afd82ebd8b5833ffe9',1,'enum_settings.h']]]
+  ['area_5fmode_39',['area_mode',['../enum__settings_8h.html#a86f1e46308bfcaf8ceccb822f1d72c57a322132ec60ef92afd82ebd8b5833ffe9',1,'enum_settings.h']]],
+  ['arreg_5fbit_5fpb_5fcontrol_40',['ARREG_bit_pb_control',['../enum__hardware_8h.html#aed7f564a2634450efefa7cd7d1dfaaf2a65f06294f6ae04b787226b8d08fd463b',1,'enum_hardware.h']]],
+  ['arreg_5fbitindex_5fpartial_5fbinning_41',['ARREG_bitindex_partial_binning',['../enum__hardware_8h.html#aed7f564a2634450efefa7cd7d1dfaaf2ad1ac9e5872c0ec58f209fc471d62cd17',1,'enum_hardware.h']]]
 ];

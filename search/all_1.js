@@ -59,5 +59,8 @@ var searchData=
   ['and_20or_20btimer_3a_56',['Use STimer and/or BTimer:',['../index.html#autotoc_md9',1,'']]],
   ['apixel_57',['apixel',['../structglobal__vars.html#a4de552588c7ba48a6ce4023ce437a613',1,'global_vars::aPIXEL'],['../globals_8h.html#a88393574a5b97fb8240ac5bde0400cd8',1,'aPIXEL:&#160;globals.c'],['../globals_8c.html#a88393574a5b97fb8240ac5bde0400cd8',1,'aPIXEL:&#160;globals.c']]],
   ['area_5fmode_58',['area_mode',['../enum__settings_8h.html#a86f1e46308bfcaf8ceccb822f1d72c57a322132ec60ef92afd82ebd8b5833ffe9',1,'enum_settings.h']]],
-  ['assert_59',['Assert',['../_direct2d_viewer_8h.html#a65b2d8df471769bc63eb180f240b144d',1,'Direct2dViewer.h']]]
+  ['arreg_5fbit_5fpb_5fcontrol_59',['ARREG_bit_pb_control',['../enum__hardware_8h.html#aed7f564a2634450efefa7cd7d1dfaaf2a65f06294f6ae04b787226b8d08fd463b',1,'enum_hardware.h']]],
+  ['arreg_5fbitindex_5fpartial_5fbinning_60',['ARREG_bitindex_partial_binning',['../enum__hardware_8h.html#aed7f564a2634450efefa7cd7d1dfaaf2ad1ac9e5872c0ec58f209fc471d62cd17',1,'enum_hardware.h']]],
+  ['arreg_5fbits_5ft_61',['ARREG_bits_t',['../enum__hardware_8h.html#aed7f564a2634450efefa7cd7d1dfaaf2',1,'enum_hardware.h']]],
+  ['assert_62',['Assert',['../_direct2d_viewer_8h.html#a65b2d8df471769bc63eb180f240b144d',1,'Direct2dViewer.h']]]
 ];
