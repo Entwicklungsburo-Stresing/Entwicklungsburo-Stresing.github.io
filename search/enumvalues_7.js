@@ -17,5 +17,6 @@ var searchData=
   ['ioctrl_5ft5_14',['ioctrl_t5',['../enum__hardware_8h.html#a6088fcda9571ea67be3dd49e46438941a919c723768260c01f024f2df84d209f8',1,'enum_hardware.h']]],
   ['ioctrl_5ft6_15',['ioctrl_t6',['../enum__hardware_8h.html#a6088fcda9571ea67be3dd49e46438941aac5b96d47cc457616dcac41a6cbce523',1,'enum_hardware.h']]],
   ['ioctrl_5ft7_16',['ioctrl_t7',['../enum__hardware_8h.html#a6088fcda9571ea67be3dd49e46438941af6acc2ee2766f71fc35d66bb0b96afc8',1,'enum_hardware.h']]],
-  ['irqflags_5fbitindex_5fintrsr_17',['IRQFLAGS_bitindex_INTRSR',['../enum__hardware_8h.html#a0199b3f69358efb164ecab6cf03499a6a2035995198a202a130625ad96aa76b38',1,'enum_hardware.h']]]
+  ['irqflags_5fbitindex_5fhwdreq_5fen_17',['IRQFLAGS_bitindex_HWDREQ_EN',['../enum__hardware_8h.html#a0199b3f69358efb164ecab6cf03499a6abda0c69e7d5d33a715999714134c5ea6',1,'enum_hardware.h']]],
+  ['irqflags_5fbitindex_5fintrsr_18',['IRQFLAGS_bitindex_INTRSR',['../enum__hardware_8h.html#a0199b3f69358efb164ecab6cf03499a6a2035995198a202a130625ad96aa76b38',1,'enum_hardware.h']]]
 ];
