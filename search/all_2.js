@@ -16,7 +16,7 @@ var searchData=
   ['bnc_5fout_5fxck_13',['bnc_out_xck',['../enum__settings_8h.html#a3ccb55ee2f9a77e32aec7dda8ab59e83a726670f3ed670b72776ec01ac35e3331',1,'enum_settings.h']]],
   ['board_2ec_14',['Board.c',['../_board_8c.html',1,'']]],
   ['board_5fll_2ec_15',['Board_ll.c',['../_board__ll_8c.html',1,'']]],
-  ['board_5fsel_16',['board_sel',['../structmeasurement__settings__matlab.html#a1d80b48d6c6d557aec027edb47d70533',1,'measurement_settings_matlab::board_sel'],['../structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb',1,'measurement_settings::board_sel']]],
+  ['board_5fsel_16',['board_sel',['../structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb',1,'measurement_settings::board_sel'],['../structmeasurement__settings__matlab.html#a1d80b48d6c6d557aec027edb47d70533',1,'measurement_settings_matlab::board_sel']]],
   ['bslope_17',['bslope',['../structcamera__settings.html#aad2f5116d777038bcb58543db3caf877',1,'camera_settings']]],
   ['bslope_5fboth_18',['bslope_both',['../enum__settings_8h.html#a6e2fb72f49966ca5028850e2e30dc586a0952824a300b32293f01e488f8f46c43',1,'enum_settings.h']]],
   ['bslope_5fneg_19',['bslope_neg',['../enum__settings_8h.html#a6e2fb72f49966ca5028850e2e30dc586a995d52f9d94a04b8dce7957075329003',1,'enum_settings.h']]],

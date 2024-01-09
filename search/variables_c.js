@@ -1,6 +1,13 @@
 var searchData=
 [
-  ['measurement_5fcnt_0',['measurement_cnt',['../structfile__header.html#a332c184227838eb171b0bca56490b709',1,'file_header::measurement_cnt'],['../structverify__data__parameter.html#a0028682e17bdd6bffc9968d260e16531',1,'verify_data_parameter::measurement_cnt'],['../globals_8h.html#aa6ee495fb3bca59a5c624245983fc804',1,'measurement_cnt:&#160;globals.c'],['../globals_8c.html#aa6ee495fb3bca59a5c624245983fc804',1,'measurement_cnt:&#160;globals.c']]],
-  ['mshut_1',['mshut',['../structcamera__settings.html#a2479a72c2b8d6682318520e54b09abfa',1,'camera_settings']]],
-  ['mutexuserbuffer_2',['mutexUserBuffer',['../_board__ll_8c.html#a865f453b860d97ada49b6509ad61bded',1,'Board_ll.c']]]
+  ['nob_0',['Nob',['../structglobal__vars.html#a5db59fc6ad5b9bab466d706af940cc96',1,'global_vars']]],
+  ['nob_1',['nob',['../structmeasurement__settings.html#ad9ebeb60c094195142db314ea2f596db',1,'measurement_settings::nob'],['../structmeasurement__settings__matlab.html#aee57f240cc2818713b73dab21b046b41',1,'measurement_settings_matlab::nob'],['../structfile__header.html#a8b8c7e5afdefc125be70e8c5f052cc03',1,'file_header::nob']]],
+  ['nob_2',['Nob',['../globals_8h.html#ae7dc67a99234a94648b739e7801f2751',1,'Nob:&#160;globals.c'],['../globals_8c.html#ae7dc67a99234a94648b739e7801f2751',1,'Nob:&#160;globals.c']]],
+  ['nos_3',['nos',['../structmeasurement__settings.html#a5582951172615eb4f290af02142bfa47',1,'measurement_settings::nos'],['../structmeasurement__settings__matlab.html#aeca3eca0576bab93becf1841702ce579',1,'measurement_settings_matlab::nos'],['../structfile__header.html#a515fe902b4f18b5fb8d3e12ecbc4d30b',1,'file_header::nos']]],
+  ['nospb_4',['Nospb',['../structglobal__vars.html#a16480585ba5d43628173db39fccd50c5',1,'global_vars::Nospb'],['../globals_8h.html#ab473cdf9c7a99d9b4d9b5a9ca42328b3',1,'Nospb:&#160;globals.c'],['../globals_8c.html#ab473cdf9c7a99d9b4d9b5a9ca42328b3',1,'Nospb:&#160;globals.c']]],
+  ['nprocesscount_5',['nProcessCount',['../_e_s_l_s_c_d_l_l_8c.html#acb0b47f2ce82b9cb09a058b13665152d',1,'ESLSCDLL.c']]],
+  ['nthreadcount_6',['nThreadCount',['../_e_s_l_s_c_d_l_l_8c.html#a0644d175e86b351d7e703284715d33dc',1,'ESLSCDLL.c']]],
+  ['number_5fof_5fboards_7',['number_of_boards',['../globals_8h.html#ae18e0b80d98619d17fee1d88c93eb611',1,'number_of_boards:&#160;globals.c'],['../globals_8c.html#ae18e0b80d98619d17fee1d88c93eb611',1,'number_of_boards:&#160;globals.c']]],
+  ['number_5fof_5fregions_8',['number_of_regions',['../structcamera__settings.html#aba505c7ed0e5a7488ea20f4caf52675b',1,'camera_settings']]],
+  ['numberofinterrupts_9',['numberOfInterrupts',['../globals_8h.html#acc2710ab7e46563f466ed0932f66c9ef',1,'numberOfInterrupts:&#160;globals.c'],['../globals_8c.html#acc2710ab7e46563f466ed0932f66c9ef',1,'numberOfInterrupts:&#160;globals.c']]]
 ];

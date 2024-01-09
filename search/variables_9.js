@@ -10,5 +10,5 @@ var searchData=
   ['is_5fcooled_5fcam_7',['is_cooled_cam',['../structcamera__settings.html#a736814da511a5a55f18739b76415fa74',1,'camera_settings']]],
   ['is_5fhs_5fir_8',['is_hs_ir',['../structcamera__settings.html#abcd8b239d6e3ba9fea8fc908b44a77d2',1,'camera_settings']]],
   ['isrcounter_9',['IsrCounter',['../_board__ll_8c.html#a97c6372fd53170dcc8673120117fffa3',1,'Board_ll.c']]],
-  ['isrunning_10',['isrunning',['../globals_8h.html#a35e1fbda907c4c69651e7ffed1543106',1,'isRunning:&#160;globals.c'],['../globals_8c.html#a35e1fbda907c4c69651e7ffed1543106',1,'isRunning:&#160;globals.c']]]
+  ['isrunning_10',['isRunning',['../globals_8h.html#a35e1fbda907c4c69651e7ffed1543106',1,'isRunning:&#160;globals.c'],['../globals_8c.html#a35e1fbda907c4c69651e7ffed1543106',1,'isRunning:&#160;globals.c']]]
 ];

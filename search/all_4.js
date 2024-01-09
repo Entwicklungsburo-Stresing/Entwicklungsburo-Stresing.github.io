@@ -19,7 +19,7 @@ var searchData=
   ['devicecontrol_5fmaxreadrequestsize_5fbitindex_16',['deviceControl_maxReadRequestSize_bitindex',['../enum__hardware_8h.html#a27c45d119d78ca12b7e38e47cb02907faeff10ae37cc84d9e80b2fb37c4610f5f',1,'enum_hardware.h']]],
   ['devicecontrol_5fmaxreadrequestsize_5fbits_17',['deviceControl_maxReadRequestSize_bits',['../enum__hardware_8h.html#a27c45d119d78ca12b7e38e47cb02907faa50cbfc6b5665ceba05dd9e726d5ad33',1,'enum_hardware.h']]],
   ['deviceinfo_18',['deviceInfo',['../_board__ll_8c.html#ac0838b4d9733238be143a515e9ef87eb',1,'Board_ll.c']]],
-  ['direct2dviewer_19',['direct2dviewer',['../class_direct2d_viewer.html',1,'Direct2dViewer'],['../class_direct2d_viewer.html#a7a9bc8a513c180eaab64d8602f9acc37',1,'Direct2dViewer::Direct2dViewer()'],['../_board__ll_8c.html#ac40bdc1357c03d4fb2a969f94127d854',1,'Direct2dViewer:&#160;Board_ll.c']]],
+  ['direct2dviewer_19',['Direct2dViewer',['../class_direct2d_viewer.html',1,'Direct2dViewer'],['../class_direct2d_viewer.html#a7a9bc8a513c180eaab64d8602f9acc37',1,'Direct2dViewer::Direct2dViewer()'],['../_board__ll_8c.html#ac40bdc1357c03d4fb2a969f94127d854',1,'Direct2dViewer:&#160;Board_ll.c']]],
   ['direct2dviewer_2ecpp_20',['Direct2dViewer.cpp',['../_direct2d_viewer_8cpp.html',1,'']]],
   ['direct2dviewer_2eh_21',['Direct2dViewer.h',['../_direct2d_viewer_8h.html',1,'']]],
   ['direct2dviewer_5fc_2ecpp_22',['Direct2dViewer_c.cpp',['../_direct2d_viewer__c_8cpp.html',1,'']]],

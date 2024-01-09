@@ -52,6 +52,6 @@ var searchData=
   ['ismeasureon_49',['isMeasureOn',['../_board_8c.html#ab6754e6743cf456aa2d0d3e62091d74f',1,'Board.c']]],
   ['isr_50',['isr',['../_board__ll_8c.html#ab13902e201d7091aeb300faa035523d4',1,'Board_ll.c']]],
   ['isrcounter_51',['IsrCounter',['../_board__ll_8c.html#a97c6372fd53170dcc8673120117fffa3',1,'Board_ll.c']]],
-  ['isrunning_52',['isrunning',['../globals_8h.html#a35e1fbda907c4c69651e7ffed1543106',1,'isRunning:&#160;globals.c'],['../globals_8c.html#a35e1fbda907c4c69651e7ffed1543106',1,'isRunning:&#160;globals.c']]],
+  ['isrunning_52',['isRunning',['../globals_8h.html#a35e1fbda907c4c69651e7ffed1543106',1,'isRunning:&#160;globals.c'],['../globals_8c.html#a35e1fbda907c4c69651e7ffed1543106',1,'isRunning:&#160;globals.c']]],
   ['istimeron_53',['IsTimerOn',['../_board_8c.html#a345eb42e31fba376d7ae59c50df2ae69',1,'Board.c']]]
 ];

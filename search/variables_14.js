@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vfreq_0',['vfreq',['../structcamera__settings.html#a2e34276300a6c0e2a56a8404b73ad8de',1,'camera_settings']]]
+  ['write_5fto_5fdisc_0',['write_to_disc',['../structcamera__settings.html#a87115a7a52a7b6f474bb12ab3a2db076',1,'camera_settings']]]
 ];
