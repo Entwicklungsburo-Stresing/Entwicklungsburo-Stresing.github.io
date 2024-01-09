@@ -218,6 +218,14 @@ Functions</h2></td></tr>
 <tr class="memitem:a9642fe535e095fabd4d3dc53c4920479" id="r_a9642fe535e095fabd4d3dc53c4920479"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9642fe535e095fabd4d3dc53c4920479">DLLresetBitS0_32</a> (uint32_t bitnumber, uint16_t address)</td></tr>
 <tr class="memdesc:a9642fe535e095fabd4d3dc53c4920479"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set bit to 0 in register at memory address for all boards selected by settings parameter board_sel.  <br /></td></tr>
 <tr class="separator:a9642fe535e095fabd4d3dc53c4920479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a299e9e2ccf376dc4fe50341d8de8d4ae" id="r_a299e9e2ccf376dc4fe50341d8de8d4ae"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a299e9e2ccf376dc4fe50341d8de8d4ae">DLLReadBitS0_32</a> (uint32_t drvno, uint16_t address, uint8_t bitnumber, uint8_t *isBitHigh)</td></tr>
+<tr class="separator:a299e9e2ccf376dc4fe50341d8de8d4ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f4eeb1ad70f1b2693836028b9eacbc2" id="r_a2f4eeb1ad70f1b2693836028b9eacbc2"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f4eeb1ad70f1b2693836028b9eacbc2">DLLReadBitS0_32_multipleBoards</a> (uint16_t address, uint8_t bitnumber, uint8_t *isBitHigh0, uint8_t *isBitHigh1, uint8_t *isBitHigh2, uint8_t *isBitHigh3, uint8_t *isBitHigh4)</td></tr>
+<tr class="separator:a2f4eeb1ad70f1b2693836028b9eacbc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab044cb86ab209d45fef74fb74f220299" id="r_ab044cb86ab209d45fef74fb74f220299"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab044cb86ab209d45fef74fb74f220299">DLLReadBitS0_8</a> (uint32_t drvno, uint16_t address, uint8_t bitnumber, uint8_t *isBitHigh)</td></tr>
+<tr class="separator:ab044cb86ab209d45fef74fb74f220299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a013c83604ab38d834a380ab25792f558" id="r_a013c83604ab38d834a380ab25792f558"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a013c83604ab38d834a380ab25792f558">DLLReadBitS0_8_multipleBoards</a> (uint16_t address, uint8_t bitnumber, uint8_t *isBitHigh0, uint8_t *isBitHigh1, uint8_t *isBitHigh2, uint8_t *isBitHigh3, uint8_t *isBitHigh4)</td></tr>
+<tr class="separator:a013c83604ab38d834a380ab25792f558"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3bd49336fa211f7dffbbdccc99d2aec" id="r_ac3bd49336fa211f7dffbbdccc99d2aec"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3bd49336fa211f7dffbbdccc99d2aec">DLLSetTemp</a> (uint8_t level)</td></tr>
 <tr class="memdesc:ac3bd49336fa211f7dffbbdccc99d2aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set temperature level for cooled cameras for all boards selected by settings parameter board_sel.  <br /></td></tr>
 <tr class="separator:ac3bd49336fa211f7dffbbdccc99d2aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2562,6 +2570,160 @@ Variables</h2></td></tr>
 <li>es_register_write_failed </li>
 </ul>
 </dd></dl>
+
+</div>
+</div>
+<a id="a299e9e2ccf376dc4fe50341d8de8d4ae" name="a299e9e2ccf376dc4fe50341d8de8d4ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a299e9e2ccf376dc4fe50341d8de8d4ae">&#9670;&#160;</a></span>DLLReadBitS0_32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLReadBitS0_32 </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>address</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>bitnumber</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>isBitHigh</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f4eeb1ad70f1b2693836028b9eacbc2" name="a2f4eeb1ad70f1b2693836028b9eacbc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f4eeb1ad70f1b2693836028b9eacbc2">&#9670;&#160;</a></span>DLLReadBitS0_32_multipleBoards()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLReadBitS0_32_multipleBoards </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>address</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>bitnumber</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>isBitHigh0</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>isBitHigh1</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>isBitHigh2</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>isBitHigh3</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>isBitHigh4</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab044cb86ab209d45fef74fb74f220299" name="ab044cb86ab209d45fef74fb74f220299"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab044cb86ab209d45fef74fb74f220299">&#9670;&#160;</a></span>DLLReadBitS0_8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLReadBitS0_8 </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>address</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>bitnumber</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>isBitHigh</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a013c83604ab38d834a380ab25792f558" name="a013c83604ab38d834a380ab25792f558"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a013c83604ab38d834a380ab25792f558">&#9670;&#160;</a></span>DLLReadBitS0_8_multipleBoards()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLReadBitS0_8_multipleBoards </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>address</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>bitnumber</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>isBitHigh0</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>isBitHigh1</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>isBitHigh2</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>isBitHigh3</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>isBitHigh4</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

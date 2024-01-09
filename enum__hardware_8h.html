@@ -477,11 +477,13 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a6a5fda123f2cce6999ba25696fb21a06">S0Addr_A2DSC</a> = 0x98
 , <br />
 &#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a08a527a8c1f3fa956c71a10f192ebd78">S0Addr_L2DSC</a> = 0x9C
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a58edd27073d3ec775b8a9879e01f216c">S0Addr_ATDC2</a> = 0xA0
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a9781827ddd301baf671526915bfbc6db">S0Addr_LTDC2</a> = 0xA4
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15adf8bc35ff652d8c514bba71d814ee9a6">S0Addr_DSCCtrl</a> = 0xA8
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a41e8c3797e6933e36ebfd5d092279149">S0Addr_DAC</a> = 0xAC
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a97590c3dc08198b5edc60c2f9b665eef">S0Addr_CAMSTATUS12</a> = 0xB0
 , <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a31907db69f74e39041a3213a6d6a49c6">S0Addr_CAMSTATUS34</a> = 0xB4
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a41e8c3797e6933e36ebfd5d092279149">S0Addr_DAC</a> = 0xAC
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a97590c3dc08198b5edc60c2f9b665eef">S0Addr_CAMSTATUS12</a> = 0xB0
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a31907db69f74e39041a3213a6d6a49c6">S0Addr_CAMSTATUS34</a> = 0xB4
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a0694822028f927970ffbd57a0c8a6705">S0Addr_CAMERA_TYPE</a> = 0xB8
 <br />
  }</td></tr>
@@ -684,6 +686,29 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a374db1564224f2a8a00585e53bfdc174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49558783bbb2279fd37cb6d62766dfde" id="r_a49558783bbb2279fd37cb6d62766dfde"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49558783bbb2279fd37cb6d62766dfde">BDAT_bits_t</a> { <a class="el" href="#a49558783bbb2279fd37cb6d62766dfdea928cc39d14b1dcd39bfacc155904591d">BDAT_bitindex_enabled</a> = 31
+ }</td></tr>
+<tr class="separator:a49558783bbb2279fd37cb6d62766dfde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a89cc3f90c9085be6bc193f83dc6d65" id="r_a6a89cc3f90c9085be6bc193f83dc6d65"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a89cc3f90c9085be6bc193f83dc6d65">BEC_bits_t</a> { <a class="el" href="#a6a89cc3f90c9085be6bc193f83dc6d65a3b316018ab2316012e1a68999a40cc69">BEC_bitindex_enabled</a> = 31
+ }</td></tr>
+<tr class="separator:a6a89cc3f90c9085be6bc193f83dc6d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a401c082d05f2dc446a7cb3cd6088ece3" id="r_a401c082d05f2dc446a7cb3cd6088ece3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a401c082d05f2dc446a7cb3cd6088ece3">BSLOPE_bits_t</a> { <a class="el" href="#a401c082d05f2dc446a7cb3cd6088ece3a8efad94625c269105ab93427baad8bcb">BSLOPE_bitindex_bslope</a> = 0
+, <a class="el" href="#a401c082d05f2dc446a7cb3cd6088ece3ab73f58dcfb6b5f04deaf6093e60ee3a1">BSLOPE_bitindex_both_slopes</a> = 1
+, <a class="el" href="#a401c082d05f2dc446a7cb3cd6088ece3a5d186472a6aee131cca5b37021a5884c">BSLOPE_bitindex_bswtrig</a> = 2
+ }</td></tr>
+<tr class="separator:a401c082d05f2dc446a7cb3cd6088ece3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcb8c0b3316bf062919b5d1a2673004c" id="r_abcb8c0b3316bf062919b5d1a2673004c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abcb8c0b3316bf062919b5d1a2673004c">DSCCtrl_bits_t</a> { <a class="el" href="#abcb8c0b3316bf062919b5d1a2673004ca00a2ecab3646bb7bef542c2920588efe">DSCCtrl_bitindex_rs1</a> = 0
+, <a class="el" href="#abcb8c0b3316bf062919b5d1a2673004cadff4daec784a2559c69062d9e22e3035">DSCCtrl_bitindex_dir1</a> = 1
+, <a class="el" href="#abcb8c0b3316bf062919b5d1a2673004ca1c247ee4a56d52c26b139fa6f845bdaa">DSCCtrl_bitindex_rs2</a> = 8
+, <a class="el" href="#abcb8c0b3316bf062919b5d1a2673004cafbf7818ce48ad691b6886b9ddc713f87">DSCCtrl_bitindex_dir2</a> = 9
+ }</td></tr>
+<tr class="separator:abcb8c0b3316bf062919b5d1a2673004c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82be75f28294698049e12fee0e2ce877" id="r_a82be75f28294698049e12fee0e2ce877"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82be75f28294698049e12fee0e2ce877">CAMSTATUS12_bits_t</a> { <a class="el" href="#a82be75f28294698049e12fee0e2ce877a11961d8401c84e1addb42fe4cebc3c00">CAMSTATUS12_bitindex_temp</a> = 0
+ }</td></tr>
+<tr class="separator:a82be75f28294698049e12fee0e2ce877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4b3c5588754c62c2f4c200cb2cafbc9" id="r_ac4b3c5588754c62c2f4c200cb2cafbc9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4b3c5588754c62c2f4c200cb2cafbc9">CAMSTATUS34_bits_t</a> { <a class="el" href="#ac4b3c5588754c62c2f4c200cb2cafbc9ab2a6e19d791acfe87f8102dc6d63f707">CAMSTATUS34_bitindex_temp</a> = 0
+ }</td></tr>
+<tr class="separator:ac4b3c5588754c62c2f4c200cb2cafbc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1f3aee94473361f396c43f6eb5db0f1" id="r_af1f3aee94473361f396c43f6eb5db0f1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1f3aee94473361f396c43f6eb5db0f1">camera_type_bits_t</a> { <a class="el" href="#af1f3aee94473361f396c43f6eb5db0f1add9d08e13c0f7de9ff488768977ae093">camera_type_sensor_type_bits</a> = 0x0000FFFF
 , <a class="el" href="#af1f3aee94473361f396c43f6eb5db0f1a3c89df8f9a49d73dd59ff52552b77e10">camera_type_camera_system_bits</a> = 0xFFFF0000
 , <a class="el" href="#af1f3aee94473361f396c43f6eb5db0f1ac4da96f23746040708a4d3a22a929dd7">camera_type_sensor_type_bit_index</a> = 0
@@ -706,6 +731,40 @@ Enumerations</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aed7f564a2634450efefa7cd7d1dfaaf2ad1ac9e5872c0ec58f209fc471d62cd17" name="aed7f564a2634450efefa7cd7d1dfaaf2ad1ac9e5872c0ec58f209fc471d62cd17"></a>ARREG_bitindex_partial_binning&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aed7f564a2634450efefa7cd7d1dfaaf2a65f06294f6ae04b787226b8d08fd463b" name="aed7f564a2634450efefa7cd7d1dfaaf2a65f06294f6ae04b787226b8d08fd463b"></a>ARREG_bit_pb_control&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a49558783bbb2279fd37cb6d62766dfde" name="a49558783bbb2279fd37cb6d62766dfde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49558783bbb2279fd37cb6d62766dfde">&#9670;&#160;</a></span>BDAT_bits_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a49558783bbb2279fd37cb6d62766dfde">BDAT_bits_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a49558783bbb2279fd37cb6d62766dfdea928cc39d14b1dcd39bfacc155904591d" name="a49558783bbb2279fd37cb6d62766dfdea928cc39d14b1dcd39bfacc155904591d"></a>BDAT_bitindex_enabled&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a6a89cc3f90c9085be6bc193f83dc6d65" name="a6a89cc3f90c9085be6bc193f83dc6d65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a89cc3f90c9085be6bc193f83dc6d65">&#9670;&#160;</a></span>BEC_bits_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a6a89cc3f90c9085be6bc193f83dc6d65">BEC_bits_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6a89cc3f90c9085be6bc193f83dc6d65a3b316018ab2316012e1a68999a40cc69" name="a6a89cc3f90c9085be6bc193f83dc6d65a3b316018ab2316012e1a68999a40cc69"></a>BEC_bitindex_enabled&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -749,6 +808,25 @@ Enumerations</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa5ad8175436820f4d8b11ab0153ffa69a23fc30170fc38cf687bc464da04539ca" name="aa5ad8175436820f4d8b11ab0153ffa69a23fc30170fc38cf687bc464da04539ca"></a>BLOCKINDEX_bitindex_counter_reset&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aa5ad8175436820f4d8b11ab0153ffa69a64a000918d4731935bc8ac580752e966" name="aa5ad8175436820f4d8b11ab0153ffa69a64a000918d4731935bc8ac580752e966"></a>BLOCKINDEX_bit_counter_reset&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a401c082d05f2dc446a7cb3cd6088ece3" name="a401c082d05f2dc446a7cb3cd6088ece3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a401c082d05f2dc446a7cb3cd6088ece3">&#9670;&#160;</a></span>BSLOPE_bits_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a401c082d05f2dc446a7cb3cd6088ece3">BSLOPE_bits_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a401c082d05f2dc446a7cb3cd6088ece3a8efad94625c269105ab93427baad8bcb" name="a401c082d05f2dc446a7cb3cd6088ece3a8efad94625c269105ab93427baad8bcb"></a>BSLOPE_bitindex_bslope&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a401c082d05f2dc446a7cb3cd6088ece3ab73f58dcfb6b5f04deaf6093e60ee3a1" name="a401c082d05f2dc446a7cb3cd6088ece3ab73f58dcfb6b5f04deaf6093e60ee3a1"></a>BSLOPE_bitindex_both_slopes&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a401c082d05f2dc446a7cb3cd6088ece3a5d186472a6aee131cca5b37021a5884c" name="a401c082d05f2dc446a7cb3cd6088ece3a5d186472a6aee131cca5b37021a5884c"></a>BSLOPE_bitindex_bswtrig&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -924,6 +1002,40 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<a id="a82be75f28294698049e12fee0e2ce877" name="a82be75f28294698049e12fee0e2ce877"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82be75f28294698049e12fee0e2ce877">&#9670;&#160;</a></span>CAMSTATUS12_bits_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a82be75f28294698049e12fee0e2ce877">CAMSTATUS12_bits_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a82be75f28294698049e12fee0e2ce877a11961d8401c84e1addb42fe4cebc3c00" name="a82be75f28294698049e12fee0e2ce877a11961d8401c84e1addb42fe4cebc3c00"></a>CAMSTATUS12_bitindex_temp&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ac4b3c5588754c62c2f4c200cb2cafbc9" name="ac4b3c5588754c62c2f4c200cb2cafbc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4b3c5588754c62c2f4c200cb2cafbc9">&#9670;&#160;</a></span>CAMSTATUS34_bits_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ac4b3c5588754c62c2f4c200cb2cafbc9">CAMSTATUS34_bits_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac4b3c5588754c62c2f4c200cb2cafbc9ab2a6e19d791acfe87f8102dc6d63f707" name="ac4b3c5588754c62c2f4c200cb2cafbc9ab2a6e19d791acfe87f8102dc6d63f707"></a>CAMSTATUS34_bitindex_temp&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="a16a9c51efaf467545e55657c20b42a0c" name="a16a9c51efaf467545e55657c20b42a0c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a16a9c51efaf467545e55657c20b42a0c">&#9670;&#160;</a></span>CTRLA_bits_t</h2>
 
@@ -1091,6 +1203,26 @@ Enumerations</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="acc38a9e04cce5562fedf5864fa1acf4ba4a9d98cf5b6a11f71128ab4023cd7fca" name="acc38a9e04cce5562fedf5864fa1acf4ba4a9d98cf5b6a11f71128ab4023cd7fca"></a>DMAsPerIntr_bitindex_counter_reset&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="acc38a9e04cce5562fedf5864fa1acf4ba341d31f0b5c59ca91d438b6e763590dc" name="acc38a9e04cce5562fedf5864fa1acf4ba341d31f0b5c59ca91d438b6e763590dc"></a>DMAsPerIntr_bit_counter_reset&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="abcb8c0b3316bf062919b5d1a2673004c" name="abcb8c0b3316bf062919b5d1a2673004c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcb8c0b3316bf062919b5d1a2673004c">&#9670;&#160;</a></span>DSCCtrl_bits_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#abcb8c0b3316bf062919b5d1a2673004c">DSCCtrl_bits_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abcb8c0b3316bf062919b5d1a2673004ca00a2ecab3646bb7bef542c2920588efe" name="abcb8c0b3316bf062919b5d1a2673004ca00a2ecab3646bb7bef542c2920588efe"></a>DSCCtrl_bitindex_rs1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abcb8c0b3316bf062919b5d1a2673004cadff4daec784a2559c69062d9e22e3035" name="abcb8c0b3316bf062919b5d1a2673004cadff4daec784a2559c69062d9e22e3035"></a>DSCCtrl_bitindex_dir1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abcb8c0b3316bf062919b5d1a2673004ca1c247ee4a56d52c26b139fa6f845bdaa" name="abcb8c0b3316bf062919b5d1a2673004ca1c247ee4a56d52c26b139fa6f845bdaa"></a>DSCCtrl_bitindex_rs2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abcb8c0b3316bf062919b5d1a2673004cafbf7818ce48ad691b6886b9ddc713f87" name="abcb8c0b3316bf062919b5d1a2673004cafbf7818ce48ad691b6886b9ddc713f87"></a>DSCCtrl_bitindex_dir2&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1491,6 +1623,8 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a263993c3f1f0db647a8a0dc89cd189fd" name="a1532e8504727e103db7ec69af3330f15a263993c3f1f0db647a8a0dc89cd189fd"></a>S0Addr_L1DSC&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a6a5fda123f2cce6999ba25696fb21a06" name="a1532e8504727e103db7ec69af3330f15a6a5fda123f2cce6999ba25696fb21a06"></a>S0Addr_A2DSC&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a08a527a8c1f3fa956c71a10f192ebd78" name="a1532e8504727e103db7ec69af3330f15a08a527a8c1f3fa956c71a10f192ebd78"></a>S0Addr_L2DSC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a58edd27073d3ec775b8a9879e01f216c" name="a1532e8504727e103db7ec69af3330f15a58edd27073d3ec775b8a9879e01f216c"></a>S0Addr_ATDC2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a9781827ddd301baf671526915bfbc6db" name="a1532e8504727e103db7ec69af3330f15a9781827ddd301baf671526915bfbc6db"></a>S0Addr_LTDC2&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15adf8bc35ff652d8c514bba71d814ee9a6" name="a1532e8504727e103db7ec69af3330f15adf8bc35ff652d8c514bba71d814ee9a6"></a>S0Addr_DSCCtrl&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a41e8c3797e6933e36ebfd5d092279149" name="a1532e8504727e103db7ec69af3330f15a41e8c3797e6933e36ebfd5d092279149"></a>S0Addr_DAC&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a97590c3dc08198b5edc60c2f9b665eef" name="a1532e8504727e103db7ec69af3330f15a97590c3dc08198b5edc60c2f9b665eef"></a>S0Addr_CAMSTATUS12&#160;</td><td class="fielddoc"></td></tr>
