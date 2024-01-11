@@ -1,29 +1,4 @@
 var searchData=
 [
-  ['waitforallinterruptsdone_0',['WaitForAllInterruptsDone',['../_board__ll_8c.html#a0cdd211a5d3c2cd5c651f1577c356d28',1,'Board_ll.c']]],
-  ['waitforblockready_1',['waitForBlockReady',['../_board_8c.html#aad31f000666d013342cff25b91bb69c4',1,'Board.c']]],
-  ['waitforblocktrigger_2',['waitForBlockTrigger',['../_board_8c.html#a064863a7da68c4911ad62314afaf852e',1,'Board.c']]],
-  ['waitformeasureready_3',['waitForMeasureReady',['../_board_8c.html#ac0ce5c69a608f540ed7d4d83f280abb0',1,'Board.c']]],
-  ['waitfortelapsed_4',['WaitforTelapsed',['../_board__ll_8c.html#a364bfc62fe74551a58ef8af9a714d329',1,'Board_ll.c']]],
-  ['waittrigger_5',['WaitTrigger',['../_board__ll_8c.html#afcf2c0ff9d0b97692deff2032cd7b28a',1,'Board_ll.c']]],
-  ['writebitsdma_5f32_6',['writeBitsDma_32',['../_board_8c.html#a6868b09ffcff1d8e1a84c1eaecebd451',1,'Board.c']]],
-  ['writebitsdma_5f8_7',['writeBitsDma_8',['../_board_8c.html#a6b76c2e1248ac010b0a93b6bb33c304a',1,'Board.c']]],
-  ['writebitss0_5f32_8',['writeBitsS0_32',['../_board_8c.html#a81f8aa3e9e6f5cdcd46508e44e9f36c3',1,'Board.c']]],
-  ['writebitss0_5f32_5fallboards_9',['writeBitsS0_32_allBoards',['../_board_8c.html#a5d4e0b33423c93ceb589f00d73e2cdb1',1,'Board.c']]],
-  ['writebitss0_5f8_10',['writeBitsS0_8',['../_board_8c.html#a6f8bf1937b1741d55a599ca97ae41a2d',1,'Board.c']]],
-  ['writeconfig_5f32_11',['writeConfig_32',['../_board__ll_8c.html#aa2c336e7d6a8f5e00e90e793f564203a',1,'Board_ll.c']]],
-  ['writefileheadertofile_12',['writeFileHeaderToFile',['../_board__ll_8c.html#a57c6dd9d3a22f75fc9d01b8a1f847350',1,'Board_ll.c']]],
-  ['writeregister_5f16_13',['writeRegister_16',['../_board__ll_8c.html#a4a67af48123d25eece052a2c9503cf9a',1,'Board_ll.c']]],
-  ['writeregister_5f32_14',['writeRegister_32',['../_board__ll_8c.html#a05e06f7decfb688dd1bd3973780b1267',1,'Board_ll.c']]],
-  ['writeregister_5f32_5fallboards_15',['writeRegister_32_allBoards',['../_board_8c.html#a54a6ee6701e43cbd1aabb6812369f0b0',1,'Board.c']]],
-  ['writeregister_5f8_16',['writeRegister_8',['../_board__ll_8c.html#a15171e3a1ce84bcc817dde285adf24bb',1,'Board_ll.c']]],
-  ['writeregister_5f8_5fallboards_17',['writeRegister_8_allBoards',['../_board_8c.html#ac0af70b2d7568d3fbd865a285073b011',1,'Board.c']]],
-  ['writeregisterdma_5f32_18',['writeRegisterDma_32',['../_board_8c.html#ae5171b3834452da70a5260fccb6b1b0c',1,'Board.c']]],
-  ['writeregisterdma_5f8_19',['writeRegisterDma_8',['../_board_8c.html#a816be708db585b0c7b3b302db20ec980',1,'Board.c']]],
-  ['writeregisters0_5f16_20',['writeRegisterS0_16',['../_board_8c.html#ab65e8476b5622f51c51892d8e569c1fb',1,'Board.c']]],
-  ['writeregisters0_5f32_21',['writeRegisterS0_32',['../_board_8c.html#a0f8e1a4a11622a06ee89e27d1b00965b',1,'Board.c']]],
-  ['writeregisters0_5f32_5fallboards_22',['writeRegisterS0_32_allBoards',['../_board_8c.html#ad2e115e09508586fe11c9859a1ba9023',1,'Board.c']]],
-  ['writeregisters0_5f8_23',['writeRegisterS0_8',['../_board_8c.html#a7ca683ce298e15950d2ecb51fd4ec35e',1,'Board.c']]],
-  ['writeregisters0_5f8_5fallboards_24',['writeRegisterS0_8_allBoards',['../_board_8c.html#a9190c7882c49d57eadb1e5a13e3fbff5',1,'Board.c']]],
-  ['writetodisc_25',['writeToDisc',['../_board__ll_8c.html#a6a6910fd50ec166147739bb1d4ada3f2',1,'Board_ll.c']]]
+  ['_7edirect2dviewer_0',['~Direct2dViewer',['../class_direct2d_viewer.html#a58f53d762f0bbddda8abae6927d86023',1,'Direct2dViewer']]]
 ];

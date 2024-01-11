@@ -513,7 +513,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="#a6088fcda9571ea67be3dd49e46438941a13e677bf1e5a18b593a1f15dc5aec78c">dac_hi_byte_addr</a> = 0x01
 , <a class="el" href="#a6088fcda9571ea67be3dd49e46438941ac8c08b995e26d29222d1cc22f667e79c">dac_lo_byte_addr</a> = 0x02
 , <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a5019d7b759ee67dfdcace3ac4fa1ed20">campos_bit_index</a> = 4
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941aa3248c8ef0bff8276c33c167917d21a6">cam_adaddr_gain</a> = 0x00
+, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941ac08b288d19d82887239f79a267f8e647">cam_adaddr_config</a> = 0x00
 , <br />
 &#160;&#160;<a class="el" href="#a6088fcda9571ea67be3dd49e46438941a69121ef35ecc8ca9bf51529008910ae3">cam_adaddr_pixel</a> = 0x01
 , <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a5a7070d1ed412936fab5223d1de07b50">cam_adaddr_trig_in</a> = 0x02
@@ -609,6 +609,22 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:acff84da0b18ed524c2778df0255a60d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bf7c32673195bbbdc288f7931ac4976" id="r_a6bf7c32673195bbbdc288f7931ac4976"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bf7c32673195bbbdc288f7931ac4976">cam_config_register_t</a> { <br />
+&#160;&#160;<a class="el" href="#a6bf7c32673195bbbdc288f7931ac4976aa522df4e027a4464dd71cf89977aefeb">cam_config_register_bitindex_sensor_gain</a> = 0
+, <a class="el" href="#a6bf7c32673195bbbdc288f7931ac4976a4585e287328dd9d5d2c4aa75f69e1a1c">cam_config_register_bitindex_trigger_mode_cc</a> = 1
+, <a class="el" href="#a6bf7c32673195bbbdc288f7931ac4976a203d0eb9718f9debf368c06395a3b59c">cam_config_register_bitindex_temp_level</a> = 4
+, <a class="el" href="#a6bf7c32673195bbbdc288f7931ac4976a2967cb25ec0acbf397dfbb4bc8ac3ab8">cam_config_register_bitindex_led_off</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="#a6bf7c32673195bbbdc288f7931ac4976ab40e396cf0365ee28fa5d1dcc52c1d3f">cam_config_register_bitindex_bnc_out</a> = 8
+, <a class="el" href="#a6bf7c32673195bbbdc288f7931ac4976ab2cedf8de5ae19d69d3543f85bc3eba3">cam_config_register_bits_sensor_gain</a> = 0x0001
+, <a class="el" href="#a6bf7c32673195bbbdc288f7931ac4976ada4bad9b0c4f2d4447b27d5ae3c32607">cam_config_register_bits_trigger_mode_cc</a> = 0x000E
+, <a class="el" href="#a6bf7c32673195bbbdc288f7931ac4976a5a8ed79a4131909a4cc6ff2c348dbeea">cam_config_register_bits_temp_level</a> = 0x0070
+, <br />
+&#160;&#160;<a class="el" href="#a6bf7c32673195bbbdc288f7931ac4976a4601a41acb047eb9c6031d9514d69ed5">cam_config_register_bits_led_off</a> = 0x0080
+, <a class="el" href="#a6bf7c32673195bbbdc288f7931ac4976ab0ba76f537df9316b4f2a1f59bc8ff25">cam_config_register_bits_bnc_out</a> = 0x0300
+<br />
+ }</td></tr>
+<tr class="separator:a6bf7c32673195bbbdc288f7931ac4976"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0266b7b413403e4bfb667d9f666a910" id="r_ad0266b7b413403e4bfb667d9f666a910"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0266b7b413403e4bfb667d9f666a910">bits_of_pixel_block_index_high_S1_S2_t</a> { <br />
 &#160;&#160;<a class="el" href="#ad0266b7b413403e4bfb667d9f666a910aab5a71f10e88f852fc972918c7e8ccaa">pixel_block_index_high_s1_s2_bits_block_index</a> = 0x3FFF
 , <a class="el" href="#ad0266b7b413403e4bfb667d9f666a910a234d85d0886a2e58f52c9a07823ee4d7">pixel_block_index_high_s1_s2_bit_s2</a> = 0x4000
@@ -854,7 +870,7 @@ Enumerations</h2></td></tr>
 <li>r: register address 0b ccc rrrr The upper 3 bits are describing the camera position and the lower 4 bits are describing the register address. (Only 7 bits are used) </li>
 </ul>
 </td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941aa3248c8ef0bff8276c33c167917d21a6" name="a6088fcda9571ea67be3dd49e46438941aa3248c8ef0bff8276c33c167917d21a6"></a>cam_adaddr_gain&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941ac08b288d19d82887239f79a267f8e647" name="a6088fcda9571ea67be3dd49e46438941ac08b288d19d82887239f79a267f8e647"></a>cam_adaddr_config&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a69121ef35ecc8ca9bf51529008910ae3" name="a6088fcda9571ea67be3dd49e46438941a69121ef35ecc8ca9bf51529008910ae3"></a>cam_adaddr_pixel&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a5a7070d1ed412936fab5223d1de07b50" name="a6088fcda9571ea67be3dd49e46438941a5a7070d1ed412936fab5223d1de07b50"></a>cam_adaddr_trig_in&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941abf4ac2bf667f8421f9df18ea9b1b308b" name="a6088fcda9571ea67be3dd49e46438941abf4ac2bf667f8421f9df18ea9b1b308b"></a>cam_adaddr_unused&#160;</td><td class="fielddoc"></td></tr>
@@ -953,6 +969,32 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941ac933ada92848890b42a5df0984ae18e5" name="a6088fcda9571ea67be3dd49e46438941ac933ada92848890b42a5df0984ae18e5"></a>ioctrl_d6&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941af6acc2ee2766f71fc35d66bb0b96afc8" name="a6088fcda9571ea67be3dd49e46438941af6acc2ee2766f71fc35d66bb0b96afc8"></a>ioctrl_t7&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941ab256e3c2181522cfff59c5044c2c195a" name="a6088fcda9571ea67be3dd49e46438941ab256e3c2181522cfff59c5044c2c195a"></a>ioctrl_d7&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a6bf7c32673195bbbdc288f7931ac4976" name="a6bf7c32673195bbbdc288f7931ac4976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bf7c32673195bbbdc288f7931ac4976">&#9670;&#160;</a></span>cam_config_register_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a6bf7c32673195bbbdc288f7931ac4976">cam_config_register_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6bf7c32673195bbbdc288f7931ac4976aa522df4e027a4464dd71cf89977aefeb" name="a6bf7c32673195bbbdc288f7931ac4976aa522df4e027a4464dd71cf89977aefeb"></a>cam_config_register_bitindex_sensor_gain&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bf7c32673195bbbdc288f7931ac4976a4585e287328dd9d5d2c4aa75f69e1a1c" name="a6bf7c32673195bbbdc288f7931ac4976a4585e287328dd9d5d2c4aa75f69e1a1c"></a>cam_config_register_bitindex_trigger_mode_cc&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bf7c32673195bbbdc288f7931ac4976a203d0eb9718f9debf368c06395a3b59c" name="a6bf7c32673195bbbdc288f7931ac4976a203d0eb9718f9debf368c06395a3b59c"></a>cam_config_register_bitindex_temp_level&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bf7c32673195bbbdc288f7931ac4976a2967cb25ec0acbf397dfbb4bc8ac3ab8" name="a6bf7c32673195bbbdc288f7931ac4976a2967cb25ec0acbf397dfbb4bc8ac3ab8"></a>cam_config_register_bitindex_led_off&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bf7c32673195bbbdc288f7931ac4976ab40e396cf0365ee28fa5d1dcc52c1d3f" name="a6bf7c32673195bbbdc288f7931ac4976ab40e396cf0365ee28fa5d1dcc52c1d3f"></a>cam_config_register_bitindex_bnc_out&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bf7c32673195bbbdc288f7931ac4976ab2cedf8de5ae19d69d3543f85bc3eba3" name="a6bf7c32673195bbbdc288f7931ac4976ab2cedf8de5ae19d69d3543f85bc3eba3"></a>cam_config_register_bits_sensor_gain&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bf7c32673195bbbdc288f7931ac4976ada4bad9b0c4f2d4447b27d5ae3c32607" name="a6bf7c32673195bbbdc288f7931ac4976ada4bad9b0c4f2d4447b27d5ae3c32607"></a>cam_config_register_bits_trigger_mode_cc&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bf7c32673195bbbdc288f7931ac4976a5a8ed79a4131909a4cc6ff2c348dbeea" name="a6bf7c32673195bbbdc288f7931ac4976a5a8ed79a4131909a4cc6ff2c348dbeea"></a>cam_config_register_bits_temp_level&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bf7c32673195bbbdc288f7931ac4976a4601a41acb047eb9c6031d9514d69ed5" name="a6bf7c32673195bbbdc288f7931ac4976a4601a41acb047eb9c6031d9514d69ed5"></a>cam_config_register_bits_led_off&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6bf7c32673195bbbdc288f7931ac4976ab0ba76f537df9316b4f2a1f59bc8ff25" name="a6bf7c32673195bbbdc288f7931ac4976ab0ba76f537df9316b4f2a1f59bc8ff25"></a>cam_config_register_bits_bnc_out&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
