@@ -17,6 +17,9 @@ var searchData=
   ['bti_5fbtimer_14',['bti_BTimer',['../enum__settings_8h.html#a2fce6aa348483bc730e1693a39bc0e00aa80f3bc2af101fdd46dee4793eb0d906',1,'enum_settings.h']]],
   ['bti_5fi_15',['bti_I',['../enum__settings_8h.html#a2fce6aa348483bc730e1693a39bc0e00ae3e686f8f655223a1c70878846810d52',1,'enum_settings.h']]],
   ['bti_5fs1_16',['bti_S1',['../enum__settings_8h.html#a2fce6aa348483bc730e1693a39bc0e00a61bca85750088bd3f46ffe2f425c5bbf',1,'enum_settings.h']]],
-  ['bti_5fs1s2_17',['bti_S1S2',['../enum__settings_8h.html#a2fce6aa348483bc730e1693a39bc0e00a5eb74bef97fe66846db9fd28e811a647',1,'enum_settings.h']]],
-  ['bti_5fs2_18',['bti_S2',['../enum__settings_8h.html#a2fce6aa348483bc730e1693a39bc0e00a5879bf4c0aad3807d8a4f4faa0fb9d7a',1,'enum_settings.h']]]
+  ['bti_5fs1chopper_17',['bti_S1chopper',['../enum__settings_8h.html#a2fce6aa348483bc730e1693a39bc0e00abffcfeb792e282ec9a8e148bbc799acf',1,'enum_settings.h']]],
+  ['bti_5fs1s2_18',['bti_S1S2',['../enum__settings_8h.html#a2fce6aa348483bc730e1693a39bc0e00a5eb74bef97fe66846db9fd28e811a647',1,'enum_settings.h']]],
+  ['bti_5fs1s2chopper_19',['bti_S1S2chopper',['../enum__settings_8h.html#a2fce6aa348483bc730e1693a39bc0e00aeae696636991e59b1dd01e892b615215',1,'enum_settings.h']]],
+  ['bti_5fs2_20',['bti_S2',['../enum__settings_8h.html#a2fce6aa348483bc730e1693a39bc0e00a5879bf4c0aad3807d8a4f4faa0fb9d7a',1,'enum_settings.h']]],
+  ['bti_5fs2chopper_21',['bti_S2chopper',['../enum__settings_8h.html#a2fce6aa348483bc730e1693a39bc0e00a0304e462d9b88ab693db99216b64866b',1,'enum_settings.h']]]
 ];
