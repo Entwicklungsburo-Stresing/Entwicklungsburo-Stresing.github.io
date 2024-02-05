@@ -267,16 +267,6 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a95871548cbf0bc64201636b985255292"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7edba2515104bc9df9622c38d05b5351" id="r_a7edba2515104bc9df9622c38d05b5351"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7edba2515104bc9df9622c38d05b5351">XCKMSB_bits_t</a> { <br />
-&#160;&#160;<a class="el" href="#a7edba2515104bc9df9622c38d05b5351a18e5d9ae516eb2754d1bb18552b3afee">XCKMSB_bit_stimer_on</a> = 0x40
-, <a class="el" href="#a7edba2515104bc9df9622c38d05b5351a82419149bee66353fe2fddd8d59e525c">XCKMSB_bitindex_reset_ns</a> = 4
-, <a class="el" href="#a7edba2515104bc9df9622c38d05b5351a10f84c349b5965acb57e45fa3f789289">XCKMSB_bitindex_reset_ms</a> = 5
-, <a class="el" href="#a7edba2515104bc9df9622c38d05b5351a2a22b106e55b453b0192f74294e52cdc">XCKMSB_bitindex_stimer_on</a> = 6
-, <br />
-&#160;&#160;<a class="el" href="#a7edba2515104bc9df9622c38d05b5351aa4a160cd6ccfa8fd57d29285529be978">XCKMSB_bitindex_F_EXT_TRIG</a> = 7
-<br />
- }</td></tr>
-<tr class="separator:a7edba2515104bc9df9622c38d05b5351"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6005e570d078f1b87ae9b7a4b706a99" id="r_ab6005e570d078f1b87ae9b7a4b706a99"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99">pcie_configuration_space_t</a> { <br />
 &#160;&#160;<a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a07479b07938607524abc79d50812eb93">PCIeAddr_VendorID</a> = 0x00
 , <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a3d760d2323385caec4b7b80209b39c4d">PCIeAddr_DeviceID</a> = 0x02
@@ -490,6 +480,16 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a1532e8504727e103db7ec69af3330f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc06a244ac6282e55991ad6c6356dbb" id="r_a1dc06a244ac6282e55991ad6c6356dbb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbb">XCK_bits_t</a> { <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba0bc8a2147c20581653dc26a10c74745b">XCK_stimer_bitindex</a> = 0
+, <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba00638f58e9cb5f41da3e523fb3b697ca">XCK_stimer_bits</a> = 0x0FFFFFFF
+ }</td></tr>
+<tr class="separator:a1dc06a244ac6282e55991ad6c6356dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7edba2515104bc9df9622c38d05b5351" id="r_a7edba2515104bc9df9622c38d05b5351"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7edba2515104bc9df9622c38d05b5351">XCKMSB_bits_t</a> { <a class="el" href="#a7edba2515104bc9df9622c38d05b5351a18e5d9ae516eb2754d1bb18552b3afee">XCKMSB_bit_stimer_on</a> = 0x40
+, <a class="el" href="#a7edba2515104bc9df9622c38d05b5351a82419149bee66353fe2fddd8d59e525c">XCKMSB_bitindex_reset_ns</a> = 4
+, <a class="el" href="#a7edba2515104bc9df9622c38d05b5351a10f84c349b5965acb57e45fa3f789289">XCKMSB_bitindex_reset_ms</a> = 5
+, <a class="el" href="#a7edba2515104bc9df9622c38d05b5351a2a22b106e55b453b0192f74294e52cdc">XCKMSB_bitindex_stimer_on</a> = 6
+ }</td></tr>
+<tr class="separator:a7edba2515104bc9df9622c38d05b5351"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15896ca263195923b15606bb739b92b5" id="r_a15896ca263195923b15606bb739b92b5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15896ca263195923b15606bb739b92b5">ScanIndex_bits_t</a> { <a class="el" href="#a15896ca263195923b15606bb739b92b5a6eedb129091961f6c3c48b4524bcaed5">ScanIndex_bitindex_counter_reset</a> = 31
 , <a class="el" href="#a15896ca263195923b15606bb739b92b5a4aab0ced46bc4f29dae88d9fdb67d346">ScanIndex_bit_counter_reset</a> = 0x80
  }</td></tr>
@@ -1914,6 +1914,24 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<a id="a1dc06a244ac6282e55991ad6c6356dbb" name="a1dc06a244ac6282e55991ad6c6356dbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dc06a244ac6282e55991ad6c6356dbb">&#9670;&#160;</a></span>XCK_bits_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbb">XCK_bits_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1dc06a244ac6282e55991ad6c6356dbba0bc8a2147c20581653dc26a10c74745b" name="a1dc06a244ac6282e55991ad6c6356dbba0bc8a2147c20581653dc26a10c74745b"></a>XCK_stimer_bitindex&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1dc06a244ac6282e55991ad6c6356dbba00638f58e9cb5f41da3e523fb3b697ca" name="a1dc06a244ac6282e55991ad6c6356dbba00638f58e9cb5f41da3e523fb3b697ca"></a>XCK_stimer_bits&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="a7edba2515104bc9df9622c38d05b5351" name="a7edba2515104bc9df9622c38d05b5351"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7edba2515104bc9df9622c38d05b5351">&#9670;&#160;</a></span>XCKMSB_bits_t</h2>
 
@@ -1927,10 +1945,11 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7edba2515104bc9df9622c38d05b5351a18e5d9ae516eb2754d1bb18552b3afee" name="a7edba2515104bc9df9622c38d05b5351a18e5d9ae516eb2754d1bb18552b3afee"></a>XCKMSB_bit_stimer_on&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7edba2515104bc9df9622c38d05b5351a82419149bee66353fe2fddd8d59e525c" name="a7edba2515104bc9df9622c38d05b5351a82419149bee66353fe2fddd8d59e525c"></a>XCKMSB_bitindex_reset_ns&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7edba2515104bc9df9622c38d05b5351a10f84c349b5965acb57e45fa3f789289" name="a7edba2515104bc9df9622c38d05b5351a10f84c349b5965acb57e45fa3f789289"></a>XCKMSB_bitindex_reset_ms&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7edba2515104bc9df9622c38d05b5351a82419149bee66353fe2fddd8d59e525c" name="a7edba2515104bc9df9622c38d05b5351a82419149bee66353fe2fddd8d59e525c"></a>XCKMSB_bitindex_reset_ns&#160;</td><td class="fielddoc"><p>select timer base resolution: 0: 1us, 1: 100ns </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7edba2515104bc9df9622c38d05b5351a10f84c349b5965acb57e45fa3f789289" name="a7edba2515104bc9df9622c38d05b5351a10f84c349b5965acb57e45fa3f789289"></a>XCKMSB_bitindex_reset_ms&#160;</td><td class="fielddoc"><p>divide time base resolution by 1000: 0: 1us, 1: 1ms, or when reset_ns = 1: 0: 100ns, 1: 100us </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a7edba2515104bc9df9622c38d05b5351a2a22b106e55b453b0192f74294e52cdc" name="a7edba2515104bc9df9622c38d05b5351a2a22b106e55b453b0192f74294e52cdc"></a>XCKMSB_bitindex_stimer_on&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7edba2515104bc9df9622c38d05b5351aa4a160cd6ccfa8fd57d29285529be978" name="a7edba2515104bc9df9622c38d05b5351aa4a160cd6ccfa8fd57d29285529be978"></a>XCKMSB_bitindex_F_EXT_TRIG&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

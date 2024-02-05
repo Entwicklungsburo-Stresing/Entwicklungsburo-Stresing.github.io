@@ -22,6 +22,5 @@ var searchData=
   ['measurement_5fsettings_19',['measurement_settings',['../structmeasurement__settings.html',1,'']]],
   ['measurement_5fsettings_5fmatlab_20',['measurement_settings_matlab',['../structmeasurement__settings__matlab.html',1,'']]],
   ['measurement_5fwise_21',['measurement_wise',['../enum__settings_8h.html#a2f4a284b0a5ab5d474b897488289158ca83d9e9fbf93501ba942d180612386985',1,'enum_settings.h']]],
-  ['mshut_22',['mshut',['../structcamera__settings.html#a2479a72c2b8d6682318520e54b09abfa',1,'camera_settings']]],
-  ['mutexuserbuffer_23',['mutexUserBuffer',['../_board__ll_8c.html#a865f453b860d97ada49b6509ad61bded',1,'Board_ll.c']]]
+  ['mutexuserbuffer_22',['mutexUserBuffer',['../_board__ll_8c.html#a865f453b860d97ada49b6509ad61bded',1,'Board_ll.c']]]
 ];
