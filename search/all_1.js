@@ -1,7 +1,7 @@
 var searchData=
 [
   ['abortmeasurement_0',['AbortMeasurement',['../_board_8c.html#ab1726423e49ca9a7ee45925dae825275',1,'Board.c']]],
-  ['abortmeasurementflag_1',['abortMeasurementFlag',['../globals_8h.html#a6064ea6dbd405405adbd7c374d907ca7',1,'abortMeasurementFlag:&#160;globals.c'],['../globals_8c.html#a6064ea6dbd405405adbd7c374d907ca7',1,'abortMeasurementFlag:&#160;globals.c']]],
+  ['abortmeasurementflag_1',['abortMeasurementFlag',['../globals_8h.html#a56a0b51ce8cb739bbe004304d2f11417',1,'abortMeasurementFlag:&#160;globals.c'],['../globals_8c.html#a56a0b51ce8cb739bbe004304d2f11417',1,'abortMeasurementFlag:&#160;globals.c']]],
   ['about_2',['About',['../_board__ll_8c.html#a69023e1b7220dc81de207b508d1d9c99',1,'Board_ll.c']]],
   ['aboutcamerasettings_3',['AboutCameraSettings',['../_board__ll_8c.html#a279b3e30d855066c3b916f6a5d10e7c2',1,'Board_ll.c']]],
   ['aboutdrv_4',['AboutDrv',['../_board__ll_8c.html#accd5186f0586d8497a599012cf1716d9',1,'Board_ll.c']]],

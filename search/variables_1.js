@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['abortmeasurementflag_0',['abortMeasurementFlag',['../globals_8h.html#a6064ea6dbd405405adbd7c374d907ca7',1,'abortMeasurementFlag:&#160;globals.c'],['../globals_8c.html#a6064ea6dbd405405adbd7c374d907ca7',1,'abortMeasurementFlag:&#160;globals.c']]],
+  ['abortmeasurementflag_0',['abortMeasurementFlag',['../globals_8h.html#a56a0b51ce8cb739bbe004304d2f11417',1,'abortMeasurementFlag:&#160;globals.c'],['../globals_8c.html#a56a0b51ce8cb739bbe004304d2f11417',1,'abortMeasurementFlag:&#160;globals.c']]],
   ['acamcnt_1',['aCAMCNT',['../structglobal__vars.html#a21aa69ce2abaaeff36d00690813bc52c',1,'global_vars::aCAMCNT'],['../globals_8h.html#aa47c9ba40b0a58248c558d2f83902939',1,'aCAMCNT:&#160;globals.c'],['../globals_8c.html#aa47c9ba40b0a58248c558d2f83902939',1,'aCAMCNT:&#160;globals.c']]],
   ['adc_5fcustom_5fpattern_2',['adc_custom_pattern',['../structcamera__settings.html#a54be4b6539b096109c43abdf0a489fb7',1,'camera_settings']]],
   ['adc_5fgain_3',['adc_gain',['../structcamera__settings.html#a41cdd5f01634be12f124d513081a1249',1,'camera_settings']]],
