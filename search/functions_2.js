@@ -32,5 +32,7 @@ var searchData=
   ['converterrorcodetomsg_29',['ConvertErrorCodeToMsg',['../es__status__codes_8h.html#a8a8ec78a4c9848d7ee63d93b71a41208',1,'ConvertErrorCodeToMsg(es_status_codes status):&#160;es_status_codes.c'],['../es__status__codes_8c.html#a8a8ec78a4c9848d7ee63d93b71a41208',1,'ConvertErrorCodeToMsg(es_status_codes status):&#160;es_status_codes.c']]],
   ['converttickstomicroseconds_30',['ConvertTicksToMicroseconds',['../_board__ll_8c.html#ad8e9a499c65feb42895a725c33adf23a',1,'Board_ll.c']]],
   ['copyrestdata_31',['copyRestData',['../_board__ll_8c.html#a19a74d50b17830b71a1ab6d5d726649d',1,'Board_ll.c']]],
-  ['countblocksbyhardware_32',['countBlocksByHardware',['../_board_8c.html#a32728c700f4e2059f724cbe5b0dbc018',1,'Board.c']]]
+  ['countblocksbyhardware_32',['countBlocksByHardware',['../_board_8c.html#a32728c700f4e2059f724cbe5b0dbc018',1,'Board.c']]],
+  ['createnumericattribute_33',['CreateNumericAttribute',['../_board_8c.html#aaf5f6c41d5922993482befffb61cd9fa',1,'Board.c']]],
+  ['createstringattribute_34',['CreateStringAttribute',['../_board_8c.html#a2f8407c57437d3f2fc6a88f189b3036d',1,'Board.c']]]
 ];
