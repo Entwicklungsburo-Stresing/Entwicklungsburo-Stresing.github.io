@@ -644,10 +644,10 @@ Functions</h2></td></tr>
 <tr class="separator:a5edd99b739fb068476098402846c48f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4fd118ce080ea51f71efa71d74320b7" id="r_aa4fd118ce080ea51f71efa71d74320b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4fd118ce080ea51f71efa71d74320b7">ExportMeasurementHDF5</a> ()</td></tr>
 <tr class="separator:aa4fd118ce080ea51f71efa71d74320b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf5f6c41d5922993482befffb61cd9fa" id="r_aaf5f6c41d5922993482befffb61cd9fa"><td class="memItemLeft" align="right" valign="top">hid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf5f6c41d5922993482befffb61cd9fa">CreateNumericAttribute</a> (hid_t object_id, char *attr_name, hid_t attr_type)</td></tr>
-<tr class="separator:aaf5f6c41d5922993482befffb61cd9fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f8407c57437d3f2fc6a88f189b3036d" id="r_a2f8407c57437d3f2fc6a88f189b3036d"><td class="memItemLeft" align="right" valign="top">hid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f8407c57437d3f2fc6a88f189b3036d">CreateStringAttribute</a> (hid_t object_id, char *attr_name, hid_t attr_type, herr_t status)</td></tr>
-<tr class="separator:a2f8407c57437d3f2fc6a88f189b3036d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91c7d2b275b3a0c3847ec1e79e9f51da" id="r_a91c7d2b275b3a0c3847ec1e79e9f51da"><td class="memItemLeft" align="right" valign="top">hid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91c7d2b275b3a0c3847ec1e79e9f51da">CreateNumericAttribute</a> (hid_t parent_object_id, char *attr_name, hid_t goal_type, hid_t dataspace, const void *data)</td></tr>
+<tr class="separator:a91c7d2b275b3a0c3847ec1e79e9f51da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03b639d2c93b877594b4e86c2878a9c7" id="r_a03b639d2c93b877594b4e86c2878a9c7"><td class="memItemLeft" align="right" valign="top">hid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03b639d2c93b877594b4e86c2878a9c7">CreateStringAttribute</a> (hid_t parent_object_id, char *attr_name, hid_t dataspace, const void *data)</td></tr>
+<tr class="separator:a03b639d2c93b877594b4e86c2878a9c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aa28480bfa03957b4f284c13e800ca8b0" name="aa28480bfa03957b4f284c13e800ca8b0"></a>
@@ -1840,8 +1840,8 @@ es_status_codes<ul>
 
 </div>
 </div>
-<a id="aaf5f6c41d5922993482befffb61cd9fa" name="aaf5f6c41d5922993482befffb61cd9fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf5f6c41d5922993482befffb61cd9fa">&#9670;&#160;</a></span>CreateNumericAttribute()</h2>
+<a id="a91c7d2b275b3a0c3847ec1e79e9f51da" name="a91c7d2b275b3a0c3847ec1e79e9f51da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91c7d2b275b3a0c3847ec1e79e9f51da">&#9670;&#160;</a></span>CreateNumericAttribute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1849,7 +1849,7 @@ es_status_codes<ul>
         <tr>
           <td class="memname">hid_t CreateNumericAttribute </td>
           <td>(</td>
-          <td class="paramtype">hid_t</td>          <td class="paramname"><span class="paramname"><em>object_id</em>, </span></td>
+          <td class="paramtype">hid_t</td>          <td class="paramname"><span class="paramname"><em>parent_object_id</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1859,15 +1859,25 @@ es_status_codes<ul>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">hid_t</td>          <td class="paramname"><span class="paramname"><em>attr_type</em></span>&#160;)</td>
+          <td class="paramtype">hid_t</td>          <td class="paramname"><span class="paramname"><em>goal_type</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">hid_t</td>          <td class="paramname"><span class="paramname"><em>dataspace</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a2f8407c57437d3f2fc6a88f189b3036d" name="a2f8407c57437d3f2fc6a88f189b3036d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f8407c57437d3f2fc6a88f189b3036d">&#9670;&#160;</a></span>CreateStringAttribute()</h2>
+<a id="a03b639d2c93b877594b4e86c2878a9c7" name="a03b639d2c93b877594b4e86c2878a9c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03b639d2c93b877594b4e86c2878a9c7">&#9670;&#160;</a></span>CreateStringAttribute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1875,7 +1885,7 @@ es_status_codes<ul>
         <tr>
           <td class="memname">hid_t CreateStringAttribute </td>
           <td>(</td>
-          <td class="paramtype">hid_t</td>          <td class="paramname"><span class="paramname"><em>object_id</em>, </span></td>
+          <td class="paramtype">hid_t</td>          <td class="paramname"><span class="paramname"><em>parent_object_id</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1885,12 +1895,12 @@ es_status_codes<ul>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">hid_t</td>          <td class="paramname"><span class="paramname"><em>attr_type</em>, </span></td>
+          <td class="paramtype">hid_t</td>          <td class="paramname"><span class="paramname"><em>dataspace</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">herr_t</td>          <td class="paramname"><span class="paramname"><em>status</em></span>&#160;)</td>
+          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
