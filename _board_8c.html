@@ -5400,7 +5400,12 @@ with frame rate 8kHz = min. 125µs exp time
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
-    <tr><td class="paramname">datin10ns</td><td>Time in 10 ns steps. </td></tr>
+    <tr><td class="paramname">datin10ns</td><td>Time in 10 ns steps. 31 bit.<ul>
+<li>disable: 0</li>
+<li>min: 1 * 10 ns = 10 ns.</li>
+<li>max: 2.147.483.647 * 10 ns = 21.474.836.470 ns = 21,474836470 s </li>
+</ul>
+</td></tr>
   </table>
   </dd>
 </dl>
@@ -5721,7 +5726,7 @@ with frame rate 8kHz = min. 125µs exp time
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
-    <tr><td class="paramname">btime_in_microseconds</td><td>Block time in microseconds. </td></tr>
+    <tr><td class="paramname">btime_in_microseconds</td><td>Block time in microseconds, 28 bit. Min: 1 us, Max: 268.435.455 us = 268,435.455 s </td></tr>
   </table>
   </dd>
 </dl>
@@ -6349,7 +6354,12 @@ with frame rate 8kHz = min. 125µs exp time
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
-    <tr><td class="paramname">datin10ns</td><td>Time in 10 ns steps. </td></tr>
+    <tr><td class="paramname">datin10ns</td><td>Time in 10 ns steps. 31 bit.<ul>
+<li>disable: 0</li>
+<li>min: 1 * 10 ns = 10 ns.</li>
+<li>max: 2.147.483.647 * 10 ns = 21.474.836.470 ns = 21,474836470 s </li>
+</ul>
+</td></tr>
   </table>
   </dd>
 </dl>
@@ -6545,7 +6555,7 @@ with frame rate 8kHz = min. 125µs exp time
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
-    <tr><td class="paramname">stime_in_microseconds</td><td>Scan time in microseconds. </td></tr>
+    <tr><td class="paramname">stime_in_microseconds</td><td>Scan time in microseconds, 28 bit. Min: 1 us, Max: 268.435.455 us = 268,435.455 s </td></tr>
   </table>
   </dd>
 </dl>
@@ -7038,7 +7048,12 @@ with frame rate 8kHz = min. 125µs exp time
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
-    <tr><td class="paramname">xckdelay_in_10ns</td><td>XCK delay </td></tr>
+    <tr><td class="paramname">xckdelay_in_10ns</td><td>XCK delay, 31 bit. xckdelay = 500ns + xckdelay_in_10ns * 10ns<ul>
+<li>disable: 0</li>
+<li>min 1: 500 ns + 1 * 10ns = 510 ns</li>
+<li>max 2.147.483.647: 500 ns + 2.147.483.647 * 10 ns = 21.474.836.970 ns = 21,474.836.970 s </li>
+</ul>
+</td></tr>
   </table>
   </dd>
 </dl>

@@ -3588,7 +3588,7 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
-    <tr><td class="paramname">btime_in_microseconds</td><td>Block time in microseconds. </td></tr>
+    <tr><td class="paramname">btime_in_microseconds</td><td>Block time in microseconds, 28 bit. Min: 1 us, Max: 268.435.455 us = 268,435.455 s </td></tr>
   </table>
   </dd>
 </dl>
@@ -3789,7 +3789,7 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
-    <tr><td class="paramname">stime_in_microseconds</td><td>Scan time in microseconds. </td></tr>
+    <tr><td class="paramname">stime_in_microseconds</td><td>Scan time in microseconds, 28 bit. Min: 1 us, Max: 268.435.455 us = 268,435.455 s </td></tr>
   </table>
   </dd>
 </dl>
