@@ -21,7 +21,7 @@ var searchData=
   ['writeregister_5f16_18',['writeRegister_16',['../_board__ll_8c.html#a4a67af48123d25eece052a2c9503cf9a',1,'Board_ll.c']]],
   ['writeregister_5f32_19',['writeRegister_32',['../_board__ll_8c.html#a05e06f7decfb688dd1bd3973780b1267',1,'Board_ll.c']]],
   ['writeregister_5f32_5fallboards_20',['writeRegister_32_allBoards',['../_board_8c.html#a54a6ee6701e43cbd1aabb6812369f0b0',1,'Board.c']]],
-  ['writeregister_5f8_21',['writeRegister_8',['../_board__ll_8c.html#a15171e3a1ce84bcc817dde285adf24bb',1,'Board_ll.c']]],
+  ['writeregister_5f8_21',['writeRegister_8',['../_board__ll_8c.html#a88d9ded31396c94d406939124933fd81',1,'Board_ll.c']]],
   ['writeregister_5f8_5fallboards_22',['writeRegister_8_allBoards',['../_board_8c.html#ac0af70b2d7568d3fbd865a285073b011',1,'Board.c']]],
   ['writeregisterdma_5f32_23',['writeRegisterDma_32',['../_board_8c.html#ae5171b3834452da70a5260fccb6b1b0c',1,'Board.c']]],
   ['writeregisterdma_5f8_24',['writeRegisterDma_8',['../_board_8c.html#a816be708db585b0c7b3b302db20ec980',1,'Board.c']]],
