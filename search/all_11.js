@@ -100,7 +100,7 @@ var searchData=
   ['tor_5fvon_97',['tor_von',['../enum__settings_8h.html#a34afd11285290b35c0f65d59c163fafaa2d419ba318dc5b5f9448de0bbbce1ff3',1,'enum_settings.h']]],
   ['tor_5fxck_98',['tor_xck',['../enum__settings_8h.html#a34afd11285290b35c0f65d59c163fafaa0d6cce4d48bfa7c8e815fee3645b243a',1,'enum_settings.h']]],
   ['trigger_3a_99',['external Trigger:',['../index.html#autotoc_md8',1,'']]],
-  ['trigger_5fmode_5fcc_100',['trigger_mode_cc',['../structcamera__settings.html#a8970bc7451430f3f980021da1d74f2cd',1,'camera_settings']]],
+  ['trigger_5fmode_5fintegrator_100',['trigger_mode_integrator',['../structcamera__settings.html#a81d92a0475fbf332ef99de9748d6b197',1,'camera_settings']]],
   ['trigger_5fmode_5ft_101',['trigger_mode_t',['../enum__settings_8h.html#a6d33f21be3f0c5cf91c5d638e8aca086',1,'enum_settings.h']]],
   ['type_102',['SENSOR TYPE',['../index.html#autotoc_md11',1,'']]]
 ];

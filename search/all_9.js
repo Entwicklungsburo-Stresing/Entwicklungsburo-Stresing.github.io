@@ -46,7 +46,7 @@ var searchData=
   ['irqflags_5fbitindex_5fhwdreq_5fen_43',['IRQFLAGS_bitindex_HWDREQ_EN',['../enum__hardware_8h.html#a0199b3f69358efb164ecab6cf03499a6abda0c69e7d5d33a715999714134c5ea6',1,'enum_hardware.h']]],
   ['irqflags_5fbitindex_5fintrsr_44',['IRQFLAGS_bitindex_INTRSR',['../enum__hardware_8h.html#a0199b3f69358efb164ecab6cf03499a6a2035995198a202a130625ad96aa76b38',1,'enum_hardware.h']]],
   ['irqflags_5fbits_5ft_45',['IRQFLAGS_bits_t',['../enum__hardware_8h.html#a0199b3f69358efb164ecab6cf03499a6',1,'enum_hardware.h']]],
-  ['is_5fcooled_5fcam_46',['is_cooled_cam',['../structcamera__settings.html#a736814da511a5a55f18739b76415fa74',1,'camera_settings']]],
+  ['is_5fcooled_5fcamera_5flegacy_5fmode_46',['is_cooled_camera_legacy_mode',['../structcamera__settings.html#a12d482c6345afb2116315167cf04b42d',1,'camera_settings']]],
   ['is_5ffft_5flegacy_47',['is_fft_legacy',['../structcamera__settings.html#a3b126accc9d7980b594d7256f767e1cb',1,'camera_settings']]],
   ['is_5fhs_5fir_48',['is_hs_ir',['../structcamera__settings.html#abcd8b239d6e3ba9fea8fc908b44a77d2',1,'camera_settings']]],
   ['isblockon_49',['isBlockOn',['../_board_8c.html#af78b4018fa3efb26bfd7a4b35a1f7f21',1,'Board.c']]],
