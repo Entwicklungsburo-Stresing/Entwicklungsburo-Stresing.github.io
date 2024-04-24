@@ -514,9 +514,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aad31f000666d013342cff25b91bb69c4" id="r_aad31f000666d013342cff25b91bb69c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad31f000666d013342cff25b91bb69c4">waitForBlockReady</a> (uint32_t board_sel)</td></tr>
 <tr class="memdesc:aad31f000666d013342cff25b91bb69c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns when block on bit is 0.  <br /></td></tr>
 <tr class="separator:aad31f000666d013342cff25b91bb69c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0ce5c69a608f540ed7d4d83f280abb0" id="r_ac0ce5c69a608f540ed7d4d83f280abb0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0ce5c69a608f540ed7d4d83f280abb0">waitForMeasureReady</a> (uint32_t board_sel)</td></tr>
-<tr class="memdesc:ac0ce5c69a608f540ed7d4d83f280abb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns when measure on bit is 0.  <br /></td></tr>
-<tr class="separator:ac0ce5c69a608f540ed7d4d83f280abb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a769b4e67586622ab7f3138aa9673749c" id="r_a769b4e67586622ab7f3138aa9673749c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a769b4e67586622ab7f3138aa9673749c">WaitForMeasureReady</a> (uint32_t board_sel)</td></tr>
+<tr class="memdesc:a769b4e67586622ab7f3138aa9673749c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns when measure on bit is 0.  <br /></td></tr>
+<tr class="separator:a769b4e67586622ab7f3138aa9673749c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5376fb1733148fc9043d48edd8824101" id="r_a5376fb1733148fc9043d48edd8824101"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5376fb1733148fc9043d48edd8824101">dumpS0Registers</a> (uint32_t drvno, char **stringPtr)</td></tr>
 <tr class="separator:a5376fb1733148fc9043d48edd8824101"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f0bbf531076c540599364fb772d1513" id="r_a4f0bbf531076c540599364fb772d1513"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f0bbf531076c540599364fb772d1513">dumpHumanReadableS0Registers</a> (uint32_t drvno, char **stringPtr)</td></tr>
@@ -900,7 +900,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Calculate the theoretical time needed for one measurement. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>nos * nob * exposure_time_in_ms / 1000 </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nos</td><td>number of samples </td></tr>
     <tr><td class="paramname">nob</td><td>number of blocks </td></tr>
@@ -5290,6 +5290,7 @@ with frame rate 8kHz = min. 125µs exp time
 </div><div class="memdoc">
 
 <p>Sets abortMeasurementFlag to true. </p>
+<p>Use this function if the measurement is running and you want to stop it.</p>
 <dl class="section return"><dt>Returns</dt><dd>es_no_error </dd></dl>
 
 </div>
@@ -7276,14 +7277,14 @@ with frame rate 8kHz = min. 125µs exp time
 
 </div>
 </div>
-<a id="ac0ce5c69a608f540ed7d4d83f280abb0" name="ac0ce5c69a608f540ed7d4d83f280abb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0ce5c69a608f540ed7d4d83f280abb0">&#9670;&#160;</a></span>waitForMeasureReady()</h2>
+<a id="a769b4e67586622ab7f3138aa9673749c" name="a769b4e67586622ab7f3138aa9673749c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a769b4e67586622ab7f3138aa9673749c">&#9670;&#160;</a></span>WaitForMeasureReady()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> waitForMeasureReady </td>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> WaitForMeasureReady </td>
           <td>(</td>
           <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>board_sel</em></span></td><td>)</td>
           <td></td>

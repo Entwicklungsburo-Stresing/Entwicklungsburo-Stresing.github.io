@@ -143,10 +143,19 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a1d179386b40162fc96b96c12da077dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0199b3f69358efb164ecab6cf03499a6" id="r_a0199b3f69358efb164ecab6cf03499a6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0199b3f69358efb164ecab6cf03499a6">IRQFLAGS_bits_t</a> { <a class="el" href="#a0199b3f69358efb164ecab6cf03499a6abda0c69e7d5d33a715999714134c5ea6">IRQFLAGS_bitindex_HWDREQ_EN</a> = 30
-, <a class="el" href="#a0199b3f69358efb164ecab6cf03499a6a2035995198a202a130625ad96aa76b38">IRQFLAGS_bitindex_INTRSR</a> = 31
+<tr class="memitem:a112bb7cac94f9939207725ea4c525e5c" id="r_a112bb7cac94f9939207725ea4c525e5c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a112bb7cac94f9939207725ea4c525e5c">IRQREG_bits_t</a> { <br />
+&#160;&#160;<a class="el" href="#a112bb7cac94f9939207725ea4c525e5ca3158ddce3bbed45acf43a656344e9adf">IRQREG_bitindex_IRQLAT</a> = 0
+, <a class="el" href="#a112bb7cac94f9939207725ea4c525e5ca029bd704f9d2a2a521ed46734907bbe5">IRQREG_bitindex_IRQCNT</a> = 16
+, <a class="el" href="#a112bb7cac94f9939207725ea4c525e5cabd72106365282db1a5cfb52d5ef65c79">IRQREG_bitindex_HWDREQ_EN</a> = 30
+, <a class="el" href="#a112bb7cac94f9939207725ea4c525e5ca292c1a1bfd831c4206c55a67d24294f1">IRQREG_bitindex_INTRSR</a> = 31
+, <br />
+&#160;&#160;<a class="el" href="#a112bb7cac94f9939207725ea4c525e5ca49ba870bec2b3ed45fb745cb794954ea">IRQREG_bits_IRQLAT</a> = 0x0000FFFF
+, <a class="el" href="#a112bb7cac94f9939207725ea4c525e5ca50277dd8973996f226679a5c19b67eb5">IRQREG_bits_IRQCNT</a> = 0x3FFF0000
+, <a class="el" href="#a112bb7cac94f9939207725ea4c525e5cad334ccdff82ca28487415cc57ad57f63">IRQREG_bit_HWDREQ_EN</a> = 0x40000000
+, <a class="el" href="#a112bb7cac94f9939207725ea4c525e5ca0a9dbc23cb33075789bef247eb4b6dde">IRQREG_bit_INTRSR</a> = 0x80000000
+<br />
  }</td></tr>
-<tr class="separator:a0199b3f69358efb164ecab6cf03499a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a112bb7cac94f9939207725ea4c525e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40f704477b6237468213735f0196cedb" id="r_a40f704477b6237468213735f0196cedb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40f704477b6237468213735f0196cedb">CTRLB_bits_t</a> { <br />
 &#160;&#160;<a class="el" href="#a40f704477b6237468213735f0196cedba3d7ce82ad81be7fee3b2d336e0457cbf">CTRLB_bit_STI0</a> = 0x01
 , <a class="el" href="#a40f704477b6237468213735f0196cedbadc0c05e0b4b54652b08fcd2b8d57e7f4">CTRLB_bit_STI1</a> = 0x02
@@ -178,8 +187,8 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="#a16a9c51efaf467545e55657c20b42a0ca8391e1226556ca6e01bab92c69674d5b">CTRLA_bit_BOTH_SLOPE</a> = 0x10
 , <a class="el" href="#a16a9c51efaf467545e55657c20b42a0ca61bbfd49659db2e08190955d853757c0">CTRLA_bit_SLOPE</a> = 0x20
-, <a class="el" href="#a16a9c51efaf467545e55657c20b42a0cad0c80b26260c3b1704100005386c65bc">CTRLA_bit_DIR_TRIGIN</a> = 0x40
-, <a class="el" href="#a16a9c51efaf467545e55657c20b42a0ca9521c2866b71c57758ab22fcce9d31eb">CTRLA_bit_TSTART</a> = 0x80
+, <a class="el" href="#a16a9c51efaf467545e55657c20b42a0ca15ad2e3ff608090feb1755c3d0dd6a26">CTRLA_bit_STRIGIN</a> = 0x40
+, <a class="el" href="#a16a9c51efaf467545e55657c20b42a0ca510eb591eacb10c0fd6d80224a5d4ffe">CTRLA_bit_BSTART</a> = 0x80
 , <br />
 &#160;&#160;<a class="el" href="#a16a9c51efaf467545e55657c20b42a0ca77f5b0c2c041c67349651e00400da4c8">CTRLA_bitindex_VONOFF</a> = 0
 , <a class="el" href="#a16a9c51efaf467545e55657c20b42a0ca42d1eee94902cab6da7315d6691ea169">CTRLA_bitindex_IFC</a> = 1
@@ -188,8 +197,8 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="#a16a9c51efaf467545e55657c20b42a0ca07fe2abfda9fa20d05679085fa4fd995">CTRLA_bitindex_BOTH_SLOPE</a> = 4
 , <a class="el" href="#a16a9c51efaf467545e55657c20b42a0cad4ccfe4c1aa10eada1fdcf6de87f0b5a">CTRLA_bitindex_SLOPE</a> = 5
-, <a class="el" href="#a16a9c51efaf467545e55657c20b42a0ca57ee54a78256a22e773c16746c3e51a6">CTRLA_bitindex_DIR_TRIGIN</a> = 6
-, <a class="el" href="#a16a9c51efaf467545e55657c20b42a0ca3b7fe16ab465cf23f4713b23a9f08312">CTRLA_bitindex_TSTART</a> = 7
+, <a class="el" href="#a16a9c51efaf467545e55657c20b42a0ca2b9a5adc53dee9f6ae3bc5b01305b358">CTRLA_bitindex_STRIGIN</a> = 6
+, <a class="el" href="#a16a9c51efaf467545e55657c20b42a0ca3913b9d4f3fac001d808a0637ab878ac">CTRLA_bitindex_BSTART</a> = 7
 <br />
  }</td></tr>
 <tr class="separator:a16a9c51efaf467545e55657c20b42a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,11 +220,13 @@ Enumerations</h2></td></tr>
 <tr class="separator:a5b73895d5cad296f9fd0ae4237c4933d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a7147e6165a1546d6195f713001e590" id="r_a7a7147e6165a1546d6195f713001e590"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a7147e6165a1546d6195f713001e590">TOR_TICNT_bits_t</a> { <a class="el" href="#a7a7147e6165a1546d6195f713001e590ac5f1ccb1fffdeef41903eeeaf5d55eba">TOR_bits_TICNT</a> = 0x7F
 , <a class="el" href="#a7a7147e6165a1546d6195f713001e590ae4f196ef4d6b5cedac34eced2ef7df6e">TOR_bit_TICNT_EN</a> = 0x80
+, <a class="el" href="#a7a7147e6165a1546d6195f713001e590ae13dcb80e54fc5b07ebfe733e4655a1f">TOR_bitindex_TICNT</a> = 0
 , <a class="el" href="#a7a7147e6165a1546d6195f713001e590aa5cc4ef900ae1fc7d825804a6f81fdbf">TOR_bitindex_TICNT_EN</a> = 7
  }</td></tr>
 <tr class="separator:a7a7147e6165a1546d6195f713001e590"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a168d45dd57f1bbda9d4f6cb50f270e73" id="r_a168d45dd57f1bbda9d4f6cb50f270e73"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a168d45dd57f1bbda9d4f6cb50f270e73">TOR_TOCNT_bits_t</a> { <a class="el" href="#a168d45dd57f1bbda9d4f6cb50f270e73aa7f701d437b2cf3e9d85ccdb91bdb5bc">TOR_bits_TOCNT</a> = 0x7F
 , <a class="el" href="#a168d45dd57f1bbda9d4f6cb50f270e73a1fdad2c84f54d9b0ab534b56a9e3ba08">TOR_bit_TOCNT_EN</a> = 0x80
+, <a class="el" href="#a168d45dd57f1bbda9d4f6cb50f270e73a7222f0899a92dff81640c8df20c4c436">TOR_bitindex_TOCNT</a> = 0
 , <a class="el" href="#a168d45dd57f1bbda9d4f6cb50f270e73a1439fe1619085a967545252de3c8fb9b">TOR_bitindex_TOCNT_EN</a> = 7
  }</td></tr>
 <tr class="separator:a168d45dd57f1bbda9d4f6cb50f270e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -240,8 +251,10 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:ac3a1258fa04db205b71f72f565207db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed7f564a2634450efefa7cd7d1dfaaf2" id="r_aed7f564a2634450efefa7cd7d1dfaaf2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed7f564a2634450efefa7cd7d1dfaaf2">ARREG_bits_t</a> { <a class="el" href="#aed7f564a2634450efefa7cd7d1dfaaf2ad1ac9e5872c0ec58f209fc471d62cd17">ARREG_bitindex_partial_binning</a> = 15
+<tr class="memitem:aed7f564a2634450efefa7cd7d1dfaaf2" id="r_aed7f564a2634450efefa7cd7d1dfaaf2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed7f564a2634450efefa7cd7d1dfaaf2">ARREG_bits_t</a> { <a class="el" href="#aed7f564a2634450efefa7cd7d1dfaaf2abe7befe34f180026f8fd6a110fe890e7">ARREG_bitindex_pb_control</a> = 0
+, <a class="el" href="#aed7f564a2634450efefa7cd7d1dfaaf2ad1ac9e5872c0ec58f209fc471d62cd17">ARREG_bitindex_partial_binning</a> = 15
 , <a class="el" href="#aed7f564a2634450efefa7cd7d1dfaaf2a65f06294f6ae04b787226b8d08fd463b">ARREG_bit_pb_control</a> = 0x7FFF
+, <a class="el" href="#aed7f564a2634450efefa7cd7d1dfaaf2a9c4115a227476ab8eae543dc417d7840">ARREG_bit_partial_binning</a> = 0x8000
  }</td></tr>
 <tr class="separator:aed7f564a2634450efefa7cd7d1dfaaf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95871548cbf0bc64201636b985255292" id="r_a95871548cbf0bc64201636b985255292"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95871548cbf0bc64201636b985255292">GIOREG_bits_t</a> { <br />
@@ -264,6 +277,26 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#a95871548cbf0bc64201636b985255292a22d54e4952b3446106520871f5c479e5">GIOREG_bitindex_I6</a> = 13
 , <a class="el" href="#a95871548cbf0bc64201636b985255292a06b42f7536fc47e8afc6262056026c37">GIOREG_bitindex_I7</a> = 14
 , <a class="el" href="#a95871548cbf0bc64201636b985255292aaa05f857b6389435843e4b5b4abcc1dc">GIOREG_bitindex_I8</a> = 15
+, <br />
+&#160;&#160;<a class="el" href="#a95871548cbf0bc64201636b985255292a04619205ab0d6665655c1c2ee371c17f">GIOREG_bit_O1</a> = 0x0001
+, <a class="el" href="#a95871548cbf0bc64201636b985255292a542b905dcca7dbf47b4db71bd22cd843">GIOREG_bit_O2</a> = 0x0002
+, <a class="el" href="#a95871548cbf0bc64201636b985255292ae00821cd39ea6c240857fe45bd5f11e5">GIOREG_bit_O3</a> = 0x0004
+, <a class="el" href="#a95871548cbf0bc64201636b985255292a6b51bfb49a1539e49b1ad8e4c6fb1450">GIOREG_bit_O4</a> = 0x0008
+, <br />
+&#160;&#160;<a class="el" href="#a95871548cbf0bc64201636b985255292a2c0712cd9967a887d4c2de1c836c9e8a">GIOREG_bit_O5</a> = 0x0010
+, <a class="el" href="#a95871548cbf0bc64201636b985255292a16340b072990c3bf880b26613d972cb8">GIOREG_bit_O6</a> = 0x0020
+, <a class="el" href="#a95871548cbf0bc64201636b985255292a4209c7e38f1ac56f05161cb443009bea">GIOREG_bit_O7</a> = 0x0040
+, <a class="el" href="#a95871548cbf0bc64201636b985255292a1cd1d3c2f756954180f8371af111673a">GIOREG_bit_O8</a> = 0x0080
+, <br />
+&#160;&#160;<a class="el" href="#a95871548cbf0bc64201636b985255292a3ba64748f552e3af4ed8d158c7b81200">GIOREG_bit_I1</a> = 0x0100
+, <a class="el" href="#a95871548cbf0bc64201636b985255292a8af89fc904a519d2d71a34b442766dda">GIOREG_bit_I2</a> = 0x0200
+, <a class="el" href="#a95871548cbf0bc64201636b985255292a3affe1d5e6e12de56b4600b1dd0c674f">GIOREG_bit_I3</a> = 0x0400
+, <a class="el" href="#a95871548cbf0bc64201636b985255292a9b395134f97e3e21e28c23d711c78e08">GIOREG_bit_I4</a> = 0x0800
+, <br />
+&#160;&#160;<a class="el" href="#a95871548cbf0bc64201636b985255292a22725da6c16bfc4d06a0f4518babe1ca">GIOREG_bit_I5</a> = 0x1000
+, <a class="el" href="#a95871548cbf0bc64201636b985255292a67d5e1ddaf157cea34781d603e2f6552">GIOREG_bit_I6</a> = 0x2000
+, <a class="el" href="#a95871548cbf0bc64201636b985255292a4225e0dee121ff56f69b1a15bfc23763">GIOREG_bit_I7</a> = 0x4000
+, <a class="el" href="#a95871548cbf0bc64201636b985255292a27c64e626d3f8e1f5f25897010b30200">GIOREG_bit_I8</a> = 0x8000
 <br />
  }</td></tr>
 <tr class="separator:a95871548cbf0bc64201636b985255292"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -356,26 +389,36 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="separator:a27c45d119d78ca12b7e38e47cb02907f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae08811acd54cb095986ae911d0f988f5" id="r_ae08811acd54cb095986ae911d0f988f5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae08811acd54cb095986ae911d0f988f5">FFCTRL_bits_t</a> { <br />
-&#160;&#160;<a class="el" href="#ae08811acd54cb095986ae911d0f988f5aa217420eeb3c27100ad39c2777b4cf7b">FFCTRL_bit_SWTRIG</a> = 0x40
+&#160;&#160;<a class="el" href="#ae08811acd54cb095986ae911d0f988f5aba3caafa86767fc62e109a749687ba4c">FFCTRL_bit_block_reset</a> = 0x10
+, <a class="el" href="#ae08811acd54cb095986ae911d0f988f5af9df3ffdcc17bb320f3b12a264b46922">FFCTRL_bit_scan_reset</a> = 0x20
+, <a class="el" href="#ae08811acd54cb095986ae911d0f988f5aa217420eeb3c27100ad39c2777b4cf7b">FFCTRL_bit_SWTRIG</a> = 0x40
 , <a class="el" href="#ae08811acd54cb095986ae911d0f988f5a540c27cc9e263e9710024f3b30d755b1">FFCTRL_bit_RSFIFO</a> = 0x80
+, <br />
+&#160;&#160;<a class="el" href="#ae08811acd54cb095986ae911d0f988f5a009fed6b6baba2c93a2da8126a37ca1e">FFCTRL_bitindex_block_reset</a> = 4
+, <a class="el" href="#ae08811acd54cb095986ae911d0f988f5ac1424cb3781465c3ff533144e6d12dfd">FFCTRL_bitindex_scan_reset</a> = 5
 , <a class="el" href="#ae08811acd54cb095986ae911d0f988f5a7cbd9bd335f29b95e5897dfd57dddc81">FFCTRL_bitindex_SWTRIG</a> = 6
 , <a class="el" href="#ae08811acd54cb095986ae911d0f988f5a05e792eac1a1543313934d9f7fc7e6ae">FFCTRL_bitindex_RSFIFO</a> = 7
-, <br />
-&#160;&#160;<a class="el" href="#ae08811acd54cb095986ae911d0f988f5ac1424cb3781465c3ff533144e6d12dfd">FFCTRL_bitindex_scan_reset</a> = 5
-, <a class="el" href="#ae08811acd54cb095986ae911d0f988f5a009fed6b6baba2c93a2da8126a37ca1e">FFCTRL_bitindex_block_reset</a> = 4
 <br />
  }</td></tr>
 <tr class="separator:ae08811acd54cb095986ae911d0f988f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53140745b99b27905d690c659ef583c5" id="r_a53140745b99b27905d690c659ef583c5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53140745b99b27905d690c659ef583c5">FF_FLAGS_bits_t</a> { <br />
-&#160;&#160;<a class="el" href="#a53140745b99b27905d690c659ef583c5aab10ae456994a1cbcc8037421ac77352">FF_FLAGS_bit_control</a> = 0x08
-, <a class="el" href="#a53140745b99b27905d690c659ef583c5a9b6fa65ac13124d7d5abd69f525ee375">FF_FLAGS_bitindex_valid</a> = 7
-, <a class="el" href="#a53140745b99b27905d690c659ef583c5acdc57113a0d871c28ef624c7c0620484">FF_FLAGS_bitindex_empty</a> = 6
+&#160;&#160;<a class="el" href="#a53140745b99b27905d690c659ef583c5a3e49faac832833acdf4e17a3b35f708d">FF_FLAGS_bit_block_read</a> = 0x02
+, <a class="el" href="#a53140745b99b27905d690c659ef583c5a2d9ac425f64772f99c5e65b947ed623c">FF_FLAGS_bit_scan_read</a> = 0x04
+, <a class="el" href="#a53140745b99b27905d690c659ef583c5a20c9d5eaaa1669bf16a6c57af2dda960">FF_FLAGS_bit_overflow</a> = 0x08
+, <a class="el" href="#a53140745b99b27905d690c659ef583c5aa5339922d30d2eac82237b38f867b5b6">FF_FLAGS_bit_xcki</a> = 0x10
+, <br />
+&#160;&#160;<a class="el" href="#a53140745b99b27905d690c659ef583c5ad155c9f8560f8e20ec7d7397db3a0c9c">FF_FLAGS_bit_full</a> = 0x20
+, <a class="el" href="#a53140745b99b27905d690c659ef583c5ab19dfa81faad8c1e60fd9922703450f6">FF_FLAGS_bit_empty</a> = 0x40
+, <a class="el" href="#a53140745b99b27905d690c659ef583c5a9c9b7c705b6d70c207cdea9b86e21e6a">FF_FLAGS_bit_valid</a> = 0x80
+, <a class="el" href="#a53140745b99b27905d690c659ef583c5ab8f31dc13a3be1a34cd66d9dcc1e7a96">FF_FLAGS_bitindex_block_read</a> = 1
+, <br />
+&#160;&#160;<a class="el" href="#a53140745b99b27905d690c659ef583c5a0ceca6244d0f2579213831b756f38fcb">FF_FLAGS_bitindex_scan_read</a> = 2
+, <a class="el" href="#a53140745b99b27905d690c659ef583c5a7f35861231661fb41ef95b20b6e40805">FF_FLAGS_bitindex_overflow</a> = 3
+, <a class="el" href="#a53140745b99b27905d690c659ef583c5a754df1fe8df5957c837f703d2f50bcd5">FF_FLAGS_bitindex_xcki</a> = 4
 , <a class="el" href="#a53140745b99b27905d690c659ef583c5af6e16d1938733079b66370cda1e4e5d3">FF_FLAGS_bitindex_full</a> = 5
 , <br />
-&#160;&#160;<a class="el" href="#a53140745b99b27905d690c659ef583c5a754df1fe8df5957c837f703d2f50bcd5">FF_FLAGS_bitindex_xcki</a> = 4
-, <a class="el" href="#a53140745b99b27905d690c659ef583c5a7f35861231661fb41ef95b20b6e40805">FF_FLAGS_bitindex_overflow</a> = 3
-, <a class="el" href="#a53140745b99b27905d690c659ef583c5a0ceca6244d0f2579213831b756f38fcb">FF_FLAGS_bitindex_scan_read</a> = 2
-, <a class="el" href="#a53140745b99b27905d690c659ef583c5ab8f31dc13a3be1a34cd66d9dcc1e7a96">FF_FLAGS_bitindex_block_read</a> = 1
+&#160;&#160;<a class="el" href="#a53140745b99b27905d690c659ef583c5acdc57113a0d871c28ef624c7c0620484">FF_FLAGS_bitindex_empty</a> = 6
+, <a class="el" href="#a53140745b99b27905d690c659ef583c5a9b6fa65ac13124d7d5abd69f525ee375">FF_FLAGS_bitindex_valid</a> = 7
 <br />
  }</td></tr>
 <tr class="separator:a53140745b99b27905d690c659ef583c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -399,7 +442,10 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#a75e32fc65a7fb4b52dd4b95028820e68a071cae565749d1493a9bed1979aa52f2">VCLKFREQ_step_value</a> = 400
  }</td></tr>
 <tr class="separator:a75e32fc65a7fb4b52dd4b95028820e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb7b45efaf34feb37817a80853e4e407" id="r_aeb7b45efaf34feb37817a80853e4e407"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb7b45efaf34feb37817a80853e4e407">SDAT_bits_t</a> { <a class="el" href="#aeb7b45efaf34feb37817a80853e4e407aad05b9697233668e632b34ca22e979f6">SDAT_bit_control</a> = 0x3FFFFFFF
+<tr class="memitem:aeb7b45efaf34feb37817a80853e4e407" id="r_aeb7b45efaf34feb37817a80853e4e407"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb7b45efaf34feb37817a80853e4e407">SDAT_bits_t</a> { <a class="el" href="#aeb7b45efaf34feb37817a80853e4e407a0d2588fb5071d6fb8d6ea4c5c2e33177">SDAT_bitindex_control</a> = 0
+, <a class="el" href="#aeb7b45efaf34feb37817a80853e4e407a739a8f71d7effe3563d27043ac24621a">SDAT_bitindex_enable</a> = 31
+, <a class="el" href="#aeb7b45efaf34feb37817a80853e4e407aad05b9697233668e632b34ca22e979f6">SDAT_bit_control</a> = 0x7FFFFFFF
+, <a class="el" href="#aeb7b45efaf34feb37817a80853e4e407a3a1524d76811e3f704b90f7edd01e059">SDAT_bit_enable</a> = 0x80000000
  }</td></tr>
 <tr class="separator:aeb7b45efaf34feb37817a80853e4e407"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1532e8504727e103db7ec69af3330f15" id="r_a1532e8504727e103db7ec69af3330f15"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1532e8504727e103db7ec69af3330f15">s0_addresses_t</a> { <br />
@@ -408,88 +454,83 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a55ddf95750d0fb8fd591f9eb5250c435">S0Addr_CTRLB</a> = 0x5
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a355c3c7759568e6a38ca2a30ae4ea9ae">S0Addr_CTRLC</a> = 0x6
 , <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a5a4a0b47fc2c90be1dd8f89876ab24ed">S0Addr_XCKLL</a> = 0x8
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a8593fef5ac9aeb92063b2723e69c58a9">S0Addr_XCKLH</a> = 0x9
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15af0dc7e44c4031dc2848b19ce655855d9">S0Addr_XCKHL</a> = 0xa
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15abb9e16660cbf04b1eef25fc2c6174235">S0Addr_XCKMSB</a> = 0xb
-, <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a812d9f7222dd8d645036db834dd31d5e">S0Addr_XCKCNTLL</a> = 0xc
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a0eb2924587680def837a9d8b1cb50748">S0Addr_XCKCNTLH</a> = 0xd
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a349b3e6118458c1f0286904e31f5ecfa">S0Addr_XCKCNTHL</a> = 0xe
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a8305294cf95e9bb1cefc09eac3975536">S0Addr_XCKCNTMSB</a> = 0xf
-, <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15aba5e439b33e451de3056cef217230d43">S0Addr_PIXREGlow</a> = 0x10
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15aef8e135a1387f923e14d3c4df9d71aae">S0Addr_PIXREGhigh</a> = 0x11
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a98df8a150bdf53444398610282d23964">S0Addr_XCK</a> = 0x8
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a07043531144f42f4798f561b7bd4f3ee">S0Addr_XCKCNT</a> = 0xc
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a933d1a284e67b99640185c820889ede8">S0Addr_PIXREG</a> = 0x10
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a4dfe7df582c940fec4eeb2b79249889e">S0Addr_FFCTRL</a> = 0x12
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a7fc6890c6412ef3feb5de2c7f6e6543f">S0Addr_FF_FLAGS</a> = 0x13
 , <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15ac48ebcaa94f4907b247c75c79beb65e8">S0Addr_FIFOCNT</a> = 0x14
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a7fc6890c6412ef3feb5de2c7f6e6543f">S0Addr_FF_FLAGS</a> = 0x13
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15ac48ebcaa94f4907b247c75c79beb65e8">S0Addr_FIFOCNT</a> = 0x14
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15ae0a26511de69a75dea30c5ca7c82000c">S0Addr_VCLKCTRL</a> = 0x18
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a09c2ee0bcbe404ef15319ad03b1dee74">S0Addr_VCLKFREQ</a> = 0x1b
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a111e90b9677ebe361c5b591d9aa60d5f">S0Addr_EBST</a> = 0x1C
 , <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a1dec93b42179bc51c514f5b7aded4f00">S0Addr_SDAT</a> = 0x20
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a111e90b9677ebe361c5b591d9aa60d5f">S0Addr_EBST</a> = 0x1C
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a1dec93b42179bc51c514f5b7aded4f00">S0Addr_SDAT</a> = 0x20
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15ad2421bfacc7fedf71aff14ee44d2f091">S0Addr_SEC</a> = 0x24
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a3e4d1cef7acb0e5fe5452bebb5e9a55f">S0Addr_TOR_TICNT</a> = 0x28
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a47befeff86debd28e4ca974cc718a713">S0Addr_TOR_TOCNT</a> = 0x2A
 , <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15acfef23d8fcc664d4c935386da5aec095">S0Addr_TOR_MSB</a> = 0x2B
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a47befeff86debd28e4ca974cc718a713">S0Addr_TOR_TOCNT</a> = 0x2A
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15acfef23d8fcc664d4c935386da5aec095">S0Addr_TOR_MSB</a> = 0x2B
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15aabc08a57cbf052ab2e6c22b5a29633bb">S0Addr_ARREG</a> = 0x2C
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a734540f1db03bbe872ea40437117b5ba">S0Addr_GIOREG</a> = 0x30
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a7e75fa28f410292e735d90d4546fc2dd">S0Addr_DELAYEC</a> = 0x34
 , <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a4237fbee2f68fb8dae30ba8e5ccb53bb">S0Addr_IRQREG</a> = 0x38
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a7e75fa28f410292e735d90d4546fc2dd">S0Addr_DELAYEC</a> = 0x34
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a4237fbee2f68fb8dae30ba8e5ccb53bb">S0Addr_IRQREG</a> = 0x38
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15ab3fcf2c581c776aa334545063188b05d">S0Addr_PCI</a> = 0x3C
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a641c76a6ee11cb383280b61e5835c9df">S0Addr_PCIEFLAGS</a> = 0x40
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15ae59d8bd282f5300cf261852266c669bd">S0Addr_NOS</a> = 0x44
 , <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a68a15933623375e32ed031e35474bebe">S0Addr_ScanIndex</a> = 0x48
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15ae59d8bd282f5300cf261852266c669bd">S0Addr_NOS</a> = 0x44
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a68a15933623375e32ed031e35474bebe">S0Addr_ScanIndex</a> = 0x48
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15ab2f520ca22b8687c136dc305cd158224">S0Addr_DmaBufSizeInScans</a> = 0x04C
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15ab770119263ac35baaf83b1a6b7455a49">S0Addr_DMAsPerIntr</a> = 0x050
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a986f13181bdd9b9f8042e6635f4f0a88">S0Addr_NOB</a> = 0x054
 , <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a69967c36eba1a549af5ffad498763569">S0Addr_BLOCKINDEX</a> = 0x058
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a986f13181bdd9b9f8042e6635f4f0a88">S0Addr_NOB</a> = 0x054
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a69967c36eba1a549af5ffad498763569">S0Addr_BLOCKINDEX</a> = 0x058
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15aac4437a46ca21e4deef1c268bfb4125a">S0Addr_CAMCNT</a> = 0x05C
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15afcd7149a9ab848b4f9edcad2817b703a">S0Addr_TDCCtrl</a> = 0x60
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a2479e701a6d7d1b9bcf4ca332c819744">S0Addr_TDCData</a> = 0x64
 , <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15aeca5912c22e597a19d4f705047975004">S0Addr_ROI0</a> = 0x68
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a2479e701a6d7d1b9bcf4ca332c819744">S0Addr_TDCData</a> = 0x64
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15aeca5912c22e597a19d4f705047975004">S0Addr_ROI0</a> = 0x68
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a176cd778e5b7d876f213b7c79e5c9d71">S0Addr_ROI1</a> = 0x6C
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a1dab81075455293fdbcb79a572f4b6ae">S0Addr_ROI2</a> = 0x70
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a65c4baa42bc76c84cd5dc8d62adb5c90">S0Addr_XCKDLY</a> = 0x74
 , <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a91a13f75aa5d2421cf5ca3d5331f59c6">S0Addr_S1S2ReadDelay</a> = 0x78
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a65c4baa42bc76c84cd5dc8d62adb5c90">S0Addr_XCKDLY</a> = 0x74
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a91a13f75aa5d2421cf5ca3d5331f59c6">S0Addr_S1S2ReadDelay</a> = 0x78
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a2bd680f1828bf9d0ee53844acb00445f">S0Addr_BTIMER</a> = 0x80
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a89961a01eb14d4a1127c2dccf555ece4">S0Addr_BDAT</a> = 0x84
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a57598380c7dc26dd4eac60c6ad31af2b">S0Addr_BEC</a> = 0x88
 , <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a423efe4e77fad563ab80d4cdd119afb2">S0Addr_BSLOPE</a> = 0x8C
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a57598380c7dc26dd4eac60c6ad31af2b">S0Addr_BEC</a> = 0x88
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a423efe4e77fad563ab80d4cdd119afb2">S0Addr_BSLOPE</a> = 0x8C
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15ae14b9028dc1dc4fda2c7fe4759c8a67a">S0Addr_A1DSC</a> = 0x90
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a263993c3f1f0db647a8a0dc89cd189fd">S0Addr_L1DSC</a> = 0x94
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a6a5fda123f2cce6999ba25696fb21a06">S0Addr_A2DSC</a> = 0x98
 , <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a08a527a8c1f3fa956c71a10f192ebd78">S0Addr_L2DSC</a> = 0x9C
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a6a5fda123f2cce6999ba25696fb21a06">S0Addr_A2DSC</a> = 0x98
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a08a527a8c1f3fa956c71a10f192ebd78">S0Addr_L2DSC</a> = 0x9C
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a58edd27073d3ec775b8a9879e01f216c">S0Addr_ATDC2</a> = 0xA0
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a9781827ddd301baf671526915bfbc6db">S0Addr_LTDC2</a> = 0xA4
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15adf8bc35ff652d8c514bba71d814ee9a6">S0Addr_DSCCtrl</a> = 0xA8
 , <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a41e8c3797e6933e36ebfd5d092279149">S0Addr_DAC</a> = 0xAC
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15adf8bc35ff652d8c514bba71d814ee9a6">S0Addr_DSCCtrl</a> = 0xA8
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a41e8c3797e6933e36ebfd5d092279149">S0Addr_DAC</a> = 0xAC
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a97590c3dc08198b5edc60c2f9b665eef">S0Addr_CAMSTATUS12</a> = 0xB0
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a31907db69f74e39041a3213a6d6a49c6">S0Addr_CAMSTATUS34</a> = 0xB4
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a0694822028f927970ffbd57a0c8a6705">S0Addr_CAMERA_TYPE</a> = 0xB8
+, <br />
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a0694822028f927970ffbd57a0c8a6705">S0Addr_CAMERA_TYPE</a> = 0xB8
 <br />
  }</td></tr>
 <tr class="separator:a1532e8504727e103db7ec69af3330f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dc06a244ac6282e55991ad6c6356dbb" id="r_a1dc06a244ac6282e55991ad6c6356dbb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbb">XCK_bits_t</a> { <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba0bc8a2147c20581653dc26a10c74745b">XCK_stimer_bitindex</a> = 0
-, <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba00638f58e9cb5f41da3e523fb3b697ca">XCK_stimer_bits</a> = 0x0FFFFFFF
+<tr class="memitem:a1dc06a244ac6282e55991ad6c6356dbb" id="r_a1dc06a244ac6282e55991ad6c6356dbb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbb">XCK_bits_t</a> { <br />
+&#160;&#160;<a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbbaeab83a971a1b447f73efdf8edd7a0f63">XCK_bitindex_stimer</a> = 0
+, <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba35c892387f6d148bc503e6c034e60c0a">XCK_bitindex_res_ns</a> = 28
+, <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba4117a6cf5b27885522b08861bdab34ba">XCK_bitindex_res_ms</a> = 29
+, <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba35abbf6ebc01f34a1ba8e4cdcaf34cfe">XCK_bitindex_stimer_on</a> = 30
+, <br />
+&#160;&#160;<a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba2e3e8258a6718c38ae3aca937df981de">XCK_bits_stimer</a> = 0x0FFFFFFF
+, <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba4409994ceb22261d6e96493b467a7d6a">XCK_bit_res_ns</a> = 0x10000000
+, <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbbabd957433809b3fee7a1f4db45adc53ca">XCK_bit_res_ms</a> = 0x20000000
+, <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba16cf3d1cfb4707d29f261ade7386b5a3">XCK_bit_stimer_on</a> = 0x40000000
+<br />
  }</td></tr>
 <tr class="separator:a1dc06a244ac6282e55991ad6c6356dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7edba2515104bc9df9622c38d05b5351" id="r_a7edba2515104bc9df9622c38d05b5351"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7edba2515104bc9df9622c38d05b5351">XCKMSB_bits_t</a> { <a class="el" href="#a7edba2515104bc9df9622c38d05b5351a18e5d9ae516eb2754d1bb18552b3afee">XCKMSB_bit_stimer_on</a> = 0x40
-, <a class="el" href="#a7edba2515104bc9df9622c38d05b5351a82419149bee66353fe2fddd8d59e525c">XCKMSB_bitindex_reset_ns</a> = 4
-, <a class="el" href="#a7edba2515104bc9df9622c38d05b5351a10f84c349b5965acb57e45fa3f789289">XCKMSB_bitindex_reset_ms</a> = 5
-, <a class="el" href="#a7edba2515104bc9df9622c38d05b5351a2a22b106e55b453b0192f74294e52cdc">XCKMSB_bitindex_stimer_on</a> = 6
- }</td></tr>
-<tr class="separator:a7edba2515104bc9df9622c38d05b5351"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15896ca263195923b15606bb739b92b5" id="r_a15896ca263195923b15606bb739b92b5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15896ca263195923b15606bb739b92b5">ScanIndex_bits_t</a> { <a class="el" href="#a15896ca263195923b15606bb739b92b5a6eedb129091961f6c3c48b4524bcaed5">ScanIndex_bitindex_counter_reset</a> = 31
 , <a class="el" href="#a15896ca263195923b15606bb739b92b5a4aab0ced46bc4f29dae88d9fdb67d346">ScanIndex_bit_counter_reset</a> = 0x80
  }</td></tr>
@@ -770,8 +811,10 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aed7f564a2634450efefa7cd7d1dfaaf2ad1ac9e5872c0ec58f209fc471d62cd17" name="aed7f564a2634450efefa7cd7d1dfaaf2ad1ac9e5872c0ec58f209fc471d62cd17"></a>ARREG_bitindex_partial_binning&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aed7f564a2634450efefa7cd7d1dfaaf2abe7befe34f180026f8fd6a110fe890e7" name="aed7f564a2634450efefa7cd7d1dfaaf2abe7befe34f180026f8fd6a110fe890e7"></a>ARREG_bitindex_pb_control&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aed7f564a2634450efefa7cd7d1dfaaf2ad1ac9e5872c0ec58f209fc471d62cd17" name="aed7f564a2634450efefa7cd7d1dfaaf2ad1ac9e5872c0ec58f209fc471d62cd17"></a>ARREG_bitindex_partial_binning&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aed7f564a2634450efefa7cd7d1dfaaf2a65f06294f6ae04b787226b8d08fd463b" name="aed7f564a2634450efefa7cd7d1dfaaf2a65f06294f6ae04b787226b8d08fd463b"></a>ARREG_bit_pb_control&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aed7f564a2634450efefa7cd7d1dfaaf2a9c4115a227476ab8eae543dc417d7840" name="aed7f564a2634450efefa7cd7d1dfaaf2a9c4115a227476ab8eae543dc417d7840"></a>ARREG_bit_partial_binning&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1153,8 +1196,8 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a16a9c51efaf467545e55657c20b42a0ca63370146a0b915a5b25c703416f34b96" name="a16a9c51efaf467545e55657c20b42a0ca63370146a0b915a5b25c703416f34b96"></a>CTRLA_bit_TRIG_OUT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a16a9c51efaf467545e55657c20b42a0ca8391e1226556ca6e01bab92c69674d5b" name="a16a9c51efaf467545e55657c20b42a0ca8391e1226556ca6e01bab92c69674d5b"></a>CTRLA_bit_BOTH_SLOPE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a16a9c51efaf467545e55657c20b42a0ca61bbfd49659db2e08190955d853757c0" name="a16a9c51efaf467545e55657c20b42a0ca61bbfd49659db2e08190955d853757c0"></a>CTRLA_bit_SLOPE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16a9c51efaf467545e55657c20b42a0cad0c80b26260c3b1704100005386c65bc" name="a16a9c51efaf467545e55657c20b42a0cad0c80b26260c3b1704100005386c65bc"></a>CTRLA_bit_DIR_TRIGIN&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16a9c51efaf467545e55657c20b42a0ca9521c2866b71c57758ab22fcce9d31eb" name="a16a9c51efaf467545e55657c20b42a0ca9521c2866b71c57758ab22fcce9d31eb"></a>CTRLA_bit_TSTART&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a16a9c51efaf467545e55657c20b42a0ca15ad2e3ff608090feb1755c3d0dd6a26" name="a16a9c51efaf467545e55657c20b42a0ca15ad2e3ff608090feb1755c3d0dd6a26"></a>CTRLA_bit_STRIGIN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a16a9c51efaf467545e55657c20b42a0ca510eb591eacb10c0fd6d80224a5d4ffe" name="a16a9c51efaf467545e55657c20b42a0ca510eb591eacb10c0fd6d80224a5d4ffe"></a>CTRLA_bit_BSTART&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a16a9c51efaf467545e55657c20b42a0ca77f5b0c2c041c67349651e00400da4c8" name="a16a9c51efaf467545e55657c20b42a0ca77f5b0c2c041c67349651e00400da4c8"></a>CTRLA_bitindex_VONOFF&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a16a9c51efaf467545e55657c20b42a0ca42d1eee94902cab6da7315d6691ea169" name="a16a9c51efaf467545e55657c20b42a0ca42d1eee94902cab6da7315d6691ea169"></a>CTRLA_bitindex_IFC&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a16a9c51efaf467545e55657c20b42a0ca3c0869fd8554c77e4d6ed69c174b3b86" name="a16a9c51efaf467545e55657c20b42a0ca3c0869fd8554c77e4d6ed69c174b3b86"></a>CTRLA_bitindex_XCK&#160;</td><td class="fielddoc"></td></tr>
@@ -1163,8 +1206,8 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a16a9c51efaf467545e55657c20b42a0cad4ccfe4c1aa10eada1fdcf6de87f0b5a" name="a16a9c51efaf467545e55657c20b42a0cad4ccfe4c1aa10eada1fdcf6de87f0b5a"></a>CTRLA_bitindex_SLOPE&#160;</td><td class="fielddoc"><p>0: negative slope, 1: positive slope. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a16a9c51efaf467545e55657c20b42a0ca57ee54a78256a22e773c16746c3e51a6" name="a16a9c51efaf467545e55657c20b42a0ca57ee54a78256a22e773c16746c3e51a6"></a>CTRLA_bitindex_DIR_TRIGIN&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a16a9c51efaf467545e55657c20b42a0ca3b7fe16ab465cf23f4713b23a9f08312" name="a16a9c51efaf467545e55657c20b42a0ca3b7fe16ab465cf23f4713b23a9f08312"></a>CTRLA_bitindex_TSTART&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a16a9c51efaf467545e55657c20b42a0ca2b9a5adc53dee9f6ae3bc5b01305b358" name="a16a9c51efaf467545e55657c20b42a0ca2b9a5adc53dee9f6ae3bc5b01305b358"></a>CTRLA_bitindex_STRIGIN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a16a9c51efaf467545e55657c20b42a0ca3913b9d4f3fac001d808a0637ab878ac" name="a16a9c51efaf467545e55657c20b42a0ca3913b9d4f3fac001d808a0637ab878ac"></a>CTRLA_bitindex_BSTART&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1342,14 +1385,20 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5aab10ae456994a1cbcc8037421ac77352" name="a53140745b99b27905d690c659ef583c5aab10ae456994a1cbcc8037421ac77352"></a>FF_FLAGS_bit_control&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5a9b6fa65ac13124d7d5abd69f525ee375" name="a53140745b99b27905d690c659ef583c5a9b6fa65ac13124d7d5abd69f525ee375"></a>FF_FLAGS_bitindex_valid&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5acdc57113a0d871c28ef624c7c0620484" name="a53140745b99b27905d690c659ef583c5acdc57113a0d871c28ef624c7c0620484"></a>FF_FLAGS_bitindex_empty&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5af6e16d1938733079b66370cda1e4e5d3" name="a53140745b99b27905d690c659ef583c5af6e16d1938733079b66370cda1e4e5d3"></a>FF_FLAGS_bitindex_full&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5a754df1fe8df5957c837f703d2f50bcd5" name="a53140745b99b27905d690c659ef583c5a754df1fe8df5957c837f703d2f50bcd5"></a>FF_FLAGS_bitindex_xcki&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5a7f35861231661fb41ef95b20b6e40805" name="a53140745b99b27905d690c659ef583c5a7f35861231661fb41ef95b20b6e40805"></a>FF_FLAGS_bitindex_overflow&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5a0ceca6244d0f2579213831b756f38fcb" name="a53140745b99b27905d690c659ef583c5a0ceca6244d0f2579213831b756f38fcb"></a>FF_FLAGS_bitindex_scan_read&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5a3e49faac832833acdf4e17a3b35f708d" name="a53140745b99b27905d690c659ef583c5a3e49faac832833acdf4e17a3b35f708d"></a>FF_FLAGS_bit_block_read&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5a2d9ac425f64772f99c5e65b947ed623c" name="a53140745b99b27905d690c659ef583c5a2d9ac425f64772f99c5e65b947ed623c"></a>FF_FLAGS_bit_scan_read&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5a20c9d5eaaa1669bf16a6c57af2dda960" name="a53140745b99b27905d690c659ef583c5a20c9d5eaaa1669bf16a6c57af2dda960"></a>FF_FLAGS_bit_overflow&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5aa5339922d30d2eac82237b38f867b5b6" name="a53140745b99b27905d690c659ef583c5aa5339922d30d2eac82237b38f867b5b6"></a>FF_FLAGS_bit_xcki&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5ad155c9f8560f8e20ec7d7397db3a0c9c" name="a53140745b99b27905d690c659ef583c5ad155c9f8560f8e20ec7d7397db3a0c9c"></a>FF_FLAGS_bit_full&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5ab19dfa81faad8c1e60fd9922703450f6" name="a53140745b99b27905d690c659ef583c5ab19dfa81faad8c1e60fd9922703450f6"></a>FF_FLAGS_bit_empty&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5a9c9b7c705b6d70c207cdea9b86e21e6a" name="a53140745b99b27905d690c659ef583c5a9c9b7c705b6d70c207cdea9b86e21e6a"></a>FF_FLAGS_bit_valid&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5ab8f31dc13a3be1a34cd66d9dcc1e7a96" name="a53140745b99b27905d690c659ef583c5ab8f31dc13a3be1a34cd66d9dcc1e7a96"></a>FF_FLAGS_bitindex_block_read&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5a0ceca6244d0f2579213831b756f38fcb" name="a53140745b99b27905d690c659ef583c5a0ceca6244d0f2579213831b756f38fcb"></a>FF_FLAGS_bitindex_scan_read&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5a7f35861231661fb41ef95b20b6e40805" name="a53140745b99b27905d690c659ef583c5a7f35861231661fb41ef95b20b6e40805"></a>FF_FLAGS_bitindex_overflow&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5a754df1fe8df5957c837f703d2f50bcd5" name="a53140745b99b27905d690c659ef583c5a754df1fe8df5957c837f703d2f50bcd5"></a>FF_FLAGS_bitindex_xcki&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5af6e16d1938733079b66370cda1e4e5d3" name="a53140745b99b27905d690c659ef583c5af6e16d1938733079b66370cda1e4e5d3"></a>FF_FLAGS_bitindex_full&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5acdc57113a0d871c28ef624c7c0620484" name="a53140745b99b27905d690c659ef583c5acdc57113a0d871c28ef624c7c0620484"></a>FF_FLAGS_bitindex_empty&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a53140745b99b27905d690c659ef583c5a9b6fa65ac13124d7d5abd69f525ee375" name="a53140745b99b27905d690c659ef583c5a9b6fa65ac13124d7d5abd69f525ee375"></a>FF_FLAGS_bitindex_valid&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1366,12 +1415,14 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae08811acd54cb095986ae911d0f988f5aa217420eeb3c27100ad39c2777b4cf7b" name="ae08811acd54cb095986ae911d0f988f5aa217420eeb3c27100ad39c2777b4cf7b"></a>FFCTRL_bit_SWTRIG&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae08811acd54cb095986ae911d0f988f5aba3caafa86767fc62e109a749687ba4c" name="ae08811acd54cb095986ae911d0f988f5aba3caafa86767fc62e109a749687ba4c"></a>FFCTRL_bit_block_reset&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae08811acd54cb095986ae911d0f988f5af9df3ffdcc17bb320f3b12a264b46922" name="ae08811acd54cb095986ae911d0f988f5af9df3ffdcc17bb320f3b12a264b46922"></a>FFCTRL_bit_scan_reset&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae08811acd54cb095986ae911d0f988f5aa217420eeb3c27100ad39c2777b4cf7b" name="ae08811acd54cb095986ae911d0f988f5aa217420eeb3c27100ad39c2777b4cf7b"></a>FFCTRL_bit_SWTRIG&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ae08811acd54cb095986ae911d0f988f5a540c27cc9e263e9710024f3b30d755b1" name="ae08811acd54cb095986ae911d0f988f5a540c27cc9e263e9710024f3b30d755b1"></a>FFCTRL_bit_RSFIFO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae08811acd54cb095986ae911d0f988f5a009fed6b6baba2c93a2da8126a37ca1e" name="ae08811acd54cb095986ae911d0f988f5a009fed6b6baba2c93a2da8126a37ca1e"></a>FFCTRL_bitindex_block_reset&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae08811acd54cb095986ae911d0f988f5ac1424cb3781465c3ff533144e6d12dfd" name="ae08811acd54cb095986ae911d0f988f5ac1424cb3781465c3ff533144e6d12dfd"></a>FFCTRL_bitindex_scan_reset&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ae08811acd54cb095986ae911d0f988f5a7cbd9bd335f29b95e5897dfd57dddc81" name="ae08811acd54cb095986ae911d0f988f5a7cbd9bd335f29b95e5897dfd57dddc81"></a>FFCTRL_bitindex_SWTRIG&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ae08811acd54cb095986ae911d0f988f5a05e792eac1a1543313934d9f7fc7e6ae" name="ae08811acd54cb095986ae911d0f988f5a05e792eac1a1543313934d9f7fc7e6ae"></a>FFCTRL_bitindex_RSFIFO&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae08811acd54cb095986ae911d0f988f5ac1424cb3781465c3ff533144e6d12dfd" name="ae08811acd54cb095986ae911d0f988f5ac1424cb3781465c3ff533144e6d12dfd"></a>FFCTRL_bitindex_scan_reset&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae08811acd54cb095986ae911d0f988f5a009fed6b6baba2c93a2da8126a37ca1e" name="ae08811acd54cb095986ae911d0f988f5a009fed6b6baba2c93a2da8126a37ca1e"></a>FFCTRL_bitindex_block_reset&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1428,24 +1479,46 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a95871548cbf0bc64201636b985255292a22d54e4952b3446106520871f5c479e5" name="a95871548cbf0bc64201636b985255292a22d54e4952b3446106520871f5c479e5"></a>GIOREG_bitindex_I6&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a95871548cbf0bc64201636b985255292a06b42f7536fc47e8afc6262056026c37" name="a95871548cbf0bc64201636b985255292a06b42f7536fc47e8afc6262056026c37"></a>GIOREG_bitindex_I7&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a95871548cbf0bc64201636b985255292aaa05f857b6389435843e4b5b4abcc1dc" name="a95871548cbf0bc64201636b985255292aaa05f857b6389435843e4b5b4abcc1dc"></a>GIOREG_bitindex_I8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a95871548cbf0bc64201636b985255292a04619205ab0d6665655c1c2ee371c17f" name="a95871548cbf0bc64201636b985255292a04619205ab0d6665655c1c2ee371c17f"></a>GIOREG_bit_O1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a95871548cbf0bc64201636b985255292a542b905dcca7dbf47b4db71bd22cd843" name="a95871548cbf0bc64201636b985255292a542b905dcca7dbf47b4db71bd22cd843"></a>GIOREG_bit_O2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a95871548cbf0bc64201636b985255292ae00821cd39ea6c240857fe45bd5f11e5" name="a95871548cbf0bc64201636b985255292ae00821cd39ea6c240857fe45bd5f11e5"></a>GIOREG_bit_O3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a95871548cbf0bc64201636b985255292a6b51bfb49a1539e49b1ad8e4c6fb1450" name="a95871548cbf0bc64201636b985255292a6b51bfb49a1539e49b1ad8e4c6fb1450"></a>GIOREG_bit_O4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a95871548cbf0bc64201636b985255292a2c0712cd9967a887d4c2de1c836c9e8a" name="a95871548cbf0bc64201636b985255292a2c0712cd9967a887d4c2de1c836c9e8a"></a>GIOREG_bit_O5&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a95871548cbf0bc64201636b985255292a16340b072990c3bf880b26613d972cb8" name="a95871548cbf0bc64201636b985255292a16340b072990c3bf880b26613d972cb8"></a>GIOREG_bit_O6&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a95871548cbf0bc64201636b985255292a4209c7e38f1ac56f05161cb443009bea" name="a95871548cbf0bc64201636b985255292a4209c7e38f1ac56f05161cb443009bea"></a>GIOREG_bit_O7&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a95871548cbf0bc64201636b985255292a1cd1d3c2f756954180f8371af111673a" name="a95871548cbf0bc64201636b985255292a1cd1d3c2f756954180f8371af111673a"></a>GIOREG_bit_O8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a95871548cbf0bc64201636b985255292a3ba64748f552e3af4ed8d158c7b81200" name="a95871548cbf0bc64201636b985255292a3ba64748f552e3af4ed8d158c7b81200"></a>GIOREG_bit_I1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a95871548cbf0bc64201636b985255292a8af89fc904a519d2d71a34b442766dda" name="a95871548cbf0bc64201636b985255292a8af89fc904a519d2d71a34b442766dda"></a>GIOREG_bit_I2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a95871548cbf0bc64201636b985255292a3affe1d5e6e12de56b4600b1dd0c674f" name="a95871548cbf0bc64201636b985255292a3affe1d5e6e12de56b4600b1dd0c674f"></a>GIOREG_bit_I3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a95871548cbf0bc64201636b985255292a9b395134f97e3e21e28c23d711c78e08" name="a95871548cbf0bc64201636b985255292a9b395134f97e3e21e28c23d711c78e08"></a>GIOREG_bit_I4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a95871548cbf0bc64201636b985255292a22725da6c16bfc4d06a0f4518babe1ca" name="a95871548cbf0bc64201636b985255292a22725da6c16bfc4d06a0f4518babe1ca"></a>GIOREG_bit_I5&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a95871548cbf0bc64201636b985255292a67d5e1ddaf157cea34781d603e2f6552" name="a95871548cbf0bc64201636b985255292a67d5e1ddaf157cea34781d603e2f6552"></a>GIOREG_bit_I6&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a95871548cbf0bc64201636b985255292a4225e0dee121ff56f69b1a15bfc23763" name="a95871548cbf0bc64201636b985255292a4225e0dee121ff56f69b1a15bfc23763"></a>GIOREG_bit_I7&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a95871548cbf0bc64201636b985255292a27c64e626d3f8e1f5f25897010b30200" name="a95871548cbf0bc64201636b985255292a27c64e626d3f8e1f5f25897010b30200"></a>GIOREG_bit_I8&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<a id="a0199b3f69358efb164ecab6cf03499a6" name="a0199b3f69358efb164ecab6cf03499a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0199b3f69358efb164ecab6cf03499a6">&#9670;&#160;</a></span>IRQFLAGS_bits_t</h2>
+<a id="a112bb7cac94f9939207725ea4c525e5c" name="a112bb7cac94f9939207725ea4c525e5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a112bb7cac94f9939207725ea4c525e5c">&#9670;&#160;</a></span>IRQREG_bits_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="#a0199b3f69358efb164ecab6cf03499a6">IRQFLAGS_bits_t</a></td>
+          <td class="memname">enum <a class="el" href="#a112bb7cac94f9939207725ea4c525e5c">IRQREG_bits_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0199b3f69358efb164ecab6cf03499a6abda0c69e7d5d33a715999714134c5ea6" name="a0199b3f69358efb164ecab6cf03499a6abda0c69e7d5d33a715999714134c5ea6"></a>IRQFLAGS_bitindex_HWDREQ_EN&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0199b3f69358efb164ecab6cf03499a6a2035995198a202a130625ad96aa76b38" name="a0199b3f69358efb164ecab6cf03499a6a2035995198a202a130625ad96aa76b38"></a>IRQFLAGS_bitindex_INTRSR&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a112bb7cac94f9939207725ea4c525e5ca3158ddce3bbed45acf43a656344e9adf" name="a112bb7cac94f9939207725ea4c525e5ca3158ddce3bbed45acf43a656344e9adf"></a>IRQREG_bitindex_IRQLAT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a112bb7cac94f9939207725ea4c525e5ca029bd704f9d2a2a521ed46734907bbe5" name="a112bb7cac94f9939207725ea4c525e5ca029bd704f9d2a2a521ed46734907bbe5"></a>IRQREG_bitindex_IRQCNT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a112bb7cac94f9939207725ea4c525e5cabd72106365282db1a5cfb52d5ef65c79" name="a112bb7cac94f9939207725ea4c525e5cabd72106365282db1a5cfb52d5ef65c79"></a>IRQREG_bitindex_HWDREQ_EN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a112bb7cac94f9939207725ea4c525e5ca292c1a1bfd831c4206c55a67d24294f1" name="a112bb7cac94f9939207725ea4c525e5ca292c1a1bfd831c4206c55a67d24294f1"></a>IRQREG_bitindex_INTRSR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a112bb7cac94f9939207725ea4c525e5ca49ba870bec2b3ed45fb745cb794954ea" name="a112bb7cac94f9939207725ea4c525e5ca49ba870bec2b3ed45fb745cb794954ea"></a>IRQREG_bits_IRQLAT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a112bb7cac94f9939207725ea4c525e5ca50277dd8973996f226679a5c19b67eb5" name="a112bb7cac94f9939207725ea4c525e5ca50277dd8973996f226679a5c19b67eb5"></a>IRQREG_bits_IRQCNT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a112bb7cac94f9939207725ea4c525e5cad334ccdff82ca28487415cc57ad57f63" name="a112bb7cac94f9939207725ea4c525e5cad334ccdff82ca28487415cc57ad57f63"></a>IRQREG_bit_HWDREQ_EN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a112bb7cac94f9939207725ea4c525e5ca0a9dbc23cb33075789bef247eb4b6dde" name="a112bb7cac94f9939207725ea4c525e5ca0a9dbc23cb33075789bef247eb4b6dde"></a>IRQREG_bit_INTRSR&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1677,16 +1750,9 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15ab8b58bfd78906f9f73792d3d959ff478" name="a1532e8504727e103db7ec69af3330f15ab8b58bfd78906f9f73792d3d959ff478"></a>S0Addr_CTRLA&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a55ddf95750d0fb8fd591f9eb5250c435" name="a1532e8504727e103db7ec69af3330f15a55ddf95750d0fb8fd591f9eb5250c435"></a>S0Addr_CTRLB&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a355c3c7759568e6a38ca2a30ae4ea9ae" name="a1532e8504727e103db7ec69af3330f15a355c3c7759568e6a38ca2a30ae4ea9ae"></a>S0Addr_CTRLC&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a5a4a0b47fc2c90be1dd8f89876ab24ed" name="a1532e8504727e103db7ec69af3330f15a5a4a0b47fc2c90be1dd8f89876ab24ed"></a>S0Addr_XCKLL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a8593fef5ac9aeb92063b2723e69c58a9" name="a1532e8504727e103db7ec69af3330f15a8593fef5ac9aeb92063b2723e69c58a9"></a>S0Addr_XCKLH&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15af0dc7e44c4031dc2848b19ce655855d9" name="a1532e8504727e103db7ec69af3330f15af0dc7e44c4031dc2848b19ce655855d9"></a>S0Addr_XCKHL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15abb9e16660cbf04b1eef25fc2c6174235" name="a1532e8504727e103db7ec69af3330f15abb9e16660cbf04b1eef25fc2c6174235"></a>S0Addr_XCKMSB&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a812d9f7222dd8d645036db834dd31d5e" name="a1532e8504727e103db7ec69af3330f15a812d9f7222dd8d645036db834dd31d5e"></a>S0Addr_XCKCNTLL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a0eb2924587680def837a9d8b1cb50748" name="a1532e8504727e103db7ec69af3330f15a0eb2924587680def837a9d8b1cb50748"></a>S0Addr_XCKCNTLH&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a349b3e6118458c1f0286904e31f5ecfa" name="a1532e8504727e103db7ec69af3330f15a349b3e6118458c1f0286904e31f5ecfa"></a>S0Addr_XCKCNTHL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a8305294cf95e9bb1cefc09eac3975536" name="a1532e8504727e103db7ec69af3330f15a8305294cf95e9bb1cefc09eac3975536"></a>S0Addr_XCKCNTMSB&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15aba5e439b33e451de3056cef217230d43" name="a1532e8504727e103db7ec69af3330f15aba5e439b33e451de3056cef217230d43"></a>S0Addr_PIXREGlow&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15aef8e135a1387f923e14d3c4df9d71aae" name="a1532e8504727e103db7ec69af3330f15aef8e135a1387f923e14d3c4df9d71aae"></a>S0Addr_PIXREGhigh&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a98df8a150bdf53444398610282d23964" name="a1532e8504727e103db7ec69af3330f15a98df8a150bdf53444398610282d23964"></a>S0Addr_XCK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a07043531144f42f4798f561b7bd4f3ee" name="a1532e8504727e103db7ec69af3330f15a07043531144f42f4798f561b7bd4f3ee"></a>S0Addr_XCKCNT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a933d1a284e67b99640185c820889ede8" name="a1532e8504727e103db7ec69af3330f15a933d1a284e67b99640185c820889ede8"></a>S0Addr_PIXREG&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a4dfe7df582c940fec4eeb2b79249889e" name="a1532e8504727e103db7ec69af3330f15a4dfe7df582c940fec4eeb2b79249889e"></a>S0Addr_FFCTRL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a7fc6890c6412ef3feb5de2c7f6e6543f" name="a1532e8504727e103db7ec69af3330f15a7fc6890c6412ef3feb5de2c7f6e6543f"></a>S0Addr_FF_FLAGS&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15ac48ebcaa94f4907b247c75c79beb65e8" name="a1532e8504727e103db7ec69af3330f15ac48ebcaa94f4907b247c75c79beb65e8"></a>S0Addr_FIFOCNT&#160;</td><td class="fielddoc"></td></tr>
@@ -1767,7 +1833,10 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aeb7b45efaf34feb37817a80853e4e407aad05b9697233668e632b34ca22e979f6" name="aeb7b45efaf34feb37817a80853e4e407aad05b9697233668e632b34ca22e979f6"></a>SDAT_bit_control&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aeb7b45efaf34feb37817a80853e4e407a0d2588fb5071d6fb8d6ea4c5c2e33177" name="aeb7b45efaf34feb37817a80853e4e407a0d2588fb5071d6fb8d6ea4c5c2e33177"></a>SDAT_bitindex_control&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb7b45efaf34feb37817a80853e4e407a739a8f71d7effe3563d27043ac24621a" name="aeb7b45efaf34feb37817a80853e4e407a739a8f71d7effe3563d27043ac24621a"></a>SDAT_bitindex_enable&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb7b45efaf34feb37817a80853e4e407aad05b9697233668e632b34ca22e979f6" name="aeb7b45efaf34feb37817a80853e4e407aad05b9697233668e632b34ca22e979f6"></a>SDAT_bit_control&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb7b45efaf34feb37817a80853e4e407a3a1524d76811e3f704b90f7edd01e059" name="aeb7b45efaf34feb37817a80853e4e407a3a1524d76811e3f704b90f7edd01e059"></a>SDAT_bit_enable&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1909,6 +1978,7 @@ Enumerations</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7a7147e6165a1546d6195f713001e590ac5f1ccb1fffdeef41903eeeaf5d55eba" name="a7a7147e6165a1546d6195f713001e590ac5f1ccb1fffdeef41903eeeaf5d55eba"></a>TOR_bits_TICNT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7a7147e6165a1546d6195f713001e590ae4f196ef4d6b5cedac34eced2ef7df6e" name="a7a7147e6165a1546d6195f713001e590ae4f196ef4d6b5cedac34eced2ef7df6e"></a>TOR_bit_TICNT_EN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7a7147e6165a1546d6195f713001e590ae13dcb80e54fc5b07ebfe733e4655a1f" name="a7a7147e6165a1546d6195f713001e590ae13dcb80e54fc5b07ebfe733e4655a1f"></a>TOR_bitindex_TICNT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7a7147e6165a1546d6195f713001e590aa5cc4ef900ae1fc7d825804a6f81fdbf" name="a7a7147e6165a1546d6195f713001e590aa5cc4ef900ae1fc7d825804a6f81fdbf"></a>TOR_bitindex_TICNT_EN&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
@@ -1928,6 +1998,7 @@ Enumerations</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a168d45dd57f1bbda9d4f6cb50f270e73aa7f701d437b2cf3e9d85ccdb91bdb5bc" name="a168d45dd57f1bbda9d4f6cb50f270e73aa7f701d437b2cf3e9d85ccdb91bdb5bc"></a>TOR_bits_TOCNT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a168d45dd57f1bbda9d4f6cb50f270e73a1fdad2c84f54d9b0ab534b56a9e3ba08" name="a168d45dd57f1bbda9d4f6cb50f270e73a1fdad2c84f54d9b0ab534b56a9e3ba08"></a>TOR_bit_TOCNT_EN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a168d45dd57f1bbda9d4f6cb50f270e73a7222f0899a92dff81640c8df20c4c436" name="a168d45dd57f1bbda9d4f6cb50f270e73a7222f0899a92dff81640c8df20c4c436"></a>TOR_bitindex_TOCNT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a168d45dd57f1bbda9d4f6cb50f270e73a1439fe1619085a967545252de3c8fb9b" name="a168d45dd57f1bbda9d4f6cb50f270e73a1439fe1619085a967545252de3c8fb9b"></a>TOR_bitindex_TOCNT_EN&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
@@ -1981,30 +2052,16 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1dc06a244ac6282e55991ad6c6356dbba0bc8a2147c20581653dc26a10c74745b" name="a1dc06a244ac6282e55991ad6c6356dbba0bc8a2147c20581653dc26a10c74745b"></a>XCK_stimer_bitindex&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1dc06a244ac6282e55991ad6c6356dbba00638f58e9cb5f41da3e523fb3b697ca" name="a1dc06a244ac6282e55991ad6c6356dbba00638f58e9cb5f41da3e523fb3b697ca"></a>XCK_stimer_bits&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<a id="a7edba2515104bc9df9622c38d05b5351" name="a7edba2515104bc9df9622c38d05b5351"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7edba2515104bc9df9622c38d05b5351">&#9670;&#160;</a></span>XCKMSB_bits_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="#a7edba2515104bc9df9622c38d05b5351">XCKMSB_bits_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7edba2515104bc9df9622c38d05b5351a18e5d9ae516eb2754d1bb18552b3afee" name="a7edba2515104bc9df9622c38d05b5351a18e5d9ae516eb2754d1bb18552b3afee"></a>XCKMSB_bit_stimer_on&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7edba2515104bc9df9622c38d05b5351a82419149bee66353fe2fddd8d59e525c" name="a7edba2515104bc9df9622c38d05b5351a82419149bee66353fe2fddd8d59e525c"></a>XCKMSB_bitindex_reset_ns&#160;</td><td class="fielddoc"><p>select timer base resolution: 0: 1us, 1: 100ns </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1dc06a244ac6282e55991ad6c6356dbbaeab83a971a1b447f73efdf8edd7a0f63" name="a1dc06a244ac6282e55991ad6c6356dbbaeab83a971a1b447f73efdf8edd7a0f63"></a>XCK_bitindex_stimer&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1dc06a244ac6282e55991ad6c6356dbba35c892387f6d148bc503e6c034e60c0a" name="a1dc06a244ac6282e55991ad6c6356dbba35c892387f6d148bc503e6c034e60c0a"></a>XCK_bitindex_res_ns&#160;</td><td class="fielddoc"><p>select timer base resolution: 0: 1us, 1: 100ns </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a7edba2515104bc9df9622c38d05b5351a10f84c349b5965acb57e45fa3f789289" name="a7edba2515104bc9df9622c38d05b5351a10f84c349b5965acb57e45fa3f789289"></a>XCKMSB_bitindex_reset_ms&#160;</td><td class="fielddoc"><p>divide time base resolution by 1000: 0: 1us, 1: 1ms, or when reset_ns = 1: 0: 100ns, 1: 100us </p>
+<tr><td class="fieldname"><a id="a1dc06a244ac6282e55991ad6c6356dbba4117a6cf5b27885522b08861bdab34ba" name="a1dc06a244ac6282e55991ad6c6356dbba4117a6cf5b27885522b08861bdab34ba"></a>XCK_bitindex_res_ms&#160;</td><td class="fielddoc"><p>divide time base resolution by 1000: 0: 1us, 1: 1ms, or when reset_ns = 1: 0: 100ns, 1: 100us </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a7edba2515104bc9df9622c38d05b5351a2a22b106e55b453b0192f74294e52cdc" name="a7edba2515104bc9df9622c38d05b5351a2a22b106e55b453b0192f74294e52cdc"></a>XCKMSB_bitindex_stimer_on&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1dc06a244ac6282e55991ad6c6356dbba35abbf6ebc01f34a1ba8e4cdcaf34cfe" name="a1dc06a244ac6282e55991ad6c6356dbba35abbf6ebc01f34a1ba8e4cdcaf34cfe"></a>XCK_bitindex_stimer_on&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1dc06a244ac6282e55991ad6c6356dbba2e3e8258a6718c38ae3aca937df981de" name="a1dc06a244ac6282e55991ad6c6356dbba2e3e8258a6718c38ae3aca937df981de"></a>XCK_bits_stimer&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1dc06a244ac6282e55991ad6c6356dbba4409994ceb22261d6e96493b467a7d6a" name="a1dc06a244ac6282e55991ad6c6356dbba4409994ceb22261d6e96493b467a7d6a"></a>XCK_bit_res_ns&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1dc06a244ac6282e55991ad6c6356dbbabd957433809b3fee7a1f4db45adc53ca" name="a1dc06a244ac6282e55991ad6c6356dbbabd957433809b3fee7a1f4db45adc53ca"></a>XCK_bit_res_ms&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1dc06a244ac6282e55991ad6c6356dbba16cf3d1cfb4707d29f261ade7386b5a3" name="a1dc06a244ac6282e55991ad6c6356dbba16cf3d1cfb4707d29f261ade7386b5a3"></a>XCK_bit_stimer_on&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

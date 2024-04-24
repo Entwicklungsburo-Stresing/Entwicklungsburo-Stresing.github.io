@@ -17,6 +17,12 @@ var searchData=
   ['ioctrl_5ft5_14',['ioctrl_t5',['../enum__hardware_8h.html#a6088fcda9571ea67be3dd49e46438941a919c723768260c01f024f2df84d209f8',1,'enum_hardware.h']]],
   ['ioctrl_5ft6_15',['ioctrl_t6',['../enum__hardware_8h.html#a6088fcda9571ea67be3dd49e46438941aac5b96d47cc457616dcac41a6cbce523',1,'enum_hardware.h']]],
   ['ioctrl_5ft7_16',['ioctrl_t7',['../enum__hardware_8h.html#a6088fcda9571ea67be3dd49e46438941af6acc2ee2766f71fc35d66bb0b96afc8',1,'enum_hardware.h']]],
-  ['irqflags_5fbitindex_5fhwdreq_5fen_17',['IRQFLAGS_bitindex_HWDREQ_EN',['../enum__hardware_8h.html#a0199b3f69358efb164ecab6cf03499a6abda0c69e7d5d33a715999714134c5ea6',1,'enum_hardware.h']]],
-  ['irqflags_5fbitindex_5fintrsr_18',['IRQFLAGS_bitindex_INTRSR',['../enum__hardware_8h.html#a0199b3f69358efb164ecab6cf03499a6a2035995198a202a130625ad96aa76b38',1,'enum_hardware.h']]]
+  ['irqreg_5fbit_5fhwdreq_5fen_17',['IRQREG_bit_HWDREQ_EN',['../enum__hardware_8h.html#a112bb7cac94f9939207725ea4c525e5cad334ccdff82ca28487415cc57ad57f63',1,'enum_hardware.h']]],
+  ['irqreg_5fbit_5fintrsr_18',['IRQREG_bit_INTRSR',['../enum__hardware_8h.html#a112bb7cac94f9939207725ea4c525e5ca0a9dbc23cb33075789bef247eb4b6dde',1,'enum_hardware.h']]],
+  ['irqreg_5fbitindex_5fhwdreq_5fen_19',['IRQREG_bitindex_HWDREQ_EN',['../enum__hardware_8h.html#a112bb7cac94f9939207725ea4c525e5cabd72106365282db1a5cfb52d5ef65c79',1,'enum_hardware.h']]],
+  ['irqreg_5fbitindex_5fintrsr_20',['IRQREG_bitindex_INTRSR',['../enum__hardware_8h.html#a112bb7cac94f9939207725ea4c525e5ca292c1a1bfd831c4206c55a67d24294f1',1,'enum_hardware.h']]],
+  ['irqreg_5fbitindex_5firqcnt_21',['IRQREG_bitindex_IRQCNT',['../enum__hardware_8h.html#a112bb7cac94f9939207725ea4c525e5ca029bd704f9d2a2a521ed46734907bbe5',1,'enum_hardware.h']]],
+  ['irqreg_5fbitindex_5firqlat_22',['IRQREG_bitindex_IRQLAT',['../enum__hardware_8h.html#a112bb7cac94f9939207725ea4c525e5ca3158ddce3bbed45acf43a656344e9adf',1,'enum_hardware.h']]],
+  ['irqreg_5fbits_5firqcnt_23',['IRQREG_bits_IRQCNT',['../enum__hardware_8h.html#a112bb7cac94f9939207725ea4c525e5ca50277dd8973996f226679a5c19b67eb5',1,'enum_hardware.h']]],
+  ['irqreg_5fbits_5firqlat_24',['IRQREG_bits_IRQLAT',['../enum__hardware_8h.html#a112bb7cac94f9939207725ea4c525e5ca49ba870bec2b3ed45fb745cb794954ea',1,'enum_hardware.h']]]
 ];

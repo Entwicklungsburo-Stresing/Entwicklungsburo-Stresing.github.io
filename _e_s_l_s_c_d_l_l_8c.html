@@ -346,7 +346,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a1cca6de09e3a2b896b08532ef14c621f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display error message. If ErrMsgBoxOn is set.    <br /></td></tr>
 <tr class="separator:a1cca6de09e3a2b896b08532ef14c621f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a7dcf2d678792a6895c6e6bf1824efa" id="r_a3a7dcf2d678792a6895c6e6bf1824efa"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a7dcf2d678792a6895c6e6bf1824efa">DLLAbout</a> ()</td></tr>
-<tr class="memdesc:a3a7dcf2d678792a6895c6e6bf1824efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display information about registers and settings in pop up windows..    <br /></td></tr>
+<tr class="memdesc:a3a7dcf2d678792a6895c6e6bf1824efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display information about registers and settings in pop up windows.    <br /></td></tr>
 <tr class="separator:a3a7dcf2d678792a6895c6e6bf1824efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b40d728908f17d089a9b99cdfa476ce" id="r_a2b40d728908f17d089a9b99cdfa476ce"><td class="memItemLeft" align="right" valign="top">DllAccess void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b40d728908f17d089a9b99cdfa476ce">DLLStart2dViewer</a> (uint32_t drvno, uint32_t block, uint16_t camera, uint16_t pixel, uint32_t nos)</td></tr>
 <tr class="memdesc:a2b40d728908f17d089a9b99cdfa476ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start 2d viewer.    <br /></td></tr>
@@ -391,6 +391,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets abortMeasurementFlag to true.   </p>
+<p>Use this function if the measurement is running and you want to stop it.</p>
 <dl class="section return"><dt>Returns</dt><dd>es_no_error   </dd></dl>
 
 </div>
@@ -410,7 +411,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Display information about registers and settings in pop up windows..   </p>
+<p>Display information about registers and settings in pop up windows.   </p>
 <dl class="section return"><dt>Returns</dt><dd>es_status_codes   </dd></dl>
 
 </div>
@@ -440,7 +441,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Calculate the theoretical time needed for one measurement.   </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>nos * nob * exposure_time_in_ms / 1000 </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nos</td><td>number of samples </td></tr>
     <tr><td class="paramname">nob</td><td>number of blocks </td></tr>

@@ -3,7 +3,7 @@ var searchData=
   ['waitforallinterruptsdone_0',['WaitForAllInterruptsDone',['../_board__ll_8c.html#a0cdd211a5d3c2cd5c651f1577c356d28',1,'Board_ll.c']]],
   ['waitforblockready_1',['waitForBlockReady',['../_board_8c.html#aad31f000666d013342cff25b91bb69c4',1,'Board.c']]],
   ['waitforblocktrigger_2',['waitForBlockTrigger',['../_board_8c.html#a064863a7da68c4911ad62314afaf852e',1,'Board.c']]],
-  ['waitformeasureready_3',['waitForMeasureReady',['../_board_8c.html#ac0ce5c69a608f540ed7d4d83f280abb0',1,'Board.c']]],
+  ['waitformeasureready_3',['WaitForMeasureReady',['../_board_8c.html#a769b4e67586622ab7f3138aa9673749c',1,'Board.c']]],
   ['waitfortelapsed_4',['WaitforTelapsed',['../_board__ll_8c.html#a364bfc62fe74551a58ef8af9a714d329',1,'Board_ll.c']]],
   ['waittrigger_5',['WaitTrigger',['../_board__ll_8c.html#afcf2c0ff9d0b97692deff2032cd7b28a',1,'Board_ll.c']]],
   ['wasrunning_6',['wasRunning',['../globals_8h.html#aad9946775cb3b20c8c03e3be38593996',1,'wasRunning:&#160;globals.c'],['../globals_8c.html#aad9946775cb3b20c8c03e3be38593996',1,'wasRunning:&#160;globals.c']]],
