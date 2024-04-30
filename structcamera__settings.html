@@ -239,10 +239,11 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Block delay after trigger in 10 ns steps. This is the delay between the trigger starting a block, which is determined by bti_mode and the actual start of the block. 31 bit.</p><ul>
+<p>Block delay after trigger in 10 ns steps. This is the delay between the trigger starting a block, which is determined by bti_mode and the actual start of the block. BDAT is a 31 bit unsigned integer. Further information about bdat can be found in the manual in chapter 2.9.2 and 6.2.6.2.</p><ul>
 <li>disable: 0</li>
-<li>min: 1 * 10 ns = 10 ns.</li>
-<li>max: 2.147.483.647 * 10 ns = 21.474.836.470 ns = 21,474836470 s </li>
+<li>min: 1 * 10 ns = 10 ns</li>
+<li>step: 10 ns</li>
+<li>max: 2,147,483,647 * 10 ns = 21,474,836,470 ns = 21.474836470 s </li>
 </ul>
 
 </div>
@@ -288,7 +289,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Block trigger slope. This option determines wether positive, negative or both slopes of a trigger are used. See enum <a class="el" href="enum__settings_8h.html#a6e2fb72f49966ca5028850e2e30dc586">bslope_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. </p>
+<p>Block trigger slope determines whether positive, negative or both slopes of a trigger are used. See enum <a class="el" href="enum__settings_8h.html#a6e2fb72f49966ca5028850e2e30dc586">bslope_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. This only applies to external triggers. </p>
 
 </div>
 </div>
@@ -303,7 +304,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Block trigger input mode. See enum <a class="el" href="enum__settings_8h.html#a2fce6aa348483bc730e1693a39bc0e00">bti_mode_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. </p>
+<p>Block trigger input mode determines the signal, on which one block of readouts is started. See enum <a class="el" href="enum__settings_8h.html#a2fce6aa348483bc730e1693a39bc0e00">bti_mode_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. Further information on trigger signals can be found in the manual in chapter 6.3. </p>
 
 </div>
 </div>
@@ -318,9 +319,10 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Block timer in microseconds. Used when bti mode is btimer. When this is the case, btime is the time between two intern triggers starting a block. 28 bit.</p><ul>
-<li>Min: 1 us</li>
-<li>Max: 268.435.455 us = 268,435.455 s </li>
+<p>Block timer in microseconds is the time between the start of two blocks of readouts. This time is useed when bti mode is btimer. Btime is a 28 bit unsigned integer. Further information about the timer can be found in the manual in chapter 6.4.4.</p><ul>
+<li>min: 1 µs</li>
+<li>step: 1 µs</li>
+<li>max: 268,435,455 µs = 268.435455 s </li>
 </ul>
 
 </div>
@@ -672,10 +674,11 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Scan delay after trigger in 10 ns steps. This is the delay between the trigger starting a scan, which is determined by sti_mode and the actual start of the scan. 31 bit.</p><ul>
+<p>Scan delay after trigger in 10 ns steps is the delay time between the trigger starting a scan, which is determined by sti_mode and the actual start of the scan. SDAT is a 31 bit unsigned integer. Further information about sdat can be found in the manual in chapter 2.9.2 and 6.2.4.10.</p><ul>
 <li>disable: 0</li>
-<li>min: 1 * 10 ns = 10 ns.</li>
-<li>max: 2.147.483.647 * 10 ns = 21.474.836.470 ns = 21,474836470 s </li>
+<li>min: 1 * 10 ns = 10 ns</li>
+<li>step: 10 ns</li>
+<li>max: 2,147,483,647 * 10 ns = 21,474,836,470 ns = 21.474836470 s </li>
 </ul>
 
 </div>
@@ -772,7 +775,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Scan trigger slope. This option determines wether positive, negative or both slopes of a trigger are used. See enum <a class="el" href="enum__settings_8h.html#a807bb0212417bc8c5b431aad2fbc2f00">sslope_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. </p>
+<p>Scan trigger slope determines whether positive, negative or both slopes of a trigger are used. See enum <a class="el" href="enum__settings_8h.html#a807bb0212417bc8c5b431aad2fbc2f00">sslope_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. This only applies to external triggers. </p>
 
 </div>
 </div>
@@ -787,7 +790,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Scan trigger input mode. See enum <a class="el" href="enum__settings_8h.html#a0bdcebe838e77385002ccc4077a6e743">sti_mode_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. </p>
+<p>Scan trigger input mode determines the signal, on which one readout is started. See enum <a class="el" href="enum__settings_8h.html#a0bdcebe838e77385002ccc4077a6e743">sti_mode_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. Further information on trigger signals can be found in the manual in chapter 6.3. </p>
 
 </div>
 </div>
@@ -802,9 +805,10 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Scan timer in microseconds. Used when sti mode is stimer. When this is the case, stime is the time between two intern triggers starting scans. 28 bit.</p><ul>
-<li>Min: 1 us</li>
-<li>Max: 268.435.455 us = 268,435.455 s </li>
+<p>Scan timer in microseconds is the time between the start of two readouts. This time is used when sti mode is stimer. Stime is a 28 bit unsigned integer. Further information about the timer can be found in the manual in chapter 6.4.4.</p><ul>
+<li>min: 1 µs</li>
+<li>step: 1 µs</li>
+<li>max: 268,435,455 µs = 268.435455 s </li>
 </ul>
 
 </div>
@@ -947,10 +951,10 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>DEPRECATED XCK delay in 10 ns steps. XCK delay is the time between the high slope of XCK and the actual start of the camera read out. This is done by delaying VON relative to XCK. Since P222_09 cameras are not designed to interact with the VON signal anymore. VCLKs are generated inside the camera and the delay between integrator and XCK can be achieved by using the analog delay of the camera control. 31 bit. xckdelay = 500ns + xckdelay_in_10ns * 10ns</p><ul>
+<p>DEPRECATED XCK delay in 10 ns steps was the time between the high slope of XCK and the actual start of the camera read out. This is done by delaying VON relative to XCK. Since P222_09 cameras are not designed to interact with the VON signal anymore. VCLKs are generated inside the camera and the delay between integrator and XCK can be achieved by using the analog delay of the camera control. Further information about xckdelay can be found in the manual in chapter 6.2.5.12. 31 bit. xckdelay = 500ns + xckdelay_in_10ns * 10ns</p><ul>
 <li>disable: 0</li>
 <li>min 1: 500 ns + 1 * 10ns = 510 ns</li>
-<li>max 2.147.483.647: 500 ns + 2.147.483.647 * 10 ns = 21.474.836.970 ns = 21,474.836.970 s </li>
+<li>max 2,147,483,647: 500 ns + 2,147,483,647 * 10 ns = 21,474,836,970 ns = 21.474836970 s </li>
 </ul>
 
 </div>
