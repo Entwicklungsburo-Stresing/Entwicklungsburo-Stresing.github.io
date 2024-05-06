@@ -642,14 +642,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a5edd99b739fb068476098402846c48f8" id="r_a5edd99b739fb068476098402846c48f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5edd99b739fb068476098402846c48f8">SetS1S2ReadDelay</a> (uint32_t drvno)</td></tr>
 <tr class="memdesc:a5edd99b739fb068476098402846c48f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This functions sets the register S1S2ReadDealy with the setting <a class="el" href="structcamera__settings.html#a725f47b587a2b425688fbd79586b989e">camera_settings::s1s2_read_delay_in_10ns</a>.  <br /></td></tr>
 <tr class="separator:a5edd99b739fb068476098402846c48f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1b12c59aff44c9ed6173f6b1efa1a01" id="r_ad1b12c59aff44c9ed6173f6b1efa1a01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1b12c59aff44c9ed6173f6b1efa1a01">ExportMeasurementHDF5</a> (const char *path)</td></tr>
-<tr class="separator:ad1b12c59aff44c9ed6173f6b1efa1a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91c7d2b275b3a0c3847ec1e79e9f51da" id="r_a91c7d2b275b3a0c3847ec1e79e9f51da"><td class="memItemLeft" align="right" valign="top">hid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91c7d2b275b3a0c3847ec1e79e9f51da">CreateNumericAttribute</a> (hid_t parent_object_id, char *attr_name, hid_t goal_type, hid_t dataspace, const void *data)</td></tr>
-<tr class="separator:a91c7d2b275b3a0c3847ec1e79e9f51da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03b639d2c93b877594b4e86c2878a9c7" id="r_a03b639d2c93b877594b4e86c2878a9c7"><td class="memItemLeft" align="right" valign="top">hid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03b639d2c93b877594b4e86c2878a9c7">CreateStringAttribute</a> (hid_t parent_object_id, char *attr_name, hid_t dataspace, const void *data)</td></tr>
-<tr class="separator:a03b639d2c93b877594b4e86c2878a9c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f1b153582bb1089d261e1593344afed" id="r_a0f1b153582bb1089d261e1593344afed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f1b153582bb1089d261e1593344afed">CheckFirstMeasurementDone</a> (uint32_t drvno)</td></tr>
-<tr class="separator:a0f1b153582bb1089d261e1593344afed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aa28480bfa03957b4f284c13e800ca8b0" name="aa28480bfa03957b4f284c13e800ca8b0"></a>
@@ -1750,23 +1742,6 @@ es_status_codes<ul>
 
 </div>
 </div>
-<a id="a0f1b153582bb1089d261e1593344afed" name="a0f1b153582bb1089d261e1593344afed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f1b153582bb1089d261e1593344afed">&#9670;&#160;</a></span>CheckFirstMeasurementDone()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> CheckFirstMeasurementDone </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a232b6673c9b4740eb158f8a360cd8372" name="a232b6673c9b4740eb158f8a360cd8372"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a232b6673c9b4740eb158f8a360cd8372">&#9670;&#160;</a></span>ClearAllUserRegs()</h2>
 
@@ -1856,73 +1831,6 @@ es_status_codes<ul>
 <li>es_register_write_failed </li>
 </ul>
 </dd></dl>
-
-</div>
-</div>
-<a id="a91c7d2b275b3a0c3847ec1e79e9f51da" name="a91c7d2b275b3a0c3847ec1e79e9f51da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91c7d2b275b3a0c3847ec1e79e9f51da">&#9670;&#160;</a></span>CreateNumericAttribute()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">hid_t CreateNumericAttribute </td>
-          <td>(</td>
-          <td class="paramtype">hid_t</td>          <td class="paramname"><span class="paramname"><em>parent_object_id</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>attr_name</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">hid_t</td>          <td class="paramname"><span class="paramname"><em>goal_type</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">hid_t</td>          <td class="paramname"><span class="paramname"><em>dataspace</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a03b639d2c93b877594b4e86c2878a9c7" name="a03b639d2c93b877594b4e86c2878a9c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03b639d2c93b877594b4e86c2878a9c7">&#9670;&#160;</a></span>CreateStringAttribute()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">hid_t CreateStringAttribute </td>
-          <td>(</td>
-          <td class="paramtype">hid_t</td>          <td class="paramname"><span class="paramname"><em>parent_object_id</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>attr_name</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">hid_t</td>          <td class="paramname"><span class="paramname"><em>dataspace</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -2355,23 +2263,6 @@ es_status_codes<ul>
 <li>es_parameter_out_of_range </li>
 </ul>
 </dd></dl>
-
-</div>
-</div>
-<a id="ad1b12c59aff44c9ed6173f6b1efa1a01" name="ad1b12c59aff44c9ed6173f6b1efa1a01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1b12c59aff44c9ed6173f6b1efa1a01">&#9670;&#160;</a></span>ExportMeasurementHDF5()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> ExportMeasurementHDF5 </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

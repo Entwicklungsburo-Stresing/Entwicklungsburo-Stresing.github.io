@@ -125,6 +125,11 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#a6d33f21be3f0c5cf91c5d638e8aca086ac2fd29f1a5a7209a6a6f1f242d1ed16c">dat</a> = 2
  }</td></tr>
 <tr class="separator:a6d33f21be3f0c5cf91c5d638e8aca086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d071078d7c7603069e44ced5c5ebfe" id="r_a87d071078d7c7603069e44ced5c5ebfe"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87d071078d7c7603069e44ced5c5ebfe">camera_system_t</a> { <a class="el" href="#a87d071078d7c7603069e44ced5c5ebfea948b64b6e3ac3f7b6455cccb9bb074d4">camera_system_3001</a> = 0
+, <a class="el" href="#a87d071078d7c7603069e44ced5c5ebfea8e1523a13c5aeeabd62f0cff9f989350">camera_system_3010</a> = 1
+, <a class="el" href="#a87d071078d7c7603069e44ced5c5ebfea332824fd648713577dd4f00b4f0695e2">camera_system_3030</a> = 2
+ }</td></tr>
+<tr class="separator:a87d071078d7c7603069e44ced5c5ebfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a089f166159fb19f10d81c65c1d8793a2" id="r_a089f166159fb19f10d81c65c1d8793a2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a089f166159fb19f10d81c65c1d8793a2">sensor_type_t</a> { <br />
 &#160;&#160;<a class="el" href="#a089f166159fb19f10d81c65c1d8793a2a94e479efd9002ec62311463b9ffdf772">sensor_type_pda</a> = 0
 , <a class="el" href="#a089f166159fb19f10d81c65c1d8793a2a13dd2773c352d66bcdedcb85a05f60db">sensor_type_ir</a> = 1
@@ -136,11 +141,6 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a089f166159fb19f10d81c65c1d8793a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87d071078d7c7603069e44ced5c5ebfe" id="r_a87d071078d7c7603069e44ced5c5ebfe"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87d071078d7c7603069e44ced5c5ebfe">camera_system_t</a> { <a class="el" href="#a87d071078d7c7603069e44ced5c5ebfea948b64b6e3ac3f7b6455cccb9bb074d4">camera_system_3001</a> = 0
-, <a class="el" href="#a87d071078d7c7603069e44ced5c5ebfea8e1523a13c5aeeabd62f0cff9f989350">camera_system_3010</a> = 1
-, <a class="el" href="#a87d071078d7c7603069e44ced5c5ebfea332824fd648713577dd4f00b4f0695e2">camera_system_3030</a> = 2
- }</td></tr>
-<tr class="separator:a87d071078d7c7603069e44ced5c5ebfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86f1e46308bfcaf8ceccb822f1d72c57" id="r_a86f1e46308bfcaf8ceccb822f1d72c57"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86f1e46308bfcaf8ceccb822f1d72c57">fft_mode_t</a> { <a class="el" href="#a86f1e46308bfcaf8ceccb822f1d72c57a522dfda85484dd49420f6b436a9e2d9a">full_binning</a> = 0
 , <a class="el" href="#a86f1e46308bfcaf8ceccb822f1d72c57a6f1771bc89a836bb050922037febfa51">partial_binning</a> = 1
 , <a class="el" href="#a86f1e46308bfcaf8ceccb822f1d72c57a322132ec60ef92afd82ebd8b5833ffe9">area_mode</a> = 2
@@ -593,13 +593,13 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Trigger mode for camera control shows the options for <a class="el" href="structcamera__settings.html#a81d92a0475fbf332ef99de9748d6b197">camera_settings::trigger_mode_integrator</a>. </p>
+<p>Trigger mode shows the options for <a class="el" href="structcamera__settings.html#a81d92a0475fbf332ef99de9748d6b197">camera_settings::trigger_mode_integrator</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6d33f21be3f0c5cf91c5d638e8aca086a7a03b9103736c00a1b574c46bc8e8e31" name="a6d33f21be3f0c5cf91c5d638e8aca086a7a03b9103736c00a1b574c46bc8e8e31"></a>xck&#160;</td><td class="fielddoc"><p>0: Trigger with the start signal of the PCIe board. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6d33f21be3f0c5cf91c5d638e8aca086a7a03b9103736c00a1b574c46bc8e8e31" name="a6d33f21be3f0c5cf91c5d638e8aca086a7a03b9103736c00a1b574c46bc8e8e31"></a>xck&#160;</td><td class="fielddoc"><p>0: Trigger the integrator with the start signal XCK of the PCIe board. The integrator starts simultaneously with the sensor. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a6d33f21be3f0c5cf91c5d638e8aca086a03dea9a7850802818e5420ad08a106d3" name="a6d33f21be3f0c5cf91c5d638e8aca086a03dea9a7850802818e5420ad08a106d3"></a>exttrig&#160;</td><td class="fielddoc"><p>1: Use the input of camera control as trigger. </p>
+<tr><td class="fieldname"><a id="a6d33f21be3f0c5cf91c5d638e8aca086a03dea9a7850802818e5420ad08a106d3" name="a6d33f21be3f0c5cf91c5d638e8aca086a03dea9a7850802818e5420ad08a106d3"></a>exttrig&#160;</td><td class="fielddoc"><p>1: Trigger the integrator with the input Ext. Trig. of the camera control. The integrator can be started separately from the sensor </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a6d33f21be3f0c5cf91c5d638e8aca086ac2fd29f1a5a7209a6a6f1f242d1ed16c" name="a6d33f21be3f0c5cf91c5d638e8aca086ac2fd29f1a5a7209a6a6f1f242d1ed16c"></a>dat&#160;</td><td class="fielddoc"><p>2: Delay after trigger: Trigger with the start signal of the PCIe board, but with an additional delay after XCK. </p>
+<tr><td class="fieldname"><a id="a6d33f21be3f0c5cf91c5d638e8aca086ac2fd29f1a5a7209a6a6f1f242d1ed16c" name="a6d33f21be3f0c5cf91c5d638e8aca086ac2fd29f1a5a7209a6a6f1f242d1ed16c"></a>dat&#160;</td><td class="fielddoc"><p>2: Trigger the integrator with the input Ext. Trig but with an additional delay. </p>
 </td></tr>
 </table>
 
