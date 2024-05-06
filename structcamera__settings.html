@@ -209,7 +209,12 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>ADC gain. 0...12. default: 5. 8 bit </p>
+<p>ADC gain is controlling the gain function of the ADC in 3030 high speed cameras. ADC gain is a 8 bit unsigned integer. Further information about adc_gain can be found in the manual in chapter 3.4.2.1.</p><ul>
+<li>min: 0</li>
+<li>step: 1</li>
+<li>default: 6</li>
+<li>max: 12 </li>
+</ul>
 
 </div>
 </div>
@@ -343,7 +348,10 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Camcnt is the number of cameras which are connected to one PCIe board. This could be multiple cameras connected via a chain to one PCIe board or multiple channel on one camera control box. 0 is a valid input for operating a PCIe card without any camera connected and only use its special inputs. Camcnt is a 4 bit unsigned integer. Min: 0 Max: 15 </p>
+<p>Camcnt is the number of cameras which are connected to one PCIe board. This could be multiple cameras connected via a chain to one PCIe board or multiple channel on one camera control box. 0 is a valid input for operating a PCIe card without any camera connected and only use its special inputs. Camcnt is a 4 bit unsigned integer.</p><ul>
+<li>Min: 0</li>
+<li>Max: 15 </li>
+</ul>
 
 </div>
 </div>
@@ -448,7 +456,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>DEPRECATED: Not used, because didn't work correctly. Specifies how to split files when writing measurement data to disc. See enum <a class="el" href="enum__settings_8h.html#a2f4a284b0a5ab5d474b897488289158c">split_mode_t</a> in enum.h for modes. </p>
+<p>DEPRECATED Not used, because didn't work correctly. Specifies how to split files when writing measurement data to disc. See enum <a class="el" href="enum__settings_8h.html#a2f4a284b0a5ab5d474b897488289158c">split_mode_t</a> in enum.h for modes. </p>
 
 </div>
 </div>
@@ -463,7 +471,12 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>GPX offset </p>
+<p>GPX offset is controlling the output offset of the TDC-GPX IC on the TDC add on board for the PCIe card. The TDC-GPX IC can be used to measure the time delay between one start and two stop signals in picosecond resolution. Adding an offset can improve the accuracy of the TDC-GPX IC. GPX offset is a 18 bit unsigned integer. Further information about gpx_offset can be found in the manual in chapter 10.2.</p><ul>
+<li>min: 0</li>
+<li>step: 1</li>
+<li>default: 1000</li>
+<li>max: 262,143 </li>
+</ul>
 
 </div>
 </div>
@@ -478,7 +491,12 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Determines at which pixel number of one scan the inputs of IOCTRL are written to. </p>
+<p>IOCTRL impact start pixel is the position in the pixel array where the information of voltage or integrator inputs are written. The number of these inputs can differ, so length of these additional information can differ, too. The setting specifies the first pixel where the information is written, so the information can be read from this one and the following pixels. IOCTRL impact start pixel is a 16 bit unsigned integer. Further information about IOCTRL impact start pixel can be found in the manual in chapter 7.3.</p><ul>
+<li>min: 0</li>
+<li>step: 1</li>
+<li>default: 1078</li>
+<li>max: 65535 </li>
+</ul>
 
 </div>
 </div>
@@ -538,9 +556,11 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<ul>
+<p>Is cooled camera legacy is a special mode for operating older cooled cameras. If on, a bit in the PCIe board is set to react correctly to the cooled status messages from the camera. The following camera versions need to be run in legacy mode:</p><ul>
+<li>208.X</li>
+<li>218.1 and older</li>
 <li>=0 off</li>
-<li>&gt;0 cooled camera legacy mode. This option is setting a bit in the PCIe board to react correctly to the cooled status messages from the camera. </li>
+<li>&gt;0 cooled camera legacy mode on </li>
 </ul>
 
 </div>
@@ -556,7 +576,18 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Is fft legacy is a special legacy mode for operation with older FFT cameras. It should be turned off in most cases. =0: no fft legacy mode (default) &gt;0: fft legacy mode </p>
+<p>Is fft legacy is a special legacy mode for operation with older FFT cameras. For the following camera versions fft legacy should be turned on:</p><ul>
+<li>205.X</li>
+<li>215.6 and older</li>
+<li>208.X</li>
+<li>218.3 and older</li>
+<li>210.X</li>
+<li>211.2 and older</li>
+<li>206.X</li>
+<li>216.X If the PCIe card version is 222.8 or older or 202.X, fft legacy should always be turned on, if you are using a FFT sensor. FFT legacy is available since 222.10.</li>
+<li>=0: off (default)</li>
+<li>&gt;0: fft legacy mode on </li>
+</ul>
 
 </div>
 </div>
@@ -571,7 +602,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>DEPRECATED: This should be set when the camera is a high speed infrared camera.</p><ul>
+<p>DEPRECATED This should be set when the camera is a high speed infrared camera. This information was moved to sensor_type.</p><ul>
 <li>=0 no IR</li>
 <li>&gt;0 IR </li>
 </ul>
@@ -589,7 +620,10 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>LED off turns the LEDs in the camera off. =0 LED on &gt;0 LED off </p>
+<p>LED off turns the LEDs in the camera off.</p><ul>
+<li>=0 LED on</li>
+<li>&gt;0 LED off </li>
+</ul>
 
 </div>
 </div>
@@ -723,9 +757,18 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sensor gain for IR sensors. 0 for no gain, &gt;0 for gain.</p><ul>
-<li>camera system 3001/3010: 0 to 1</li>
-<li>camera system 3030: 0 to 3 </li>
+<p>Sensor gain is controlling the internal gain function of some infrared sensors. For the some sensors gain can be switched on or off, others sensor got multiple levels of gain. Further information about sensor gain can be found in the manual in chapters 3.3.1, 3.4.1.1, 4.5.2, 8.4.4, 8.7.3.</p><ul>
+<li>camera system 3001/3010:<ul>
+<li>gain off: 0</li>
+<li>gain on: 1</li>
+</ul>
+</li>
+<li>camera system 3030:<ul>
+<li>gain off: 0</li>
+<li>step: 1</li>
+<li>max gain: 4 </li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -771,7 +814,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>DEPRECATED Shortrs controls the sensor reset length.</p><ul>
+<p>DEPRECATED Shortrs controled the sensor reset length. This setting is replaced by sensor_reset_length_in_4_ns.</p><ul>
 <li>=0: long reset 800ns</li>
 <li>&gt;0: short reset 380ns </li>
 </ul>
@@ -838,7 +881,16 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Temperature level for cooled cameras. 0...7 / 0=off, 7=min </p>
+<p>Temperature level is controlling the target temperature for the temperature regulation in cooled cameras. The cooling is done by a Peltier element which can generate a temperature difference of 40 °C. That means the target temperature can only be reached, if the ambient temperature is not higher than target + 40 °C. The regulation is optimized for -20 °C to 0 °C. The precision is 1 K at these levels. On other levels the error can rise up to 10 K. If the target temperature is reached, the LED TG (Temperature Good) will light up green. temp_level is a 3 bit unsigned integer. Further information about temp_level can be found in the manual in chapter 3.5.</p><ul>
+<li>0: cooling off</li>
+<li>1: 0 °C</li>
+<li>2: -10 °C</li>
+<li>3: -20 °C</li>
+<li>4: -25 °C</li>
+<li>5: -30 °C</li>
+<li>6: -40 °C</li>
+<li>7: min °C </li>
+</ul>
 
 </div>
 </div>
@@ -914,12 +966,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>use_software_polling determines which method is used to copy data from DMA to user buffer.</p>
-<ul>
-<li>&gt;0: Use Software Polling. When there is new available data in the DMA buffer, a thread copies the data one scan at a time to the user buffer. Since P222_2 this method is reliable up to about 100kHz. It generates as expected a greater CPU load than the interrupt method. With this option you can get more recent scans from <a class="el" href="_board_8c.html#a263e1e188e75bac4db2f16c27cd00443" title="Gives scan and block number of the last scan written to userBuffer.">GetCurrentScanNumber()</a>, especially at lower frequencies. For high frequencies &gt; 30kHz this method is not recommended.</li>
-<li>=0: Use Interrupt. Every dma_buffer_size_in_scans/2 scan the interrupt starts a copy process, which copies dma_buffer_size_in_scans/2 scans to the user buffer. 1000 is our default value for dma_buffer_size_in_scans, so interrupt is started every 500 scans. </li>
-</ul>
-
+<p>use_software_polling determines which method is used to copy data from DMA to user buffer. </p><pre class="fragment">&gt;0: Use Software Polling. When there is new available data in the DMA buffer, a thread copies the data one scan at a time to the user buffer. Since P222_2 this method is reliable up to about 100kHz. It generates as expected a greater CPU load than the interrupt method. With this option you can get more recent scans from GetCurrentScanNumber(), especially at lower frequencies. For high frequencies &gt; 30kHz this method is not recommended.
+=0: Use Interrupt. Every dma_buffer_size_in_scans/2 scan the interrupt starts a copy process, which copies dma_buffer_size_in_scans/2 scans to the user buffer. 1000 is our default value for dma_buffer_size_in_scans, so interrupt is started every 500 scans.
+</pre> 
 </div>
 </div>
 <a id="a2e34276300a6c0e2a56a8404b73ad8de" name="a2e34276300a6c0e2a56a8404b73ad8de"></a>
@@ -966,7 +1015,11 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>DEPRECATED XCK delay in 10 ns steps was the time between the high slope of XCK and the actual start of the camera read out. This is done by delaying VON relative to XCK. Since P222_09 cameras are not designed to interact with the VON signal anymore. VCLKs are generated inside the camera and the delay between integrator and XCK can be achieved by using the analog delay of the camera control. Further information about xckdelay can be found in the manual in chapter 6.2.5.12. 31 bit. xckdelay = 500ns + xckdelay_in_10ns * 10ns</p><ul>
+<p>LEGACY XCK delay in 10 ns steps was the time between the high slope of XCK and the actual start of the camera read out. This is done by delaying VON relative to XCK. Since P222_09 cameras are not designed to interact with the VON signal anymore. For the following camera versions xckdelay can be used:</p><ul>
+<li>205.X</li>
+<li>215.6 and older</li>
+<li>206.X</li>
+<li>216.X For newer camera versions VCLKs are generated inside the camera and the delay between integrator and XCK can be achieved by using the analog delay of the camera control. Further information about xckdelay can be found in the manual in chapter 6.2.5.12. 31 bit. xckdelay = 500ns + xckdelay_in_10ns * 10ns</li>
 <li>disable: 0</li>
 <li>min 1: 500 ns + 1 * 10ns = 510 ns</li>
 <li>max 2,147,483,647: 500 ns + 2,147,483,647 * 10 ns = 21,474,836,970 ns = 21.474836970 s </li>
