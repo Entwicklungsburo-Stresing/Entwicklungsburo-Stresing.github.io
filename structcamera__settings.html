@@ -329,7 +329,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Block timer in microseconds is the time between the start of two blocks of readouts. This time is useed when bti mode is btimer. Btime is a 28 bit unsigned integer. Further information about the timer can be found in the manual in chapter 6.4.4.</p><ul>
+<p>Block timer in microseconds is the time between the start of two blocks of readouts. This time is used when bti mode is btimer. Btime is a 28 bit unsigned integer. Further information about the timer can be found in the manual in chapter 6.4.4.</p><ul>
 <li>min: 1 µs</li>
 <li>step: 1 µs</li>
 <li>max: 268,435,455 µs = 268.435455 s </li>
@@ -411,7 +411,12 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Count of lines for FFT sensors. 12 bit. </p>
+<p>fft_lines is the count of vertical lines for FFT sensors. This setting should match your sensor. You can find this information in the manual. fft_lines is a 12 bit unsigned integer. Further information about FFT sensors can be found in the manual in chapters 1.4 and 11.3.3.</p><ul>
+<li>min: 1</li>
+<li>step: 1</li>
+<li>default: 64</li>
+<li>max: 4095 </li>
+</ul>
 
 </div>
 </div>
@@ -426,7 +431,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Mode for FFT sensors. See enum <a class="el" href="enum__settings_8h.html#a86f1e46308bfcaf8ceccb822f1d72c57">fft_mode_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. </p>
+<p>fft_mode controls the operating mode for FFT sensors. The vertical lines of a FFT sensor can either be summed up, read separately or summed up partially. See enum <a class="el" href="enum__settings_8h.html#a86f1e46308bfcaf8ceccb822f1d72c57">fft_mode_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. Further information about FFT modes can be found in the manual in chapter 4.5.1. </p>
 
 </div>
 </div>
@@ -784,7 +789,12 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This setting controls the length of the reset pulse between two camera readouts for some sensors. value * 4ns = sensor reset length </p>
+<p>Sensor_rese_length_in_4_ns controls the length of the reset pulse between two camera readouts for some sensors. This reset can be used, to completely clear the sensor, which is not always the case without this reset for all sensors. Sensor_rese_length_in_4_ns is a 16 bit unsigned integer. Further information about sensor reset can be found in the manual in chapter 4.9.2.</p><ul>
+<li>min: 0 ns</li>
+<li>step: 1 * 4 ns = 4 ns</li>
+<li>default: 100 * 4 ns = 400 ns</li>
+<li>max: 65535 * 4 ns = 262,140 ns </li>
+</ul>
 
 </div>
 </div>
@@ -814,7 +824,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>DEPRECATED Shortrs controled the sensor reset length. This setting is replaced by sensor_reset_length_in_4_ns.</p><ul>
+<p>DEPRECATED Shortrs controlled the sensor reset length. This setting is replaced by sensor_reset_length_in_4_ns.</p><ul>
 <li>=0: long reset 800ns</li>
 <li>&gt;0: short reset 380ns </li>
 </ul>
@@ -966,9 +976,11 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>use_software_polling determines which method is used to copy data from DMA to user buffer. </p><pre class="fragment">&gt;0: Use Software Polling. When there is new available data in the DMA buffer, a thread copies the data one scan at a time to the user buffer. Since P222_2 this method is reliable up to about 100kHz. It generates as expected a greater CPU load than the interrupt method. With this option you can get more recent scans from GetCurrentScanNumber(), especially at lower frequencies. For high frequencies &gt; 30kHz this method is not recommended.
-=0: Use Interrupt. Every dma_buffer_size_in_scans/2 scan the interrupt starts a copy process, which copies dma_buffer_size_in_scans/2 scans to the user buffer. 1000 is our default value for dma_buffer_size_in_scans, so interrupt is started every 500 scans.
-</pre> 
+<p>use_software_polling determines which method is used to copy data from DMA to user buffer. Further information about software polling can be found in the manual in chapter 5.4.8.</p><ul>
+<li>&gt;0: Use software polling. When there is new available data in the DMA buffer, a thread copies the data one scan at a time to the user buffer. Since P222_2 this method is reliable up to about 100kHz. It generates as expected a higher CPU load than the interrupt method. With this option you can get more recent scans from <a class="el" href="_board_8c.html#a263e1e188e75bac4db2f16c27cd00443" title="Gives scan and block number of the last scan written to userBuffer.">GetCurrentScanNumber()</a>, especially at lower frequencies. For high frequencies &gt; 30kHz this method is not recommended.</li>
+<li>=0: Use interrupt. Every dma_buffer_size_in_scans/2 scan the interrupt starts a copy process, which copies dma_buffer_size_in_scans/2 scans to the user buffer. 1000 is our default value for dma_buffer_size_in_scans, so interrupt is started every 500 scans. </li>
+</ul>
+
 </div>
 </div>
 <a id="a2e34276300a6c0e2a56a8404b73ad8de" name="a2e34276300a6c0e2a56a8404b73ad8de"></a>
@@ -982,7 +994,11 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Vertical frequency for FFT sensors. 8 bit. </p>
+<p>vfreq controls the vertical clock frequency for FFT sensors. Different sensors are capable of different vertical clock speeds, so this setting should match your sensor. You can find this information in the manual. vfreq is the period of the vertical clock, so a higher vfreq means a lower frequency. vfreq is 8 bit unsigned integer. Further information about vfreq and FFT sensors can be found in the manual in chapters 1.4, 3.3.5 and 11.3.3.</p><ul>
+<li>min: 1 * 256 ns = 256 ns =&gt; 3.9 MHz</li>
+<li>step: 1 * 256 ns = 256 ns</li>
+<li>max: 255 * 256 ns = 65,280 ns =&gt; 15.3 kHz </li>
+</ul>
 
 </div>
 </div>
