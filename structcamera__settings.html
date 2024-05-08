@@ -643,7 +643,12 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Count of lines which are binned in area mode for FFT sensors. 8 bit. </p>
+<p>lines_binning is the count of lines which are summed up in area mode for FFT sensors. When this is 1, every line is read out separately. When it is 2, every two lines are summed up in the sensor and read out as one line, so the count of samples for a complete readout gets divided by two. The same applies for higher values. lines_binning is a 12 bit unsigned integer. Further information about the area mode can be found in the manual in chapter 4.5.1.2.</p><ul>
+<li>min: 1</li>
+<li>step: 1</li>
+<li>default: 1</li>
+<li>max: 4095 </li>
+</ul>
 
 </div>
 </div>
@@ -658,7 +663,11 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Number of regions for FFT mode range of interest. Min: 1. 16 bit. </p>
+<p>number_of_regions determines in how many regions the sensor gets divided in the FFT mode range of interest. Setting it to 1 would equal the area mode, so the minimum is 2. The size of each region is determined by <a class="el" href="#ae0651b65badf3f724a98858623a93975">camera_settings::region_size</a>. Unused regions must be set to 0. Further information about the range of interest mode can be found in the manual in chapter 4.5.1.3.</p><ul>
+<li>min: 2</li>
+<li>step: 1</li>
+<li>max: 5 </li>
+</ul>
 
 </div>
 </div>
@@ -688,7 +697,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Size for each region for region of interest mode for FFT sensors. When the first region is set to 0, all regions are automatically same sized. </p>
+<p>Size for each region for region of interest mode for FFT sensors. When the first region is set to 0, all regions are automatically same sized. 8 bit. </p>
 
 </div>
 </div>
