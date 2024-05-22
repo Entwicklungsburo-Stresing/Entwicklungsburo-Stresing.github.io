@@ -18,7 +18,7 @@ var searchData=
   ['readregisters0_5f32_5fallboards_15',['readRegisterS0_32_allBoards',['../_board_8c.html#a33e652c201bfba22aa6f5755443bf197',1,'Board.c']]],
   ['readregisters0_5f8_16',['readRegisterS0_8',['../_board_8c.html#aae21a9cc46c182724c49f373dba4f5ec',1,'Board.c']]],
   ['readscanfrequencybit_17',['ReadScanFrequencyBit',['../_board_8c.html#a2c2eabe7281f30577012c5ea9b658dca',1,'Board.c']]],
-  ['region_5fsize_18',['region_size',['../structcamera__settings.html#ae0651b65badf3f724a98858623a93975',1,'camera_settings']]],
+  ['region_5fsize_18',['region_size',['../structcamera__settings.html#a3fa31e4964a41c592d24ce74e4b7ce41',1,'camera_settings']]],
   ['registerreadwritemutex_19',['registerReadWriteMutex',['../_board__ll_8c.html#a26145422a5ca9e70556dbd2d090165cc',1,'Board_ll.c']]],
   ['repaintwindow_20',['repaintWindow',['../class_direct2d_viewer.html#ab1e069e1a726164ef7f8c836f0d13e31',1,'Direct2dViewer']]],
   ['resetbits0_5f32_21',['resetBitS0_32',['../_board_8c.html#a143839ab35a87710c38d54a5b7768193',1,'Board.c']]],

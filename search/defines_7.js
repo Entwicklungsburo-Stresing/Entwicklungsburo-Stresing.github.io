@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['manual_5foverride_5ftlp_0',['MANUAL_OVERRIDE_TLP',['../globals_8h.html#a2250647ce240908b8e97a0f7d6b81933',1,'globals.h']]],
-  ['maxcamcnt_1',['MAXCAMCNT',['../struct_8h.html#a62afa1e27890bd027549e82cc4be5bd9',1,'struct.h']]],
-  ['maxpciecards_2',['MAXPCIECARDS',['../struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59',1,'struct.h']]]
+  ['legacy_5f202_5f14_5ftlpcnt_0',['LEGACY_202_14_TLPCNT',['../globals_8h.html#a0f18a8d7d8b21ec30bca032e881a2ee9',1,'globals.h']]],
+  ['lscpciej_5fstresing_5fdriver_5fname_1',['LSCPCIEJ_STRESING_DRIVER_NAME',['../_board__ll_8c.html#a0129113144790654cc32a2dd83ab6e9c',1,'Board_ll.c']]]
 ];
