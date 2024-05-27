@@ -951,7 +951,11 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Trigger output counter determines how many trigger inputs are skipped before the next measurement is triggered. Every ticnt+1 trigger input the measurement is triggered according to sti_mode. Only the lowest 7 bits are used for this setting. </p>
+<p>Trigger output counter determines how many trigger inputs are skipped before the next measurement is triggered. Every ticnt+1 trigger input the measurement is triggered according to <a class="el" href="#afeb4693c3f62bd567f9063c0412035b5">camera_settings::sti_mode</a>. ticnt is a 7 bit unsigned integer. Further information about ticnt can be found in the manual in chapter 6.2.4.12.</p><ul>
+<li>min: 0</li>
+<li>step: 1</li>
+<li>max: 127 </li>
+</ul>
 
 </div>
 </div>
@@ -966,7 +970,11 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Trigger output counter determines how many XCK are skipped until the output TO_CNT_OUT shows the XCK signal. Use <a class="el" href="enum__settings_8h.html#a34afd11285290b35c0f65d59c163fafaa21d1f38219ac0747f5113977709e5301">tor_out_t::tor_to_cnt_out</a> for the setting <a class="el" href="#ac9a0cd5c6fc15fb192e18d623cffca0d">camera_settings::tor</a> to see TO_CNT_OUT at the output of the PCIe board. Example: tocnt = 2 =&gt; skip every first and second XCK, show XCK on the PCIe output on every third XCK. Only the lowest 7 bits are used for this setting. </p>
+<p>Trigger output counter determines how many XCK are skipped until the output TO_CNT_OUT shows the XCK signal. Use <a class="el" href="enum__settings_8h.html#a34afd11285290b35c0f65d59c163fafaa21d1f38219ac0747f5113977709e5301">tor_out_t::tor_to_cnt_out</a> for the setting <a class="el" href="#ac9a0cd5c6fc15fb192e18d623cffca0d">camera_settings::tor</a> to see TO_CNT_OUT at the output of the PCIe board. Example: tocnt = 2 =&gt; skip every first and second XCK, show XCK on the PCIe output on every third XCK. tocnt is a 7 bit unsigned integer. Further information about tocnt can be found in the manual in chapter 6.2.4.12.</p><ul>
+<li>min: 0 (TO_CNT_OUT = XCK)</li>
+<li>step: 1</li>
+<li>max: 127 </li>
+</ul>
 
 </div>
 </div>

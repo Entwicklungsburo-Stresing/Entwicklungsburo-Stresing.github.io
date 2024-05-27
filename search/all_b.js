@@ -18,10 +18,9 @@ var searchData=
   ['maxpaxloadsize_5freserved2_15',['maxPaxloadSize_reserved2',['../enum__hardware_8h.html#a69d30493bcf4f3a83a16ce1ee7558889a0fd3d34608d2b7c74748555fcacba0db',1,'enum_hardware.h']]],
   ['maxpayloadsizesupported_5fencoding_5ft_16',['MaxPayloadSizeSupported_encoding_t',['../enum__hardware_8h.html#a69d30493bcf4f3a83a16ce1ee7558889',1,'enum_hardware.h']]],
   ['maxpciecards_17',['MAXPCIECARDS',['../struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59',1,'struct.h']]],
-  ['measurement_18',['Measurement',['../index.html#autotoc_md7',1,'']]],
-  ['measurement_5fcnt_19',['measurement_cnt',['../structfile__header.html#a332c184227838eb171b0bca56490b709',1,'file_header::measurement_cnt'],['../structverify__data__parameter.html#a0028682e17bdd6bffc9968d260e16531',1,'verify_data_parameter::measurement_cnt'],['../globals_8h.html#aa6ee495fb3bca59a5c624245983fc804',1,'measurement_cnt:&#160;globals.c'],['../globals_8c.html#aa6ee495fb3bca59a5c624245983fc804',1,'measurement_cnt:&#160;globals.c']]],
-  ['measurement_5fsettings_20',['measurement_settings',['../structmeasurement__settings.html',1,'']]],
-  ['measurement_5fsettings_5fmatlab_21',['measurement_settings_matlab',['../structmeasurement__settings__matlab.html',1,'']]],
-  ['measurement_5fwise_22',['measurement_wise',['../enum__settings_8h.html#a2f4a284b0a5ab5d474b897488289158ca83d9e9fbf93501ba942d180612386985',1,'enum_settings.h']]],
-  ['mutexuserbuffer_23',['mutexUserBuffer',['../_board__ll_8c.html#a865f453b860d97ada49b6509ad61bded',1,'Board_ll.c']]]
+  ['measurement_5fcnt_18',['measurement_cnt',['../structfile__header.html#a332c184227838eb171b0bca56490b709',1,'file_header::measurement_cnt'],['../structverify__data__parameter.html#a0028682e17bdd6bffc9968d260e16531',1,'verify_data_parameter::measurement_cnt'],['../globals_8h.html#aa6ee495fb3bca59a5c624245983fc804',1,'measurement_cnt:&#160;globals.c'],['../globals_8c.html#aa6ee495fb3bca59a5c624245983fc804',1,'measurement_cnt:&#160;globals.c']]],
+  ['measurement_5fsettings_19',['measurement_settings',['../structmeasurement__settings.html',1,'']]],
+  ['measurement_5fsettings_5fmatlab_20',['measurement_settings_matlab',['../structmeasurement__settings__matlab.html',1,'']]],
+  ['measurement_5fwise_21',['measurement_wise',['../enum__settings_8h.html#a2f4a284b0a5ab5d474b897488289158ca83d9e9fbf93501ba942d180612386985',1,'enum_settings.h']]],
+  ['mutexuserbuffer_22',['mutexUserBuffer',['../_board__ll_8c.html#a865f453b860d97ada49b6509ad61bded',1,'Board_ll.c']]]
 ];

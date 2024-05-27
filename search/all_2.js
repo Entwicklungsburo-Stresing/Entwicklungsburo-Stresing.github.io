@@ -41,7 +41,6 @@ var searchData=
   ['bti_5fs2_38',['bti_S2',['../enum__settings_8h.html#a2fce6aa348483bc730e1693a39bc0e00a5879bf4c0aad3807d8a4f4faa0fb9d7a',1,'enum_settings.h']]],
   ['bti_5fs2chopper_39',['bti_S2chopper',['../enum__settings_8h.html#a2fce6aa348483bc730e1693a39bc0e00a0304e462d9b88ab693db99216b64866b',1,'enum_settings.h']]],
   ['btime_5fin_5fmicrosec_40',['btime_in_microsec',['../structcamera__settings.html#a2c83fba5f72159010fc146c2c52209de',1,'camera_settings']]],
-  ['btimer_3a_41',['Use STimer and/or BTimer:',['../index.html#autotoc_md9',1,'']]],
-  ['byte_5fto_5fbinary_42',['BYTE_TO_BINARY',['../_board_8c.html#aa28480bfa03957b4f284c13e800ca8b0',1,'Board.c']]],
-  ['byte_5fto_5fbinary_5fpattern_43',['BYTE_TO_BINARY_PATTERN',['../_board_8c.html#ae8b243fdac3715a3da7c98b9a380eaa5',1,'Board.c']]]
+  ['byte_5fto_5fbinary_41',['BYTE_TO_BINARY',['../_board_8c.html#aa28480bfa03957b4f284c13e800ca8b0',1,'Board.c']]],
+  ['byte_5fto_5fbinary_5fpattern_42',['BYTE_TO_BINARY_PATTERN',['../_board_8c.html#ae8b243fdac3715a3da7c98b9a380eaa5',1,'Board.c']]]
 ];

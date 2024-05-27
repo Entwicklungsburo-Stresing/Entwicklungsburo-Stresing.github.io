@@ -101,8 +101,6 @@ var searchData=
   ['tor_5funused_5f28_98',['tor_unused_28',['../enum__settings_8h.html#a34afd11285290b35c0f65d59c163fafaa88c70a06cf178209cb95b44f440c1db1',1,'enum_settings.h']]],
   ['tor_5fvon_99',['tor_von',['../enum__settings_8h.html#a34afd11285290b35c0f65d59c163fafaa2d419ba318dc5b5f9448de0bbbce1ff3',1,'enum_settings.h']]],
   ['tor_5fxck_100',['tor_xck',['../enum__settings_8h.html#a34afd11285290b35c0f65d59c163fafaa0d6cce4d48bfa7c8e815fee3645b243a',1,'enum_settings.h']]],
-  ['trigger_3a_101',['external Trigger:',['../index.html#autotoc_md8',1,'']]],
-  ['trigger_5fmode_5fintegrator_102',['trigger_mode_integrator',['../structcamera__settings.html#a81d92a0475fbf332ef99de9748d6b197',1,'camera_settings']]],
-  ['trigger_5fmode_5ft_103',['trigger_mode_t',['../enum__settings_8h.html#a6d33f21be3f0c5cf91c5d638e8aca086',1,'enum_settings.h']]],
-  ['type_104',['SENSOR TYPE',['../index.html#autotoc_md11',1,'']]]
+  ['trigger_5fmode_5fintegrator_101',['trigger_mode_integrator',['../structcamera__settings.html#a81d92a0475fbf332ef99de9748d6b197',1,'camera_settings']]],
+  ['trigger_5fmode_5ft_102',['trigger_mode_t',['../enum__settings_8h.html#a6d33f21be3f0c5cf91c5d638e8aca086',1,'enum_settings.h']]]
 ];
