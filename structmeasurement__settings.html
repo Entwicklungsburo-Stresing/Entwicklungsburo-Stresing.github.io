@@ -102,14 +102,16 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a5582951172615eb4f290af02142bfa47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9ebeb60c094195142db314ea2f596db" id="r_ad9ebeb60c094195142db314ea2f596db"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9ebeb60c094195142db314ea2f596db">nob</a></td></tr>
 <tr class="separator:ad9ebeb60c094195142db314ea2f596db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2536f3ccf75e724e85d4d268ef1cd7c8" id="r_a2536f3ccf75e724e85d4d268ef1cd7c8"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2536f3ccf75e724e85d4d268ef1cd7c8">contiuous_measurement</a></td></tr>
-<tr class="separator:a2536f3ccf75e724e85d4d268ef1cd7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac0f1237e7da13512c25448ddc6fe852" id="r_aac0f1237e7da13512c25448ddc6fe852"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac0f1237e7da13512c25448ddc6fe852">continuous_measurement</a></td></tr>
+<tr class="separator:aac0f1237e7da13512c25448ddc6fe852"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b38daf0440f5d5ac2609a56f9314e96" id="r_a6b38daf0440f5d5ac2609a56f9314e96"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b38daf0440f5d5ac2609a56f9314e96">cont_pause_in_microseconds</a></td></tr>
 <tr class="separator:a6b38daf0440f5d5ac2609a56f9314e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad65c4dc98e4420a70d80fa40c3c1d88e" id="r_ad65c4dc98e4420a70d80fa40c3c1d88e"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structcamera__settings.html">camera_settings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad65c4dc98e4420a70d80fa40c3c1d88e">camera_settings</a> [<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>]</td></tr>
 <tr class="separator:ad65c4dc98e4420a70d80fa40c3c1d88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>In this struct are settings, that are the same for all PCIe boards. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a51e928b5e7194d8011abed67c4bd4fdb" name="a51e928b5e7194d8011abed67c4bd4fdb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a51e928b5e7194d8011abed67c4bd4fdb">&#9670;&#160;</a></span>board_sel</h2>
 
@@ -121,8 +123,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Select boards with bits. 1 for using this board, 0 for not using this board.</p>
-<ul>
+<p>board_sel controls which boards are used for the measurement. When multiple boards are selected the measurement is started for all boards at the same time. The exact trigger moment is controlled separately by each board. Every board has its own camera settings, which are set in the struct member <a class="el" href="#ad65c4dc98e4420a70d80fa40c3c1d88e">measurement_settings::camera_settings</a>. Select between 1 and 5 boards. This variable works bitwise. Bit 0 controls board 0: 1 for using this board, 0 for not using this board.</p><ul>
 <li>bit 0: board 0</li>
 <li>bit 1: board 1</li>
 <li>bit 2: board 2</li>
@@ -158,22 +159,26 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Pause between two measurement cycles when continuous mode is on. See description of the parameter contiuous_measurement for more information about the continuous mode. </p>
+<p>cont_pause_in_microseconds is the pause between two measurement cycles when continuous mode is on. See description of the parameter continuous_measurement for more information about the continuous mode. cont_pause_in_microseconds is a 32 bit unsigned integer.</p><ul>
+<li>min: 0 µs</li>
+<li>step: 1 µs</li>
+<li>max: 4,294,967,295 µs </li>
+</ul>
 
 </div>
 </div>
-<a id="a2536f3ccf75e724e85d4d268ef1cd7c8" name="a2536f3ccf75e724e85d4d268ef1cd7c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2536f3ccf75e724e85d4d268ef1cd7c8">&#9670;&#160;</a></span>contiuous_measurement</h2>
+<a id="aac0f1237e7da13512c25448ddc6fe852" name="aac0f1237e7da13512c25448ddc6fe852"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac0f1237e7da13512c25448ddc6fe852">&#9670;&#160;</a></span>continuous_measurement</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t measurement_settings::contiuous_measurement</td>
+          <td class="memname">uint32_t measurement_settings::continuous_measurement</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Continuous mode switch. The continuous mode repeats automatically the measurement cycle until it is stopped. One cycle consists of number of samples * number of blocks readouts. The data is not stored permanently. Each cycle is overwriting the data from the previous cycle. The data of a specific sample/block is always at the same memory address. That means for example scan 100 in block 2 from the first measurement cycle will be overwritten by scan 100 in block 2 in the second measurement cycle. The time gap between two cycles is done softwarewise and is beeing controlled by the parameter cont_pause_in_microseconds. So the start of the next cycle is not strictly linked to your trigger, which means when triggering fast, triggers could be missed.</p><ul>
+<p>Continuous mode switch. The continuous mode repeats automatically the measurement cycle until it is stopped. One cycle consists of number of samples * number of blocks readouts. The data is not stored permanently. Each cycle is overwriting the data from the previous cycle. The data of a specific sample/block is always at the same memory address. That means for example scan 100 in block 2 from the first measurement cycle will be overwritten by scan 100 in block 2 in the second measurement cycle. The time gap between two cycles is done software wise and is beeing controlled by the parameter <a class="el" href="#a6b38daf0440f5d5ac2609a56f9314e96">measurement_settings::cont_pause_in_microseconds</a>. So the start of the next cycle is not strictly linked to your trigger, which means when triggering fast, triggers could be missed.</p><ul>
 <li>&gt;0 on</li>
 <li>=0 off </li>
 </ul>
@@ -191,7 +196,11 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Number of blocks. 32 bit. Min: 1, max: max of uint32 </p>
+<p>nob is the number of blocks. One block contains nos readouts and is triggered on each block trigger which is controlled by camera_settings.bti. nob is a 32 bit unsigned integer. Further information about samples and blocks can be found in the manual in chapter 6.4.1.</p><ul>
+<li>min: 1</li>
+<li>step: 1</li>
+<li>max: 4,294,967,295 </li>
+</ul>
 
 </div>
 </div>
@@ -206,7 +215,11 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Number of samples. 32 bit. Min: 2, max: max of uint32 </p>
+<p>nos is the number of samples. One sample is one readout of the camera. One readout is triggered on each sample trigger which is controlled by camera_settings.sti. nos is a 32 bit unsigned integer. Further information about samples and blocks can be found in the manual in chapter 6.4.1.</p><ul>
+<li>min: 2</li>
+<li>step: 1</li>
+<li>max: 4,294,967,295 </li>
+</ul>
 
 </div>
 </div>

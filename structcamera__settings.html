@@ -195,7 +195,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a12c8fa4bdad6fccbdd1a767a44792627" id="r_a12c8fa4bdad6fccbdd1a767a44792627"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12c8fa4bdad6fccbdd1a767a44792627">bnc_out</a></td></tr>
 <tr class="separator:a12c8fa4bdad6fccbdd1a767a44792627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Individual settings for each PCIe board. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a54be4b6539b096109c43abdf0a489fb7" name="a54be4b6539b096109c43abdf0a489fb7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a54be4b6539b096109c43abdf0a489fb7">&#9670;&#160;</a></span>adc_custom_pattern</h2>
 
@@ -207,7 +209,11 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Fixed value for ADC output when ADC mode is custom pattern. </p>
+<p>Adc custom pattern is the constant output value of all 8 ADC channels if <a class="el" href="#af7e1f7b31ae0973dc8a3ca8579f851aa">camera_settings::adc_mode</a> is set to <a class="el" href="enum__settings_8h.html#a760a8dafdcddcfadfea0aa3e01159164a4a7a5bdd9acf4b955bb227d97d92f3a9">adc_mode_t::custom_pattern</a>. This is a 14 bit unsigned integer.</p><ul>
+<li>min: 0</li>
+<li>step: 1</li>
+<li>max: 16383 </li>
+</ul>
 
 </div>
 </div>
@@ -242,7 +248,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>ADC operating mode. Only available for specific ADCs, e.g. in camera system 3030. See enum <a class="el" href="enum__settings_8h.html#a760a8dafdcddcfadfea0aa3e01159164">adc_mode_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. </p>
+<p>ADC mode controls the operating mode of the ADC. This option is intended for debugging purpose and only available for specific ADCs, e.g. in camera system 3030. See enum <a class="el" href="enum__settings_8h.html#a760a8dafdcddcfadfea0aa3e01159164">adc_mode_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. </p>
 
 </div>
 </div>
@@ -297,7 +303,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>bnc_out is the output mode for the XCK output of the Camera Control box. See enum <a class="el" href="enum__settings_8h.html#a3ccb55ee2f9a77e32aec7dda8ab59e83">bnc_out_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. Furhter information about bnc out can be found in the manual in chapter 3.3.1. </p>
+<p>bnc_out is the output mode for the XCK output of the Camera Control box. See enum <a class="el" href="enum__settings_8h.html#a3ccb55ee2f9a77e32aec7dda8ab59e83">bnc_out_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. Further information about bnc out can be found in the manual in chapter 3.3.1. </p>
 
 </div>
 </div>
@@ -459,7 +465,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>File path is specifying the path where the measurement data is saved. </p>
+<p>File path is specifying the path where the measurement data is saved, when <a class="el" href="#a87115a7a52a7b6f474bb12ab3a2db076">camera_settings::write_to_disc</a> is activated. File path is a char array with the size 256, so the maximum path length is 256 characters.</p><ul>
+<li>example value: C:/Users/XY/ </li>
+</ul>
 
 </div>
 </div>
@@ -973,7 +981,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Output mode for PCIe board output pin. See enum <a class="el" href="enum__settings_8h.html#a34afd11285290b35c0f65d59c163fafa">tor_out_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. </p>
+<p>Output mode for PCIe board output pin. See enum <a class="el" href="enum__settings_8h.html#a34afd11285290b35c0f65d59c163fafa">tor_out_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. Further information about tor can be found in the manual in chapter 6.2.4.12. </p>
 
 </div>
 </div>
@@ -1041,7 +1049,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Experimental:</p><ul>
+<p>Write to disc is an experimental feature for writing the measurement data on the fly to the disc. The data format is binary. It is the same data layout as the data is stored in RAM during the measurement. Additionally there is a file header at the beginning of the file. The path to the target file is given by <a class="el" href="#a87267de87e955bd0f244798f48d0c6df">camera_settings::file_path</a>. This feature is only available on Windows. In most cases the resulting file should be correct, but data layout errors has been observed. This is the reason why the feature is marked as experimental.</p><ul>
 <li>=0: Don't write measurement data to disc.</li>
 <li>&gt;0: Write measurement data to disc. </li>
 </ul>
