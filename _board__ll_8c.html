@@ -193,9 +193,6 @@ Functions</h2></td></tr>
 <tr class="separator:ac07c7888590dc77ecaba1069585795b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a448c4b7633a0fbb56a8d61cc13efe0b6" id="r_a448c4b7633a0fbb56a8d61cc13efe0b6"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a448c4b7633a0fbb56a8d61cc13efe0b6">GetTimestampInMicroseconds</a> ()</td></tr>
 <tr class="separator:a448c4b7633a0fbb56a8d61cc13efe0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcf2c0ff9d0b97692deff2032cd7b28a" id="r_afcf2c0ff9d0b97692deff2032cd7b28a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcf2c0ff9d0b97692deff2032cd7b28a">WaitTrigger</a> (uint32_t drvno, bool ExtTrigFlag, bool *SpaceKey, bool *AbrKey)</td></tr>
-<tr class="memdesc:afcf2c0ff9d0b97692deff2032cd7b28a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if trigger or key.  <br /></td></tr>
-<tr class="separator:afcf2c0ff9d0b97692deff2032cd7b28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8e9a499c65feb42895a725c33adf23a" id="r_ad8e9a499c65feb42895a725c33adf23a"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8e9a499c65feb42895a725c33adf23a">ConvertTicksToMicroseconds</a> (int64_t ticks)</td></tr>
 <tr class="memdesc:ad8e9a499c65feb42895a725c33adf23a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate ticks to microseconds.  <br /></td></tr>
 <tr class="separator:ad8e9a499c65feb42895a725c33adf23a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1878,55 +1875,6 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>1 when success, 0 when aborted by ESC or failure </dd></dl>
-
-</div>
-</div>
-<a id="afcf2c0ff9d0b97692deff2032cd7b28a" name="afcf2c0ff9d0b97692deff2032cd7b28a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcf2c0ff9d0b97692deff2032cd7b28a">&#9670;&#160;</a></span>WaitTrigger()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> WaitTrigger </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>ExtTrigFlag</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool *</td>          <td class="paramname"><span class="paramname"><em>SpaceKey</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool *</td>          <td class="paramname"><span class="paramname"><em>AbrKey</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns if trigger or key. </p>
-<p>Wait for raising edge of Pin #17 SubD = D6 in CtrlA register ReturnKey is 0 if trigger, else key code (except space ) if key code is space, the loop is not canceled</p>
-<p>D6 depends on Slope (D5) HighSlope = TRUE : positive edge HighSlope = FALSE : negative edge</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
-    <tr><td class="paramname">ExtTrigFlag</td><td>=FALSE: this function is used to get the keyboard input </td></tr>
-    <tr><td class="paramname">SpaceKey</td><td></td></tr>
-    <tr><td class="paramname">AbrKey</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed </li>
-</ul>
-</dd></dl>
 
 </div>
 </div>
