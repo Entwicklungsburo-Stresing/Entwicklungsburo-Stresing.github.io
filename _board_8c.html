@@ -580,9 +580,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a2e6019475c067ef679e5837a87b31938" id="r_a2e6019475c067ef679e5837a87b31938"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e6019475c067ef679e5837a87b31938">GetScanNumber</a> (uint32_t drvno, int64_t offset, int64_t *sample, int64_t *block)</td></tr>
 <tr class="memdesc:a2e6019475c067ef679e5837a87b31938"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives scan and block number of the last scan written to userBuffer.     <br /></td></tr>
 <tr class="separator:a2e6019475c067ef679e5837a87b31938"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9e88198ce10067262558831782d3952" id="r_ad9e88198ce10067262558831782d3952"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9e88198ce10067262558831782d3952">SetTicnt</a> (uint32_t drvno, uint8_t divider)</td></tr>
-<tr class="memdesc:ad9e88198ce10067262558831782d3952"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the trigger input divider.  <br /></td></tr>
-<tr class="separator:ad9e88198ce10067262558831782d3952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29455b38e402e73a39a98da2cb2eedc8" id="r_a29455b38e402e73a39a98da2cb2eedc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29455b38e402e73a39a98da2cb2eedc8">SetSticnt</a> (uint32_t drvno, uint8_t divider)</td></tr>
+<tr class="memdesc:a29455b38e402e73a39a98da2cb2eedc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the scan trigger input divider.  <br /></td></tr>
+<tr class="separator:a29455b38e402e73a39a98da2cb2eedc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75f034c58eab5843ac037720ee2d1a87" id="r_a75f034c58eab5843ac037720ee2d1a87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75f034c58eab5843ac037720ee2d1a87">SetBticnt</a> (uint32_t drvno, uint8_t divider)</td></tr>
+<tr class="memdesc:a75f034c58eab5843ac037720ee2d1a87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the block trigger input divider.  <br /></td></tr>
+<tr class="separator:a75f034c58eab5843ac037720ee2d1a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b35b6c4ca2063f366d011ff28bd7d3c" id="r_a3b35b6c4ca2063f366d011ff28bd7d3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b35b6c4ca2063f366d011ff28bd7d3c">SetTocnt</a> (uint32_t drvno, uint8_t divider)</td></tr>
 <tr class="memdesc:a3b35b6c4ca2063f366d011ff28bd7d3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the trigger output divider.  <br /></td></tr>
 <tr class="separator:a3b35b6c4ca2063f366d011ff28bd7d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5627,6 +5630,45 @@ with frame rate 8kHz = min. 125µs exp time
 
 </div>
 </div>
+<a id="a75f034c58eab5843ac037720ee2d1a87" name="a75f034c58eab5843ac037720ee2d1a87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75f034c58eab5843ac037720ee2d1a87">&#9670;&#160;</a></span>SetBticnt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> SetBticnt </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>divider</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the block trigger input divider. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">divider</td><td><ul>
+<li>=0: disable this function (every trigger is used)</li>
+<li>&gt;0: omit n trigger </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
+<li>es_no_error</li>
+<li>es_register_read_failed </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
 <a id="a588df64ca43eadc51318f07e3338c9b6" name="a588df64ca43eadc51318f07e3338c9b6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a588df64ca43eadc51318f07e3338c9b6">&#9670;&#160;</a></span>SetBTimer()</h2>
 
@@ -6456,6 +6498,45 @@ with frame rate 8kHz = min. 125µs exp time
 
 </div>
 </div>
+<a id="a29455b38e402e73a39a98da2cb2eedc8" name="a29455b38e402e73a39a98da2cb2eedc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29455b38e402e73a39a98da2cb2eedc8">&#9670;&#160;</a></span>SetSticnt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> SetSticnt </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>divider</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the scan trigger input divider. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">divider</td><td><ul>
+<li>=0: disable this function (every trigger is used)</li>
+<li>&gt;0: omit n trigger </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
+<li>es_no_error</li>
+<li>es_register_read_failed </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
 <a id="ab706daa24061993b9b2019a28f6851cb" name="ab706daa24061993b9b2019a28f6851cb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab706daa24061993b9b2019a28f6851cb">&#9670;&#160;</a></span>SetSTimer()</h2>
 
@@ -6524,45 +6605,6 @@ with frame rate 8kHz = min. 125µs exp time
 <li>es_register_write_failed</li>
 <li>es_register_read_failed</li>
 <li>es_camera_not_found </li>
-</ul>
-</dd></dl>
-
-</div>
-</div>
-<a id="ad9e88198ce10067262558831782d3952" name="ad9e88198ce10067262558831782d3952"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9e88198ce10067262558831782d3952">&#9670;&#160;</a></span>SetTicnt()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> SetTicnt </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>divider</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the trigger input divider. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
-    <tr><td class="paramname">divider</td><td><ul>
-<li>=0: disable this function (every trigger is used)</li>
-<li>&gt;0: omit n trigger </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed </li>
 </ul>
 </dd></dl>
 

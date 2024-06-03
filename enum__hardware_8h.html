@@ -231,12 +231,18 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a5b73895d5cad296f9fd0ae4237c4933d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a7147e6165a1546d6195f713001e590" id="r_a7a7147e6165a1546d6195f713001e590"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a7147e6165a1546d6195f713001e590">TOR_TICNT_bits_t</a> { <a class="el" href="#a7a7147e6165a1546d6195f713001e590ac5f1ccb1fffdeef41903eeeaf5d55eba">TOR_bits_TICNT</a> = 0x7F
-, <a class="el" href="#a7a7147e6165a1546d6195f713001e590ae4f196ef4d6b5cedac34eced2ef7df6e">TOR_bit_TICNT_EN</a> = 0x80
-, <a class="el" href="#a7a7147e6165a1546d6195f713001e590ae13dcb80e54fc5b07ebfe733e4655a1f">TOR_bitindex_TICNT</a> = 0
-, <a class="el" href="#a7a7147e6165a1546d6195f713001e590aa5cc4ef900ae1fc7d825804a6f81fdbf">TOR_bitindex_TICNT_EN</a> = 7
+<tr class="memitem:adccdca7702401ef9feb9b73f9974f1f2" id="r_adccdca7702401ef9feb9b73f9974f1f2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adccdca7702401ef9feb9b73f9974f1f2">TOR_STICNT_bits_t</a> { <a class="el" href="#adccdca7702401ef9feb9b73f9974f1f2ac01ed7f51d1c42db70504cc366ca0d1d">TOR_bits_STICNT</a> = 0x7F
+, <a class="el" href="#adccdca7702401ef9feb9b73f9974f1f2a7930c51ddcfa359719705e4356783778">TOR_bit_STICNT_EN</a> = 0x80
+, <a class="el" href="#adccdca7702401ef9feb9b73f9974f1f2a4e38c8c71f66ec09e558ac5c36843212">TOR_bitindex_STICNT</a> = 0
+, <a class="el" href="#adccdca7702401ef9feb9b73f9974f1f2abfcf7df48c650b4f4a3d69d6376bc627">TOR_bitindex_STICNT_EN</a> = 7
  }</td></tr>
-<tr class="separator:a7a7147e6165a1546d6195f713001e590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:adccdca7702401ef9feb9b73f9974f1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78dc599b51cfbecce04a83ff0374d405" id="r_a78dc599b51cfbecce04a83ff0374d405"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78dc599b51cfbecce04a83ff0374d405">TOR_BTICNT_bits_t</a> { <a class="el" href="#a78dc599b51cfbecce04a83ff0374d405a81f3432f12ac857df98c5831dc091d83">TOR_bits_BTICNT</a> = 0x7F
+, <a class="el" href="#a78dc599b51cfbecce04a83ff0374d405af526558c003c6d41eed19f0b14271ecf">TOR_bit_BTICNT_EN</a> = 0x80
+, <a class="el" href="#a78dc599b51cfbecce04a83ff0374d405a3acd7d7ca2b398d00ce14cb06fdde622">TOR_bitindex_BTICNT</a> = 0
+, <a class="el" href="#a78dc599b51cfbecce04a83ff0374d405a71527789974687effdcf123119af76e5">TOR_bitindex_BTICNT_EN</a> = 7
+ }</td></tr>
+<tr class="separator:a78dc599b51cfbecce04a83ff0374d405"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a168d45dd57f1bbda9d4f6cb50f270e73" id="r_a168d45dd57f1bbda9d4f6cb50f270e73"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a168d45dd57f1bbda9d4f6cb50f270e73">TOR_TOCNT_bits_t</a> { <a class="el" href="#a168d45dd57f1bbda9d4f6cb50f270e73aa7f701d437b2cf3e9d85ccdb91bdb5bc">TOR_bits_TOCNT</a> = 0x7F
 , <a class="el" href="#a168d45dd57f1bbda9d4f6cb50f270e73a1fdad2c84f54d9b0ab534b56a9e3ba08">TOR_bit_TOCNT_EN</a> = 0x80
 , <a class="el" href="#a168d45dd57f1bbda9d4f6cb50f270e73a7222f0899a92dff81640c8df20c4c436">TOR_bitindex_TOCNT</a> = 0
@@ -480,7 +486,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a111e90b9677ebe361c5b591d9aa60d5f">S0Addr_EBST</a> = 0x1C
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a1dec93b42179bc51c514f5b7aded4f00">S0Addr_SDAT</a> = 0x20
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15ad2421bfacc7fedf71aff14ee44d2f091">S0Addr_SEC</a> = 0x24
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a3e4d1cef7acb0e5fe5452bebb5e9a55f">S0Addr_TOR_TICNT</a> = 0x28
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a17ac81a0a2c489f9898d4ac09f655bcc">S0Addr_TOR_STICNT</a> = 0x28
 , <br />
 &#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a47befeff86debd28e4ca974cc718a713">S0Addr_TOR_TOCNT</a> = 0x2A
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15acfef23d8fcc664d4c935386da5aec095">S0Addr_TOR_MSB</a> = 0x2B
@@ -509,25 +515,26 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a65c4baa42bc76c84cd5dc8d62adb5c90">S0Addr_XCKDLY</a> = 0x74
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a91a13f75aa5d2421cf5ca3d5331f59c6">S0Addr_S1S2ReadDelay</a> = 0x78
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15aef10918d488e4906ad90a4e76b5823cf">S0Addr_BTICNT</a> = 0x7c
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a2bd680f1828bf9d0ee53844acb00445f">S0Addr_BTIMER</a> = 0x80
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a89961a01eb14d4a1127c2dccf555ece4">S0Addr_BDAT</a> = 0x84
 , <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a57598380c7dc26dd4eac60c6ad31af2b">S0Addr_BEC</a> = 0x88
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a89961a01eb14d4a1127c2dccf555ece4">S0Addr_BDAT</a> = 0x84
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a57598380c7dc26dd4eac60c6ad31af2b">S0Addr_BEC</a> = 0x88
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a423efe4e77fad563ab80d4cdd119afb2">S0Addr_BSLOPE</a> = 0x8C
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15ae14b9028dc1dc4fda2c7fe4759c8a67a">S0Addr_A1DSC</a> = 0x90
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a263993c3f1f0db647a8a0dc89cd189fd">S0Addr_L1DSC</a> = 0x94
 , <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a6a5fda123f2cce6999ba25696fb21a06">S0Addr_A2DSC</a> = 0x98
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a263993c3f1f0db647a8a0dc89cd189fd">S0Addr_L1DSC</a> = 0x94
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a6a5fda123f2cce6999ba25696fb21a06">S0Addr_A2DSC</a> = 0x98
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a08a527a8c1f3fa956c71a10f192ebd78">S0Addr_L2DSC</a> = 0x9C
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a58edd27073d3ec775b8a9879e01f216c">S0Addr_ATDC2</a> = 0xA0
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a9781827ddd301baf671526915bfbc6db">S0Addr_LTDC2</a> = 0xA4
 , <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15adf8bc35ff652d8c514bba71d814ee9a6">S0Addr_DSCCtrl</a> = 0xA8
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a9781827ddd301baf671526915bfbc6db">S0Addr_LTDC2</a> = 0xA4
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15adf8bc35ff652d8c514bba71d814ee9a6">S0Addr_DSCCtrl</a> = 0xA8
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a41e8c3797e6933e36ebfd5d092279149">S0Addr_DAC</a> = 0xAC
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a97590c3dc08198b5edc60c2f9b665eef">S0Addr_CAMSTATUS12</a> = 0xB0
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a31907db69f74e39041a3213a6d6a49c6">S0Addr_CAMSTATUS34</a> = 0xB4
 , <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a0694822028f927970ffbd57a0c8a6705">S0Addr_CAMERA_TYPE</a> = 0xB8
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a31907db69f74e39041a3213a6d6a49c6">S0Addr_CAMSTATUS34</a> = 0xB4
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a0694822028f927970ffbd57a0c8a6705">S0Addr_CAMERA_TYPE</a> = 0xB8
 <br />
  }</td></tr>
 <tr class="separator:a1532e8504727e103db7ec69af3330f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1774,7 +1781,7 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a111e90b9677ebe361c5b591d9aa60d5f" name="a1532e8504727e103db7ec69af3330f15a111e90b9677ebe361c5b591d9aa60d5f"></a>S0Addr_EBST&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a1dec93b42179bc51c514f5b7aded4f00" name="a1532e8504727e103db7ec69af3330f15a1dec93b42179bc51c514f5b7aded4f00"></a>S0Addr_SDAT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15ad2421bfacc7fedf71aff14ee44d2f091" name="a1532e8504727e103db7ec69af3330f15ad2421bfacc7fedf71aff14ee44d2f091"></a>S0Addr_SEC&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a3e4d1cef7acb0e5fe5452bebb5e9a55f" name="a1532e8504727e103db7ec69af3330f15a3e4d1cef7acb0e5fe5452bebb5e9a55f"></a>S0Addr_TOR_TICNT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a17ac81a0a2c489f9898d4ac09f655bcc" name="a1532e8504727e103db7ec69af3330f15a17ac81a0a2c489f9898d4ac09f655bcc"></a>S0Addr_TOR_STICNT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a47befeff86debd28e4ca974cc718a713" name="a1532e8504727e103db7ec69af3330f15a47befeff86debd28e4ca974cc718a713"></a>S0Addr_TOR_TOCNT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15acfef23d8fcc664d4c935386da5aec095" name="a1532e8504727e103db7ec69af3330f15acfef23d8fcc664d4c935386da5aec095"></a>S0Addr_TOR_MSB&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15aabc08a57cbf052ab2e6c22b5a29633bb" name="a1532e8504727e103db7ec69af3330f15aabc08a57cbf052ab2e6c22b5a29633bb"></a>S0Addr_ARREG&#160;</td><td class="fielddoc"></td></tr>
@@ -1797,6 +1804,7 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a1dab81075455293fdbcb79a572f4b6ae" name="a1532e8504727e103db7ec69af3330f15a1dab81075455293fdbcb79a572f4b6ae"></a>S0Addr_ROI2&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a65c4baa42bc76c84cd5dc8d62adb5c90" name="a1532e8504727e103db7ec69af3330f15a65c4baa42bc76c84cd5dc8d62adb5c90"></a>S0Addr_XCKDLY&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a91a13f75aa5d2421cf5ca3d5331f59c6" name="a1532e8504727e103db7ec69af3330f15a91a13f75aa5d2421cf5ca3d5331f59c6"></a>S0Addr_S1S2ReadDelay&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15aef10918d488e4906ad90a4e76b5823cf" name="a1532e8504727e103db7ec69af3330f15aef10918d488e4906ad90a4e76b5823cf"></a>S0Addr_BTICNT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a2bd680f1828bf9d0ee53844acb00445f" name="a1532e8504727e103db7ec69af3330f15a2bd680f1828bf9d0ee53844acb00445f"></a>S0Addr_BTIMER&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a89961a01eb14d4a1127c2dccf555ece4" name="a1532e8504727e103db7ec69af3330f15a89961a01eb14d4a1127c2dccf555ece4"></a>S0Addr_BDAT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a57598380c7dc26dd4eac60c6ad31af2b" name="a1532e8504727e103db7ec69af3330f15a57598380c7dc26dd4eac60c6ad31af2b"></a>S0Addr_BEC&#160;</td><td class="fielddoc"></td></tr>
@@ -1946,6 +1954,26 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<a id="a78dc599b51cfbecce04a83ff0374d405" name="a78dc599b51cfbecce04a83ff0374d405"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78dc599b51cfbecce04a83ff0374d405">&#9670;&#160;</a></span>TOR_BTICNT_bits_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a78dc599b51cfbecce04a83ff0374d405">TOR_BTICNT_bits_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a78dc599b51cfbecce04a83ff0374d405a81f3432f12ac857df98c5831dc091d83" name="a78dc599b51cfbecce04a83ff0374d405a81f3432f12ac857df98c5831dc091d83"></a>TOR_bits_BTICNT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a78dc599b51cfbecce04a83ff0374d405af526558c003c6d41eed19f0b14271ecf" name="a78dc599b51cfbecce04a83ff0374d405af526558c003c6d41eed19f0b14271ecf"></a>TOR_bit_BTICNT_EN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a78dc599b51cfbecce04a83ff0374d405a3acd7d7ca2b398d00ce14cb06fdde622" name="a78dc599b51cfbecce04a83ff0374d405a3acd7d7ca2b398d00ce14cb06fdde622"></a>TOR_bitindex_BTICNT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a78dc599b51cfbecce04a83ff0374d405a71527789974687effdcf123119af76e5" name="a78dc599b51cfbecce04a83ff0374d405a71527789974687effdcf123119af76e5"></a>TOR_bitindex_BTICNT_EN&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="ac3a1258fa04db205b71f72f565207db7" name="ac3a1258fa04db205b71f72f565207db7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac3a1258fa04db205b71f72f565207db7">&#9670;&#160;</a></span>TOR_MSB_bits_t</h2>
 
@@ -1977,22 +2005,22 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a id="a7a7147e6165a1546d6195f713001e590" name="a7a7147e6165a1546d6195f713001e590"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a7147e6165a1546d6195f713001e590">&#9670;&#160;</a></span>TOR_TICNT_bits_t</h2>
+<a id="adccdca7702401ef9feb9b73f9974f1f2" name="adccdca7702401ef9feb9b73f9974f1f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adccdca7702401ef9feb9b73f9974f1f2">&#9670;&#160;</a></span>TOR_STICNT_bits_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="#a7a7147e6165a1546d6195f713001e590">TOR_TICNT_bits_t</a></td>
+          <td class="memname">enum <a class="el" href="#adccdca7702401ef9feb9b73f9974f1f2">TOR_STICNT_bits_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7a7147e6165a1546d6195f713001e590ac5f1ccb1fffdeef41903eeeaf5d55eba" name="a7a7147e6165a1546d6195f713001e590ac5f1ccb1fffdeef41903eeeaf5d55eba"></a>TOR_bits_TICNT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7a7147e6165a1546d6195f713001e590ae4f196ef4d6b5cedac34eced2ef7df6e" name="a7a7147e6165a1546d6195f713001e590ae4f196ef4d6b5cedac34eced2ef7df6e"></a>TOR_bit_TICNT_EN&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7a7147e6165a1546d6195f713001e590ae13dcb80e54fc5b07ebfe733e4655a1f" name="a7a7147e6165a1546d6195f713001e590ae13dcb80e54fc5b07ebfe733e4655a1f"></a>TOR_bitindex_TICNT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7a7147e6165a1546d6195f713001e590aa5cc4ef900ae1fc7d825804a6f81fdbf" name="a7a7147e6165a1546d6195f713001e590aa5cc4ef900ae1fc7d825804a6f81fdbf"></a>TOR_bitindex_TICNT_EN&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adccdca7702401ef9feb9b73f9974f1f2ac01ed7f51d1c42db70504cc366ca0d1d" name="adccdca7702401ef9feb9b73f9974f1f2ac01ed7f51d1c42db70504cc366ca0d1d"></a>TOR_bits_STICNT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adccdca7702401ef9feb9b73f9974f1f2a7930c51ddcfa359719705e4356783778" name="adccdca7702401ef9feb9b73f9974f1f2a7930c51ddcfa359719705e4356783778"></a>TOR_bit_STICNT_EN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adccdca7702401ef9feb9b73f9974f1f2a4e38c8c71f66ec09e558ac5c36843212" name="adccdca7702401ef9feb9b73f9974f1f2a4e38c8c71f66ec09e558ac5c36843212"></a>TOR_bitindex_STICNT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adccdca7702401ef9feb9b73f9974f1f2abfcf7df48c650b4f4a3d69d6376bc627" name="adccdca7702401ef9feb9b73f9974f1f2abfcf7df48c650b4f4a3d69d6376bc627"></a>TOR_bitindex_STICNT_EN&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

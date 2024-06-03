@@ -138,8 +138,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a41cdd5f01634be12f124d513081a1249"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5949285bc39a601900f8d975444e492d" id="r_a5949285bc39a601900f8d975444e492d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5949285bc39a601900f8d975444e492d">temp_level</a></td></tr>
 <tr class="separator:a5949285bc39a601900f8d975444e492d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29f5676f11094ab4c5289499e206c00c" id="r_a29f5676f11094ab4c5289499e206c00c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29f5676f11094ab4c5289499e206c00c">shortrs</a></td></tr>
-<tr class="separator:a29f5676f11094ab4c5289499e206c00c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a526f3452aa41931041f6bb05166f08" id="r_a9a526f3452aa41931041f6bb05166f08"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a526f3452aa41931041f6bb05166f08">bticnt</a></td></tr>
+<tr class="separator:a9a526f3452aa41931041f6bb05166f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9e618626ec640a5733b33745e844d15" id="r_ad9e618626ec640a5733b33745e844d15"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9e618626ec640a5733b33745e844d15">gpx_offset</a></td></tr>
 <tr class="separator:ad9e618626ec640a5733b33745e844d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74f4f26e7f43bf7f40bef828ac5849e0" id="r_a74f4f26e7f43bf7f40bef828ac5849e0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74f4f26e7f43bf7f40bef828ac5849e0">fft_lines</a></td></tr>
@@ -180,8 +180,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a8f2833d2036671abc6382415794d6032"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d36d06df4f4506a30632260bf6b1939" id="r_a9d36d06df4f4506a30632260bf6b1939"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d36d06df4f4506a30632260bf6b1939">tocnt</a></td></tr>
 <tr class="separator:a9d36d06df4f4506a30632260bf6b1939"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac12f30ac115c4defea18c2fa26f99040" id="r_ac12f30ac115c4defea18c2fa26f99040"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac12f30ac115c4defea18c2fa26f99040">ticnt</a></td></tr>
-<tr class="separator:ac12f30ac115c4defea18c2fa26f99040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95629ef99d7173af90b835efd29b4eb9" id="r_a95629ef99d7173af90b835efd29b4eb9"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95629ef99d7173af90b835efd29b4eb9">sticnt</a></td></tr>
+<tr class="separator:a95629ef99d7173af90b835efd29b4eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a249f0f15fbde2e31e9110bc1c3d709bb" id="r_a249f0f15fbde2e31e9110bc1c3d709bb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a249f0f15fbde2e31e9110bc1c3d709bb">sensor_reset_length_in_4_ns</a></td></tr>
 <tr class="separator:a249f0f15fbde2e31e9110bc1c3d709bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87115a7a52a7b6f474bb12ab3a2db076" id="r_a87115a7a52a7b6f474bb12ab3a2db076"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87115a7a52a7b6f474bb12ab3a2db076">write_to_disc</a></td></tr>
@@ -334,6 +334,25 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Block trigger input mode determines the signal, on which one block of readouts is started. See enum <a class="el" href="enum__settings_8h.html#a2fce6aa348483bc730e1693a39bc0e00">bti_mode_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. Further information on trigger signals can be found in the manual in chapter 6.3. </p>
+
+</div>
+</div>
+<a id="a9a526f3452aa41931041f6bb05166f08" name="a9a526f3452aa41931041f6bb05166f08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a526f3452aa41931041f6bb05166f08">&#9670;&#160;</a></span>bticnt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t camera_settings::bticnt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Block trigger input counter determines how many block trigger inputs are skipped before the next block start is triggered. Every bticnt+1 trigger input the next block is triggered according to <a class="el" href="#a6578f775f4bbad6da1ec2d85323a8458">camera_settings::bti_mode</a>. bticnt is a 7 bit unsigned integer. Introduced in PCIe board version 222.12.</p><ul>
+<li>min: 0</li>
+<li>step: 1</li>
+<li>max: 127 </li>
+</ul>
 
 </div>
 </div>
@@ -849,24 +868,6 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a29f5676f11094ab4c5289499e206c00c" name="a29f5676f11094ab4c5289499e206c00c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29f5676f11094ab4c5289499e206c00c">&#9670;&#160;</a></span>shortrs</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t camera_settings::shortrs</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>DEPRECATED Shortrs controlled the sensor reset length. This setting is replaced by sensor_reset_length_in_4_ns.</p><ul>
-<li>=0: long reset 800ns</li>
-<li>&gt;0: short reset 380ns </li>
-</ul>
-
-</div>
-</div>
 <a id="a6f55940576ecb2bced3027d38676ea5c" name="a6f55940576ecb2bced3027d38676ea5c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6f55940576ecb2bced3027d38676ea5c">&#9670;&#160;</a></span>sslope</h2>
 
@@ -894,6 +895,25 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Scan trigger input mode determines the signal, on which one readout is started. See enum <a class="el" href="enum__settings_8h.html#a0bdcebe838e77385002ccc4077a6e743">sti_mode_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. Further information on trigger signals can be found in the manual in chapter 6.3. </p>
+
+</div>
+</div>
+<a id="a95629ef99d7173af90b835efd29b4eb9" name="a95629ef99d7173af90b835efd29b4eb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95629ef99d7173af90b835efd29b4eb9">&#9670;&#160;</a></span>sticnt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t camera_settings::sticnt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Scan trigger input counter determines how many scan trigger inputs are skipped before the next measurement is triggered. Every sticnt+1 trigger input the measurement is triggered according to <a class="el" href="#afeb4693c3f62bd567f9063c0412035b5">camera_settings::sti_mode</a>. sticnt is a 7 bit unsigned integer. Further information about sticnt can be found in the manual in chapter 6.2.4.12.</p><ul>
+<li>min: 0</li>
+<li>step: 1</li>
+<li>max: 127 </li>
+</ul>
 
 </div>
 </div>
@@ -936,25 +956,6 @@ Public Attributes</h2></td></tr>
 <li>5: -30 °C</li>
 <li>6: -40 °C</li>
 <li>7: min °C </li>
-</ul>
-
-</div>
-</div>
-<a id="ac12f30ac115c4defea18c2fa26f99040" name="ac12f30ac115c4defea18c2fa26f99040"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac12f30ac115c4defea18c2fa26f99040">&#9670;&#160;</a></span>ticnt</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t camera_settings::ticnt</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Trigger output counter determines how many trigger inputs are skipped before the next measurement is triggered. Every ticnt+1 trigger input the measurement is triggered according to <a class="el" href="#afeb4693c3f62bd567f9063c0412035b5">camera_settings::sti_mode</a>. ticnt is a 7 bit unsigned integer. Further information about ticnt can be found in the manual in chapter 6.2.4.12.</p><ul>
-<li>min: 0</li>
-<li>step: 1</li>
-<li>max: 127 </li>
 </ul>
 
 </div>

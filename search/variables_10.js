@@ -14,10 +14,10 @@ var searchData=
   ['sensor_5freset_5flength_5fin_5f4_5fns_11',['sensor_reset_length_in_4_ns',['../structcamera__settings.html#a249f0f15fbde2e31e9110bc1c3d709bb',1,'camera_settings']]],
   ['sensor_5ftype_12',['sensor_type',['../structcamera__settings.html#a3c95b63babcb2222a271e2cd42b6e057',1,'camera_settings']]],
   ['settings_5fstruct_13',['settings_struct',['../globals_8h.html#af3b701c44f042f5169109f69acbe8d01',1,'settings_struct:&#160;globals.c'],['../globals_8c.html#af3b701c44f042f5169109f69acbe8d01',1,'settings_struct:&#160;globals.c']]],
-  ['shortrs_14',['shortrs',['../structcamera__settings.html#a29f5676f11094ab4c5289499e206c00c',1,'camera_settings']]],
-  ['split_5fmode_15',['split_mode',['../structfile__header.html#ae0f4d820497a8b527703992eada5a83c',1,'file_header']]],
-  ['sslope_16',['sslope',['../structcamera__settings.html#a6f55940576ecb2bced3027d38676ea5c',1,'camera_settings']]],
-  ['start_5ftimestamp_17',['start_timestamp',['../globals_8h.html#ac4d084be9a8b4b7d84a8ba52be25e064',1,'start_timestamp:&#160;globals.c'],['../globals_8c.html#ac4d084be9a8b4b7d84a8ba52be25e064',1,'start_timestamp:&#160;globals.c']]],
-  ['sti_5fmode_18',['sti_mode',['../structcamera__settings.html#afeb4693c3f62bd567f9063c0412035b5',1,'camera_settings']]],
+  ['split_5fmode_14',['split_mode',['../structfile__header.html#ae0f4d820497a8b527703992eada5a83c',1,'file_header']]],
+  ['sslope_15',['sslope',['../structcamera__settings.html#a6f55940576ecb2bced3027d38676ea5c',1,'camera_settings']]],
+  ['start_5ftimestamp_16',['start_timestamp',['../globals_8h.html#ac4d084be9a8b4b7d84a8ba52be25e064',1,'start_timestamp:&#160;globals.c'],['../globals_8c.html#ac4d084be9a8b4b7d84a8ba52be25e064',1,'start_timestamp:&#160;globals.c']]],
+  ['sti_5fmode_17',['sti_mode',['../structcamera__settings.html#afeb4693c3f62bd567f9063c0412035b5',1,'camera_settings']]],
+  ['sticnt_18',['sticnt',['../structcamera__settings.html#a95629ef99d7173af90b835efd29b4eb9',1,'camera_settings']]],
   ['stime_5fin_5fmicrosec_19',['stime_in_microsec',['../structcamera__settings.html#a7a10d3d25fafe652f0f6b349f9c2a5fb',1,'camera_settings']]]
 ];

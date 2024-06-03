@@ -8,5 +8,6 @@ var searchData=
   ['board_5fsel_5',['board_sel',['../structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb',1,'measurement_settings::board_sel'],['../structmeasurement__settings__matlab.html#a1d80b48d6c6d557aec027edb47d70533',1,'measurement_settings_matlab::board_sel']]],
   ['bslope_6',['bslope',['../structcamera__settings.html#aad2f5116d777038bcb58543db3caf877',1,'camera_settings']]],
   ['bti_5fmode_7',['bti_mode',['../structcamera__settings.html#a6578f775f4bbad6da1ec2d85323a8458',1,'camera_settings']]],
-  ['btime_5fin_5fmicrosec_8',['btime_in_microsec',['../structcamera__settings.html#a2c83fba5f72159010fc146c2c52209de',1,'camera_settings']]]
+  ['bticnt_8',['bticnt',['../structcamera__settings.html#a9a526f3452aa41931041f6bb05166f08',1,'camera_settings']]],
+  ['btime_5fin_5fmicrosec_9',['btime_in_microsec',['../structcamera__settings.html#a2c83fba5f72159010fc146c2c52209de',1,'camera_settings']]]
 ];
