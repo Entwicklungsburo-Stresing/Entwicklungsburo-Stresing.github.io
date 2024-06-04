@@ -531,9 +531,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a9781827ddd301baf671526915bfbc6db">S0Addr_LTDC2</a> = 0xA4
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15adf8bc35ff652d8c514bba71d814ee9a6">S0Addr_DSCCtrl</a> = 0xA8
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a41e8c3797e6933e36ebfd5d092279149">S0Addr_DAC</a> = 0xAC
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a97590c3dc08198b5edc60c2f9b665eef">S0Addr_CAMSTATUS12</a> = 0xB0
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15af31a289b718653a82f45b40c23d0f2e9">S0Addr_XCKLEN</a> = 0xB0
 , <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a31907db69f74e39041a3213a6d6a49c6">S0Addr_CAMSTATUS34</a> = 0xB4
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a3b577d7674121c2ffb5b84b3006fb6ba">S0Addr_BONLEN</a> = 0xB4
 , <a class="el" href="#a1532e8504727e103db7ec69af3330f15a0694822028f927970ffbd57a0c8a6705">S0Addr_CAMERA_TYPE</a> = 0xB8
 <br />
  }</td></tr>
@@ -782,12 +782,6 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#abcb8c0b3316bf062919b5d1a2673004cafbf7818ce48ad691b6886b9ddc713f87">DSCCtrl_bitindex_dir2</a> = 9
  }</td></tr>
 <tr class="separator:abcb8c0b3316bf062919b5d1a2673004c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82be75f28294698049e12fee0e2ce877" id="r_a82be75f28294698049e12fee0e2ce877"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82be75f28294698049e12fee0e2ce877">CAMSTATUS12_bits_t</a> { <a class="el" href="#a82be75f28294698049e12fee0e2ce877a11961d8401c84e1addb42fe4cebc3c00">CAMSTATUS12_bitindex_temp</a> = 0
- }</td></tr>
-<tr class="separator:a82be75f28294698049e12fee0e2ce877"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4b3c5588754c62c2f4c200cb2cafbc9" id="r_ac4b3c5588754c62c2f4c200cb2cafbc9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4b3c5588754c62c2f4c200cb2cafbc9">CAMSTATUS34_bits_t</a> { <a class="el" href="#ac4b3c5588754c62c2f4c200cb2cafbc9ab2a6e19d791acfe87f8102dc6d63f707">CAMSTATUS34_bitindex_temp</a> = 0
- }</td></tr>
-<tr class="separator:ac4b3c5588754c62c2f4c200cb2cafbc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1f3aee94473361f396c43f6eb5db0f1" id="r_af1f3aee94473361f396c43f6eb5db0f1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1f3aee94473361f396c43f6eb5db0f1">camera_type_bits_t</a> { <a class="el" href="#af1f3aee94473361f396c43f6eb5db0f1add9d08e13c0f7de9ff488768977ae093">camera_type_sensor_type_bits</a> = 0x0000FFFF
 , <a class="el" href="#af1f3aee94473361f396c43f6eb5db0f1a3c89df8f9a49d73dd59ff52552b77e10">camera_type_camera_system_bits</a> = 0xFFFF0000
 , <a class="el" href="#af1f3aee94473361f396c43f6eb5db0f1ac4da96f23746040708a4d3a22a929dd7">camera_type_sensor_type_bit_index</a> = 0
@@ -1160,40 +1154,6 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="af1f3aee94473361f396c43f6eb5db0f1a3c89df8f9a49d73dd59ff52552b77e10" name="af1f3aee94473361f396c43f6eb5db0f1a3c89df8f9a49d73dd59ff52552b77e10"></a>camera_type_camera_system_bits&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af1f3aee94473361f396c43f6eb5db0f1ac4da96f23746040708a4d3a22a929dd7" name="af1f3aee94473361f396c43f6eb5db0f1ac4da96f23746040708a4d3a22a929dd7"></a>camera_type_sensor_type_bit_index&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af1f3aee94473361f396c43f6eb5db0f1a943d1c69d6a33acf0d136af8d6e988ea" name="af1f3aee94473361f396c43f6eb5db0f1a943d1c69d6a33acf0d136af8d6e988ea"></a>camera_type_camera_system_bit_index&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<a id="a82be75f28294698049e12fee0e2ce877" name="a82be75f28294698049e12fee0e2ce877"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82be75f28294698049e12fee0e2ce877">&#9670;&#160;</a></span>CAMSTATUS12_bits_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="#a82be75f28294698049e12fee0e2ce877">CAMSTATUS12_bits_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a82be75f28294698049e12fee0e2ce877a11961d8401c84e1addb42fe4cebc3c00" name="a82be75f28294698049e12fee0e2ce877a11961d8401c84e1addb42fe4cebc3c00"></a>CAMSTATUS12_bitindex_temp&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<a id="ac4b3c5588754c62c2f4c200cb2cafbc9" name="ac4b3c5588754c62c2f4c200cb2cafbc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4b3c5588754c62c2f4c200cb2cafbc9">&#9670;&#160;</a></span>CAMSTATUS34_bits_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="#ac4b3c5588754c62c2f4c200cb2cafbc9">CAMSTATUS34_bits_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac4b3c5588754c62c2f4c200cb2cafbc9ab2a6e19d791acfe87f8102dc6d63f707" name="ac4b3c5588754c62c2f4c200cb2cafbc9ab2a6e19d791acfe87f8102dc6d63f707"></a>CAMSTATUS34_bitindex_temp&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1817,8 +1777,10 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a9781827ddd301baf671526915bfbc6db" name="a1532e8504727e103db7ec69af3330f15a9781827ddd301baf671526915bfbc6db"></a>S0Addr_LTDC2&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15adf8bc35ff652d8c514bba71d814ee9a6" name="a1532e8504727e103db7ec69af3330f15adf8bc35ff652d8c514bba71d814ee9a6"></a>S0Addr_DSCCtrl&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a41e8c3797e6933e36ebfd5d092279149" name="a1532e8504727e103db7ec69af3330f15a41e8c3797e6933e36ebfd5d092279149"></a>S0Addr_DAC&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a97590c3dc08198b5edc60c2f9b665eef" name="a1532e8504727e103db7ec69af3330f15a97590c3dc08198b5edc60c2f9b665eef"></a>S0Addr_CAMSTATUS12&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a31907db69f74e39041a3213a6d6a49c6" name="a1532e8504727e103db7ec69af3330f15a31907db69f74e39041a3213a6d6a49c6"></a>S0Addr_CAMSTATUS34&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15af31a289b718653a82f45b40c23d0f2e9" name="a1532e8504727e103db7ec69af3330f15af31a289b718653a82f45b40c23d0f2e9"></a>S0Addr_XCKLEN&#160;</td><td class="fielddoc"><p>XCKLEN is 32 bit unsigned integer, which shows the length of XCK in a 10 ns resolution. Introduced in PCIe card version 222_12. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a3b577d7674121c2ffb5b84b3006fb6ba" name="a1532e8504727e103db7ec69af3330f15a3b577d7674121c2ffb5b84b3006fb6ba"></a>S0Addr_BONLEN&#160;</td><td class="fielddoc"><p>BONLEN is a 32 bit unsigned integer, which shows the length of BON in a 10 ns resolution. Introduced in PCIe card version 222_12. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a0694822028f927970ffbd57a0c8a6705" name="a1532e8504727e103db7ec69af3330f15a0694822028f927970ffbd57a0c8a6705"></a>S0Addr_CAMERA_TYPE&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
