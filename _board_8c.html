@@ -658,6 +658,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a5edd99b739fb068476098402846c48f8" id="r_a5edd99b739fb068476098402846c48f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5edd99b739fb068476098402846c48f8">SetS1S2ReadDelay</a> (uint32_t drvno)</td></tr>
 <tr class="memdesc:a5edd99b739fb068476098402846c48f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This functions sets the register S1S2ReadDealy with the setting <a class="el" href="structcamera__settings.html#a725f47b587a2b425688fbd79586b989e">camera_settings::s1s2_read_delay_in_10ns</a>.  <br /></td></tr>
 <tr class="separator:a5edd99b739fb068476098402846c48f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdb7de754586d51dedd986f22463f3e9" id="r_acdb7de754586d51dedd986f22463f3e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acdb7de754586d51dedd986f22463f3e9">GetXckLength</a> (uint32_t drvno, uint32_t *xckLengthIn10ns)</td></tr>
+<tr class="memdesc:acdb7de754586d51dedd986f22463f3e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports the measurement data to a HDF5 file.  <br /></td></tr>
+<tr class="separator:acdb7de754586d51dedd986f22463f3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29bc132fdfad73f895d89b69962cffd0" id="r_a29bc132fdfad73f895d89b69962cffd0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29bc132fdfad73f895d89b69962cffd0">GetXckPeriod</a> (uint32_t drvno, uint32_t *xckPeriodIn10ns)</td></tr>
+<tr class="separator:a29bc132fdfad73f895d89b69962cffd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5295bc9c20a518cfb33d95e59a341292" id="r_a5295bc9c20a518cfb33d95e59a341292"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5295bc9c20a518cfb33d95e59a341292">GetBonLength</a> (uint32_t drvno, uint32_t *bonLengthIn10ns)</td></tr>
+<tr class="separator:a5295bc9c20a518cfb33d95e59a341292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6be0d810fe23f9e9be375bcdca9fa8e" id="r_ab6be0d810fe23f9e9be375bcdca9fa8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6be0d810fe23f9e9be375bcdca9fa8e">GetBonPeriod</a> (uint32_t drvno, uint32_t *bonPeriodIn10ns)</td></tr>
+<tr class="separator:ab6be0d810fe23f9e9be375bcdca9fa8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aa28480bfa03957b4f284c13e800ca8b0" name="aa28480bfa03957b4f284c13e800ca8b0"></a>
@@ -2512,6 +2521,48 @@ es_status_codes<ul>
 
 </div>
 </div>
+<a id="a5295bc9c20a518cfb33d95e59a341292" name="a5295bc9c20a518cfb33d95e59a341292"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5295bc9c20a518cfb33d95e59a341292">&#9670;&#160;</a></span>GetBonLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> GetBonLength </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>bonLengthIn10ns</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6be0d810fe23f9e9be375bcdca9fa8e" name="ab6be0d810fe23f9e9be375bcdca9fa8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6be0d810fe23f9e9be375bcdca9fa8e">&#9670;&#160;</a></span>GetBonPeriod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> GetBonPeriod </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>bonPeriodIn10ns</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a165104ce85ff0726d47b9f0acf383c08" name="a165104ce85ff0726d47b9f0acf383c08"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a165104ce85ff0726d47b9f0acf383c08">&#9670;&#160;</a></span>GetCameraStatusOverTemp()</h2>
 
@@ -3264,6 +3315,58 @@ es_status_codes<ul>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char **</td>          <td class="paramname"><span class="paramname"><em>resultString</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acdb7de754586d51dedd986f22463f3e9" name="acdb7de754586d51dedd986f22463f3e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdb7de754586d51dedd986f22463f3e9">&#9670;&#160;</a></span>GetXckLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> GetXckLength </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>xckLengthIn10ns</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exports the measurement data to a HDF5 file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Chosen path to save the file. </td></tr>
+    <tr><td class="paramname">filename</td><td>Chosen filename. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes: es_measurement_running es_first_measurement_not_done es_create_file_failed </dd></dl>
+
+</div>
+</div>
+<a id="a29bc132fdfad73f895d89b69962cffd0" name="a29bc132fdfad73f895d89b69962cffd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29bc132fdfad73f895d89b69962cffd0">&#9670;&#160;</a></span>GetXckPeriod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> GetXckPeriod </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>xckPeriodIn10ns</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
