@@ -115,83 +115,78 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a8e76e2a560aa415ee8df741caecff6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d179386b40162fc96b96c12da077dd8" id="r_a1d179386b40162fc96b96c12da077dd8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d179386b40162fc96b96c12da077dd8">PCIEFLAGS_bits_t</a> { <br />
-&#160;&#160;<a class="el" href="#a1d179386b40162fc96b96c12da077dd8a71979384b23c09ff9e7993909f4eba0c">PCIEFLAGS_bit_XCKI</a> = 0x01
-, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8a07772643d9a66cc53bd86ffe151e2604">PCIEFLAGS_bit_INTTRIG</a> = 0x02
-, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8a83be73ad0beefcac971dc356e429d049">PCIEFLAGS_bit_ENRSTIMERHW</a> = 0x04
-, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8a5408ac1d1055b617ab0541fa4c9e623e">PCIEFLAGS_bit_USE_ENFFW_PROTECT</a> = 0x08
+<tr class="memitem:a1532e8504727e103db7ec69af3330f15" id="r_a1532e8504727e103db7ec69af3330f15"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1532e8504727e103db7ec69af3330f15">s0_addresses_t</a> { <br />
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a1764a5bd788f2f8bc3593155676bc729">S0Addr_DBR</a> = 0x0
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15ab8b58bfd78906f9f73792d3d959ff478">S0Addr_CTRLA</a> = 0x4
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a55ddf95750d0fb8fd591f9eb5250c435">S0Addr_CTRLB</a> = 0x5
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a355c3c7759568e6a38ca2a30ae4ea9ae">S0Addr_CTRLC</a> = 0x6
 , <br />
-&#160;&#160;<a class="el" href="#a1d179386b40162fc96b96c12da077dd8a57e66d5ceea609f2a9d958b0537a835d">PCIEFLAGS_bit_BLOCKTRIG</a> = 0x10
-, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8a52caba18a09ed771529808f1cfe19236">PCIEFLAGS_bit_MEASUREON</a> = 0x20
-, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8a8d62538c05238768082e633a0b3da40c">PCIEFLAGS_bit_BLOCKON</a> = 0x40
-, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8ab0b8bfe9e36f3044c32a9b18da64ea79">PCIEFLAGS_bit_IS_TDC</a> = 0x100
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a98df8a150bdf53444398610282d23964">S0Addr_XCK</a> = 0x8
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a07043531144f42f4798f561b7bd4f3ee">S0Addr_XCKCNT</a> = 0xc
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a933d1a284e67b99640185c820889ede8">S0Addr_PIXREG</a> = 0x10
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a4dfe7df582c940fec4eeb2b79249889e">S0Addr_FFCTRL</a> = 0x12
 , <br />
-&#160;&#160;<a class="el" href="#a1d179386b40162fc96b96c12da077dd8aca7eebed32c8b3f67f357bbc47a2f1a6">PCIEFLAGS_bit_IS_DSC</a> = 0x200
-, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8a472539496f43146a4cddce5571237356">PCIEFLAGS_bit_linkup_sfp3</a> = 0x4000000
-, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8af6f3cf3d7967e3fbae65b6a34bac4515">PCIEFLAGS_bit_error_sfp3</a> = 0x8000000
-, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8ad0b7d8e406640bcf13461d362936ea3b">PCIEFLAGS_bit_linkup_sfp2</a> = 0x10000000
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a7fc6890c6412ef3feb5de2c7f6e6543f">S0Addr_FF_FLAGS</a> = 0x13
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15ac48ebcaa94f4907b247c75c79beb65e8">S0Addr_FIFOCNT</a> = 0x14
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15ae0a26511de69a75dea30c5ca7c82000c">S0Addr_VCLKCTRL</a> = 0x18
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a09c2ee0bcbe404ef15319ad03b1dee74">S0Addr_VCLKFREQ</a> = 0x1b
 , <br />
-&#160;&#160;<a class="el" href="#a1d179386b40162fc96b96c12da077dd8abc2e3cf932ea5d49cb24db7321ca4641">PCIEFLAGS_bit_error_sfp2</a> = 0x20000000
-, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8a89c72ee6e87a161be9ae9e10d0f60bd5">PCIEFLAGS_bit_linkup_sfp1</a> = 0x40000000
-, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8ad89ba029afef992d82e18fa3a102a39a">PCIEFLAGS_bit_error_sfp1</a> = 0x80000000
-, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8a600812dfa8c18e7d73415307dfb7be1a">PCIEFLAGS_bitindex_XCKI</a> = 0
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a111e90b9677ebe361c5b591d9aa60d5f">S0Addr_EBST</a> = 0x1C
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a1dec93b42179bc51c514f5b7aded4f00">S0Addr_SDAT</a> = 0x20
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15ad2421bfacc7fedf71aff14ee44d2f091">S0Addr_SEC</a> = 0x24
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a17ac81a0a2c489f9898d4ac09f655bcc">S0Addr_TOR_STICNT</a> = 0x28
 , <br />
-&#160;&#160;<a class="el" href="#a1d179386b40162fc96b96c12da077dd8a1b88699a59ac0416976f517603f1119a">PCIEFLAGS_bitindex_INTTRIG</a> = 1
-, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8a1e0da9cee5f523ee69a35c17476c9eb5">PCIEFLAGS_bitindex_ENRSTIMERHW</a> = 2
-, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8aeda51979a162dcf731ae5ee559868707">PCIEFLAGS_bitindex_USE_ENFFW_PROTECT</a> = 3
-, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8a15ed960feaef28833264e767de96abfb">PCIEFLAGS_bitindex_BLOCKTRIG</a> = 4
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a47befeff86debd28e4ca974cc718a713">S0Addr_TOR_TOCNT</a> = 0x2A
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15acfef23d8fcc664d4c935386da5aec095">S0Addr_TOR_MSB</a> = 0x2B
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15aabc08a57cbf052ab2e6c22b5a29633bb">S0Addr_ARREG</a> = 0x2C
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a734540f1db03bbe872ea40437117b5ba">S0Addr_GIOREG</a> = 0x30
 , <br />
-&#160;&#160;<a class="el" href="#a1d179386b40162fc96b96c12da077dd8aac34a3af42460646b43ac2b23b03a50a">PCIEFLAGS_bitindex_MEASUREON</a> = 5
-, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8ab402211cbc0d00f7fe9d015ea64b8ceb">PCIEFLAGS_bitindex_BLOCKON</a> = 6
-, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8acb8d2ed3adf7343df7c0377fa43d1658">PCIEFLAGS_bitindex_IS_TDC</a> = 8
-, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8a850dbe1d4da2519540e0ef450409eb62">PCIEFLAGS_bitindex_IS_DSC</a> = 9
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a4d98a1dbdae8477489c378937d6f0bc8">S0Addr_XCK_PERIOD</a> = 0x34
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a4237fbee2f68fb8dae30ba8e5ccb53bb">S0Addr_IRQREG</a> = 0x38
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15ab3fcf2c581c776aa334545063188b05d">S0Addr_PCI</a> = 0x3C
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a641c76a6ee11cb383280b61e5835c9df">S0Addr_PCIEFLAGS</a> = 0x40
 , <br />
-&#160;&#160;<a class="el" href="#a1d179386b40162fc96b96c12da077dd8adb8c31d57895a650554fd3f2155c267f">PCIEFLAGS_bitindex_linkup_sfp3</a> = 26
-, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8abe0be7d671163f1448eb51598dbec758">PCIEFLAGS_bitindex_error_sfp3</a> = 27
-, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8acad413fb3bb12ea013c511028d7cd4a7">PCIEFLAGS_bitindex_linkup_sfp2</a> = 28
-, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8a6fec1facc26b98407b951c930ae67b9f">PCIEFLAGS_bitindex_error_sfp2</a> = 29
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15ae59d8bd282f5300cf261852266c669bd">S0Addr_NOS</a> = 0x44
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a68a15933623375e32ed031e35474bebe">S0Addr_ScanIndex</a> = 0x48
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15ab2f520ca22b8687c136dc305cd158224">S0Addr_DmaBufSizeInScans</a> = 0x04C
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15ab770119263ac35baaf83b1a6b7455a49">S0Addr_DMAsPerIntr</a> = 0x050
 , <br />
-&#160;&#160;<a class="el" href="#a1d179386b40162fc96b96c12da077dd8a10edd5431e8e5706d9aae4c314100c95">PCIEFLAGS_bitindex_linkup_sfp1</a> = 30
-, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8a600ad5adbc8bab66adc6b864d03ee74d">PCIEFLAGS_bitindex_error_sfp1</a> = 31
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a986f13181bdd9b9f8042e6635f4f0a88">S0Addr_NOB</a> = 0x054
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a69967c36eba1a549af5ffad498763569">S0Addr_BLOCKINDEX</a> = 0x058
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15aac4437a46ca21e4deef1c268bfb4125a">S0Addr_CAMCNT</a> = 0x05C
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15afcd7149a9ab848b4f9edcad2817b703a">S0Addr_TDCCtrl</a> = 0x60
+, <br />
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a2479e701a6d7d1b9bcf4ca332c819744">S0Addr_TDCData</a> = 0x64
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15aeca5912c22e597a19d4f705047975004">S0Addr_ROI0</a> = 0x68
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a176cd778e5b7d876f213b7c79e5c9d71">S0Addr_ROI1</a> = 0x6C
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a1dab81075455293fdbcb79a572f4b6ae">S0Addr_ROI2</a> = 0x70
+, <br />
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a65c4baa42bc76c84cd5dc8d62adb5c90">S0Addr_XCKDLY</a> = 0x74
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a91a13f75aa5d2421cf5ca3d5331f59c6">S0Addr_S1S2ReadDelay</a> = 0x78
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15aef10918d488e4906ad90a4e76b5823cf">S0Addr_BTICNT</a> = 0x7c
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a2bd680f1828bf9d0ee53844acb00445f">S0Addr_BTIMER</a> = 0x80
+, <br />
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a89961a01eb14d4a1127c2dccf555ece4">S0Addr_BDAT</a> = 0x84
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a57598380c7dc26dd4eac60c6ad31af2b">S0Addr_BEC</a> = 0x88
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a423efe4e77fad563ab80d4cdd119afb2">S0Addr_BSLOPE</a> = 0x8C
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15ae14b9028dc1dc4fda2c7fe4759c8a67a">S0Addr_A1DSC</a> = 0x90
+, <br />
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a263993c3f1f0db647a8a0dc89cd189fd">S0Addr_L1DSC</a> = 0x94
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a6a5fda123f2cce6999ba25696fb21a06">S0Addr_A2DSC</a> = 0x98
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a08a527a8c1f3fa956c71a10f192ebd78">S0Addr_L2DSC</a> = 0x9C
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a58edd27073d3ec775b8a9879e01f216c">S0Addr_ATDC2</a> = 0xA0
+, <br />
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a9781827ddd301baf671526915bfbc6db">S0Addr_LTDC2</a> = 0xA4
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15adf8bc35ff652d8c514bba71d814ee9a6">S0Addr_DSCCtrl</a> = 0xA8
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a41e8c3797e6933e36ebfd5d092279149">S0Addr_DAC</a> = 0xAC
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15af31a289b718653a82f45b40c23d0f2e9">S0Addr_XCKLEN</a> = 0xB0
+, <br />
+&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a3b577d7674121c2ffb5b84b3006fb6ba">S0Addr_BONLEN</a> = 0xB4
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a0694822028f927970ffbd57a0c8a6705">S0Addr_CAMERA_TYPE</a> = 0xB8
+, <a class="el" href="#a1532e8504727e103db7ec69af3330f15acd31b7aeb84aa27442ad6376d7457d90">S0Addr_BON_PERIOD</a> = 0xBC
 <br />
  }</td></tr>
-<tr class="separator:a1d179386b40162fc96b96c12da077dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a112bb7cac94f9939207725ea4c525e5c" id="r_a112bb7cac94f9939207725ea4c525e5c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a112bb7cac94f9939207725ea4c525e5c">IRQREG_bits_t</a> { <br />
-&#160;&#160;<a class="el" href="#a112bb7cac94f9939207725ea4c525e5ca3158ddce3bbed45acf43a656344e9adf">IRQREG_bitindex_IRQLAT</a> = 0
-, <a class="el" href="#a112bb7cac94f9939207725ea4c525e5ca029bd704f9d2a2a521ed46734907bbe5">IRQREG_bitindex_IRQCNT</a> = 16
-, <a class="el" href="#a112bb7cac94f9939207725ea4c525e5cabd72106365282db1a5cfb52d5ef65c79">IRQREG_bitindex_HWDREQ_EN</a> = 30
-, <a class="el" href="#a112bb7cac94f9939207725ea4c525e5ca292c1a1bfd831c4206c55a67d24294f1">IRQREG_bitindex_INTRSR</a> = 31
-, <br />
-&#160;&#160;<a class="el" href="#a112bb7cac94f9939207725ea4c525e5ca49ba870bec2b3ed45fb745cb794954ea">IRQREG_bits_IRQLAT</a> = 0x0000FFFF
-, <a class="el" href="#a112bb7cac94f9939207725ea4c525e5ca50277dd8973996f226679a5c19b67eb5">IRQREG_bits_IRQCNT</a> = 0x3FFF0000
-, <a class="el" href="#a112bb7cac94f9939207725ea4c525e5cad334ccdff82ca28487415cc57ad57f63">IRQREG_bit_HWDREQ_EN</a> = 0x40000000
-, <a class="el" href="#a112bb7cac94f9939207725ea4c525e5ca0a9dbc23cb33075789bef247eb4b6dde">IRQREG_bit_INTRSR</a> = 0x80000000
-<br />
- }</td></tr>
-<tr class="separator:a112bb7cac94f9939207725ea4c525e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40f704477b6237468213735f0196cedb" id="r_a40f704477b6237468213735f0196cedb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40f704477b6237468213735f0196cedb">CTRLB_bits_t</a> { <br />
-&#160;&#160;<a class="el" href="#a40f704477b6237468213735f0196cedba3d7ce82ad81be7fee3b2d336e0457cbf">CTRLB_bit_STI0</a> = 0x01
-, <a class="el" href="#a40f704477b6237468213735f0196cedbadc0c05e0b4b54652b08fcd2b8d57e7f4">CTRLB_bit_STI1</a> = 0x02
-, <a class="el" href="#a40f704477b6237468213735f0196cedba224467b0bd471cef8f04c07c824d5a99">CTRLB_bit_STI2</a> = 0x04
-, <a class="el" href="#a40f704477b6237468213735f0196cedba2bcbb749670a665e27672f2c72464436">CTRLB_bits_STI</a> = 0x07
-, <br />
-&#160;&#160;<a class="el" href="#a40f704477b6237468213735f0196cedba1ce61ebff4db40f3559c36e4156ce2aa">CTRLB_bit_SHON</a> = 0x08
-, <a class="el" href="#a40f704477b6237468213735f0196cedba49ab3358112b050348df523883eabce1">CTRLB_bit_BTI0</a> = 0x10
-, <a class="el" href="#a40f704477b6237468213735f0196cedba8f439f828072979a7d1a3f91006f66c7">CTRLB_bit_BTI1</a> = 0x20
-, <a class="el" href="#a40f704477b6237468213735f0196cedba37682ae50e864281a91f061255338eca">CTRLB_bit_BTI2</a> = 0x40
-, <br />
-&#160;&#160;<a class="el" href="#a40f704477b6237468213735f0196cedbadb4c9e47e7258e69fd962e7bed8b8a2a">CTRLB_bits_BTI</a> = 0x70
-, <a class="el" href="#a40f704477b6237468213735f0196cedba5ef957622eccd4757dca9736e3bc8ca6">CTRLB_bitindex_STI0</a> = 0
-, <a class="el" href="#a40f704477b6237468213735f0196cedbacdd24cf2c104d28b56294d8f74a40ecc">CTRLB_bitindex_STI1</a> = 1
-, <a class="el" href="#a40f704477b6237468213735f0196cedba5a98649794a644ed75a814674b330e4d">CTRLB_bitindex_STI2</a> = 2
-, <br />
-&#160;&#160;<a class="el" href="#a40f704477b6237468213735f0196cedbabe7d2a83ffdd5ba4ad9633afe741231b">CTRLB_bitindex_SHON</a> = 3
-, <a class="el" href="#a40f704477b6237468213735f0196cedbaf2d2b2bdac8cf340622a5b8cb1ebe4c0">CTRLB_bitindex_BTI0</a> = 4
-, <a class="el" href="#a40f704477b6237468213735f0196cedba8b3ca2e2f1a99d82816718ef638e08a4">CTRLB_bitindex_BTI1</a> = 5
-, <a class="el" href="#a40f704477b6237468213735f0196cedbaaf58d5c56be1a22d4946dbad7ff0372d">CTRLB_bitindex_BTI2</a> = 6
-<br />
- }</td></tr>
-<tr class="separator:a40f704477b6237468213735f0196cedb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a1532e8504727e103db7ec69af3330f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16a9c51efaf467545e55657c20b42a0c" id="r_a16a9c51efaf467545e55657c20b42a0c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16a9c51efaf467545e55657c20b42a0c">CTRLA_bits_t</a> { <br />
 &#160;&#160;<a class="el" href="#a16a9c51efaf467545e55657c20b42a0cafbfb97e7c3d86b73d8c7ffab0cd292e9">CTRLA_bit_VONOFF</a> = 0x01
 , <a class="el" href="#a16a9c51efaf467545e55657c20b42a0ca15038c1b8e320c962db45b40a37d00c3">CTRLA_bit_IFC</a> = 0x02
@@ -215,6 +210,29 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a16a9c51efaf467545e55657c20b42a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40f704477b6237468213735f0196cedb" id="r_a40f704477b6237468213735f0196cedb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40f704477b6237468213735f0196cedb">CTRLB_bits_t</a> { <br />
+&#160;&#160;<a class="el" href="#a40f704477b6237468213735f0196cedba3d7ce82ad81be7fee3b2d336e0457cbf">CTRLB_bit_STI0</a> = 0x01
+, <a class="el" href="#a40f704477b6237468213735f0196cedbadc0c05e0b4b54652b08fcd2b8d57e7f4">CTRLB_bit_STI1</a> = 0x02
+, <a class="el" href="#a40f704477b6237468213735f0196cedba224467b0bd471cef8f04c07c824d5a99">CTRLB_bit_STI2</a> = 0x04
+, <a class="el" href="#a40f704477b6237468213735f0196cedba2bcbb749670a665e27672f2c72464436">CTRLB_bits_STI</a> = 0x07
+, <br />
+&#160;&#160;<a class="el" href="#a40f704477b6237468213735f0196cedba1ce61ebff4db40f3559c36e4156ce2aa">CTRLB_bit_SHON</a> = 0x08
+, <a class="el" href="#a40f704477b6237468213735f0196cedba49ab3358112b050348df523883eabce1">CTRLB_bit_BTI0</a> = 0x10
+, <a class="el" href="#a40f704477b6237468213735f0196cedba8f439f828072979a7d1a3f91006f66c7">CTRLB_bit_BTI1</a> = 0x20
+, <a class="el" href="#a40f704477b6237468213735f0196cedba37682ae50e864281a91f061255338eca">CTRLB_bit_BTI2</a> = 0x40
+, <br />
+&#160;&#160;<a class="el" href="#a40f704477b6237468213735f0196cedbadb4c9e47e7258e69fd962e7bed8b8a2a">CTRLB_bits_BTI</a> = 0x70
+, <a class="el" href="#a40f704477b6237468213735f0196cedba5ef957622eccd4757dca9736e3bc8ca6">CTRLB_bitindex_STI0</a> = 0
+, <a class="el" href="#a40f704477b6237468213735f0196cedbacdd24cf2c104d28b56294d8f74a40ecc">CTRLB_bitindex_STI1</a> = 1
+, <a class="el" href="#a40f704477b6237468213735f0196cedba5a98649794a644ed75a814674b330e4d">CTRLB_bitindex_STI2</a> = 2
+, <br />
+&#160;&#160;<a class="el" href="#a40f704477b6237468213735f0196cedbabe7d2a83ffdd5ba4ad9633afe741231b">CTRLB_bitindex_SHON</a> = 3
+, <a class="el" href="#a40f704477b6237468213735f0196cedbaf2d2b2bdac8cf340622a5b8cb1ebe4c0">CTRLB_bitindex_BTI0</a> = 4
+, <a class="el" href="#a40f704477b6237468213735f0196cedba8b3ca2e2f1a99d82816718ef638e08a4">CTRLB_bitindex_BTI1</a> = 5
+, <a class="el" href="#a40f704477b6237468213735f0196cedbaaf58d5c56be1a22d4946dbad7ff0372d">CTRLB_bitindex_BTI2</a> = 6
+<br />
+ }</td></tr>
+<tr class="separator:a40f704477b6237468213735f0196cedb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b73895d5cad296f9fd0ae4237c4933d" id="r_a5b73895d5cad296f9fd0ae4237c4933d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b73895d5cad296f9fd0ae4237c4933d">CTRLC_bits_t</a> { <br />
 &#160;&#160;<a class="el" href="#a5b73895d5cad296f9fd0ae4237c4933da551c7ceb9172d4fb3d2a1435f60fd07b">CTRLC_bit_I</a> = 0x01
 , <a class="el" href="#a5b73895d5cad296f9fd0ae4237c4933da65b653665f35413bb7aac210de9c0daa">CTRLC_bit_S1</a> = 0x02
@@ -231,18 +249,85 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a5b73895d5cad296f9fd0ae4237c4933d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc06a244ac6282e55991ad6c6356dbb" id="r_a1dc06a244ac6282e55991ad6c6356dbb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbb">XCK_bits_t</a> { <br />
+&#160;&#160;<a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbbaeab83a971a1b447f73efdf8edd7a0f63">XCK_bitindex_stimer</a> = 0
+, <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba35c892387f6d148bc503e6c034e60c0a">XCK_bitindex_res_ns</a> = 28
+, <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba4117a6cf5b27885522b08861bdab34ba">XCK_bitindex_res_ms</a> = 29
+, <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba35abbf6ebc01f34a1ba8e4cdcaf34cfe">XCK_bitindex_stimer_on</a> = 30
+, <br />
+&#160;&#160;<a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba2e3e8258a6718c38ae3aca937df981de">XCK_bits_stimer</a> = 0x0FFFFFFF
+, <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba4409994ceb22261d6e96493b467a7d6a">XCK_bit_res_ns</a> = 0x10000000
+, <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbbabd957433809b3fee7a1f4db45adc53ca">XCK_bit_res_ms</a> = 0x20000000
+, <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba16cf3d1cfb4707d29f261ade7386b5a3">XCK_bit_stimer_on</a> = 0x40000000
+<br />
+ }</td></tr>
+<tr class="separator:a1dc06a244ac6282e55991ad6c6356dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae08811acd54cb095986ae911d0f988f5" id="r_ae08811acd54cb095986ae911d0f988f5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae08811acd54cb095986ae911d0f988f5">FFCTRL_bits_t</a> { <br />
+&#160;&#160;<a class="el" href="#ae08811acd54cb095986ae911d0f988f5aba3caafa86767fc62e109a749687ba4c">FFCTRL_bit_block_reset</a> = 0x10
+, <a class="el" href="#ae08811acd54cb095986ae911d0f988f5af9df3ffdcc17bb320f3b12a264b46922">FFCTRL_bit_scan_reset</a> = 0x20
+, <a class="el" href="#ae08811acd54cb095986ae911d0f988f5aa217420eeb3c27100ad39c2777b4cf7b">FFCTRL_bit_SWTRIG</a> = 0x40
+, <a class="el" href="#ae08811acd54cb095986ae911d0f988f5a540c27cc9e263e9710024f3b30d755b1">FFCTRL_bit_RSFIFO</a> = 0x80
+, <br />
+&#160;&#160;<a class="el" href="#ae08811acd54cb095986ae911d0f988f5a009fed6b6baba2c93a2da8126a37ca1e">FFCTRL_bitindex_block_reset</a> = 4
+, <a class="el" href="#ae08811acd54cb095986ae911d0f988f5ac1424cb3781465c3ff533144e6d12dfd">FFCTRL_bitindex_scan_reset</a> = 5
+, <a class="el" href="#ae08811acd54cb095986ae911d0f988f5a7cbd9bd335f29b95e5897dfd57dddc81">FFCTRL_bitindex_SWTRIG</a> = 6
+, <a class="el" href="#ae08811acd54cb095986ae911d0f988f5a05e792eac1a1543313934d9f7fc7e6ae">FFCTRL_bitindex_RSFIFO</a> = 7
+<br />
+ }</td></tr>
+<tr class="separator:ae08811acd54cb095986ae911d0f988f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53140745b99b27905d690c659ef583c5" id="r_a53140745b99b27905d690c659ef583c5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53140745b99b27905d690c659ef583c5">FF_FLAGS_bits_t</a> { <br />
+&#160;&#160;<a class="el" href="#a53140745b99b27905d690c659ef583c5a3e49faac832833acdf4e17a3b35f708d">FF_FLAGS_bit_block_read</a> = 0x02
+, <a class="el" href="#a53140745b99b27905d690c659ef583c5a2d9ac425f64772f99c5e65b947ed623c">FF_FLAGS_bit_scan_read</a> = 0x04
+, <a class="el" href="#a53140745b99b27905d690c659ef583c5a20c9d5eaaa1669bf16a6c57af2dda960">FF_FLAGS_bit_overflow</a> = 0x08
+, <a class="el" href="#a53140745b99b27905d690c659ef583c5aa5339922d30d2eac82237b38f867b5b6">FF_FLAGS_bit_xcki</a> = 0x10
+, <br />
+&#160;&#160;<a class="el" href="#a53140745b99b27905d690c659ef583c5ad155c9f8560f8e20ec7d7397db3a0c9c">FF_FLAGS_bit_full</a> = 0x20
+, <a class="el" href="#a53140745b99b27905d690c659ef583c5ab19dfa81faad8c1e60fd9922703450f6">FF_FLAGS_bit_empty</a> = 0x40
+, <a class="el" href="#a53140745b99b27905d690c659ef583c5a9c9b7c705b6d70c207cdea9b86e21e6a">FF_FLAGS_bit_valid</a> = 0x80
+, <a class="el" href="#a53140745b99b27905d690c659ef583c5ab8f31dc13a3be1a34cd66d9dcc1e7a96">FF_FLAGS_bitindex_block_read</a> = 1
+, <br />
+&#160;&#160;<a class="el" href="#a53140745b99b27905d690c659ef583c5a0ceca6244d0f2579213831b756f38fcb">FF_FLAGS_bitindex_scan_read</a> = 2
+, <a class="el" href="#a53140745b99b27905d690c659ef583c5a7f35861231661fb41ef95b20b6e40805">FF_FLAGS_bitindex_overflow</a> = 3
+, <a class="el" href="#a53140745b99b27905d690c659ef583c5a754df1fe8df5957c837f703d2f50bcd5">FF_FLAGS_bitindex_xcki</a> = 4
+, <a class="el" href="#a53140745b99b27905d690c659ef583c5af6e16d1938733079b66370cda1e4e5d3">FF_FLAGS_bitindex_full</a> = 5
+, <br />
+&#160;&#160;<a class="el" href="#a53140745b99b27905d690c659ef583c5acdc57113a0d871c28ef624c7c0620484">FF_FLAGS_bitindex_empty</a> = 6
+, <a class="el" href="#a53140745b99b27905d690c659ef583c5a9b6fa65ac13124d7d5abd69f525ee375">FF_FLAGS_bitindex_valid</a> = 7
+<br />
+ }</td></tr>
+<tr class="separator:a53140745b99b27905d690c659ef583c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1112792e322ba8a09e5c7eefeb32eed2" id="r_a1112792e322ba8a09e5c7eefeb32eed2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1112792e322ba8a09e5c7eefeb32eed2">FIFOCNT_bits_t</a> { <br />
+&#160;&#160;<a class="el" href="#a1112792e322ba8a09e5c7eefeb32eed2a12fa26055bccfc830d201e71efe30602">FIFOCNT_bitindex_WRCNT7</a> = 7
+, <a class="el" href="#a1112792e322ba8a09e5c7eefeb32eed2a09b8b80052eb7a93e33906d422472d8e">FIFOCNT_bitindex_WRCNT6</a> = 6
+, <a class="el" href="#a1112792e322ba8a09e5c7eefeb32eed2ab6e44bfe3b44c1886db0d8b258a0cca9">FIFOCNT_bitindex_WRCNT5</a> = 5
+, <a class="el" href="#a1112792e322ba8a09e5c7eefeb32eed2a4d5c0ad956bda694a45bdf7edffb4a62">FIFOCNT_bitindex_WRCNT4</a> = 4
+, <br />
+&#160;&#160;<a class="el" href="#a1112792e322ba8a09e5c7eefeb32eed2a6fe526ba456b943f809a0faeb8b72f8a">FIFOCNT_bitindex_WRCNT3</a> = 3
+, <a class="el" href="#a1112792e322ba8a09e5c7eefeb32eed2a8868b6377a7d4582e6af5d66ffc8e8ac">FIFOCNT_bitindex_WRCNT2</a> = 2
+, <a class="el" href="#a1112792e322ba8a09e5c7eefeb32eed2ac57fd682047fa0efa7f3aed8dc4f34f6">FIFOCNT_bitindex_WRCNT1</a> = 1
+, <a class="el" href="#a1112792e322ba8a09e5c7eefeb32eed2a8068e4fb603639e47236fc70d9937c2a">FIFOCNT_bitindex_WRCNT0</a> = 0
+<br />
+ }</td></tr>
+<tr class="separator:a1112792e322ba8a09e5c7eefeb32eed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1556695e733eb148991d16d02e6b244c" id="r_a1556695e733eb148991d16d02e6b244c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1556695e733eb148991d16d02e6b244c">VCLKCTRL_bits_t</a> { <a class="el" href="#a1556695e733eb148991d16d02e6b244ca0ecfb70868d2411054073d9645b45456">VCLKCNT_bit_control</a> = 0x00000FFF
+ }</td></tr>
+<tr class="separator:a1556695e733eb148991d16d02e6b244c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75e32fc65a7fb4b52dd4b95028820e68" id="r_a75e32fc65a7fb4b52dd4b95028820e68"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75e32fc65a7fb4b52dd4b95028820e68">VCLKFREQ_bits_t</a> { <a class="el" href="#a75e32fc65a7fb4b52dd4b95028820e68a634bbd9e63d7b3ecabc91a79646b7442">VCLKFREQ_base_value</a> = 200
+, <a class="el" href="#a75e32fc65a7fb4b52dd4b95028820e68a071cae565749d1493a9bed1979aa52f2">VCLKFREQ_step_value</a> = 400
+ }</td></tr>
+<tr class="separator:a75e32fc65a7fb4b52dd4b95028820e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb7b45efaf34feb37817a80853e4e407" id="r_aeb7b45efaf34feb37817a80853e4e407"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb7b45efaf34feb37817a80853e4e407">SDAT_bits_t</a> { <a class="el" href="#aeb7b45efaf34feb37817a80853e4e407a0d2588fb5071d6fb8d6ea4c5c2e33177">SDAT_bitindex_control</a> = 0
+, <a class="el" href="#aeb7b45efaf34feb37817a80853e4e407a739a8f71d7effe3563d27043ac24621a">SDAT_bitindex_enable</a> = 31
+, <a class="el" href="#aeb7b45efaf34feb37817a80853e4e407aad05b9697233668e632b34ca22e979f6">SDAT_bit_control</a> = 0x7FFFFFFF
+, <a class="el" href="#aeb7b45efaf34feb37817a80853e4e407a3a1524d76811e3f704b90f7edd01e059">SDAT_bit_enable</a> = 0x80000000
+ }</td></tr>
+<tr class="separator:aeb7b45efaf34feb37817a80853e4e407"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adccdca7702401ef9feb9b73f9974f1f2" id="r_adccdca7702401ef9feb9b73f9974f1f2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adccdca7702401ef9feb9b73f9974f1f2">TOR_STICNT_bits_t</a> { <a class="el" href="#adccdca7702401ef9feb9b73f9974f1f2ac01ed7f51d1c42db70504cc366ca0d1d">TOR_bits_STICNT</a> = 0x7F
 , <a class="el" href="#adccdca7702401ef9feb9b73f9974f1f2a7930c51ddcfa359719705e4356783778">TOR_bit_STICNT_EN</a> = 0x80
 , <a class="el" href="#adccdca7702401ef9feb9b73f9974f1f2a4e38c8c71f66ec09e558ac5c36843212">TOR_bitindex_STICNT</a> = 0
 , <a class="el" href="#adccdca7702401ef9feb9b73f9974f1f2abfcf7df48c650b4f4a3d69d6376bc627">TOR_bitindex_STICNT_EN</a> = 7
  }</td></tr>
 <tr class="separator:adccdca7702401ef9feb9b73f9974f1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78dc599b51cfbecce04a83ff0374d405" id="r_a78dc599b51cfbecce04a83ff0374d405"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78dc599b51cfbecce04a83ff0374d405">TOR_BTICNT_bits_t</a> { <a class="el" href="#a78dc599b51cfbecce04a83ff0374d405a81f3432f12ac857df98c5831dc091d83">TOR_bits_BTICNT</a> = 0x7F
-, <a class="el" href="#a78dc599b51cfbecce04a83ff0374d405af526558c003c6d41eed19f0b14271ecf">TOR_bit_BTICNT_EN</a> = 0x80
-, <a class="el" href="#a78dc599b51cfbecce04a83ff0374d405a3acd7d7ca2b398d00ce14cb06fdde622">TOR_bitindex_BTICNT</a> = 0
-, <a class="el" href="#a78dc599b51cfbecce04a83ff0374d405a71527789974687effdcf123119af76e5">TOR_bitindex_BTICNT_EN</a> = 7
- }</td></tr>
-<tr class="separator:a78dc599b51cfbecce04a83ff0374d405"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a168d45dd57f1bbda9d4f6cb50f270e73" id="r_a168d45dd57f1bbda9d4f6cb50f270e73"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a168d45dd57f1bbda9d4f6cb50f270e73">TOR_TOCNT_bits_t</a> { <a class="el" href="#a168d45dd57f1bbda9d4f6cb50f270e73aa7f701d437b2cf3e9d85ccdb91bdb5bc">TOR_bits_TOCNT</a> = 0x7F
 , <a class="el" href="#a168d45dd57f1bbda9d4f6cb50f270e73a1fdad2c84f54d9b0ab534b56a9e3ba08">TOR_bit_TOCNT_EN</a> = 0x80
 , <a class="el" href="#a168d45dd57f1bbda9d4f6cb50f270e73a7222f0899a92dff81640c8df20c4c436">TOR_bitindex_TOCNT</a> = 0
@@ -319,246 +404,64 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a95871548cbf0bc64201636b985255292"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6005e570d078f1b87ae9b7a4b706a99" id="r_ab6005e570d078f1b87ae9b7a4b706a99"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99">pcie_configuration_space_t</a> { <br />
-&#160;&#160;<a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a07479b07938607524abc79d50812eb93">PCIeAddr_VendorID</a> = 0x00
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a3d760d2323385caec4b7b80209b39c4d">PCIeAddr_DeviceID</a> = 0x02
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99accdbd71e74e6034bf3ce7d3d2e43011a">PCIeAddr_Command</a> = 0x04
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a7ed78c98372709fb1d45c2ee9a024cc6">PCIeAddr_Status</a> = 0x06
+<tr class="memitem:a112bb7cac94f9939207725ea4c525e5c" id="r_a112bb7cac94f9939207725ea4c525e5c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a112bb7cac94f9939207725ea4c525e5c">IRQREG_bits_t</a> { <br />
+&#160;&#160;<a class="el" href="#a112bb7cac94f9939207725ea4c525e5ca3158ddce3bbed45acf43a656344e9adf">IRQREG_bitindex_IRQLAT</a> = 0
+, <a class="el" href="#a112bb7cac94f9939207725ea4c525e5ca029bd704f9d2a2a521ed46734907bbe5">IRQREG_bitindex_IRQCNT</a> = 16
+, <a class="el" href="#a112bb7cac94f9939207725ea4c525e5cabd72106365282db1a5cfb52d5ef65c79">IRQREG_bitindex_HWDREQ_EN</a> = 30
+, <a class="el" href="#a112bb7cac94f9939207725ea4c525e5ca292c1a1bfd831c4206c55a67d24294f1">IRQREG_bitindex_INTRSR</a> = 31
 , <br />
-&#160;&#160;<a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a3bcafd2583d99aced421702c295f89ff">PCIeAddr_RevID</a> = 0x08
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a702611d131b9cbb27a613d4a4ee5ba08">PCIeAddr_ClassCode</a> = 0x09
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a4b4d532b0861e8ac03202e1c19a17388">PCIeAddr_CacheLn</a> = 0x0C
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99ad080d39e57e3daf046af5694783cb2d9">PCIeAddr_LatTimer</a> = 0x0D
-, <br />
-&#160;&#160;<a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99ab563917a9be89a4ef64a00d9eed61cd3">PCIeAddr_Header</a> = 0x0E
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a40e8ab700cbf65cfa6d45d00491caf0e">PCIeAddr_BIST</a> = 0x0F
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a7773473448c41e8f8f19e20521db2f52">PCIeAddr_BaseAddressRegister0</a> = 0x10
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a874ea480836425b31ef4e77fe1f1c66a">PCIeAddr_BaseAddressRegister1</a> = 0x14
-, <br />
-&#160;&#160;<a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a6d11f2c8239fba71a6aab627b967f762">PCIeAddr_BaseAddressRegister2</a> = 0x18
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a581bb0d6516cf1ac839ff30568b0b348">PCIeAddr_BaseAddressRegister3</a> = 0x1C
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a03615ffb8aed77cec28aa33328c302ca">PCIeAddr_BaseAddressRegister4</a> = 0x20
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99ad2d9532a5dcc3d93b0adc90875d92988">PCIeAddr_BaseAddressRegister5</a> = 0x24
-, <br />
-&#160;&#160;<a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a6e3d508a3365796da3c9feecb0d312ad">PCIeAddr_CardbusCisPointer</a> = 0x28
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a10d1113ee3f946644066c9219b396969">PCIeAddr_SubsystemVendorID</a> = 0x2C
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a35b83c52c93f503fba3efbda36a03906">PCIeAddr_SubsystemID</a> = 0x2E
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a181dc9d305726e3d9fd32c709bfcd2ab">PCIeAddr_ExpansionRomBaseAddress</a> = 0x30
-, <br />
-&#160;&#160;<a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a9831e73a8aaac25377abf527d4d8289b">PCIeAddr_CapPTr</a> = 0x34
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99aec3c4f596f1a7d1b267e95bbae78f80d">PCIeAddr_Reserved1</a> = 0x35
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99ae86459f0d23d7e542ffcbd7b93bfe9ac">PCIeAddr_Reserved2</a> = 0x38
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a0e3985135f8f31cbb32b06600cd5e2e7">PCIeAddr_IntrLine</a> = 0x3C
-, <br />
-&#160;&#160;<a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a08e1b765efb99c501a72e9558376a364">PCIeAddr_IntrPin</a> = 0x3D
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99ab2621f37ed695279db619de095584520">PCIeAddr_MinGnt</a> = 0x3E
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99ad421078dd0a440dfee100d85db93f3c4">PCIeAddr_Maxlat</a> = 0x3F
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99af371867e96494e42f7ea03987a5ee36b">PCIeAddr_PMCap</a> = 0x40
-, <br />
-&#160;&#160;<a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99aef53db9dc263bfc69e2fa9ded857e574">PCIeAddr_NxtCap1</a> = 0x41
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a84a20b3c2c9e847fd89dc39e1e017702">PCIeAddr_PMCapability</a> = 0x42
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a2184f9e2853514361e7fbba11f0cb265">PCIeAddr_PMCSR</a> = 0x44
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99af77ff91d762725a8a2b49c3b055ab7fe">PCIeAddr_BSE</a> = 0x46
-, <br />
-&#160;&#160;<a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a75f1ac41fd80afffb5322969cbb10a48">PCIeAddr_Data</a> = 0x47
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a94a1a3404749d82830dc3968fb1119fd">PCIeAddr_MSICap</a> = 0x48
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99ae39c6fd239a76e507f0a53d640a27964">PCIeAddr_NxtCap2</a> = 0x49
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99ac96ca33655b8d1c80599966f18fca5f0">PCIeAddr_MsiControl</a> = 0x4A
-, <br />
-&#160;&#160;<a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a7d4e2946de23d7efc5673ea6d1ef17d8">PCIeAddr_MessageAddressLower</a> = 0x4C
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a033413e04d7bbc9bd4e0e3187bddd74f">PCIeAddr_MessageAddressUpper</a> = 0x50
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a1dd19392d9c6c4e548fe36c52d349f3d">PCIeAddr_MessageData</a> = 0x54
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a126a92295171251a45e5cae6655fe89f">PCIeAddr_Reserved3</a> = 0x56
-, <br />
-&#160;&#160;<a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99ac9788ba23acf55227d28171e26296b78">PCIeAddr_PeCap</a> = 0x58
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a0ceb782cdb1d353fbad76fc525dfb8cb">PCIeAddr_NxtCap3</a> = 0x59
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99aa72d1a2f93bf97b169dc53564ac5f543">PCIeAddr_PeCapabilty</a> = 0x5A
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99abfb48136ccbef9700f16f23bb179e8fb">PCIeAddr_PCIExpressDeviceCapabilities</a> = 0x5C
-, <br />
-&#160;&#160;<a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a0a091fc99aeed4a3f7c2590ae01d29db">PCIeAddr_DeviceControl</a> = 0x60
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a3e0444e0c1bdf91a8d13142c9e2b2953">PCIeAddr_DeviceStatus</a> = 0x62
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a1f8116ad97616180b892844e232d629b">PCIeAddr_PCIExpressLinkCapabilities</a> = 0x64
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a08a98f4d3817435f9e658953980a3dd0">PCIeAddr_LinkControl</a> = 0x68
-, <br />
-&#160;&#160;<a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99af62854916ffdaa7d941580da8521c311">PCIeAddr_LinkStatus</a> = 0x6A
-, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a4357123bf36fccf2a8bd67a3998b7d56">PCIeAddr_ReservedLegacyConfigurationSpace</a> = 0x6C
+&#160;&#160;<a class="el" href="#a112bb7cac94f9939207725ea4c525e5ca49ba870bec2b3ed45fb745cb794954ea">IRQREG_bits_IRQLAT</a> = 0x0000FFFF
+, <a class="el" href="#a112bb7cac94f9939207725ea4c525e5ca50277dd8973996f226679a5c19b67eb5">IRQREG_bits_IRQCNT</a> = 0x3FFF0000
+, <a class="el" href="#a112bb7cac94f9939207725ea4c525e5cad334ccdff82ca28487415cc57ad57f63">IRQREG_bit_HWDREQ_EN</a> = 0x40000000
+, <a class="el" href="#a112bb7cac94f9939207725ea4c525e5ca0a9dbc23cb33075789bef247eb4b6dde">IRQREG_bit_INTRSR</a> = 0x80000000
 <br />
  }</td></tr>
-<tr class="separator:ab6005e570d078f1b87ae9b7a4b706a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30821fd39eadf5b7a8fbe9ff45db801b" id="r_a30821fd39eadf5b7a8fbe9ff45db801b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30821fd39eadf5b7a8fbe9ff45db801b">PciExpressDeviceCapabilities_bits_t</a> { <a class="el" href="#a30821fd39eadf5b7a8fbe9ff45db801ba10909adcf7927a3215cfa040ed2ed136">PciExpressDeviceCapabilities_MaxPayloadSizeSupported_bits</a> = 0x7
- }</td></tr>
-<tr class="separator:a30821fd39eadf5b7a8fbe9ff45db801b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69d30493bcf4f3a83a16ce1ee7558889" id="r_a69d30493bcf4f3a83a16ce1ee7558889"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69d30493bcf4f3a83a16ce1ee7558889">MaxPayloadSizeSupported_encoding_t</a> { <br />
-&#160;&#160;<a class="el" href="#a69d30493bcf4f3a83a16ce1ee7558889afb67f416a3005c805c2938a261363895">maxPaxloadSize_128bytes</a> = 0
-, <a class="el" href="#a69d30493bcf4f3a83a16ce1ee7558889a816e61c2b5ff0f3a2d76e6c96f156260">maxPaxloadSize_256bytes</a> = 1
-, <a class="el" href="#a69d30493bcf4f3a83a16ce1ee7558889ad6b7994eb0e204d317a82d6ccfe40fff">maxPaxloadSize_512bytes</a> = 2
-, <a class="el" href="#a69d30493bcf4f3a83a16ce1ee7558889a13badb251ed401c95bb98fc707bc1372">maxPaxloadSize_1024bytes</a> = 3
+<tr class="separator:a112bb7cac94f9939207725ea4c525e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d179386b40162fc96b96c12da077dd8" id="r_a1d179386b40162fc96b96c12da077dd8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d179386b40162fc96b96c12da077dd8">PCIEFLAGS_bits_t</a> { <br />
+&#160;&#160;<a class="el" href="#a1d179386b40162fc96b96c12da077dd8a71979384b23c09ff9e7993909f4eba0c">PCIEFLAGS_bit_XCKI</a> = 0x01
+, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8a07772643d9a66cc53bd86ffe151e2604">PCIEFLAGS_bit_INTTRIG</a> = 0x02
+, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8a83be73ad0beefcac971dc356e429d049">PCIEFLAGS_bit_ENRSTIMERHW</a> = 0x04
+, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8a5408ac1d1055b617ab0541fa4c9e623e">PCIEFLAGS_bit_USE_ENFFW_PROTECT</a> = 0x08
 , <br />
-&#160;&#160;<a class="el" href="#a69d30493bcf4f3a83a16ce1ee7558889a2bdc36abd335b97c041c2d4555ae7aa8">maxPaxloadSize_2048bytes</a> = 4
-, <a class="el" href="#a69d30493bcf4f3a83a16ce1ee7558889a9c8232d3c84a8b62ca12ddb19eb73559">maxPaxloadSize_4096bytes</a> = 5
-, <a class="el" href="#a69d30493bcf4f3a83a16ce1ee7558889a4e4c9abeb91367941d1e0ccf4549b42a">maxPaxloadSize_reserved1</a> = 6
-, <a class="el" href="#a69d30493bcf4f3a83a16ce1ee7558889a0fd3d34608d2b7c74748555fcacba0db">maxPaxloadSize_reserved2</a> = 7
+&#160;&#160;<a class="el" href="#a1d179386b40162fc96b96c12da077dd8a57e66d5ceea609f2a9d958b0537a835d">PCIEFLAGS_bit_BLOCKTRIG</a> = 0x10
+, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8a52caba18a09ed771529808f1cfe19236">PCIEFLAGS_bit_MEASUREON</a> = 0x20
+, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8a8d62538c05238768082e633a0b3da40c">PCIEFLAGS_bit_BLOCKON</a> = 0x40
+, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8ab0b8bfe9e36f3044c32a9b18da64ea79">PCIEFLAGS_bit_IS_TDC</a> = 0x100
+, <br />
+&#160;&#160;<a class="el" href="#a1d179386b40162fc96b96c12da077dd8aca7eebed32c8b3f67f357bbc47a2f1a6">PCIEFLAGS_bit_IS_DSC</a> = 0x200
+, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8a472539496f43146a4cddce5571237356">PCIEFLAGS_bit_linkup_sfp3</a> = 0x4000000
+, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8af6f3cf3d7967e3fbae65b6a34bac4515">PCIEFLAGS_bit_error_sfp3</a> = 0x8000000
+, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8ad0b7d8e406640bcf13461d362936ea3b">PCIEFLAGS_bit_linkup_sfp2</a> = 0x10000000
+, <br />
+&#160;&#160;<a class="el" href="#a1d179386b40162fc96b96c12da077dd8abc2e3cf932ea5d49cb24db7321ca4641">PCIEFLAGS_bit_error_sfp2</a> = 0x20000000
+, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8a89c72ee6e87a161be9ae9e10d0f60bd5">PCIEFLAGS_bit_linkup_sfp1</a> = 0x40000000
+, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8ad89ba029afef992d82e18fa3a102a39a">PCIEFLAGS_bit_error_sfp1</a> = 0x80000000
+, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8a600812dfa8c18e7d73415307dfb7be1a">PCIEFLAGS_bitindex_XCKI</a> = 0
+, <br />
+&#160;&#160;<a class="el" href="#a1d179386b40162fc96b96c12da077dd8a1b88699a59ac0416976f517603f1119a">PCIEFLAGS_bitindex_INTTRIG</a> = 1
+, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8a1e0da9cee5f523ee69a35c17476c9eb5">PCIEFLAGS_bitindex_ENRSTIMERHW</a> = 2
+, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8aeda51979a162dcf731ae5ee559868707">PCIEFLAGS_bitindex_USE_ENFFW_PROTECT</a> = 3
+, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8a15ed960feaef28833264e767de96abfb">PCIEFLAGS_bitindex_BLOCKTRIG</a> = 4
+, <br />
+&#160;&#160;<a class="el" href="#a1d179386b40162fc96b96c12da077dd8aac34a3af42460646b43ac2b23b03a50a">PCIEFLAGS_bitindex_MEASUREON</a> = 5
+, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8ab402211cbc0d00f7fe9d015ea64b8ceb">PCIEFLAGS_bitindex_BLOCKON</a> = 6
+, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8acb8d2ed3adf7343df7c0377fa43d1658">PCIEFLAGS_bitindex_IS_TDC</a> = 8
+, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8a850dbe1d4da2519540e0ef450409eb62">PCIEFLAGS_bitindex_IS_DSC</a> = 9
+, <br />
+&#160;&#160;<a class="el" href="#a1d179386b40162fc96b96c12da077dd8adb8c31d57895a650554fd3f2155c267f">PCIEFLAGS_bitindex_linkup_sfp3</a> = 26
+, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8abe0be7d671163f1448eb51598dbec758">PCIEFLAGS_bitindex_error_sfp3</a> = 27
+, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8acad413fb3bb12ea013c511028d7cd4a7">PCIEFLAGS_bitindex_linkup_sfp2</a> = 28
+, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8a6fec1facc26b98407b951c930ae67b9f">PCIEFLAGS_bitindex_error_sfp2</a> = 29
+, <br />
+&#160;&#160;<a class="el" href="#a1d179386b40162fc96b96c12da077dd8a10edd5431e8e5706d9aae4c314100c95">PCIEFLAGS_bitindex_linkup_sfp1</a> = 30
+, <a class="el" href="#a1d179386b40162fc96b96c12da077dd8a600ad5adbc8bab66adc6b864d03ee74d">PCIEFLAGS_bitindex_error_sfp1</a> = 31
 <br />
  }</td></tr>
-<tr class="separator:a69d30493bcf4f3a83a16ce1ee7558889"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27c45d119d78ca12b7e38e47cb02907f" id="r_a27c45d119d78ca12b7e38e47cb02907f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27c45d119d78ca12b7e38e47cb02907f">DeviceControl_bits_t</a> { <a class="el" href="#a27c45d119d78ca12b7e38e47cb02907fa88e19e987ba0a38be1791caf439bc181">deviceControl_maxPayloadSize_bits</a> = 0xE0
-, <a class="el" href="#a27c45d119d78ca12b7e38e47cb02907faa50cbfc6b5665ceba05dd9e726d5ad33">deviceControl_maxReadRequestSize_bits</a> = 0x7000
-, <a class="el" href="#a27c45d119d78ca12b7e38e47cb02907faf9bf7d20432b6d491a5a577111d6db48">deviceControl_maxPayloadSize_bitindex</a> = 5
-, <a class="el" href="#a27c45d119d78ca12b7e38e47cb02907faeff10ae37cc84d9e80b2fb37c4610f5f">deviceControl_maxReadRequestSize_bitindex</a> = 12
- }</td></tr>
-<tr class="separator:a27c45d119d78ca12b7e38e47cb02907f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae08811acd54cb095986ae911d0f988f5" id="r_ae08811acd54cb095986ae911d0f988f5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae08811acd54cb095986ae911d0f988f5">FFCTRL_bits_t</a> { <br />
-&#160;&#160;<a class="el" href="#ae08811acd54cb095986ae911d0f988f5aba3caafa86767fc62e109a749687ba4c">FFCTRL_bit_block_reset</a> = 0x10
-, <a class="el" href="#ae08811acd54cb095986ae911d0f988f5af9df3ffdcc17bb320f3b12a264b46922">FFCTRL_bit_scan_reset</a> = 0x20
-, <a class="el" href="#ae08811acd54cb095986ae911d0f988f5aa217420eeb3c27100ad39c2777b4cf7b">FFCTRL_bit_SWTRIG</a> = 0x40
-, <a class="el" href="#ae08811acd54cb095986ae911d0f988f5a540c27cc9e263e9710024f3b30d755b1">FFCTRL_bit_RSFIFO</a> = 0x80
-, <br />
-&#160;&#160;<a class="el" href="#ae08811acd54cb095986ae911d0f988f5a009fed6b6baba2c93a2da8126a37ca1e">FFCTRL_bitindex_block_reset</a> = 4
-, <a class="el" href="#ae08811acd54cb095986ae911d0f988f5ac1424cb3781465c3ff533144e6d12dfd">FFCTRL_bitindex_scan_reset</a> = 5
-, <a class="el" href="#ae08811acd54cb095986ae911d0f988f5a7cbd9bd335f29b95e5897dfd57dddc81">FFCTRL_bitindex_SWTRIG</a> = 6
-, <a class="el" href="#ae08811acd54cb095986ae911d0f988f5a05e792eac1a1543313934d9f7fc7e6ae">FFCTRL_bitindex_RSFIFO</a> = 7
-<br />
- }</td></tr>
-<tr class="separator:ae08811acd54cb095986ae911d0f988f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53140745b99b27905d690c659ef583c5" id="r_a53140745b99b27905d690c659ef583c5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53140745b99b27905d690c659ef583c5">FF_FLAGS_bits_t</a> { <br />
-&#160;&#160;<a class="el" href="#a53140745b99b27905d690c659ef583c5a3e49faac832833acdf4e17a3b35f708d">FF_FLAGS_bit_block_read</a> = 0x02
-, <a class="el" href="#a53140745b99b27905d690c659ef583c5a2d9ac425f64772f99c5e65b947ed623c">FF_FLAGS_bit_scan_read</a> = 0x04
-, <a class="el" href="#a53140745b99b27905d690c659ef583c5a20c9d5eaaa1669bf16a6c57af2dda960">FF_FLAGS_bit_overflow</a> = 0x08
-, <a class="el" href="#a53140745b99b27905d690c659ef583c5aa5339922d30d2eac82237b38f867b5b6">FF_FLAGS_bit_xcki</a> = 0x10
-, <br />
-&#160;&#160;<a class="el" href="#a53140745b99b27905d690c659ef583c5ad155c9f8560f8e20ec7d7397db3a0c9c">FF_FLAGS_bit_full</a> = 0x20
-, <a class="el" href="#a53140745b99b27905d690c659ef583c5ab19dfa81faad8c1e60fd9922703450f6">FF_FLAGS_bit_empty</a> = 0x40
-, <a class="el" href="#a53140745b99b27905d690c659ef583c5a9c9b7c705b6d70c207cdea9b86e21e6a">FF_FLAGS_bit_valid</a> = 0x80
-, <a class="el" href="#a53140745b99b27905d690c659ef583c5ab8f31dc13a3be1a34cd66d9dcc1e7a96">FF_FLAGS_bitindex_block_read</a> = 1
-, <br />
-&#160;&#160;<a class="el" href="#a53140745b99b27905d690c659ef583c5a0ceca6244d0f2579213831b756f38fcb">FF_FLAGS_bitindex_scan_read</a> = 2
-, <a class="el" href="#a53140745b99b27905d690c659ef583c5a7f35861231661fb41ef95b20b6e40805">FF_FLAGS_bitindex_overflow</a> = 3
-, <a class="el" href="#a53140745b99b27905d690c659ef583c5a754df1fe8df5957c837f703d2f50bcd5">FF_FLAGS_bitindex_xcki</a> = 4
-, <a class="el" href="#a53140745b99b27905d690c659ef583c5af6e16d1938733079b66370cda1e4e5d3">FF_FLAGS_bitindex_full</a> = 5
-, <br />
-&#160;&#160;<a class="el" href="#a53140745b99b27905d690c659ef583c5acdc57113a0d871c28ef624c7c0620484">FF_FLAGS_bitindex_empty</a> = 6
-, <a class="el" href="#a53140745b99b27905d690c659ef583c5a9b6fa65ac13124d7d5abd69f525ee375">FF_FLAGS_bitindex_valid</a> = 7
-<br />
- }</td></tr>
-<tr class="separator:a53140745b99b27905d690c659ef583c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1112792e322ba8a09e5c7eefeb32eed2" id="r_a1112792e322ba8a09e5c7eefeb32eed2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1112792e322ba8a09e5c7eefeb32eed2">FIFOCNT_bits_t</a> { <br />
-&#160;&#160;<a class="el" href="#a1112792e322ba8a09e5c7eefeb32eed2a12fa26055bccfc830d201e71efe30602">FIFOCNT_bitindex_WRCNT7</a> = 7
-, <a class="el" href="#a1112792e322ba8a09e5c7eefeb32eed2a09b8b80052eb7a93e33906d422472d8e">FIFOCNT_bitindex_WRCNT6</a> = 6
-, <a class="el" href="#a1112792e322ba8a09e5c7eefeb32eed2ab6e44bfe3b44c1886db0d8b258a0cca9">FIFOCNT_bitindex_WRCNT5</a> = 5
-, <a class="el" href="#a1112792e322ba8a09e5c7eefeb32eed2a4d5c0ad956bda694a45bdf7edffb4a62">FIFOCNT_bitindex_WRCNT4</a> = 4
-, <br />
-&#160;&#160;<a class="el" href="#a1112792e322ba8a09e5c7eefeb32eed2a6fe526ba456b943f809a0faeb8b72f8a">FIFOCNT_bitindex_WRCNT3</a> = 3
-, <a class="el" href="#a1112792e322ba8a09e5c7eefeb32eed2a8868b6377a7d4582e6af5d66ffc8e8ac">FIFOCNT_bitindex_WRCNT2</a> = 2
-, <a class="el" href="#a1112792e322ba8a09e5c7eefeb32eed2ac57fd682047fa0efa7f3aed8dc4f34f6">FIFOCNT_bitindex_WRCNT1</a> = 1
-, <a class="el" href="#a1112792e322ba8a09e5c7eefeb32eed2a8068e4fb603639e47236fc70d9937c2a">FIFOCNT_bitindex_WRCNT0</a> = 0
-<br />
- }</td></tr>
-<tr class="separator:a1112792e322ba8a09e5c7eefeb32eed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1556695e733eb148991d16d02e6b244c" id="r_a1556695e733eb148991d16d02e6b244c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1556695e733eb148991d16d02e6b244c">VCLKCTRL_bits_t</a> { <a class="el" href="#a1556695e733eb148991d16d02e6b244ca0ecfb70868d2411054073d9645b45456">VCLKCNT_bit_control</a> = 0x00000FFF
- }</td></tr>
-<tr class="separator:a1556695e733eb148991d16d02e6b244c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75e32fc65a7fb4b52dd4b95028820e68" id="r_a75e32fc65a7fb4b52dd4b95028820e68"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75e32fc65a7fb4b52dd4b95028820e68">VCLKFREQ_bits_t</a> { <a class="el" href="#a75e32fc65a7fb4b52dd4b95028820e68a634bbd9e63d7b3ecabc91a79646b7442">VCLKFREQ_base_value</a> = 200
-, <a class="el" href="#a75e32fc65a7fb4b52dd4b95028820e68a071cae565749d1493a9bed1979aa52f2">VCLKFREQ_step_value</a> = 400
- }</td></tr>
-<tr class="separator:a75e32fc65a7fb4b52dd4b95028820e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb7b45efaf34feb37817a80853e4e407" id="r_aeb7b45efaf34feb37817a80853e4e407"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb7b45efaf34feb37817a80853e4e407">SDAT_bits_t</a> { <a class="el" href="#aeb7b45efaf34feb37817a80853e4e407a0d2588fb5071d6fb8d6ea4c5c2e33177">SDAT_bitindex_control</a> = 0
-, <a class="el" href="#aeb7b45efaf34feb37817a80853e4e407a739a8f71d7effe3563d27043ac24621a">SDAT_bitindex_enable</a> = 31
-, <a class="el" href="#aeb7b45efaf34feb37817a80853e4e407aad05b9697233668e632b34ca22e979f6">SDAT_bit_control</a> = 0x7FFFFFFF
-, <a class="el" href="#aeb7b45efaf34feb37817a80853e4e407a3a1524d76811e3f704b90f7edd01e059">SDAT_bit_enable</a> = 0x80000000
- }</td></tr>
-<tr class="separator:aeb7b45efaf34feb37817a80853e4e407"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1532e8504727e103db7ec69af3330f15" id="r_a1532e8504727e103db7ec69af3330f15"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1532e8504727e103db7ec69af3330f15">s0_addresses_t</a> { <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a1764a5bd788f2f8bc3593155676bc729">S0Addr_DBR</a> = 0x0
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15ab8b58bfd78906f9f73792d3d959ff478">S0Addr_CTRLA</a> = 0x4
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a55ddf95750d0fb8fd591f9eb5250c435">S0Addr_CTRLB</a> = 0x5
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a355c3c7759568e6a38ca2a30ae4ea9ae">S0Addr_CTRLC</a> = 0x6
-, <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a98df8a150bdf53444398610282d23964">S0Addr_XCK</a> = 0x8
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a07043531144f42f4798f561b7bd4f3ee">S0Addr_XCKCNT</a> = 0xc
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a933d1a284e67b99640185c820889ede8">S0Addr_PIXREG</a> = 0x10
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a4dfe7df582c940fec4eeb2b79249889e">S0Addr_FFCTRL</a> = 0x12
-, <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a7fc6890c6412ef3feb5de2c7f6e6543f">S0Addr_FF_FLAGS</a> = 0x13
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15ac48ebcaa94f4907b247c75c79beb65e8">S0Addr_FIFOCNT</a> = 0x14
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15ae0a26511de69a75dea30c5ca7c82000c">S0Addr_VCLKCTRL</a> = 0x18
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a09c2ee0bcbe404ef15319ad03b1dee74">S0Addr_VCLKFREQ</a> = 0x1b
-, <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a111e90b9677ebe361c5b591d9aa60d5f">S0Addr_EBST</a> = 0x1C
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a1dec93b42179bc51c514f5b7aded4f00">S0Addr_SDAT</a> = 0x20
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15ad2421bfacc7fedf71aff14ee44d2f091">S0Addr_SEC</a> = 0x24
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a17ac81a0a2c489f9898d4ac09f655bcc">S0Addr_TOR_STICNT</a> = 0x28
-, <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a47befeff86debd28e4ca974cc718a713">S0Addr_TOR_TOCNT</a> = 0x2A
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15acfef23d8fcc664d4c935386da5aec095">S0Addr_TOR_MSB</a> = 0x2B
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15aabc08a57cbf052ab2e6c22b5a29633bb">S0Addr_ARREG</a> = 0x2C
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a734540f1db03bbe872ea40437117b5ba">S0Addr_GIOREG</a> = 0x30
-, <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a7e75fa28f410292e735d90d4546fc2dd">S0Addr_DELAYEC</a> = 0x34
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a4237fbee2f68fb8dae30ba8e5ccb53bb">S0Addr_IRQREG</a> = 0x38
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15ab3fcf2c581c776aa334545063188b05d">S0Addr_PCI</a> = 0x3C
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a641c76a6ee11cb383280b61e5835c9df">S0Addr_PCIEFLAGS</a> = 0x40
-, <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15ae59d8bd282f5300cf261852266c669bd">S0Addr_NOS</a> = 0x44
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a68a15933623375e32ed031e35474bebe">S0Addr_ScanIndex</a> = 0x48
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15ab2f520ca22b8687c136dc305cd158224">S0Addr_DmaBufSizeInScans</a> = 0x04C
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15ab770119263ac35baaf83b1a6b7455a49">S0Addr_DMAsPerIntr</a> = 0x050
-, <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a986f13181bdd9b9f8042e6635f4f0a88">S0Addr_NOB</a> = 0x054
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a69967c36eba1a549af5ffad498763569">S0Addr_BLOCKINDEX</a> = 0x058
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15aac4437a46ca21e4deef1c268bfb4125a">S0Addr_CAMCNT</a> = 0x05C
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15afcd7149a9ab848b4f9edcad2817b703a">S0Addr_TDCCtrl</a> = 0x60
-, <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a2479e701a6d7d1b9bcf4ca332c819744">S0Addr_TDCData</a> = 0x64
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15aeca5912c22e597a19d4f705047975004">S0Addr_ROI0</a> = 0x68
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a176cd778e5b7d876f213b7c79e5c9d71">S0Addr_ROI1</a> = 0x6C
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a1dab81075455293fdbcb79a572f4b6ae">S0Addr_ROI2</a> = 0x70
-, <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a65c4baa42bc76c84cd5dc8d62adb5c90">S0Addr_XCKDLY</a> = 0x74
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a91a13f75aa5d2421cf5ca3d5331f59c6">S0Addr_S1S2ReadDelay</a> = 0x78
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15aef10918d488e4906ad90a4e76b5823cf">S0Addr_BTICNT</a> = 0x7c
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a2bd680f1828bf9d0ee53844acb00445f">S0Addr_BTIMER</a> = 0x80
-, <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a89961a01eb14d4a1127c2dccf555ece4">S0Addr_BDAT</a> = 0x84
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a57598380c7dc26dd4eac60c6ad31af2b">S0Addr_BEC</a> = 0x88
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a423efe4e77fad563ab80d4cdd119afb2">S0Addr_BSLOPE</a> = 0x8C
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15ae14b9028dc1dc4fda2c7fe4759c8a67a">S0Addr_A1DSC</a> = 0x90
-, <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a263993c3f1f0db647a8a0dc89cd189fd">S0Addr_L1DSC</a> = 0x94
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a6a5fda123f2cce6999ba25696fb21a06">S0Addr_A2DSC</a> = 0x98
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a08a527a8c1f3fa956c71a10f192ebd78">S0Addr_L2DSC</a> = 0x9C
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a58edd27073d3ec775b8a9879e01f216c">S0Addr_ATDC2</a> = 0xA0
-, <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a9781827ddd301baf671526915bfbc6db">S0Addr_LTDC2</a> = 0xA4
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15adf8bc35ff652d8c514bba71d814ee9a6">S0Addr_DSCCtrl</a> = 0xA8
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a41e8c3797e6933e36ebfd5d092279149">S0Addr_DAC</a> = 0xAC
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15af31a289b718653a82f45b40c23d0f2e9">S0Addr_XCKLEN</a> = 0xB0
-, <br />
-&#160;&#160;<a class="el" href="#a1532e8504727e103db7ec69af3330f15a3b577d7674121c2ffb5b84b3006fb6ba">S0Addr_BONLEN</a> = 0xB4
-, <a class="el" href="#a1532e8504727e103db7ec69af3330f15a0694822028f927970ffbd57a0c8a6705">S0Addr_CAMERA_TYPE</a> = 0xB8
-<br />
- }</td></tr>
-<tr class="separator:a1532e8504727e103db7ec69af3330f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dc06a244ac6282e55991ad6c6356dbb" id="r_a1dc06a244ac6282e55991ad6c6356dbb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbb">XCK_bits_t</a> { <br />
-&#160;&#160;<a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbbaeab83a971a1b447f73efdf8edd7a0f63">XCK_bitindex_stimer</a> = 0
-, <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba35c892387f6d148bc503e6c034e60c0a">XCK_bitindex_res_ns</a> = 28
-, <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba4117a6cf5b27885522b08861bdab34ba">XCK_bitindex_res_ms</a> = 29
-, <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba35abbf6ebc01f34a1ba8e4cdcaf34cfe">XCK_bitindex_stimer_on</a> = 30
-, <br />
-&#160;&#160;<a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba2e3e8258a6718c38ae3aca937df981de">XCK_bits_stimer</a> = 0x0FFFFFFF
-, <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba4409994ceb22261d6e96493b467a7d6a">XCK_bit_res_ns</a> = 0x10000000
-, <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbbabd957433809b3fee7a1f4db45adc53ca">XCK_bit_res_ms</a> = 0x20000000
-, <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba16cf3d1cfb4707d29f261ade7386b5a3">XCK_bit_stimer_on</a> = 0x40000000
-<br />
- }</td></tr>
-<tr class="separator:a1dc06a244ac6282e55991ad6c6356dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a1d179386b40162fc96b96c12da077dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15896ca263195923b15606bb739b92b5" id="r_a15896ca263195923b15606bb739b92b5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15896ca263195923b15606bb739b92b5">ScanIndex_bits_t</a> { <a class="el" href="#a15896ca263195923b15606bb739b92b5a6eedb129091961f6c3c48b4524bcaed5">ScanIndex_bitindex_counter_reset</a> = 31
 , <a class="el" href="#a15896ca263195923b15606bb739b92b5a4aab0ced46bc4f29dae88d9fdb67d346">ScanIndex_bit_counter_reset</a> = 0x80
  }</td></tr>
 <tr class="separator:a15896ca263195923b15606bb739b92b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5ad8175436820f4d8b11ab0153ffa69" id="r_aa5ad8175436820f4d8b11ab0153ffa69"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5ad8175436820f4d8b11ab0153ffa69">BLOCKINDEX_bits_t</a> { <a class="el" href="#aa5ad8175436820f4d8b11ab0153ffa69a23fc30170fc38cf687bc464da04539ca">BLOCKINDEX_bitindex_counter_reset</a> = 31
-, <a class="el" href="#aa5ad8175436820f4d8b11ab0153ffa69a64a000918d4731935bc8ac580752e966">BLOCKINDEX_bit_counter_reset</a> = 0x80
- }</td></tr>
-<tr class="separator:aa5ad8175436820f4d8b11ab0153ffa69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab664f914a04fe4ff8bd3310b852deb7" id="r_aab664f914a04fe4ff8bd3310b852deb7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab664f914a04fe4ff8bd3310b852deb7">DmaBufSizeInScans_bits_t</a> { <a class="el" href="#aab664f914a04fe4ff8bd3310b852deb7a91e7c7296e170955dd9c786535d3ce9b">DmaBufSizeInScans_bitindex_counter_reset</a> = 31
 , <a class="el" href="#aab664f914a04fe4ff8bd3310b852deb7a1ba7bf6d0ff9d28f6f3f32bd5afa41fd">DmaBufSizeInScans_bit_counter_reset</a> = 0x80
  }</td></tr>
@@ -567,6 +470,65 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#acc38a9e04cce5562fedf5864fa1acf4ba341d31f0b5c59ca91d438b6e763590dc">DMAsPerIntr_bit_counter_reset</a> = 0x80
  }</td></tr>
 <tr class="separator:acc38a9e04cce5562fedf5864fa1acf4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5ad8175436820f4d8b11ab0153ffa69" id="r_aa5ad8175436820f4d8b11ab0153ffa69"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5ad8175436820f4d8b11ab0153ffa69">BLOCKINDEX_bits_t</a> { <a class="el" href="#aa5ad8175436820f4d8b11ab0153ffa69a23fc30170fc38cf687bc464da04539ca">BLOCKINDEX_bitindex_counter_reset</a> = 31
+, <a class="el" href="#aa5ad8175436820f4d8b11ab0153ffa69a64a000918d4731935bc8ac580752e966">BLOCKINDEX_bit_counter_reset</a> = 0x80
+ }</td></tr>
+<tr class="separator:aa5ad8175436820f4d8b11ab0153ffa69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a374db1564224f2a8a00585e53bfdc174" id="r_a374db1564224f2a8a00585e53bfdc174"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a374db1564224f2a8a00585e53bfdc174">TDCCtrl_bits_t</a> { <br />
+&#160;&#160;<a class="el" href="#a374db1564224f2a8a00585e53bfdc174a961101988b6a5f321edc4e9a4826b373">TDCCtrl_bitindex_reset</a> = 0
+, <a class="el" href="#a374db1564224f2a8a00585e53bfdc174a2d8be99a9332c1370d42376276a6c299">TDCCtrl_bitindex_interrupt</a> = 1
+, <a class="el" href="#a374db1564224f2a8a00585e53bfdc174af96f7be96799bde806a7c30f332dd0a9">TDCCtrl_bitindex_load_fifo</a> = 2
+, <a class="el" href="#a374db1564224f2a8a00585e53bfdc174aa4d705fc1c4c7b61976d413220e33fba">TDCCtrl_bitindex_empty_fifo</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="#a374db1564224f2a8a00585e53bfdc174aba49a4ca0ef8bc046432db89d101cc86">TDCCtrl_bitindex_cs</a> = 27
+, <a class="el" href="#a374db1564224f2a8a00585e53bfdc174a94859659f531bebbbc6edab17bbc9b7b">TDCCtrl_bitindex_adr0</a> = 28
+, <a class="el" href="#a374db1564224f2a8a00585e53bfdc174a95f21a4517c18aeb6566b678fac9c284">TDCCtrl_bitindex_adr1</a> = 29
+, <a class="el" href="#a374db1564224f2a8a00585e53bfdc174ac6e93ed55f0013a27eb28b7549b08614">TDCCtrl_bitindex_adr2</a> = 30
+, <br />
+&#160;&#160;<a class="el" href="#a374db1564224f2a8a00585e53bfdc174a2c76bf5605c9c1875c84ef40429915c1">TDCCtrl_bitindex_adr3</a> = 31
+, <a class="el" href="#a374db1564224f2a8a00585e53bfdc174a98edec87f388260832350c0bd96e3ea8">TDCCtrl_bit_reset</a> = 0x1
+, <a class="el" href="#a374db1564224f2a8a00585e53bfdc174aeef5a2280ad8c03ecb82852118741d13">TDCCtrl_bit_interrupt</a> = 0x2
+, <a class="el" href="#a374db1564224f2a8a00585e53bfdc174a5f17273be6b309832bcb799db94201f7">TDCCtrl_bit_load_fifo</a> = 0x4
+, <br />
+&#160;&#160;<a class="el" href="#a374db1564224f2a8a00585e53bfdc174a7d2c6f3325a562b0d1e466a7e8e8e849">TDCCtrl_bit_empty_fifo</a> = 0x8
+, <a class="el" href="#a374db1564224f2a8a00585e53bfdc174a921b15b0be1883c5821724649a21231e">TDCCtrl_bit_cs</a> = 0x8000000
+, <a class="el" href="#a374db1564224f2a8a00585e53bfdc174ab31f157211dae43f771aaccfebe9de57">TDCCtrl_bit_adr0</a> = 0x10000000
+, <a class="el" href="#a374db1564224f2a8a00585e53bfdc174aea184fded5018f3a58409afdab53042a">TDCCtrl_bit_adr1</a> = 0x20000000
+, <br />
+&#160;&#160;<a class="el" href="#a374db1564224f2a8a00585e53bfdc174a5d8b90826d3621936e5af8a17499f8eb">TDCCtrl_bit_adr2</a> = 0x40000000
+, <a class="el" href="#a374db1564224f2a8a00585e53bfdc174ac8e6c4d1949008a76d1dd35852fe5733">TDCCtrl_bit_adr3</a> = 0x80000000
+<br />
+ }</td></tr>
+<tr class="separator:a374db1564224f2a8a00585e53bfdc174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78dc599b51cfbecce04a83ff0374d405" id="r_a78dc599b51cfbecce04a83ff0374d405"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78dc599b51cfbecce04a83ff0374d405">TOR_BTICNT_bits_t</a> { <a class="el" href="#a78dc599b51cfbecce04a83ff0374d405a81f3432f12ac857df98c5831dc091d83">TOR_bits_BTICNT</a> = 0x7F
+, <a class="el" href="#a78dc599b51cfbecce04a83ff0374d405af526558c003c6d41eed19f0b14271ecf">TOR_bit_BTICNT_EN</a> = 0x80
+, <a class="el" href="#a78dc599b51cfbecce04a83ff0374d405a3acd7d7ca2b398d00ce14cb06fdde622">TOR_bitindex_BTICNT</a> = 0
+, <a class="el" href="#a78dc599b51cfbecce04a83ff0374d405a71527789974687effdcf123119af76e5">TOR_bitindex_BTICNT_EN</a> = 7
+ }</td></tr>
+<tr class="separator:a78dc599b51cfbecce04a83ff0374d405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49558783bbb2279fd37cb6d62766dfde" id="r_a49558783bbb2279fd37cb6d62766dfde"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49558783bbb2279fd37cb6d62766dfde">BDAT_bits_t</a> { <a class="el" href="#a49558783bbb2279fd37cb6d62766dfdea928cc39d14b1dcd39bfacc155904591d">BDAT_bitindex_enabled</a> = 31
+ }</td></tr>
+<tr class="separator:a49558783bbb2279fd37cb6d62766dfde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a89cc3f90c9085be6bc193f83dc6d65" id="r_a6a89cc3f90c9085be6bc193f83dc6d65"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a89cc3f90c9085be6bc193f83dc6d65">BEC_bits_t</a> { <a class="el" href="#a6a89cc3f90c9085be6bc193f83dc6d65a3b316018ab2316012e1a68999a40cc69">BEC_bitindex_enabled</a> = 31
+ }</td></tr>
+<tr class="separator:a6a89cc3f90c9085be6bc193f83dc6d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a401c082d05f2dc446a7cb3cd6088ece3" id="r_a401c082d05f2dc446a7cb3cd6088ece3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a401c082d05f2dc446a7cb3cd6088ece3">BSLOPE_bits_t</a> { <a class="el" href="#a401c082d05f2dc446a7cb3cd6088ece3a8efad94625c269105ab93427baad8bcb">BSLOPE_bitindex_bslope</a> = 0
+, <a class="el" href="#a401c082d05f2dc446a7cb3cd6088ece3ab73f58dcfb6b5f04deaf6093e60ee3a1">BSLOPE_bitindex_both_slopes</a> = 1
+, <a class="el" href="#a401c082d05f2dc446a7cb3cd6088ece3a5d186472a6aee131cca5b37021a5884c">BSLOPE_bitindex_bswtrig</a> = 2
+ }</td></tr>
+<tr class="separator:a401c082d05f2dc446a7cb3cd6088ece3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcb8c0b3316bf062919b5d1a2673004c" id="r_abcb8c0b3316bf062919b5d1a2673004c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abcb8c0b3316bf062919b5d1a2673004c">DSCCtrl_bits_t</a> { <a class="el" href="#abcb8c0b3316bf062919b5d1a2673004ca00a2ecab3646bb7bef542c2920588efe">DSCCtrl_bitindex_rs1</a> = 0
+, <a class="el" href="#abcb8c0b3316bf062919b5d1a2673004cadff4daec784a2559c69062d9e22e3035">DSCCtrl_bitindex_dir1</a> = 1
+, <a class="el" href="#abcb8c0b3316bf062919b5d1a2673004ca1c247ee4a56d52c26b139fa6f845bdaa">DSCCtrl_bitindex_rs2</a> = 8
+, <a class="el" href="#abcb8c0b3316bf062919b5d1a2673004cafbf7818ce48ad691b6886b9ddc713f87">DSCCtrl_bitindex_dir2</a> = 9
+ }</td></tr>
+<tr class="separator:abcb8c0b3316bf062919b5d1a2673004c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1f3aee94473361f396c43f6eb5db0f1" id="r_af1f3aee94473361f396c43f6eb5db0f1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1f3aee94473361f396c43f6eb5db0f1">camera_type_bits_t</a> { <a class="el" href="#af1f3aee94473361f396c43f6eb5db0f1add9d08e13c0f7de9ff488768977ae093">camera_type_sensor_type_bits</a> = 0x0000FFFF
+, <a class="el" href="#af1f3aee94473361f396c43f6eb5db0f1a3c89df8f9a49d73dd59ff52552b77e10">camera_type_camera_system_bits</a> = 0xFFFF0000
+, <a class="el" href="#af1f3aee94473361f396c43f6eb5db0f1ac4da96f23746040708a4d3a22a929dd7">camera_type_sensor_type_bit_index</a> = 0
+, <a class="el" href="#af1f3aee94473361f396c43f6eb5db0f1a943d1c69d6a33acf0d136af8d6e988ea">camera_type_camera_system_bit_index</a> = 16
+ }</td></tr>
+<tr class="separator:af1f3aee94473361f396c43f6eb5db0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6088fcda9571ea67be3dd49e46438941" id="r_a6088fcda9571ea67be3dd49e46438941"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6088fcda9571ea67be3dd49e46438941">cam_addresses_t</a> { <br />
 &#160;&#160;<a class="el" href="#a6088fcda9571ea67be3dd49e46438941a5e032812bb6af56e16fc96f0671a074c">maddr_cam</a> = 0x00
 , <a class="el" href="#a6088fcda9571ea67be3dd49e46438941ad6d985e8ca8b3222dbc3765c92159241">maddr_adc</a> = 0x01
@@ -688,16 +650,6 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a6bf7c32673195bbbdc288f7931ac4976"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0266b7b413403e4bfb667d9f666a910" id="r_ad0266b7b413403e4bfb667d9f666a910"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0266b7b413403e4bfb667d9f666a910">bits_of_pixel_block_index_high_S1_S2_t</a> { <br />
-&#160;&#160;<a class="el" href="#ad0266b7b413403e4bfb667d9f666a910aab5a71f10e88f852fc972918c7e8ccaa">pixel_block_index_high_s1_s2_bits_block_index</a> = 0x3FFF
-, <a class="el" href="#ad0266b7b413403e4bfb667d9f666a910a234d85d0886a2e58f52c9a07823ee4d7">pixel_block_index_high_s1_s2_bit_s2</a> = 0x4000
-, <a class="el" href="#ad0266b7b413403e4bfb667d9f666a910ab879384c0fd47a0745990bb3ad595726">pixel_block_index_high_s1_s2_bit_s1</a> = 0x8000
-, <a class="el" href="#ad0266b7b413403e4bfb667d9f666a910ae0b05883e1dc8b5cd4d9396f7beae5ed">pixel_block_index_high_s1_s2_bitindex_s2</a> = 14
-, <br />
-&#160;&#160;<a class="el" href="#ad0266b7b413403e4bfb667d9f666a910ae5574c2199f87c553217392dbacc2fb2">pixel_block_index_high_s1_s2_bitindex_s1</a> = 15
-<br />
- }</td></tr>
-<tr class="separator:ad0266b7b413403e4bfb667d9f666a910"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4e169cedf37f6a55251e0d15f33a2b1" id="r_ab4e169cedf37f6a55251e0d15f33a2b1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4e169cedf37f6a55251e0d15f33a2b1">special_pixels_enum_t</a> { <br />
 &#160;&#160;<a class="el" href="#ab4e169cedf37f6a55251e0d15f33a2b1a77006dca2202ba5425482f23f4daf15e">pixel_block_index_high_s1_s2</a> = 2
 , <a class="el" href="#ab4e169cedf37f6a55251e0d15f33a2b1a60415b66dd6c16c135181923bb9c6468">pixel_block_index_low</a> = 3
@@ -718,6 +670,16 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#aa5345f9ae48237dce9cbde9e67b4a3aaa94be359d0861485628ae3f9d91d4fc1f">pixel_scan_index2_low</a> = 0
  }</td></tr>
 <tr class="separator:aa5345f9ae48237dce9cbde9e67b4a3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0266b7b413403e4bfb667d9f666a910" id="r_ad0266b7b413403e4bfb667d9f666a910"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0266b7b413403e4bfb667d9f666a910">bits_of_pixel_block_index_high_S1_S2_t</a> { <br />
+&#160;&#160;<a class="el" href="#ad0266b7b413403e4bfb667d9f666a910aab5a71f10e88f852fc972918c7e8ccaa">pixel_block_index_high_s1_s2_bits_block_index</a> = 0x3FFF
+, <a class="el" href="#ad0266b7b413403e4bfb667d9f666a910a234d85d0886a2e58f52c9a07823ee4d7">pixel_block_index_high_s1_s2_bit_s2</a> = 0x4000
+, <a class="el" href="#ad0266b7b413403e4bfb667d9f666a910ab879384c0fd47a0745990bb3ad595726">pixel_block_index_high_s1_s2_bit_s1</a> = 0x8000
+, <a class="el" href="#ad0266b7b413403e4bfb667d9f666a910ae0b05883e1dc8b5cd4d9396f7beae5ed">pixel_block_index_high_s1_s2_bitindex_s2</a> = 14
+, <br />
+&#160;&#160;<a class="el" href="#ad0266b7b413403e4bfb667d9f666a910ae5574c2199f87c553217392dbacc2fb2">pixel_block_index_high_s1_s2_bitindex_s1</a> = 15
+<br />
+ }</td></tr>
+<tr class="separator:ad0266b7b413403e4bfb667d9f666a910"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38de1923679a344eb82558f5de572d65" id="r_a38de1923679a344eb82558f5de572d65"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38de1923679a344eb82558f5de572d65">pixel_camera_status_bits_t</a> { <br />
 &#160;&#160;<a class="el" href="#a38de1923679a344eb82558f5de572d65a290e5c087071e7e55e851727129c71c1">pixel_camera_status_bitindex_over_temp</a> = 0
 , <a class="el" href="#a38de1923679a344eb82558f5de572d65afcb494a215e6cca1ce0c1546fd36fad2">pixel_camera_status_bitindex_temp_good</a> = 1
@@ -739,55 +701,6 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#a719ffee0dbc151d0a1b93faf887d7be5a92e443cca77b94127320821930ba15c8">pixel_fpga_ver_major_and_bit</a> = 0x00FF
  }</td></tr>
 <tr class="separator:a719ffee0dbc151d0a1b93faf887d7be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a374db1564224f2a8a00585e53bfdc174" id="r_a374db1564224f2a8a00585e53bfdc174"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a374db1564224f2a8a00585e53bfdc174">TDCCtrl_bits_t</a> { <br />
-&#160;&#160;<a class="el" href="#a374db1564224f2a8a00585e53bfdc174a961101988b6a5f321edc4e9a4826b373">TDCCtrl_bitindex_reset</a> = 0
-, <a class="el" href="#a374db1564224f2a8a00585e53bfdc174a2d8be99a9332c1370d42376276a6c299">TDCCtrl_bitindex_interrupt</a> = 1
-, <a class="el" href="#a374db1564224f2a8a00585e53bfdc174af96f7be96799bde806a7c30f332dd0a9">TDCCtrl_bitindex_load_fifo</a> = 2
-, <a class="el" href="#a374db1564224f2a8a00585e53bfdc174aa4d705fc1c4c7b61976d413220e33fba">TDCCtrl_bitindex_empty_fifo</a> = 3
-, <br />
-&#160;&#160;<a class="el" href="#a374db1564224f2a8a00585e53bfdc174aba49a4ca0ef8bc046432db89d101cc86">TDCCtrl_bitindex_cs</a> = 27
-, <a class="el" href="#a374db1564224f2a8a00585e53bfdc174a94859659f531bebbbc6edab17bbc9b7b">TDCCtrl_bitindex_adr0</a> = 28
-, <a class="el" href="#a374db1564224f2a8a00585e53bfdc174a95f21a4517c18aeb6566b678fac9c284">TDCCtrl_bitindex_adr1</a> = 29
-, <a class="el" href="#a374db1564224f2a8a00585e53bfdc174ac6e93ed55f0013a27eb28b7549b08614">TDCCtrl_bitindex_adr2</a> = 30
-, <br />
-&#160;&#160;<a class="el" href="#a374db1564224f2a8a00585e53bfdc174a2c76bf5605c9c1875c84ef40429915c1">TDCCtrl_bitindex_adr3</a> = 31
-, <a class="el" href="#a374db1564224f2a8a00585e53bfdc174a98edec87f388260832350c0bd96e3ea8">TDCCtrl_bit_reset</a> = 0x1
-, <a class="el" href="#a374db1564224f2a8a00585e53bfdc174aeef5a2280ad8c03ecb82852118741d13">TDCCtrl_bit_interrupt</a> = 0x2
-, <a class="el" href="#a374db1564224f2a8a00585e53bfdc174a5f17273be6b309832bcb799db94201f7">TDCCtrl_bit_load_fifo</a> = 0x4
-, <br />
-&#160;&#160;<a class="el" href="#a374db1564224f2a8a00585e53bfdc174a7d2c6f3325a562b0d1e466a7e8e8e849">TDCCtrl_bit_empty_fifo</a> = 0x8
-, <a class="el" href="#a374db1564224f2a8a00585e53bfdc174a921b15b0be1883c5821724649a21231e">TDCCtrl_bit_cs</a> = 0x8000000
-, <a class="el" href="#a374db1564224f2a8a00585e53bfdc174ab31f157211dae43f771aaccfebe9de57">TDCCtrl_bit_adr0</a> = 0x10000000
-, <a class="el" href="#a374db1564224f2a8a00585e53bfdc174aea184fded5018f3a58409afdab53042a">TDCCtrl_bit_adr1</a> = 0x20000000
-, <br />
-&#160;&#160;<a class="el" href="#a374db1564224f2a8a00585e53bfdc174a5d8b90826d3621936e5af8a17499f8eb">TDCCtrl_bit_adr2</a> = 0x40000000
-, <a class="el" href="#a374db1564224f2a8a00585e53bfdc174ac8e6c4d1949008a76d1dd35852fe5733">TDCCtrl_bit_adr3</a> = 0x80000000
-<br />
- }</td></tr>
-<tr class="separator:a374db1564224f2a8a00585e53bfdc174"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49558783bbb2279fd37cb6d62766dfde" id="r_a49558783bbb2279fd37cb6d62766dfde"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49558783bbb2279fd37cb6d62766dfde">BDAT_bits_t</a> { <a class="el" href="#a49558783bbb2279fd37cb6d62766dfdea928cc39d14b1dcd39bfacc155904591d">BDAT_bitindex_enabled</a> = 31
- }</td></tr>
-<tr class="separator:a49558783bbb2279fd37cb6d62766dfde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a89cc3f90c9085be6bc193f83dc6d65" id="r_a6a89cc3f90c9085be6bc193f83dc6d65"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a89cc3f90c9085be6bc193f83dc6d65">BEC_bits_t</a> { <a class="el" href="#a6a89cc3f90c9085be6bc193f83dc6d65a3b316018ab2316012e1a68999a40cc69">BEC_bitindex_enabled</a> = 31
- }</td></tr>
-<tr class="separator:a6a89cc3f90c9085be6bc193f83dc6d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a401c082d05f2dc446a7cb3cd6088ece3" id="r_a401c082d05f2dc446a7cb3cd6088ece3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a401c082d05f2dc446a7cb3cd6088ece3">BSLOPE_bits_t</a> { <a class="el" href="#a401c082d05f2dc446a7cb3cd6088ece3a8efad94625c269105ab93427baad8bcb">BSLOPE_bitindex_bslope</a> = 0
-, <a class="el" href="#a401c082d05f2dc446a7cb3cd6088ece3ab73f58dcfb6b5f04deaf6093e60ee3a1">BSLOPE_bitindex_both_slopes</a> = 1
-, <a class="el" href="#a401c082d05f2dc446a7cb3cd6088ece3a5d186472a6aee131cca5b37021a5884c">BSLOPE_bitindex_bswtrig</a> = 2
- }</td></tr>
-<tr class="separator:a401c082d05f2dc446a7cb3cd6088ece3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcb8c0b3316bf062919b5d1a2673004c" id="r_abcb8c0b3316bf062919b5d1a2673004c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abcb8c0b3316bf062919b5d1a2673004c">DSCCtrl_bits_t</a> { <a class="el" href="#abcb8c0b3316bf062919b5d1a2673004ca00a2ecab3646bb7bef542c2920588efe">DSCCtrl_bitindex_rs1</a> = 0
-, <a class="el" href="#abcb8c0b3316bf062919b5d1a2673004cadff4daec784a2559c69062d9e22e3035">DSCCtrl_bitindex_dir1</a> = 1
-, <a class="el" href="#abcb8c0b3316bf062919b5d1a2673004ca1c247ee4a56d52c26b139fa6f845bdaa">DSCCtrl_bitindex_rs2</a> = 8
-, <a class="el" href="#abcb8c0b3316bf062919b5d1a2673004cafbf7818ce48ad691b6886b9ddc713f87">DSCCtrl_bitindex_dir2</a> = 9
- }</td></tr>
-<tr class="separator:abcb8c0b3316bf062919b5d1a2673004c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1f3aee94473361f396c43f6eb5db0f1" id="r_af1f3aee94473361f396c43f6eb5db0f1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1f3aee94473361f396c43f6eb5db0f1">camera_type_bits_t</a> { <a class="el" href="#af1f3aee94473361f396c43f6eb5db0f1add9d08e13c0f7de9ff488768977ae093">camera_type_sensor_type_bits</a> = 0x0000FFFF
-, <a class="el" href="#af1f3aee94473361f396c43f6eb5db0f1a3c89df8f9a49d73dd59ff52552b77e10">camera_type_camera_system_bits</a> = 0xFFFF0000
-, <a class="el" href="#af1f3aee94473361f396c43f6eb5db0f1ac4da96f23746040708a4d3a22a929dd7">camera_type_sensor_type_bit_index</a> = 0
-, <a class="el" href="#af1f3aee94473361f396c43f6eb5db0f1a943d1c69d6a33acf0d136af8d6e988ea">camera_type_camera_system_bit_index</a> = 16
- }</td></tr>
-<tr class="separator:af1f3aee94473361f396c43f6eb5db0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74388ebd004c60c71facf4217301562b" id="r_a74388ebd004c60c71facf4217301562b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74388ebd004c60c71facf4217301562b">autotune_channel_ranges_t</a> { <br />
 &#160;&#160;<a class="el" href="#a74388ebd004c60c71facf4217301562bac4239409129463f157781bc7e239c671">autotune_ch1_start</a> = 44
 , <a class="el" href="#a74388ebd004c60c71facf4217301562ba04404cc0c1698ac4f4d3361ab38a4df5">autotune_ch1_end</a> = 108
@@ -811,6 +724,94 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a74388ebd004c60c71facf4217301562b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6005e570d078f1b87ae9b7a4b706a99" id="r_ab6005e570d078f1b87ae9b7a4b706a99"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99">pcie_configuration_space_t</a> { <br />
+&#160;&#160;<a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a07479b07938607524abc79d50812eb93">PCIeAddr_VendorID</a> = 0x00
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a3d760d2323385caec4b7b80209b39c4d">PCIeAddr_DeviceID</a> = 0x02
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99accdbd71e74e6034bf3ce7d3d2e43011a">PCIeAddr_Command</a> = 0x04
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a7ed78c98372709fb1d45c2ee9a024cc6">PCIeAddr_Status</a> = 0x06
+, <br />
+&#160;&#160;<a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a3bcafd2583d99aced421702c295f89ff">PCIeAddr_RevID</a> = 0x08
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a702611d131b9cbb27a613d4a4ee5ba08">PCIeAddr_ClassCode</a> = 0x09
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a4b4d532b0861e8ac03202e1c19a17388">PCIeAddr_CacheLn</a> = 0x0C
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99ad080d39e57e3daf046af5694783cb2d9">PCIeAddr_LatTimer</a> = 0x0D
+, <br />
+&#160;&#160;<a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99ab563917a9be89a4ef64a00d9eed61cd3">PCIeAddr_Header</a> = 0x0E
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a40e8ab700cbf65cfa6d45d00491caf0e">PCIeAddr_BIST</a> = 0x0F
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a7773473448c41e8f8f19e20521db2f52">PCIeAddr_BaseAddressRegister0</a> = 0x10
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a874ea480836425b31ef4e77fe1f1c66a">PCIeAddr_BaseAddressRegister1</a> = 0x14
+, <br />
+&#160;&#160;<a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a6d11f2c8239fba71a6aab627b967f762">PCIeAddr_BaseAddressRegister2</a> = 0x18
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a581bb0d6516cf1ac839ff30568b0b348">PCIeAddr_BaseAddressRegister3</a> = 0x1C
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a03615ffb8aed77cec28aa33328c302ca">PCIeAddr_BaseAddressRegister4</a> = 0x20
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99ad2d9532a5dcc3d93b0adc90875d92988">PCIeAddr_BaseAddressRegister5</a> = 0x24
+, <br />
+&#160;&#160;<a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a6e3d508a3365796da3c9feecb0d312ad">PCIeAddr_CardbusCisPointer</a> = 0x28
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a10d1113ee3f946644066c9219b396969">PCIeAddr_SubsystemVendorID</a> = 0x2C
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a35b83c52c93f503fba3efbda36a03906">PCIeAddr_SubsystemID</a> = 0x2E
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a181dc9d305726e3d9fd32c709bfcd2ab">PCIeAddr_ExpansionRomBaseAddress</a> = 0x30
+, <br />
+&#160;&#160;<a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a9831e73a8aaac25377abf527d4d8289b">PCIeAddr_CapPTr</a> = 0x34
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99aec3c4f596f1a7d1b267e95bbae78f80d">PCIeAddr_Reserved1</a> = 0x35
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99ae86459f0d23d7e542ffcbd7b93bfe9ac">PCIeAddr_Reserved2</a> = 0x38
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a0e3985135f8f31cbb32b06600cd5e2e7">PCIeAddr_IntrLine</a> = 0x3C
+, <br />
+&#160;&#160;<a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a08e1b765efb99c501a72e9558376a364">PCIeAddr_IntrPin</a> = 0x3D
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99ab2621f37ed695279db619de095584520">PCIeAddr_MinGnt</a> = 0x3E
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99ad421078dd0a440dfee100d85db93f3c4">PCIeAddr_Maxlat</a> = 0x3F
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99af371867e96494e42f7ea03987a5ee36b">PCIeAddr_PMCap</a> = 0x40
+, <br />
+&#160;&#160;<a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99aef53db9dc263bfc69e2fa9ded857e574">PCIeAddr_NxtCap1</a> = 0x41
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a84a20b3c2c9e847fd89dc39e1e017702">PCIeAddr_PMCapability</a> = 0x42
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a2184f9e2853514361e7fbba11f0cb265">PCIeAddr_PMCSR</a> = 0x44
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99af77ff91d762725a8a2b49c3b055ab7fe">PCIeAddr_BSE</a> = 0x46
+, <br />
+&#160;&#160;<a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a75f1ac41fd80afffb5322969cbb10a48">PCIeAddr_Data</a> = 0x47
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a94a1a3404749d82830dc3968fb1119fd">PCIeAddr_MSICap</a> = 0x48
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99ae39c6fd239a76e507f0a53d640a27964">PCIeAddr_NxtCap2</a> = 0x49
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99ac96ca33655b8d1c80599966f18fca5f0">PCIeAddr_MsiControl</a> = 0x4A
+, <br />
+&#160;&#160;<a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a7d4e2946de23d7efc5673ea6d1ef17d8">PCIeAddr_MessageAddressLower</a> = 0x4C
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a033413e04d7bbc9bd4e0e3187bddd74f">PCIeAddr_MessageAddressUpper</a> = 0x50
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a1dd19392d9c6c4e548fe36c52d349f3d">PCIeAddr_MessageData</a> = 0x54
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a126a92295171251a45e5cae6655fe89f">PCIeAddr_Reserved3</a> = 0x56
+, <br />
+&#160;&#160;<a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99ac9788ba23acf55227d28171e26296b78">PCIeAddr_PeCap</a> = 0x58
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a0ceb782cdb1d353fbad76fc525dfb8cb">PCIeAddr_NxtCap3</a> = 0x59
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99aa72d1a2f93bf97b169dc53564ac5f543">PCIeAddr_PeCapabilty</a> = 0x5A
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99abfb48136ccbef9700f16f23bb179e8fb">PCIeAddr_PCIExpressDeviceCapabilities</a> = 0x5C
+, <br />
+&#160;&#160;<a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a0a091fc99aeed4a3f7c2590ae01d29db">PCIeAddr_DeviceControl</a> = 0x60
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a3e0444e0c1bdf91a8d13142c9e2b2953">PCIeAddr_DeviceStatus</a> = 0x62
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a1f8116ad97616180b892844e232d629b">PCIeAddr_PCIExpressLinkCapabilities</a> = 0x64
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a08a98f4d3817435f9e658953980a3dd0">PCIeAddr_LinkControl</a> = 0x68
+, <br />
+&#160;&#160;<a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99af62854916ffdaa7d941580da8521c311">PCIeAddr_LinkStatus</a> = 0x6A
+, <a class="el" href="#ab6005e570d078f1b87ae9b7a4b706a99a4357123bf36fccf2a8bd67a3998b7d56">PCIeAddr_ReservedLegacyConfigurationSpace</a> = 0x6C
+<br />
+ }</td></tr>
+<tr class="separator:ab6005e570d078f1b87ae9b7a4b706a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30821fd39eadf5b7a8fbe9ff45db801b" id="r_a30821fd39eadf5b7a8fbe9ff45db801b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30821fd39eadf5b7a8fbe9ff45db801b">PciExpressDeviceCapabilities_bits_t</a> { <a class="el" href="#a30821fd39eadf5b7a8fbe9ff45db801ba10909adcf7927a3215cfa040ed2ed136">PciExpressDeviceCapabilities_MaxPayloadSizeSupported_bits</a> = 0x7
+ }</td></tr>
+<tr class="separator:a30821fd39eadf5b7a8fbe9ff45db801b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69d30493bcf4f3a83a16ce1ee7558889" id="r_a69d30493bcf4f3a83a16ce1ee7558889"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69d30493bcf4f3a83a16ce1ee7558889">MaxPayloadSizeSupported_encoding_t</a> { <br />
+&#160;&#160;<a class="el" href="#a69d30493bcf4f3a83a16ce1ee7558889afb67f416a3005c805c2938a261363895">maxPaxloadSize_128bytes</a> = 0
+, <a class="el" href="#a69d30493bcf4f3a83a16ce1ee7558889a816e61c2b5ff0f3a2d76e6c96f156260">maxPaxloadSize_256bytes</a> = 1
+, <a class="el" href="#a69d30493bcf4f3a83a16ce1ee7558889ad6b7994eb0e204d317a82d6ccfe40fff">maxPaxloadSize_512bytes</a> = 2
+, <a class="el" href="#a69d30493bcf4f3a83a16ce1ee7558889a13badb251ed401c95bb98fc707bc1372">maxPaxloadSize_1024bytes</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="#a69d30493bcf4f3a83a16ce1ee7558889a2bdc36abd335b97c041c2d4555ae7aa8">maxPaxloadSize_2048bytes</a> = 4
+, <a class="el" href="#a69d30493bcf4f3a83a16ce1ee7558889a9c8232d3c84a8b62ca12ddb19eb73559">maxPaxloadSize_4096bytes</a> = 5
+, <a class="el" href="#a69d30493bcf4f3a83a16ce1ee7558889a4e4c9abeb91367941d1e0ccf4549b42a">maxPaxloadSize_reserved1</a> = 6
+, <a class="el" href="#a69d30493bcf4f3a83a16ce1ee7558889a0fd3d34608d2b7c74748555fcacba0db">maxPaxloadSize_reserved2</a> = 7
+<br />
+ }</td></tr>
+<tr class="separator:a69d30493bcf4f3a83a16ce1ee7558889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27c45d119d78ca12b7e38e47cb02907f" id="r_a27c45d119d78ca12b7e38e47cb02907f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27c45d119d78ca12b7e38e47cb02907f">DeviceControl_bits_t</a> { <a class="el" href="#a27c45d119d78ca12b7e38e47cb02907fa88e19e987ba0a38be1791caf439bc181">deviceControl_maxPayloadSize_bits</a> = 0xE0
+, <a class="el" href="#a27c45d119d78ca12b7e38e47cb02907faa50cbfc6b5665ceba05dd9e726d5ad33">deviceControl_maxReadRequestSize_bits</a> = 0x7000
+, <a class="el" href="#a27c45d119d78ca12b7e38e47cb02907faf9bf7d20432b6d491a5a577111d6db48">deviceControl_maxPayloadSize_bitindex</a> = 5
+, <a class="el" href="#a27c45d119d78ca12b7e38e47cb02907faeff10ae37cc84d9e80b2fb37c4610f5f">deviceControl_maxReadRequestSize_bitindex</a> = 12
+ }</td></tr>
+<tr class="separator:a27c45d119d78ca12b7e38e47cb02907f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="aed7f564a2634450efefa7cd7d1dfaaf2" name="aed7f564a2634450efefa7cd7d1dfaaf2"></a>
@@ -1746,7 +1747,8 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15acfef23d8fcc664d4c935386da5aec095" name="a1532e8504727e103db7ec69af3330f15acfef23d8fcc664d4c935386da5aec095"></a>S0Addr_TOR_MSB&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15aabc08a57cbf052ab2e6c22b5a29633bb" name="a1532e8504727e103db7ec69af3330f15aabc08a57cbf052ab2e6c22b5a29633bb"></a>S0Addr_ARREG&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a734540f1db03bbe872ea40437117b5ba" name="a1532e8504727e103db7ec69af3330f15a734540f1db03bbe872ea40437117b5ba"></a>S0Addr_GIOREG&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a7e75fa28f410292e735d90d4546fc2dd" name="a1532e8504727e103db7ec69af3330f15a7e75fa28f410292e735d90d4546fc2dd"></a>S0Addr_DELAYEC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a4d98a1dbdae8477489c378937d6f0bc8" name="a1532e8504727e103db7ec69af3330f15a4d98a1dbdae8477489c378937d6f0bc8"></a>S0Addr_XCK_PERIOD&#160;</td><td class="fielddoc"><p>XCK PERIOD is a 32 bit unsigned integer, which shows the period time of the first XCK period (XCK high slope to high slope) of one measurement in a 10 ns resolution. Introduced in PCIe card version 222_12. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a4237fbee2f68fb8dae30ba8e5ccb53bb" name="a1532e8504727e103db7ec69af3330f15a4237fbee2f68fb8dae30ba8e5ccb53bb"></a>S0Addr_IRQREG&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15ab3fcf2c581c776aa334545063188b05d" name="a1532e8504727e103db7ec69af3330f15ab3fcf2c581c776aa334545063188b05d"></a>S0Addr_PCI&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a641c76a6ee11cb383280b61e5835c9df" name="a1532e8504727e103db7ec69af3330f15a641c76a6ee11cb383280b61e5835c9df"></a>S0Addr_PCIEFLAGS&#160;</td><td class="fielddoc"></td></tr>
@@ -1777,11 +1779,13 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a9781827ddd301baf671526915bfbc6db" name="a1532e8504727e103db7ec69af3330f15a9781827ddd301baf671526915bfbc6db"></a>S0Addr_LTDC2&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15adf8bc35ff652d8c514bba71d814ee9a6" name="a1532e8504727e103db7ec69af3330f15adf8bc35ff652d8c514bba71d814ee9a6"></a>S0Addr_DSCCtrl&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a41e8c3797e6933e36ebfd5d092279149" name="a1532e8504727e103db7ec69af3330f15a41e8c3797e6933e36ebfd5d092279149"></a>S0Addr_DAC&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15af31a289b718653a82f45b40c23d0f2e9" name="a1532e8504727e103db7ec69af3330f15af31a289b718653a82f45b40c23d0f2e9"></a>S0Addr_XCKLEN&#160;</td><td class="fielddoc"><p>XCKLEN is 32 bit unsigned integer, which shows the length of XCK in a 10 ns resolution. Introduced in PCIe card version 222_12. </p>
+<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15af31a289b718653a82f45b40c23d0f2e9" name="a1532e8504727e103db7ec69af3330f15af31a289b718653a82f45b40c23d0f2e9"></a>S0Addr_XCKLEN&#160;</td><td class="fielddoc"><p>XCKLEN is 32 bit unsigned integer, which shows the length of the first XCK of one measurement in a 10 ns resolution. Introduced in PCIe card version 222_12. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a3b577d7674121c2ffb5b84b3006fb6ba" name="a1532e8504727e103db7ec69af3330f15a3b577d7674121c2ffb5b84b3006fb6ba"></a>S0Addr_BONLEN&#160;</td><td class="fielddoc"><p>BONLEN is a 32 bit unsigned integer, which shows the length of BON in a 10 ns resolution. Introduced in PCIe card version 222_12. </p>
+<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a3b577d7674121c2ffb5b84b3006fb6ba" name="a1532e8504727e103db7ec69af3330f15a3b577d7674121c2ffb5b84b3006fb6ba"></a>S0Addr_BONLEN&#160;</td><td class="fielddoc"><p>BONLEN is a 32 bit unsigned integer, which shows the length of the first BON of one measurement in a 10 ns resolution. Introduced in PCIe card version 222_12. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a0694822028f927970ffbd57a0c8a6705" name="a1532e8504727e103db7ec69af3330f15a0694822028f927970ffbd57a0c8a6705"></a>S0Addr_CAMERA_TYPE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15acd31b7aeb84aa27442ad6376d7457d90" name="a1532e8504727e103db7ec69af3330f15acd31b7aeb84aa27442ad6376d7457d90"></a>S0Addr_BON_PERIOD&#160;</td><td class="fielddoc"><p>BON PERIOD is a 32 bit unsigned integer, which shows the period time of the first BON period (BON high slope to high slope) of one measurement in a 10 ns resolution. Introduced in PCIe card version 222_12. </p>
+</td></tr>
 </table>
 
 </div>
