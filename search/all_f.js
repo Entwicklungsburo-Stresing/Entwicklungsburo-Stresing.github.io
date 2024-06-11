@@ -36,5 +36,20 @@ var searchData=
   ['resetscanfrequencybit_33',['ResetScanFrequencyBit',['../_board_8c.html#ab5a76129795901d456afe799a8cb311d',1,'Board.c']]],
   ['returnframe_34',['ReturnFrame',['../_board_8c.html#a3e6150945ca37b27bff3be2d754d1975',1,'Board.c']]],
   ['returnstartmeasurement_35',['ReturnStartMeasurement',['../_board_8c.html#a85504654d0abecbf9b6089ab6d096ab6',1,'Board.c']]],
-  ['rsfifo_36',['RSFifo',['../_board_8c.html#a9a79acf143b23e30fe78edf7ba89474e',1,'Board.c']]]
+  ['roi0_5fbitindex_5frange1_36',['ROI0_bitindex_range1',['../enum__hardware_8h.html#a1f47a1094f8d90e98abf59750c8e0bf1ac783a588e004d39880197dc8a32b6eda',1,'enum_hardware.h']]],
+  ['roi0_5fbitindex_5frange2_37',['ROI0_bitindex_range2',['../enum__hardware_8h.html#a1f47a1094f8d90e98abf59750c8e0bf1aabf953288d12a08b1c1abd39a84266de',1,'enum_hardware.h']]],
+  ['roi0_5fbits_5frange1_38',['ROI0_bits_range1',['../enum__hardware_8h.html#a1f47a1094f8d90e98abf59750c8e0bf1ad3a72e1142ac7a1f135b09112dfa3a26',1,'enum_hardware.h']]],
+  ['roi0_5fbits_5frange2_39',['ROI0_bits_range2',['../enum__hardware_8h.html#a1f47a1094f8d90e98abf59750c8e0bf1a71a46529ecc6ddf3aead0f715db35942',1,'enum_hardware.h']]],
+  ['roi0_5fbits_5ft_40',['ROI0_bits_t',['../enum__hardware_8h.html#a1f47a1094f8d90e98abf59750c8e0bf1',1,'enum_hardware.h']]],
+  ['roi1_5fbitindex_5frange3_41',['ROI1_bitindex_range3',['../enum__hardware_8h.html#afb0416bcf670b709557cdff82d5dbbb4a8efab1fe248df0ae4947c4eb4cfe11ab',1,'enum_hardware.h']]],
+  ['roi1_5fbitindex_5frange4_42',['ROI1_bitindex_range4',['../enum__hardware_8h.html#afb0416bcf670b709557cdff82d5dbbb4acc9d501e80d7e8f114ddb27372b93c94',1,'enum_hardware.h']]],
+  ['roi1_5fbits_5frange3_43',['ROI1_bits_range3',['../enum__hardware_8h.html#afb0416bcf670b709557cdff82d5dbbb4a882e76f80b4db7e1a92f3ddfb0242999',1,'enum_hardware.h']]],
+  ['roi1_5fbits_5frange4_44',['ROI1_bits_range4',['../enum__hardware_8h.html#afb0416bcf670b709557cdff82d5dbbb4ac093e65290d38c9c1bef93f5f79d96d9',1,'enum_hardware.h']]],
+  ['roi1_5fbits_5ft_45',['ROI1_bits_t',['../enum__hardware_8h.html#afb0416bcf670b709557cdff82d5dbbb4',1,'enum_hardware.h']]],
+  ['roi2_5fbitindex_5frange5_46',['ROI2_bitindex_range5',['../enum__hardware_8h.html#a7c549872627fd9fea8e4e32b6adcc677a6455128ddb02aec9a4f6cb3260f8308b',1,'enum_hardware.h']]],
+  ['roi2_5fbitindex_5frange6_47',['ROI2_bitindex_range6',['../enum__hardware_8h.html#a7c549872627fd9fea8e4e32b6adcc677a6adb90f1d4cc2257f1530d9d628f8166',1,'enum_hardware.h']]],
+  ['roi2_5fbits_5frange5_48',['ROI2_bits_range5',['../enum__hardware_8h.html#a7c549872627fd9fea8e4e32b6adcc677a4f7138039bef1a8962d51c7f47df7051',1,'enum_hardware.h']]],
+  ['roi2_5fbits_5frange6_49',['ROI2_bits_range6',['../enum__hardware_8h.html#a7c549872627fd9fea8e4e32b6adcc677a5d7f647ab56f06a170e5c46b8136ce06',1,'enum_hardware.h']]],
+  ['roi2_5fbits_5ft_50',['ROI2_bits_t',['../enum__hardware_8h.html#a7c549872627fd9fea8e4e32b6adcc677',1,'enum_hardware.h']]],
+  ['rsfifo_51',['RSFifo',['../_board_8c.html#a9a79acf143b23e30fe78edf7ba89474e',1,'Board.c']]]
 ];

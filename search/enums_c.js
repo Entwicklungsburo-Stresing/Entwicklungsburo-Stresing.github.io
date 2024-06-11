@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['vclkctrl_5fbits_5ft_0',['VCLKCTRL_bits_t',['../enum__hardware_8h.html#a1556695e733eb148991d16d02e6b244c',1,'enum_hardware.h']]],
-  ['vclkfreq_5fbits_5ft_1',['VCLKFREQ_bits_t',['../enum__hardware_8h.html#a75e32fc65a7fb4b52dd4b95028820e68',1,'enum_hardware.h']]]
+  ['tdcctrl_5fbits_5ft_0',['TDCCtrl_bits_t',['../enum__hardware_8h.html#a374db1564224f2a8a00585e53bfdc174',1,'enum_hardware.h']]],
+  ['tor_5fmsb_5fbits_5ft_1',['TOR_MSB_bits_t',['../enum__hardware_8h.html#ac3a1258fa04db205b71f72f565207db7',1,'enum_hardware.h']]],
+  ['tor_5fout_5ft_2',['tor_out_t',['../enum__settings_8h.html#a34afd11285290b35c0f65d59c163fafa',1,'enum_settings.h']]],
+  ['tor_5fsticnt_5fbits_5ft_3',['TOR_STICNT_bits_t',['../enum__hardware_8h.html#adccdca7702401ef9feb9b73f9974f1f2',1,'enum_hardware.h']]],
+  ['tor_5ftocnt_5fbits_5ft_4',['TOR_TOCNT_bits_t',['../enum__hardware_8h.html#a168d45dd57f1bbda9d4f6cb50f270e73',1,'enum_hardware.h']]],
+  ['trigger_5fmode_5ft_5',['trigger_mode_t',['../enum__settings_8h.html#a6d33f21be3f0c5cf91c5d638e8aca086',1,'enum_settings.h']]]
 ];

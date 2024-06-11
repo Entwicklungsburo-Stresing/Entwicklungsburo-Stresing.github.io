@@ -21,10 +21,16 @@ var searchData=
   ['dmaaddr_5fwdmatlps_18',['DmaAddr_WDMATLPS',['../enum__hardware_8h.html#a8e76e2a560aa415ee8df741caecff6adabc085b875cde4b7d3701cf76920391ed',1,'enum_hardware.h']]],
   ['dmabufsizeinscans_5fbit_5fcounter_5freset_19',['DmaBufSizeInScans_bit_counter_reset',['../enum__hardware_8h.html#aab664f914a04fe4ff8bd3310b852deb7a1ba7bf6d0ff9d28f6f3f32bd5afa41fd',1,'enum_hardware.h']]],
   ['dmabufsizeinscans_5fbitindex_5fcounter_5freset_20',['DmaBufSizeInScans_bitindex_counter_reset',['../enum__hardware_8h.html#aab664f914a04fe4ff8bd3310b852deb7a91e7c7296e170955dd9c786535d3ce9b',1,'enum_hardware.h']]],
-  ['dmasperintr_5fbit_5fcounter_5freset_21',['DMAsPerIntr_bit_counter_reset',['../enum__hardware_8h.html#acc38a9e04cce5562fedf5864fa1acf4ba341d31f0b5c59ca91d438b6e763590dc',1,'enum_hardware.h']]],
-  ['dmasperintr_5fbitindex_5fcounter_5freset_22',['DMAsPerIntr_bitindex_counter_reset',['../enum__hardware_8h.html#acc38a9e04cce5562fedf5864fa1acf4ba4a9d98cf5b6a11f71128ab4023cd7fca',1,'enum_hardware.h']]],
-  ['dscctrl_5fbitindex_5fdir1_23',['DSCCtrl_bitindex_dir1',['../enum__hardware_8h.html#abcb8c0b3316bf062919b5d1a2673004cadff4daec784a2559c69062d9e22e3035',1,'enum_hardware.h']]],
-  ['dscctrl_5fbitindex_5fdir2_24',['DSCCtrl_bitindex_dir2',['../enum__hardware_8h.html#abcb8c0b3316bf062919b5d1a2673004cafbf7818ce48ad691b6886b9ddc713f87',1,'enum_hardware.h']]],
-  ['dscctrl_5fbitindex_5frs1_25',['DSCCtrl_bitindex_rs1',['../enum__hardware_8h.html#abcb8c0b3316bf062919b5d1a2673004ca00a2ecab3646bb7bef542c2920588efe',1,'enum_hardware.h']]],
-  ['dscctrl_5fbitindex_5frs2_26',['DSCCtrl_bitindex_rs2',['../enum__hardware_8h.html#abcb8c0b3316bf062919b5d1a2673004ca1c247ee4a56d52c26b139fa6f845bdaa',1,'enum_hardware.h']]]
+  ['dmabufsizeinscans_5fbits_21',['DmaBufSizeInScans_bits',['../enum__hardware_8h.html#aab664f914a04fe4ff8bd3310b852deb7a4a6252bf7d8064466e3ee1d52f91c58b',1,'enum_hardware.h']]],
+  ['dmasperintr_5fbit_5fcounter_5freset_22',['DMAsPerIntr_bit_counter_reset',['../enum__hardware_8h.html#acc38a9e04cce5562fedf5864fa1acf4ba341d31f0b5c59ca91d438b6e763590dc',1,'enum_hardware.h']]],
+  ['dmasperintr_5fbitindex_5fcounter_5freset_23',['DMAsPerIntr_bitindex_counter_reset',['../enum__hardware_8h.html#acc38a9e04cce5562fedf5864fa1acf4ba4a9d98cf5b6a11f71128ab4023cd7fca',1,'enum_hardware.h']]],
+  ['dmasperintrs_5fbits_24',['DMAsPerIntrs_bits',['../enum__hardware_8h.html#acc38a9e04cce5562fedf5864fa1acf4bad53da8691be5cf3b38aa842154c8cdd8',1,'enum_hardware.h']]],
+  ['dscctrl_5fbit_5fdir1_25',['DSCCtrl_bit_dir1',['../enum__hardware_8h.html#abcb8c0b3316bf062919b5d1a2673004ca71bf9bd2f4e8c97a0b919483e9b670ef',1,'enum_hardware.h']]],
+  ['dscctrl_5fbit_5fdir2_26',['DSCCtrl_bit_dir2',['../enum__hardware_8h.html#abcb8c0b3316bf062919b5d1a2673004caf770f477f8b79d770bf71aabf7181c7a',1,'enum_hardware.h']]],
+  ['dscctrl_5fbit_5frs1_27',['DSCCtrl_bit_rs1',['../enum__hardware_8h.html#abcb8c0b3316bf062919b5d1a2673004ca85936fb99bf5ddff692ecc03872ecc69',1,'enum_hardware.h']]],
+  ['dscctrl_5fbit_5frs2_28',['DSCCtrl_bit_rs2',['../enum__hardware_8h.html#abcb8c0b3316bf062919b5d1a2673004ca3ce34069dd99705974a092d8bd01c1a9',1,'enum_hardware.h']]],
+  ['dscctrl_5fbitindex_5fdir1_29',['DSCCtrl_bitindex_dir1',['../enum__hardware_8h.html#abcb8c0b3316bf062919b5d1a2673004cadff4daec784a2559c69062d9e22e3035',1,'enum_hardware.h']]],
+  ['dscctrl_5fbitindex_5fdir2_30',['DSCCtrl_bitindex_dir2',['../enum__hardware_8h.html#abcb8c0b3316bf062919b5d1a2673004cafbf7818ce48ad691b6886b9ddc713f87',1,'enum_hardware.h']]],
+  ['dscctrl_5fbitindex_5frs1_31',['DSCCtrl_bitindex_rs1',['../enum__hardware_8h.html#abcb8c0b3316bf062919b5d1a2673004ca00a2ecab3646bb7bef542c2920588efe',1,'enum_hardware.h']]],
+  ['dscctrl_5fbitindex_5frs2_32',['DSCCtrl_bitindex_rs2',['../enum__hardware_8h.html#abcb8c0b3316bf062919b5d1a2673004ca1c247ee4a56d52c26b139fa6f845bdaa',1,'enum_hardware.h']]]
 ];

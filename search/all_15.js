@@ -10,5 +10,9 @@ var searchData=
   ['xck_5fbitindex_5fstimer_5fon_7',['XCK_bitindex_stimer_on',['../enum__hardware_8h.html#a1dc06a244ac6282e55991ad6c6356dbba35abbf6ebc01f34a1ba8e4cdcaf34cfe',1,'enum_hardware.h']]],
   ['xck_5fbits_5fstimer_8',['XCK_bits_stimer',['../enum__hardware_8h.html#a1dc06a244ac6282e55991ad6c6356dbba2e3e8258a6718c38ae3aca937df981de',1,'enum_hardware.h']]],
   ['xck_5fbits_5ft_9',['XCK_bits_t',['../enum__hardware_8h.html#a1dc06a244ac6282e55991ad6c6356dbb',1,'enum_hardware.h']]],
-  ['xckdelay_5fin_5f10ns_10',['xckdelay_in_10ns',['../structcamera__settings.html#a7b34c90094bcbc83b418f3b613f6c8d7',1,'camera_settings']]]
+  ['xckdelay_5fbit_5fenable_10',['XCKDELAY_bit_enable',['../enum__hardware_8h.html#af9cd7bc8fbd07025a542885b5f124126a3d90b3cef8ef237d35514d45ba0a8bb0',1,'enum_hardware.h']]],
+  ['xckdelay_5fbitindex_5fenable_11',['XCKDELAY_bitindex_enable',['../enum__hardware_8h.html#af9cd7bc8fbd07025a542885b5f124126a0a9d831bf1b126226a4353516b768c8e',1,'enum_hardware.h']]],
+  ['xckdelay_5fbits_12',['XCKDELAY_bits',['../enum__hardware_8h.html#af9cd7bc8fbd07025a542885b5f124126a272c8b2d4cd00469f0523a05bfcc27f9',1,'enum_hardware.h']]],
+  ['xckdelay_5fbits_5ft_13',['XCKDELAY_bits_t',['../enum__hardware_8h.html#af9cd7bc8fbd07025a542885b5f124126',1,'enum_hardware.h']]],
+  ['xckdelay_5fin_5f10ns_14',['xckdelay_in_10ns',['../structcamera__settings.html#a7b34c90094bcbc83b418f3b613f6c8d7',1,'camera_settings']]]
 ];
