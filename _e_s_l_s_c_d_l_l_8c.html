@@ -283,6 +283,30 @@ Functions</h2></td></tr>
 <tr class="memitem:a4bddc88ef969ea44d3fd1da49285b443" id="r_a4bddc88ef969ea44d3fd1da49285b443"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4bddc88ef969ea44d3fd1da49285b443">DLLSetBTimer</a> (uint32_t drvno, uint32_t btime_in_microseconds)</td></tr>
 <tr class="memdesc:a4bddc88ef969ea44d3fd1da49285b443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets time for block timer.     <br /></td></tr>
 <tr class="separator:a4bddc88ef969ea44d3fd1da49285b443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3438d12b8c983a532f7f1efc26b62e69" id="r_a3438d12b8c983a532f7f1efc26b62e69"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3438d12b8c983a532f7f1efc26b62e69">DLLGetXckLength</a> (uint32_t drvno, uint32_t *xckLengthIn10ns)</td></tr>
+<tr class="memdesc:a3438d12b8c983a532f7f1efc26b62e69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports the measurement data to a HDF5 file.     <br /></td></tr>
+<tr class="separator:a3438d12b8c983a532f7f1efc26b62e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcafbe07df7ea6a2f84f8928d6d47aa9" id="r_adcafbe07df7ea6a2f84f8928d6d47aa9"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcafbe07df7ea6a2f84f8928d6d47aa9">DLLGetXckPeriod</a> (uint32_t drvno, uint32_t *xckPeriodIn10ns)</td></tr>
+<tr class="memdesc:adcafbe07df7ea6a2f84f8928d6d47aa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pos edge to pos egde time of XCK time from the S0 register XCKPERIOD.     <br /></td></tr>
+<tr class="separator:adcafbe07df7ea6a2f84f8928d6d47aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9478aa2950e9c59c9cff74e4f5868afa" id="r_a9478aa2950e9c59c9cff74e4f5868afa"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9478aa2950e9c59c9cff74e4f5868afa">DLLGetBonLength</a> (uint32_t drvno, uint32_t *bonLengthIn10ns)</td></tr>
+<tr class="memdesc:a9478aa2950e9c59c9cff74e4f5868afa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the high time duration of BON from the S0 register BONLEN.     <br /></td></tr>
+<tr class="separator:a9478aa2950e9c59c9cff74e4f5868afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a611617ba1c1cf790fca683eb7751e4e5" id="r_a611617ba1c1cf790fca683eb7751e4e5"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a611617ba1c1cf790fca683eb7751e4e5">DLLGetBonPeriod</a> (uint32_t drvno, uint32_t *bonPeriodIn10ns)</td></tr>
+<tr class="memdesc:a611617ba1c1cf790fca683eb7751e4e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pos edge to pos edge time of BON from the S0 register BONPERIOD.     <br /></td></tr>
+<tr class="separator:a611617ba1c1cf790fca683eb7751e4e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0272dc6815aa9f7a5feab5664ef542d6" id="r_a0272dc6815aa9f7a5feab5664ef542d6"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0272dc6815aa9f7a5feab5664ef542d6">DLLGetXckLength_multipleBoards</a> (uint32_t drvno, uint32_t *xckLengthIn10ns0, uint32_t *xckLengthIn10ns1, uint32_t *xckLengthIn10ns2, uint32_t *xckLengthIn10ns3, uint32_t *xckLengthIn10ns4)</td></tr>
+<tr class="memdesc:a0272dc6815aa9f7a5feab5664ef542d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the high time duration of XCK from the S0 register XCKLEN.  <br /></td></tr>
+<tr class="separator:a0272dc6815aa9f7a5feab5664ef542d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0d0792b262d23858d3b5e6f9f2880bc" id="r_af0d0792b262d23858d3b5e6f9f2880bc"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0d0792b262d23858d3b5e6f9f2880bc">DLLGetXckPeriod_multipleBoards</a> (uint32_t drvno, uint32_t *xckPeriodIn10ns0, uint32_t *xckPeriodIn10ns1, uint32_t *xckPeriodIn10ns2, uint32_t *xckPeriodIn10ns3, uint32_t *xckPeriodIn10ns4)</td></tr>
+<tr class="memdesc:af0d0792b262d23858d3b5e6f9f2880bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pos edge to pos egde time of XCK time from the S0 register XCKPERIOD.  <br /></td></tr>
+<tr class="separator:af0d0792b262d23858d3b5e6f9f2880bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6916fc508e88e0205961f947d5efa312" id="r_a6916fc508e88e0205961f947d5efa312"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6916fc508e88e0205961f947d5efa312">DLLGetBonLength_multipleBoards</a> (uint32_t drvno, uint32_t *bonLengthIn10ns0, uint32_t *bonLengthIn10ns1, uint32_t *bonLengthIn10ns2, uint32_t *bonLengthIn10ns3, uint32_t *bonLengthIn10ns4)</td></tr>
+<tr class="memdesc:a6916fc508e88e0205961f947d5efa312"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the high time duration of BON from the S0 register BONLEN.  <br /></td></tr>
+<tr class="separator:a6916fc508e88e0205961f947d5efa312"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaca91fb915ad10d48a570b3760e753e" id="r_adaca91fb915ad10d48a570b3760e753e"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adaca91fb915ad10d48a570b3760e753e">DLLGetBonPeriod_multipleBoards</a> (uint32_t drvno, uint32_t *bonPeriodIn10ns0, uint32_t *bonPeriodIn10ns1, uint32_t *bonPeriodIn10ns2, uint32_t *bonPeriodIn10ns3, uint32_t *bonPeriodIn10ns4)</td></tr>
+<tr class="memdesc:adaca91fb915ad10d48a570b3760e753e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pos edge to pos edge time of BON from the S0 register BONPERIOD.  <br /></td></tr>
+<tr class="separator:adaca91fb915ad10d48a570b3760e753e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ff235b66c6ca068d623ff8c6ad4d280" id="r_a9ff235b66c6ca068d623ff8c6ad4d280"><td class="memItemLeft" align="right" valign="top">DllAccess char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ff235b66c6ca068d623ff8c6ad4d280">DLLConvertErrorCodeToMsg</a> (<a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> status)</td></tr>
 <tr class="memdesc:a9ff235b66c6ca068d623ff8c6ad4d280"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a es_status_codes to a human readable error message.     <br /></td></tr>
 <tr class="separator:a9ff235b66c6ca068d623ff8c6ad4d280"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1359,6 +1383,198 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a9478aa2950e9c59c9cff74e4f5868afa" name="a9478aa2950e9c59c9cff74e4f5868afa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9478aa2950e9c59c9cff74e4f5868afa">&#9670;&#160;</a></span>DLLGetBonLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLGetBonLength </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>bonLengthIn10ns</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the high time duration of BON from the S0 register BONLEN.    </p>
+<p>The signal is measured once per measurement. The fist valid value can be read after the first completed BON. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">bonLengthIn10ns</td><td>pointer to uint32 where the BON length is returned<ul>
+<li>min: 0</li>
+<li>step: 1 =&gt; 10 ns</li>
+<li>max: 0xFFFFFFFF = 4,294,967,295 =&gt; 42,949,672,950 ns </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+
+</div>
+</div>
+<a id="a6916fc508e88e0205961f947d5efa312" name="a6916fc508e88e0205961f947d5efa312"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6916fc508e88e0205961f947d5efa312">&#9670;&#160;</a></span>DLLGetBonLength_multipleBoards()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLGetBonLength_multipleBoards </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>bonLengthIn10ns0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>bonLengthIn10ns1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>bonLengthIn10ns2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>bonLengthIn10ns3</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>bonLengthIn10ns4</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the high time duration of BON from the S0 register BONLEN. </p>
+<p>The signal is measured once per measurement. The fist valid value can be read after the first completed BON. The value range is:</p><ul>
+<li>min: 0</li>
+<li>step: 1 =&gt; 10 ns</li>
+<li>max: 0xFFFFFFFF = 4,294,967,295 =&gt; 42,949,672,950 ns <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">bonLengthIn10ns0</td><td>pointer to uint32 where the BON length of board0 is returned </td></tr>
+    <tr><td class="paramname">bonLengthIn10ns1</td><td>pointer to uint32 where the BON length of board1 is returned </td></tr>
+    <tr><td class="paramname">bonLengthIn10ns2</td><td>pointer to uint32 where the BON length of board2 is returned </td></tr>
+    <tr><td class="paramname">bonLengthIn10ns3</td><td>pointer to uint32 where the BON length of board3 is returned </td></tr>
+    <tr><td class="paramname">bonLengthIn10ns4</td><td>pointer to uint32 where the BON length of board4 is returned</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a611617ba1c1cf790fca683eb7751e4e5" name="a611617ba1c1cf790fca683eb7751e4e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a611617ba1c1cf790fca683eb7751e4e5">&#9670;&#160;</a></span>DLLGetBonPeriod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLGetBonPeriod </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>bonPeriodIn10ns</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the pos edge to pos edge time of BON from the S0 register BONPERIOD.    </p>
+<p>The signal is measured once per measurement. The fist valid value can be read after the start of the second BON. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">bonPeriodIn10ns</td><td>pointer to uint32 where the BON period is returned<ul>
+<li>min: 0</li>
+<li>step: 1 =&gt; 10 ns</li>
+<li>max: 0xFFFFFFFF = 4,294,967,295 =&gt; 42,949,672,950 ns </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+
+</div>
+</div>
+<a id="adaca91fb915ad10d48a570b3760e753e" name="adaca91fb915ad10d48a570b3760e753e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaca91fb915ad10d48a570b3760e753e">&#9670;&#160;</a></span>DLLGetBonPeriod_multipleBoards()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLGetBonPeriod_multipleBoards </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>bonPeriodIn10ns0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>bonPeriodIn10ns1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>bonPeriodIn10ns2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>bonPeriodIn10ns3</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>bonPeriodIn10ns4</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the pos edge to pos edge time of BON from the S0 register BONPERIOD. </p>
+<p>The signal is measured once per measurement. The fist valid value can be read after the start of the second BON. The value range is:</p><ul>
+<li>min: 0</li>
+<li>step: 1 =&gt; 10 ns</li>
+<li>max: 0xFFFFFFFF = 4,294,967,295 =&gt; 42,949,672,950 ns <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">bonPeriodIn10ns0</td><td>pointer to uint32 where the BON period of board0 is returned </td></tr>
+    <tr><td class="paramname">bonPeriodIn10ns1</td><td>pointer to uint32 where the BON period of board1 is returned </td></tr>
+    <tr><td class="paramname">bonPeriodIn10ns2</td><td>pointer to uint32 where the BON period of board2 is returned </td></tr>
+    <tr><td class="paramname">bonPeriodIn10ns3</td><td>pointer to uint32 where the BON period of board3 is returned </td></tr>
+    <tr><td class="paramname">bonPeriodIn10ns4</td><td>pointer to uint32 where the BON period of board4 is returned</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
 <a id="a1a661b5d1b32f171bd053e7c35b5f5d4" name="a1a661b5d1b32f171bd053e7c35b5f5d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1a661b5d1b32f171bd053e7c35b5f5d4">&#9670;&#160;</a></span>DLLGetCameraStatusOverTemp()</h2>
 
@@ -2112,6 +2328,207 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Function for multithreading. </p>
+
+</div>
+</div>
+<a id="a3438d12b8c983a532f7f1efc26b62e69" name="a3438d12b8c983a532f7f1efc26b62e69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3438d12b8c983a532f7f1efc26b62e69">&#9670;&#160;</a></span>DLLGetXckLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLGetXckLength </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>xckLengthIn10ns</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exports the measurement data to a HDF5 file.    </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Chosen path to save the file. </td></tr>
+    <tr><td class="paramname">filename</td><td>Chosen filename. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes: es_measurement_running es_first_measurement_not_done es_create_file_failed</dd></dl>
+<p>Get the high time duration of XCK from the S0 register XCKLEN.</p>
+<p>The signal is measured once per measurement. The fist valid value can be read after the first completed XCK. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">xckLengthIn10ns</td><td>pointer to uint32 where the XCK length is returned<ul>
+<li>min: 0</li>
+<li>step: 1 =&gt; 10 ns</li>
+<li>max: 0xFFFFFFFF = 4,294,967,295 =&gt; 42,949,672,950 ns </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+
+</div>
+</div>
+<a id="a0272dc6815aa9f7a5feab5664ef542d6" name="a0272dc6815aa9f7a5feab5664ef542d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0272dc6815aa9f7a5feab5664ef542d6">&#9670;&#160;</a></span>DLLGetXckLength_multipleBoards()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLGetXckLength_multipleBoards </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>xckLengthIn10ns0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>xckLengthIn10ns1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>xckLengthIn10ns2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>xckLengthIn10ns3</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>xckLengthIn10ns4</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the high time duration of XCK from the S0 register XCKLEN. </p>
+<p>The signal is measured once per measurement. The fist valid value can be read after the first completed XCK. The value range is:</p><ul>
+<li>min: 0</li>
+<li>step: 1 =&gt; 10 ns</li>
+<li>max: 0xFFFFFFFF = 4,294,967,295 =&gt; 42,949,672,950 ns <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">xckLengthIn10ns0</td><td>pointer to uint32 where the XCK length of board0 is returned </td></tr>
+    <tr><td class="paramname">xckLengthIn10ns1</td><td>pointer to uint32 where the XCK length of board1 is returned </td></tr>
+    <tr><td class="paramname">xckLengthIn10ns2</td><td>pointer to uint32 where the XCK length of board2 is returned </td></tr>
+    <tr><td class="paramname">xckLengthIn10ns3</td><td>pointer to uint32 where the XCK length of board3 is returned </td></tr>
+    <tr><td class="paramname">xckLengthIn10ns4</td><td>pointer to uint32 where the XCK length of board4 is returned</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="adcafbe07df7ea6a2f84f8928d6d47aa9" name="adcafbe07df7ea6a2f84f8928d6d47aa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcafbe07df7ea6a2f84f8928d6d47aa9">&#9670;&#160;</a></span>DLLGetXckPeriod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLGetXckPeriod </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>xckPeriodIn10ns</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get pos edge to pos egde time of XCK time from the S0 register XCKPERIOD.    </p>
+<p>The signal is measured once per measurement. The fist valid value can be read after the start of the second XCK. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">xckPeriodIn10ns</td><td>pointer to uint32 where the XCK period is returned<ul>
+<li>min: 0</li>
+<li>step: 1 =&gt; 10 ns</li>
+<li>max: 0xFFFFFFFF = 4,294,967,295 =&gt; 42,949,672,950 ns </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+
+</div>
+</div>
+<a id="af0d0792b262d23858d3b5e6f9f2880bc" name="af0d0792b262d23858d3b5e6f9f2880bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0d0792b262d23858d3b5e6f9f2880bc">&#9670;&#160;</a></span>DLLGetXckPeriod_multipleBoards()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLGetXckPeriod_multipleBoards </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>xckPeriodIn10ns0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>xckPeriodIn10ns1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>xckPeriodIn10ns2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>xckPeriodIn10ns3</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *</td>          <td class="paramname"><span class="paramname"><em>xckPeriodIn10ns4</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get pos edge to pos egde time of XCK time from the S0 register XCKPERIOD. </p>
+<p>The signal is measured once per measurement. The fist valid value can be read after the start of the second XCK. The value range is:</p><ul>
+<li>min: 0</li>
+<li>step: 1 =&gt; 10 ns</li>
+<li>max: 0xFFFFFFFF = 4,294,967,295 =&gt; 42,949,672,950 ns <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">xckPeriodIn10ns0</td><td>pointer to uint32 where the XCK period of board0 is returned </td></tr>
+    <tr><td class="paramname">xckPeriodIn10ns1</td><td>pointer to uint32 where the XCK period of board1 is returned </td></tr>
+    <tr><td class="paramname">xckPeriodIn10ns2</td><td>pointer to uint32 where the XCK period of board2 is returned </td></tr>
+    <tr><td class="paramname">xckPeriodIn10ns3</td><td>pointer to uint32 where the XCK period of board3 is returned </td></tr>
+    <tr><td class="paramname">xckPeriodIn10ns4</td><td>pointer to uint32 where the XCK period of board4 is returned</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
+</li>
+</ul>
 
 </div>
 </div>

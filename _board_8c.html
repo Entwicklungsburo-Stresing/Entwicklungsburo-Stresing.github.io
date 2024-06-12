@@ -662,10 +662,13 @@ Functions</h2></td></tr>
 <tr class="memdesc:acdb7de754586d51dedd986f22463f3e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports the measurement data to a HDF5 file.  <br /></td></tr>
 <tr class="separator:acdb7de754586d51dedd986f22463f3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29bc132fdfad73f895d89b69962cffd0" id="r_a29bc132fdfad73f895d89b69962cffd0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29bc132fdfad73f895d89b69962cffd0">GetXckPeriod</a> (uint32_t drvno, uint32_t *xckPeriodIn10ns)</td></tr>
+<tr class="memdesc:a29bc132fdfad73f895d89b69962cffd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pos edge to pos egde time of XCK time from the S0 register XCKPERIOD.  <br /></td></tr>
 <tr class="separator:a29bc132fdfad73f895d89b69962cffd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5295bc9c20a518cfb33d95e59a341292" id="r_a5295bc9c20a518cfb33d95e59a341292"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5295bc9c20a518cfb33d95e59a341292">GetBonLength</a> (uint32_t drvno, uint32_t *bonLengthIn10ns)</td></tr>
+<tr class="memdesc:a5295bc9c20a518cfb33d95e59a341292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the high time duration of BON from the S0 register BONLEN.  <br /></td></tr>
 <tr class="separator:a5295bc9c20a518cfb33d95e59a341292"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6be0d810fe23f9e9be375bcdca9fa8e" id="r_ab6be0d810fe23f9e9be375bcdca9fa8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6be0d810fe23f9e9be375bcdca9fa8e">GetBonPeriod</a> (uint32_t drvno, uint32_t *bonPeriodIn10ns)</td></tr>
+<tr class="memdesc:ab6be0d810fe23f9e9be375bcdca9fa8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pos edge to pos edge time of BON from the S0 register BONPERIOD.  <br /></td></tr>
 <tr class="separator:ab6be0d810fe23f9e9be375bcdca9fa8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -2540,6 +2543,21 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
+<p>Get the high time duration of BON from the S0 register BONLEN. </p>
+<p>The signal is measured once per measurement. The fist valid value can be read after the first completed BON. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">bonLengthIn10ns</td><td>pointer to uint32 where the BON length is returned<ul>
+<li>min: 0</li>
+<li>step: 1 =&gt; 10 ns</li>
+<li>max: 0xFFFFFFFF = 4,294,967,295 =&gt; 42,949,672,950 ns </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
+
 </div>
 </div>
 <a id="ab6be0d810fe23f9e9be375bcdca9fa8e" name="ab6be0d810fe23f9e9be375bcdca9fa8e"></a>
@@ -2560,6 +2578,21 @@ es_status_codes<ul>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the pos edge to pos edge time of BON from the S0 register BONPERIOD. </p>
+<p>The signal is measured once per measurement. The fist valid value can be read after the start of the second BON. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">bonPeriodIn10ns</td><td>pointer to uint32 where the BON period is returned<ul>
+<li>min: 0</li>
+<li>step: 1 =&gt; 10 ns</li>
+<li>max: 0xFFFFFFFF = 4,294,967,295 =&gt; 42,949,672,950 ns </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
 
 </div>
 </div>
@@ -3348,7 +3381,21 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes: es_measurement_running es_first_measurement_not_done es_create_file_failed </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes: es_measurement_running es_first_measurement_not_done es_create_file_failed</dd></dl>
+<p>Get the high time duration of XCK from the S0 register XCKLEN.</p>
+<p>The signal is measured once per measurement. The fist valid value can be read after the first completed XCK. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">xckLengthIn10ns</td><td>pointer to uint32 where the XCK length is returned<ul>
+<li>min: 0</li>
+<li>step: 1 =&gt; 10 ns</li>
+<li>max: 0xFFFFFFFF = 4,294,967,295 =&gt; 42,949,672,950 ns </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
 
 </div>
 </div>
@@ -3370,6 +3417,21 @@ es_status_codes<ul>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get pos edge to pos egde time of XCK time from the S0 register XCKPERIOD. </p>
+<p>The signal is measured once per measurement. The fist valid value can be read after the start of the second XCK. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">xckPeriodIn10ns</td><td>pointer to uint32 where the XCK period is returned<ul>
+<li>min: 0</li>
+<li>step: 1 =&gt; 10 ns</li>
+<li>max: 0xFFFFFFFF = 4,294,967,295 =&gt; 42,949,672,950 ns </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
 
 </div>
 </div>
