@@ -151,7 +151,7 @@ var searchData=
   ['dmaaddr_5fwdmatlpc_148',['DmaAddr_WDMATLPC',['../enum__hardware_8h.html#a8e76e2a560aa415ee8df741caecff6adad428d85d966782123390ea542846a3f8',1,'enum_hardware.h']]],
   ['dmaaddr_5fwdmatlpp_149',['DmaAddr_WDMATLPP',['../enum__hardware_8h.html#a8e76e2a560aa415ee8df741caecff6adad03be481fe26c98bd25a2dd3365da113',1,'enum_hardware.h']]],
   ['dmaaddr_5fwdmatlps_150',['DmaAddr_WDMATLPS',['../enum__hardware_8h.html#a8e76e2a560aa415ee8df741caecff6adabc085b875cde4b7d3701cf76920391ed',1,'enum_hardware.h']]],
-  ['dmabuffer_151',['dmaBuffer',['../_board__ll_8c.html#a5728f564c05db18e8391a06b23ffc193',1,'Board_ll.c']]],
+  ['dmabuffer_151',['dmaBuffer',['../_board__ll_8c.html#a89d8ef47d0ad2e33114c9d1e04af4c93',1,'Board_ll.c']]],
   ['dmabufferinfos_152',['dmaBufferInfos',['../_board__ll_8c.html#aac22a4b779b386fc06959b0425df967d',1,'Board_ll.c']]],
   ['dmabufferpartreadpos_153',['dmaBufferPartReadPos',['../_board__ll_8c.html#a20f213ff470a10da9e3fc5e02a5e3fcb',1,'Board_ll.c']]],
   ['dmabuffersizeinbytes_154',['dmaBufferSizeInBytes',['../_board__ll_8c.html#a46ac00793481ea345e649b9066468fec',1,'Board_ll.c']]],

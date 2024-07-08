@@ -100,6 +100,8 @@ $(function(){ initResizable(false); });
 <div class="textblock"><code>#include &quot;../Board_ll.h&quot;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &quot;../Board.h&quot;</code><br />
+<code>#include &lt;process.h&gt;</code><br />
+<code>#include &lt;io.h&gt;</code><br />
 <code>#include &quot;shared_src/Direct2dViewer_c.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -296,8 +298,8 @@ Variables</h2></td></tr>
 <tr class="separator:a95e5ce1ec04291b8f044ebb7f5fad961"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46ac00793481ea345e649b9066468fec" id="r_a46ac00793481ea345e649b9066468fec"><td class="memItemLeft" align="right" valign="top">volatile DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46ac00793481ea345e649b9066468fec">dmaBufferSizeInBytes</a> [<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>] = { 0, 0, 0, 0, 0 }</td></tr>
 <tr class="separator:a46ac00793481ea345e649b9066468fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5728f564c05db18e8391a06b23ffc193" id="r_a5728f564c05db18e8391a06b23ffc193"><td class="memItemLeft" align="right" valign="top">volatile uint16_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5728f564c05db18e8391a06b23ffc193">dmaBuffer</a> [<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>] = { NULL, NULL, NULL, NULL, NULL }</td></tr>
-<tr class="separator:a5728f564c05db18e8391a06b23ffc193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89d8ef47d0ad2e33114c9d1e04af4c93" id="r_a89d8ef47d0ad2e33114c9d1e04af4c93"><td class="memItemLeft" align="right" valign="top">uint16_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89d8ef47d0ad2e33114c9d1e04af4c93">dmaBuffer</a> [<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>] = { NULL, NULL, NULL, NULL, NULL }</td></tr>
+<tr class="separator:a89d8ef47d0ad2e33114c9d1e04af4c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97c6372fd53170dcc8673120117fffa3" id="r_a97c6372fd53170dcc8673120117fffa3"><td class="memItemLeft" align="right" valign="top">volatile uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97c6372fd53170dcc8673120117fffa3">IsrCounter</a> [<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>] = { 0, 0, 0, 0, 0 }</td></tr>
 <tr class="separator:a97c6372fd53170dcc8673120117fffa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20f213ff470a10da9e3fc5e02a5e3fcb" id="r_a20f213ff470a10da9e3fc5e02a5e3fcb"><td class="memItemLeft" align="right" valign="top">volatile UINT8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20f213ff470a10da9e3fc5e02a5e3fcb">dmaBufferPartReadPos</a> [<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>] = { 0, 0, 0, 0, 0 }</td></tr>
@@ -2133,14 +2135,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5728f564c05db18e8391a06b23ffc193" name="a5728f564c05db18e8391a06b23ffc193"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5728f564c05db18e8391a06b23ffc193">&#9670;&#160;</a></span>dmaBuffer</h2>
+<a id="a89d8ef47d0ad2e33114c9d1e04af4c93" name="a89d8ef47d0ad2e33114c9d1e04af4c93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89d8ef47d0ad2e33114c9d1e04af4c93">&#9670;&#160;</a></span>dmaBuffer</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">volatile uint16_t* dmaBuffer[<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>] = { NULL, NULL, NULL, NULL, NULL }</td>
+          <td class="memname">uint16_t* dmaBuffer[<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>] = { NULL, NULL, NULL, NULL, NULL }</td>
         </tr>
       </table>
 </div><div class="memdoc">

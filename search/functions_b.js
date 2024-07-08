@@ -65,7 +65,8 @@ var searchData=
   ['start2dviewer_62',['start2dViewer',['../class_direct2d_viewer.html#a94630501e36d47f3bcd1de86e1cce2b0',1,'Direct2dViewer']]],
   ['startcopydatatouserbufferthread_63',['StartCopyDataToUserBufferThread',['../_board__ll_8c.html#a73ccf418b65829378357ee2badbadb69',1,'Board_ll.c']]],
   ['startmeasurement_64',['StartMeasurement',['../_board_8c.html#a22ee28be3add5b463773a9ae01c3ceab',1,'Board.c']]],
-  ['startstimer_65',['StartSTimer',['../_board_8c.html#a3e9326796bb072b822ae69e964647e77',1,'Board.c']]],
-  ['startwritetodiscthead_66',['startWriteToDiscThead',['../_board__ll_8c.html#af9790c7db1935afd95f6cc2e67481741',1,'Board_ll.c']]],
-  ['stopstimer_67',['StopSTimer',['../_board_8c.html#a31a4571525cff4bcc221c169e2b480a1',1,'Board.c']]]
+  ['startmeasurementthread_65',['StartMeasurementThread',['../_e_s_l_s_c_d_l_l_8c.html#a1c41e2bf7ac40d3055e1833767b25310',1,'ESLSCDLL.c']]],
+  ['startstimer_66',['StartSTimer',['../_board_8c.html#a3e9326796bb072b822ae69e964647e77',1,'Board.c']]],
+  ['startwritetodiscthead_67',['startWriteToDiscThead',['../_board__ll_8c.html#af9790c7db1935afd95f6cc2e67481741',1,'Board_ll.c']]],
+  ['stopstimer_68',['StopSTimer',['../_board_8c.html#a31a4571525cff4bcc221c169e2b480a1',1,'Board.c']]]
 ];
