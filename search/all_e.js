@@ -119,6 +119,6 @@ var searchData=
   ['pixel_5fscan_5findex_5fhigh_116',['pixel_scan_index_high',['../enum__hardware_8h.html#ab4e169cedf37f6a55251e0d15f33a2b1a5fca2bf954bb4dcccac8c92c6820beec',1,'enum_hardware.h']]],
   ['pixel_5fscan_5findex_5flow_117',['pixel_scan_index_low',['../enum__hardware_8h.html#ab4e169cedf37f6a55251e0d15f33a2b1a2b1fe011b3c408c3ff73b8b42638cc2b',1,'enum_hardware.h']]],
   ['polldmabuffertouserbuffer_118',['PollDmaBufferToUserBuffer',['../_board_8c.html#a6d992a63422fa1d74ad5f302204ffe6e',1,'Board.c']]],
-  ['pulsebits0_5f32_119',['pulseBitS0_32',['../_board_8c.html#a76d966efe71c1f1ce29dbd1db7f7d07f',1,'Board.c']]],
-  ['pulsebits0_5f8_120',['pulseBitS0_8',['../_board_8c.html#ab255b55763d0b63b2b9f5fc06ca0b5d3',1,'Board.c']]]
+  ['pulsebits0_5f32_119',['pulseBitS0_32',['../_board_8c.html#a59f67db4ff3fa6071a8398998e646d5c',1,'Board.c']]],
+  ['pulsebits0_5f8_120',['pulseBitS0_8',['../_board_8c.html#a2fa23bad2b72d1f9419b31c52e7eed75',1,'Board.c']]]
 ];

@@ -598,7 +598,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="#a6088fcda9571ea67be3dd49e46438941aaa11b9b9b9b35e3d890a9a33648610df">cam_adaddr_LEDoff</a> = 0x05
 , <a class="el" href="#a6088fcda9571ea67be3dd49e46438941af88ce9a5e4c3f6ed87f5ff5c2fee0375">cam_adaddr_coolTemp</a> = 0x06
 , <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a9d774a1b5195bdda8d3aeb98ce0100b6">cam_adaddr_sample_mode</a> = 0x07
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941af4e2b33e6de6b66df188909f7ee51566">cam_adaddr_sensor_reset_length_in_4_ns</a> = 0x08
+, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941ab0e3ec5266d037400d248de6e6bd1a81">cam_adaddr_sensor_reset_length</a> = 0x08
 , <br />
 &#160;&#160;<a class="el" href="#a6088fcda9571ea67be3dd49e46438941aca4c4e9235d324d2d4bc36da2825f03a">cam_adaddr_vclks_amount1</a> = 0x9
 , <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a90e8ca7f6f7401c6f76bd5fd2d6c0583">cam_adaddr_vclks_amount2</a> = 0xA
@@ -1092,8 +1092,8 @@ Enumerations</h2></td></tr>
 <li>2: ADC clock = 25 MHz, duty cycle 50%, sensor clock = 12,5 MHz duty cycle 20% </li>
 </ul>
 </td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941af4e2b33e6de6b66df188909f7ee51566" name="a6088fcda9571ea67be3dd49e46438941af4e2b33e6de6b66df188909f7ee51566"></a>cam_adaddr_sensor_reset_length_in_4_ns&#160;</td><td class="fielddoc"><p>Sensor reset length register.</p>
-<p>3030: This register controls the length of the ARG pulse which is done after the TG pulse. min: 0ns, max: 0xFFFF * 4ns = 65535 * 4ns = 262140ns = 262,14us, typical value: 200 * 4ns = 800ns </p>
+<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941ab0e3ec5266d037400d248de6e6bd1a81" name="a6088fcda9571ea67be3dd49e46438941ab0e3ec5266d037400d248de6e6bd1a81"></a>cam_adaddr_sensor_reset_length&#160;</td><td class="fielddoc"><p>Sensor reset length register.</p>
+<p>3030 HSVIS: This register controls the length of the ARG pulse which is done after the TG pulse. min: 0ns, max: 0xFFFF * 4ns = 65535 * 4ns = 262140ns = 262,14us, typical value: 200 * 4ns = 800ns HSIR: min: 134 * 160 ns = 21,440 ns, max: 0xFFFF * 160 ns = 10,485,600 ns, default: 140 * 160 ns = 22,400 ns </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941aca4c4e9235d324d2d4bc36da2825f03a" name="a6088fcda9571ea67be3dd49e46438941aca4c4e9235d324d2d4bc36da2825f03a"></a>cam_adaddr_vclks_amount1&#160;</td><td class="fielddoc"><p>stores the amount of vclks generated inside the camera.</p><ul>
 <li>cam_adaddr_vclks_amount1: is used for full binning (fft_lines) or the first region of ROI</li>

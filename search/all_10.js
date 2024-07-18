@@ -79,7 +79,7 @@ var searchData=
   ['sec_5fin_5f10ns_76',['sec_in_10ns',['../structcamera__settings.html#adef56c9e33dc855c930fd7d44588cbcd',1,'camera_settings']]],
   ['sendflcam_77',['SendFLCAM',['../_board_8c.html#a7649fc1fd0d3be325315ea3262aa9f0f',1,'Board.c']]],
   ['sensor_5fgain_78',['sensor_gain',['../structcamera__settings.html#ac7aefaf11767a16726f85379d288895b',1,'camera_settings']]],
-  ['sensor_5freset_5flength_5fin_5f4_5fns_79',['sensor_reset_length_in_4_ns',['../structcamera__settings.html#a249f0f15fbde2e31e9110bc1c3d709bb',1,'camera_settings']]],
+  ['sensor_5freset_5flength_79',['sensor_reset_length',['../structcamera__settings.html#a2d1ba265b9124b45a875eb1eff4906c4',1,'camera_settings']]],
   ['sensor_5ftype_80',['sensor_type',['../structcamera__settings.html#a3c95b63babcb2222a271e2cd42b6e057',1,'camera_settings']]],
   ['sensor_5ftype_5fcmos_81',['sensor_type_cmos',['../enum__settings_8h.html#a089f166159fb19f10d81c65c1d8793a2a4c0f2ff3381db278076e451b0625b5d4',1,'enum_settings.h']]],
   ['sensor_5ftype_5ffft_82',['sensor_type_fft',['../enum__settings_8h.html#a089f166159fb19f10d81c65c1d8793a2ac0844018d4ef84317a2a697eab9b7f01',1,'enum_settings.h']]],
