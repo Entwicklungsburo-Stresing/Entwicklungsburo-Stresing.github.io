@@ -660,7 +660,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a5edd99b739fb068476098402846c48f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This functions sets the register S1S2ReadDealy with the setting <a class="el" href="structcamera__settings.html#a725f47b587a2b425688fbd79586b989e">camera_settings::s1s2_read_delay_in_10ns</a>.  <br /></td></tr>
 <tr class="separator:a5edd99b739fb068476098402846c48f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdb7de754586d51dedd986f22463f3e9" id="r_acdb7de754586d51dedd986f22463f3e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acdb7de754586d51dedd986f22463f3e9">GetXckLength</a> (uint32_t drvno, uint32_t *xckLengthIn10ns)</td></tr>
-<tr class="memdesc:acdb7de754586d51dedd986f22463f3e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports the measurement data to a HDF5 file.  <br /></td></tr>
+<tr class="memdesc:acdb7de754586d51dedd986f22463f3e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the high time duration of XCK from the S0 register XCKLEN.  <br /></td></tr>
 <tr class="separator:acdb7de754586d51dedd986f22463f3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29bc132fdfad73f895d89b69962cffd0" id="r_a29bc132fdfad73f895d89b69962cffd0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29bc132fdfad73f895d89b69962cffd0">GetXckPeriod</a> (uint32_t drvno, uint32_t *xckPeriodIn10ns)</td></tr>
 <tr class="memdesc:a29bc132fdfad73f895d89b69962cffd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pos edge to pos egde time of XCK time from the S0 register XCKPERIOD.  <br /></td></tr>
@@ -671,6 +671,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ab6be0d810fe23f9e9be375bcdca9fa8e" id="r_ab6be0d810fe23f9e9be375bcdca9fa8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6be0d810fe23f9e9be375bcdca9fa8e">GetBonPeriod</a> (uint32_t drvno, uint32_t *bonPeriodIn10ns)</td></tr>
 <tr class="memdesc:ab6be0d810fe23f9e9be375bcdca9fa8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pos edge to pos edge time of BON from the S0 register BONPERIOD.  <br /></td></tr>
 <tr class="separator:ab6be0d810fe23f9e9be375bcdca9fa8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f9b373e7620a6fde7809e29e4e81512" id="r_a8f9b373e7620a6fde7809e29e4e81512"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f9b373e7620a6fde7809e29e4e81512">SetSensorGain</a> (uint32_t drvno, uint16_t gain)</td></tr>
+<tr class="memdesc:a8f9b373e7620a6fde7809e29e4e81512"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the sensor gain register in 3030 - HSIR.  <br /></td></tr>
+<tr class="separator:a8f9b373e7620a6fde7809e29e4e81512"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aa28480bfa03957b4f284c13e800ca8b0" name="aa28480bfa03957b4f284c13e800ca8b0"></a>
@@ -1615,7 +1618,7 @@ or use on e-lab test computer desktop LabView folder lv64hs (bool switch in 3030
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
-    <tr><td class="paramname">sensor_reset_length_in_8_ns</td><td>value * 8ns = sensor reset length. range: 0ns ... 524280ns = 524.28us </td></tr>
+    <tr><td class="paramname">sensor_reset_length</td><td>See <a class="el" href="enum__hardware_8h.html#a9e3c451d5901d136d9fc1de5b1f1cda2ab0e3ec5266d037400d248de6e6bd1a81">camera_register_addresses_t::cam_adaddr_sensor_reset_length</a> for more information. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3374,16 +3377,7 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Exports the measurement data to a HDF5 file. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">path</td><td>Chosen path to save the file. </td></tr>
-    <tr><td class="paramname">filename</td><td>Chosen filename. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes: es_measurement_running es_first_measurement_not_done es_create_file_failed</dd></dl>
-<p>Get the high time duration of XCK from the S0 register XCKLEN.</p>
+<p>Get the high time duration of XCK from the S0 register XCKLEN. </p>
 <p>The signal is measured once per measurement. The fist valid value can be read after the first completed XCK. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
@@ -4195,6 +4189,7 @@ with frame rate 8kHz = min. 125µs exp time
     <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
     <tr><td class="paramname">bitnumber</td><td>0...31, 0 is LSB, 31 MSB </td></tr>
     <tr><td class="paramname">address</td><td>register address. Only 4 byte steps are valid. </td></tr>
+    <tr><td class="paramname">duration_in_microseconds</td><td>Duration of the bit beeing high in microseconds. </td></tr>
   </table>
   </dd>
 </dl>
@@ -4244,6 +4239,7 @@ with frame rate 8kHz = min. 125µs exp time
     <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
     <tr><td class="paramname">bitnumber</td><td>0...7, 0 is LSB, 7 MSB </td></tr>
     <tr><td class="paramname">address</td><td>register address. 1 byte steps are valid. </td></tr>
+    <tr><td class="paramname">duration_in_microseconds</td><td>Duration of the bit beeing high in microseconds. </td></tr>
   </table>
   </dd>
 </dl>
@@ -6548,6 +6544,42 @@ with frame rate 8kHz = min. 125µs exp time
 </li>
 </ul>
 </dd></dl>
+
+</div>
+</div>
+<a id="a8f9b373e7620a6fde7809e29e4e81512" name="a8f9b373e7620a6fde7809e29e4e81512"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f9b373e7620a6fde7809e29e4e81512">&#9670;&#160;</a></span>SetSensorGain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> SetSensorGain </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>gain</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the sensor gain register in 3030 - HSIR. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">gain</td><td>All 16 bits are sent to the camera, but only the lower two bits are currently used as gain.<ul>
+<li>min: 0</li>
+<li>step: 1</li>
+<li>max: 4 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
 
 </div>
 </div>

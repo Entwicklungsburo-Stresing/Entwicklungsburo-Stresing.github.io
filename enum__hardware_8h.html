@@ -579,111 +579,35 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#af1f3aee94473361f396c43f6eb5db0f1a943d1c69d6a33acf0d136af8d6e988ea">camera_type_camera_system_bit_index</a> = 16
  }</td></tr>
 <tr class="separator:af1f3aee94473361f396c43f6eb5db0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6088fcda9571ea67be3dd49e46438941" id="r_a6088fcda9571ea67be3dd49e46438941"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6088fcda9571ea67be3dd49e46438941">cam_addresses_t</a> { <br />
-&#160;&#160;<a class="el" href="#a6088fcda9571ea67be3dd49e46438941a5e032812bb6af56e16fc96f0671a074c">maddr_cam</a> = 0x00
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941ad6d985e8ca8b3222dbc3765c92159241">maddr_adc</a> = 0x01
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941aad6f04da0f54374a8de6bc23a443ba13">maddr_ioctrl</a> = 0x02
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a03144b9418f640f6ab17d9c8b37e26bf">maddr_dac</a> = 0x03
+<tr class="memitem:ac15c184c7c063b832a1b29ab80beda15" id="r_ac15c184c7c063b832a1b29ab80beda15"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac15c184c7c063b832a1b29ab80beda15">master_address_t</a> { <a class="el" href="#ac15c184c7c063b832a1b29ab80beda15a5e032812bb6af56e16fc96f0671a074c">maddr_cam</a> = 0x0
+, <a class="el" href="#ac15c184c7c063b832a1b29ab80beda15ad6d985e8ca8b3222dbc3765c92159241">maddr_adc</a> = 0x1
+, <a class="el" href="#ac15c184c7c063b832a1b29ab80beda15aad6f04da0f54374a8de6bc23a443ba13">maddr_ioctrl</a> = 0x2
+, <a class="el" href="#ac15c184c7c063b832a1b29ab80beda15a03144b9418f640f6ab17d9c8b37e26bf">maddr_dac</a> = 0x3
+ }</td></tr>
+<tr class="separator:ac15c184c7c063b832a1b29ab80beda15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e3c451d5901d136d9fc1de5b1f1cda2" id="r_a9e3c451d5901d136d9fc1de5b1f1cda2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2">camera_register_addresses_t</a> { <br />
+&#160;&#160;<a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2ac08b288d19d82887239f79a267f8e647">cam_adaddr_config</a> = 0x00
+, <a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2a69121ef35ecc8ca9bf51529008910ae3">cam_adaddr_pixel</a> = 0x01
+, <a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2a5a7070d1ed412936fab5223d1de07b50">cam_adaddr_trig_in</a> = 0x02
+, <a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2abf4ac2bf667f8421f9df18ea9b1b308b">cam_adaddr_unused</a> = 0x03
 , <br />
-&#160;&#160;<a class="el" href="#a6088fcda9571ea67be3dd49e46438941a13e677bf1e5a18b593a1f15dc5aec78c">dac_hi_byte_addr</a> = 0x01
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941ac8c08b995e26d29222d1cc22f667e79c">dac_lo_byte_addr</a> = 0x02
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a5019d7b759ee67dfdcace3ac4fa1ed20">campos_bit_index</a> = 4
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941ac08b288d19d82887239f79a267f8e647">cam_adaddr_config</a> = 0x00
+&#160;&#160;<a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2a615cf62040ce0c03694031ec01f442da">cam_adaddr_vclk</a> = 0x04
+, <a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2aaa11b9b9b9b35e3d890a9a33648610df">cam_adaddr_LEDoff</a> = 0x05
+, <a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2af88ce9a5e4c3f6ed87f5ff5c2fee0375">cam_adaddr_coolTemp</a> = 0x06
+, <a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2a9d774a1b5195bdda8d3aeb98ce0100b6">cam_adaddr_sample_mode</a> = 0x07
 , <br />
-&#160;&#160;<a class="el" href="#a6088fcda9571ea67be3dd49e46438941a69121ef35ecc8ca9bf51529008910ae3">cam_adaddr_pixel</a> = 0x01
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a5a7070d1ed412936fab5223d1de07b50">cam_adaddr_trig_in</a> = 0x02
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941abf4ac2bf667f8421f9df18ea9b1b308b">cam_adaddr_unused</a> = 0x03
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a615cf62040ce0c03694031ec01f442da">cam_adaddr_vclk</a> = 0x04
+&#160;&#160;<a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2ab0e3ec5266d037400d248de6e6bd1a81">cam_adaddr_sensor_reset_length</a> = 0x08
+, <a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2aca4c4e9235d324d2d4bc36da2825f03a">cam_adaddr_vclks_amount1</a> = 0x09
+, <a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2a90e8ca7f6f7401c6f76bd5fd2d6c0583">cam_adaddr_vclks_amount2</a> = 0x0A
+, <a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2af9c3ae7b59d033bd8f7d6db35358d5d8">cam_adaddr_vclks_amount3</a> = 0x0B
 , <br />
-&#160;&#160;<a class="el" href="#a6088fcda9571ea67be3dd49e46438941aaa11b9b9b9b35e3d890a9a33648610df">cam_adaddr_LEDoff</a> = 0x05
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941af88ce9a5e4c3f6ed87f5ff5c2fee0375">cam_adaddr_coolTemp</a> = 0x06
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a9d774a1b5195bdda8d3aeb98ce0100b6">cam_adaddr_sample_mode</a> = 0x07
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941ab0e3ec5266d037400d248de6e6bd1a81">cam_adaddr_sensor_reset_length</a> = 0x08
-, <br />
-&#160;&#160;<a class="el" href="#a6088fcda9571ea67be3dd49e46438941aca4c4e9235d324d2d4bc36da2825f03a">cam_adaddr_vclks_amount1</a> = 0x9
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a90e8ca7f6f7401c6f76bd5fd2d6c0583">cam_adaddr_vclks_amount2</a> = 0xA
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941af9c3ae7b59d033bd8f7d6db35358d5d8">cam_adaddr_vclks_amount3</a> = 0xB
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a425e5c70a280aa6ddf59053bbc090312">cam_adaddr_vclks_amount4</a> = 0xC
-, <br />
-&#160;&#160;<a class="el" href="#a6088fcda9571ea67be3dd49e46438941ad7009cbedf2e0a27419ddef26f27125e">cam_adaddr_vclks_amount5</a> = 0xD
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a3bc012fcd77b1777124473b1b265a3af">cam_adaddr_camera_position</a> = 0x7F
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a6c331254340cb5b371f666d23171cd08">adc_ltc2271_regaddr_reset</a> = 0x00
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a1099cc7c71f916c277243e6964ae9484">adc_ltc2271_regaddr_outmode</a> = 0x02
-, <br />
-&#160;&#160;<a class="el" href="#a6088fcda9571ea67be3dd49e46438941ac14c23d2b89218e967ab9ee872e29a7b">adc_ltc2271_regaddr_custompattern_msb</a> = 0x03
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a53a956c40e0767711810563e97d0b60d">adc_ltc2271_regaddr_custompattern_lsb</a> = 0x04
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941af11f17edc46bae4dae177cb449606ed6">adc_ads5294_regaddr_reset</a> = 0x00
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941ab8d28616394e6d77301f11feeca57d55">adc_ads5294_regaddr_LFNSM</a> = 0x14
-, <br />
-&#160;&#160;<a class="el" href="#a6088fcda9571ea67be3dd49e46438941a7eaac5a75519725f65b2603f229f391b">adc_ads5294_regaddr_mode</a> = 0x25
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a3e5c59e6f6579bd096448e4c4213d8f3">adc_ads5294_regaddr_custompattern</a> = 0x26
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a9f45e0ac5c38357dc9d79f7382fd56fc">adc_ads5294_regaddr_wordWiseOutput</a> = 0x28
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a9b8ab57aaaba3d61bfcde02d235562ae">adc_ads5294_regaddr_global_en_filter</a> = 0x29
-, <br />
-&#160;&#160;<a class="el" href="#a6088fcda9571ea67be3dd49e46438941a8e2551975f6a79a8caef17be50cff36a">adc_ads5294_regaddr_gain_1_to_4</a> = 0x2A
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a15c02e305c474d62533cfc363b985f36">adc_ads5294_regaddr_gain_5_to_8</a> = 0x2B
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941ae34bcb58e92a205e7f12a202c15fe60c">adc_ads5294_regaddr_filter1</a> = 0x2E
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a5d4849b708968965f28fef655eeb5802">adc_ads5294_regaddr_filter2</a> = 0x2F
-, <br />
-&#160;&#160;<a class="el" href="#a6088fcda9571ea67be3dd49e46438941ac694a2417f0529a64beb0f7a0b025739">adc_ads5294_regaddr_filter3</a> = 0x30
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a3af167f40ab11e49ec79358719ffd5a4">adc_ads5294_regaddr_filter4</a> = 0x31
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941ae079f22d796f518aaf8a32bdeb2c0478">adc_ads5294_regaddr_filter5</a> = 0x32
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a9a7bd52de9636424374f9a5df04f9278">adc_ads5294_regaddr_filter6</a> = 0x33
-, <br />
-&#160;&#160;<a class="el" href="#a6088fcda9571ea67be3dd49e46438941aeb17a66d34d984eee7462035e6b4e06c">adc_ads5294_regaddr_filter7</a> = 0x34
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a8ef8472a78436c4409221d54e1055f7a">adc_ads5294_regaddr_filter8</a> = 0x35
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941aa19e14d3c5a10643f41df711e8d2f8e7">adc_ads5294_regaddr_data_rate</a> = 0x38
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a80c97b5773492f22e58db3980f9c464f">adc_ads5294_regaddr_ddrClkAlign</a> = 0x42
-, <br />
-&#160;&#160;<a class="el" href="#a6088fcda9571ea67be3dd49e46438941abd1cb4e24fdc74e023b2297884b524fd">adc_ads5294_regaddr_2wireMode</a> = 0x46
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941ad50736fa7f2f9afc51e740af1fe35633">adc_ads5294_regaddr_coeff0_filter1</a> = 0x5A
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941abde6acf4d87df7cf7e9ff427b5b1da07">adc_ads5294_regaddr_coeff1_filter1</a> = 0x5B
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941ace46f29d969277c2d5530a9cb8444a20">adc_ads5294_regaddr_coeff11_filter1</a> = 0x65
-, <br />
-&#160;&#160;<a class="el" href="#a6088fcda9571ea67be3dd49e46438941a66d9f46f247d3c9c45743ef7c70ddd90">adc_ads5294_regaddr_coeff0_filter2</a> = 0x66
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a380a95dc0df94b4b59e29755872eb085">adc_ads5294_regaddr_coeff0_filter3</a> = 0x72
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a5842a27707dd32a01cc9f3f0377f14cc">adc_ads5294_regaddr_coeff1_filter4</a> = 0x7F
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a930546b94c30faf34974741137005083">adc_ads5294_regaddr_coeff11_filter8</a> = 0xB9
-, <br />
-&#160;&#160;<a class="el" href="#a6088fcda9571ea67be3dd49e46438941a3116711971ca78f6962f056f5a372860">ioctrl_impact_start_pixel</a> = 0x00
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a0d03882ea4126c9a370876077105fed6">ioctrl_t0l</a> = 0x01
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941ab3b065117fb4ccaf1f1edb3180a7344f">ioctrl_t0h</a> = 0x02
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a9b35aa59541178a169d7320e661b1840">ioctrl_t1</a> = 0x03
-, <br />
-&#160;&#160;<a class="el" href="#a6088fcda9571ea67be3dd49e46438941a201d05425ac183fc7465fd42587ac541">ioctrl_d1</a> = 0x04
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a8ca34b8ffb442f747b871a4fbe8d7d3f">ioctrl_t2</a> = 0x05
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a3f5ed52f3b3a615e5ad9829cdc607577">ioctrl_d2</a> = 0x06
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a60ea0ce9ad5fccfc8e93e8ed3a1c08e5">ioctrl_t3</a> = 0x07
-, <br />
-&#160;&#160;<a class="el" href="#a6088fcda9571ea67be3dd49e46438941a073c0e336c35f3a4c1e77001865e22a7">ioctrl_d3</a> = 0x08
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a4dd3846fcfadfa633fc438573d1e1205">ioctrl_t4</a> = 0x09
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941aad560341a07e04b032d0ca14edbef708">ioctrl_d4</a> = 0x0A
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941a919c723768260c01f024f2df84d209f8">ioctrl_t5</a> = 0x0B
-, <br />
-&#160;&#160;<a class="el" href="#a6088fcda9571ea67be3dd49e46438941a51fb098b1710b7a76e2ab4d0e8c799a1">ioctrl_d5</a> = 0x0C
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941aac5b96d47cc457616dcac41a6cbce523">ioctrl_t6</a> = 0x0D
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941ac933ada92848890b42a5df0984ae18e5">ioctrl_d6</a> = 0x0E
-, <a class="el" href="#a6088fcda9571ea67be3dd49e46438941af6acc2ee2766f71fc35d66bb0b96afc8">ioctrl_t7</a> = 0x0F
-, <br />
-&#160;&#160;<a class="el" href="#a6088fcda9571ea67be3dd49e46438941ab256e3c2181522cfff59c5044c2c195a">ioctrl_d7</a> = 0x10
+&#160;&#160;<a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2a425e5c70a280aa6ddf59053bbc090312">cam_adaddr_vclks_amount4</a> = 0x0C
+, <a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2ad7009cbedf2e0a27419ddef26f27125e">cam_adaddr_vclks_amount5</a> = 0x0D
+, <a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2a31392647276086e67dd71cae60a145bf">cam_adaddr_sensor_gain</a> = 0x10
+, <a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2a3bc012fcd77b1777124473b1b265a3af">cam_adaddr_camera_position</a> = 0x7F
 <br />
  }</td></tr>
-<tr class="separator:a6088fcda9571ea67be3dd49e46438941"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acff84da0b18ed524c2778df0255a60d2" id="r_acff84da0b18ed524c2778df0255a60d2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acff84da0b18ed524c2778df0255a60d2">cam_messages_t</a> { <br />
-&#160;&#160;<a class="el" href="#acff84da0b18ed524c2778df0255a60d2a55812c2d2ce086f95cdbdfe10d3d2d32">adc_ltc2271_msg_reset</a> = 0x80
-, <a class="el" href="#acff84da0b18ed524c2778df0255a60d2a8a38bae8cdab927bae7123181202880d">adc_ltc2271_msg_normal_mode</a> = 0x01
-, <a class="el" href="#acff84da0b18ed524c2778df0255a60d2ac82f64cb2fe860f51a2e67c3be87b38f">adc_ltc2271_msg_custompattern</a> = 0x05
-, <a class="el" href="#acff84da0b18ed524c2778df0255a60d2a61d81224d7e7ff4f25f006d77da95de5">adc_ads5294_msg_reset</a> = 0x01
-, <br />
-&#160;&#160;<a class="el" href="#acff84da0b18ed524c2778df0255a60d2a95a8021a2a8ff15f348d6af64f31d0ea">adc_ads5294_msg_ramp</a> = 0x40
-, <a class="el" href="#acff84da0b18ed524c2778df0255a60d2a468f22afc330f06b3c3c888a51945cf5">adc_ads5294_msg_custompattern</a> = 0x10
-, <a class="el" href="#acff84da0b18ed524c2778df0255a60d2a946f093e603676924658a032bf898f1c">adc_ads5294_msg_2wireMode</a> = 0x8401
-, <a class="el" href="#acff84da0b18ed524c2778df0255a60d2abfa49b0711129e377f7b9d6be54ec3f0">adc_ads5294_msg_wordWiseOutput</a> = 0x80FF
-, <br />
-&#160;&#160;<a class="el" href="#acff84da0b18ed524c2778df0255a60d2a221bb12c317c6135e94eb6d5a31a5fec">adc_ads5294_msg_ddrClkAlign</a> = 0x60
-<br />
- }</td></tr>
-<tr class="separator:acff84da0b18ed524c2778df0255a60d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a9e3c451d5901d136d9fc1de5b1f1cda2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bf7c32673195bbbdc288f7931ac4976" id="r_a6bf7c32673195bbbdc288f7931ac4976"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bf7c32673195bbbdc288f7931ac4976">cam_config_register_t</a> { <br />
 &#160;&#160;<a class="el" href="#a6bf7c32673195bbbdc288f7931ac4976aa522df4e027a4464dd71cf89977aefeb">cam_config_register_bitindex_sensor_gain</a> = 0
 , <a class="el" href="#a6bf7c32673195bbbdc288f7931ac4976a4585e287328dd9d5d2c4aa75f69e1a1c">cam_config_register_bitindex_trigger_mode_cc</a> = 1
@@ -700,6 +624,94 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a6bf7c32673195bbbdc288f7931ac4976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa553213a284f79b43b3f2b37ce432d63" id="r_aa553213a284f79b43b3f2b37ce432d63"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa553213a284f79b43b3f2b37ce432d63">adc_ltc2271_register_adress_t</a> { <a class="el" href="#aa553213a284f79b43b3f2b37ce432d63a6c331254340cb5b371f666d23171cd08">adc_ltc2271_regaddr_reset</a> = 0x00
+, <a class="el" href="#aa553213a284f79b43b3f2b37ce432d63a1099cc7c71f916c277243e6964ae9484">adc_ltc2271_regaddr_outmode</a> = 0x02
+, <a class="el" href="#aa553213a284f79b43b3f2b37ce432d63ac14c23d2b89218e967ab9ee872e29a7b">adc_ltc2271_regaddr_custompattern_msb</a> = 0x03
+, <a class="el" href="#aa553213a284f79b43b3f2b37ce432d63a53a956c40e0767711810563e97d0b60d">adc_ltc2271_regaddr_custompattern_lsb</a> = 0x04
+ }</td></tr>
+<tr class="separator:aa553213a284f79b43b3f2b37ce432d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af39ad9415f664d90f9de9a942c01f098" id="r_af39ad9415f664d90f9de9a942c01f098"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af39ad9415f664d90f9de9a942c01f098">adc_ltc2271_messages_t</a> { <a class="el" href="#af39ad9415f664d90f9de9a942c01f098a55812c2d2ce086f95cdbdfe10d3d2d32">adc_ltc2271_msg_reset</a> = 0x80
+, <a class="el" href="#af39ad9415f664d90f9de9a942c01f098a8a38bae8cdab927bae7123181202880d">adc_ltc2271_msg_normal_mode</a> = 0x01
+, <a class="el" href="#af39ad9415f664d90f9de9a942c01f098ac82f64cb2fe860f51a2e67c3be87b38f">adc_ltc2271_msg_custompattern</a> = 0x05
+ }</td></tr>
+<tr class="separator:af39ad9415f664d90f9de9a942c01f098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac75bdd85df17576b95c1b0c0453876fa" id="r_ac75bdd85df17576b95c1b0c0453876fa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac75bdd85df17576b95c1b0c0453876fa">adc_ads5294_register_adress_t</a> { <br />
+&#160;&#160;<a class="el" href="#ac75bdd85df17576b95c1b0c0453876faaf11f17edc46bae4dae177cb449606ed6">adc_ads5294_regaddr_reset</a> = 0x00
+, <a class="el" href="#ac75bdd85df17576b95c1b0c0453876faab8d28616394e6d77301f11feeca57d55">adc_ads5294_regaddr_LFNSM</a> = 0x14
+, <a class="el" href="#ac75bdd85df17576b95c1b0c0453876faa7eaac5a75519725f65b2603f229f391b">adc_ads5294_regaddr_mode</a> = 0x25
+, <a class="el" href="#ac75bdd85df17576b95c1b0c0453876faa3e5c59e6f6579bd096448e4c4213d8f3">adc_ads5294_regaddr_custompattern</a> = 0x26
+, <br />
+&#160;&#160;<a class="el" href="#ac75bdd85df17576b95c1b0c0453876faa9f45e0ac5c38357dc9d79f7382fd56fc">adc_ads5294_regaddr_wordWiseOutput</a> = 0x28
+, <a class="el" href="#ac75bdd85df17576b95c1b0c0453876faa9b8ab57aaaba3d61bfcde02d235562ae">adc_ads5294_regaddr_global_en_filter</a> = 0x29
+, <a class="el" href="#ac75bdd85df17576b95c1b0c0453876faa8e2551975f6a79a8caef17be50cff36a">adc_ads5294_regaddr_gain_1_to_4</a> = 0x2A
+, <a class="el" href="#ac75bdd85df17576b95c1b0c0453876faa15c02e305c474d62533cfc363b985f36">adc_ads5294_regaddr_gain_5_to_8</a> = 0x2B
+, <br />
+&#160;&#160;<a class="el" href="#ac75bdd85df17576b95c1b0c0453876faae34bcb58e92a205e7f12a202c15fe60c">adc_ads5294_regaddr_filter1</a> = 0x2E
+, <a class="el" href="#ac75bdd85df17576b95c1b0c0453876faa5d4849b708968965f28fef655eeb5802">adc_ads5294_regaddr_filter2</a> = 0x2F
+, <a class="el" href="#ac75bdd85df17576b95c1b0c0453876faac694a2417f0529a64beb0f7a0b025739">adc_ads5294_regaddr_filter3</a> = 0x30
+, <a class="el" href="#ac75bdd85df17576b95c1b0c0453876faa3af167f40ab11e49ec79358719ffd5a4">adc_ads5294_regaddr_filter4</a> = 0x31
+, <br />
+&#160;&#160;<a class="el" href="#ac75bdd85df17576b95c1b0c0453876faae079f22d796f518aaf8a32bdeb2c0478">adc_ads5294_regaddr_filter5</a> = 0x32
+, <a class="el" href="#ac75bdd85df17576b95c1b0c0453876faa9a7bd52de9636424374f9a5df04f9278">adc_ads5294_regaddr_filter6</a> = 0x33
+, <a class="el" href="#ac75bdd85df17576b95c1b0c0453876faaeb17a66d34d984eee7462035e6b4e06c">adc_ads5294_regaddr_filter7</a> = 0x34
+, <a class="el" href="#ac75bdd85df17576b95c1b0c0453876faa8ef8472a78436c4409221d54e1055f7a">adc_ads5294_regaddr_filter8</a> = 0x35
+, <br />
+&#160;&#160;<a class="el" href="#ac75bdd85df17576b95c1b0c0453876faaa19e14d3c5a10643f41df711e8d2f8e7">adc_ads5294_regaddr_data_rate</a> = 0x38
+, <a class="el" href="#ac75bdd85df17576b95c1b0c0453876faa80c97b5773492f22e58db3980f9c464f">adc_ads5294_regaddr_ddrClkAlign</a> = 0x42
+, <a class="el" href="#ac75bdd85df17576b95c1b0c0453876faabd1cb4e24fdc74e023b2297884b524fd">adc_ads5294_regaddr_2wireMode</a> = 0x46
+, <a class="el" href="#ac75bdd85df17576b95c1b0c0453876faad50736fa7f2f9afc51e740af1fe35633">adc_ads5294_regaddr_coeff0_filter1</a> = 0x5A
+, <br />
+&#160;&#160;<a class="el" href="#ac75bdd85df17576b95c1b0c0453876faabde6acf4d87df7cf7e9ff427b5b1da07">adc_ads5294_regaddr_coeff1_filter1</a> = 0x5B
+, <a class="el" href="#ac75bdd85df17576b95c1b0c0453876faace46f29d969277c2d5530a9cb8444a20">adc_ads5294_regaddr_coeff11_filter1</a> = 0x65
+, <a class="el" href="#ac75bdd85df17576b95c1b0c0453876faa66d9f46f247d3c9c45743ef7c70ddd90">adc_ads5294_regaddr_coeff0_filter2</a> = 0x66
+, <a class="el" href="#ac75bdd85df17576b95c1b0c0453876faa380a95dc0df94b4b59e29755872eb085">adc_ads5294_regaddr_coeff0_filter3</a> = 0x72
+, <br />
+&#160;&#160;<a class="el" href="#ac75bdd85df17576b95c1b0c0453876faa5842a27707dd32a01cc9f3f0377f14cc">adc_ads5294_regaddr_coeff1_filter4</a> = 0x7F
+, <a class="el" href="#ac75bdd85df17576b95c1b0c0453876faa930546b94c30faf34974741137005083">adc_ads5294_regaddr_coeff11_filter8</a> = 0xB9
+<br />
+ }</td></tr>
+<tr class="separator:ac75bdd85df17576b95c1b0c0453876fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3a1d79bd019f88d29eaeb6e2cecb314" id="r_ae3a1d79bd019f88d29eaeb6e2cecb314"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3a1d79bd019f88d29eaeb6e2cecb314">adc_ads5294_messages_t</a> { <br />
+&#160;&#160;<a class="el" href="#ae3a1d79bd019f88d29eaeb6e2cecb314a61d81224d7e7ff4f25f006d77da95de5">adc_ads5294_msg_reset</a> = 0x01
+, <a class="el" href="#ae3a1d79bd019f88d29eaeb6e2cecb314a95a8021a2a8ff15f348d6af64f31d0ea">adc_ads5294_msg_ramp</a> = 0x40
+, <a class="el" href="#ae3a1d79bd019f88d29eaeb6e2cecb314a468f22afc330f06b3c3c888a51945cf5">adc_ads5294_msg_custompattern</a> = 0x10
+, <a class="el" href="#ae3a1d79bd019f88d29eaeb6e2cecb314a946f093e603676924658a032bf898f1c">adc_ads5294_msg_2wireMode</a> = 0x8401
+, <br />
+&#160;&#160;<a class="el" href="#ae3a1d79bd019f88d29eaeb6e2cecb314abfa49b0711129e377f7b9d6be54ec3f0">adc_ads5294_msg_wordWiseOutput</a> = 0x80FF
+, <a class="el" href="#ae3a1d79bd019f88d29eaeb6e2cecb314a221bb12c317c6135e94eb6d5a31a5fec">adc_ads5294_msg_ddrClkAlign</a> = 0x60
+<br />
+ }</td></tr>
+<tr class="separator:ae3a1d79bd019f88d29eaeb6e2cecb314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57dd656066257660e8a347df5680e80f" id="r_a57dd656066257660e8a347df5680e80f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57dd656066257660e8a347df5680e80f">ioctrl_register_address_t</a> { <br />
+&#160;&#160;<a class="el" href="#a57dd656066257660e8a347df5680e80fa3116711971ca78f6962f056f5a372860">ioctrl_impact_start_pixel</a> = 0x00
+, <a class="el" href="#a57dd656066257660e8a347df5680e80fa0d03882ea4126c9a370876077105fed6">ioctrl_t0l</a> = 0x01
+, <a class="el" href="#a57dd656066257660e8a347df5680e80fab3b065117fb4ccaf1f1edb3180a7344f">ioctrl_t0h</a> = 0x02
+, <a class="el" href="#a57dd656066257660e8a347df5680e80fa9b35aa59541178a169d7320e661b1840">ioctrl_t1</a> = 0x03
+, <br />
+&#160;&#160;<a class="el" href="#a57dd656066257660e8a347df5680e80fa201d05425ac183fc7465fd42587ac541">ioctrl_d1</a> = 0x04
+, <a class="el" href="#a57dd656066257660e8a347df5680e80fa8ca34b8ffb442f747b871a4fbe8d7d3f">ioctrl_t2</a> = 0x05
+, <a class="el" href="#a57dd656066257660e8a347df5680e80fa3f5ed52f3b3a615e5ad9829cdc607577">ioctrl_d2</a> = 0x06
+, <a class="el" href="#a57dd656066257660e8a347df5680e80fa60ea0ce9ad5fccfc8e93e8ed3a1c08e5">ioctrl_t3</a> = 0x07
+, <br />
+&#160;&#160;<a class="el" href="#a57dd656066257660e8a347df5680e80fa073c0e336c35f3a4c1e77001865e22a7">ioctrl_d3</a> = 0x08
+, <a class="el" href="#a57dd656066257660e8a347df5680e80fa4dd3846fcfadfa633fc438573d1e1205">ioctrl_t4</a> = 0x09
+, <a class="el" href="#a57dd656066257660e8a347df5680e80faad560341a07e04b032d0ca14edbef708">ioctrl_d4</a> = 0x0A
+, <a class="el" href="#a57dd656066257660e8a347df5680e80fa919c723768260c01f024f2df84d209f8">ioctrl_t5</a> = 0x0B
+, <br />
+&#160;&#160;<a class="el" href="#a57dd656066257660e8a347df5680e80fa51fb098b1710b7a76e2ab4d0e8c799a1">ioctrl_d5</a> = 0x0C
+, <a class="el" href="#a57dd656066257660e8a347df5680e80faac5b96d47cc457616dcac41a6cbce523">ioctrl_t6</a> = 0x0D
+, <a class="el" href="#a57dd656066257660e8a347df5680e80fac933ada92848890b42a5df0984ae18e5">ioctrl_d6</a> = 0x0E
+, <a class="el" href="#a57dd656066257660e8a347df5680e80faf6acc2ee2766f71fc35d66bb0b96afc8">ioctrl_t7</a> = 0x0F
+, <br />
+&#160;&#160;<a class="el" href="#a57dd656066257660e8a347df5680e80fab256e3c2181522cfff59c5044c2c195a">ioctrl_d7</a> = 0x10
+<br />
+ }</td></tr>
+<tr class="separator:a57dd656066257660e8a347df5680e80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f248f174f6a6ad94a112e607b78fd57" id="r_a4f248f174f6a6ad94a112e607b78fd57"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f248f174f6a6ad94a112e607b78fd57">dac_register_addresses_t</a> { <a class="el" href="#a4f248f174f6a6ad94a112e607b78fd57a13e677bf1e5a18b593a1f15dc5aec78c">dac_hi_byte_addr</a> = 0x01
+, <a class="el" href="#a4f248f174f6a6ad94a112e607b78fd57ac8c08b995e26d29222d1cc22f667e79c">dac_lo_byte_addr</a> = 0x02
+, <a class="el" href="#a4f248f174f6a6ad94a112e607b78fd57a5019d7b759ee67dfdcace3ac4fa1ed20">campos_bit_index</a> = 4
+ }</td></tr>
+<tr class="separator:a4f248f174f6a6ad94a112e607b78fd57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4e169cedf37f6a55251e0d15f33a2b1" id="r_ab4e169cedf37f6a55251e0d15f33a2b1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4e169cedf37f6a55251e0d15f33a2b1">special_pixels_enum_t</a> { <br />
 &#160;&#160;<a class="el" href="#ab4e169cedf37f6a55251e0d15f33a2b1a77006dca2202ba5425482f23f4daf15e">pixel_block_index_high_s1_s2</a> = 2
 , <a class="el" href="#ab4e169cedf37f6a55251e0d15f33a2b1a60415b66dd6c16c135181923bb9c6468">pixel_block_index_low</a> = 3
@@ -887,6 +899,136 @@ Enumerations</h2></td></tr>
 <tr class="separator:a27c45d119d78ca12b7e38e47cb02907f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ae3a1d79bd019f88d29eaeb6e2cecb314" name="ae3a1d79bd019f88d29eaeb6e2cecb314"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3a1d79bd019f88d29eaeb6e2cecb314">&#9670;&#160;</a></span>adc_ads5294_messages_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ae3a1d79bd019f88d29eaeb6e2cecb314">adc_ads5294_messages_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae3a1d79bd019f88d29eaeb6e2cecb314a61d81224d7e7ff4f25f006d77da95de5" name="ae3a1d79bd019f88d29eaeb6e2cecb314a61d81224d7e7ff4f25f006d77da95de5"></a>adc_ads5294_msg_reset&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae3a1d79bd019f88d29eaeb6e2cecb314a95a8021a2a8ff15f348d6af64f31d0ea" name="ae3a1d79bd019f88d29eaeb6e2cecb314a95a8021a2a8ff15f348d6af64f31d0ea"></a>adc_ads5294_msg_ramp&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae3a1d79bd019f88d29eaeb6e2cecb314a468f22afc330f06b3c3c888a51945cf5" name="ae3a1d79bd019f88d29eaeb6e2cecb314a468f22afc330f06b3c3c888a51945cf5"></a>adc_ads5294_msg_custompattern&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae3a1d79bd019f88d29eaeb6e2cecb314a946f093e603676924658a032bf898f1c" name="ae3a1d79bd019f88d29eaeb6e2cecb314a946f093e603676924658a032bf898f1c"></a>adc_ads5294_msg_2wireMode&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae3a1d79bd019f88d29eaeb6e2cecb314abfa49b0711129e377f7b9d6be54ec3f0" name="ae3a1d79bd019f88d29eaeb6e2cecb314abfa49b0711129e377f7b9d6be54ec3f0"></a>adc_ads5294_msg_wordWiseOutput&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae3a1d79bd019f88d29eaeb6e2cecb314a221bb12c317c6135e94eb6d5a31a5fec" name="ae3a1d79bd019f88d29eaeb6e2cecb314a221bb12c317c6135e94eb6d5a31a5fec"></a>adc_ads5294_msg_ddrClkAlign&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ac75bdd85df17576b95c1b0c0453876fa" name="ac75bdd85df17576b95c1b0c0453876fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac75bdd85df17576b95c1b0c0453876fa">&#9670;&#160;</a></span>adc_ads5294_register_adress_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ac75bdd85df17576b95c1b0c0453876fa">adc_ads5294_register_adress_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>These registers are addressed when maddr = 1 and camera system = 3030. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac75bdd85df17576b95c1b0c0453876faaf11f17edc46bae4dae177cb449606ed6" name="ac75bdd85df17576b95c1b0c0453876faaf11f17edc46bae4dae177cb449606ed6"></a>adc_ads5294_regaddr_reset&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac75bdd85df17576b95c1b0c0453876faab8d28616394e6d77301f11feeca57d55" name="ac75bdd85df17576b95c1b0c0453876faab8d28616394e6d77301f11feeca57d55"></a>adc_ads5294_regaddr_LFNSM&#160;</td><td class="fielddoc"><p>Low frequency noise suppression mode</p><ul>
+<li>D0...D7: LFNSM for each channel 1...8 </li>
+</ul>
+</td></tr>
+<tr><td class="fieldname"><a id="ac75bdd85df17576b95c1b0c0453876faa7eaac5a75519725f65b2603f229f391b" name="ac75bdd85df17576b95c1b0c0453876faa7eaac5a75519725f65b2603f229f391b"></a>adc_ads5294_regaddr_mode&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac75bdd85df17576b95c1b0c0453876faa3e5c59e6f6579bd096448e4c4213d8f3" name="ac75bdd85df17576b95c1b0c0453876faa3e5c59e6f6579bd096448e4c4213d8f3"></a>adc_ads5294_regaddr_custompattern&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac75bdd85df17576b95c1b0c0453876faa9f45e0ac5c38357dc9d79f7382fd56fc" name="ac75bdd85df17576b95c1b0c0453876faa9f45e0ac5c38357dc9d79f7382fd56fc"></a>adc_ads5294_regaddr_wordWiseOutput&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac75bdd85df17576b95c1b0c0453876faa9b8ab57aaaba3d61bfcde02d235562ae" name="ac75bdd85df17576b95c1b0c0453876faa9b8ab57aaaba3d61bfcde02d235562ae"></a>adc_ads5294_regaddr_global_en_filter&#160;</td><td class="fielddoc"><ul>
+<li>D0: en_channel_avg 1: Enabled channel averaging mode, 0: disable</li>
+<li>D1: global_en_filter 1: enables filter blocks globally, 0: disable </li>
+</ul>
+</td></tr>
+<tr><td class="fieldname"><a id="ac75bdd85df17576b95c1b0c0453876faa8e2551975f6a79a8caef17be50cff36a" name="ac75bdd85df17576b95c1b0c0453876faa8e2551975f6a79a8caef17be50cff36a"></a>adc_ads5294_regaddr_gain_1_to_4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac75bdd85df17576b95c1b0c0453876faa15c02e305c474d62533cfc363b985f36" name="ac75bdd85df17576b95c1b0c0453876faa15c02e305c474d62533cfc363b985f36"></a>adc_ads5294_regaddr_gain_5_to_8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac75bdd85df17576b95c1b0c0453876faae34bcb58e92a205e7f12a202c15fe60c" name="ac75bdd85df17576b95c1b0c0453876faae34bcb58e92a205e7f12a202c15fe60c"></a>adc_ads5294_regaddr_filter1&#160;</td><td class="fielddoc"><ul>
+<li>D0: use_filter 1: enable filter, 0: disable</li>
+<li>D2: odd_tap 1: Use odd tap filter, 0: disable</li>
+<li>D4...D6: filter_rate: set decimation factor</li>
+<li>D7...D9: filter_coeff_set: select stored coefficient set</li>
+<li>D10...D13 hpf_corner: HPF corner values k from 2 to 10</li>
+<li>D14 hpf_en: 1: hpf enable, 0: disable </li>
+</ul>
+</td></tr>
+<tr><td class="fieldname"><a id="ac75bdd85df17576b95c1b0c0453876faa5d4849b708968965f28fef655eeb5802" name="ac75bdd85df17576b95c1b0c0453876faa5d4849b708968965f28fef655eeb5802"></a>adc_ads5294_regaddr_filter2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac75bdd85df17576b95c1b0c0453876faac694a2417f0529a64beb0f7a0b025739" name="ac75bdd85df17576b95c1b0c0453876faac694a2417f0529a64beb0f7a0b025739"></a>adc_ads5294_regaddr_filter3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac75bdd85df17576b95c1b0c0453876faa3af167f40ab11e49ec79358719ffd5a4" name="ac75bdd85df17576b95c1b0c0453876faa3af167f40ab11e49ec79358719ffd5a4"></a>adc_ads5294_regaddr_filter4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac75bdd85df17576b95c1b0c0453876faae079f22d796f518aaf8a32bdeb2c0478" name="ac75bdd85df17576b95c1b0c0453876faae079f22d796f518aaf8a32bdeb2c0478"></a>adc_ads5294_regaddr_filter5&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac75bdd85df17576b95c1b0c0453876faa9a7bd52de9636424374f9a5df04f9278" name="ac75bdd85df17576b95c1b0c0453876faa9a7bd52de9636424374f9a5df04f9278"></a>adc_ads5294_regaddr_filter6&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac75bdd85df17576b95c1b0c0453876faaeb17a66d34d984eee7462035e6b4e06c" name="ac75bdd85df17576b95c1b0c0453876faaeb17a66d34d984eee7462035e6b4e06c"></a>adc_ads5294_regaddr_filter7&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac75bdd85df17576b95c1b0c0453876faa8ef8472a78436c4409221d54e1055f7a" name="ac75bdd85df17576b95c1b0c0453876faa8ef8472a78436c4409221d54e1055f7a"></a>adc_ads5294_regaddr_filter8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac75bdd85df17576b95c1b0c0453876faaa19e14d3c5a10643f41df711e8d2f8e7" name="ac75bdd85df17576b95c1b0c0453876faaa19e14d3c5a10643f41df711e8d2f8e7"></a>adc_ads5294_regaddr_data_rate&#160;</td><td class="fielddoc"><p>D0...D1: data_rate:</p><ul>
+<li>0: All converted values at the ADC sampling rate are shown on the digital output</li>
+<li>1: 1/2 of ADC sampling rate</li>
+<li>2: 1/4 of ADC sampling rate</li>
+<li>3: 1/8 of ADC sampling rate </li>
+</ul>
+</td></tr>
+<tr><td class="fieldname"><a id="ac75bdd85df17576b95c1b0c0453876faa80c97b5773492f22e58db3980f9c464f" name="ac75bdd85df17576b95c1b0c0453876faa80c97b5773492f22e58db3980f9c464f"></a>adc_ads5294_regaddr_ddrClkAlign&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac75bdd85df17576b95c1b0c0453876faabd1cb4e24fdc74e023b2297884b524fd" name="ac75bdd85df17576b95c1b0c0453876faabd1cb4e24fdc74e023b2297884b524fd"></a>adc_ads5294_regaddr_2wireMode&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac75bdd85df17576b95c1b0c0453876faad50736fa7f2f9afc51e740af1fe35633" name="ac75bdd85df17576b95c1b0c0453876faad50736fa7f2f9afc51e740af1fe35633"></a>adc_ads5294_regaddr_coeff0_filter1&#160;</td><td class="fielddoc"><ul>
+<li>D0...D11: 12 bit long coefficient</li>
+<li>D15: en_custom_filt, 1: enable custom coefficient, 0: use preset coefficient, programmed by filter_coeff_set </li>
+</ul>
+</td></tr>
+<tr><td class="fieldname"><a id="ac75bdd85df17576b95c1b0c0453876faabde6acf4d87df7cf7e9ff427b5b1da07" name="ac75bdd85df17576b95c1b0c0453876faabde6acf4d87df7cf7e9ff427b5b1da07"></a>adc_ads5294_regaddr_coeff1_filter1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac75bdd85df17576b95c1b0c0453876faace46f29d969277c2d5530a9cb8444a20" name="ac75bdd85df17576b95c1b0c0453876faace46f29d969277c2d5530a9cb8444a20"></a>adc_ads5294_regaddr_coeff11_filter1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac75bdd85df17576b95c1b0c0453876faa66d9f46f247d3c9c45743ef7c70ddd90" name="ac75bdd85df17576b95c1b0c0453876faa66d9f46f247d3c9c45743ef7c70ddd90"></a>adc_ads5294_regaddr_coeff0_filter2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac75bdd85df17576b95c1b0c0453876faa380a95dc0df94b4b59e29755872eb085" name="ac75bdd85df17576b95c1b0c0453876faa380a95dc0df94b4b59e29755872eb085"></a>adc_ads5294_regaddr_coeff0_filter3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac75bdd85df17576b95c1b0c0453876faa5842a27707dd32a01cc9f3f0377f14cc" name="ac75bdd85df17576b95c1b0c0453876faa5842a27707dd32a01cc9f3f0377f14cc"></a>adc_ads5294_regaddr_coeff1_filter4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac75bdd85df17576b95c1b0c0453876faa930546b94c30faf34974741137005083" name="ac75bdd85df17576b95c1b0c0453876faa930546b94c30faf34974741137005083"></a>adc_ads5294_regaddr_coeff11_filter8&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="af39ad9415f664d90f9de9a942c01f098" name="af39ad9415f664d90f9de9a942c01f098"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af39ad9415f664d90f9de9a942c01f098">&#9670;&#160;</a></span>adc_ltc2271_messages_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#af39ad9415f664d90f9de9a942c01f098">adc_ltc2271_messages_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af39ad9415f664d90f9de9a942c01f098a55812c2d2ce086f95cdbdfe10d3d2d32" name="af39ad9415f664d90f9de9a942c01f098a55812c2d2ce086f95cdbdfe10d3d2d32"></a>adc_ltc2271_msg_reset&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af39ad9415f664d90f9de9a942c01f098a8a38bae8cdab927bae7123181202880d" name="af39ad9415f664d90f9de9a942c01f098a8a38bae8cdab927bae7123181202880d"></a>adc_ltc2271_msg_normal_mode&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af39ad9415f664d90f9de9a942c01f098ac82f64cb2fe860f51a2e67c3be87b38f" name="af39ad9415f664d90f9de9a942c01f098ac82f64cb2fe860f51a2e67c3be87b38f"></a>adc_ltc2271_msg_custompattern&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="aa553213a284f79b43b3f2b37ce432d63" name="aa553213a284f79b43b3f2b37ce432d63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa553213a284f79b43b3f2b37ce432d63">&#9670;&#160;</a></span>adc_ltc2271_register_adress_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#aa553213a284f79b43b3f2b37ce432d63">adc_ltc2271_register_adress_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>These registers are addressed when maddr = 1 and camera system = 3010. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa553213a284f79b43b3f2b37ce432d63a6c331254340cb5b371f666d23171cd08" name="aa553213a284f79b43b3f2b37ce432d63a6c331254340cb5b371f666d23171cd08"></a>adc_ltc2271_regaddr_reset&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa553213a284f79b43b3f2b37ce432d63a1099cc7c71f916c277243e6964ae9484" name="aa553213a284f79b43b3f2b37ce432d63a1099cc7c71f916c277243e6964ae9484"></a>adc_ltc2271_regaddr_outmode&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa553213a284f79b43b3f2b37ce432d63ac14c23d2b89218e967ab9ee872e29a7b" name="aa553213a284f79b43b3f2b37ce432d63ac14c23d2b89218e967ab9ee872e29a7b"></a>adc_ltc2271_regaddr_custompattern_msb&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa553213a284f79b43b3f2b37ce432d63a53a956c40e0767711810563e97d0b60d" name="aa553213a284f79b43b3f2b37ce432d63a53a956c40e0767711810563e97d0b60d"></a>adc_ltc2271_regaddr_custompattern_lsb&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="aed7f564a2634450efefa7cd7d1dfaaf2" name="aed7f564a2634450efefa7cd7d1dfaaf2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aed7f564a2634450efefa7cd7d1dfaaf2">&#9670;&#160;</a></span>ARREG_bits_t</h2>
 
@@ -1111,132 +1253,6 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a id="a6088fcda9571ea67be3dd49e46438941" name="a6088fcda9571ea67be3dd49e46438941"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6088fcda9571ea67be3dd49e46438941">&#9670;&#160;</a></span>cam_addresses_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="#a6088fcda9571ea67be3dd49e46438941">cam_addresses_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a5e032812bb6af56e16fc96f0671a074c" name="a6088fcda9571ea67be3dd49e46438941a5e032812bb6af56e16fc96f0671a074c"></a>maddr_cam&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941ad6d985e8ca8b3222dbc3765c92159241" name="a6088fcda9571ea67be3dd49e46438941ad6d985e8ca8b3222dbc3765c92159241"></a>maddr_adc&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941aad6f04da0f54374a8de6bc23a443ba13" name="a6088fcda9571ea67be3dd49e46438941aad6f04da0f54374a8de6bc23a443ba13"></a>maddr_ioctrl&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a03144b9418f640f6ab17d9c8b37e26bf" name="a6088fcda9571ea67be3dd49e46438941a03144b9418f640f6ab17d9c8b37e26bf"></a>maddr_dac&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a13e677bf1e5a18b593a1f15dc5aec78c" name="a6088fcda9571ea67be3dd49e46438941a13e677bf1e5a18b593a1f15dc5aec78c"></a>dac_hi_byte_addr&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941ac8c08b995e26d29222d1cc22f667e79c" name="a6088fcda9571ea67be3dd49e46438941ac8c08b995e26d29222d1cc22f667e79c"></a>dac_lo_byte_addr&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a5019d7b759ee67dfdcace3ac4fa1ed20" name="a6088fcda9571ea67be3dd49e46438941a5019d7b759ee67dfdcace3ac4fa1ed20"></a>campos_bit_index&#160;</td><td class="fielddoc"><p>The adaddr is structured as following:</p><ul>
-<li>c: camera position</li>
-<li>r: register address 0b ccc rrrr The upper 3 bits are describing the camera position and the lower 4 bits are describing the register address. (Only 7 bits are used) </li>
-</ul>
-</td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941ac08b288d19d82887239f79a267f8e647" name="a6088fcda9571ea67be3dd49e46438941ac08b288d19d82887239f79a267f8e647"></a>cam_adaddr_config&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a69121ef35ecc8ca9bf51529008910ae3" name="a6088fcda9571ea67be3dd49e46438941a69121ef35ecc8ca9bf51529008910ae3"></a>cam_adaddr_pixel&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a5a7070d1ed412936fab5223d1de07b50" name="a6088fcda9571ea67be3dd49e46438941a5a7070d1ed412936fab5223d1de07b50"></a>cam_adaddr_trig_in&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941abf4ac2bf667f8421f9df18ea9b1b308b" name="a6088fcda9571ea67be3dd49e46438941abf4ac2bf667f8421f9df18ea9b1b308b"></a>cam_adaddr_unused&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a615cf62040ce0c03694031ec01f442da" name="a6088fcda9571ea67be3dd49e46438941a615cf62040ce0c03694031ec01f442da"></a>cam_adaddr_vclk&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941aaa11b9b9b9b35e3d890a9a33648610df" name="a6088fcda9571ea67be3dd49e46438941aaa11b9b9b9b35e3d890a9a33648610df"></a>cam_adaddr_LEDoff&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941af88ce9a5e4c3f6ed87f5ff5c2fee0375" name="a6088fcda9571ea67be3dd49e46438941af88ce9a5e4c3f6ed87f5ff5c2fee0375"></a>cam_adaddr_coolTemp&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a9d774a1b5195bdda8d3aeb98ce0100b6" name="a6088fcda9571ea67be3dd49e46438941a9d774a1b5195bdda8d3aeb98ce0100b6"></a>cam_adaddr_sample_mode&#160;</td><td class="fielddoc"><p>3030: Currently not in use. Sample mode is setting the ADC clock and the sensor clock.</p><ul>
-<li>0: ADC clock = sensor clock = 25 MHz with duty cycle 50%</li>
-<li>1: ADC clock = 50 MHz, duty cycle 50%, sensor clock = 12,5 MHz, duty cycle 20%</li>
-<li>2: ADC clock = 25 MHz, duty cycle 50%, sensor clock = 12,5 MHz duty cycle 20% </li>
-</ul>
-</td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941ab0e3ec5266d037400d248de6e6bd1a81" name="a6088fcda9571ea67be3dd49e46438941ab0e3ec5266d037400d248de6e6bd1a81"></a>cam_adaddr_sensor_reset_length&#160;</td><td class="fielddoc"><p>Sensor reset length register.</p>
-<p>3030 HSVIS: This register controls the length of the ARG pulse which is done after the TG pulse. min: 0ns, max: 0xFFFF * 4ns = 65535 * 4ns = 262140ns = 262,14us, typical value: 200 * 4ns = 800ns HSIR: min: 134 * 160 ns = 21,440 ns, max: 0xFFFF * 160 ns = 10,485,600 ns, default: 140 * 160 ns = 22,400 ns </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941aca4c4e9235d324d2d4bc36da2825f03a" name="a6088fcda9571ea67be3dd49e46438941aca4c4e9235d324d2d4bc36da2825f03a"></a>cam_adaddr_vclks_amount1&#160;</td><td class="fielddoc"><p>stores the amount of vclks generated inside the camera.</p><ul>
-<li>cam_adaddr_vclks_amount1: is used for full binning (fft_lines) or the first region of ROI</li>
-<li>cam_adaddr_vclks_amount2..5: are used for ROI mode. Must be set to zero for full binning </li>
-</ul>
-</td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a90e8ca7f6f7401c6f76bd5fd2d6c0583" name="a6088fcda9571ea67be3dd49e46438941a90e8ca7f6f7401c6f76bd5fd2d6c0583"></a>cam_adaddr_vclks_amount2&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941af9c3ae7b59d033bd8f7d6db35358d5d8" name="a6088fcda9571ea67be3dd49e46438941af9c3ae7b59d033bd8f7d6db35358d5d8"></a>cam_adaddr_vclks_amount3&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a425e5c70a280aa6ddf59053bbc090312" name="a6088fcda9571ea67be3dd49e46438941a425e5c70a280aa6ddf59053bbc090312"></a>cam_adaddr_vclks_amount4&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941ad7009cbedf2e0a27419ddef26f27125e" name="a6088fcda9571ea67be3dd49e46438941ad7009cbedf2e0a27419ddef26f27125e"></a>cam_adaddr_vclks_amount5&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a3bc012fcd77b1777124473b1b265a3af" name="a6088fcda9571ea67be3dd49e46438941a3bc012fcd77b1777124473b1b265a3af"></a>cam_adaddr_camera_position&#160;</td><td class="fielddoc"><p>This is a register for the camera position for multiple cameras in line. The software always sets the first camera to 0 and the cameras are handing their positions one to another. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a6c331254340cb5b371f666d23171cd08" name="a6088fcda9571ea67be3dd49e46438941a6c331254340cb5b371f666d23171cd08"></a>adc_ltc2271_regaddr_reset&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a1099cc7c71f916c277243e6964ae9484" name="a6088fcda9571ea67be3dd49e46438941a1099cc7c71f916c277243e6964ae9484"></a>adc_ltc2271_regaddr_outmode&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941ac14c23d2b89218e967ab9ee872e29a7b" name="a6088fcda9571ea67be3dd49e46438941ac14c23d2b89218e967ab9ee872e29a7b"></a>adc_ltc2271_regaddr_custompattern_msb&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a53a956c40e0767711810563e97d0b60d" name="a6088fcda9571ea67be3dd49e46438941a53a956c40e0767711810563e97d0b60d"></a>adc_ltc2271_regaddr_custompattern_lsb&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941af11f17edc46bae4dae177cb449606ed6" name="a6088fcda9571ea67be3dd49e46438941af11f17edc46bae4dae177cb449606ed6"></a>adc_ads5294_regaddr_reset&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941ab8d28616394e6d77301f11feeca57d55" name="a6088fcda9571ea67be3dd49e46438941ab8d28616394e6d77301f11feeca57d55"></a>adc_ads5294_regaddr_LFNSM&#160;</td><td class="fielddoc"><p>Low frequency noise suppression mode</p><ul>
-<li>D0...D7: LFNSM for each channel 1...8 </li>
-</ul>
-</td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a7eaac5a75519725f65b2603f229f391b" name="a6088fcda9571ea67be3dd49e46438941a7eaac5a75519725f65b2603f229f391b"></a>adc_ads5294_regaddr_mode&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a3e5c59e6f6579bd096448e4c4213d8f3" name="a6088fcda9571ea67be3dd49e46438941a3e5c59e6f6579bd096448e4c4213d8f3"></a>adc_ads5294_regaddr_custompattern&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a9f45e0ac5c38357dc9d79f7382fd56fc" name="a6088fcda9571ea67be3dd49e46438941a9f45e0ac5c38357dc9d79f7382fd56fc"></a>adc_ads5294_regaddr_wordWiseOutput&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a9b8ab57aaaba3d61bfcde02d235562ae" name="a6088fcda9571ea67be3dd49e46438941a9b8ab57aaaba3d61bfcde02d235562ae"></a>adc_ads5294_regaddr_global_en_filter&#160;</td><td class="fielddoc"><ul>
-<li>D0: en_channel_avg 1: Enabled channel averaging mode, 0: disable</li>
-<li>D1: global_en_filter 1: enables filter blocks globally, 0: disable </li>
-</ul>
-</td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a8e2551975f6a79a8caef17be50cff36a" name="a6088fcda9571ea67be3dd49e46438941a8e2551975f6a79a8caef17be50cff36a"></a>adc_ads5294_regaddr_gain_1_to_4&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a15c02e305c474d62533cfc363b985f36" name="a6088fcda9571ea67be3dd49e46438941a15c02e305c474d62533cfc363b985f36"></a>adc_ads5294_regaddr_gain_5_to_8&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941ae34bcb58e92a205e7f12a202c15fe60c" name="a6088fcda9571ea67be3dd49e46438941ae34bcb58e92a205e7f12a202c15fe60c"></a>adc_ads5294_regaddr_filter1&#160;</td><td class="fielddoc"><ul>
-<li>D0: use_filter 1: enable filter, 0: disable</li>
-<li>D2: odd_tap 1: Use odd tap filter, 0: disable</li>
-<li>D4...D6: filter_rate: set decimation factor</li>
-<li>D7...D9: filter_coeff_set: select stored coefficient set</li>
-<li>D10...D13 hpf_corner: HPF corner values k from 2 to 10</li>
-<li>D14 hpf_en: 1: hpf enable, 0: disable </li>
-</ul>
-</td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a5d4849b708968965f28fef655eeb5802" name="a6088fcda9571ea67be3dd49e46438941a5d4849b708968965f28fef655eeb5802"></a>adc_ads5294_regaddr_filter2&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941ac694a2417f0529a64beb0f7a0b025739" name="a6088fcda9571ea67be3dd49e46438941ac694a2417f0529a64beb0f7a0b025739"></a>adc_ads5294_regaddr_filter3&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a3af167f40ab11e49ec79358719ffd5a4" name="a6088fcda9571ea67be3dd49e46438941a3af167f40ab11e49ec79358719ffd5a4"></a>adc_ads5294_regaddr_filter4&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941ae079f22d796f518aaf8a32bdeb2c0478" name="a6088fcda9571ea67be3dd49e46438941ae079f22d796f518aaf8a32bdeb2c0478"></a>adc_ads5294_regaddr_filter5&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a9a7bd52de9636424374f9a5df04f9278" name="a6088fcda9571ea67be3dd49e46438941a9a7bd52de9636424374f9a5df04f9278"></a>adc_ads5294_regaddr_filter6&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941aeb17a66d34d984eee7462035e6b4e06c" name="a6088fcda9571ea67be3dd49e46438941aeb17a66d34d984eee7462035e6b4e06c"></a>adc_ads5294_regaddr_filter7&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a8ef8472a78436c4409221d54e1055f7a" name="a6088fcda9571ea67be3dd49e46438941a8ef8472a78436c4409221d54e1055f7a"></a>adc_ads5294_regaddr_filter8&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941aa19e14d3c5a10643f41df711e8d2f8e7" name="a6088fcda9571ea67be3dd49e46438941aa19e14d3c5a10643f41df711e8d2f8e7"></a>adc_ads5294_regaddr_data_rate&#160;</td><td class="fielddoc"><p>D0...D1: data_rate:</p><ul>
-<li>0: All converted values at the ADC sampling rate are shown on the digital output</li>
-<li>1: 1/2 of ADC sampling rate</li>
-<li>2: 1/4 of ADC sampling rate</li>
-<li>3: 1/8 of ADC sampling rate </li>
-</ul>
-</td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a80c97b5773492f22e58db3980f9c464f" name="a6088fcda9571ea67be3dd49e46438941a80c97b5773492f22e58db3980f9c464f"></a>adc_ads5294_regaddr_ddrClkAlign&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941abd1cb4e24fdc74e023b2297884b524fd" name="a6088fcda9571ea67be3dd49e46438941abd1cb4e24fdc74e023b2297884b524fd"></a>adc_ads5294_regaddr_2wireMode&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941ad50736fa7f2f9afc51e740af1fe35633" name="a6088fcda9571ea67be3dd49e46438941ad50736fa7f2f9afc51e740af1fe35633"></a>adc_ads5294_regaddr_coeff0_filter1&#160;</td><td class="fielddoc"><ul>
-<li>D0...D11: 12 bit long coefficient</li>
-<li>D15: en_custom_filt, 1: enable custom coefficient, 0: use preset coefficient, programmed by filter_coeff_set </li>
-</ul>
-</td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941abde6acf4d87df7cf7e9ff427b5b1da07" name="a6088fcda9571ea67be3dd49e46438941abde6acf4d87df7cf7e9ff427b5b1da07"></a>adc_ads5294_regaddr_coeff1_filter1&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941ace46f29d969277c2d5530a9cb8444a20" name="a6088fcda9571ea67be3dd49e46438941ace46f29d969277c2d5530a9cb8444a20"></a>adc_ads5294_regaddr_coeff11_filter1&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a66d9f46f247d3c9c45743ef7c70ddd90" name="a6088fcda9571ea67be3dd49e46438941a66d9f46f247d3c9c45743ef7c70ddd90"></a>adc_ads5294_regaddr_coeff0_filter2&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a380a95dc0df94b4b59e29755872eb085" name="a6088fcda9571ea67be3dd49e46438941a380a95dc0df94b4b59e29755872eb085"></a>adc_ads5294_regaddr_coeff0_filter3&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a5842a27707dd32a01cc9f3f0377f14cc" name="a6088fcda9571ea67be3dd49e46438941a5842a27707dd32a01cc9f3f0377f14cc"></a>adc_ads5294_regaddr_coeff1_filter4&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a930546b94c30faf34974741137005083" name="a6088fcda9571ea67be3dd49e46438941a930546b94c30faf34974741137005083"></a>adc_ads5294_regaddr_coeff11_filter8&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a3116711971ca78f6962f056f5a372860" name="a6088fcda9571ea67be3dd49e46438941a3116711971ca78f6962f056f5a372860"></a>ioctrl_impact_start_pixel&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a0d03882ea4126c9a370876077105fed6" name="a6088fcda9571ea67be3dd49e46438941a0d03882ea4126c9a370876077105fed6"></a>ioctrl_t0l&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941ab3b065117fb4ccaf1f1edb3180a7344f" name="a6088fcda9571ea67be3dd49e46438941ab3b065117fb4ccaf1f1edb3180a7344f"></a>ioctrl_t0h&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a9b35aa59541178a169d7320e661b1840" name="a6088fcda9571ea67be3dd49e46438941a9b35aa59541178a169d7320e661b1840"></a>ioctrl_t1&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a201d05425ac183fc7465fd42587ac541" name="a6088fcda9571ea67be3dd49e46438941a201d05425ac183fc7465fd42587ac541"></a>ioctrl_d1&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a8ca34b8ffb442f747b871a4fbe8d7d3f" name="a6088fcda9571ea67be3dd49e46438941a8ca34b8ffb442f747b871a4fbe8d7d3f"></a>ioctrl_t2&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a3f5ed52f3b3a615e5ad9829cdc607577" name="a6088fcda9571ea67be3dd49e46438941a3f5ed52f3b3a615e5ad9829cdc607577"></a>ioctrl_d2&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a60ea0ce9ad5fccfc8e93e8ed3a1c08e5" name="a6088fcda9571ea67be3dd49e46438941a60ea0ce9ad5fccfc8e93e8ed3a1c08e5"></a>ioctrl_t3&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a073c0e336c35f3a4c1e77001865e22a7" name="a6088fcda9571ea67be3dd49e46438941a073c0e336c35f3a4c1e77001865e22a7"></a>ioctrl_d3&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a4dd3846fcfadfa633fc438573d1e1205" name="a6088fcda9571ea67be3dd49e46438941a4dd3846fcfadfa633fc438573d1e1205"></a>ioctrl_t4&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941aad560341a07e04b032d0ca14edbef708" name="a6088fcda9571ea67be3dd49e46438941aad560341a07e04b032d0ca14edbef708"></a>ioctrl_d4&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a919c723768260c01f024f2df84d209f8" name="a6088fcda9571ea67be3dd49e46438941a919c723768260c01f024f2df84d209f8"></a>ioctrl_t5&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941a51fb098b1710b7a76e2ab4d0e8c799a1" name="a6088fcda9571ea67be3dd49e46438941a51fb098b1710b7a76e2ab4d0e8c799a1"></a>ioctrl_d5&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941aac5b96d47cc457616dcac41a6cbce523" name="a6088fcda9571ea67be3dd49e46438941aac5b96d47cc457616dcac41a6cbce523"></a>ioctrl_t6&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941ac933ada92848890b42a5df0984ae18e5" name="a6088fcda9571ea67be3dd49e46438941ac933ada92848890b42a5df0984ae18e5"></a>ioctrl_d6&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941af6acc2ee2766f71fc35d66bb0b96afc8" name="a6088fcda9571ea67be3dd49e46438941af6acc2ee2766f71fc35d66bb0b96afc8"></a>ioctrl_t7&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6088fcda9571ea67be3dd49e46438941ab256e3c2181522cfff59c5044c2c195a" name="a6088fcda9571ea67be3dd49e46438941ab256e3c2181522cfff59c5044c2c195a"></a>ioctrl_d7&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
 <a id="a6bf7c32673195bbbdc288f7931ac4976" name="a6bf7c32673195bbbdc288f7931ac4976"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6bf7c32673195bbbdc288f7931ac4976">&#9670;&#160;</a></span>cam_config_register_t</h2>
 
@@ -1263,31 +1279,6 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a id="acff84da0b18ed524c2778df0255a60d2" name="acff84da0b18ed524c2778df0255a60d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acff84da0b18ed524c2778df0255a60d2">&#9670;&#160;</a></span>cam_messages_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="#acff84da0b18ed524c2778df0255a60d2">cam_messages_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="acff84da0b18ed524c2778df0255a60d2a55812c2d2ce086f95cdbdfe10d3d2d32" name="acff84da0b18ed524c2778df0255a60d2a55812c2d2ce086f95cdbdfe10d3d2d32"></a>adc_ltc2271_msg_reset&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acff84da0b18ed524c2778df0255a60d2a8a38bae8cdab927bae7123181202880d" name="acff84da0b18ed524c2778df0255a60d2a8a38bae8cdab927bae7123181202880d"></a>adc_ltc2271_msg_normal_mode&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acff84da0b18ed524c2778df0255a60d2ac82f64cb2fe860f51a2e67c3be87b38f" name="acff84da0b18ed524c2778df0255a60d2ac82f64cb2fe860f51a2e67c3be87b38f"></a>adc_ltc2271_msg_custompattern&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acff84da0b18ed524c2778df0255a60d2a61d81224d7e7ff4f25f006d77da95de5" name="acff84da0b18ed524c2778df0255a60d2a61d81224d7e7ff4f25f006d77da95de5"></a>adc_ads5294_msg_reset&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acff84da0b18ed524c2778df0255a60d2a95a8021a2a8ff15f348d6af64f31d0ea" name="acff84da0b18ed524c2778df0255a60d2a95a8021a2a8ff15f348d6af64f31d0ea"></a>adc_ads5294_msg_ramp&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acff84da0b18ed524c2778df0255a60d2a468f22afc330f06b3c3c888a51945cf5" name="acff84da0b18ed524c2778df0255a60d2a468f22afc330f06b3c3c888a51945cf5"></a>adc_ads5294_msg_custompattern&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acff84da0b18ed524c2778df0255a60d2a946f093e603676924658a032bf898f1c" name="acff84da0b18ed524c2778df0255a60d2a946f093e603676924658a032bf898f1c"></a>adc_ads5294_msg_2wireMode&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acff84da0b18ed524c2778df0255a60d2abfa49b0711129e377f7b9d6be54ec3f0" name="acff84da0b18ed524c2778df0255a60d2abfa49b0711129e377f7b9d6be54ec3f0"></a>adc_ads5294_msg_wordWiseOutput&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acff84da0b18ed524c2778df0255a60d2a221bb12c317c6135e94eb6d5a31a5fec" name="acff84da0b18ed524c2778df0255a60d2a221bb12c317c6135e94eb6d5a31a5fec"></a>adc_ads5294_msg_ddrClkAlign&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
 <a id="a5f849ecb470c9de06dd3a5bc25c095d6" name="a5f849ecb470c9de06dd3a5bc25c095d6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5f849ecb470c9de06dd3a5bc25c095d6">&#9670;&#160;</a></span>CAMCNT_bits_t</h2>
 
@@ -1301,6 +1292,52 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5f849ecb470c9de06dd3a5bc25c095d6a626a649f3eee28c8a8e84971f780cb28" name="a5f849ecb470c9de06dd3a5bc25c095d6a626a649f3eee28c8a8e84971f780cb28"></a>CAMCNT_bits&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a9e3c451d5901d136d9fc1de5b1f1cda2" name="a9e3c451d5901d136d9fc1de5b1f1cda2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e3c451d5901d136d9fc1de5b1f1cda2">&#9670;&#160;</a></span>camera_register_addresses_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2">camera_register_addresses_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>These registers are addressed when maddr = 0. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2ac08b288d19d82887239f79a267f8e647" name="a9e3c451d5901d136d9fc1de5b1f1cda2ac08b288d19d82887239f79a267f8e647"></a>cam_adaddr_config&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2a69121ef35ecc8ca9bf51529008910ae3" name="a9e3c451d5901d136d9fc1de5b1f1cda2a69121ef35ecc8ca9bf51529008910ae3"></a>cam_adaddr_pixel&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2a5a7070d1ed412936fab5223d1de07b50" name="a9e3c451d5901d136d9fc1de5b1f1cda2a5a7070d1ed412936fab5223d1de07b50"></a>cam_adaddr_trig_in&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2abf4ac2bf667f8421f9df18ea9b1b308b" name="a9e3c451d5901d136d9fc1de5b1f1cda2abf4ac2bf667f8421f9df18ea9b1b308b"></a>cam_adaddr_unused&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2a615cf62040ce0c03694031ec01f442da" name="a9e3c451d5901d136d9fc1de5b1f1cda2a615cf62040ce0c03694031ec01f442da"></a>cam_adaddr_vclk&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2aaa11b9b9b9b35e3d890a9a33648610df" name="a9e3c451d5901d136d9fc1de5b1f1cda2aaa11b9b9b9b35e3d890a9a33648610df"></a>cam_adaddr_LEDoff&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2af88ce9a5e4c3f6ed87f5ff5c2fee0375" name="a9e3c451d5901d136d9fc1de5b1f1cda2af88ce9a5e4c3f6ed87f5ff5c2fee0375"></a>cam_adaddr_coolTemp&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2a9d774a1b5195bdda8d3aeb98ce0100b6" name="a9e3c451d5901d136d9fc1de5b1f1cda2a9d774a1b5195bdda8d3aeb98ce0100b6"></a>cam_adaddr_sample_mode&#160;</td><td class="fielddoc"><p>3030: Currently not in use. Sample mode is setting the ADC clock and the sensor clock.</p><ul>
+<li>0: ADC clock = sensor clock = 25 MHz with duty cycle 50%</li>
+<li>1: ADC clock = 50 MHz, duty cycle 50%, sensor clock = 12,5 MHz, duty cycle 20%</li>
+<li>2: ADC clock = 25 MHz, duty cycle 50%, sensor clock = 12,5 MHz duty cycle 20% </li>
+</ul>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2ab0e3ec5266d037400d248de6e6bd1a81" name="a9e3c451d5901d136d9fc1de5b1f1cda2ab0e3ec5266d037400d248de6e6bd1a81"></a>cam_adaddr_sensor_reset_length&#160;</td><td class="fielddoc"><p>Sensor reset length register.</p>
+<p>3030 HSVIS: This register controls the length of the ARG pulse which is done after the TG pulse. min: 0ns, max: 0xFFFF * 4ns = 65535 * 4ns = 262140ns = 262,14us, typical value: 200 * 4ns = 800ns HSIR: min: 134 * 160 ns = 21,440 ns, max: 0xFFFF * 160 ns = 10,485,600 ns, default: 140 * 160 ns = 22,400 ns </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2aca4c4e9235d324d2d4bc36da2825f03a" name="a9e3c451d5901d136d9fc1de5b1f1cda2aca4c4e9235d324d2d4bc36da2825f03a"></a>cam_adaddr_vclks_amount1&#160;</td><td class="fielddoc"><p>stores the amount of vclks generated inside the camera.</p><ul>
+<li>cam_adaddr_vclks_amount1: is used for full binning (fft_lines) or the first region of ROI</li>
+<li>cam_adaddr_vclks_amount2..5: are used for ROI mode. Must be set to zero for full binning </li>
+</ul>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2a90e8ca7f6f7401c6f76bd5fd2d6c0583" name="a9e3c451d5901d136d9fc1de5b1f1cda2a90e8ca7f6f7401c6f76bd5fd2d6c0583"></a>cam_adaddr_vclks_amount2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2af9c3ae7b59d033bd8f7d6db35358d5d8" name="a9e3c451d5901d136d9fc1de5b1f1cda2af9c3ae7b59d033bd8f7d6db35358d5d8"></a>cam_adaddr_vclks_amount3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2a425e5c70a280aa6ddf59053bbc090312" name="a9e3c451d5901d136d9fc1de5b1f1cda2a425e5c70a280aa6ddf59053bbc090312"></a>cam_adaddr_vclks_amount4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2ad7009cbedf2e0a27419ddef26f27125e" name="a9e3c451d5901d136d9fc1de5b1f1cda2ad7009cbedf2e0a27419ddef26f27125e"></a>cam_adaddr_vclks_amount5&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2a31392647276086e67dd71cae60a145bf" name="a9e3c451d5901d136d9fc1de5b1f1cda2a31392647276086e67dd71cae60a145bf"></a>cam_adaddr_sensor_gain&#160;</td><td class="fielddoc"><p>This register is used to the the sensor gain. It is introduced to support the 2 bit gain function of HSIR sensor. The sensor gain bit in the config register only supports 1 bit. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2a3bc012fcd77b1777124473b1b265a3af" name="a9e3c451d5901d136d9fc1de5b1f1cda2a3bc012fcd77b1777124473b1b265a3af"></a>cam_adaddr_camera_position&#160;</td><td class="fielddoc"><p>This is a register for the camera position for multiple cameras in line. The software always sets the first camera to 0 and the cameras are handing their positions one to another. </p>
+</td></tr>
 </table>
 
 </div>
@@ -1413,6 +1450,30 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a5b73895d5cad296f9fd0ae4237c4933da0f2ea5d22322e709979914348f02cc33" name="a5b73895d5cad296f9fd0ae4237c4933da0f2ea5d22322e709979914348f02cc33"></a>CTRLC_bitindex_S2&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a5b73895d5cad296f9fd0ae4237c4933da7008569a34c7878e7478700d1950a55e" name="a5b73895d5cad296f9fd0ae4237c4933da7008569a34c7878e7478700d1950a55e"></a>CTRLC_bitindex_eoi&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a5b73895d5cad296f9fd0ae4237c4933da9dd1129a5a3cda5f550bf4600e55423f" name="a5b73895d5cad296f9fd0ae4237c4933da9dd1129a5a3cda5f550bf4600e55423f"></a>CTRLC_bitindex_eoi_chb&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a4f248f174f6a6ad94a112e607b78fd57" name="a4f248f174f6a6ad94a112e607b78fd57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f248f174f6a6ad94a112e607b78fd57">&#9670;&#160;</a></span>dac_register_addresses_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a4f248f174f6a6ad94a112e607b78fd57">dac_register_addresses_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>These register are addressed when maddr = 3. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4f248f174f6a6ad94a112e607b78fd57a13e677bf1e5a18b593a1f15dc5aec78c" name="a4f248f174f6a6ad94a112e607b78fd57a13e677bf1e5a18b593a1f15dc5aec78c"></a>dac_hi_byte_addr&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4f248f174f6a6ad94a112e607b78fd57ac8c08b995e26d29222d1cc22f667e79c" name="a4f248f174f6a6ad94a112e607b78fd57ac8c08b995e26d29222d1cc22f667e79c"></a>dac_lo_byte_addr&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4f248f174f6a6ad94a112e607b78fd57a5019d7b759ee67dfdcace3ac4fa1ed20" name="a4f248f174f6a6ad94a112e607b78fd57a5019d7b759ee67dfdcace3ac4fa1ed20"></a>campos_bit_index&#160;</td><td class="fielddoc"><p>The adaddr is structured as following:</p><ul>
+<li>c: camera position</li>
+<li>r: register address 0b ccc rrrr The upper 3 bits are describing the camera position and the lower 4 bits are describing the register address. (Only 7 bits are used) </li>
+</ul>
+</td></tr>
 </table>
 
 </div>
@@ -1652,6 +1713,40 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<a id="a57dd656066257660e8a347df5680e80f" name="a57dd656066257660e8a347df5680e80f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57dd656066257660e8a347df5680e80f">&#9670;&#160;</a></span>ioctrl_register_address_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a57dd656066257660e8a347df5680e80f">ioctrl_register_address_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>These registers are addressed when maddr = 2. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a57dd656066257660e8a347df5680e80fa3116711971ca78f6962f056f5a372860" name="a57dd656066257660e8a347df5680e80fa3116711971ca78f6962f056f5a372860"></a>ioctrl_impact_start_pixel&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a57dd656066257660e8a347df5680e80fa0d03882ea4126c9a370876077105fed6" name="a57dd656066257660e8a347df5680e80fa0d03882ea4126c9a370876077105fed6"></a>ioctrl_t0l&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a57dd656066257660e8a347df5680e80fab3b065117fb4ccaf1f1edb3180a7344f" name="a57dd656066257660e8a347df5680e80fab3b065117fb4ccaf1f1edb3180a7344f"></a>ioctrl_t0h&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a57dd656066257660e8a347df5680e80fa9b35aa59541178a169d7320e661b1840" name="a57dd656066257660e8a347df5680e80fa9b35aa59541178a169d7320e661b1840"></a>ioctrl_t1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a57dd656066257660e8a347df5680e80fa201d05425ac183fc7465fd42587ac541" name="a57dd656066257660e8a347df5680e80fa201d05425ac183fc7465fd42587ac541"></a>ioctrl_d1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a57dd656066257660e8a347df5680e80fa8ca34b8ffb442f747b871a4fbe8d7d3f" name="a57dd656066257660e8a347df5680e80fa8ca34b8ffb442f747b871a4fbe8d7d3f"></a>ioctrl_t2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a57dd656066257660e8a347df5680e80fa3f5ed52f3b3a615e5ad9829cdc607577" name="a57dd656066257660e8a347df5680e80fa3f5ed52f3b3a615e5ad9829cdc607577"></a>ioctrl_d2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a57dd656066257660e8a347df5680e80fa60ea0ce9ad5fccfc8e93e8ed3a1c08e5" name="a57dd656066257660e8a347df5680e80fa60ea0ce9ad5fccfc8e93e8ed3a1c08e5"></a>ioctrl_t3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a57dd656066257660e8a347df5680e80fa073c0e336c35f3a4c1e77001865e22a7" name="a57dd656066257660e8a347df5680e80fa073c0e336c35f3a4c1e77001865e22a7"></a>ioctrl_d3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a57dd656066257660e8a347df5680e80fa4dd3846fcfadfa633fc438573d1e1205" name="a57dd656066257660e8a347df5680e80fa4dd3846fcfadfa633fc438573d1e1205"></a>ioctrl_t4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a57dd656066257660e8a347df5680e80faad560341a07e04b032d0ca14edbef708" name="a57dd656066257660e8a347df5680e80faad560341a07e04b032d0ca14edbef708"></a>ioctrl_d4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a57dd656066257660e8a347df5680e80fa919c723768260c01f024f2df84d209f8" name="a57dd656066257660e8a347df5680e80fa919c723768260c01f024f2df84d209f8"></a>ioctrl_t5&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a57dd656066257660e8a347df5680e80fa51fb098b1710b7a76e2ab4d0e8c799a1" name="a57dd656066257660e8a347df5680e80fa51fb098b1710b7a76e2ab4d0e8c799a1"></a>ioctrl_d5&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a57dd656066257660e8a347df5680e80faac5b96d47cc457616dcac41a6cbce523" name="a57dd656066257660e8a347df5680e80faac5b96d47cc457616dcac41a6cbce523"></a>ioctrl_t6&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a57dd656066257660e8a347df5680e80fac933ada92848890b42a5df0984ae18e5" name="a57dd656066257660e8a347df5680e80fac933ada92848890b42a5df0984ae18e5"></a>ioctrl_d6&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a57dd656066257660e8a347df5680e80faf6acc2ee2766f71fc35d66bb0b96afc8" name="a57dd656066257660e8a347df5680e80faf6acc2ee2766f71fc35d66bb0b96afc8"></a>ioctrl_t7&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a57dd656066257660e8a347df5680e80fab256e3c2181522cfff59c5044c2c195a" name="a57dd656066257660e8a347df5680e80fab256e3c2181522cfff59c5044c2c195a"></a>ioctrl_d7&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="a112bb7cac94f9939207725ea4c525e5c" name="a112bb7cac94f9939207725ea4c525e5c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a112bb7cac94f9939207725ea4c525e5c">&#9670;&#160;</a></span>IRQREG_bits_t</h2>
 
@@ -1672,6 +1767,26 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a112bb7cac94f9939207725ea4c525e5ca50277dd8973996f226679a5c19b67eb5" name="a112bb7cac94f9939207725ea4c525e5ca50277dd8973996f226679a5c19b67eb5"></a>IRQREG_bits_IRQCNT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a112bb7cac94f9939207725ea4c525e5cad334ccdff82ca28487415cc57ad57f63" name="a112bb7cac94f9939207725ea4c525e5cad334ccdff82ca28487415cc57ad57f63"></a>IRQREG_bit_HWDREQ_EN&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a112bb7cac94f9939207725ea4c525e5ca0a9dbc23cb33075789bef247eb4b6dde" name="a112bb7cac94f9939207725ea4c525e5ca0a9dbc23cb33075789bef247eb4b6dde"></a>IRQREG_bit_INTRSR&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ac15c184c7c063b832a1b29ab80beda15" name="ac15c184c7c063b832a1b29ab80beda15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac15c184c7c063b832a1b29ab80beda15">&#9670;&#160;</a></span>master_address_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ac15c184c7c063b832a1b29ab80beda15">master_address_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac15c184c7c063b832a1b29ab80beda15a5e032812bb6af56e16fc96f0671a074c" name="ac15c184c7c063b832a1b29ab80beda15a5e032812bb6af56e16fc96f0671a074c"></a>maddr_cam&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac15c184c7c063b832a1b29ab80beda15ad6d985e8ca8b3222dbc3765c92159241" name="ac15c184c7c063b832a1b29ab80beda15ad6d985e8ca8b3222dbc3765c92159241"></a>maddr_adc&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac15c184c7c063b832a1b29ab80beda15aad6f04da0f54374a8de6bc23a443ba13" name="ac15c184c7c063b832a1b29ab80beda15aad6f04da0f54374a8de6bc23a443ba13"></a>maddr_ioctrl&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac15c184c7c063b832a1b29ab80beda15a03144b9418f640f6ab17d9c8b37e26bf" name="ac15c184c7c063b832a1b29ab80beda15a03144b9418f640f6ab17d9c8b37e26bf"></a>maddr_dac&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

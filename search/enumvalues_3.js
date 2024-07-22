@@ -2,8 +2,8 @@ var searchData=
 [
   ['dac8568_5fcamera_0',['DAC8568_camera',['../enum__settings_8h.html#a09974326d8346ab51cc2e499aabc55e8a8fb79ee44544b0c75f0827b45739bcd6',1,'enum_settings.h']]],
   ['dac8568_5fpcie_1',['DAC8568_pcie',['../enum__settings_8h.html#a09974326d8346ab51cc2e499aabc55e8a597af1a07b998030ae8743472cc5e227',1,'enum_settings.h']]],
-  ['dac_5fhi_5fbyte_5faddr_2',['dac_hi_byte_addr',['../enum__hardware_8h.html#a6088fcda9571ea67be3dd49e46438941a13e677bf1e5a18b593a1f15dc5aec78c',1,'enum_hardware.h']]],
-  ['dac_5flo_5fbyte_5faddr_3',['dac_lo_byte_addr',['../enum__hardware_8h.html#a6088fcda9571ea67be3dd49e46438941ac8c08b995e26d29222d1cc22f667e79c',1,'enum_hardware.h']]],
+  ['dac_5fhi_5fbyte_5faddr_2',['dac_hi_byte_addr',['../enum__hardware_8h.html#a4f248f174f6a6ad94a112e607b78fd57a13e677bf1e5a18b593a1f15dc5aec78c',1,'enum_hardware.h']]],
+  ['dac_5flo_5fbyte_5faddr_3',['dac_lo_byte_addr',['../enum__hardware_8h.html#a4f248f174f6a6ad94a112e607b78fd57ac8c08b995e26d29222d1cc22f667e79c',1,'enum_hardware.h']]],
   ['dat_4',['dat',['../enum__settings_8h.html#a6d33f21be3f0c5cf91c5d638e8aca086ac2fd29f1a5a7209a6a6f1f242d1ed16c',1,'enum_settings.h']]],
   ['devicecontrol_5fmaxpayloadsize_5fbitindex_5',['deviceControl_maxPayloadSize_bitindex',['../enum__hardware_8h.html#a27c45d119d78ca12b7e38e47cb02907faf9bf7d20432b6d491a5a577111d6db48',1,'enum_hardware.h']]],
   ['devicecontrol_5fmaxpayloadsize_5fbits_6',['deviceControl_maxPayloadSize_bits',['../enum__hardware_8h.html#a27c45d119d78ca12b7e38e47cb02907fa88e19e987ba0a38be1791caf439bc181',1,'enum_hardware.h']]],
