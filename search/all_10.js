@@ -96,7 +96,7 @@ var searchData=
   ['setbits0_5f32_93',['setBitS0_32',['../_board_8c.html#a94e81f812b99112417ca7dbd669ed222',1,'Board.c']]],
   ['setbits0_5f32_5fallboards_94',['setBitS0_32_allBoards',['../_board_8c.html#acc75a69baa8e2d7062087d086b9dad92',1,'Board.c']]],
   ['setbits0_5f8_95',['setBitS0_8',['../_board_8c.html#a96dd143d633fa69b57efb78501f2face',1,'Board.c']]],
-  ['setblockon_96',['setBlockOn',['../_board_8c.html#a2026ffe4e42fc75beab1cf088480e538',1,'Board.c']]],
+  ['setblocken_96',['setBlockEn',['../_board_8c.html#abc0bb8f2058df16be0d0259a62188dc7',1,'Board.c']]],
   ['setbslope_97',['SetBSlope',['../_board_8c.html#a83fa04b79d86cd14cbb756c2bb3b2546',1,'Board.c']]],
   ['setbti_98',['SetBTI',['../_board_8c.html#a5278979fb4afa78543c910e6f0c9df60',1,'Board.c']]],
   ['setbticnt_99',['SetBticnt',['../_board_8c.html#a75f034c58eab5843ac037720ee2d1a87',1,'Board.c']]],
