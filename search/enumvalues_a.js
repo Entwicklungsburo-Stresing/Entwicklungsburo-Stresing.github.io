@@ -119,5 +119,11 @@ var searchData=
   ['pixel_5fscan_5findex2_5fhigh_116',['pixel_scan_index2_high',['../enum__hardware_8h.html#aa5345f9ae48237dce9cbde9e67b4a3aaab0e076ab28177d460363e8f9b2bbb2a9',1,'enum_hardware.h']]],
   ['pixel_5fscan_5findex2_5flow_117',['pixel_scan_index2_low',['../enum__hardware_8h.html#aa5345f9ae48237dce9cbde9e67b4a3aaa94be359d0861485628ae3f9d91d4fc1f',1,'enum_hardware.h']]],
   ['pixel_5fscan_5findex_5fhigh_118',['pixel_scan_index_high',['../enum__hardware_8h.html#ab4e169cedf37f6a55251e0d15f33a2b1a5fca2bf954bb4dcccac8c92c6820beec',1,'enum_hardware.h']]],
-  ['pixel_5fscan_5findex_5flow_119',['pixel_scan_index_low',['../enum__hardware_8h.html#ab4e169cedf37f6a55251e0d15f33a2b1a2b1fe011b3c408c3ff73b8b42638cc2b',1,'enum_hardware.h']]]
+  ['pixel_5fscan_5findex_5flow_119',['pixel_scan_index_low',['../enum__hardware_8h.html#ab4e169cedf37f6a55251e0d15f33a2b1a2b1fe011b3c408c3ff73b8b42638cc2b',1,'enum_hardware.h']]],
+  ['pixreg_5fbitindex_5fffctrl_120',['PIXREG_bitindex_FFCTRL',['../enum__hardware_8h.html#a4135c818736b2a4f9ab7371ecdfdcfbea0e63ccf93337bedc08866155e1b6dd13',1,'enum_hardware.h']]],
+  ['pixreg_5fbitindex_5fffflags_121',['PIXREG_bitindex_FFFLAGS',['../enum__hardware_8h.html#a4135c818736b2a4f9ab7371ecdfdcfbea0dd76c90bf35e0aeec98d30423f8607c',1,'enum_hardware.h']]],
+  ['pixreg_5fbitindex_5fpixel_122',['PIXREG_bitindex_pixel',['../enum__hardware_8h.html#a4135c818736b2a4f9ab7371ecdfdcfbea4d0015c63ff551c55a675549a8812648',1,'enum_hardware.h']]],
+  ['pixreg_5fbits_5fffctrl_123',['PIXREG_bits_FFCTRL',['../enum__hardware_8h.html#a4135c818736b2a4f9ab7371ecdfdcfbea17be9cc17277bf18741af6d6abc1d762',1,'enum_hardware.h']]],
+  ['pixreg_5fbits_5fffflags_124',['PIXREG_bits_FFFLAGS',['../enum__hardware_8h.html#a4135c818736b2a4f9ab7371ecdfdcfbeac873847c0598e7d945b3a3e2a282a185',1,'enum_hardware.h']]],
+  ['pixreg_5fbits_5fpixel_125',['PIXREG_bits_pixel',['../enum__hardware_8h.html#a4135c818736b2a4f9ab7371ecdfdcfbea698022a0babf0ca06a9f4ed7a6f9664a',1,'enum_hardware.h']]]
 ];

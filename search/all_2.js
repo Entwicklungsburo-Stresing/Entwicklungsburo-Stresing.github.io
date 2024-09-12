@@ -56,6 +56,7 @@ var searchData=
   ['btime_5fin_5fmicrosec_53',['btime_in_microsec',['../structcamera__settings.html#a2c83fba5f72159010fc146c2c52209de',1,'camera_settings']]],
   ['btimer_5fbits_54',['BTIMER_bits',['../enum__hardware_8h.html#a7d739707ceb5ec9f28a9da898735cbe8a47c6cd3c204d55980ee05af1bf2f445f',1,'enum_hardware.h']]],
   ['btimer_5fbits_5ft_55',['BTIMER_bits_t',['../enum__hardware_8h.html#a7d739707ceb5ec9f28a9da898735cbe8',1,'enum_hardware.h']]],
-  ['byte_5fto_5fbinary_56',['BYTE_TO_BINARY',['../_board_8c.html#aa28480bfa03957b4f284c13e800ca8b0',1,'Board.c']]],
-  ['byte_5fto_5fbinary_5fpattern_57',['BYTE_TO_BINARY_PATTERN',['../_board_8c.html#ae8b243fdac3715a3da7c98b9a380eaa5',1,'Board.c']]]
+  ['buffer_5fsize_56',['BUFFER_SIZE',['../es__status__codes_8c.html#a6b20d41d6252e9871430c242cb1a56e7',1,'es_status_codes.c']]],
+  ['byte_5fto_5fbinary_57',['BYTE_TO_BINARY',['../_board_8c.html#aa28480bfa03957b4f284c13e800ca8b0',1,'Board.c']]],
+  ['byte_5fto_5fbinary_5fpattern_58',['BYTE_TO_BINARY_PATTERN',['../_board_8c.html#ae8b243fdac3715a3da7c98b9a380eaa5',1,'Board.c']]]
 ];

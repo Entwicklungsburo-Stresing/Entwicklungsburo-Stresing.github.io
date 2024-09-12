@@ -120,8 +120,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a690fcfefd2d5c8563f1e7b1573b749b2" id="r_a690fcfefd2d5c8563f1e7b1573b749b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a690fcfefd2d5c8563f1e7b1573b749b2">InitMeasurement</a> ()</td></tr>
 <tr class="memdesc:a690fcfefd2d5c8563f1e7b1573b749b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize measurement (using board select).  <br /></td></tr>
 <tr class="separator:a690fcfefd2d5c8563f1e7b1573b749b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8603a114bf899a76a948f0b223e8bad1" id="r_a8603a114bf899a76a948f0b223e8bad1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8603a114bf899a76a948f0b223e8bad1">SetGlobalVariables</a> (uint32_t drvno)</td></tr>
-<tr class="separator:a8603a114bf899a76a948f0b223e8bad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47fa87edde1c86378e95c56becc032c2" id="r_a47fa87edde1c86378e95c56becc032c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47fa87edde1c86378e95c56becc032c2">SetVirtualCamcnt</a> (uint32_t drvno)</td></tr>
+<tr class="separator:a47fa87edde1c86378e95c56becc032c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0336ba6d9d3ac9b4b91bf784742ab458" id="r_a0336ba6d9d3ac9b4b91bf784742ab458"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0336ba6d9d3ac9b4b91bf784742ab458">InitSoftware</a> (uint32_t drvno)</td></tr>
 <tr class="separator:a0336ba6d9d3ac9b4b91bf784742ab458"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee64812ea151fd482e82bfe967922a31" id="r_aee64812ea151fd482e82bfe967922a31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee64812ea151fd482e82bfe967922a31">InitPcieBoard</a> (uint32_t drvno)</td></tr>
@@ -6226,23 +6226,6 @@ es_status_codes<ul>
 
 </div>
 </div>
-<a id="a8603a114bf899a76a948f0b223e8bad1" name="a8603a114bf899a76a948f0b223e8bad1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8603a114bf899a76a948f0b223e8bad1">&#9670;&#160;</a></span>SetGlobalVariables()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void SetGlobalVariables </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a5aab4bbc7e0a82cf9dd000e7e10d768d" name="a5aab4bbc7e0a82cf9dd000e7e10d768d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5aab4bbc7e0a82cf9dd000e7e10d768d">&#9670;&#160;</a></span>SetGPXCtrl()</h2>
 
@@ -7237,6 +7220,23 @@ es_status_codes<ul>
 <li>vfreq (bits 14...1) - for cams with FFT_v2 FPGAs, that generate their own vclks inside the cam</li>
 <li>is_fft (bit 0) - as before but legacy to run FFT_v1 cameras </li>
 </ul>
+
+</div>
+</div>
+<a id="a47fa87edde1c86378e95c56becc032c2" name="a47fa87edde1c86378e95c56becc032c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47fa87edde1c86378e95c56becc032c2">&#9670;&#160;</a></span>SetVirtualCamcnt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetVirtualCamcnt </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

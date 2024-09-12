@@ -12,12 +12,9 @@ var searchData=
   ['tempgood_9',['tempGood',['../structspecial__pixels.html#abad58c7db9fdbfc3f747d0816b36c207',1,'special_pixels']]],
   ['timeron_10',['timerOn',['../globals_8h.html#af15269ff90986dd874dc8775f8e8417a',1,'timerOn:&#160;globals.c'],['../globals_8c.html#af15269ff90986dd874dc8775f8e8417a',1,'timerOn:&#160;globals.c']]],
   ['timestamp_11',['timestamp',['../structfile__header.html#ac4a7ee4e4d986ebaf0376ea4c06843cc',1,'file_header']]],
-  ['tmp_5facamcnt_12',['tmp_aCAMCNT',['../globals_8c.html#a05300df16cbd74b85f11dc3a2f0e3d8b',1,'globals.c']]],
-  ['tmp_5fallinterruptsdone_13',['tmp_allInterruptsDone',['../globals_8c.html#a9bb88bdfcf1f5dffe0595ec3ac9e2b27',1,'globals.c']]],
-  ['tmp_5fapixel_14',['tmp_aPIXEL',['../globals_8c.html#a0f50df47d56b2345157a1be92483385a',1,'globals.c']]],
-  ['tmp_5fnob_15',['tmp_Nob',['../globals_8c.html#a4296eb0ad9e761e0902bf32c2f565926',1,'globals.c']]],
-  ['tmp_5fnosbp_16',['tmp_Nosbp',['../globals_8c.html#ae35ab6903e47b285430751eba91d3efb',1,'globals.c']]],
-  ['tocnt_17',['tocnt',['../structcamera__settings.html#a9d36d06df4f4506a30632260bf6b1939',1,'camera_settings']]],
-  ['tor_18',['tor',['../structcamera__settings.html#ac9a0cd5c6fc15fb192e18d623cffca0d',1,'camera_settings']]],
-  ['trigger_5fmode_5fintegrator_19',['trigger_mode_integrator',['../structcamera__settings.html#a81d92a0475fbf332ef99de9748d6b197',1,'camera_settings']]]
+  ['tmp_5fallinterruptsdone_12',['tmp_allInterruptsDone',['../globals_8c.html#a9bb88bdfcf1f5dffe0595ec3ac9e2b27',1,'globals.c']]],
+  ['tmp_5fvirtualcamcnt_13',['tmp_virtualCamcnt',['../globals_8c.html#ab4dde406ff1c3b4d1ff31925c93e22a1',1,'globals.c']]],
+  ['tocnt_14',['tocnt',['../structcamera__settings.html#a9d36d06df4f4506a30632260bf6b1939',1,'camera_settings']]],
+  ['tor_15',['tor',['../structcamera__settings.html#ac9a0cd5c6fc15fb192e18d623cffca0d',1,'camera_settings']]],
+  ['trigger_5fmode_5fintegrator_16',['trigger_mode_integrator',['../structcamera__settings.html#a81d92a0475fbf332ef99de9748d6b197',1,'camera_settings']]]
 ];

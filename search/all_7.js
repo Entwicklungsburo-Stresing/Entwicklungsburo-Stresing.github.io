@@ -70,8 +70,7 @@ var searchData=
   ['gioreg_5fbitindex_5fo7_67',['GIOREG_bitindex_O7',['../enum__hardware_8h.html#a95871548cbf0bc64201636b985255292a505efe3dd67df5f50ed2241c6753bc86',1,'enum_hardware.h']]],
   ['gioreg_5fbitindex_5fo8_68',['GIOREG_bitindex_O8',['../enum__hardware_8h.html#a95871548cbf0bc64201636b985255292a9316d22f8821435b999676d0184933f8',1,'enum_hardware.h']]],
   ['gioreg_5fbits_5ft_69',['GIOREG_bits_t',['../enum__hardware_8h.html#a95871548cbf0bc64201636b985255292',1,'enum_hardware.h']]],
-  ['global_5fvars_70',['global_vars',['../structglobal__vars.html',1,'']]],
-  ['globals_2ec_71',['globals.c',['../globals_8c.html',1,'']]],
-  ['globals_2eh_72',['globals.h',['../globals_8h.html',1,'']]],
-  ['gpx_5foffset_73',['gpx_offset',['../structcamera__settings.html#ad9e618626ec640a5733b33745e844d15',1,'camera_settings']]]
+  ['globals_2ec_70',['globals.c',['../globals_8c.html',1,'']]],
+  ['globals_2eh_71',['globals.h',['../globals_8h.html',1,'']]],
+  ['gpx_5foffset_72',['gpx_offset',['../structcamera__settings.html#ad9e618626ec640a5733b33745e844d15',1,'camera_settings']]]
 ];

@@ -8,5 +8,6 @@ var searchData=
   ['vclkfreq_5fstep_5fvalue_5',['VCLKFREQ_step_value',['../enum__hardware_8h.html#a75e32fc65a7fb4b52dd4b95028820e68a071cae565749d1493a9bed1979aa52f2',1,'enum_hardware.h']]],
   ['verify_5fdata_5fparameter_6',['verify_data_parameter',['../structverify__data__parameter.html',1,'']]],
   ['verifydata_7',['VerifyData',['../_board__ll_8c.html#a47505a02ea693c2a8c7aeb342f8b4ff7',1,'Board_ll.c']]],
-  ['vfreq_8',['vfreq',['../structcamera__settings.html#a2e34276300a6c0e2a56a8404b73ad8de',1,'camera_settings']]]
+  ['vfreq_8',['vfreq',['../structcamera__settings.html#a2e34276300a6c0e2a56a8404b73ad8de',1,'camera_settings']]],
+  ['virtualcamcnt_9',['virtualCamcnt',['../globals_8h.html#a083e32fa5b4292889f2745073ea69ac4',1,'virtualCamcnt:&#160;globals.c'],['../globals_8c.html#a083e32fa5b4292889f2745073ea69ac4',1,'virtualCamcnt:&#160;globals.c']]]
 ];

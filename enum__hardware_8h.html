@@ -263,6 +263,17 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a1dc06a244ac6282e55991ad6c6356dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4135c818736b2a4f9ab7371ecdfdcfbe" id="r_a4135c818736b2a4f9ab7371ecdfdcfbe"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4135c818736b2a4f9ab7371ecdfdcfbe">PIXREG_bits_t</a> { <br />
+&#160;&#160;<a class="el" href="#a4135c818736b2a4f9ab7371ecdfdcfbea4d0015c63ff551c55a675549a8812648">PIXREG_bitindex_pixel</a> = 0
+, <a class="el" href="#a4135c818736b2a4f9ab7371ecdfdcfbea0e63ccf93337bedc08866155e1b6dd13">PIXREG_bitindex_FFCTRL</a> = 16
+, <a class="el" href="#a4135c818736b2a4f9ab7371ecdfdcfbea0dd76c90bf35e0aeec98d30423f8607c">PIXREG_bitindex_FFFLAGS</a> = 24
+, <a class="el" href="#a4135c818736b2a4f9ab7371ecdfdcfbea698022a0babf0ca06a9f4ed7a6f9664a">PIXREG_bits_pixel</a> = 0x0000FFFF
+, <br />
+&#160;&#160;<a class="el" href="#a4135c818736b2a4f9ab7371ecdfdcfbea17be9cc17277bf18741af6d6abc1d762">PIXREG_bits_FFCTRL</a> = 0x00FF0000
+, <a class="el" href="#a4135c818736b2a4f9ab7371ecdfdcfbeac873847c0598e7d945b3a3e2a282a185">PIXREG_bits_FFFLAGS</a> = 0xFF000000
+<br />
+ }</td></tr>
+<tr class="separator:a4135c818736b2a4f9ab7371ecdfdcfbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae08811acd54cb095986ae911d0f988f5" id="r_ae08811acd54cb095986ae911d0f988f5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae08811acd54cb095986ae911d0f988f5">FFCTRL_bits_t</a> { <br />
 &#160;&#160;<a class="el" href="#ae08811acd54cb095986ae911d0f988f5aba3caafa86767fc62e109a749687ba4c">FFCTRL_bit_block_reset</a> = 0x10
 , <a class="el" href="#ae08811acd54cb095986ae911d0f988f5af9df3ffdcc17bb320f3b12a264b46922">FFCTRL_bit_scan_reset</a> = 0x20
@@ -489,7 +500,8 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#aa5ad8175436820f4d8b11ab0153ffa69a64a000918d4731935bc8ac580752e966">BLOCKINDEX_bit_counter_reset</a> = 0x80
  }</td></tr>
 <tr class="separator:aa5ad8175436820f4d8b11ab0153ffa69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f849ecb470c9de06dd3a5bc25c095d6" id="r_a5f849ecb470c9de06dd3a5bc25c095d6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f849ecb470c9de06dd3a5bc25c095d6">CAMCNT_bits_t</a> { <a class="el" href="#a5f849ecb470c9de06dd3a5bc25c095d6a626a649f3eee28c8a8e84971f780cb28">CAMCNT_bits</a> = 0x0F
+<tr class="memitem:a5f849ecb470c9de06dd3a5bc25c095d6" id="r_a5f849ecb470c9de06dd3a5bc25c095d6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f849ecb470c9de06dd3a5bc25c095d6">CAMCNT_bits_t</a> { <a class="el" href="#a5f849ecb470c9de06dd3a5bc25c095d6af343509f1dcf649ca30e7a6ca72bbdf5">CAMCNT_bitindex_camcnt</a> = 0
+, <a class="el" href="#a5f849ecb470c9de06dd3a5bc25c095d6a626a649f3eee28c8a8e84971f780cb28">CAMCNT_bits</a> = 0x0F
  }</td></tr>
 <tr class="separator:a5f849ecb470c9de06dd3a5bc25c095d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a374db1564224f2a8a00585e53bfdc174" id="r_a374db1564224f2a8a00585e53bfdc174"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a374db1564224f2a8a00585e53bfdc174">TDCCtrl_bits_t</a> { <br />
@@ -798,24 +810,24 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="separator:aea22779edbaf246383c1ae9d61f9211a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b853f5fb8845767f82de96ee25f2d59" id="r_a8b853f5fb8845767f82de96ee25f2d59"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b853f5fb8845767f82de96ee25f2d59">autotune_channel_ranges_hsir_t</a> { <br />
-&#160;&#160;<a class="el" href="#a8b853f5fb8845767f82de96ee25f2d59a19721b1a3507e92f107086fd0f8d7ec7">autotune_hsir_ch1_start</a> = 16
+&#160;&#160;<a class="el" href="#a8b853f5fb8845767f82de96ee25f2d59a19721b1a3507e92f107086fd0f8d7ec7">autotune_hsir_ch1_start</a> = 12
 , <a class="el" href="#a8b853f5fb8845767f82de96ee25f2d59a19473b4849b284883d31dbcc9695010a">autotune_hsir_ch1_end</a> = 264
-, <a class="el" href="#a8b853f5fb8845767f82de96ee25f2d59aee7add9aa922c665d3e168fb404a9d75">autotune_hsir_ch2_start</a> = 15
+, <a class="el" href="#a8b853f5fb8845767f82de96ee25f2d59aee7add9aa922c665d3e168fb404a9d75">autotune_hsir_ch2_start</a> = 13
 , <a class="el" href="#a8b853f5fb8845767f82de96ee25f2d59af00b10f7ece004a5cd2f5e38b5112c22">autotune_hsir_ch2_end</a> = 265
 , <br />
-&#160;&#160;<a class="el" href="#a8b853f5fb8845767f82de96ee25f2d59abfbd8faf8d5fae6e0b7a4f15decce8ea">autotune_hsir_ch3_start</a> = 268
+&#160;&#160;<a class="el" href="#a8b853f5fb8845767f82de96ee25f2d59abfbd8faf8d5fae6e0b7a4f15decce8ea">autotune_hsir_ch3_start</a> = 266
 , <a class="el" href="#a8b853f5fb8845767f82de96ee25f2d59ab15782ffcec878815f31b0ac3d94b413">autotune_hsir_ch3_end</a> = 520
-, <a class="el" href="#a8b853f5fb8845767f82de96ee25f2d59a2d29eb092c469252efd2f3866049bbf8">autotune_hsir_ch4_start</a> = 269
+, <a class="el" href="#a8b853f5fb8845767f82de96ee25f2d59a2d29eb092c469252efd2f3866049bbf8">autotune_hsir_ch4_start</a> = 267
 , <a class="el" href="#a8b853f5fb8845767f82de96ee25f2d59a78df6df934d8fff60301e7c2f4e60c1a">autotune_hsir_ch4_end</a> = 521
 , <br />
-&#160;&#160;<a class="el" href="#a8b853f5fb8845767f82de96ee25f2d59a0154685269d22ce28d6f9755a608d981">autotune_hsir_ch5_start</a> = 524
+&#160;&#160;<a class="el" href="#a8b853f5fb8845767f82de96ee25f2d59a0154685269d22ce28d6f9755a608d981">autotune_hsir_ch5_start</a> = 522
 , <a class="el" href="#a8b853f5fb8845767f82de96ee25f2d59a693bbcd4bbe4e67a09f67d6ca2a71ddc">autotune_hsir_ch5_end</a> = 766
-, <a class="el" href="#a8b853f5fb8845767f82de96ee25f2d59ab3247ef31d6ded0de6854557575f62f4">autotune_hsir_ch6_start</a> = 525
+, <a class="el" href="#a8b853f5fb8845767f82de96ee25f2d59ab3247ef31d6ded0de6854557575f62f4">autotune_hsir_ch6_start</a> = 523
 , <a class="el" href="#a8b853f5fb8845767f82de96ee25f2d59a1beb0441325f3ce042f3a9d559d8757b">autotune_hsir_ch6_end</a> = 767
 , <br />
-&#160;&#160;<a class="el" href="#a8b853f5fb8845767f82de96ee25f2d59a94b0a1e297f5da9f2c4cc949bf41bc49">autotune_hsir_ch7_start</a> = 780
+&#160;&#160;<a class="el" href="#a8b853f5fb8845767f82de96ee25f2d59a94b0a1e297f5da9f2c4cc949bf41bc49">autotune_hsir_ch7_start</a> = 778
 , <a class="el" href="#a8b853f5fb8845767f82de96ee25f2d59a2787b30fc5a39626e0060bd918a30d14">autotune_hsir_ch7_end</a> = 1032
-, <a class="el" href="#a8b853f5fb8845767f82de96ee25f2d59a2a91a082bb750f789d74f0b23a881086">autotune_hsir_ch8_start</a> = 781
+, <a class="el" href="#a8b853f5fb8845767f82de96ee25f2d59a2a91a082bb750f789d74f0b23a881086">autotune_hsir_ch8_start</a> = 779
 , <a class="el" href="#a8b853f5fb8845767f82de96ee25f2d59acd7e45ca597e3bb5dc190cf03cf0730a">autotune_hsir_ch8_end</a> = 1031
 <br />
  }</td></tr>
@@ -1302,7 +1314,8 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5f849ecb470c9de06dd3a5bc25c095d6a626a649f3eee28c8a8e84971f780cb28" name="a5f849ecb470c9de06dd3a5bc25c095d6a626a649f3eee28c8a8e84971f780cb28"></a>CAMCNT_bits&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5f849ecb470c9de06dd3a5bc25c095d6af343509f1dcf649ca30e7a6ca72bbdf5" name="a5f849ecb470c9de06dd3a5bc25c095d6af343509f1dcf649ca30e7a6ca72bbdf5"></a>CAMCNT_bitindex_camcnt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5f849ecb470c9de06dd3a5bc25c095d6a626a649f3eee28c8a8e84971f780cb28" name="a5f849ecb470c9de06dd3a5bc25c095d6a626a649f3eee28c8a8e84971f780cb28"></a>CAMCNT_bits&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -2036,6 +2049,28 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a719ffee0dbc151d0a1b93faf887d7be5a92e443cca77b94127320821930ba15c8" name="a719ffee0dbc151d0a1b93faf887d7be5a92e443cca77b94127320821930ba15c8"></a>pixel_fpga_ver_major_and_bit&#160;</td><td class="fielddoc"><p>Used for correcting the pixel to only get the major version of the version number. </p>
 </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a4135c818736b2a4f9ab7371ecdfdcfbe" name="a4135c818736b2a4f9ab7371ecdfdcfbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4135c818736b2a4f9ab7371ecdfdcfbe">&#9670;&#160;</a></span>PIXREG_bits_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a4135c818736b2a4f9ab7371ecdfdcfbe">PIXREG_bits_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4135c818736b2a4f9ab7371ecdfdcfbea4d0015c63ff551c55a675549a8812648" name="a4135c818736b2a4f9ab7371ecdfdcfbea4d0015c63ff551c55a675549a8812648"></a>PIXREG_bitindex_pixel&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4135c818736b2a4f9ab7371ecdfdcfbea0e63ccf93337bedc08866155e1b6dd13" name="a4135c818736b2a4f9ab7371ecdfdcfbea0e63ccf93337bedc08866155e1b6dd13"></a>PIXREG_bitindex_FFCTRL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4135c818736b2a4f9ab7371ecdfdcfbea0dd76c90bf35e0aeec98d30423f8607c" name="a4135c818736b2a4f9ab7371ecdfdcfbea0dd76c90bf35e0aeec98d30423f8607c"></a>PIXREG_bitindex_FFFLAGS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4135c818736b2a4f9ab7371ecdfdcfbea698022a0babf0ca06a9f4ed7a6f9664a" name="a4135c818736b2a4f9ab7371ecdfdcfbea698022a0babf0ca06a9f4ed7a6f9664a"></a>PIXREG_bits_pixel&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4135c818736b2a4f9ab7371ecdfdcfbea17be9cc17277bf18741af6d6abc1d762" name="a4135c818736b2a4f9ab7371ecdfdcfbea17be9cc17277bf18741af6d6abc1d762"></a>PIXREG_bits_FFCTRL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4135c818736b2a4f9ab7371ecdfdcfbeac873847c0598e7d945b3a3e2a282a185" name="a4135c818736b2a4f9ab7371ecdfdcfbeac873847c0598e7d945b3a3e2a282a185"></a>PIXREG_bits_FFFLAGS&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

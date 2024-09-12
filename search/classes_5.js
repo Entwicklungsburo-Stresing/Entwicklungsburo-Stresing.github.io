@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['special_5fpixels_0',['special_pixels',['../structspecial__pixels.html',1,'']]]
+  ['verify_5fdata_5fparameter_0',['verify_data_parameter',['../structverify__data__parameter.html',1,'']]]
 ];
