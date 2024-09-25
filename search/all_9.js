@@ -56,11 +56,10 @@ var searchData=
   ['irqreg_5fbits_5ft_53',['IRQREG_bits_t',['../enum__hardware_8h.html#a112bb7cac94f9939207725ea4c525e5c',1,'enum_hardware.h']]],
   ['is_5fcooled_5fcamera_5flegacy_5fmode_54',['is_cooled_camera_legacy_mode',['../structcamera__settings.html#a12d482c6345afb2116315167cf04b42d',1,'camera_settings']]],
   ['is_5ffft_5flegacy_55',['is_fft_legacy',['../structcamera__settings.html#a3b126accc9d7980b594d7256f767e1cb',1,'camera_settings']]],
-  ['is_5fhs_5fir_56',['is_hs_ir',['../structcamera__settings.html#abcd8b239d6e3ba9fea8fc908b44a77d2',1,'camera_settings']]],
-  ['isblockon_57',['isBlockOn',['../_board_8c.html#af78b4018fa3efb26bfd7a4b35a1f7f21',1,'Board.c']]],
-  ['ismeasureon_58',['isMeasureOn',['../_board_8c.html#ab6754e6743cf456aa2d0d3e62091d74f',1,'Board.c']]],
-  ['isr_59',['isr',['../_board__ll_8c.html#ab13902e201d7091aeb300faa035523d4',1,'Board_ll.c']]],
-  ['isrcounter_60',['IsrCounter',['../_board__ll_8c.html#a97c6372fd53170dcc8673120117fffa3',1,'Board_ll.c']]],
-  ['isrunning_61',['isRunning',['../globals_8h.html#a35e1fbda907c4c69651e7ffed1543106',1,'isRunning:&#160;globals.c'],['../globals_8c.html#a35e1fbda907c4c69651e7ffed1543106',1,'isRunning:&#160;globals.c']]],
-  ['istimeron_62',['IsTimerOn',['../_board_8c.html#a345eb42e31fba376d7ae59c50df2ae69',1,'Board.c']]]
+  ['isblockon_56',['isBlockOn',['../_board_8c.html#af78b4018fa3efb26bfd7a4b35a1f7f21',1,'Board.c']]],
+  ['ismeasureon_57',['isMeasureOn',['../_board_8c.html#ab6754e6743cf456aa2d0d3e62091d74f',1,'Board.c']]],
+  ['isr_58',['isr',['../_board__ll_8c.html#ab13902e201d7091aeb300faa035523d4',1,'Board_ll.c']]],
+  ['isrcounter_59',['IsrCounter',['../_board__ll_8c.html#a97c6372fd53170dcc8673120117fffa3',1,'Board_ll.c']]],
+  ['isrunning_60',['isRunning',['../globals_8h.html#a35e1fbda907c4c69651e7ffed1543106',1,'isRunning:&#160;globals.c'],['../globals_8c.html#a35e1fbda907c4c69651e7ffed1543106',1,'isRunning:&#160;globals.c']]],
+  ['istimeron_61',['IsTimerOn',['../_board_8c.html#a345eb42e31fba376d7ae59c50df2ae69',1,'Board.c']]]
 ];

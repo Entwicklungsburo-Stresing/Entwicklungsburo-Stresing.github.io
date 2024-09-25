@@ -413,6 +413,26 @@ Functions</h2></td></tr>
 <tr class="memitem:a01ec22454cbba97eb4056c4c5d071080" id="r_a01ec22454cbba97eb4056c4c5d071080"><td class="memItemLeft" align="right" valign="top">DllAccess uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01ec22454cbba97eb4056c4c5d071080">DLLGetGammaBlack</a> ()</td></tr>
 <tr class="memdesc:a01ec22454cbba97eb4056c4c5d071080"><td class="mdescLeft">&#160;</td><td class="mdescRight">return gamma value black        <br /></td></tr>
 <tr class="separator:a01ec22454cbba97eb4056c4c5d071080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72b5880c24aca4d29158656141753a81" id="r_a72b5880c24aca4d29158656141753a81"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72b5880c24aca4d29158656141753a81">DLLGetScanTriggerDetected</a> (uint32_t drvno, uint8_t *detected)</td></tr>
+<tr class="memdesc:a72b5880c24aca4d29158656141753a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the bit <a class="el" href="enum__hardware_8h.html#a1d179386b40162fc96b96c12da077dd8a701390510b309f4ef826a5828883f658">PCIEFLAGS_bits_t::PCIEFLAGS_bit_scan_trigger_detected</a>.     <br /></td></tr>
+<tr class="separator:a72b5880c24aca4d29158656141753a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7299f0287f2387914b9a6a8247aa77dc" id="r_a7299f0287f2387914b9a6a8247aa77dc"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7299f0287f2387914b9a6a8247aa77dc">DLLGetBlockTriggerDetected</a> (uint32_t drvno, uint8_t *detected)</td></tr>
+<tr class="memdesc:a7299f0287f2387914b9a6a8247aa77dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the bit <a class="el" href="enum__hardware_8h.html#a1d179386b40162fc96b96c12da077dd8aaeab6d26c9862015dde4fddfe2c1e3a1">PCIEFLAGS_bits_t::PCIEFLAGS_bit_block_trigger_detected</a>.     <br /></td></tr>
+<tr class="separator:a7299f0287f2387914b9a6a8247aa77dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad66a8d68fcbe6a5a1d3597347d3c3749" id="r_ad66a8d68fcbe6a5a1d3597347d3c3749"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad66a8d68fcbe6a5a1d3597347d3c3749">DLLResetScanTriggerDetected</a> (uint32_t drvno)</td></tr>
+<tr class="memdesc:ad66a8d68fcbe6a5a1d3597347d3c3749"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the bit <a class="el" href="enum__hardware_8h.html#a1d179386b40162fc96b96c12da077dd8a701390510b309f4ef826a5828883f658">PCIEFLAGS_bits_t::PCIEFLAGS_bit_scan_trigger_detected</a> to 0.     <br /></td></tr>
+<tr class="separator:ad66a8d68fcbe6a5a1d3597347d3c3749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a086d136f2b990e9dbdcacbe3754dac" id="r_a8a086d136f2b990e9dbdcacbe3754dac"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a086d136f2b990e9dbdcacbe3754dac">DLLResetBlockTriggerDetected</a> (uint32_t drvno)</td></tr>
+<tr class="memdesc:a8a086d136f2b990e9dbdcacbe3754dac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the bit <a class="el" href="enum__hardware_8h.html#a1d179386b40162fc96b96c12da077dd8aaeab6d26c9862015dde4fddfe2c1e3a1">PCIEFLAGS_bits_t::PCIEFLAGS_bit_block_trigger_detected</a> to 0.     <br /></td></tr>
+<tr class="separator:a8a086d136f2b990e9dbdcacbe3754dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02b6f100386e92b45990c13cf17b1919" id="r_a02b6f100386e92b45990c13cf17b1919"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02b6f100386e92b45990c13cf17b1919">DLLGetScanTriggerDetected_multipleBoards</a> (uint8_t *detected0, uint8_t *detected1, uint8_t *detected2, uint8_t *detected3, uint8_t *detected4)</td></tr>
+<tr class="separator:a02b6f100386e92b45990c13cf17b1919"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a129ce895da9c8bb808acc7488a8b6396" id="r_a129ce895da9c8bb808acc7488a8b6396"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a129ce895da9c8bb808acc7488a8b6396">DLLGetBlockTriggerDetected_multipleBoards</a> (uint8_t *detected0, uint8_t *detected1, uint8_t *detected2, uint8_t *detected3, uint8_t *detected4)</td></tr>
+<tr class="separator:a129ce895da9c8bb808acc7488a8b6396"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c2cf9b4a4953236bff9f8c831ec5711" id="r_a8c2cf9b4a4953236bff9f8c831ec5711"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c2cf9b4a4953236bff9f8c831ec5711">DLLResetScanTriggerDetected_multipleBoards</a> ()</td></tr>
+<tr class="separator:a8c2cf9b4a4953236bff9f8c831ec5711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7615d997b344e6db5ed094197f67c55b" id="r_a7615d997b344e6db5ed094197f67c55b"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7615d997b344e6db5ed094197f67c55b">DLLResetBlockTriggerDetected_multipleBoards</a> ()</td></tr>
+<tr class="separator:a7615d997b344e6db5ed094197f67c55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -1472,6 +1492,73 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a7299f0287f2387914b9a6a8247aa77dc" name="a7299f0287f2387914b9a6a8247aa77dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7299f0287f2387914b9a6a8247aa77dc">&#9670;&#160;</a></span>DLLGetBlockTriggerDetected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLGetBlockTriggerDetected </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>detected</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read the bit <a class="el" href="enum__hardware_8h.html#a1d179386b40162fc96b96c12da077dd8aaeab6d26c9862015dde4fddfe2c1e3a1">PCIEFLAGS_bits_t::PCIEFLAGS_bit_block_trigger_detected</a>.    </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">detected</td><td>Pointer to a bool, where the block trigger detected bit will be written. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+
+</div>
+</div>
+<a id="a129ce895da9c8bb808acc7488a8b6396" name="a129ce895da9c8bb808acc7488a8b6396"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a129ce895da9c8bb808acc7488a8b6396">&#9670;&#160;</a></span>DLLGetBlockTriggerDetected_multipleBoards()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLGetBlockTriggerDetected_multipleBoards </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>detected0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>detected1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>detected2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>detected3</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>detected4</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9478aa2950e9c59c9cff74e4f5868afa" name="a9478aa2950e9c59c9cff74e4f5868afa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9478aa2950e9c59c9cff74e4f5868afa">&#9670;&#160;</a></span>DLLGetBonLength()</h2>
 
@@ -2386,6 +2473,73 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Function for multithreading. </p>
+
+</div>
+</div>
+<a id="a72b5880c24aca4d29158656141753a81" name="a72b5880c24aca4d29158656141753a81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72b5880c24aca4d29158656141753a81">&#9670;&#160;</a></span>DLLGetScanTriggerDetected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLGetScanTriggerDetected </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>detected</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read the bit <a class="el" href="enum__hardware_8h.html#a1d179386b40162fc96b96c12da077dd8a701390510b309f4ef826a5828883f658">PCIEFLAGS_bits_t::PCIEFLAGS_bit_scan_trigger_detected</a>.    </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">detected</td><td>Pointer to a bool, where the scan trigger detected bit will be written. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+
+</div>
+</div>
+<a id="a02b6f100386e92b45990c13cf17b1919" name="a02b6f100386e92b45990c13cf17b1919"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02b6f100386e92b45990c13cf17b1919">&#9670;&#160;</a></span>DLLGetScanTriggerDetected_multipleBoards()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLGetScanTriggerDetected_multipleBoards </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>detected0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>detected1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>detected2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>detected3</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>detected4</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -3809,6 +3963,49 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a8a086d136f2b990e9dbdcacbe3754dac" name="a8a086d136f2b990e9dbdcacbe3754dac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a086d136f2b990e9dbdcacbe3754dac">&#9670;&#160;</a></span>DLLResetBlockTriggerDetected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLResetBlockTriggerDetected </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reset the bit <a class="el" href="enum__hardware_8h.html#a1d179386b40162fc96b96c12da077dd8aaeab6d26c9862015dde4fddfe2c1e3a1">PCIEFLAGS_bits_t::PCIEFLAGS_bit_block_trigger_detected</a> to 0.    </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+
+</div>
+</div>
+<a id="a7615d997b344e6db5ed094197f67c55b" name="a7615d997b344e6db5ed094197f67c55b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7615d997b344e6db5ed094197f67c55b">&#9670;&#160;</a></span>DLLResetBlockTriggerDetected_multipleBoards()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLResetBlockTriggerDetected_multipleBoards </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a46a74ee7857fb9f31f691fe6ca0e2981" name="a46a74ee7857fb9f31f691fe6ca0e2981"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a46a74ee7857fb9f31f691fe6ca0e2981">&#9670;&#160;</a></span>DLLResetDSC()</h2>
 
@@ -3859,6 +4056,49 @@ Variables</h2></td></tr>
 </li>
 </ul>
 </dd></dl>
+
+</div>
+</div>
+<a id="ad66a8d68fcbe6a5a1d3597347d3c3749" name="ad66a8d68fcbe6a5a1d3597347d3c3749"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad66a8d68fcbe6a5a1d3597347d3c3749">&#9670;&#160;</a></span>DLLResetScanTriggerDetected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLResetScanTriggerDetected </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reset the bit <a class="el" href="enum__hardware_8h.html#a1d179386b40162fc96b96c12da077dd8a701390510b309f4ef826a5828883f658">PCIEFLAGS_bits_t::PCIEFLAGS_bit_scan_trigger_detected</a> to 0.    </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+
+</div>
+</div>
+<a id="a8c2cf9b4a4953236bff9f8c831ec5711" name="a8c2cf9b4a4953236bff9f8c831ec5711"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c2cf9b4a4953236bff9f8c831ec5711">&#9670;&#160;</a></span>DLLResetScanTriggerDetected_multipleBoards()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLResetScanTriggerDetected_multipleBoards </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

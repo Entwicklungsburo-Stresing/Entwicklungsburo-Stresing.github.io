@@ -226,6 +226,11 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#ac4e3d5d9199c915edd34fcf8c0be1166a26d3cf90e8758027d23ad77047fd5b07">settings_level_free</a> = 1
  }</td></tr>
 <tr class="separator:ac4e3d5d9199c915edd34fcf8c0be1166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5baa77ee33be73547f4e348a68da6e3e" id="r_a5baa77ee33be73547f4e348a68da6e3e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5baa77ee33be73547f4e348a68da6e3e">channel_select_t</a> { <a class="el" href="#a5baa77ee33be73547f4e348a68da6e3ea00a00abe32363827f0bcb7eb9f188aca">channel_select_A</a> = 0
+, <a class="el" href="#a5baa77ee33be73547f4e348a68da6e3ead5fa4505652d22b1c927e6ff918826e6">channel_select_B</a> = 1
+, <a class="el" href="#a5baa77ee33be73547f4e348a68da6e3eac9b905306698f7f1f09243db66a463be">channel_select_A_B</a> = 2
+ }</td></tr>
+<tr class="separator:a5baa77ee33be73547f4e348a68da6e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a760a8dafdcddcfadfea0aa3e01159164" name="a760a8dafdcddcfadfea0aa3e01159164"></a>
@@ -241,11 +246,11 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>ADC mode shows the options for <a class="el" href="structcamera__settings.html#af7e1f7b31ae0973dc8a3ca8579f851aa">camera_settings::adc_mode</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a760a8dafdcddcfadfea0aa3e01159164aebc81705969b8c5ae986b0b2ec08d1d5" name="a760a8dafdcddcfadfea0aa3e01159164aebc81705969b8c5ae986b0b2ec08d1d5"></a>normal&#160;</td><td class="fielddoc"><p>0: Normal operation, default. </p>
+<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="a760a8dafdcddcfadfea0aa3e01159164aebc81705969b8c5ae986b0b2ec08d1d5" name="a760a8dafdcddcfadfea0aa3e01159164aebc81705969b8c5ae986b0b2ec08d1d5"></a>normal&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"><p>Normal operation, default. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a760a8dafdcddcfadfea0aa3e01159164a89cd38755edb2809cf6ed80b3ba8760d" name="a760a8dafdcddcfadfea0aa3e01159164a89cd38755edb2809cf6ed80b3ba8760d"></a>ramp&#160;</td><td class="fielddoc"><p>1: Every 8 channels are performing a ramp signal. </p>
+<tr><td class="fieldname"><a id="a760a8dafdcddcfadfea0aa3e01159164a89cd38755edb2809cf6ed80b3ba8760d" name="a760a8dafdcddcfadfea0aa3e01159164a89cd38755edb2809cf6ed80b3ba8760d"></a>ramp&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"><p>Every 8 channels are performing a ramp signal. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a760a8dafdcddcfadfea0aa3e01159164a4a7a5bdd9acf4b955bb227d97d92f3a9" name="a760a8dafdcddcfadfea0aa3e01159164a4a7a5bdd9acf4b955bb227d97d92f3a9"></a>custom_pattern&#160;</td><td class="fielddoc"><p>2: With custom pattern all 8 ADC channels deliver a specific constant value given by <a class="el" href="structcamera__settings.html#a54be4b6539b096109c43abdf0a489fb7">camera_settings::adc_custom_pattern</a>. </p>
+<tr><td class="fieldname"><a id="a760a8dafdcddcfadfea0aa3e01159164a4a7a5bdd9acf4b955bb227d97d92f3a9" name="a760a8dafdcddcfadfea0aa3e01159164a4a7a5bdd9acf4b955bb227d97d92f3a9"></a>custom_pattern&#160;</td><td class="fieldinit">2&#160;</td><td class="fielddoc"><p>With custom pattern all 8 ADC channels deliver a specific constant value given by <a class="el" href="structcamera__settings.html#a54be4b6539b096109c43abdf0a489fb7">camera_settings::adc_custom_pattern</a>. </p>
 </td></tr>
 </table>
 
@@ -264,13 +269,13 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>This enum shows all options for the setting <a class="el" href="structcamera__settings.html#a12c8fa4bdad6fccbdd1a767a44792627">camera_settings::bnc_out</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3ccb55ee2f9a77e32aec7dda8ab59e83a726670f3ed670b72776ec01ac35e3331" name="a3ccb55ee2f9a77e32aec7dda8ab59e83a726670f3ed670b72776ec01ac35e3331"></a>bnc_out_xck&#160;</td><td class="fielddoc"><p>0: XCK is high during the readout of the camera. </p>
+<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="a3ccb55ee2f9a77e32aec7dda8ab59e83a726670f3ed670b72776ec01ac35e3331" name="a3ccb55ee2f9a77e32aec7dda8ab59e83a726670f3ed670b72776ec01ac35e3331"></a>bnc_out_xck&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"><p>XCK is high during the readout of the camera. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3ccb55ee2f9a77e32aec7dda8ab59e83afd1ef969348a60ab7d6e72b6b3b7f6bf" name="a3ccb55ee2f9a77e32aec7dda8ab59e83afd1ef969348a60ab7d6e72b6b3b7f6bf"></a>bnc_out_exp_win&#160;</td><td class="fielddoc"><p>1: Exp win stands for exposure window and is high, when the sensor is ready to be exposed to light. </p>
+<tr><td class="fieldname"><a id="a3ccb55ee2f9a77e32aec7dda8ab59e83afd1ef969348a60ab7d6e72b6b3b7f6bf" name="a3ccb55ee2f9a77e32aec7dda8ab59e83afd1ef969348a60ab7d6e72b6b3b7f6bf"></a>bnc_out_exp_win&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"><p>Exp win stands for exposure window and is high, when the sensor is ready to be exposed to light. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3ccb55ee2f9a77e32aec7dda8ab59e83aa6de3eb072d3886fa1787092bb71aef1" name="a3ccb55ee2f9a77e32aec7dda8ab59e83aa6de3eb072d3886fa1787092bb71aef1"></a>bnc_out_adc_clk&#160;</td><td class="fielddoc"><p>2: The option ADC CLK sets the output to the ADC clock. </p>
+<tr><td class="fieldname"><a id="a3ccb55ee2f9a77e32aec7dda8ab59e83aa6de3eb072d3886fa1787092bb71aef1" name="a3ccb55ee2f9a77e32aec7dda8ab59e83aa6de3eb072d3886fa1787092bb71aef1"></a>bnc_out_adc_clk&#160;</td><td class="fieldinit">2&#160;</td><td class="fielddoc"><p>The option ADC CLK sets the output to the ADC clock. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3ccb55ee2f9a77e32aec7dda8ab59e83a1e11726e1400f8c0ad73a611afc7424b" name="a3ccb55ee2f9a77e32aec7dda8ab59e83a1e11726e1400f8c0ad73a611afc7424b"></a>bnc_out_Vin&#160;</td><td class="fielddoc"><p>3: Vin is high when the voltage input is sampled. </p>
+<tr><td class="fieldname"><a id="a3ccb55ee2f9a77e32aec7dda8ab59e83a1e11726e1400f8c0ad73a611afc7424b" name="a3ccb55ee2f9a77e32aec7dda8ab59e83a1e11726e1400f8c0ad73a611afc7424b"></a>bnc_out_Vin&#160;</td><td class="fieldinit">3&#160;</td><td class="fielddoc"><p>Vin is high when the voltage input is sampled. </p>
 </td></tr>
 </table>
 
@@ -289,11 +294,11 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>This enum shows all options for the setting <a class="el" href="structcamera__settings.html#aad2f5116d777038bcb58543db3caf877">camera_settings::bslope</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6e2fb72f49966ca5028850e2e30dc586a995d52f9d94a04b8dce7957075329003" name="a6e2fb72f49966ca5028850e2e30dc586a995d52f9d94a04b8dce7957075329003"></a>bslope_neg&#160;</td><td class="fielddoc"><p>0: Use only negative slopes of the trigger input to start a block. </p>
+<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="a6e2fb72f49966ca5028850e2e30dc586a995d52f9d94a04b8dce7957075329003" name="a6e2fb72f49966ca5028850e2e30dc586a995d52f9d94a04b8dce7957075329003"></a>bslope_neg&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"><p>Use only negative slopes of the trigger input to start a block. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a6e2fb72f49966ca5028850e2e30dc586a4f631a3ca702bc15ac3b6f597c26df86" name="a6e2fb72f49966ca5028850e2e30dc586a4f631a3ca702bc15ac3b6f597c26df86"></a>bslope_pos&#160;</td><td class="fielddoc"><p>1: Use only positive slopes of the trigger input to start a block. </p>
+<tr><td class="fieldname"><a id="a6e2fb72f49966ca5028850e2e30dc586a4f631a3ca702bc15ac3b6f597c26df86" name="a6e2fb72f49966ca5028850e2e30dc586a4f631a3ca702bc15ac3b6f597c26df86"></a>bslope_pos&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"><p>Use only positive slopes of the trigger input to start a block. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a6e2fb72f49966ca5028850e2e30dc586a0952824a300b32293f01e488f8f46c43" name="a6e2fb72f49966ca5028850e2e30dc586a0952824a300b32293f01e488f8f46c43"></a>bslope_both&#160;</td><td class="fielddoc"><p>2: Use both slopes of the trigger input to start a block. </p>
+<tr><td class="fieldname"><a id="a6e2fb72f49966ca5028850e2e30dc586a0952824a300b32293f01e488f8f46c43" name="a6e2fb72f49966ca5028850e2e30dc586a0952824a300b32293f01e488f8f46c43"></a>bslope_both&#160;</td><td class="fieldinit">2&#160;</td><td class="fielddoc"><p>Use both slopes of the trigger input to start a block. </p>
 </td></tr>
 </table>
 
@@ -312,21 +317,21 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Block trigger input mode shows the options for <a class="el" href="structcamera__settings.html#a6578f775f4bbad6da1ec2d85323a8458">camera_settings::bti_mode</a> </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2fce6aa348483bc730e1693a39bc0e00ae3e686f8f655223a1c70878846810d52" name="a2fce6aa348483bc730e1693a39bc0e00ae3e686f8f655223a1c70878846810d52"></a>bti_I&#160;</td><td class="fielddoc"><p>0: External trigger on input I of PCIe board </p>
+<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="a2fce6aa348483bc730e1693a39bc0e00ae3e686f8f655223a1c70878846810d52" name="a2fce6aa348483bc730e1693a39bc0e00ae3e686f8f655223a1c70878846810d52"></a>bti_I&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"><p>External trigger on input I of PCIe board </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2fce6aa348483bc730e1693a39bc0e00a61bca85750088bd3f46ffe2f425c5bbf" name="a2fce6aa348483bc730e1693a39bc0e00a61bca85750088bd3f46ffe2f425c5bbf"></a>bti_S1&#160;</td><td class="fielddoc"><p>1: External trigger on input S1 of PCIe board </p>
+<tr><td class="fieldname"><a id="a2fce6aa348483bc730e1693a39bc0e00a61bca85750088bd3f46ffe2f425c5bbf" name="a2fce6aa348483bc730e1693a39bc0e00a61bca85750088bd3f46ffe2f425c5bbf"></a>bti_S1&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"><p>External trigger on input S1 of PCIe board </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2fce6aa348483bc730e1693a39bc0e00a5879bf4c0aad3807d8a4f4faa0fb9d7a" name="a2fce6aa348483bc730e1693a39bc0e00a5879bf4c0aad3807d8a4f4faa0fb9d7a"></a>bti_S2&#160;</td><td class="fielddoc"><p>2: External trigger on input S2 of PCIe board </p>
+<tr><td class="fieldname"><a id="a2fce6aa348483bc730e1693a39bc0e00a5879bf4c0aad3807d8a4f4faa0fb9d7a" name="a2fce6aa348483bc730e1693a39bc0e00a5879bf4c0aad3807d8a4f4faa0fb9d7a"></a>bti_S2&#160;</td><td class="fieldinit">2&#160;</td><td class="fielddoc"><p>External trigger on input S2 of PCIe board </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2fce6aa348483bc730e1693a39bc0e00a5eb74bef97fe66846db9fd28e811a647" name="a2fce6aa348483bc730e1693a39bc0e00a5eb74bef97fe66846db9fd28e811a647"></a>bti_S1S2&#160;</td><td class="fielddoc"><p>3: External trigger when inputs S1 and S2 are high </p>
+<tr><td class="fieldname"><a id="a2fce6aa348483bc730e1693a39bc0e00a5eb74bef97fe66846db9fd28e811a647" name="a2fce6aa348483bc730e1693a39bc0e00a5eb74bef97fe66846db9fd28e811a647"></a>bti_S1S2&#160;</td><td class="fieldinit">3&#160;</td><td class="fielddoc"><p>External trigger when inputs S1 and S2 are high </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2fce6aa348483bc730e1693a39bc0e00aa80f3bc2af101fdd46dee4793eb0d906" name="a2fce6aa348483bc730e1693a39bc0e00aa80f3bc2af101fdd46dee4793eb0d906"></a>bti_BTimer&#160;</td><td class="fielddoc"><p>4: Trigger with internal timer. Select the time between two blocks of readouts with btimer. </p>
+<tr><td class="fieldname"><a id="a2fce6aa348483bc730e1693a39bc0e00aa80f3bc2af101fdd46dee4793eb0d906" name="a2fce6aa348483bc730e1693a39bc0e00aa80f3bc2af101fdd46dee4793eb0d906"></a>bti_BTimer&#160;</td><td class="fieldinit">4&#160;</td><td class="fielddoc"><p>Trigger with internal timer. Select the time between two blocks of readouts with btimer. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2fce6aa348483bc730e1693a39bc0e00abffcfeb792e282ec9a8e148bbc799acf" name="a2fce6aa348483bc730e1693a39bc0e00abffcfeb792e282ec9a8e148bbc799acf"></a>bti_S1chopper&#160;</td><td class="fielddoc"><p>5: S1 chopper </p>
+<tr><td class="fieldname"><a id="a2fce6aa348483bc730e1693a39bc0e00abffcfeb792e282ec9a8e148bbc799acf" name="a2fce6aa348483bc730e1693a39bc0e00abffcfeb792e282ec9a8e148bbc799acf"></a>bti_S1chopper&#160;</td><td class="fieldinit">5&#160;</td><td class="fielddoc"><p>S1 chopper </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2fce6aa348483bc730e1693a39bc0e00a0304e462d9b88ab693db99216b64866b" name="a2fce6aa348483bc730e1693a39bc0e00a0304e462d9b88ab693db99216b64866b"></a>bti_S2chopper&#160;</td><td class="fielddoc"><p>6: S2 chopper </p>
+<tr><td class="fieldname"><a id="a2fce6aa348483bc730e1693a39bc0e00a0304e462d9b88ab693db99216b64866b" name="a2fce6aa348483bc730e1693a39bc0e00a0304e462d9b88ab693db99216b64866b"></a>bti_S2chopper&#160;</td><td class="fieldinit">6&#160;</td><td class="fielddoc"><p>S2 chopper </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2fce6aa348483bc730e1693a39bc0e00aeae696636991e59b1dd01e892b615215" name="a2fce6aa348483bc730e1693a39bc0e00aeae696636991e59b1dd01e892b615215"></a>bti_S1S2chopper&#160;</td><td class="fielddoc"><p>7: S1&amp;S2 chopper </p>
+<tr><td class="fieldname"><a id="a2fce6aa348483bc730e1693a39bc0e00aeae696636991e59b1dd01e892b615215" name="a2fce6aa348483bc730e1693a39bc0e00aeae696636991e59b1dd01e892b615215"></a>bti_S1S2chopper&#160;</td><td class="fieldinit">7&#160;</td><td class="fielddoc"><p>S1&amp;S2 chopper </p>
 </td></tr>
 </table>
 
@@ -345,7 +350,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Camera system shows the options for <a class="el" href="structcamera__settings.html#ab782cf8240d4a3400170ade96a4d11fd">camera_settings::camera_system</a> </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a87d071078d7c7603069e44ced5c5ebfea948b64b6e3ac3f7b6455cccb9bb074d4" name="a87d071078d7c7603069e44ced5c5ebfea948b64b6e3ac3f7b6455cccb9bb074d4"></a>camera_system_3001&#160;</td><td class="fielddoc"><p>0: 3001</p>
+<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="a87d071078d7c7603069e44ced5c5ebfea948b64b6e3ac3f7b6455cccb9bb074d4" name="a87d071078d7c7603069e44ced5c5ebfea948b64b6e3ac3f7b6455cccb9bb074d4"></a>camera_system_3001&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"><p>3001</p>
 <p>These camera versions are a 3001 system:</p><ul>
 <li>205.X</li>
 <li>208.X</li>
@@ -367,7 +372,7 @@ Enumerations</h2></td></tr>
 <li>S16010 </li>
 </ul>
 </td></tr>
-<tr><td class="fieldname"><a id="a87d071078d7c7603069e44ced5c5ebfea8e1523a13c5aeeabd62f0cff9f989350" name="a87d071078d7c7603069e44ced5c5ebfea8e1523a13c5aeeabd62f0cff9f989350"></a>camera_system_3010&#160;</td><td class="fielddoc"><p>1: 3010.</p>
+<tr><td class="fieldname"><a id="a87d071078d7c7603069e44ced5c5ebfea8e1523a13c5aeeabd62f0cff9f989350" name="a87d071078d7c7603069e44ced5c5ebfea8e1523a13c5aeeabd62f0cff9f989350"></a>camera_system_3010&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"><p>3010.</p>
 <p>These camera versions are a 3010 system:</p><ul>
 <li>206.X</li>
 <li>216.X</li>
@@ -379,7 +384,7 @@ Enumerations</h2></td></tr>
 <li>S12198 </li>
 </ul>
 </td></tr>
-<tr><td class="fieldname"><a id="a87d071078d7c7603069e44ced5c5ebfea332824fd648713577dd4f00b4f0695e2" name="a87d071078d7c7603069e44ced5c5ebfea332824fd648713577dd4f00b4f0695e2"></a>camera_system_3030&#160;</td><td class="fielddoc"><p>2: 3030.</p>
+<tr><td class="fieldname"><a id="a87d071078d7c7603069e44ced5c5ebfea332824fd648713577dd4f00b4f0695e2" name="a87d071078d7c7603069e44ced5c5ebfea332824fd648713577dd4f00b4f0695e2"></a>camera_system_3030&#160;</td><td class="fieldinit">2&#160;</td><td class="fielddoc"><p>3030.</p>
 <p>These camera versions are a 3030 system:</p><ul>
 <li>209.X</li>
 <li>212.X</li>
@@ -389,6 +394,26 @@ Enumerations</h2></td></tr>
 <li>G10786 </li>
 </ul>
 </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a5baa77ee33be73547f4e348a68da6e3e" name="a5baa77ee33be73547f4e348a68da6e3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5baa77ee33be73547f4e348a68da6e3e">&#9670;&#160;</a></span>channel_select_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a5baa77ee33be73547f4e348a68da6e3e">channel_select_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This enum shows all options for the setting <a class="el" href="structcamera__settings.html#a362e2141ac18c56f46722ae451f9125c">camera_settings::channel_select</a>. </p>
+<table class="fieldtable">
+<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="a5baa77ee33be73547f4e348a68da6e3ea00a00abe32363827f0bcb7eb9f188aca" name="a5baa77ee33be73547f4e348a68da6e3ea00a00abe32363827f0bcb7eb9f188aca"></a>channel_select_A&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5baa77ee33be73547f4e348a68da6e3ead5fa4505652d22b1c927e6ff918826e6" name="a5baa77ee33be73547f4e348a68da6e3ead5fa4505652d22b1c927e6ff918826e6"></a>channel_select_B&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5baa77ee33be73547f4e348a68da6e3eac9b905306698f7f1f09243db66a463be" name="a5baa77ee33be73547f4e348a68da6e3eac9b905306698f7f1f09243db66a463be"></a>channel_select_A_B&#160;</td><td class="fieldinit">2&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -406,9 +431,9 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>This enum is describing the possible locations of the IC DAC8568 used in <a class="el" href="_board_8c.html#a0d9acc2eff67745f7a2ddf4e3d4422f1" title="Sends data to DAC8568.">DAC8568_sendData()</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a09974326d8346ab51cc2e499aabc55e8a8fb79ee44544b0c75f0827b45739bcd6" name="a09974326d8346ab51cc2e499aabc55e8a8fb79ee44544b0c75f0827b45739bcd6"></a>DAC8568_camera&#160;</td><td class="fielddoc"><p>High speed camera system 3030, PCB 2189-7. </p>
+<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="a09974326d8346ab51cc2e499aabc55e8a8fb79ee44544b0c75f0827b45739bcd6" name="a09974326d8346ab51cc2e499aabc55e8a8fb79ee44544b0c75f0827b45739bcd6"></a>DAC8568_camera&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"><p>High speed camera system 3030, PCB 2189-7. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a09974326d8346ab51cc2e499aabc55e8a597af1a07b998030ae8743472cc5e227" name="a09974326d8346ab51cc2e499aabc55e8a597af1a07b998030ae8743472cc5e227"></a>DAC8568_pcie&#160;</td><td class="fielddoc"><p>PCIe add on board EWS, PCB 2226-3. </p>
+<tr><td class="fieldname"><a id="a09974326d8346ab51cc2e499aabc55e8a597af1a07b998030ae8743472cc5e227" name="a09974326d8346ab51cc2e499aabc55e8a597af1a07b998030ae8743472cc5e227"></a>DAC8568_pcie&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"><p>PCIe add on board EWS, PCB 2226-3. </p>
 </td></tr>
 </table>
 
@@ -427,11 +452,11 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Shows the options for <a class="el" href="structcamera__settings.html#a9a5b9370309e2391bdc0bdfbf7e9df15">camera_settings::fft_mode</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a86f1e46308bfcaf8ceccb822f1d72c57a522dfda85484dd49420f6b436a9e2d9a" name="a86f1e46308bfcaf8ceccb822f1d72c57a522dfda85484dd49420f6b436a9e2d9a"></a>full_binning&#160;</td><td class="fielddoc"><p>0: Full binning is the FFT operation mode for summing up all vertical lines for one readout. The sensor is treated as a single line sensor in this mode. This is the default operation mode. </p>
+<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="a86f1e46308bfcaf8ceccb822f1d72c57a522dfda85484dd49420f6b436a9e2d9a" name="a86f1e46308bfcaf8ceccb822f1d72c57a522dfda85484dd49420f6b436a9e2d9a"></a>full_binning&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"><p>Full binning is the FFT operation mode for summing up all vertical lines for one readout. The sensor is treated as a single line sensor in this mode. This is the default operation mode. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a86f1e46308bfcaf8ceccb822f1d72c57a6f1771bc89a836bb050922037febfa51" name="a86f1e46308bfcaf8ceccb822f1d72c57a6f1771bc89a836bb050922037febfa51"></a>partial_binning&#160;</td><td class="fielddoc"><p>1: Partial binning is the FFT operation mode for summing up a specific count of lines per readout to get the sum of specific regions of the sensor. The number of regions is determined by the setting <a class="el" href="structcamera__settings.html#aba505c7ed0e5a7488ea20f4caf52675b">camera_settings::number_of_regions</a>. The size of each region is determined by the setting <a class="el" href="structcamera__settings.html#a3fa31e4964a41c592d24ce74e4b7ce41">camera_settings::region_size</a>. In this mode the meaning of scans and blocks changes. One "scan" is now one region of the sensor. So <a class="el" href="structmeasurement__settings.html#a5582951172615eb4f290af02142bfa47">measurement_settings::nos</a> should equal <a class="el" href="structcamera__settings.html#aba505c7ed0e5a7488ea20f4caf52675b">camera_settings::number_of_regions</a> and <a class="el" href="structcamera__settings.html#afeb4693c3f62bd567f9063c0412035b5">camera_settings::sti_mode</a> should be set to <a class="el" href="#a0bdcebe838e77385002ccc4077a6e743ac02dcf4e609d7ef3c2bb0da9e27f09f6">sti_mode_t::sti_ASL</a>. One "block" is one complete readout of all regions. The time between two block triggers is the exposure time of the sensor for one complete image. <a class="el" href="structmeasurement__settings.html#ad9ebeb60c094195142db314ea2f596db">measurement_settings::nob</a> and <a class="el" href="structcamera__settings.html#a6578f775f4bbad6da1ec2d85323a8458">camera_settings::bti_mode</a> can be chosen freely. </p>
+<tr><td class="fieldname"><a id="a86f1e46308bfcaf8ceccb822f1d72c57a6f1771bc89a836bb050922037febfa51" name="a86f1e46308bfcaf8ceccb822f1d72c57a6f1771bc89a836bb050922037febfa51"></a>partial_binning&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"><p>Partial binning is the FFT operation mode for summing up a specific count of lines per readout to get the sum of specific regions of the sensor. The number of regions is determined by the setting <a class="el" href="structcamera__settings.html#aba505c7ed0e5a7488ea20f4caf52675b">camera_settings::number_of_regions</a>. The size of each region is determined by the setting <a class="el" href="structcamera__settings.html#a3fa31e4964a41c592d24ce74e4b7ce41">camera_settings::region_size</a>. In this mode the meaning of scans and blocks changes. One "scan" is now one region of the sensor. So <a class="el" href="structmeasurement__settings.html#a5582951172615eb4f290af02142bfa47">measurement_settings::nos</a> should equal <a class="el" href="structcamera__settings.html#aba505c7ed0e5a7488ea20f4caf52675b">camera_settings::number_of_regions</a> and <a class="el" href="structcamera__settings.html#afeb4693c3f62bd567f9063c0412035b5">camera_settings::sti_mode</a> should be set to <a class="el" href="#a0bdcebe838e77385002ccc4077a6e743ac02dcf4e609d7ef3c2bb0da9e27f09f6">sti_mode_t::sti_ASL</a>. One "block" is one complete readout of all regions. The time between two block triggers is the exposure time of the sensor for one complete image. <a class="el" href="structmeasurement__settings.html#ad9ebeb60c094195142db314ea2f596db">measurement_settings::nob</a> and <a class="el" href="structcamera__settings.html#a6578f775f4bbad6da1ec2d85323a8458">camera_settings::bti_mode</a> can be chosen freely. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a86f1e46308bfcaf8ceccb822f1d72c57a322132ec60ef92afd82ebd8b5833ffe9" name="a86f1e46308bfcaf8ceccb822f1d72c57a322132ec60ef92afd82ebd8b5833ffe9"></a>area_mode&#160;</td><td class="fielddoc"><p>2: Area mode is the FFT operation mode for reading out each vertical line separately. In this mode the meaning of scans and blocks changes. One "scan" is now one line of the sensor. So <a class="el" href="structmeasurement__settings.html#a5582951172615eb4f290af02142bfa47">measurement_settings::nos</a> should equal <a class="el" href="structcamera__settings.html#a74f4f26e7f43bf7f40bef828ac5849e0">camera_settings::fft_lines</a> and <a class="el" href="structcamera__settings.html#afeb4693c3f62bd567f9063c0412035b5">camera_settings::sti_mode</a> should be set to <a class="el" href="#a0bdcebe838e77385002ccc4077a6e743ac02dcf4e609d7ef3c2bb0da9e27f09f6">sti_mode_t::sti_ASL</a>. One "block" is one complete readout of all lines. The time between two block triggers is the exposure time of the sensor for one complete image. <a class="el" href="structmeasurement__settings.html#ad9ebeb60c094195142db314ea2f596db">measurement_settings::nob</a> and <a class="el" href="structcamera__settings.html#a6578f775f4bbad6da1ec2d85323a8458">camera_settings::bti_mode</a> can be chosen freely. </p>
+<tr><td class="fieldname"><a id="a86f1e46308bfcaf8ceccb822f1d72c57a322132ec60ef92afd82ebd8b5833ffe9" name="a86f1e46308bfcaf8ceccb822f1d72c57a322132ec60ef92afd82ebd8b5833ffe9"></a>area_mode&#160;</td><td class="fieldinit">2&#160;</td><td class="fielddoc"><p>Area mode is the FFT operation mode for reading out each vertical line separately. In this mode the meaning of scans and blocks changes. One "scan" is now one line of the sensor. So <a class="el" href="structmeasurement__settings.html#a5582951172615eb4f290af02142bfa47">measurement_settings::nos</a> should equal <a class="el" href="structcamera__settings.html#a74f4f26e7f43bf7f40bef828ac5849e0">camera_settings::fft_lines</a> and <a class="el" href="structcamera__settings.html#afeb4693c3f62bd567f9063c0412035b5">camera_settings::sti_mode</a> should be set to <a class="el" href="#a0bdcebe838e77385002ccc4077a6e743ac02dcf4e609d7ef3c2bb0da9e27f09f6">sti_mode_t::sti_ASL</a>. One "block" is one complete readout of all lines. The time between two block triggers is the exposure time of the sensor for one complete image. <a class="el" href="structmeasurement__settings.html#ad9ebeb60c094195142db314ea2f596db">measurement_settings::nob</a> and <a class="el" href="structcamera__settings.html#a6578f775f4bbad6da1ec2d85323a8458">camera_settings::bti_mode</a> can be chosen freely. </p>
 </td></tr>
 </table>
 
@@ -450,21 +475,21 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Sensor type shows the options for <a class="el" href="structcamera__settings.html#a3c95b63babcb2222a271e2cd42b6e057">camera_settings::sensor_type</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a089f166159fb19f10d81c65c1d8793a2a94e479efd9002ec62311463b9ffdf772" name="a089f166159fb19f10d81c65c1d8793a2a94e479efd9002ec62311463b9ffdf772"></a>sensor_type_pda&#160;</td><td class="fielddoc"><p>0: PDA - Photodiode Array.</p>
+<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="a089f166159fb19f10d81c65c1d8793a2a94e479efd9002ec62311463b9ffdf772" name="a089f166159fb19f10d81c65c1d8793a2a94e479efd9002ec62311463b9ffdf772"></a>sensor_type_pda&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"><p>PDA - Photodiode Array.</p>
 <p>These sensors are a PDA:</p><ul>
 <li>S3901/S3904</li>
 <li>S3902/S3903</li>
 <li>S8380/S8381 </li>
 </ul>
 </td></tr>
-<tr><td class="fieldname"><a id="a089f166159fb19f10d81c65c1d8793a2a13dd2773c352d66bcdedcb85a05f60db" name="a089f166159fb19f10d81c65c1d8793a2a13dd2773c352d66bcdedcb85a05f60db"></a>sensor_type_ir&#160;</td><td class="fielddoc"><p>1: IR - Infrared</p>
+<tr><td class="fieldname"><a id="a089f166159fb19f10d81c65c1d8793a2a13dd2773c352d66bcdedcb85a05f60db" name="a089f166159fb19f10d81c65c1d8793a2a13dd2773c352d66bcdedcb85a05f60db"></a>sensor_type_ir&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"><p>IR - Infrared</p>
 <p>These sensors are a IR:</p><ul>
 <li>G11608</li>
 <li>G11620</li>
 <li>G9203-256DA G9204-512DA </li>
 </ul>
 </td></tr>
-<tr><td class="fieldname"><a id="a089f166159fb19f10d81c65c1d8793a2ac0844018d4ef84317a2a697eab9b7f01" name="a089f166159fb19f10d81c65c1d8793a2ac0844018d4ef84317a2a697eab9b7f01"></a>sensor_type_fft&#160;</td><td class="fielddoc"><p>2: FFT - Full frame transfer.</p>
+<tr><td class="fieldname"><a id="a089f166159fb19f10d81c65c1d8793a2ac0844018d4ef84317a2a697eab9b7f01" name="a089f166159fb19f10d81c65c1d8793a2ac0844018d4ef84317a2a697eab9b7f01"></a>sensor_type_fft&#160;</td><td class="fieldinit">2&#160;</td><td class="fielddoc"><p>FFT - Full frame transfer.</p>
 <p>These sensors are a FFT:</p><ul>
 <li>S12600/S12601</li>
 <li>S7030/S7031</li>
@@ -472,17 +497,17 @@ Enumerations</h2></td></tr>
 <li>S16010 </li>
 </ul>
 </td></tr>
-<tr><td class="fieldname"><a id="a089f166159fb19f10d81c65c1d8793a2a4c0f2ff3381db278076e451b0625b5d4" name="a089f166159fb19f10d81c65c1d8793a2a4c0f2ff3381db278076e451b0625b5d4"></a>sensor_type_cmos&#160;</td><td class="fielddoc"><p>3: CMOS sensor.</p>
+<tr><td class="fieldname"><a id="a089f166159fb19f10d81c65c1d8793a2a4c0f2ff3381db278076e451b0625b5d4" name="a089f166159fb19f10d81c65c1d8793a2a4c0f2ff3381db278076e451b0625b5d4"></a>sensor_type_cmos&#160;</td><td class="fieldinit">3&#160;</td><td class="fielddoc"><p>CMOS sensor.</p>
 <p>These sensors are a CMOS:</p><ul>
 <li>S12198 </li>
 </ul>
 </td></tr>
-<tr><td class="fieldname"><a id="a089f166159fb19f10d81c65c1d8793a2a4e100373c4b1b26006154c1ec4146dfb" name="a089f166159fb19f10d81c65c1d8793a2a4e100373c4b1b26006154c1ec4146dfb"></a>sensor_type_hsvis&#160;</td><td class="fielddoc"><p>4: HSVIS - High speed sensor for visible light.</p>
+<tr><td class="fieldname"><a id="a089f166159fb19f10d81c65c1d8793a2a4e100373c4b1b26006154c1ec4146dfb" name="a089f166159fb19f10d81c65c1d8793a2a4e100373c4b1b26006154c1ec4146dfb"></a>sensor_type_hsvis&#160;</td><td class="fieldinit">4&#160;</td><td class="fielddoc"><p>HSVIS - High speed sensor for visible light.</p>
 <p>These sensors are a HSVIS:</p><ul>
 <li>S14290 </li>
 </ul>
 </td></tr>
-<tr><td class="fieldname"><a id="a089f166159fb19f10d81c65c1d8793a2a3ab2d71c31ee633ec2e4b64b53e4d3d3" name="a089f166159fb19f10d81c65c1d8793a2a3ab2d71c31ee633ec2e4b64b53e4d3d3"></a>sensor_type_hsir&#160;</td><td class="fielddoc"><p>5: HSIR - High speed sensor for infrared light.</p>
+<tr><td class="fieldname"><a id="a089f166159fb19f10d81c65c1d8793a2a3ab2d71c31ee633ec2e4b64b53e4d3d3" name="a089f166159fb19f10d81c65c1d8793a2a3ab2d71c31ee633ec2e4b64b53e4d3d3"></a>sensor_type_hsir&#160;</td><td class="fieldinit">5&#160;</td><td class="fielddoc"><p>HSIR - High speed sensor for infrared light.</p>
 <p>These sensors are a HSIR:</p><ul>
 <li>G10786 </li>
 </ul>
@@ -503,8 +528,8 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac4e3d5d9199c915edd34fcf8c0be1166ac7fd37746f78c179d3a7afb1816fad9d" name="ac4e3d5d9199c915edd34fcf8c0be1166ac7fd37746f78c179d3a7afb1816fad9d"></a>settings_level_guided&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac4e3d5d9199c915edd34fcf8c0be1166a26d3cf90e8758027d23ad77047fd5b07" name="ac4e3d5d9199c915edd34fcf8c0be1166a26d3cf90e8758027d23ad77047fd5b07"></a>settings_level_free&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="ac4e3d5d9199c915edd34fcf8c0be1166ac7fd37746f78c179d3a7afb1816fad9d" name="ac4e3d5d9199c915edd34fcf8c0be1166ac7fd37746f78c179d3a7afb1816fad9d"></a>settings_level_guided&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac4e3d5d9199c915edd34fcf8c0be1166a26d3cf90e8758027d23ad77047fd5b07" name="ac4e3d5d9199c915edd34fcf8c0be1166a26d3cf90e8758027d23ad77047fd5b07"></a>settings_level_free&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -522,9 +547,9 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>This enum is specifying the options for <a class="el" href="structcamera__settings.html#aa37537f15873eac7c11573ac53df7e73">camera_settings::file_split_mode</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2f4a284b0a5ab5d474b897488289158ca764bc7fa9b69b071c398c5933dda765e" name="a2f4a284b0a5ab5d474b897488289158ca764bc7fa9b69b071c398c5933dda765e"></a>no_split&#160;</td><td class="fielddoc"><p>A new file is created at the begin of the measurement and all following data is written to it. </p>
+<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="a2f4a284b0a5ab5d474b897488289158ca764bc7fa9b69b071c398c5933dda765e" name="a2f4a284b0a5ab5d474b897488289158ca764bc7fa9b69b071c398c5933dda765e"></a>no_split&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"><p>A new file is created at the begin of the measurement and all following data is written to it. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a2f4a284b0a5ab5d474b897488289158ca83d9e9fbf93501ba942d180612386985" name="a2f4a284b0a5ab5d474b897488289158ca83d9e9fbf93501ba942d180612386985"></a>measurement_wise&#160;</td><td class="fielddoc"><p>When in continuous mode a new file is created for every new measurement cycle (when all samples and blocks are done). When not in continuous this option is the same as no_split. </p>
+<tr><td class="fieldname"><a id="a2f4a284b0a5ab5d474b897488289158ca83d9e9fbf93501ba942d180612386985" name="a2f4a284b0a5ab5d474b897488289158ca83d9e9fbf93501ba942d180612386985"></a>measurement_wise&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"><p>When in continuous mode a new file is created for every new measurement cycle (when all samples and blocks are done). When not in continuous this option is the same as no_split. </p>
 </td></tr>
 </table>
 
@@ -543,11 +568,11 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>This enum shows all options for the setting <a class="el" href="structcamera__settings.html#a6f55940576ecb2bced3027d38676ea5c">camera_settings::sslope</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a807bb0212417bc8c5b431aad2fbc2f00a610be3bc6df0f8e91dffc7a45e2544c4" name="a807bb0212417bc8c5b431aad2fbc2f00a610be3bc6df0f8e91dffc7a45e2544c4"></a>sslope_pos&#160;</td><td class="fielddoc"><p>0: Use only positive slopes of the trigger input to start a scan. </p>
+<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="a807bb0212417bc8c5b431aad2fbc2f00a610be3bc6df0f8e91dffc7a45e2544c4" name="a807bb0212417bc8c5b431aad2fbc2f00a610be3bc6df0f8e91dffc7a45e2544c4"></a>sslope_pos&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"><p>Use only positive slopes of the trigger input to start a scan. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a807bb0212417bc8c5b431aad2fbc2f00a9d41227f5c487715006bd47fcf703124" name="a807bb0212417bc8c5b431aad2fbc2f00a9d41227f5c487715006bd47fcf703124"></a>sslope_neg&#160;</td><td class="fielddoc"><p>1: Use only negative slopes of the trigger input to start a scan. </p>
+<tr><td class="fieldname"><a id="a807bb0212417bc8c5b431aad2fbc2f00a9d41227f5c487715006bd47fcf703124" name="a807bb0212417bc8c5b431aad2fbc2f00a9d41227f5c487715006bd47fcf703124"></a>sslope_neg&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"><p>Use only negative slopes of the trigger input to start a scan. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a807bb0212417bc8c5b431aad2fbc2f00a061e4d5b7705a5bfa8223dea453087b1" name="a807bb0212417bc8c5b431aad2fbc2f00a061e4d5b7705a5bfa8223dea453087b1"></a>sslope_both&#160;</td><td class="fielddoc"><p>2: Use both slopes of the trigger intput to start a scan. </p>
+<tr><td class="fieldname"><a id="a807bb0212417bc8c5b431aad2fbc2f00a061e4d5b7705a5bfa8223dea453087b1" name="a807bb0212417bc8c5b431aad2fbc2f00a061e4d5b7705a5bfa8223dea453087b1"></a>sslope_both&#160;</td><td class="fieldinit">2&#160;</td><td class="fielddoc"><p>Use both slopes of the trigger intput to start a scan. </p>
 </td></tr>
 </table>
 
@@ -566,17 +591,17 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Scan trigger input mode shows the options for <a class="el" href="structcamera__settings.html#afeb4693c3f62bd567f9063c0412035b5">camera_settings::sti_mode</a> </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0bdcebe838e77385002ccc4077a6e743a8a57d3dc98beaa0bb0635911bf340b39" name="a0bdcebe838e77385002ccc4077a6e743a8a57d3dc98beaa0bb0635911bf340b39"></a>sti_I&#160;</td><td class="fielddoc"><p>0: External trigger on input I of PCIe board </p>
+<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="a0bdcebe838e77385002ccc4077a6e743a8a57d3dc98beaa0bb0635911bf340b39" name="a0bdcebe838e77385002ccc4077a6e743a8a57d3dc98beaa0bb0635911bf340b39"></a>sti_I&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"><p>External trigger on input I of PCIe board </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0bdcebe838e77385002ccc4077a6e743a66f22812f6b80965f0058ed52059d078" name="a0bdcebe838e77385002ccc4077a6e743a66f22812f6b80965f0058ed52059d078"></a>sti_S1&#160;</td><td class="fielddoc"><p>1: External trigger on input S1 of PCIe board </p>
+<tr><td class="fieldname"><a id="a0bdcebe838e77385002ccc4077a6e743a66f22812f6b80965f0058ed52059d078" name="a0bdcebe838e77385002ccc4077a6e743a66f22812f6b80965f0058ed52059d078"></a>sti_S1&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"><p>External trigger on input S1 of PCIe board </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0bdcebe838e77385002ccc4077a6e743a006d0b97bf6ee18e93a3481c9adc87f5" name="a0bdcebe838e77385002ccc4077a6e743a006d0b97bf6ee18e93a3481c9adc87f5"></a>sti_S2&#160;</td><td class="fielddoc"><p>2: External trigger on input S2 of PCIe board </p>
+<tr><td class="fieldname"><a id="a0bdcebe838e77385002ccc4077a6e743a006d0b97bf6ee18e93a3481c9adc87f5" name="a0bdcebe838e77385002ccc4077a6e743a006d0b97bf6ee18e93a3481c9adc87f5"></a>sti_S2&#160;</td><td class="fieldinit">2&#160;</td><td class="fielddoc"><p>External trigger on input S2 of PCIe board </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0bdcebe838e77385002ccc4077a6e743a4186edf95b4ddf28c99c58f4f21c2f5d" name="a0bdcebe838e77385002ccc4077a6e743a4186edf95b4ddf28c99c58f4f21c2f5d"></a>sti_S2_enable_I&#160;</td><td class="fielddoc"><p>3: External trigger by I but only when enabled by S2. </p>
+<tr><td class="fieldname"><a id="a0bdcebe838e77385002ccc4077a6e743a4186edf95b4ddf28c99c58f4f21c2f5d" name="a0bdcebe838e77385002ccc4077a6e743a4186edf95b4ddf28c99c58f4f21c2f5d"></a>sti_S2_enable_I&#160;</td><td class="fieldinit">3&#160;</td><td class="fielddoc"><p>External trigger by I but only when enabled by S2. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0bdcebe838e77385002ccc4077a6e743a8ef1e8da5911430f6487c240f981d735" name="a0bdcebe838e77385002ccc4077a6e743a8ef1e8da5911430f6487c240f981d735"></a>sti_STimer&#160;</td><td class="fielddoc"><p>4: Trigger with internal timer. Select the time between two readouts with stime. </p>
+<tr><td class="fieldname"><a id="a0bdcebe838e77385002ccc4077a6e743a8ef1e8da5911430f6487c240f981d735" name="a0bdcebe838e77385002ccc4077a6e743a8ef1e8da5911430f6487c240f981d735"></a>sti_STimer&#160;</td><td class="fieldinit">4&#160;</td><td class="fielddoc"><p>Trigger with internal timer. Select the time between two readouts with stime. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0bdcebe838e77385002ccc4077a6e743ac02dcf4e609d7ef3c2bb0da9e27f09f6" name="a0bdcebe838e77385002ccc4077a6e743ac02dcf4e609d7ef3c2bb0da9e27f09f6"></a>sti_ASL&#160;</td><td class="fielddoc"><p>5: Automatic internal instant trigger at the end of the last readout. </p>
+<tr><td class="fieldname"><a id="a0bdcebe838e77385002ccc4077a6e743ac02dcf4e609d7ef3c2bb0da9e27f09f6" name="a0bdcebe838e77385002ccc4077a6e743ac02dcf4e609d7ef3c2bb0da9e27f09f6"></a>sti_ASL&#160;</td><td class="fieldinit">5&#160;</td><td class="fielddoc"><p>Automatic internal instant trigger at the end of the last readout. </p>
 </td></tr>
 </table>
 
@@ -595,70 +620,69 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>TOR out shows the options for <a class="el" href="structcamera__settings.html#ac9a0cd5c6fc15fb192e18d623cffca0d">camera_settings::tor</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa0d6cce4d48bfa7c8e815fee3645b243a" name="a34afd11285290b35c0f65d59c163fafaa0d6cce4d48bfa7c8e815fee3645b243a"></a>tor_xck&#160;</td><td class="fielddoc"><p>0: XCK starts the readout of the camera and is high during the readout. </p>
+<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa0d6cce4d48bfa7c8e815fee3645b243a" name="a34afd11285290b35c0f65d59c163fafaa0d6cce4d48bfa7c8e815fee3645b243a"></a>tor_xck&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"><p>XCK starts the readout of the camera and is high during the readout. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa72f413dde356268773713baaf789a141" name="a34afd11285290b35c0f65d59c163fafaa72f413dde356268773713baaf789a141"></a>tor_rego&#160;</td><td class="fielddoc"><p>1: The signal REGO is controlled by the bit TRIG_OUT of the register CTRLA. It can be controlled with the functions <a class="el" href="_board_8c.html#a8cf2cbfa432ee37a742eae389648b39d" title="Reset trigger out(Reg CtrlA:D3) of PCI board. Can be used to control timing issues in software.">OutTrigLow()</a>, <a class="el" href="_board_8c.html#a17c3f95217ca811a23a37998a141db78" title="Set trigger out(Reg CtrlA:D3) of PCIe board. Can be used to control timing issues in software.">OutTrigHigh()</a> and <a class="el" href="_board_8c.html#a686b66f43b2b183ab0634e5cc331d25c" title="Pulses trigger out(Reg CtrlA:D3) of PCI board. Can be used to control timing issues in software.">OutTrigPulse()</a>. The main purpose of this signal is for creating a hardware signal controlled by software, which can be measured by a oscilloscope or used by other electronics. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa72f413dde356268773713baaf789a141" name="a34afd11285290b35c0f65d59c163fafaa72f413dde356268773713baaf789a141"></a>tor_rego&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"><p>The signal REGO is controlled by the bit TRIG_OUT of the register CTRLA. It can be controlled with the functions <a class="el" href="_board_8c.html#a8cf2cbfa432ee37a742eae389648b39d" title="Reset trigger out(Reg CtrlA:D3) of PCI board. Can be used to control timing issues in software.">OutTrigLow()</a>, <a class="el" href="_board_8c.html#a17c3f95217ca811a23a37998a141db78" title="Set trigger out(Reg CtrlA:D3) of PCIe board. Can be used to control timing issues in software.">OutTrigHigh()</a> and <a class="el" href="_board_8c.html#a686b66f43b2b183ab0634e5cc331d25c" title="Pulses trigger out(Reg CtrlA:D3) of PCI board. Can be used to control timing issues in software.">OutTrigPulse()</a>. The main purpose of this signal is for creating a hardware signal controlled by software, which can be measured by a oscilloscope or used by other electronics. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa2d419ba318dc5b5f9448de0bbbce1ff3" name="a34afd11285290b35c0f65d59c163fafaa2d419ba318dc5b5f9448de0bbbce1ff3"></a>tor_von&#160;</td><td class="fielddoc"><p>2: DEPRECATED: VON is the signal for the vertical clocks of the FFT sensor. This signal is only used when <a class="el" href="structcamera__settings.html#a3b126accc9d7980b594d7256f767e1cb">camera_settings::is_fft_legacy</a> is on. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa2d419ba318dc5b5f9448de0bbbce1ff3" name="a34afd11285290b35c0f65d59c163fafaa2d419ba318dc5b5f9448de0bbbce1ff3"></a>tor_von&#160;</td><td class="fieldinit">2&#160;</td><td class="fielddoc"><p>DEPRECATED: VON is the signal for the vertical clocks of the FFT sensor. This signal is only used when <a class="el" href="structcamera__settings.html#a3b126accc9d7980b594d7256f767e1cb">camera_settings::is_fft_legacy</a> is on. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa194245daf4e31d06f7abcc024936f7a6" name="a34afd11285290b35c0f65d59c163fafaa194245daf4e31d06f7abcc024936f7a6"></a>tor_dma_act&#160;</td><td class="fielddoc"><p>3: DMA active is high during the direct memory access of the PCIe card. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa194245daf4e31d06f7abcc024936f7a6" name="a34afd11285290b35c0f65d59c163fafaa194245daf4e31d06f7abcc024936f7a6"></a>tor_dma_act&#160;</td><td class="fieldinit">3&#160;</td><td class="fielddoc"><p>DMA active is high during the direct memory access of the PCIe card. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa0a40133a41aa08cddac924dec24c02c0" name="a34afd11285290b35c0f65d59c163fafaa0a40133a41aa08cddac924dec24c02c0"></a>tor_asls&#160;</td><td class="fielddoc"><p>4: ASLS stands for Auto Scan Line Start and shows when a new readout is started when <a class="el" href="structcamera__settings.html#afeb4693c3f62bd567f9063c0412035b5">camera_settings::sti_mode</a> is set to <a class="el" href="#a0bdcebe838e77385002ccc4077a6e743ac02dcf4e609d7ef3c2bb0da9e27f09f6">sti_mode_t::sti_ASL</a>. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa0a40133a41aa08cddac924dec24c02c0" name="a34afd11285290b35c0f65d59c163fafaa0a40133a41aa08cddac924dec24c02c0"></a>tor_asls&#160;</td><td class="fieldinit">4&#160;</td><td class="fielddoc"><p>ASLS stands for Auto Scan Line Start and shows when a new readout is started when <a class="el" href="structcamera__settings.html#afeb4693c3f62bd567f9063c0412035b5">camera_settings::sti_mode</a> is set to <a class="el" href="#a0bdcebe838e77385002ccc4077a6e743ac02dcf4e609d7ef3c2bb0da9e27f09f6">sti_mode_t::sti_ASL</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa1c68aca00699bd69e7b483be59481f99" name="a34afd11285290b35c0f65d59c163fafaa1c68aca00699bd69e7b483be59481f99"></a>tor_stimer&#160;</td><td class="fielddoc"><p>5: stimer is the internal trigger for the start of a readout when <a class="el" href="structcamera__settings.html#afeb4693c3f62bd567f9063c0412035b5">camera_settings::sti_mode</a> is set to <a class="el" href="#a0bdcebe838e77385002ccc4077a6e743a8ef1e8da5911430f6487c240f981d735">sti_mode_t::sti_STimer</a>. The repetition rate is determined by <a class="el" href="structcamera__settings.html#a7a10d3d25fafe652f0f6b349f9c2a5fb">camera_settings::stime_in_microsec</a>. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa1c68aca00699bd69e7b483be59481f99" name="a34afd11285290b35c0f65d59c163fafaa1c68aca00699bd69e7b483be59481f99"></a>tor_stimer&#160;</td><td class="fieldinit">5&#160;</td><td class="fielddoc"><p>stimer is the internal trigger for the start of a readout when <a class="el" href="structcamera__settings.html#afeb4693c3f62bd567f9063c0412035b5">camera_settings::sti_mode</a> is set to <a class="el" href="#a0bdcebe838e77385002ccc4077a6e743a8ef1e8da5911430f6487c240f981d735">sti_mode_t::sti_STimer</a>. The repetition rate is determined by <a class="el" href="structcamera__settings.html#a7a10d3d25fafe652f0f6b349f9c2a5fb">camera_settings::stime_in_microsec</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa39bdb17c83fadf93f0cd0b504e05dc06" name="a34afd11285290b35c0f65d59c163fafaa39bdb17c83fadf93f0cd0b504e05dc06"></a>tor_btimer&#160;</td><td class="fielddoc"><p>6: btimer is the internal trigger for the start of a block when <a class="el" href="structcamera__settings.html#a6578f775f4bbad6da1ec2d85323a8458">camera_settings::bti_mode</a> is set to <a class="el" href="#a2fce6aa348483bc730e1693a39bc0e00aa80f3bc2af101fdd46dee4793eb0d906">bti_mode_t::bti_BTimer</a>. The repetition rate is determined by <a class="el" href="structcamera__settings.html#a2c83fba5f72159010fc146c2c52209de">camera_settings::btime_in_microsec</a>. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa39bdb17c83fadf93f0cd0b504e05dc06" name="a34afd11285290b35c0f65d59c163fafaa39bdb17c83fadf93f0cd0b504e05dc06"></a>tor_btimer&#160;</td><td class="fieldinit">6&#160;</td><td class="fielddoc"><p>btimer is the internal trigger for the start of a block when <a class="el" href="structcamera__settings.html#a6578f775f4bbad6da1ec2d85323a8458">camera_settings::bti_mode</a> is set to <a class="el" href="#a2fce6aa348483bc730e1693a39bc0e00aa80f3bc2af101fdd46dee4793eb0d906">bti_mode_t::bti_BTimer</a>. The repetition rate is determined by <a class="el" href="structcamera__settings.html#a2c83fba5f72159010fc146c2c52209de">camera_settings::btime_in_microsec</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa445a1bac712c4ef0de425ea41338d164" name="a34afd11285290b35c0f65d59c163fafaa445a1bac712c4ef0de425ea41338d164"></a>tor_isr_act&#160;</td><td class="fielddoc"><p>7: ISR_ACT is high when the interrupt service routine is active. The ISR copies the data from the DMA buffer to the user buffer, when <a class="el" href="structcamera__settings.html#a7d6d06fc3f59976df702bfda1e7bc0d1">camera_settings::use_software_polling</a> is not activated. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa445a1bac712c4ef0de425ea41338d164" name="a34afd11285290b35c0f65d59c163fafaa445a1bac712c4ef0de425ea41338d164"></a>tor_isr_act&#160;</td><td class="fieldinit">7&#160;</td><td class="fielddoc"><p>ISR_ACT is high when the interrupt service routine is active. The ISR copies the data from the DMA buffer to the user buffer, when <a class="el" href="structcamera__settings.html#a7d6d06fc3f59976df702bfda1e7bc0d1">camera_settings::use_software_polling</a> is not activated. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa255e65cf012a2a3b91decc58bceb8f06" name="a34afd11285290b35c0f65d59c163fafaa255e65cf012a2a3b91decc58bceb8f06"></a>tor_s1&#160;</td><td class="fielddoc"><p>8: Shows the state of the input S1 of the PCIe board. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa255e65cf012a2a3b91decc58bceb8f06" name="a34afd11285290b35c0f65d59c163fafaa255e65cf012a2a3b91decc58bceb8f06"></a>tor_s1&#160;</td><td class="fieldinit">8&#160;</td><td class="fielddoc"><p>Shows the state of the input S1 of the PCIe board. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaab5714fca8a1f214d46ff315bc95fb72d" name="a34afd11285290b35c0f65d59c163fafaab5714fca8a1f214d46ff315bc95fb72d"></a>tor_s2&#160;</td><td class="fielddoc"><p>9: Shows the state of the input S2 of the PCIe board. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaab5714fca8a1f214d46ff315bc95fb72d" name="a34afd11285290b35c0f65d59c163fafaab5714fca8a1f214d46ff315bc95fb72d"></a>tor_s2&#160;</td><td class="fieldinit">9&#160;</td><td class="fielddoc"><p>Shows the state of the input S2 of the PCIe board. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaaedbe6c7299357cb971da699b8935cc1e" name="a34afd11285290b35c0f65d59c163fafaaedbe6c7299357cb971da699b8935cc1e"></a>tor_block_on_synced&#160;</td><td class="fielddoc"><p>10: BLOCK_ON_SYNCED is high during a block readout sequence. The rising edge is synced to the next scan trigger after the rising edge of BLOCK_ON. The signal is resetted by BLOCK_EN = 0. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaaedbe6c7299357cb971da699b8935cc1e" name="a34afd11285290b35c0f65d59c163fafaaedbe6c7299357cb971da699b8935cc1e"></a>tor_block_on_synced&#160;</td><td class="fieldinit">10&#160;</td><td class="fielddoc"><p>BLOCK_ON_SYNCED is high during a block readout sequence. The rising edge is synced to the next scan trigger after the rising edge of BLOCK_ON. The signal is resetted by BLOCK_EN = 0. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaaa767f8985ae63f732d7fe2807ed007e1" name="a34afd11285290b35c0f65d59c163fafaaa767f8985ae63f732d7fe2807ed007e1"></a>tor_measureon&#160;</td><td class="fielddoc"><p>11: measureon is high during the whole measurement. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaaa767f8985ae63f732d7fe2807ed007e1" name="a34afd11285290b35c0f65d59c163fafaaa767f8985ae63f732d7fe2807ed007e1"></a>tor_measureon&#160;</td><td class="fieldinit">11&#160;</td><td class="fielddoc"><p>measureon is high during the whole measurement. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa6640cc4d6c91bbb636c0b5416508c412" name="a34afd11285290b35c0f65d59c163fafaa6640cc4d6c91bbb636c0b5416508c412"></a>tor_sdat&#160;</td><td class="fielddoc"><p>12: SDAT is high during the time delay between the scan trigger and the start of a scan. This time depends on <a class="el" href="structcamera__settings.html#afdbb58aa78c6d9d9210c244507de9c68">camera_settings::sdat_in_10ns</a>. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa6640cc4d6c91bbb636c0b5416508c412" name="a34afd11285290b35c0f65d59c163fafaa6640cc4d6c91bbb636c0b5416508c412"></a>tor_sdat&#160;</td><td class="fieldinit">12&#160;</td><td class="fielddoc"><p>SDAT is high during the time delay between the scan trigger and the start of a scan. This time depends on <a class="el" href="structcamera__settings.html#afdbb58aa78c6d9d9210c244507de9c68">camera_settings::sdat_in_10ns</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaafeb41cc7127503360cb46dae3f21c129" name="a34afd11285290b35c0f65d59c163fafaafeb41cc7127503360cb46dae3f21c129"></a>tor_bdat&#160;</td><td class="fielddoc"><p>13: BDAT is high during the time delay between the block trigger and the start of a block. This time depends on <a class="el" href="structcamera__settings.html#ad2139e71363af04fb3558bbc94057bbb">camera_settings::bdat_in_10ns</a>. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaafeb41cc7127503360cb46dae3f21c129" name="a34afd11285290b35c0f65d59c163fafaafeb41cc7127503360cb46dae3f21c129"></a>tor_bdat&#160;</td><td class="fieldinit">13&#160;</td><td class="fielddoc"><p>BDAT is high during the time delay between the block trigger and the start of a block. This time depends on <a class="el" href="structcamera__settings.html#ad2139e71363af04fb3558bbc94057bbb">camera_settings::bdat_in_10ns</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa26ad392574ba6b86d1060d12660c836f" name="a34afd11285290b35c0f65d59c163fafaa26ad392574ba6b86d1060d12660c836f"></a>tor_sec_mshut&#160;</td><td class="fielddoc"><p>14: sec_mshut is high during the scan exposure window when the option <a class="el" href="structcamera__settings.html#adef56c9e33dc855c930fd7d44588cbcd">camera_settings::sec_in_10ns</a> is used or can be manually set to high by <a class="el" href="_board_8c.html#aff3a95788b7373294b77102a9eb39d77" title="Open shutter for sensors with EC (exposure control) / sets IFC signal = high.">OpenShutter()</a>. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa26ad392574ba6b86d1060d12660c836f" name="a34afd11285290b35c0f65d59c163fafaa26ad392574ba6b86d1060d12660c836f"></a>tor_sec_mshut&#160;</td><td class="fieldinit">14&#160;</td><td class="fielddoc"><p>sec_mshut is high during the scan exposure window when the option <a class="el" href="structcamera__settings.html#adef56c9e33dc855c930fd7d44588cbcd">camera_settings::sec_in_10ns</a> is used or can be manually set to high by <a class="el" href="_board_8c.html#aff3a95788b7373294b77102a9eb39d77" title="Open shutter for sensors with EC (exposure control) / sets IFC signal = high.">OpenShutter()</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaade352e48195874b929fa4f2fbad9cb86" name="a34afd11285290b35c0f65d59c163fafaade352e48195874b929fa4f2fbad9cb86"></a>tor_bec_mshut&#160;</td><td class="fielddoc"><p>15: bec_mshut is high during the block exposure window when the option <a class="el" href="structcamera__settings.html#a41e4ecc9c93c9d84bcdf7dd92a0ced4c">camera_settings::bec_in_10ns</a> is used or can be manually set to high by <a class="el" href="_board_8c.html#aff3a95788b7373294b77102a9eb39d77" title="Open shutter for sensors with EC (exposure control) / sets IFC signal = high.">OpenShutter()</a>. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaade352e48195874b929fa4f2fbad9cb86" name="a34afd11285290b35c0f65d59c163fafaade352e48195874b929fa4f2fbad9cb86"></a>tor_bec_mshut&#160;</td><td class="fieldinit">15&#160;</td><td class="fielddoc"><p>bec_mshut is high during the block exposure window when the option <a class="el" href="structcamera__settings.html#a41e4ecc9c93c9d84bcdf7dd92a0ced4c">camera_settings::bec_in_10ns</a> is used or can be manually set to high by <a class="el" href="_board_8c.html#aff3a95788b7373294b77102a9eb39d77" title="Open shutter for sensors with EC (exposure control) / sets IFC signal = high.">OpenShutter()</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa2700dd550e320dd477aca2161b5a54c0" name="a34afd11285290b35c0f65d59c163fafaa2700dd550e320dd477aca2161b5a54c0"></a>tor_ifc&#160;</td><td class="fielddoc"><p>16: IFC is the electronic exposure control signal used by some sensors and is sent to the camera. When <a class="el" href="structcamera__settings.html#adef56c9e33dc855c930fd7d44588cbcd">camera_settings::sec_in_10ns</a> is used IFC = SEC, otherwise it is always 1. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa2700dd550e320dd477aca2161b5a54c0" name="a34afd11285290b35c0f65d59c163fafaa2700dd550e320dd477aca2161b5a54c0"></a>tor_ifc&#160;</td><td class="fieldinit">16&#160;</td><td class="fielddoc"><p>IFC is the electronic exposure control signal used by some sensors and is sent to the camera. When <a class="el" href="structcamera__settings.html#adef56c9e33dc855c930fd7d44588cbcd">camera_settings::sec_in_10ns</a> is used IFC = SEC, otherwise it is always 1. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaac96e03c33d14d48f55e1457e1dc8caad" name="a34afd11285290b35c0f65d59c163fafaac96e03c33d14d48f55e1457e1dc8caad"></a>tor_do_cc_i&#160;</td><td class="fielddoc"><p>17: DO_CC_I is a fiber link synchronisation signal. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaac96e03c33d14d48f55e1457e1dc8caad" name="a34afd11285290b35c0f65d59c163fafaac96e03c33d14d48f55e1457e1dc8caad"></a>tor_do_cc_i&#160;</td><td class="fieldinit">17&#160;</td><td class="fielddoc"><p>DO_CC_I is a fiber link synchronisation signal. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaad8caf0d24da6d0a42bfb036f40395c64" name="a34afd11285290b35c0f65d59c163fafaad8caf0d24da6d0a42bfb036f40395c64"></a>tor_exposure_window&#160;</td><td class="fielddoc"><p>18: Exposure window shows when it is possible to expose the camera to light. Since the PCIe card doesn't know exactly when the sensor is ready to be exposed this is only an estimated signal. If possible use <a class="el" href="#a3ccb55ee2f9a77e32aec7dda8ab59e83afd1ef969348a60ab7d6e72b6b3b7f6bf">bnc_out_t::bnc_out_exp_win</a> of <a class="el" href="structcamera__settings.html#a12c8fa4bdad6fccbdd1a767a44792627">camera_settings::bnc_out</a>. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaad8caf0d24da6d0a42bfb036f40395c64" name="a34afd11285290b35c0f65d59c163fafaad8caf0d24da6d0a42bfb036f40395c64"></a>tor_exposure_window&#160;</td><td class="fieldinit">18&#160;</td><td class="fielddoc"><p>Exposure window shows when it is possible to expose the camera to light. Since the PCIe card doesn't know exactly when the sensor is ready to be exposed this is only an estimated signal. If possible use <a class="el" href="#a3ccb55ee2f9a77e32aec7dda8ab59e83afd1ef969348a60ab7d6e72b6b3b7f6bf">bnc_out_t::bnc_out_exp_win</a> of <a class="el" href="structcamera__settings.html#a12c8fa4bdad6fccbdd1a767a44792627">camera_settings::bnc_out</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa21d1f38219ac0747f5113977709e5301" name="a34afd11285290b35c0f65d59c163fafaa21d1f38219ac0747f5113977709e5301"></a>tor_to_cnt_out&#160;</td><td class="fielddoc"><p>19: tor_to_cnt_out shows the signal which is controlled by the setting <a class="el" href="structcamera__settings.html#a9d36d06df4f4506a30632260bf6b1939">camera_settings::tocnt</a>. Depending on this setting, only specific XCK high periods are shown on the PCIe card output. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa21d1f38219ac0747f5113977709e5301" name="a34afd11285290b35c0f65d59c163fafaa21d1f38219ac0747f5113977709e5301"></a>tor_to_cnt_out&#160;</td><td class="fieldinit">19&#160;</td><td class="fielddoc"><p>tor_to_cnt_out shows the signal which is controlled by the setting <a class="el" href="structcamera__settings.html#a9d36d06df4f4506a30632260bf6b1939">camera_settings::tocnt</a>. Depending on this setting, only specific XCK high periods are shown on the PCIe card output. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa6aeb39e37fe8491579684103a9e1f477" name="a34afd11285290b35c0f65d59c163fafaa6aeb39e37fe8491579684103a9e1f477"></a>tor_secon&#160;</td><td class="fielddoc"><p>20: SECON is high during the scan exposure window when the option <a class="el" href="structcamera__settings.html#adef56c9e33dc855c930fd7d44588cbcd">camera_settings::sec_in_10ns</a> is used. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa6aeb39e37fe8491579684103a9e1f477" name="a34afd11285290b35c0f65d59c163fafaa6aeb39e37fe8491579684103a9e1f477"></a>tor_secon&#160;</td><td class="fieldinit">20&#160;</td><td class="fielddoc"><p>SECON is high during the scan exposure window when the option <a class="el" href="structcamera__settings.html#adef56c9e33dc855c930fd7d44588cbcd">camera_settings::sec_in_10ns</a> is used. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa0a0289fac85cbd7979af6dd6dc3a7277" name="a34afd11285290b35c0f65d59c163fafaa0a0289fac85cbd7979af6dd6dc3a7277"></a>tor_i&#160;</td><td class="fielddoc"><p>21: Shows the state of the input I of the PCIe board. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa0a0289fac85cbd7979af6dd6dc3a7277" name="a34afd11285290b35c0f65d59c163fafaa0a0289fac85cbd7979af6dd6dc3a7277"></a>tor_i&#160;</td><td class="fieldinit">21&#160;</td><td class="fielddoc"><p>Shows the state of the input I of the PCIe board. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa57e1aa06d4c75a728d07dcbc560228da" name="a34afd11285290b35c0f65d59c163fafaa57e1aa06d4c75a728d07dcbc560228da"></a>tor_S1S2readDelay&#160;</td><td class="fielddoc"><p>22: Shows the delay between the trigger and the moment, when the states of S1 and S2 are read. This delay is controlled by the settting <a class="el" href="structcamera__settings.html#a725f47b587a2b425688fbd79586b989e">camera_settings::s1s2_read_delay_in_10ns</a>. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa57e1aa06d4c75a728d07dcbc560228da" name="a34afd11285290b35c0f65d59c163fafaa57e1aa06d4c75a728d07dcbc560228da"></a>tor_S1S2readDelay&#160;</td><td class="fieldinit">22&#160;</td><td class="fielddoc"><p>Shows the delay between the trigger and the moment, when the states of S1 and S2 are read. This delay is controlled by the settting <a class="el" href="structcamera__settings.html#a725f47b587a2b425688fbd79586b989e">camera_settings::s1s2_read_delay_in_10ns</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaac8338bdb1237c2a1ea45914fec47600c" name="a34afd11285290b35c0f65d59c163fafaac8338bdb1237c2a1ea45914fec47600c"></a>tor_block_on&#160;</td><td class="fielddoc"><p>23: BLOCK_ON is high during a block readout sequence. The rising edge is synced to the next block trigger after the rising edge of BLOCK_EN. The signal is resetted by BLOCK_EN = 0. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaac8338bdb1237c2a1ea45914fec47600c" name="a34afd11285290b35c0f65d59c163fafaac8338bdb1237c2a1ea45914fec47600c"></a>tor_block_on&#160;</td><td class="fieldinit">23&#160;</td><td class="fielddoc"><p>BLOCK_ON is high during a block readout sequence. The rising edge is synced to the next block trigger after the rising edge of BLOCK_EN. The signal is resetted by BLOCK_EN = 0. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaace3998f088099922e4cabe6a5bead22a" name="a34afd11285290b35c0f65d59c163fafaace3998f088099922e4cabe6a5bead22a"></a>tor_unused_24&#160;</td><td class="fielddoc"><p>24: Unused. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaace3998f088099922e4cabe6a5bead22a" name="a34afd11285290b35c0f65d59c163fafaace3998f088099922e4cabe6a5bead22a"></a>tor_unused_24&#160;</td><td class="fieldinit">24&#160;</td><td class="fielddoc"><p>Unused. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaafa355895d242eada61b0beb75bf79e49" name="a34afd11285290b35c0f65d59c163fafaafa355895d242eada61b0beb75bf79e49"></a>tor_unused_25&#160;</td><td class="fielddoc"><p>25: Unused. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaafa355895d242eada61b0beb75bf79e49" name="a34afd11285290b35c0f65d59c163fafaafa355895d242eada61b0beb75bf79e49"></a>tor_unused_25&#160;</td><td class="fieldinit">25&#160;</td><td class="fielddoc"><p>Unused. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaaeff8c9e5a3f08e8433f7606187c625bd" name="a34afd11285290b35c0f65d59c163fafaaeff8c9e5a3f08e8433f7606187c625bd"></a>tor_unused_26&#160;</td><td class="fielddoc"><p>26: Unused. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaaeff8c9e5a3f08e8433f7606187c625bd" name="a34afd11285290b35c0f65d59c163fafaaeff8c9e5a3f08e8433f7606187c625bd"></a>tor_unused_26&#160;</td><td class="fieldinit">26&#160;</td><td class="fielddoc"><p>Unused. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaabae3226fd9670e1906ca079b3021ec1a" name="a34afd11285290b35c0f65d59c163fafaabae3226fd9670e1906ca079b3021ec1a"></a>tor_unused_27&#160;</td><td class="fielddoc"><p>27: Unused. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaabae3226fd9670e1906ca079b3021ec1a" name="a34afd11285290b35c0f65d59c163fafaabae3226fd9670e1906ca079b3021ec1a"></a>tor_unused_27&#160;</td><td class="fieldinit">27&#160;</td><td class="fielddoc"><p>Unused. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa88c70a06cf178209cb95b44f440c1db1" name="a34afd11285290b35c0f65d59c163fafaa88c70a06cf178209cb95b44f440c1db1"></a>tor_unused_28&#160;</td><td class="fielddoc"><p>28: Unused. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa88c70a06cf178209cb95b44f440c1db1" name="a34afd11285290b35c0f65d59c163fafaa88c70a06cf178209cb95b44f440c1db1"></a>tor_unused_28&#160;</td><td class="fieldinit">28&#160;</td><td class="fielddoc"><p>Unused. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaae75d1fae0a5c210be0bcce4e79aca7d1" name="a34afd11285290b35c0f65d59c163fafaae75d1fae0a5c210be0bcce4e79aca7d1"></a>tor_enffr&#160;</td><td class="fielddoc"><p>29: Status of enable FIFO read. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaae75d1fae0a5c210be0bcce4e79aca7d1" name="a34afd11285290b35c0f65d59c163fafaae75d1fae0a5c210be0bcce4e79aca7d1"></a>tor_enffr&#160;</td><td class="fieldinit">29&#160;</td><td class="fielddoc"><p>Status of enable FIFO read. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa432ef82ee61d5e4090785d190465b2eb" name="a34afd11285290b35c0f65d59c163fafaa432ef82ee61d5e4090785d190465b2eb"></a>tor_enffw&#160;</td><td class="fielddoc"><p>30: Status of enable FIFO write. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa432ef82ee61d5e4090785d190465b2eb" name="a34afd11285290b35c0f65d59c163fafaa432ef82ee61d5e4090785d190465b2eb"></a>tor_enffw&#160;</td><td class="fieldinit">30&#160;</td><td class="fielddoc"><p>Status of enable FIFO write. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa8a0f6e0ca5c6490f3818820e1ad22fb6" name="a34afd11285290b35c0f65d59c163fafaa8a0f6e0ca5c6490f3818820e1ad22fb6"></a>tor_enffwrprot&#160;</td><td class="fielddoc"><p>31: </p>
-</td></tr>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa8a0f6e0ca5c6490f3818820e1ad22fb6" name="a34afd11285290b35c0f65d59c163fafaa8a0f6e0ca5c6490f3818820e1ad22fb6"></a>tor_enffwrprot&#160;</td><td class="fieldinit">31&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -676,11 +700,11 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>Trigger mode shows the options for <a class="el" href="structcamera__settings.html#a81d92a0475fbf332ef99de9748d6b197">camera_settings::trigger_mode_integrator</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6d33f21be3f0c5cf91c5d638e8aca086a7a03b9103736c00a1b574c46bc8e8e31" name="a6d33f21be3f0c5cf91c5d638e8aca086a7a03b9103736c00a1b574c46bc8e8e31"></a>xck&#160;</td><td class="fielddoc"><p>0: Trigger the integrator with the start signal XCK of the PCIe board. The integrator starts simultaneously with the sensor. </p>
+<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="a6d33f21be3f0c5cf91c5d638e8aca086a7a03b9103736c00a1b574c46bc8e8e31" name="a6d33f21be3f0c5cf91c5d638e8aca086a7a03b9103736c00a1b574c46bc8e8e31"></a>xck&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"><p>Trigger the integrator with the start signal XCK of the PCIe board. The integrator starts simultaneously with the sensor. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a6d33f21be3f0c5cf91c5d638e8aca086a03dea9a7850802818e5420ad08a106d3" name="a6d33f21be3f0c5cf91c5d638e8aca086a03dea9a7850802818e5420ad08a106d3"></a>exttrig&#160;</td><td class="fielddoc"><p>1: Trigger the integrator with the input Ext. Trig. of the camera control. The integrator can be started separately from the sensor </p>
+<tr><td class="fieldname"><a id="a6d33f21be3f0c5cf91c5d638e8aca086a03dea9a7850802818e5420ad08a106d3" name="a6d33f21be3f0c5cf91c5d638e8aca086a03dea9a7850802818e5420ad08a106d3"></a>exttrig&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"><p>Trigger the integrator with the input Ext. Trig. of the camera control. The integrator can be started separately from the sensor </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a6d33f21be3f0c5cf91c5d638e8aca086ac2fd29f1a5a7209a6a6f1f242d1ed16c" name="a6d33f21be3f0c5cf91c5d638e8aca086ac2fd29f1a5a7209a6a6f1f242d1ed16c"></a>dat&#160;</td><td class="fielddoc"><p>2: Trigger the integrator with the input Ext. Trig but with an additional delay. </p>
+<tr><td class="fieldname"><a id="a6d33f21be3f0c5cf91c5d638e8aca086ac2fd29f1a5a7209a6a6f1f242d1ed16c" name="a6d33f21be3f0c5cf91c5d638e8aca086ac2fd29f1a5a7209a6a6f1f242d1ed16c"></a>dat&#160;</td><td class="fieldinit">2&#160;</td><td class="fielddoc"><p>Trigger the integrator with the input Ext. Trig but with an additional delay. </p>
 </td></tr>
 </table>
 

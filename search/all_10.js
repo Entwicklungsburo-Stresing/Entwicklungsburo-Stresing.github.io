@@ -94,7 +94,7 @@ var searchData=
   ['setbdat_91',['SetBDAT',['../_board_8c.html#a6a4be51cc0a03c99404afe42bc4e4bca',1,'Board.c']]],
   ['setbec_92',['SetBEC',['../_board_8c.html#aeb7b62a207838ef1fdceb89b7e4aefba',1,'Board.c']]],
   ['setbits0_5f32_93',['setBitS0_32',['../_board_8c.html#a94e81f812b99112417ca7dbd669ed222',1,'Board.c']]],
-  ['setbits0_5f32_5fallboards_94',['setBitS0_32_allBoards',['../_board_8c.html#acc75a69baa8e2d7062087d086b9dad92',1,'Board.c']]],
+  ['setbits0_5f32_5fallboards_94',['setBitS0_32_allBoards',['../_board_8c.html#af671c984c60755be9c93a9f69870e0cd',1,'Board.c']]],
   ['setbits0_5f8_95',['setBitS0_8',['../_board_8c.html#a96dd143d633fa69b57efb78501f2face',1,'Board.c']]],
   ['setblocken_96',['setBlockEn',['../_board_8c.html#abc0bb8f2058df16be0d0259a62188dc7',1,'Board.c']]],
   ['setbslope_97',['SetBSlope',['../_board_8c.html#a83fa04b79d86cd14cbb756c2bb3b2546',1,'Board.c']]],

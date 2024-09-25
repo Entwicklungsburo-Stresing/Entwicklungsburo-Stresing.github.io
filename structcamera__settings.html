@@ -167,8 +167,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a54be4b6539b096109c43abdf0a489fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41e4ecc9c93c9d84bcdf7dd92a0ced4c" id="r_a41e4ecc9c93c9d84bcdf7dd92a0ced4c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41e4ecc9c93c9d84bcdf7dd92a0ced4c">bec_in_10ns</a></td></tr>
 <tr class="separator:a41e4ecc9c93c9d84bcdf7dd92a0ced4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcd8b239d6e3ba9fea8fc908b44a77d2" id="r_abcd8b239d6e3ba9fea8fc908b44a77d2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abcd8b239d6e3ba9fea8fc908b44a77d2">is_hs_ir</a></td></tr>
-<tr class="separator:abcd8b239d6e3ba9fea8fc908b44a77d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362e2141ac18c56f46722ae451f9125c" id="r_a362e2141ac18c56f46722ae451f9125c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a362e2141ac18c56f46722ae451f9125c">channel_select</a></td></tr>
+<tr class="separator:a362e2141ac18c56f46722ae451f9125c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9da76423332a875434a8524c0aeb652d" id="r_a9da76423332a875434a8524c0aeb652d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9da76423332a875434a8524c0aeb652d">ioctrl_impact_start_pixel</a></td></tr>
 <tr class="separator:a9da76423332a875434a8524c0aeb652d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16029e5a3e58705e7af44c9b268d7015" id="r_a16029e5a3e58705e7af44c9b268d7015"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16029e5a3e58705e7af44c9b268d7015">ioctrl_output_width_in_5ns</a> [<a class="el" href="struct_8h.html#a6f13d93331834d5a48b2b252b3c4a578">IOCTRL_OUTPUT_COUNT</a>]</td></tr>
@@ -409,6 +409,21 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a362e2141ac18c56f46722ae451f9125c" name="a362e2141ac18c56f46722ae451f9125c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a362e2141ac18c56f46722ae451f9125c">&#9670;&#160;</a></span>channel_select</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t camera_settings::channel_select</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Channel select controls which channel of a camera control box is used for the camera readout. This feature is implemented in the camera version P230_6 and newer. See enum <a class="el" href="enum__settings_8h.html#a5baa77ee33be73547f4e348a68da6e3e">channel_select_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. </p>
+
+</div>
+</div>
 <a id="a59edb2a2bc34f1da3c62c5ab77293b75" name="a59edb2a2bc34f1da3c62c5ab77293b75"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a59edb2a2bc34f1da3c62c5ab77293b75">&#9670;&#160;</a></span>dac_output</h2>
 
@@ -633,24 +648,6 @@ Public Attributes</h2></td></tr>
 <li>216.X If the PCIe card version is 222.8 or older or 202.X, fft legacy should always be turned on, if you are using a FFT sensor. FFT legacy is available since 222.10.</li>
 <li>=0: off (default)</li>
 <li>&gt;0: fft legacy mode on </li>
-</ul>
-
-</div>
-</div>
-<a id="abcd8b239d6e3ba9fea8fc908b44a77d2" name="abcd8b239d6e3ba9fea8fc908b44a77d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abcd8b239d6e3ba9fea8fc908b44a77d2">&#9670;&#160;</a></span>is_hs_ir</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t camera_settings::is_hs_ir</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>DEPRECATED This should be set when the camera is a high speed infrared camera. This information was moved to sensor_type.</p><ul>
-<li>=0 no IR</li>
-<li>&gt;0 IR </li>
 </ul>
 
 </div>

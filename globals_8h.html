@@ -186,6 +186,10 @@ Variables</h2></td></tr>
 <tr class="separator:af15269ff90986dd874dc8775f8e8417a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a320d646e3cfd31abf1269fcd3bc6d1b9" id="r_a320d646e3cfd31abf1269fcd3bc6d1b9"><td class="memItemLeft" align="right" valign="top">volatile bool *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a320d646e3cfd31abf1269fcd3bc6d1b9">allInterruptsDone</a></td></tr>
 <tr class="separator:a320d646e3cfd31abf1269fcd3bc6d1b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cb2038bb4b173cfac366a49e906e39d" id="r_a3cb2038bb4b173cfac366a49e906e39d"><td class="memItemLeft" align="right" valign="top">uint16_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cb2038bb4b173cfac366a49e906e39d">pcieCardMajorVersion</a></td></tr>
+<tr class="separator:a3cb2038bb4b173cfac366a49e906e39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8961548fb6c2dce645c11e49aaa972d2" id="r_a8961548fb6c2dce645c11e49aaa972d2"><td class="memItemLeft" align="right" valign="top">uint16_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8961548fb6c2dce645c11e49aaa972d2">pcieCardMinorVersion</a></td></tr>
+<tr class="separator:a8961548fb6c2dce645c11e49aaa972d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ac4cb304f489b43a573b831ae8c50320f" name="ac4cb304f489b43a573b831ae8c50320f"></a>
@@ -316,9 +320,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4ba27b32532ad58360b3aeec14e84897a0cbddb1cbe6c35a91865e73cac587eaf" name="a4ba27b32532ad58360b3aeec14e84897a0cbddb1cbe6c35a91865e73cac587eaf"></a>file_path_size&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a4ba27b32532ad58360b3aeec14e84897a70a8971f7acd1d1a63a4ecc42a1fbbd7" name="a4ba27b32532ad58360b3aeec14e84897a70a8971f7acd1d1a63a4ecc42a1fbbd7"></a>file_timestamp_size&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a4ba27b32532ad58360b3aeec14e84897a0946dad68dcf9c861b933d4a7837133a" name="a4ba27b32532ad58360b3aeec14e84897a0946dad68dcf9c861b933d4a7837133a"></a>file_filename_full_size&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="a4ba27b32532ad58360b3aeec14e84897a0cbddb1cbe6c35a91865e73cac587eaf" name="a4ba27b32532ad58360b3aeec14e84897a0cbddb1cbe6c35a91865e73cac587eaf"></a>file_path_size&#160;</td><td class="fieldinit">256&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4ba27b32532ad58360b3aeec14e84897a70a8971f7acd1d1a63a4ecc42a1fbbd7" name="a4ba27b32532ad58360b3aeec14e84897a70a8971f7acd1d1a63a4ecc42a1fbbd7"></a>file_timestamp_size&#160;</td><td class="fieldinit">64&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4ba27b32532ad58360b3aeec14e84897a0946dad68dcf9c861b933d4a7837133a" name="a4ba27b32532ad58360b3aeec14e84897a0946dad68dcf9c861b933d4a7837133a"></a>file_filename_full_size&#160;</td><td class="fieldinit">256&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -533,6 +537,50 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">volatile uint32_t* numberOfInterrupts</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3cb2038bb4b173cfac366a49e906e39d" name="a3cb2038bb4b173cfac366a49e906e39d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cb2038bb4b173cfac366a49e906e39d">&#9670;&#160;</a></span>pcieCardMajorVersion</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t* pcieCardMajorVersion</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8961548fb6c2dce645c11e49aaa972d2" name="a8961548fb6c2dce645c11e49aaa972d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8961548fb6c2dce645c11e49aaa972d2">&#9670;&#160;</a></span>pcieCardMinorVersion</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t* pcieCardMinorVersion</td>
         </tr>
       </table>
   </td>

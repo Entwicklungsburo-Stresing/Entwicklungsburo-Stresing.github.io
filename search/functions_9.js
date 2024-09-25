@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['polldmabuffertouserbuffer_0',['PollDmaBufferToUserBuffer',['../_board_8c.html#a6d992a63422fa1d74ad5f302204ffe6e',1,'Board.c']]],
-  ['pulsebits0_5f32_1',['pulseBitS0_32',['../_board_8c.html#a59f67db4ff3fa6071a8398998e646d5c',1,'Board.c']]],
-  ['pulsebits0_5f8_2',['pulseBitS0_8',['../_board_8c.html#a2fa23bad2b72d1f9419b31c52e7eed75',1,'Board.c']]]
+  ['openfile_0',['openFile',['../_board__ll_8c.html#acf99ecfb75e0b3bae34caded22ff5367',1,'Board_ll.c']]],
+  ['openshutter_1',['OpenShutter',['../_board_8c.html#aff3a95788b7373294b77102a9eb39d77',1,'Board.c']]],
+  ['outtrighigh_2',['OutTrigHigh',['../_board_8c.html#a17c3f95217ca811a23a37998a141db78',1,'Board.c']]],
+  ['outtriglow_3',['OutTrigLow',['../_board_8c.html#a8cf2cbfa432ee37a742eae389648b39d',1,'Board.c']]],
+  ['outtrigpulse_4',['OutTrigPulse',['../_board_8c.html#a686b66f43b2b183ab0634e5cc331d25c',1,'Board.c']]]
 ];
