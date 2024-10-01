@@ -31,6 +31,11 @@ var searchData=
   ['closeshutter_28',['CloseShutter',['../_board_8c.html#a30a9ae7641e3cb286aed45def27becef',1,'Board.c']]],
   ['converterrorcodetomsg_29',['ConvertErrorCodeToMsg',['../es__status__codes_8h.html#a8a8ec78a4c9848d7ee63d93b71a41208',1,'ConvertErrorCodeToMsg(es_status_codes status):&#160;es_status_codes.c'],['../es__status__codes_8c.html#a8a8ec78a4c9848d7ee63d93b71a41208',1,'ConvertErrorCodeToMsg(es_status_codes status):&#160;es_status_codes.c']]],
   ['converttickstomicroseconds_30',['ConvertTicksToMicroseconds',['../_board__ll_8c.html#ad8e9a499c65feb42895a725c33adf23a',1,'Board_ll.c']]],
-  ['copyrestdata_31',['copyRestData',['../_board__ll_8c.html#a19a74d50b17830b71a1ab6d5d726649d',1,'Board_ll.c']]],
-  ['countblocksbyhardware_32',['countBlocksByHardware',['../_board_8c.html#a32728c700f4e2059f724cbe5b0dbc018',1,'Board.c']]]
+  ['copyalldata_31',['CopyAllData',['../_board_8c.html#a99982b05145757ddaaaebc904ef643fc',1,'Board.c']]],
+  ['copydataarbitrary_32',['CopyDataArbitrary',['../_board_8c.html#a3d8b5568013ca15ab0fba4556c6b1457',1,'Board.c']]],
+  ['copyoneblock_33',['CopyOneBlock',['../_board_8c.html#a34b282689c12229c2433abeb6bb5a447',1,'Board.c']]],
+  ['copyoneblockofonecamera_34',['CopyOneBlockOfOneCamera',['../_board_8c.html#aaba5905a227bfcb5cdea30c4443e6341',1,'Board.c']]],
+  ['copyonesample_35',['CopyOneSample',['../_board_8c.html#ac3395b116d9ed5db9393639d828cb891',1,'Board.c']]],
+  ['copyrestdata_36',['copyRestData',['../_board__ll_8c.html#a19a74d50b17830b71a1ab6d5d726649d',1,'Board_ll.c']]],
+  ['countblocksbyhardware_37',['countBlocksByHardware',['../_board_8c.html#a32728c700f4e2059f724cbe5b0dbc018',1,'Board.c']]]
 ];

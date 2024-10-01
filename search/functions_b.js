@@ -33,7 +33,6 @@ var searchData=
   ['resetpriority_30',['ResetPriority',['../_board__ll_8c.html#a6d1fe7b2ee38ccba3c5cd1c4577fb857',1,'Board_ll.c']]],
   ['resetscanfrequencybit_31',['ResetScanFrequencyBit',['../_board_8c.html#ab5a76129795901d456afe799a8cb311d',1,'Board.c']]],
   ['resetscantriggerdetected_32',['ResetScanTriggerDetected',['../_board_8c.html#ae8057f72fc81687e5e20a861d6f98205',1,'Board.c']]],
-  ['returnframe_33',['ReturnFrame',['../_board_8c.html#a3e6150945ca37b27bff3be2d754d1975',1,'Board.c']]],
-  ['returnstartmeasurement_34',['ReturnStartMeasurement',['../_board_8c.html#a85504654d0abecbf9b6089ab6d096ab6',1,'Board.c']]],
-  ['rsfifo_35',['RSFifo',['../_board_8c.html#a9a79acf143b23e30fe78edf7ba89474e',1,'Board.c']]]
+  ['returnstartmeasurement_33',['ReturnStartMeasurement',['../_board_8c.html#a85504654d0abecbf9b6089ab6d096ab6',1,'Board.c']]],
+  ['rsfifo_34',['RSFifo',['../_board_8c.html#a9a79acf143b23e30fe78edf7ba89474e',1,'Board.c']]]
 ];

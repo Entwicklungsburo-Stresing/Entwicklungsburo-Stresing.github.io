@@ -466,15 +466,33 @@ Functions</h2></td></tr>
 <tr class="memitem:ac82bfa2c1dada573145ec331d493cd92" id="r_ac82bfa2c1dada573145ec331d493cd92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac82bfa2c1dada573145ec331d493cd92">ExitDriver</a> ()</td></tr>
 <tr class="memdesc:ac82bfa2c1dada573145ec331d493cd92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit driver. Call this before exiting software for cleanup.  <br /></td></tr>
 <tr class="separator:ac82bfa2c1dada573145ec331d493cd92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e6150945ca37b27bff3be2d754d1975" id="r_a3e6150945ca37b27bff3be2d754d1975"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e6150945ca37b27bff3be2d754d1975">ReturnFrame</a> (uint32_t drvno, uint32_t sample, uint32_t block, uint16_t camera, uint32_t pixel, uint16_t *pdest)</td></tr>
-<tr class="memdesc:a3e6150945ca37b27bff3be2d754d1975"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get data of a single measurement.  <br /></td></tr>
-<tr class="separator:a3e6150945ca37b27bff3be2d754d1975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3395b116d9ed5db9393639d828cb891" id="r_ac3395b116d9ed5db9393639d828cb891"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3395b116d9ed5db9393639d828cb891">CopyOneSample</a> (uint32_t drvno, uint32_t sample, uint32_t block, uint16_t camera, uint16_t *pdest)</td></tr>
+<tr class="memdesc:ac3395b116d9ed5db9393639d828cb891"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the data of a single sample to pdest.  <br /></td></tr>
+<tr class="separator:ac3395b116d9ed5db9393639d828cb891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34b282689c12229c2433abeb6bb5a447" id="r_a34b282689c12229c2433abeb6bb5a447"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34b282689c12229c2433abeb6bb5a447">CopyOneBlock</a> (uint32_t drvno, uint16_t block, uint16_t *pdest)</td></tr>
+<tr class="memdesc:a34b282689c12229c2433abeb6bb5a447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the data of a single block to pdest.  <br /></td></tr>
+<tr class="separator:a34b282689c12229c2433abeb6bb5a447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99982b05145757ddaaaebc904ef643fc" id="r_a99982b05145757ddaaaebc904ef643fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99982b05145757ddaaaebc904ef643fc">CopyAllData</a> (uint32_t drvno, uint16_t *pdest)</td></tr>
+<tr class="memdesc:a99982b05145757ddaaaebc904ef643fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the data of the complete measurement to pdest.  <br /></td></tr>
+<tr class="separator:a99982b05145757ddaaaebc904ef643fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d8b5568013ca15ab0fba4556c6b1457" id="r_a3d8b5568013ca15ab0fba4556c6b1457"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d8b5568013ca15ab0fba4556c6b1457">CopyDataArbitrary</a> (uint32_t drvno, uint32_t sample, uint32_t block, uint16_t camera, uint32_t pixel, size_t length_in_pixel, uint16_t *pdest)</td></tr>
+<tr class="memdesc:a3d8b5568013ca15ab0fba4556c6b1457"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the data of a custom length to pdest.  <br /></td></tr>
+<tr class="separator:a3d8b5568013ca15ab0fba4556c6b1457"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e1f3b14daba680086195e0c8a3b70a4" id="r_a3e1f3b14daba680086195e0c8a3b70a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e1f3b14daba680086195e0c8a3b70a4">GetIndexOfPixel</a> (uint32_t drvno, uint16_t pixel, uint32_t sample, uint32_t block, uint16_t camera, uint64_t *pIndex)</td></tr>
 <tr class="memdesc:a3e1f3b14daba680086195e0c8a3b70a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of a pixel located in userBuffer.  <br /></td></tr>
 <tr class="separator:a3e1f3b14daba680086195e0c8a3b70a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64210b9090c771366dc549c54b42777d" id="r_a64210b9090c771366dc549c54b42777d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64210b9090c771366dc549c54b42777d">GetAddressOfPixel</a> (uint32_t drvno, uint16_t pixel, uint32_t sample, uint32_t block, uint16_t camera, uint16_t **address)</td></tr>
-<tr class="memdesc:a64210b9090c771366dc549c54b42777d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the address of a pixel located in userBuffer.  <br /></td></tr>
-<tr class="separator:a64210b9090c771366dc549c54b42777d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6213eaf640b96bc2896958dbe354e0c8" id="r_a6213eaf640b96bc2896958dbe354e0c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6213eaf640b96bc2896958dbe354e0c8">GetPixelPointer</a> (uint32_t drvno, uint16_t pixel, uint32_t sample, uint32_t block, uint16_t camera, uint16_t **pdest, size_t *bytes_to_end_of_buffer)</td></tr>
+<tr class="memdesc:a6213eaf640b96bc2896958dbe354e0c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the address of a specific pixel.  <br /></td></tr>
+<tr class="separator:a6213eaf640b96bc2896958dbe354e0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e242dcce304b3118ac71168a252fc71" id="r_a8e242dcce304b3118ac71168a252fc71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e242dcce304b3118ac71168a252fc71">GetAllDataPointer</a> (uint32_t drvno, uint16_t **pdest, size_t *bytes_to_end_of_buffer)</td></tr>
+<tr class="memdesc:a8e242dcce304b3118ac71168a252fc71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the address of the data buffer.  <br /></td></tr>
+<tr class="separator:a8e242dcce304b3118ac71168a252fc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41e21f63d4d0f8850cf2a7a094d6244c" id="r_a41e21f63d4d0f8850cf2a7a094d6244c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41e21f63d4d0f8850cf2a7a094d6244c">GetOneBlockPointer</a> (uint32_t drvno, uint32_t block, uint16_t **pdest, size_t *bytes_to_end_of_buffer)</td></tr>
+<tr class="memdesc:a41e21f63d4d0f8850cf2a7a094d6244c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the address of a specific block.  <br /></td></tr>
+<tr class="separator:a41e21f63d4d0f8850cf2a7a094d6244c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b109dd8661806cd2ec5f825bdaa57e9" id="r_a9b109dd8661806cd2ec5f825bdaa57e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b109dd8661806cd2ec5f825bdaa57e9">GetOneSamplePointer</a> (uint32_t drvno, uint32_t sample, uint32_t block, uint16_t camera, uint16_t **pdest, size_t *bytes_to_end_of_buffer)</td></tr>
+<tr class="memdesc:a9b109dd8661806cd2ec5f825bdaa57e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the address of a specific sample.  <br /></td></tr>
+<tr class="separator:a9b109dd8661806cd2ec5f825bdaa57e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec5474020221a82531e503f7fcd1ee38" id="r_aec5474020221a82531e503f7fcd1ee38"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec5474020221a82531e503f7fcd1ee38">CalcMeasureTimeInSeconds</a> (uint32_t nos, uint32_t nob, double exposure_time_in_ms)</td></tr>
 <tr class="memdesc:aec5474020221a82531e503f7fcd1ee38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the theoretical time needed for one measurement.  <br /></td></tr>
 <tr class="separator:aec5474020221a82531e503f7fcd1ee38"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -637,8 +655,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a711bca6c8f59a5a8830d0176b67de85c" id="r_a711bca6c8f59a5a8830d0176b67de85c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a711bca6c8f59a5a8830d0176b67de85c">ResetBlockFrequencyBit</a> (uint32_t drvno)</td></tr>
 <tr class="memdesc:a711bca6c8f59a5a8830d0176b67de85c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the BlockFrequency bit.  <br /></td></tr>
 <tr class="separator:a711bca6c8f59a5a8830d0176b67de85c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e8cded490905c4d66560a92224d62ef" id="r_a3e8cded490905c4d66560a92224d62ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e8cded490905c4d66560a92224d62ef">GetOneBlockOfOneCamera</a> (uint32_t drvno, uint32_t block, uint16_t camera, uint16_t **address)</td></tr>
-<tr class="separator:a3e8cded490905c4d66560a92224d62ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaba5905a227bfcb5cdea30c4443e6341" id="r_aaba5905a227bfcb5cdea30c4443e6341"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaba5905a227bfcb5cdea30c4443e6341">CopyOneBlockOfOneCamera</a> (uint32_t drvno, uint32_t block, uint16_t camera, uint16_t *pdest)</td></tr>
+<tr class="memdesc:aaba5905a227bfcb5cdea30c4443e6341"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the data of one block of one camera to pdest.  <br /></td></tr>
+<tr class="separator:aaba5905a227bfcb5cdea30c4443e6341"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af71d35ca7f87eba4cc34dc6a5b0fc192" id="r_af71d35ca7f87eba4cc34dc6a5b0fc192"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af71d35ca7f87eba4cc34dc6a5b0fc192">SetAllInterruptsDone</a> (uint32_t drvno)</td></tr>
 <tr class="separator:af71d35ca7f87eba4cc34dc6a5b0fc192"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dd888d207982e00dc8cebe6de514d3f" id="r_a9dd888d207982e00dc8cebe6de514d3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9dd888d207982e00dc8cebe6de514d3f">SetupROI</a> (uint32_t drvno, uint16_t number_of_regions, uint32_t lines, uint8_t *region_size, uint8_t vfreq)</td></tr>
@@ -1840,6 +1859,227 @@ es_status_codes<ul>
 
 </div>
 </div>
+<a id="a99982b05145757ddaaaebc904ef643fc" name="a99982b05145757ddaaaebc904ef643fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99982b05145757ddaaaebc904ef643fc">&#9670;&#160;</a></span>CopyAllData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> CopyAllData </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *</td>          <td class="paramname"><span class="paramname"><em>pdest</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy the data of the complete measurement to pdest. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">pdest</td><td>Pointer where the data will be written to. Make sure that the size of the buffer is &gt;= sizeof(uint16_t) * pixel * nos * camcnt * nob </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
+
+</div>
+</div>
+<a id="a3d8b5568013ca15ab0fba4556c6b1457" name="a3d8b5568013ca15ab0fba4556c6b1457"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d8b5568013ca15ab0fba4556c6b1457">&#9670;&#160;</a></span>CopyDataArbitrary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> CopyDataArbitrary </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>sample</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>block</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>camera</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>pixel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>length_in_pixel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *</td>          <td class="paramname"><span class="paramname"><em>pdest</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy the data of a custom length to pdest. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">sample</td><td>sample number ( 0...(nos - 1) ) </td></tr>
+    <tr><td class="paramname">block</td><td>block number ( 0...(nob - 1) ) </td></tr>
+    <tr><td class="paramname">camera</td><td>camera number ( 0...(CAMCNT - 1) ) </td></tr>
+    <tr><td class="paramname">pixel</td><td>position in one scan (0...(PIXEL-1)) </td></tr>
+    <tr><td class="paramname">length_in_pixel</td><td>Number of pixels to copy. When length_in_pixel exceeds the end of the data buffer the function returns es_parameter_out_of_range. </td></tr>
+    <tr><td class="paramname">pdest</td><td>Pointer where the data will be written to. Make sure that the size of the buffer is &gt;= sizeof(uint16_t) * length_in_pixel </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
+
+</div>
+</div>
+<a id="a34b282689c12229c2433abeb6bb5a447" name="a34b282689c12229c2433abeb6bb5a447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34b282689c12229c2433abeb6bb5a447">&#9670;&#160;</a></span>CopyOneBlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> CopyOneBlock </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>block</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *</td>          <td class="paramname"><span class="paramname"><em>pdest</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy the data of a single block to pdest. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">block</td><td>block number ( 0...(nob - 1) ) </td></tr>
+    <tr><td class="paramname">pdest</td><td>Pointer where the data will be written to. Make sure that the size of the buffer is &gt;= sizeof(uint16_t) * pixel * nos * camcnt </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
+
+</div>
+</div>
+<a id="aaba5905a227bfcb5cdea30c4443e6341" name="aaba5905a227bfcb5cdea30c4443e6341"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaba5905a227bfcb5cdea30c4443e6341">&#9670;&#160;</a></span>CopyOneBlockOfOneCamera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> CopyOneBlockOfOneCamera </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>block</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>camera</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *</td>          <td class="paramname"><span class="paramname"><em>pdest</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy the data of one block of one camera to pdest. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">block</td><td>block number ( 0...(nob - 1) ) </td></tr>
+    <tr><td class="paramname">camera</td><td>camera number ( 0...(CAMCNT - 1) ) </td></tr>
+    <tr><td class="paramname">pdest</td><td>Pointer where the data will be written to. Make sure that the size of the buffer is &gt;= sizeof(uint16_t) * pixel * nos </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
+
+</div>
+</div>
+<a id="ac3395b116d9ed5db9393639d828cb891" name="ac3395b116d9ed5db9393639d828cb891"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3395b116d9ed5db9393639d828cb891">&#9670;&#160;</a></span>CopyOneSample()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> CopyOneSample </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>sample</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>block</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>camera</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *</td>          <td class="paramname"><span class="paramname"><em>pdest</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy the data of a single sample to pdest. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">sample</td><td>sample number ( 0...(nos - 1) ) </td></tr>
+    <tr><td class="paramname">block</td><td>block number ( 0...(nob - 1) ) </td></tr>
+    <tr><td class="paramname">camera</td><td>camera number ( 0...(CAMCNT - 1) ) </td></tr>
+    <tr><td class="paramname">pdest</td><td>Pointer where the data will be written to. Make sure that the size is &gt;= sizeof(uint16_t) * pixel </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
+
+</div>
+</div>
 <a id="a32728c700f4e2059f724cbe5b0dbc018" name="a32728c700f4e2059f724cbe5b0dbc018"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a32728c700f4e2059f724cbe5b0dbc018">&#9670;&#160;</a></span>countBlocksByHardware()</h2>
 
@@ -2361,63 +2601,40 @@ es_status_codes<ul>
 
 </div>
 </div>
-<a id="a64210b9090c771366dc549c54b42777d" name="a64210b9090c771366dc549c54b42777d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64210b9090c771366dc549c54b42777d">&#9670;&#160;</a></span>GetAddressOfPixel()</h2>
+<a id="a8e242dcce304b3118ac71168a252fc71" name="a8e242dcce304b3118ac71168a252fc71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e242dcce304b3118ac71168a252fc71">&#9670;&#160;</a></span>GetAllDataPointer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> GetAddressOfPixel </td>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> GetAllDataPointer </td>
           <td>(</td>
           <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>pixel</em></span>, </td>
+          <td class="paramtype">uint16_t **</td>          <td class="paramname"><span class="paramname"><em>pdest</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>sample</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>block</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>camera</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t **</td>          <td class="paramname"><span class="paramname"><em>address</em></span>&#160;)</td>
+          <td class="paramtype">size_t *</td>          <td class="paramname"><span class="paramname"><em>bytes_to_end_of_buffer</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the address of a pixel located in userBuffer. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Returns the address of the data buffer. </p>
+<p>It is only safe to read as much data until the end of the buffer is reached. That is determined by bytes_to_end_of_buffer. For this function bytes_to_end_of_buffer equals the size of the complete buffer (= nos * nob * pixel * camcnt * 2). The address you get is valid until the next call of <a class="el" href="#a690fcfefd2d5c8563f1e7b1573b749b2">InitMeasurement</a>. The data behind the address changes every measurement cycle when continuous mode is on or after each call of <a class="el" href="#a22ee28be3add5b463773a9ae01c3ceab">StartMeasurement</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
-    <tr><td class="paramname">pixel</td><td>position in one scan (0...(PIXEL-1)) </td></tr>
-    <tr><td class="paramname">sample</td><td>position in samples (0...(nos-1)) </td></tr>
-    <tr><td class="paramname">block</td><td>position in blocks (0...(nob-1)) </td></tr>
-    <tr><td class="paramname">camera</td><td>position in camera count (0...(CAMCNT-1)) </td></tr>
-    <tr><td class="paramname">address</td><td>Pointer to get address </td></tr>
+    <tr><td class="paramname">pdest</td><td>Pointer to get the pointer of the data buffer. When NULL, this functions returns es_invalid_pointer. </td></tr>
+    <tr><td class="paramname">bytes_to_end_of_buffer</td><td>Pointer to get the number of bytes to the end of the buffer. When NULL, this parameter is ignored. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_parameter_out_of_range</li>
-<li>es_memory_not_initialized </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
 
 </div>
 </div>
@@ -3022,12 +3239,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_parameter_out_of_range</li>
-<li>es_memory_not_initialized </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
 
 </div>
 </div>
@@ -3131,16 +3343,64 @@ es_status_codes<ul>
 
 </div>
 </div>
-<a id="a3e8cded490905c4d66560a92224d62ef" name="a3e8cded490905c4d66560a92224d62ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e8cded490905c4d66560a92224d62ef">&#9670;&#160;</a></span>GetOneBlockOfOneCamera()</h2>
+<a id="a41e21f63d4d0f8850cf2a7a094d6244c" name="a41e21f63d4d0f8850cf2a7a094d6244c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41e21f63d4d0f8850cf2a7a094d6244c">&#9670;&#160;</a></span>GetOneBlockPointer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> GetOneBlockOfOneCamera </td>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> GetOneBlockPointer </td>
           <td>(</td>
           <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>block</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t **</td>          <td class="paramname"><span class="paramname"><em>pdest</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *</td>          <td class="paramname"><span class="paramname"><em>bytes_to_end_of_buffer</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the address of a specific block. </p>
+<p>It is only safe to read as much data until the end of the buffer is reached. That is determined by bytes_to_end_of_buffer. For this function bytes_to_end_of_buffer is at least the size of one block (= nos * pixel * camcnt * 2). The address you get is valid until the next call of <a class="el" href="#a690fcfefd2d5c8563f1e7b1573b749b2">InitMeasurement</a>. The data behind the address changes every measurement cycle when continuous mode is on or after each call of <a class="el" href="#a22ee28be3add5b463773a9ae01c3ceab">StartMeasurement</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">block</td><td>position in blocks (0...(nob-1)) </td></tr>
+    <tr><td class="paramname">pdest</td><td>Pointer to get the pointer of the specific pixel. When NULL, this functions returns es_invalid_pointer. </td></tr>
+    <tr><td class="paramname">bytes_to_end_of_buffer</td><td>Pointer to get the number of bytes to the end of the buffer. When NULL, this parameter is ignored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
+
+</div>
+</div>
+<a id="a9b109dd8661806cd2ec5f825bdaa57e9" name="a9b109dd8661806cd2ec5f825bdaa57e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b109dd8661806cd2ec5f825bdaa57e9">&#9670;&#160;</a></span>GetOneSamplePointer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> GetOneSamplePointer </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>sample</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3155,10 +3415,29 @@ es_status_codes<ul>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t **</td>          <td class="paramname"><span class="paramname"><em>address</em></span>&#160;)</td>
+          <td class="paramtype">uint16_t **</td>          <td class="paramname"><span class="paramname"><em>pdest</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *</td>          <td class="paramname"><span class="paramname"><em>bytes_to_end_of_buffer</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns the address of a specific sample. </p>
+<p>It is only safe to read as much data until the end of the buffer is reached. That is determined by bytes_to_end_of_buffer. For this fuction bytes_to_end_of_buffer is a least the size of scan (= pixel * 2). The address you get is valid until the next call of <a class="el" href="#a690fcfefd2d5c8563f1e7b1573b749b2">InitMeasurement</a>. The data behind the address changes every measurement cycle when continuous mode is on or after each call of <a class="el" href="#a22ee28be3add5b463773a9ae01c3ceab">StartMeasurement</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">sample</td><td>position in samples (0...(nos-1)) </td></tr>
+    <tr><td class="paramname">block</td><td>position in blocks (0...(nob-1)) </td></tr>
+    <tr><td class="paramname">camera</td><td>position in camera count (0...(CAMCNT-1)) </td></tr>
+    <tr><td class="paramname">pdest</td><td>Pointer to get the pointer of the specific pixel. When NULL, this functions returns es_invalid_pointer. </td></tr>
+    <tr><td class="paramname">bytes_to_end_of_buffer</td><td>Pointer to get the number of bytes to the end of the buffer. When NULL, this parameter is ignored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
 
 </div>
 </div>
@@ -3192,6 +3471,67 @@ es_status_codes<ul>
     <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">major_version</td><td>Pointer to a uint16_t, where the major version number will be written. </td></tr>
     <tr><td class="paramname">minor_version</td><td>Pointer to a uint16_t, where the minor version number will be written. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
+
+</div>
+</div>
+<a id="a6213eaf640b96bc2896958dbe354e0c8" name="a6213eaf640b96bc2896958dbe354e0c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6213eaf640b96bc2896958dbe354e0c8">&#9670;&#160;</a></span>GetPixelPointer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> GetPixelPointer </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>pixel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>sample</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>block</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>camera</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t **</td>          <td class="paramname"><span class="paramname"><em>pdest</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *</td>          <td class="paramname"><span class="paramname"><em>bytes_to_end_of_buffer</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the address of a specific pixel. </p>
+<p>It is only safe to read as much data until the end of the buffer is reached. That is determined by bytes_to_end_of_buffer. It is always safe to read 2 bytes. The address you get is valid until the next call of <a class="el" href="#a690fcfefd2d5c8563f1e7b1573b749b2">InitMeasurement</a>. The data behind the address changes every measurement cycle when continuous mode is on or after each call of <a class="el" href="#a22ee28be3add5b463773a9ae01c3ceab">StartMeasurement</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">pixel</td><td>position in one scan (0...(PIXEL-1)) </td></tr>
+    <tr><td class="paramname">sample</td><td>position in samples (0...(nos-1)) </td></tr>
+    <tr><td class="paramname">block</td><td>position in blocks (0...(nob-1)) </td></tr>
+    <tr><td class="paramname">camera</td><td>position in camera count (0...(CAMCNT-1)) </td></tr>
+    <tr><td class="paramname">pdest</td><td>Pointer to get the pointer of the specific pixel. When NULL, this functions returns es_invalid_pointer. </td></tr>
+    <tr><td class="paramname">bytes_to_end_of_buffer</td><td>Pointer to get the number of bytes to the end of the buffer. When NULL, this parameter is ignored. </td></tr>
   </table>
   </dd>
 </dl>
@@ -5418,68 +5758,6 @@ es_status_codes<ul>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
-
-</div>
-</div>
-<a id="a3e6150945ca37b27bff3be2d754d1975" name="a3e6150945ca37b27bff3be2d754d1975"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e6150945ca37b27bff3be2d754d1975">&#9670;&#160;</a></span>ReturnFrame()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> ReturnFrame </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>sample</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>block</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>camera</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>pixel</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t *</td>          <td class="paramname"><span class="paramname"><em>pdest</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get data of a single measurement. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
-    <tr><td class="paramname">sample</td><td>sample number ( 0...(nos - 1) ) </td></tr>
-    <tr><td class="paramname">block</td><td>block number ( 0...(nob - 1) ) </td></tr>
-    <tr><td class="paramname">camera</td><td>camera number ( 0...(CAMCNT - 1) ) </td></tr>
-    <tr><td class="paramname">pdest</td><td>Pointer where frame data will be written. Make sure that the size is &gt;= sizeof(uint16_t) * pixel </td></tr>
-    <tr><td class="paramname">pixel</td><td>Lenght of the frame to copy. Typically = pixel </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_invalid_driver_number</li>
-<li>es_invalid_driver_handle</li>
-<li>es_no_error</li>
-<li>es_parameter_out_of_range</li>
-<li>es_memory_not_initialized </li>
-</ul>
-</dd></dl>
 
 </div>
 </div>
