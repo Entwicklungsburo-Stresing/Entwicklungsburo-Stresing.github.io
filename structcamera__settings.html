@@ -183,8 +183,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a9d36d06df4f4506a30632260bf6b1939"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95629ef99d7173af90b835efd29b4eb9" id="r_a95629ef99d7173af90b835efd29b4eb9"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95629ef99d7173af90b835efd29b4eb9">sticnt</a></td></tr>
 <tr class="separator:a95629ef99d7173af90b835efd29b4eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d1ba265b9124b45a875eb1eff4906c4" id="r_a2d1ba265b9124b45a875eb1eff4906c4"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d1ba265b9124b45a875eb1eff4906c4">sensor_reset_length</a></td></tr>
-<tr class="separator:a2d1ba265b9124b45a875eb1eff4906c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e848de09b699a99f976b67297acbd15" id="r_a2e848de09b699a99f976b67297acbd15"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e848de09b699a99f976b67297acbd15">sensor_reset_or_hsir_ec</a></td></tr>
+<tr class="separator:a2e848de09b699a99f976b67297acbd15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87115a7a52a7b6f474bb12ab3a2db076" id="r_a87115a7a52a7b6f474bb12ab3a2db076"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87115a7a52a7b6f474bb12ab3a2db076">write_to_disc</a></td></tr>
 <tr class="separator:a87115a7a52a7b6f474bb12ab3a2db076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87267de87e955bd0f244798f48d0c6df" id="r_a87267de87e955bd0f244798f48d0c6df"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87267de87e955bd0f244798f48d0c6df">file_path</a> [<a class="el" href="globals_8h.html#a4ba27b32532ad58360b3aeec14e84897a0cbddb1cbe6c35a91865e73cac587eaf">file_path_size</a>]</td></tr>
@@ -835,25 +835,25 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a2d1ba265b9124b45a875eb1eff4906c4" name="a2d1ba265b9124b45a875eb1eff4906c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d1ba265b9124b45a875eb1eff4906c4">&#9670;&#160;</a></span>sensor_reset_length</h2>
+<a id="a2e848de09b699a99f976b67297acbd15" name="a2e848de09b699a99f976b67297acbd15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e848de09b699a99f976b67297acbd15">&#9670;&#160;</a></span>sensor_reset_or_hsir_ec</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t camera_settings::sensor_reset_length</td>
+          <td class="memname">uint32_t camera_settings::sensor_reset_or_hsir_ec</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sensor_reset_length controls the length of the reset pulse between two camera readouts for some sensors. This reset can be used, to completely clear the sensor, which is not always the case without this reset for all sensors. sensor_rese_length is a 16 bit unsigned integer. The actual reset time depends on <a class="el" href="#a3c95b63babcb2222a271e2cd42b6e057">camera_settings::sensor_type</a>. Further information about sensor reset can be found in the manual in chapter 4.9.2.</p>
-<p>Reset times for HSVIS:</p><ul>
+<p>sensor_reset_or_hsir_ec either controls the length of the reset pulse between two camera readouts or the exposure time of the high speed infrared sensor. The purpose of this setting depends on <a class="el" href="#a3c95b63babcb2222a271e2cd42b6e057">camera_settings::sensor_type</a>. sensor_reset_or_hsir_ec is a 16 bit unsigned integer.</p>
+<p>Sensor reset for HSVIS: This reset can be used, to completely clear the sensor. Further information about sensor reset can be found in the manual in chapter 4.9.2.</p><ul>
 <li>min: 0 ns</li>
 <li>step: 1 * 4 ns = 4 ns</li>
 <li>default: 100 * 4 ns = 400 ns</li>
 <li>max: 65535 * 4 ns = 262,140 ns</li>
 </ul>
-<p>Reset times for HSIR:</p><ul>
+<p>Exposure control for HSIR: When sensor_type is HSIR this setting controls the exposure time of the sensor. The exposure time cannot be shorter than the minimum. If the value is smaller than the minimum the exposure time will be the minumum. If the value exceeds the repetition rate of the measurement, there will be samples with a zero line.</p><ul>
 <li>min: 134 * 160 ns = 21,440 ns</li>
 <li>step: 1 * 160 ns = 160 ns</li>
 <li>default: 140 * 160 ns = 22,400 ns</li>

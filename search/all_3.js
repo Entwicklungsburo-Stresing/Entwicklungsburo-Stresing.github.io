@@ -47,7 +47,7 @@ var searchData=
   ['cam_5fconfig_5fregister_5fbits_5ftemp_5flevel_44',['cam_config_register_bits_temp_level',['../enum__hardware_8h.html#a6bf7c32673195bbbdc288f7931ac4976a5a8ed79a4131909a4cc6ff2c348dbeea',1,'enum_hardware.h']]],
   ['cam_5fconfig_5fregister_5fbits_5ftrigger_5fmode_5fcc_45',['cam_config_register_bits_trigger_mode_cc',['../enum__hardware_8h.html#a6bf7c32673195bbbdc288f7931ac4976ada4bad9b0c4f2d4447b27d5ae3c32607',1,'enum_hardware.h']]],
   ['cam_5fconfig_5fregister_5ft_46',['cam_config_register_t',['../enum__hardware_8h.html#a6bf7c32673195bbbdc288f7931ac4976',1,'enum_hardware.h']]],
-  ['cam_5fsetsensorresetlength_47',['Cam_SetSensorResetLength',['../_board_8c.html#a26937a72fd128572a0dbb67ec108202c',1,'Board.c']]],
+  ['cam_5fsetsensorresetorhsirec_47',['Cam_SetSensorResetOrHsirEc',['../_board_8c.html#ab9c42a65bd88711c502d4022b0223d38',1,'Board.c']]],
   ['camcnt_48',['camcnt',['../structcamera__settings.html#a4738ff8e4057123c2c7136a8ac585bea',1,'camera_settings::camcnt'],['../structfile__header.html#a3d59692428740a101a5faee4bd1ffef8',1,'file_header::camcnt']]],
   ['camcnt_5fbitindex_5fcamcnt_49',['CAMCNT_bitindex_camcnt',['../enum__hardware_8h.html#a5f849ecb470c9de06dd3a5bc25c095d6af343509f1dcf649ca30e7a6ca72bbdf5',1,'enum_hardware.h']]],
   ['camcnt_5fbits_50',['CAMCNT_bits',['../enum__hardware_8h.html#a5f849ecb470c9de06dd3a5bc25c095d6a626a649f3eee28c8a8e84971f780cb28',1,'enum_hardware.h']]],

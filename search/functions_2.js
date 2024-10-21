@@ -16,7 +16,7 @@ var searchData=
   ['cam3030_5fadc_5fsetlfns_13',['Cam3030_ADC_SetLFNS',['../_board_8c.html#a41ef3c9d29ac2be5225cdca11abbe696',1,'Board.c']]],
   ['cam3030_5fadc_5fsetsamplemode_14',['Cam3030_ADC_SetSampleMode',['../_board_8c.html#a495a76af80eb7f30417eb96f0fe290d1',1,'Board.c']]],
   ['cam3030_5fadc_5ftwowiremodeen_15',['Cam3030_ADC_twoWireModeEN',['../_board_8c.html#a67e6926953409c3ac312c7a6f074bc6f',1,'Board.c']]],
-  ['cam_5fsetsensorresetlength_16',['Cam_SetSensorResetLength',['../_board_8c.html#a26937a72fd128572a0dbb67ec108202c',1,'Board.c']]],
+  ['cam_5fsetsensorresetorhsirec_16',['Cam_SetSensorResetOrHsirEc',['../_board_8c.html#ab9c42a65bd88711c502d4022b0223d38',1,'Board.c']]],
   ['checkdriverhandle_17',['checkDriverHandle',['../_board__ll_8c.html#a8ff452741c66bee1d8560669621389fa',1,'Board_ll.c']]],
   ['checkescapekeystate_18',['checkEscapeKeyState',['../_board__ll_8c.html#a01679920cd63a7360486c1a1b9d70644',1,'Board_ll.c']]],
   ['checkfifoempty_19',['CheckFifoEmpty',['../_board_8c.html#a7bf5655451b9088433159b44fd4e43b3',1,'Board.c']]],

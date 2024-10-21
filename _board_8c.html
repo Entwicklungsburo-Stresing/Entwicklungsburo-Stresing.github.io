@@ -102,6 +102,7 @@ $(function(){ initResizable(false); });
 <code>#include &lt;sys/timeb.h&gt;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &quot;default_settings.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
@@ -370,9 +371,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a495a76af80eb7f30417eb96f0fe290d1" id="r_a495a76af80eb7f30417eb96f0fe290d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a495a76af80eb7f30417eb96f0fe290d1">Cam3030_ADC_SetSampleMode</a> (uint32_t drvno, uint8_t sample_mode)</td></tr>
 <tr class="memdesc:a495a76af80eb7f30417eb96f0fe290d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently not in use. 11/22, P209_8. Set over how many samples of one pixel the ADC averages.  <br /></td></tr>
 <tr class="separator:a495a76af80eb7f30417eb96f0fe290d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26937a72fd128572a0dbb67ec108202c" id="r_a26937a72fd128572a0dbb67ec108202c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26937a72fd128572a0dbb67ec108202c">Cam_SetSensorResetLength</a> (uint32_t drvno, uint16_t sensor_reset_length)</td></tr>
-<tr class="memdesc:a26937a72fd128572a0dbb67ec108202c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the sensor reset length register in the camera, which controls the length of the ARG pulse.  <br /></td></tr>
-<tr class="separator:a26937a72fd128572a0dbb67ec108202c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9c42a65bd88711c502d4022b0223d38" id="r_ab9c42a65bd88711c502d4022b0223d38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9c42a65bd88711c502d4022b0223d38">Cam_SetSensorResetOrHsirEc</a> (uint32_t drvno, uint16_t sensor_reset_or_hsir_ec)</td></tr>
+<tr class="memdesc:ab9c42a65bd88711c502d4022b0223d38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the sensor reset length register in the camera, which controls the length of the ARG pulse.  <br /></td></tr>
+<tr class="separator:ab9c42a65bd88711c502d4022b0223d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48cbcfeea2d1715c014e1c249e1ef384" id="r_a48cbcfeea2d1715c014e1c249e1ef384"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48cbcfeea2d1715c014e1c249e1ef384">SetTemp</a> (uint32_t drvno, uint8_t level)</td></tr>
 <tr class="memdesc:a48cbcfeea2d1715c014e1c249e1ef384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set temperature level for cooled cameras.  <br /></td></tr>
 <tr class="separator:a48cbcfeea2d1715c014e1c249e1ef384"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1619,21 +1620,21 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a26937a72fd128572a0dbb67ec108202c" name="a26937a72fd128572a0dbb67ec108202c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26937a72fd128572a0dbb67ec108202c">&#9670;&#160;</a></span>Cam_SetSensorResetLength()</h2>
+<a id="ab9c42a65bd88711c502d4022b0223d38" name="ab9c42a65bd88711c502d4022b0223d38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9c42a65bd88711c502d4022b0223d38">&#9670;&#160;</a></span>Cam_SetSensorResetOrHsirEc()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> Cam_SetSensorResetLength </td>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> Cam_SetSensorResetOrHsirEc </td>
           <td>(</td>
           <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>sensor_reset_length</em></span>&#160;)</td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>sensor_reset_or_hsir_ec</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1642,7 +1643,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
-    <tr><td class="paramname">sensor_reset_length</td><td>See <a class="el" href="enum__hardware_8h.html#a9e3c451d5901d136d9fc1de5b1f1cda2ab0e3ec5266d037400d248de6e6bd1a81">camera_register_addresses_t::cam_adaddr_sensor_reset_length</a> for more information. </td></tr>
+    <tr><td class="paramname">sensor_reset_or_hsir_ec</td><td>See <a class="el" href="enum__hardware_8h.html#a9e3c451d5901d136d9fc1de5b1f1cda2ab0e3ec5266d037400d248de6e6bd1a81">camera_register_addresses_t::cam_adaddr_sensor_reset_length</a> for more information. </td></tr>
   </table>
   </dd>
 </dl>
