@@ -238,14 +238,16 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="#a5b73895d5cad296f9fd0ae4237c4933daf404b45739190c09dea1483e5c3f5a39">CTRLC_bitindex_I</a> = 0
 , <a class="el" href="#a5b73895d5cad296f9fd0ae4237c4933da543178f9ebf2a07edc630184b68e9ad9">CTRLC_bitindex_S1</a> = 1
 , <a class="el" href="#a5b73895d5cad296f9fd0ae4237c4933da0f2ea5d22322e709979914348f02cc33">CTRLC_bitindex_S2</a> = 2
-, <a class="el" href="#a5b73895d5cad296f9fd0ae4237c4933da7008569a34c7878e7478700d1950a55e">CTRLC_bitindex_eoi</a> = 4
+, <a class="el" href="#a5b73895d5cad296f9fd0ae4237c4933da2524b873b26031b6803162a5a2c39445">CTRLC_bitindex_shift_s</a> = 3
 , <br />
-&#160;&#160;<a class="el" href="#a5b73895d5cad296f9fd0ae4237c4933da9dd1129a5a3cda5f550bf4600e55423f">CTRLC_bitindex_eoi_chb</a> = 5
+&#160;&#160;<a class="el" href="#a5b73895d5cad296f9fd0ae4237c4933da7008569a34c7878e7478700d1950a55e">CTRLC_bitindex_eoi</a> = 4
+, <a class="el" href="#a5b73895d5cad296f9fd0ae4237c4933da9dd1129a5a3cda5f550bf4600e55423f">CTRLC_bitindex_eoi_chb</a> = 5
 , <a class="el" href="#a5b73895d5cad296f9fd0ae4237c4933da551c7ceb9172d4fb3d2a1435f60fd07b">CTRLC_bit_I</a> = 0x01
 , <a class="el" href="#a5b73895d5cad296f9fd0ae4237c4933da65b653665f35413bb7aac210de9c0daa">CTRLC_bit_S1</a> = 0x02
-, <a class="el" href="#a5b73895d5cad296f9fd0ae4237c4933da17d4b768b8e8ef399a307ba1c5116943">CTRLC_bit_S2</a> = 0x04
 , <br />
-&#160;&#160;<a class="el" href="#a5b73895d5cad296f9fd0ae4237c4933daf9f8a96d62cf20dad592aa9f150951d2">CTRLC_bit_eoi</a> = 0x10
+&#160;&#160;<a class="el" href="#a5b73895d5cad296f9fd0ae4237c4933da17d4b768b8e8ef399a307ba1c5116943">CTRLC_bit_S2</a> = 0x04
+, <a class="el" href="#a5b73895d5cad296f9fd0ae4237c4933da6c2c20379f5f679021d1d5c37107328b">CTRLC_bit_shift_s</a> = 0x08
+, <a class="el" href="#a5b73895d5cad296f9fd0ae4237c4933daf9f8a96d62cf20dad592aa9f150951d2">CTRLC_bit_eoi</a> = 0x10
 , <a class="el" href="#a5b73895d5cad296f9fd0ae4237c4933da77d1bc4d943e8f1234318ad83f9957c5">CTRLC_bit_eoi_chb</a> = 0x20
 <br />
  }</td></tr>
@@ -1488,11 +1490,13 @@ Enumerations</h2></td></tr>
 <tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="a5b73895d5cad296f9fd0ae4237c4933daf404b45739190c09dea1483e5c3f5a39" name="a5b73895d5cad296f9fd0ae4237c4933daf404b45739190c09dea1483e5c3f5a39"></a>CTRLC_bitindex_I&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a5b73895d5cad296f9fd0ae4237c4933da543178f9ebf2a07edc630184b68e9ad9" name="a5b73895d5cad296f9fd0ae4237c4933da543178f9ebf2a07edc630184b68e9ad9"></a>CTRLC_bitindex_S1&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a5b73895d5cad296f9fd0ae4237c4933da0f2ea5d22322e709979914348f02cc33" name="a5b73895d5cad296f9fd0ae4237c4933da0f2ea5d22322e709979914348f02cc33"></a>CTRLC_bitindex_S2&#160;</td><td class="fieldinit">2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5b73895d5cad296f9fd0ae4237c4933da2524b873b26031b6803162a5a2c39445" name="a5b73895d5cad296f9fd0ae4237c4933da2524b873b26031b6803162a5a2c39445"></a>CTRLC_bitindex_shift_s&#160;</td><td class="fieldinit">3&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a5b73895d5cad296f9fd0ae4237c4933da7008569a34c7878e7478700d1950a55e" name="a5b73895d5cad296f9fd0ae4237c4933da7008569a34c7878e7478700d1950a55e"></a>CTRLC_bitindex_eoi&#160;</td><td class="fieldinit">4&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a5b73895d5cad296f9fd0ae4237c4933da9dd1129a5a3cda5f550bf4600e55423f" name="a5b73895d5cad296f9fd0ae4237c4933da9dd1129a5a3cda5f550bf4600e55423f"></a>CTRLC_bitindex_eoi_chb&#160;</td><td class="fieldinit">5&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a5b73895d5cad296f9fd0ae4237c4933da551c7ceb9172d4fb3d2a1435f60fd07b" name="a5b73895d5cad296f9fd0ae4237c4933da551c7ceb9172d4fb3d2a1435f60fd07b"></a>CTRLC_bit_I&#160;</td><td class="fieldinit">0x01&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a5b73895d5cad296f9fd0ae4237c4933da65b653665f35413bb7aac210de9c0daa" name="a5b73895d5cad296f9fd0ae4237c4933da65b653665f35413bb7aac210de9c0daa"></a>CTRLC_bit_S1&#160;</td><td class="fieldinit">0x02&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a5b73895d5cad296f9fd0ae4237c4933da17d4b768b8e8ef399a307ba1c5116943" name="a5b73895d5cad296f9fd0ae4237c4933da17d4b768b8e8ef399a307ba1c5116943"></a>CTRLC_bit_S2&#160;</td><td class="fieldinit">0x04&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5b73895d5cad296f9fd0ae4237c4933da6c2c20379f5f679021d1d5c37107328b" name="a5b73895d5cad296f9fd0ae4237c4933da6c2c20379f5f679021d1d5c37107328b"></a>CTRLC_bit_shift_s&#160;</td><td class="fieldinit">0x08&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a5b73895d5cad296f9fd0ae4237c4933daf9f8a96d62cf20dad592aa9f150951d2" name="a5b73895d5cad296f9fd0ae4237c4933daf9f8a96d62cf20dad592aa9f150951d2"></a>CTRLC_bit_eoi&#160;</td><td class="fieldinit">0x10&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a5b73895d5cad296f9fd0ae4237c4933da77d1bc4d943e8f1234318ad83f9957c5" name="a5b73895d5cad296f9fd0ae4237c4933da77d1bc4d943e8f1234318ad83f9957c5"></a>CTRLC_bit_eoi_chb&#160;</td><td class="fieldinit">0x20&#160;</td><td class="fielddoc"></td></tr>
 </table>

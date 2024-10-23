@@ -189,8 +189,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a87115a7a52a7b6f474bb12ab3a2db076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87267de87e955bd0f244798f48d0c6df" id="r_a87267de87e955bd0f244798f48d0c6df"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87267de87e955bd0f244798f48d0c6df">file_path</a> [<a class="el" href="globals_8h.html#a4ba27b32532ad58360b3aeec14e84897a0cbddb1cbe6c35a91865e73cac587eaf">file_path_size</a>]</td></tr>
 <tr class="separator:a87267de87e955bd0f244798f48d0c6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa37537f15873eac7c11573ac53df7e73" id="r_aa37537f15873eac7c11573ac53df7e73"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa37537f15873eac7c11573ac53df7e73">file_split_mode</a></td></tr>
-<tr class="separator:aa37537f15873eac7c11573ac53df7e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02fa99eaf64c0df8af0ffd6ce1b5497c" id="r_a02fa99eaf64c0df8af0ffd6ce1b5497c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02fa99eaf64c0df8af0ffd6ce1b5497c">shift_s1s2_to_next_scan</a></td></tr>
+<tr class="separator:a02fa99eaf64c0df8af0ffd6ce1b5497c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12d482c6345afb2116315167cf04b42d" id="r_a12d482c6345afb2116315167cf04b42d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12d482c6345afb2116315167cf04b42d">is_cooled_camera_legacy_mode</a></td></tr>
 <tr class="separator:a12d482c6345afb2116315167cf04b42d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12c8fa4bdad6fccbdd1a767a44792627" id="r_a12c8fa4bdad6fccbdd1a767a44792627"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12c8fa4bdad6fccbdd1a767a44792627">bnc_out</a></td></tr>
@@ -506,21 +506,6 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aa37537f15873eac7c11573ac53df7e73" name="aa37537f15873eac7c11573ac53df7e73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa37537f15873eac7c11573ac53df7e73">&#9670;&#160;</a></span>file_split_mode</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t camera_settings::file_split_mode</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>DEPRECATED Not used, because didn't work correctly. Specifies how to split files when writing measurement data to disc. See enum <a class="el" href="enum__settings_8h.html#a2f4a284b0a5ab5d474b897488289158c">split_mode_t</a> in enum.h for modes. </p>
-
-</div>
-</div>
 <a id="ad9e618626ec640a5733b33745e844d15" name="ad9e618626ec640a5733b33745e844d15"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad9e618626ec640a5733b33745e844d15">&#9670;&#160;</a></span>gpx_offset</h2>
 
@@ -828,7 +813,7 @@ Public Attributes</h2></td></tr>
 <li>camera system 3030:<ul>
 <li>gain off: 0</li>
 <li>step: 1</li>
-<li>max gain: 4 </li>
+<li>max gain: 3 </li>
 </ul>
 </li>
 </ul>
@@ -874,6 +859,21 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Sensor type should match the sensor type of your camera. See enum <a class="el" href="enum__settings_8h.html#a089f166159fb19f10d81c65c1d8793a2">sensor_type_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. </p>
+
+</div>
+</div>
+<a id="a02fa99eaf64c0df8af0ffd6ce1b5497c" name="a02fa99eaf64c0df8af0ffd6ce1b5497c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02fa99eaf64c0df8af0ffd6ce1b5497c">&#9670;&#160;</a></span>shift_s1s2_to_next_scan</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t camera_settings::shift_s1s2_to_next_scan</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TODO implement me Since P222_17 </p>
 
 </div>
 </div>
