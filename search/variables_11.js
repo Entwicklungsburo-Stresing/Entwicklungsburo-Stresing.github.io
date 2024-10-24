@@ -12,11 +12,12 @@ var searchData=
   ['temp_5fuserbufferwritepos_9',['temp_userBufferWritePos',['../globals_8c.html#aa2242d46545d9227960a395bacc21152',1,'globals.c']]],
   ['temp_5fuserbufferwritepos_5flast_10',['temp_userBufferWritePos_last',['../globals_8c.html#ab504375f780f5c7c9275f8314ea8b7b9',1,'globals.c']]],
   ['tempgood_11',['tempGood',['../structspecial__pixels.html#abad58c7db9fdbfc3f747d0816b36c207',1,'special_pixels']]],
-  ['timeron_12',['timerOn',['../globals_8h.html#af15269ff90986dd874dc8775f8e8417a',1,'timerOn:&#160;globals.c'],['../globals_8c.html#af15269ff90986dd874dc8775f8e8417a',1,'timerOn:&#160;globals.c']]],
-  ['timestamp_13',['timestamp',['../structfile__header.html#ac4a7ee4e4d986ebaf0376ea4c06843cc',1,'file_header']]],
-  ['tmp_5fallinterruptsdone_14',['tmp_allInterruptsDone',['../globals_8c.html#a9bb88bdfcf1f5dffe0595ec3ac9e2b27',1,'globals.c']]],
-  ['tmp_5fvirtualcamcnt_15',['tmp_virtualCamcnt',['../globals_8c.html#ab4dde406ff1c3b4d1ff31925c93e22a1',1,'globals.c']]],
-  ['tocnt_16',['tocnt',['../structcamera__settings.html#a9d36d06df4f4506a30632260bf6b1939',1,'camera_settings']]],
-  ['tor_17',['tor',['../structcamera__settings.html#ac9a0cd5c6fc15fb192e18d623cffca0d',1,'camera_settings']]],
-  ['trigger_5fmode_5fintegrator_18',['trigger_mode_integrator',['../structcamera__settings.html#a81d92a0475fbf332ef99de9748d6b197',1,'camera_settings']]]
+  ['testmodeon_12',['testModeOn',['../globals_8h.html#a1103f6bd442a084b6ff88d9fa120a5d1',1,'testModeOn:&#160;globals.c'],['../globals_8c.html#a1103f6bd442a084b6ff88d9fa120a5d1',1,'testModeOn:&#160;globals.c']]],
+  ['timeron_13',['timerOn',['../globals_8h.html#af15269ff90986dd874dc8775f8e8417a',1,'timerOn:&#160;globals.c'],['../globals_8c.html#af15269ff90986dd874dc8775f8e8417a',1,'timerOn:&#160;globals.c']]],
+  ['timestamp_14',['timestamp',['../structfile__header.html#ac4a7ee4e4d986ebaf0376ea4c06843cc',1,'file_header']]],
+  ['tmp_5fallinterruptsdone_15',['tmp_allInterruptsDone',['../globals_8c.html#a9bb88bdfcf1f5dffe0595ec3ac9e2b27',1,'globals.c']]],
+  ['tmp_5fvirtualcamcnt_16',['tmp_virtualCamcnt',['../globals_8c.html#ab4dde406ff1c3b4d1ff31925c93e22a1',1,'globals.c']]],
+  ['tocnt_17',['tocnt',['../structcamera__settings.html#a9d36d06df4f4506a30632260bf6b1939',1,'camera_settings']]],
+  ['tor_18',['tor',['../structcamera__settings.html#ac9a0cd5c6fc15fb192e18d623cffca0d',1,'camera_settings']]],
+  ['trigger_5fmode_5fintegrator_19',['trigger_mode_integrator',['../structcamera__settings.html#a81d92a0475fbf332ef99de9748d6b197',1,'camera_settings']]]
 ];
