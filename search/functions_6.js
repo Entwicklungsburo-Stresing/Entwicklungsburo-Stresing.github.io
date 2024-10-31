@@ -3,7 +3,7 @@ var searchData=
   ['getalldatapointer_0',['GetAllDataPointer',['../_board_8c.html#a8e242dcce304b3118ac71168a252fc71',1,'Board.c']]],
   ['getallspecialpixelinformation_1',['GetAllSpecialPixelInformation',['../_board_8c.html#a21ed7f6d5dd052d0ba1918210c672dd0',1,'Board.c']]],
   ['getblockindex_2',['GetBlockIndex',['../_board_8c.html#a0b0c6222dbfab626956c0baf35123ec7',1,'Board.c']]],
-  ['getblockon_3',['GetBlockOn',['../_board_8c.html#aa3a0be392b62b67b24b85e7e984c0e30',1,'Board.c']]],
+  ['getblockon_3',['GetBlockOn',['../_board_8c.html#a013b99bd4e61d3a5da0788a477b4673b',1,'Board.c']]],
   ['getblocktriggerdetected_4',['GetBlockTriggerDetected',['../_board_8c.html#aa72df79ea3a8023466a46da4b6903f70',1,'Board.c']]],
   ['getbonlength_5',['GetBonLength',['../_board_8c.html#a5295bc9c20a518cfb33d95e59a341292',1,'Board.c']]],
   ['getbonperiod_6',['GetBonPeriod',['../_board_8c.html#ab6be0d810fe23f9e9be375bcdca9fa8e',1,'Board.c']]],

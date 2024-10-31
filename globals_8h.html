@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>EBST_CAM: /github/workspace/shared_src/globals.h File Reference</title>
+<title>EBST_CAM: /github/workspace/ESLSCDLL/globals.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" href="CCD.ico" type="image/x-icon" />
 <script type="text/javascript" src="jquery.js"></script>
@@ -85,15 +85,14 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_592d2b1795cfc9f099351b56e2847bf1.html">shared_src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_25d55443eb827cd408e5758924675b25.html">ESLSCDLL</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">globals.h File Reference</div></div>
 </div><!--header-->
@@ -101,21 +100,12 @@ $(function(){ initResizable(false); });
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="struct_8h_source.html">struct.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="enum__settings_8h_source.html">enum_settings.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="enum__hardware_8h_source.html">enum_hardware.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="struct_8h_source.html">../shared_src/struct.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="enum__settings_8h_source.html">../shared_src/enum_settings.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="enum__hardware_8h_source.html">../shared_src/enum_hardware.h</a>&quot;</code><br />
 </div>
 <p><a href="globals_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfile__header.html">file_header</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspecial__pixels.html">special_pixels</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structverify__data__parameter.html">verify_data_parameter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a2250647ce240908b8e97a0f7d6b81933" id="r_a2250647ce240908b8e97a0f7d6b81933"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2250647ce240908b8e97a0f7d6b81933">MANUAL_OVERRIDE_TLP</a>&#160;&#160;&#160;false</td></tr>
@@ -136,13 +126,10 @@ Macros</h2></td></tr>
 <tr class="memdesc:a85b0f3ab73b1cd460378ed6236acc2b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">DMA_CONTIGBUF: DMA buffer type switch.  <br /></td></tr>
 <tr class="separator:a85b0f3ab73b1cd460378ed6236acc2b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a4ba27b32532ad58360b3aeec14e84897" id="r_a4ba27b32532ad58360b3aeec14e84897"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ba27b32532ad58360b3aeec14e84897">file_specifications_t</a> { <a class="el" href="#a4ba27b32532ad58360b3aeec14e84897a0cbddb1cbe6c35a91865e73cac587eaf">file_path_size</a> = 256
-, <a class="el" href="#a4ba27b32532ad58360b3aeec14e84897a70a8971f7acd1d1a63a4ecc42a1fbbd7">file_timestamp_size</a> = 64
-, <a class="el" href="#a4ba27b32532ad58360b3aeec14e84897a0946dad68dcf9c861b933d4a7837133a">file_filename_full_size</a> = 256
- }</td></tr>
-<tr class="separator:a4ba27b32532ad58360b3aeec14e84897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a74c430e52c5281496dcf6cf8f397fc1d" id="r_a74c430e52c5281496dcf6cf8f397fc1d"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74c430e52c5281496dcf6cf8f397fc1d">hookFunction</a>) ()</td></tr>
+<tr class="separator:a74c430e52c5281496dcf6cf8f397fc1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -180,7 +167,7 @@ Variables</h2></td></tr>
 <tr class="separator:aeb4ab164f87614736d4e4b13c33c9bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6ee495fb3bca59a5c624245983fc804" id="r_aa6ee495fb3bca59a5c624245983fc804"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6ee495fb3bca59a5c624245983fc804">measurement_cnt</a></td></tr>
 <tr class="separator:aa6ee495fb3bca59a5c624245983fc804"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4d084be9a8b4b7d84a8ba52be25e064" id="r_ac4d084be9a8b4b7d84a8ba52be25e064"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4d084be9a8b4b7d84a8ba52be25e064">start_timestamp</a> [<a class="el" href="#a4ba27b32532ad58360b3aeec14e84897a70a8971f7acd1d1a63a4ecc42a1fbbd7">file_timestamp_size</a>]</td></tr>
+<tr class="memitem:ac4d084be9a8b4b7d84a8ba52be25e064" id="r_ac4d084be9a8b4b7d84a8ba52be25e064"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4d084be9a8b4b7d84a8ba52be25e064">start_timestamp</a> [<a class="el" href="enum__settings_8h.html#a4ba27b32532ad58360b3aeec14e84897a70a8971f7acd1d1a63a4ecc42a1fbbd7">file_timestamp_size</a>]</td></tr>
 <tr class="separator:ac4d084be9a8b4b7d84a8ba52be25e064"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a579bf5f9d7b10bdab5b098ff044be523" id="r_a579bf5f9d7b10bdab5b098ff044be523"><td class="memItemLeft" align="right" valign="top">volatile size_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a579bf5f9d7b10bdab5b098ff044be523">data_available</a></td></tr>
 <tr class="separator:a579bf5f9d7b10bdab5b098ff044be523"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,6 +179,16 @@ Variables</h2></td></tr>
 <tr class="separator:a3cb2038bb4b173cfac366a49e906e39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8961548fb6c2dce645c11e49aaa972d2" id="r_a8961548fb6c2dce645c11e49aaa972d2"><td class="memItemLeft" align="right" valign="top">uint16_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8961548fb6c2dce645c11e49aaa972d2">pcieCardMinorVersion</a></td></tr>
 <tr class="separator:a8961548fb6c2dce645c11e49aaa972d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25f9fa16fcc8e5bfeff23291210bf5da" id="r_a25f9fa16fcc8e5bfeff23291210bf5da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a74c430e52c5281496dcf6cf8f397fc1d">hookFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25f9fa16fcc8e5bfeff23291210bf5da">measureStartHook</a></td></tr>
+<tr class="separator:a25f9fa16fcc8e5bfeff23291210bf5da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4af086fa04bf11326d0b310c04ff4b10" id="r_a4af086fa04bf11326d0b310c04ff4b10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a74c430e52c5281496dcf6cf8f397fc1d">hookFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4af086fa04bf11326d0b310c04ff4b10">measureDoneHook</a></td></tr>
+<tr class="separator:a4af086fa04bf11326d0b310c04ff4b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acce05368e4d2383cf6bb977a2242c580" id="r_acce05368e4d2383cf6bb977a2242c580"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a74c430e52c5281496dcf6cf8f397fc1d">hookFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acce05368e4d2383cf6bb977a2242c580">blockStartHook</a></td></tr>
+<tr class="separator:acce05368e4d2383cf6bb977a2242c580"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97e00cef16ab59728aa2d90f774091e3" id="r_a97e00cef16ab59728aa2d90f774091e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a74c430e52c5281496dcf6cf8f397fc1d">hookFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97e00cef16ab59728aa2d90f774091e3">blockDoneHook</a></td></tr>
+<tr class="separator:a97e00cef16ab59728aa2d90f774091e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc0b85c1e1b641cc9259bfc1e5b27b9b" id="r_acc0b85c1e1b641cc9259bfc1e5b27b9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a74c430e52c5281496dcf6cf8f397fc1d">hookFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc0b85c1e1b641cc9259bfc1e5b27b9b">allBlocksDoneHook</a></td></tr>
+<tr class="separator:acc0b85c1e1b641cc9259bfc1e5b27b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ac4cb304f489b43a573b831ae8c50320f" name="ac4cb304f489b43a573b831ae8c50320f"></a>
@@ -309,23 +306,18 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a4ba27b32532ad58360b3aeec14e84897" name="a4ba27b32532ad58360b3aeec14e84897"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ba27b32532ad58360b3aeec14e84897">&#9670;&#160;</a></span>file_specifications_t</h2>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a74c430e52c5281496dcf6cf8f397fc1d" name="a74c430e52c5281496dcf6cf8f397fc1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74c430e52c5281496dcf6cf8f397fc1d">&#9670;&#160;</a></span>hookFunction</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="#a4ba27b32532ad58360b3aeec14e84897">file_specifications_t</a></td>
+          <td class="memname">typedef void(* hookFunction) ()</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="a4ba27b32532ad58360b3aeec14e84897a0cbddb1cbe6c35a91865e73cac587eaf" name="a4ba27b32532ad58360b3aeec14e84897a0cbddb1cbe6c35a91865e73cac587eaf"></a>file_path_size&#160;</td><td class="fieldinit">256&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a4ba27b32532ad58360b3aeec14e84897a70a8971f7acd1d1a63a4ecc42a1fbbd7" name="a4ba27b32532ad58360b3aeec14e84897a70a8971f7acd1d1a63a4ecc42a1fbbd7"></a>file_timestamp_size&#160;</td><td class="fieldinit">64&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a4ba27b32532ad58360b3aeec14e84897a0946dad68dcf9c861b933d4a7837133a" name="a4ba27b32532ad58360b3aeec14e84897a0946dad68dcf9c861b933d4a7837133a"></a>file_filename_full_size&#160;</td><td class="fieldinit">256&#160;</td><td class="fielddoc"></td></tr>
-</table>
 
 </div>
 </div>
@@ -352,6 +344,28 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="acc0b85c1e1b641cc9259bfc1e5b27b9b" name="acc0b85c1e1b641cc9259bfc1e5b27b9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc0b85c1e1b641cc9259bfc1e5b27b9b">&#9670;&#160;</a></span>allBlocksDoneHook</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a74c430e52c5281496dcf6cf8f397fc1d">hookFunction</a> allBlocksDoneHook</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a320d646e3cfd31abf1269fcd3bc6d1b9" name="a320d646e3cfd31abf1269fcd3bc6d1b9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a320d646e3cfd31abf1269fcd3bc6d1b9">&#9670;&#160;</a></span>allInterruptsDone</h2>
 
@@ -363,6 +377,50 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">volatile bool* allInterruptsDone</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a97e00cef16ab59728aa2d90f774091e3" name="a97e00cef16ab59728aa2d90f774091e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97e00cef16ab59728aa2d90f774091e3">&#9670;&#160;</a></span>blockDoneHook</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a74c430e52c5281496dcf6cf8f397fc1d">hookFunction</a> blockDoneHook</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acce05368e4d2383cf6bb977a2242c580" name="acce05368e4d2383cf6bb977a2242c580"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acce05368e4d2383cf6bb977a2242c580">&#9670;&#160;</a></span>blockStartHook</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a74c430e52c5281496dcf6cf8f397fc1d">hookFunction</a> blockStartHook</td>
         </tr>
       </table>
   </td>
@@ -484,6 +542,28 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a4af086fa04bf11326d0b310c04ff4b10" name="a4af086fa04bf11326d0b310c04ff4b10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4af086fa04bf11326d0b310c04ff4b10">&#9670;&#160;</a></span>measureDoneHook</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a74c430e52c5281496dcf6cf8f397fc1d">hookFunction</a> measureDoneHook</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa6ee495fb3bca59a5c624245983fc804" name="aa6ee495fb3bca59a5c624245983fc804"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa6ee495fb3bca59a5c624245983fc804">&#9670;&#160;</a></span>measurement_cnt</h2>
 
@@ -495,6 +575,28 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">uint64_t measurement_cnt</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a25f9fa16fcc8e5bfeff23291210bf5da" name="a25f9fa16fcc8e5bfeff23291210bf5da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25f9fa16fcc8e5bfeff23291210bf5da">&#9670;&#160;</a></span>measureStartHook</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a74c430e52c5281496dcf6cf8f397fc1d">hookFunction</a> measureStartHook</td>
         </tr>
       </table>
   </td>
@@ -648,7 +750,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char start_timestamp[<a class="el" href="#a4ba27b32532ad58360b3aeec14e84897a70a8971f7acd1d1a63a4ecc42a1fbbd7">file_timestamp_size</a>]</td>
+          <td class="memname">char start_timestamp[<a class="el" href="enum__settings_8h.html#a4ba27b32532ad58360b3aeec14e84897a70a8971f7acd1d1a63a4ecc42a1fbbd7">file_timestamp_size</a>]</td>
         </tr>
       </table>
   </td>
