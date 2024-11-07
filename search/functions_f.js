@@ -1,10 +1,10 @@
 var searchData=
 [
   ['waitforallinterruptsdone_0',['WaitForAllInterruptsDone',['../_board__ll_8c.html#a0cdd211a5d3c2cd5c651f1577c356d28',1,'Board_ll.c']]],
-  ['waitforblockon_1',['WaitForBlockOn',['../_board_8c.html#a5d1e1511a459bd68e3dbe06ea1e2f99e',1,'Board.c']]],
-  ['waitforblockready_2',['waitForBlockReady',['../_board_8c.html#ab8dd08ae7766f51dbd23e9c9a1557442',1,'Board.c']]],
+  ['waitforblockdone_1',['WaitForBlockDone',['../_board_8c.html#a6bdabb704ff46882406acf6059a61dc6',1,'Board.c']]],
+  ['waitforblockon_2',['WaitForBlockOn',['../_board_8c.html#a5d1e1511a459bd68e3dbe06ea1e2f99e',1,'Board.c']]],
   ['waitforblocktrigger_3',['waitForBlockTrigger',['../_board_8c.html#a064863a7da68c4911ad62314afaf852e',1,'Board.c']]],
-  ['waitformeasureready_4',['WaitForMeasureReady',['../_board_8c.html#a9f20d53067a3a3a2c7ee55026ab48493',1,'Board.c']]],
+  ['waitformeasuredone_4',['WaitForMeasureDone',['../_board_8c.html#a504c56384d0ee710746bc3ace01b1924',1,'Board.c']]],
   ['waitfortelapsed_5',['WaitforTelapsed',['../_board__ll_8c.html#a364bfc62fe74551a58ef8af9a714d329',1,'Board_ll.c']]],
   ['writebitsdma_5f32_6',['writeBitsDma_32',['../_board_8c.html#a6868b09ffcff1d8e1a84c1eaecebd451',1,'Board.c']]],
   ['writebitsdma_5f8_7',['writeBitsDma_8',['../_board_8c.html#a6b76c2e1248ac010b0a93b6bb33c304a',1,'Board.c']]],

@@ -20,8 +20,6 @@ var searchData=
   ['ioctrl_5fsetimpactstartpixel_17',['IOCtrl_setImpactStartPixel',['../_board_8c.html#aeec86716b223da055caad331cd33bd58',1,'Board.c']]],
   ['ioctrl_5fsetoutput_18',['IOCtrl_setOutput',['../_board_8c.html#ab3b560a9c795effeacff19c3bde08a72',1,'Board.c']]],
   ['ioctrl_5fsett0_19',['IOCtrl_setT0',['../_board_8c.html#a77a7edcb851a21b20363e8895a0a1576',1,'Board.c']]],
-  ['isblockon_20',['isBlockOn',['../_board_8c.html#af78b4018fa3efb26bfd7a4b35a1f7f21',1,'Board.c']]],
-  ['ismeasureon_21',['isMeasureOn',['../_board_8c.html#ab6754e6743cf456aa2d0d3e62091d74f',1,'Board.c']]],
-  ['isr_22',['isr',['../_board__ll_8c.html#ab13902e201d7091aeb300faa035523d4',1,'Board_ll.c']]],
-  ['istimeron_23',['IsTimerOn',['../_board_8c.html#a345eb42e31fba376d7ae59c50df2ae69',1,'Board.c']]]
+  ['isr_20',['isr',['../_board__ll_8c.html#ab13902e201d7091aeb300faa035523d4',1,'Board_ll.c']]],
+  ['istimeron_21',['IsTimerOn',['../_board_8c.html#a345eb42e31fba376d7ae59c50df2ae69',1,'Board.c']]]
 ];
