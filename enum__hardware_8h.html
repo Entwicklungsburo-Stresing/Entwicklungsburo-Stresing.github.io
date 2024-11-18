@@ -638,7 +638,10 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2a425e5c70a280aa6ddf59053bbc090312">cam_adaddr_vclks_amount4</a> = 0x0C
 , <a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2ad7009cbedf2e0a27419ddef26f27125e">cam_adaddr_vclks_amount5</a> = 0x0D
-, <a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2a3bc012fcd77b1777124473b1b265a3af">cam_adaddr_camera_position</a> = 0x7F
+, <a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2ae2cd3b91bf727e1150c147bf7085671d">cam_adaddr_camera_init</a> = 0x10
+, <a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2a6e98f5617cbc63611ed94b8dc73f8b09">cam_adaddr_software_reset</a> = 0x7E
+, <br />
+&#160;&#160;<a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2a3bc012fcd77b1777124473b1b265a3af">cam_adaddr_camera_position</a> = 0x7F
 <br />
  }</td></tr>
 <tr class="separator:a9e3c451d5901d136d9fc1de5b1f1cda2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1359,7 +1362,8 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>These registers are addressed when maddr = 0. </p>
 <table class="fieldtable">
-<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2ac08b288d19d82887239f79a267f8e647" name="a9e3c451d5901d136d9fc1de5b1f1cda2ac08b288d19d82887239f79a267f8e647"></a>cam_adaddr_config&#160;</td><td class="fieldinit">0x00&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2ac08b288d19d82887239f79a267f8e647" name="a9e3c451d5901d136d9fc1de5b1f1cda2ac08b288d19d82887239f79a267f8e647"></a>cam_adaddr_config&#160;</td><td class="fieldinit">0x00&#160;</td><td class="fielddoc"><p>See details in <a class="el" href="#a6bf7c32673195bbbdc288f7931ac4976">cam_config_register_t</a>. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2a69121ef35ecc8ca9bf51529008910ae3" name="a9e3c451d5901d136d9fc1de5b1f1cda2a69121ef35ecc8ca9bf51529008910ae3"></a>cam_adaddr_pixel&#160;</td><td class="fieldinit">0x01&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2a5a7070d1ed412936fab5223d1de07b50" name="a9e3c451d5901d136d9fc1de5b1f1cda2a5a7070d1ed412936fab5223d1de07b50"></a>cam_adaddr_trig_in&#160;</td><td class="fieldinit">0x02&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2abf4ac2bf667f8421f9df18ea9b1b308b" name="a9e3c451d5901d136d9fc1de5b1f1cda2abf4ac2bf667f8421f9df18ea9b1b308b"></a>cam_adaddr_unused&#160;</td><td class="fieldinit">0x03&#160;</td><td class="fielddoc"></td></tr>
@@ -1384,6 +1388,10 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2af9c3ae7b59d033bd8f7d6db35358d5d8" name="a9e3c451d5901d136d9fc1de5b1f1cda2af9c3ae7b59d033bd8f7d6db35358d5d8"></a>cam_adaddr_vclks_amount3&#160;</td><td class="fieldinit">0x0B&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2a425e5c70a280aa6ddf59053bbc090312" name="a9e3c451d5901d136d9fc1de5b1f1cda2a425e5c70a280aa6ddf59053bbc090312"></a>cam_adaddr_vclks_amount4&#160;</td><td class="fieldinit">0x0C&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2ad7009cbedf2e0a27419ddef26f27125e" name="a9e3c451d5901d136d9fc1de5b1f1cda2ad7009cbedf2e0a27419ddef26f27125e"></a>cam_adaddr_vclks_amount5&#160;</td><td class="fieldinit">0x0D&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2ae2cd3b91bf727e1150c147bf7085671d" name="a9e3c451d5901d136d9fc1de5b1f1cda2ae2cd3b91bf727e1150c147bf7085671d"></a>cam_adaddr_camera_init&#160;</td><td class="fieldinit">0x10&#160;</td><td class="fielddoc"><p>Send any data to this address to initialize the camera. This should be done last in the initialisation routine, after reset and after writing all other registers. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2a6e98f5617cbc63611ed94b8dc73f8b09" name="a9e3c451d5901d136d9fc1de5b1f1cda2a6e98f5617cbc63611ed94b8dc73f8b09"></a>cam_adaddr_software_reset&#160;</td><td class="fieldinit">0x7E&#160;</td><td class="fielddoc"><p>Send any data to this address to do a software reset. This should be done first in the initialisation routine. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2a3bc012fcd77b1777124473b1b265a3af" name="a9e3c451d5901d136d9fc1de5b1f1cda2a3bc012fcd77b1777124473b1b265a3af"></a>cam_adaddr_camera_position&#160;</td><td class="fieldinit">0x7F&#160;</td><td class="fielddoc"><p>This is a register for the camera position for multiple cameras in line. The software always sets the first camera to 0 and the cameras are handing their positions one to another. </p>
 </td></tr>
 </table>

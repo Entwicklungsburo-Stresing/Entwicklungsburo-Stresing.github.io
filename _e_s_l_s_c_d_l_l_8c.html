@@ -396,10 +396,8 @@ Functions</h2></td></tr>
 <tr class="memdesc:a9ff235b66c6ca068d623ff8c6ad4d280"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a es_status_codes to a human readable error message.     <br /></td></tr>
 <tr class="separator:a9ff235b66c6ca068d623ff8c6ad4d280"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d86863d3964728c00d3a276dff06de0" id="r_a5d86863d3964728c00d3a276dff06de0"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d86863d3964728c00d3a276dff06de0">DLLIOCtrl_setOutput</a> (uint32_t drvno, uint32_t number, uint16_t width_in_5ns, uint16_t delay_in_5ns)</td></tr>
-<tr class="memdesc:a5d86863d3964728c00d3a276dff06de0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set paramters of one pulse output of IOCTRL.     <br /></td></tr>
 <tr class="separator:a5d86863d3964728c00d3a276dff06de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a708c79598e2e40ac13f051b3407647b8" id="r_a708c79598e2e40ac13f051b3407647b8"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a708c79598e2e40ac13f051b3407647b8">DLLIOCtrl_setT0</a> (uint32_t drvno, uint32_t period_in_10ns)</td></tr>
-<tr class="memdesc:a708c79598e2e40ac13f051b3407647b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set period of IOCtrl pulse outputs base frequency T0.     <br /></td></tr>
 <tr class="separator:a708c79598e2e40ac13f051b3407647b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a866ab0ea4619c3d75b05233d534b5cdf" id="r_a866ab0ea4619c3d75b05233d534b5cdf"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a866ab0ea4619c3d75b05233d534b5cdf">DLLIOCtrl_setT0_multipleBoards</a> (uint32_t period_in_10ns)</td></tr>
 <tr class="memdesc:a866ab0ea4619c3d75b05233d534b5cdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set period of IOCtrl pulse outputs base frequency T0 for all boards selected by settings parameter board_sel.  <br /></td></tr>
@@ -4557,24 +4555,7 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Set paramters of one pulse output of IOCTRL.    </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
-    <tr><td class="paramname">number</td><td>Number of output: 1 ... 7 </td></tr>
-    <tr><td class="paramname">width_in_5ns</td><td>Set width of pulse in 5ns steps. </td></tr>
-    <tr><td class="paramname">delay_in_5ns</td><td>Set delay of pulse in 5ns steps. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_write_failed</li>
-<li>es_parameter_out_of_range</li>
-<li>es_register_read_failed</li>
-<li>es_camera_not_found    </li>
-</ul>
-</dd></dl>
+<p></p>
 
 </div>
 </div>
@@ -4597,21 +4578,7 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Set period of IOCtrl pulse outputs base frequency T0.    </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
-    <tr><td class="paramname">period_in_10ns</td><td>Period of T0 in 10ns steps. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_write_failed</li>
-<li>es_register_read_failed</li>
-<li>es_camera_not_found    </li>
-</ul>
-</dd></dl>
+<p></p>
 
 </div>
 </div>
