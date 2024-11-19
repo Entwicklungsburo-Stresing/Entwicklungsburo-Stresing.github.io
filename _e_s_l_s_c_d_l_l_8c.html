@@ -2988,7 +2988,7 @@ es_status_codes<ul>
 </div><div class="memdoc">
 
 <p>Gives scan and block number of the last scan written to userBuffer.    </p>
-<p>When settings parameter USE_SOFTWARE_POLLING is true this function converts scanCounterTotal to scan and block. This is necessary, because scanCounterTotal is just counting each scan not regarding camcnt and blocks. When USE_SOFTWARE_POLLING is false the scan and block number of the last interrupt is given.</p>
+<p>When settings parameter camera_settings.user_software_polling is true this function converts scanCounterTotal to scan and block. This is necessary, because scanCounterTotal is just counting each scan not regarding camcnt and blocks. When camera_settings.user_software_polling is false the scan and block number of the last interrupt is given.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
@@ -5694,7 +5694,7 @@ es_status_codes<ul>
 </div><div class="memdoc">
 
 <p>Set a function which will be executed every time when a block ends. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>The end of a block doesn't indicate the availability of the data. Which data is available to copy is indicated by <a class="el" href="#a79a1ea8d164b02336350f228840b1c02">DLLGetCurrentScanNumber</a>. The copy method is controlled by <a class="el" href="structcamera__settings.html#a7d6d06fc3f59976df702bfda1e7bc0d1">camera_settings::use_software_polling</a>. When the block size is not aligned to <a class="el" href="structcamera__settings.html#a8f2833d2036671abc6382415794d6032">camera_settings::dma_buffer_size_in_scans</a> and <a class="el" href="structcamera__settings.html#a7d6d06fc3f59976df702bfda1e7bc0d1">camera_settings::use_software_polling</a> is turned off, there will be no interrupt at the end of a block and so the data won't be available in this moment. Turn <a class="el" href="structcamera__settings.html#a7d6d06fc3f59976df702bfda1e7bc0d1">camera_settings::use_software_polling</a> on to avoid this. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hook</td><td>Pointer to the function which will be executed. </td></tr>
   </table>
@@ -5982,7 +5982,7 @@ es_status_codes<ul>
 </div><div class="memdoc">
 
 <p>Set a function which will be executed every time when a measurement ends. </p>
-<p>Regardless of <a class="el" href="structmeasurement__settings.html#aac0f1237e7da13512c25448ddc6fe852">measurement_settings::continuous_measurement</a> this hook is call only one time at the end of the measurement. When <a class="el" href="structmeasurement__settings.html#aac0f1237e7da13512c25448ddc6fe852">measurement_settings::continuous_measurement</a> is enabled, is is called after the loop is disabled. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Regardless of <a class="el" href="structmeasurement__settings.html#aac0f1237e7da13512c25448ddc6fe852">measurement_settings::continuous_measurement</a> this hook is call only one time at the end of the measurement. When <a class="el" href="structmeasurement__settings.html#aac0f1237e7da13512c25448ddc6fe852">measurement_settings::continuous_measurement</a> is enabled, is is called after the loop is disabled. The hook is called after the pause set by <a class="el" href="structmeasurement__settings.html#a6b38daf0440f5d5ac2609a56f9314e96">measurement_settings::cont_pause_in_microseconds</a>. When this hook is called all data is available, so <a class="el" href="#a79a1ea8d164b02336350f228840b1c02">DLLGetCurrentScanNumber</a> should return sample = nos-1 and block = nob-1. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hook</td><td>Pointer to the function which will be executed. </td></tr>
   </table>

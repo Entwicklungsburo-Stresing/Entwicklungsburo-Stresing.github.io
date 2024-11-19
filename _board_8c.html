@@ -102,6 +102,7 @@ $(function(){ initResizable(false); });
 <code>#include &lt;sys/timeb.h&gt;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;inttypes.h&gt;</code><br />
 <code>#include &quot;../shared_src/default_settings.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -2399,7 +2400,7 @@ es_status_codes<ul>
 </div><div class="memdoc">
 
 <p>Gives scan and block number of the last scan written to userBuffer. </p>
-<p>When settings parameter USE_SOFTWARE_POLLING is true this function converts scanCounterTotal to scan and block. This is necessary, because scanCounterTotal is just counting each scan not regarding camcnt and blocks. When USE_SOFTWARE_POLLING is false the scan and block number of the last interrupt is given.</p>
+<p>When settings parameter camera_settings.user_software_polling is true this function converts scanCounterTotal to scan and block. This is necessary, because scanCounterTotal is just counting each scan not regarding camcnt and blocks. When camera_settings.user_software_polling is false the scan and block number of the last interrupt is given.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
@@ -3181,7 +3182,7 @@ es_status_codes<ul>
 </div><div class="memdoc">
 
 <p>Gives scan and block number of the last scan written to userBuffer.    </p>
-<p>When settings parameter USE_SOFTWARE_POLLING is true this function converts scanCounterTotal to scan and block. This is necessary, because scanCounterTotal is just counting each scan not regarding camcnt and blocks. When USE_SOFTWARE_POLLING is false the scan and block number of the last interrupt is given.</p>
+<p>When settings parameter camera_settings.user_software_polling is true this function converts scanCounterTotal to scan and block. This is necessary, because scanCounterTotal is just counting each scan not regarding camcnt and blocks. When camera_settings.user_software_polling is false the scan and block number of the last interrupt is given.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
