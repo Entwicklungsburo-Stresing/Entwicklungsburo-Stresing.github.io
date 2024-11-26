@@ -328,6 +328,8 @@ Variables</h2></td></tr>
 <tr class="separator:a3c1045a39e6a4dcc8a929d06912d3b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac40bdc1357c03d4fb2a969f94127d854" id="r_ac40bdc1357c03d4fb2a969f94127d854"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac40bdc1357c03d4fb2a969f94127d854">Direct2dViewer</a> = NULL</td></tr>
 <tr class="separator:ac40bdc1357c03d4fb2a969f94127d854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf6c86edf618572620d64d6234a8f10c" id="r_acf6c86edf618572620d64d6234a8f10c"><td class="memItemLeft" align="right" valign="top">uint16_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf6c86edf618572620d64d6234a8f10c">greyscale_data</a> = NULL</td></tr>
+<tr class="separator:acf6c86edf618572620d64d6234a8f10c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25bc9ffc520087fa85805601e527aacb" id="r_a25bc9ffc520087fa85805601e527aacb"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25bc9ffc520087fa85805601e527aacb">interrupt_handler_array</a> [<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>] = { &amp;<a class="el" href="#ad58bec910138298cfd60d64513cd859f">interrupt_handler0</a>, &amp;<a class="el" href="#ac11903448e9ec9ec287522e600533b21">interrupt_handler1</a>, &amp;<a class="el" href="#a7fdcbda9f36efba388e15ceee255c94c">interrupt_handler2</a>, &amp;<a class="el" href="#a6ec4caef7ad99f1b19d973d7ff49fd3d">interrupt_handler3</a>, &amp;<a class="el" href="#a594144648ea640acff70bc7df70349f7">interrupt_handler4</a> }</td></tr>
 <tr class="separator:a25bc9ffc520087fa85805601e527aacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -391,10 +393,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Exit driver. Call this after Cleanup driver. </p>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -420,12 +419,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_getting_device_info_failed</li>
-<li>es_open_device_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -445,14 +439,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Windows specific function for initializing driver. </p>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_setting_driver_name_failed</li>
-<li>es_debug_init_failed</li>
-<li>es_driver_init_failed</li>
-<li>es_device_not_found</li>
-<li>es_no_error </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -472,7 +459,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Display information about registers and settings in pop up windows. </p>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -520,14 +507,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed</li>
-</ul>
-</dd></dl>
-<ul>
-<li>es_no_space0 </li>
-</ul>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 </li>
 </ul>
 
@@ -555,12 +535,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed</li>
-<li>es_register_write_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -601,11 +576,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -631,11 +602,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -659,13 +626,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes<ul>
-<li>es_no_error</li>
-</ul>
-</dd></dl>
-<ul>
-<li>es_register_read_failed </li>
-</ul>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -690,12 +651,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_invalid_driver_number</li>
-<li>es_invalid_driver_handle</li>
-<li>es_no_error </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -753,11 +709,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_unlocking_dma_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -783,14 +735,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_invalid_driver_number</li>
-<li>es_invalid_driver_handle</li>
-<li>es_no_error</li>
-<li>es_unlocking_dma_failed</li>
-<li>es_disabling_interrupt_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -908,11 +853,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_disabling_interrupt_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -1395,11 +1336,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -1436,11 +1373,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -1477,11 +1410,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -1518,11 +1447,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -1567,11 +1492,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reset thread priority to normal. </p>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_setting_thread_priority_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -1621,11 +1542,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set thread to high priority level. </p>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_setting_thread_priority_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -1668,16 +1585,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_getting_dma_buffer_failed<ul>
-<li>es_register_read_failed</li>
-</ul>
-</li>
-<li>es_register_write_failed</li>
-<li>es_enabling_interrupts_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -1954,11 +1862,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_write_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -2025,11 +1929,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes<ul>
-<li>es_no_error</li>
-<li>es_register_write_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -2066,11 +1966,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes<ul>
-<li>es_no_error</li>
-<li>es_register_write_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -2107,11 +2003,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes<ul>
-<li>es_no_error</li>
-<li>es_register_write_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -2253,6 +2145,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">HANDLE ghMutex[<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>] = { NULL, NULL, NULL, NULL, NULL }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf6c86edf618572620d64d6234a8f10c" name="acf6c86edf618572620d64d6234a8f10c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf6c86edf618572620d64d6234a8f10c">&#9670;&#160;</a></span>greyscale_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t* greyscale_data = NULL</td>
         </tr>
       </table>
 </div><div class="memdoc">

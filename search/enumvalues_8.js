@@ -12,5 +12,9 @@ var searchData=
   ['maxpaxloadsize_5f512bytes_9',['maxPaxloadSize_512bytes',['../enum__hardware_8h.html#a69d30493bcf4f3a83a16ce1ee7558889ad6b7994eb0e204d317a82d6ccfe40fff',1,'enum_hardware.h']]],
   ['maxpaxloadsize_5freserved1_10',['maxPaxloadSize_reserved1',['../enum__hardware_8h.html#a69d30493bcf4f3a83a16ce1ee7558889a4e4c9abeb91367941d1e0ccf4549b42a',1,'enum_hardware.h']]],
   ['maxpaxloadsize_5freserved2_11',['maxPaxloadSize_reserved2',['../enum__hardware_8h.html#a69d30493bcf4f3a83a16ce1ee7558889a0fd3d34608d2b7c74748555fcacba0db',1,'enum_hardware.h']]],
-  ['measurement_5fwise_12',['measurement_wise',['../enum__settings_8h.html#a2f4a284b0a5ab5d474b897488289158ca83d9e9fbf93501ba942d180612386985',1,'enum_settings.h']]]
+  ['measurement_5fwise_12',['measurement_wise',['../enum__settings_8h.html#a2f4a284b0a5ab5d474b897488289158ca83d9e9fbf93501ba942d180612386985',1,'enum_settings.h']]],
+  ['monitor_5fadc_5fclk_13',['monitor_adc_clk',['../enum__settings_8h.html#a31d89bc528102fe4010591054c2dc5d1a5aab4ecfc8e51248449363c5ce873693',1,'enum_settings.h']]],
+  ['monitor_5fvin_14',['monitor_Vin',['../enum__settings_8h.html#a31d89bc528102fe4010591054c2dc5d1a21ac70da643da0f94135a364ca21a6d9',1,'enum_settings.h']]],
+  ['monitor_5fwin_15',['monitor_win',['../enum__settings_8h.html#a31d89bc528102fe4010591054c2dc5d1a5fc858ece2c0329506c05e030823f1d6',1,'enum_settings.h']]],
+  ['monitor_5fxck_16',['monitor_xck',['../enum__settings_8h.html#a31d89bc528102fe4010591054c2dc5d1a3dbd90c2527f419e021b9cabbd7e181e',1,'enum_settings.h']]]
 ];

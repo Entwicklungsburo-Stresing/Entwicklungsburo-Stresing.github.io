@@ -6,5 +6,5 @@ var searchData=
   ['pciexpressdevicecapabilities_5fbits_5ft_3',['PciExpressDeviceCapabilities_bits_t',['../enum__hardware_8h.html#a30821fd39eadf5b7a8fbe9ff45db801b',1,'enum_hardware.h']]],
   ['pixel_5fcamera_5fstatus_5fbits_5ft_4',['pixel_camera_status_bits_t',['../enum__hardware_8h.html#a38de1923679a344eb82558f5de572d65',1,'enum_hardware.h']]],
   ['pixel_5ffpga_5fver_5ft_5',['pixel_fpga_ver_t',['../enum__hardware_8h.html#a719ffee0dbc151d0a1b93faf887d7be5',1,'enum_hardware.h']]],
-  ['pixreg_5fbits_5ft_6',['PIXREG_bits_t',['../enum__hardware_8h.html#a4135c818736b2a4f9ab7371ecdfdcfbe',1,'enum_hardware.h']]]
+  ['pixreg_5fffctrl_5fffflags_5fbits_5ft_6',['PIXREG_FFCTRL_FFFLAGS_bits_t',['../enum__hardware_8h.html#a10f20212349f955764eb1f11f0f57039',1,'enum_hardware.h']]]
 ];

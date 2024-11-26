@@ -193,8 +193,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a02fa99eaf64c0df8af0ffd6ce1b5497c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12d482c6345afb2116315167cf04b42d" id="r_a12d482c6345afb2116315167cf04b42d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12d482c6345afb2116315167cf04b42d">is_cooled_camera_legacy_mode</a></td></tr>
 <tr class="separator:a12d482c6345afb2116315167cf04b42d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12c8fa4bdad6fccbdd1a767a44792627" id="r_a12c8fa4bdad6fccbdd1a767a44792627"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12c8fa4bdad6fccbdd1a767a44792627">bnc_out</a></td></tr>
-<tr class="separator:a12c8fa4bdad6fccbdd1a767a44792627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87e6684676f13947b082dd5e7ab225b5" id="r_a87e6684676f13947b082dd5e7ab225b5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87e6684676f13947b082dd5e7ab225b5">monitor</a></td></tr>
+<tr class="separator:a87e6684676f13947b082dd5e7ab225b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Individual settings for each PCIe board. </p>
@@ -290,21 +290,6 @@ Public Attributes</h2></td></tr>
 <li>step: 10 ns</li>
 <li>max: 4,294,967,295 * 10 ns = 42,949,672,950 ns </li>
 </ul>
-
-</div>
-</div>
-<a id="a12c8fa4bdad6fccbdd1a767a44792627" name="a12c8fa4bdad6fccbdd1a767a44792627"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12c8fa4bdad6fccbdd1a767a44792627">&#9670;&#160;</a></span>bnc_out</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t camera_settings::bnc_out</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>bnc_out is the output mode for the XCK output of the Camera Control box. See enum <a class="el" href="enum__settings_8h.html#a3ccb55ee2f9a77e32aec7dda8ab59e83">bnc_out_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. Further information about bnc out can be found in the manual in chapter 3.3.1. </p>
 
 </div>
 </div>
@@ -675,6 +660,21 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a87e6684676f13947b082dd5e7ab225b5" name="a87e6684676f13947b082dd5e7ab225b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87e6684676f13947b082dd5e7ab225b5">&#9670;&#160;</a></span>monitor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t camera_settings::monitor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>monitor is the output mode for the monitor output of the Camera Control. See enum <a class="el" href="enum__settings_8h.html#a31d89bc528102fe4010591054c2dc5d1">monitor_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. Further information about monitor can be found in the manual in chapter 3.3.1. </p>
+
+</div>
+</div>
 <a id="aba505c7ed0e5a7488ea20f4caf52675b" name="aba505c7ed0e5a7488ea20f4caf52675b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aba505c7ed0e5a7488ea20f4caf52675b">&#9670;&#160;</a></span>number_of_regions</h2>
 
@@ -1035,7 +1035,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>use_software_polling determines which method is used to copy data from DMA to user buffer.</p><ul>
 <li>&gt;0: Use software polling. When there is new available data in the DMA buffer, a thread copies the data one scan at a time to the user buffer. Since the PCIe card firmware version P222_2 this method is reliable up to about 100kHz. It generates as expected a higher CPU load than the interrupt method. With this option you can get more recent scans from <a class="el" href="_e_s_l_s_c_d_l_l_8c.html#a79a1ea8d164b02336350f228840b1c02">DLLGetCurrentScanNumber</a>, especially at lower frequencies.</li>
-<li>=0: Use interrupt. Every camera_settings.dma_buffer_size_in_scans/2 scan the interrupt starts a copy process, which copies dma_buffer_size_in_scans/2 scans to the user buffer. 1000 is our default value for <a class="el" href="#a8f2833d2036671abc6382415794d6032">camera_settings::dma_buffer_size_in_scans</a>, so the interrupt is triggered every 500 scans.</li>
+<li>=0: Use interrupt. Every <a class="el" href="#a8f2833d2036671abc6382415794d6032">camera_settings::dma_buffer_size_in_scans</a> /2 scan the interrupt starts a copy process, which copies dma_buffer_size_in_scans/2 scans to the user buffer. 1000 is our default value for <a class="el" href="#a8f2833d2036671abc6382415794d6032">camera_settings::dma_buffer_size_in_scans</a>, so the interrupt is triggered every 500 scans.</li>
 </ul>
 <p>Further information about software polling can be found in the manual in chapter 5.4.8. </p>
 

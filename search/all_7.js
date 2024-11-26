@@ -77,5 +77,6 @@ var searchData=
   ['gioreg_5fbits_5ft_74',['GIOREG_bits_t',['../enum__hardware_8h.html#a95871548cbf0bc64201636b985255292',1,'enum_hardware.h']]],
   ['globals_2ec_75',['globals.c',['../globals_8c.html',1,'']]],
   ['globals_2eh_76',['globals.h',['../globals_8h.html',1,'']]],
-  ['gpx_5foffset_77',['gpx_offset',['../structcamera__settings.html#ad9e618626ec640a5733b33745e844d15',1,'camera_settings']]]
+  ['gpx_5foffset_77',['gpx_offset',['../structcamera__settings.html#ad9e618626ec640a5733b33745e844d15',1,'camera_settings']]],
+  ['greyscale_5fdata_78',['greyscale_data',['../_board__ll_8c.html#acf6c86edf618572620d64d6234a8f10c',1,'Board_ll.c']]]
 ];

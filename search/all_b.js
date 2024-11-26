@@ -25,5 +25,11 @@ var searchData=
   ['measurement_5fsettings_5fmatlab_22',['measurement_settings_matlab',['../structmeasurement__settings__matlab.html',1,'']]],
   ['measurement_5fwise_23',['measurement_wise',['../enum__settings_8h.html#a2f4a284b0a5ab5d474b897488289158ca83d9e9fbf93501ba942d180612386985',1,'enum_settings.h']]],
   ['measurestarthook_24',['measureStartHook',['../globals_8h.html#a25f9fa16fcc8e5bfeff23291210bf5da',1,'measureStartHook:&#160;globals.c'],['../globals_8c.html#a25f9fa16fcc8e5bfeff23291210bf5da',1,'measureStartHook:&#160;globals.c']]],
-  ['mutexuserbuffer_25',['mutexUserBuffer',['../_board__ll_8c.html#a865f453b860d97ada49b6509ad61bded',1,'Board_ll.c']]]
+  ['monitor_25',['monitor',['../structcamera__settings.html#a87e6684676f13947b082dd5e7ab225b5',1,'camera_settings']]],
+  ['monitor_5fadc_5fclk_26',['monitor_adc_clk',['../enum__settings_8h.html#a31d89bc528102fe4010591054c2dc5d1a5aab4ecfc8e51248449363c5ce873693',1,'enum_settings.h']]],
+  ['monitor_5ft_27',['monitor_t',['../enum__settings_8h.html#a31d89bc528102fe4010591054c2dc5d1',1,'enum_settings.h']]],
+  ['monitor_5fvin_28',['monitor_Vin',['../enum__settings_8h.html#a31d89bc528102fe4010591054c2dc5d1a21ac70da643da0f94135a364ca21a6d9',1,'enum_settings.h']]],
+  ['monitor_5fwin_29',['monitor_win',['../enum__settings_8h.html#a31d89bc528102fe4010591054c2dc5d1a5fc858ece2c0329506c05e030823f1d6',1,'enum_settings.h']]],
+  ['monitor_5fxck_30',['monitor_xck',['../enum__settings_8h.html#a31d89bc528102fe4010591054c2dc5d1a3dbd90c2527f419e021b9cabbd7e181e',1,'enum_settings.h']]],
+  ['mutexuserbuffer_31',['mutexUserBuffer',['../_board__ll_8c.html#a865f453b860d97ada49b6509ad61bded',1,'Board_ll.c']]]
 ];

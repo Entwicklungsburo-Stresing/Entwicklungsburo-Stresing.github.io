@@ -160,12 +160,12 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#a86f1e46308bfcaf8ceccb822f1d72c57a322132ec60ef92afd82ebd8b5833ffe9">area_mode</a> = 2
  }</td></tr>
 <tr class="separator:a86f1e46308bfcaf8ceccb822f1d72c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ccb55ee2f9a77e32aec7dda8ab59e83" id="r_a3ccb55ee2f9a77e32aec7dda8ab59e83"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ccb55ee2f9a77e32aec7dda8ab59e83">bnc_out_t</a> { <a class="el" href="#a3ccb55ee2f9a77e32aec7dda8ab59e83a726670f3ed670b72776ec01ac35e3331">bnc_out_xck</a> = 0
-, <a class="el" href="#a3ccb55ee2f9a77e32aec7dda8ab59e83afd1ef969348a60ab7d6e72b6b3b7f6bf">bnc_out_exp_win</a> = 1
-, <a class="el" href="#a3ccb55ee2f9a77e32aec7dda8ab59e83aa6de3eb072d3886fa1787092bb71aef1">bnc_out_adc_clk</a> = 2
-, <a class="el" href="#a3ccb55ee2f9a77e32aec7dda8ab59e83a1e11726e1400f8c0ad73a611afc7424b">bnc_out_Vin</a> = 3
+<tr class="memitem:a31d89bc528102fe4010591054c2dc5d1" id="r_a31d89bc528102fe4010591054c2dc5d1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31d89bc528102fe4010591054c2dc5d1">monitor_t</a> { <a class="el" href="#a31d89bc528102fe4010591054c2dc5d1a3dbd90c2527f419e021b9cabbd7e181e">monitor_xck</a> = 0
+, <a class="el" href="#a31d89bc528102fe4010591054c2dc5d1a5fc858ece2c0329506c05e030823f1d6">monitor_win</a> = 1
+, <a class="el" href="#a31d89bc528102fe4010591054c2dc5d1a5aab4ecfc8e51248449363c5ce873693">monitor_adc_clk</a> = 2
+, <a class="el" href="#a31d89bc528102fe4010591054c2dc5d1a21ac70da643da0f94135a364ca21a6d9">monitor_Vin</a> = 3
  }</td></tr>
-<tr class="separator:a3ccb55ee2f9a77e32aec7dda8ab59e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a31d89bc528102fe4010591054c2dc5d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34afd11285290b35c0f65d59c163fafa" id="r_a34afd11285290b35c0f65d59c163fafa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34afd11285290b35c0f65d59c163fafa">tor_out_t</a> { <br />
 &#160;&#160;<a class="el" href="#a34afd11285290b35c0f65d59c163fafaa0d6cce4d48bfa7c8e815fee3645b243a">tor_xck</a> = 0
 , <a class="el" href="#a34afd11285290b35c0f65d59c163fafaa72f413dde356268773713baaf789a141">tor_rego</a> = 1
@@ -256,31 +256,6 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="a760a8dafdcddcfadfea0aa3e01159164a89cd38755edb2809cf6ed80b3ba8760d" name="a760a8dafdcddcfadfea0aa3e01159164a89cd38755edb2809cf6ed80b3ba8760d"></a>ramp&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"><p>Every 8 channels are performing a ramp signal. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a760a8dafdcddcfadfea0aa3e01159164a4a7a5bdd9acf4b955bb227d97d92f3a9" name="a760a8dafdcddcfadfea0aa3e01159164a4a7a5bdd9acf4b955bb227d97d92f3a9"></a>custom_pattern&#160;</td><td class="fieldinit">2&#160;</td><td class="fielddoc"><p>With custom pattern all 8 ADC channels deliver a specific constant value given by <a class="el" href="structcamera__settings.html#a54be4b6539b096109c43abdf0a489fb7">camera_settings::adc_custom_pattern</a>. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<a id="a3ccb55ee2f9a77e32aec7dda8ab59e83" name="a3ccb55ee2f9a77e32aec7dda8ab59e83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ccb55ee2f9a77e32aec7dda8ab59e83">&#9670;&#160;</a></span>bnc_out_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="#a3ccb55ee2f9a77e32aec7dda8ab59e83">bnc_out_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This enum shows all options for the setting <a class="el" href="structcamera__settings.html#a12c8fa4bdad6fccbdd1a767a44792627">camera_settings::bnc_out</a>. </p>
-<table class="fieldtable">
-<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="a3ccb55ee2f9a77e32aec7dda8ab59e83a726670f3ed670b72776ec01ac35e3331" name="a3ccb55ee2f9a77e32aec7dda8ab59e83a726670f3ed670b72776ec01ac35e3331"></a>bnc_out_xck&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"><p>XCK is high during the readout of the camera. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a3ccb55ee2f9a77e32aec7dda8ab59e83afd1ef969348a60ab7d6e72b6b3b7f6bf" name="a3ccb55ee2f9a77e32aec7dda8ab59e83afd1ef969348a60ab7d6e72b6b3b7f6bf"></a>bnc_out_exp_win&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"><p>Exp win stands for exposure window and is high, when the sensor is ready to be exposed to light. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a3ccb55ee2f9a77e32aec7dda8ab59e83aa6de3eb072d3886fa1787092bb71aef1" name="a3ccb55ee2f9a77e32aec7dda8ab59e83aa6de3eb072d3886fa1787092bb71aef1"></a>bnc_out_adc_clk&#160;</td><td class="fieldinit">2&#160;</td><td class="fielddoc"><p>The option ADC CLK sets the output to the ADC clock. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a3ccb55ee2f9a77e32aec7dda8ab59e83a1e11726e1400f8c0ad73a611afc7424b" name="a3ccb55ee2f9a77e32aec7dda8ab59e83a1e11726e1400f8c0ad73a611afc7424b"></a>bnc_out_Vin&#160;</td><td class="fieldinit">3&#160;</td><td class="fielddoc"><p>Vin is high when the voltage input is sampled. </p>
 </td></tr>
 </table>
 
@@ -486,6 +461,31 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<a id="a31d89bc528102fe4010591054c2dc5d1" name="a31d89bc528102fe4010591054c2dc5d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31d89bc528102fe4010591054c2dc5d1">&#9670;&#160;</a></span>monitor_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a31d89bc528102fe4010591054c2dc5d1">monitor_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This enum shows all options for the setting <a class="el" href="structcamera__settings.html#a87e6684676f13947b082dd5e7ab225b5">camera_settings::monitor</a>. </p>
+<table class="fieldtable">
+<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="a31d89bc528102fe4010591054c2dc5d1a3dbd90c2527f419e021b9cabbd7e181e" name="a31d89bc528102fe4010591054c2dc5d1a3dbd90c2527f419e021b9cabbd7e181e"></a>monitor_xck&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"><p>XCK is high during the readout of the camera. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a31d89bc528102fe4010591054c2dc5d1a5fc858ece2c0329506c05e030823f1d6" name="a31d89bc528102fe4010591054c2dc5d1a5fc858ece2c0329506c05e030823f1d6"></a>monitor_win&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"><p>Exp win stands for exposure window and is high, when the sensor is ready to be exposed to light. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a31d89bc528102fe4010591054c2dc5d1a5aab4ecfc8e51248449363c5ce873693" name="a31d89bc528102fe4010591054c2dc5d1a5aab4ecfc8e51248449363c5ce873693"></a>monitor_adc_clk&#160;</td><td class="fieldinit">2&#160;</td><td class="fielddoc"><p>The option ADC CLK sets the output to the ADC clock. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a31d89bc528102fe4010591054c2dc5d1a21ac70da643da0f94135a364ca21a6d9" name="a31d89bc528102fe4010591054c2dc5d1a21ac70da643da0f94135a364ca21a6d9"></a>monitor_Vin&#160;</td><td class="fieldinit">3&#160;</td><td class="fielddoc"><p>Vin is high when the voltage input is sampled. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a089f166159fb19f10d81c65c1d8793a2" name="a089f166159fb19f10d81c65c1d8793a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a089f166159fb19f10d81c65c1d8793a2">&#9670;&#160;</a></span>sensor_type_t</h2>
 
@@ -680,7 +680,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaac96e03c33d14d48f55e1457e1dc8caad" name="a34afd11285290b35c0f65d59c163fafaac96e03c33d14d48f55e1457e1dc8caad"></a>tor_do_cc_i&#160;</td><td class="fieldinit">17&#160;</td><td class="fielddoc"><p>DO_CC_I is a fiber link synchronisation signal. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaad8caf0d24da6d0a42bfb036f40395c64" name="a34afd11285290b35c0f65d59c163fafaad8caf0d24da6d0a42bfb036f40395c64"></a>tor_exposure_window&#160;</td><td class="fieldinit">18&#160;</td><td class="fielddoc"><p>Exposure window shows when it is possible to expose the camera to light. Since the PCIe card doesn't know exactly when the sensor is ready to be exposed this is only an estimated signal. If possible use <a class="el" href="#a3ccb55ee2f9a77e32aec7dda8ab59e83afd1ef969348a60ab7d6e72b6b3b7f6bf">bnc_out_t::bnc_out_exp_win</a> of <a class="el" href="structcamera__settings.html#a12c8fa4bdad6fccbdd1a767a44792627">camera_settings::bnc_out</a>. </p>
+<tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaad8caf0d24da6d0a42bfb036f40395c64" name="a34afd11285290b35c0f65d59c163fafaad8caf0d24da6d0a42bfb036f40395c64"></a>tor_exposure_window&#160;</td><td class="fieldinit">18&#160;</td><td class="fielddoc"><p>Exposure window shows when it is possible to expose the camera to light. Since the PCIe card doesn't know exactly when the sensor is ready to be exposed this is only an estimated signal. If possible use <a class="el" href="#a31d89bc528102fe4010591054c2dc5d1a5fc858ece2c0329506c05e030823f1d6">monitor_t::monitor_win</a> of <a class="el" href="structcamera__settings.html#a87e6684676f13947b082dd5e7ab225b5">camera_settings::monitor</a>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a34afd11285290b35c0f65d59c163fafaa21d1f38219ac0747f5113977709e5301" name="a34afd11285290b35c0f65d59c163fafaa21d1f38219ac0747f5113977709e5301"></a>tor_to_cnt_out&#160;</td><td class="fieldinit">19&#160;</td><td class="fielddoc"><p>tor_to_cnt_out shows the signal which is controlled by the setting <a class="el" href="structcamera__settings.html#a9d36d06df4f4506a30632260bf6b1939">camera_settings::tocnt</a>. Depending on this setting, only specific XCK high periods are shown on the PCIe card output. </p>
 </td></tr>

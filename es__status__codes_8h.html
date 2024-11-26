@@ -103,42 +103,42 @@ $(function(){ initResizable(false); });
 Enumerations</h2></td></tr>
 <tr class="memitem:a6b176d8ae4ea11170148a19befea14da" id="r_a6b176d8ae4ea11170148a19befea14da"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> { <br />
 &#160;&#160;<a class="el" href="#a6b176d8ae4ea11170148a19befea14daaf92bdf3f48a9d94e503df3faa925749a">es_no_error</a> = 0
-, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daa73014506bc82fac6994c26f63731a090">es_device_not_found</a>
-, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daa721b0ae938f8f6e45652eb6828d0701f">es_driver_init_failed</a>
-, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daaeb5187447d446c0463a921401407040b">es_debug_init_failed</a>
+, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daa73014506bc82fac6994c26f63731a090">es_device_not_found</a> = 1
+, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daa721b0ae938f8f6e45652eb6828d0701f">es_driver_init_failed</a> = 2
+, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daaeb5187447d446c0463a921401407040b">es_debug_init_failed</a> = 3
 , <br />
-&#160;&#160;<a class="el" href="#a6b176d8ae4ea11170148a19befea14daa11408c6948c68d63da36595299cabe35">es_setting_driver_name_failed</a>
+&#160;&#160;<a class="el" href="#a6b176d8ae4ea11170148a19befea14daa11408c6948c68d63da36595299cabe35">es_setting_driver_name_failed</a> = 4
 , <a class="el" href="#a6b176d8ae4ea11170148a19befea14daa67e19eacbe7e4b06a68e4777527f606f">es_invalid_pixel_count</a> = 5
-, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daa00fb80144d78aaeb6e81f14d7f6f3373">es_invalid_driver_number</a>
-, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daaa4001b7e2a4148f90669792043906f25">es_getting_device_info_failed</a>
+, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daa00fb80144d78aaeb6e81f14d7f6f3373">es_invalid_driver_number</a> = 6
+, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daaa4001b7e2a4148f90669792043906f25">es_getting_device_info_failed</a> = 7
 , <br />
-&#160;&#160;<a class="el" href="#a6b176d8ae4ea11170148a19befea14daa513f51e3e88b543cb04c837d638fe191">es_open_device_failed</a>
-, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daaa2d0d1990521cb3a1764563d22dc605e">es_invalid_driver_handle</a>
+&#160;&#160;<a class="el" href="#a6b176d8ae4ea11170148a19befea14daa513f51e3e88b543cb04c837d638fe191">es_open_device_failed</a> = 8
+, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daaa2d0d1990521cb3a1764563d22dc605e">es_invalid_driver_handle</a> = 9
 , <a class="el" href="#a6b176d8ae4ea11170148a19befea14daaffe4cf86bb7b4bbdd8eb7498bed42499">es_register_read_failed</a> = 10
-, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daaadf896071ea33720a2b96340bd60c086">es_register_write_failed</a>
+, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daaadf896071ea33720a2b96340bd60c086">es_register_write_failed</a> = 11
 , <br />
-&#160;&#160;<a class="el" href="#a6b176d8ae4ea11170148a19befea14daaa917c20fb24749a8e121ed27cfc5b06f">es_no_space0</a>
-, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daa211d34854b63fc7abd512cdaa1858c72">es_allocating_memory_failed</a>
-, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daae30f05e8f7c7384e3f578c60278d2bfc">es_not_enough_ram</a>
+&#160;&#160;<a class="el" href="#a6b176d8ae4ea11170148a19befea14daaa917c20fb24749a8e121ed27cfc5b06f">es_no_space0</a> = 12
+, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daa211d34854b63fc7abd512cdaa1858c72">es_allocating_memory_failed</a> = 13
+, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daae30f05e8f7c7384e3f578c60278d2bfc">es_not_enough_ram</a> = 14
 , <a class="el" href="#a6b176d8ae4ea11170148a19befea14daa08dde77841c0d45d0666289fbc5d1730">es_parameter_out_of_range</a> = 15
 , <br />
-&#160;&#160;<a class="el" href="#a6b176d8ae4ea11170148a19befea14daa6cd81b3381d5466cb204330773c4ca53">es_unknown_error</a>
-, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daa57007dcfe60b49abc381f79cd498dcaa">es_enabling_interrupts_failed</a>
-, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daa7d0ae83d04388c1ffbe87b6a541ea6b1">es_getting_dma_buffer_failed</a>
-, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daa8ba563b8b63028a496b8ffba80cfcfbf">es_unlocking_dma_failed</a>
+&#160;&#160;<a class="el" href="#a6b176d8ae4ea11170148a19befea14daa6cd81b3381d5466cb204330773c4ca53">es_unknown_error</a> = 16
+, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daa57007dcfe60b49abc381f79cd498dcaa">es_enabling_interrupts_failed</a> = 17
+, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daa7d0ae83d04388c1ffbe87b6a541ea6b1">es_getting_dma_buffer_failed</a> = 18
+, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daa8ba563b8b63028a496b8ffba80cfcfbf">es_unlocking_dma_failed</a> = 19
 , <br />
 &#160;&#160;<a class="el" href="#a6b176d8ae4ea11170148a19befea14daa3a1d34f306ced1c755b8e85884c5edb2">es_camera_not_found</a> = 20
-, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daabed4bd1bb01f361865e12160672abe40">es_abortion</a>
-, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daa657b3f3fbc8aef68e67b94176957b631">es_creating_thread_failed</a>
-, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daa113f6e9a7609230a20ad7a4205ce6acd">es_setting_thread_priority_failed</a>
+, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daabed4bd1bb01f361865e12160672abe40">es_abortion</a> = 21
+, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daa657b3f3fbc8aef68e67b94176957b631">es_creating_thread_failed</a> = 22
+, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daa113f6e9a7609230a20ad7a4205ce6acd">es_setting_thread_priority_failed</a> = 23
 , <br />
-&#160;&#160;<a class="el" href="#a6b176d8ae4ea11170148a19befea14daa48e4dc8e75572a564e8c74701b9d617f">es_already_running</a>
+&#160;&#160;<a class="el" href="#a6b176d8ae4ea11170148a19befea14daa48e4dc8e75572a564e8c74701b9d617f">es_already_running</a> = 24
 , <a class="el" href="#a6b176d8ae4ea11170148a19befea14daac5a67694703629080763596dfec77b93">es_disabling_interrupt_failed</a> = 25
-, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daa43103ebad7ee59b90ffa397d904c9d94">es_memory_not_initialized</a>
-, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daa16eba9ec7d3caaed3a4bc46fcf57b6a5">es_create_file_failed</a>
+, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daa43103ebad7ee59b90ffa397d904c9d94">es_memory_not_initialized</a> = 26
+, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daa16eba9ec7d3caaed3a4bc46fcf57b6a5">es_create_file_failed</a> = 27
 , <br />
-&#160;&#160;<a class="el" href="#a6b176d8ae4ea11170148a19befea14daab6c08d9a9747e510558cd61494c6c3c3">es_first_measurement_not_done</a>
-, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daa2200494a42aeb7f52808f0a6a9864cc9">es_measurement_running</a>
+&#160;&#160;<a class="el" href="#a6b176d8ae4ea11170148a19befea14daab6c08d9a9747e510558cd61494c6c3c3">es_first_measurement_not_done</a> = 28
+, <a class="el" href="#a6b176d8ae4ea11170148a19befea14daa2200494a42aeb7f52808f0a6a9864cc9">es_measurement_running</a> = 29
 , <a class="el" href="#a6b176d8ae4ea11170148a19befea14daa532823501130b0b96735535ac1ab9be4">es_invalid_pointer</a> = 30
 <br />
  }</td></tr>
@@ -164,35 +164,35 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <table class="fieldtable">
 <tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daaf92bdf3f48a9d94e503df3faa925749a" name="a6b176d8ae4ea11170148a19befea14daaf92bdf3f48a9d94e503df3faa925749a"></a>es_no_error&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa73014506bc82fac6994c26f63731a090" name="a6b176d8ae4ea11170148a19befea14daa73014506bc82fac6994c26f63731a090"></a>es_device_not_found&#160;</td><td class="fieldinit">&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa721b0ae938f8f6e45652eb6828d0701f" name="a6b176d8ae4ea11170148a19befea14daa721b0ae938f8f6e45652eb6828d0701f"></a>es_driver_init_failed&#160;</td><td class="fieldinit">&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daaeb5187447d446c0463a921401407040b" name="a6b176d8ae4ea11170148a19befea14daaeb5187447d446c0463a921401407040b"></a>es_debug_init_failed&#160;</td><td class="fieldinit">&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa11408c6948c68d63da36595299cabe35" name="a6b176d8ae4ea11170148a19befea14daa11408c6948c68d63da36595299cabe35"></a>es_setting_driver_name_failed&#160;</td><td class="fieldinit">&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa73014506bc82fac6994c26f63731a090" name="a6b176d8ae4ea11170148a19befea14daa73014506bc82fac6994c26f63731a090"></a>es_device_not_found&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa721b0ae938f8f6e45652eb6828d0701f" name="a6b176d8ae4ea11170148a19befea14daa721b0ae938f8f6e45652eb6828d0701f"></a>es_driver_init_failed&#160;</td><td class="fieldinit">2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daaeb5187447d446c0463a921401407040b" name="a6b176d8ae4ea11170148a19befea14daaeb5187447d446c0463a921401407040b"></a>es_debug_init_failed&#160;</td><td class="fieldinit">3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa11408c6948c68d63da36595299cabe35" name="a6b176d8ae4ea11170148a19befea14daa11408c6948c68d63da36595299cabe35"></a>es_setting_driver_name_failed&#160;</td><td class="fieldinit">4&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa67e19eacbe7e4b06a68e4777527f606f" name="a6b176d8ae4ea11170148a19befea14daa67e19eacbe7e4b06a68e4777527f606f"></a>es_invalid_pixel_count&#160;</td><td class="fieldinit">5&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa00fb80144d78aaeb6e81f14d7f6f3373" name="a6b176d8ae4ea11170148a19befea14daa00fb80144d78aaeb6e81f14d7f6f3373"></a>es_invalid_driver_number&#160;</td><td class="fieldinit">&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daaa4001b7e2a4148f90669792043906f25" name="a6b176d8ae4ea11170148a19befea14daaa4001b7e2a4148f90669792043906f25"></a>es_getting_device_info_failed&#160;</td><td class="fieldinit">&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa513f51e3e88b543cb04c837d638fe191" name="a6b176d8ae4ea11170148a19befea14daa513f51e3e88b543cb04c837d638fe191"></a>es_open_device_failed&#160;</td><td class="fieldinit">&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daaa2d0d1990521cb3a1764563d22dc605e" name="a6b176d8ae4ea11170148a19befea14daaa2d0d1990521cb3a1764563d22dc605e"></a>es_invalid_driver_handle&#160;</td><td class="fieldinit">&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa00fb80144d78aaeb6e81f14d7f6f3373" name="a6b176d8ae4ea11170148a19befea14daa00fb80144d78aaeb6e81f14d7f6f3373"></a>es_invalid_driver_number&#160;</td><td class="fieldinit">6&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daaa4001b7e2a4148f90669792043906f25" name="a6b176d8ae4ea11170148a19befea14daaa4001b7e2a4148f90669792043906f25"></a>es_getting_device_info_failed&#160;</td><td class="fieldinit">7&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa513f51e3e88b543cb04c837d638fe191" name="a6b176d8ae4ea11170148a19befea14daa513f51e3e88b543cb04c837d638fe191"></a>es_open_device_failed&#160;</td><td class="fieldinit">8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daaa2d0d1990521cb3a1764563d22dc605e" name="a6b176d8ae4ea11170148a19befea14daaa2d0d1990521cb3a1764563d22dc605e"></a>es_invalid_driver_handle&#160;</td><td class="fieldinit">9&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daaffe4cf86bb7b4bbdd8eb7498bed42499" name="a6b176d8ae4ea11170148a19befea14daaffe4cf86bb7b4bbdd8eb7498bed42499"></a>es_register_read_failed&#160;</td><td class="fieldinit">10&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daaadf896071ea33720a2b96340bd60c086" name="a6b176d8ae4ea11170148a19befea14daaadf896071ea33720a2b96340bd60c086"></a>es_register_write_failed&#160;</td><td class="fieldinit">&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daaa917c20fb24749a8e121ed27cfc5b06f" name="a6b176d8ae4ea11170148a19befea14daaa917c20fb24749a8e121ed27cfc5b06f"></a>es_no_space0&#160;</td><td class="fieldinit">&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa211d34854b63fc7abd512cdaa1858c72" name="a6b176d8ae4ea11170148a19befea14daa211d34854b63fc7abd512cdaa1858c72"></a>es_allocating_memory_failed&#160;</td><td class="fieldinit">&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daae30f05e8f7c7384e3f578c60278d2bfc" name="a6b176d8ae4ea11170148a19befea14daae30f05e8f7c7384e3f578c60278d2bfc"></a>es_not_enough_ram&#160;</td><td class="fieldinit">&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daaadf896071ea33720a2b96340bd60c086" name="a6b176d8ae4ea11170148a19befea14daaadf896071ea33720a2b96340bd60c086"></a>es_register_write_failed&#160;</td><td class="fieldinit">11&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daaa917c20fb24749a8e121ed27cfc5b06f" name="a6b176d8ae4ea11170148a19befea14daaa917c20fb24749a8e121ed27cfc5b06f"></a>es_no_space0&#160;</td><td class="fieldinit">12&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa211d34854b63fc7abd512cdaa1858c72" name="a6b176d8ae4ea11170148a19befea14daa211d34854b63fc7abd512cdaa1858c72"></a>es_allocating_memory_failed&#160;</td><td class="fieldinit">13&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daae30f05e8f7c7384e3f578c60278d2bfc" name="a6b176d8ae4ea11170148a19befea14daae30f05e8f7c7384e3f578c60278d2bfc"></a>es_not_enough_ram&#160;</td><td class="fieldinit">14&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa08dde77841c0d45d0666289fbc5d1730" name="a6b176d8ae4ea11170148a19befea14daa08dde77841c0d45d0666289fbc5d1730"></a>es_parameter_out_of_range&#160;</td><td class="fieldinit">15&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa6cd81b3381d5466cb204330773c4ca53" name="a6b176d8ae4ea11170148a19befea14daa6cd81b3381d5466cb204330773c4ca53"></a>es_unknown_error&#160;</td><td class="fieldinit">&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa57007dcfe60b49abc381f79cd498dcaa" name="a6b176d8ae4ea11170148a19befea14daa57007dcfe60b49abc381f79cd498dcaa"></a>es_enabling_interrupts_failed&#160;</td><td class="fieldinit">&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa7d0ae83d04388c1ffbe87b6a541ea6b1" name="a6b176d8ae4ea11170148a19befea14daa7d0ae83d04388c1ffbe87b6a541ea6b1"></a>es_getting_dma_buffer_failed&#160;</td><td class="fieldinit">&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa8ba563b8b63028a496b8ffba80cfcfbf" name="a6b176d8ae4ea11170148a19befea14daa8ba563b8b63028a496b8ffba80cfcfbf"></a>es_unlocking_dma_failed&#160;</td><td class="fieldinit">&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa6cd81b3381d5466cb204330773c4ca53" name="a6b176d8ae4ea11170148a19befea14daa6cd81b3381d5466cb204330773c4ca53"></a>es_unknown_error&#160;</td><td class="fieldinit">16&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa57007dcfe60b49abc381f79cd498dcaa" name="a6b176d8ae4ea11170148a19befea14daa57007dcfe60b49abc381f79cd498dcaa"></a>es_enabling_interrupts_failed&#160;</td><td class="fieldinit">17&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa7d0ae83d04388c1ffbe87b6a541ea6b1" name="a6b176d8ae4ea11170148a19befea14daa7d0ae83d04388c1ffbe87b6a541ea6b1"></a>es_getting_dma_buffer_failed&#160;</td><td class="fieldinit">18&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa8ba563b8b63028a496b8ffba80cfcfbf" name="a6b176d8ae4ea11170148a19befea14daa8ba563b8b63028a496b8ffba80cfcfbf"></a>es_unlocking_dma_failed&#160;</td><td class="fieldinit">19&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa3a1d34f306ced1c755b8e85884c5edb2" name="a6b176d8ae4ea11170148a19befea14daa3a1d34f306ced1c755b8e85884c5edb2"></a>es_camera_not_found&#160;</td><td class="fieldinit">20&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daabed4bd1bb01f361865e12160672abe40" name="a6b176d8ae4ea11170148a19befea14daabed4bd1bb01f361865e12160672abe40"></a>es_abortion&#160;</td><td class="fieldinit">&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa657b3f3fbc8aef68e67b94176957b631" name="a6b176d8ae4ea11170148a19befea14daa657b3f3fbc8aef68e67b94176957b631"></a>es_creating_thread_failed&#160;</td><td class="fieldinit">&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa113f6e9a7609230a20ad7a4205ce6acd" name="a6b176d8ae4ea11170148a19befea14daa113f6e9a7609230a20ad7a4205ce6acd"></a>es_setting_thread_priority_failed&#160;</td><td class="fieldinit">&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa48e4dc8e75572a564e8c74701b9d617f" name="a6b176d8ae4ea11170148a19befea14daa48e4dc8e75572a564e8c74701b9d617f"></a>es_already_running&#160;</td><td class="fieldinit">&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daabed4bd1bb01f361865e12160672abe40" name="a6b176d8ae4ea11170148a19befea14daabed4bd1bb01f361865e12160672abe40"></a>es_abortion&#160;</td><td class="fieldinit">21&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa657b3f3fbc8aef68e67b94176957b631" name="a6b176d8ae4ea11170148a19befea14daa657b3f3fbc8aef68e67b94176957b631"></a>es_creating_thread_failed&#160;</td><td class="fieldinit">22&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa113f6e9a7609230a20ad7a4205ce6acd" name="a6b176d8ae4ea11170148a19befea14daa113f6e9a7609230a20ad7a4205ce6acd"></a>es_setting_thread_priority_failed&#160;</td><td class="fieldinit">23&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa48e4dc8e75572a564e8c74701b9d617f" name="a6b176d8ae4ea11170148a19befea14daa48e4dc8e75572a564e8c74701b9d617f"></a>es_already_running&#160;</td><td class="fieldinit">24&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daac5a67694703629080763596dfec77b93" name="a6b176d8ae4ea11170148a19befea14daac5a67694703629080763596dfec77b93"></a>es_disabling_interrupt_failed&#160;</td><td class="fieldinit">25&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa43103ebad7ee59b90ffa397d904c9d94" name="a6b176d8ae4ea11170148a19befea14daa43103ebad7ee59b90ffa397d904c9d94"></a>es_memory_not_initialized&#160;</td><td class="fieldinit">&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa16eba9ec7d3caaed3a4bc46fcf57b6a5" name="a6b176d8ae4ea11170148a19befea14daa16eba9ec7d3caaed3a4bc46fcf57b6a5"></a>es_create_file_failed&#160;</td><td class="fieldinit">&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daab6c08d9a9747e510558cd61494c6c3c3" name="a6b176d8ae4ea11170148a19befea14daab6c08d9a9747e510558cd61494c6c3c3"></a>es_first_measurement_not_done&#160;</td><td class="fieldinit">&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa2200494a42aeb7f52808f0a6a9864cc9" name="a6b176d8ae4ea11170148a19befea14daa2200494a42aeb7f52808f0a6a9864cc9"></a>es_measurement_running&#160;</td><td class="fieldinit">&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa43103ebad7ee59b90ffa397d904c9d94" name="a6b176d8ae4ea11170148a19befea14daa43103ebad7ee59b90ffa397d904c9d94"></a>es_memory_not_initialized&#160;</td><td class="fieldinit">26&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa16eba9ec7d3caaed3a4bc46fcf57b6a5" name="a6b176d8ae4ea11170148a19befea14daa16eba9ec7d3caaed3a4bc46fcf57b6a5"></a>es_create_file_failed&#160;</td><td class="fieldinit">27&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daab6c08d9a9747e510558cd61494c6c3c3" name="a6b176d8ae4ea11170148a19befea14daab6c08d9a9747e510558cd61494c6c3c3"></a>es_first_measurement_not_done&#160;</td><td class="fieldinit">28&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa2200494a42aeb7f52808f0a6a9864cc9" name="a6b176d8ae4ea11170148a19befea14daa2200494a42aeb7f52808f0a6a9864cc9"></a>es_measurement_running&#160;</td><td class="fieldinit">29&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a6b176d8ae4ea11170148a19befea14daa532823501130b0b96735535ac1ab9be4" name="a6b176d8ae4ea11170148a19befea14daa532823501130b0b96735535ac1ab9be4"></a>es_invalid_pointer&#160;</td><td class="fieldinit">30&#160;</td><td class="fielddoc"></td></tr>
 </table>
 

@@ -132,13 +132,13 @@ Functions</h2></td></tr>
 <tr class="memdesc:a6e2b491be2b5ecf87d8480b31b8273b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the data of a single sample to pdest.     <br /></td></tr>
 <tr class="separator:a6e2b491be2b5ecf87d8480b31b8273b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94ab97092db756f41cfe8349b39af1bb" id="r_a94ab97092db756f41cfe8349b39af1bb"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94ab97092db756f41cfe8349b39af1bb">DLLCopyOneSample_multipleBoards</a> (uint32_t sample, uint32_t block, uint16_t camera, uint16_t *pdest0, uint16_t *pdest1, uint16_t *pdest2, uint16_t *pdest3, uint16_t *pdest4)</td></tr>
-<tr class="memdesc:a94ab97092db756f41cfe8349b39af1bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get data of a single measurement for all boards selected by settings parameter board_sel.  <br /></td></tr>
+<tr class="memdesc:a94ab97092db756f41cfe8349b39af1bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get data of a single measurement for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
 <tr class="separator:a94ab97092db756f41cfe8349b39af1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af67177e123797d9f7f14c7dd62b701d3" id="r_af67177e123797d9f7f14c7dd62b701d3"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af67177e123797d9f7f14c7dd62b701d3">DLLCopyAllData</a> (uint32_t drvno, uint16_t *pdest)</td></tr>
 <tr class="memdesc:af67177e123797d9f7f14c7dd62b701d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the data of the complete measurement to pdest.     <br /></td></tr>
 <tr class="separator:af67177e123797d9f7f14c7dd62b701d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8202b6e0c3b057b597ddaf969ce30a6" id="r_ae8202b6e0c3b057b597ddaf969ce30a6"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8202b6e0c3b057b597ddaf969ce30a6">DLLCopyAllData_multipleBoards</a> (uint16_t *pdest0, uint16_t *pdest1, uint16_t *pdest2, uint16_t *pdest3, uint16_t *pdest4)</td></tr>
-<tr class="memdesc:ae8202b6e0c3b057b597ddaf969ce30a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies all pixel data to pdest for all used boards set in settings parameter board_sel.  <br /></td></tr>
+<tr class="memdesc:ae8202b6e0c3b057b597ddaf969ce30a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies all pixel data to pdest for all used boards set in settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
 <tr class="separator:ae8202b6e0c3b057b597ddaf969ce30a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac6298fa489dc27dfed3ac452b693cfa" id="r_aac6298fa489dc27dfed3ac452b693cfa"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac6298fa489dc27dfed3ac452b693cfa">DLLCopyOneBlock</a> (uint32_t drvno, uint16_t block, uint16_t *pdest)</td></tr>
 <tr class="memdesc:aac6298fa489dc27dfed3ac452b693cfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the data of a single block to pdest.     <br /></td></tr>
@@ -156,8 +156,14 @@ Functions</h2></td></tr>
 <tr class="memdesc:a456d7bc15de3202d4e7166363540880f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the address of a specific pixel.     <br /></td></tr>
 <tr class="separator:a456d7bc15de3202d4e7166363540880f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00d3ad9fff852f02a20259f604c19407" id="r_a00d3ad9fff852f02a20259f604c19407"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00d3ad9fff852f02a20259f604c19407">DLLCopyOneBlock_multipleBoards</a> (uint16_t block, uint16_t *pdest0, uint16_t *pdest1, uint16_t *pdest2, uint16_t *pdest3, uint16_t *pdest4)</td></tr>
-<tr class="memdesc:a00d3ad9fff852f02a20259f604c19407"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies one block of pixel data of all used boards selected by settings parameter board_sel to pdest.  <br /></td></tr>
+<tr class="memdesc:a00d3ad9fff852f02a20259f604c19407"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies one block of pixel data of all used boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a> to pdest.  <br /></td></tr>
 <tr class="separator:a00d3ad9fff852f02a20259f604c19407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7e9a4510543253789fa331692dcff40" id="r_ae7e9a4510543253789fa331692dcff40"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7e9a4510543253789fa331692dcff40">DLLCopyOneBlockOfOneCamera</a> (uint32_t drvno, uint32_t block, uint16_t camera, uint16_t *pdest)</td></tr>
+<tr class="memdesc:ae7e9a4510543253789fa331692dcff40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the data of one block of one camera to pdest.     <br /></td></tr>
+<tr class="separator:ae7e9a4510543253789fa331692dcff40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0240a1ff00e6a1812db1de8c014153d9" id="r_a0240a1ff00e6a1812db1de8c014153d9"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0240a1ff00e6a1812db1de8c014153d9">DLLCopyOneBlockOfOneCamera_multipleBoards</a> (uint32_t block, uint16_t camera, uint16_t *pdest0, uint16_t *pdest1, uint16_t *pdest2, uint16_t *pdest3, uint16_t *pdest4)</td></tr>
+<tr class="memdesc:a0240a1ff00e6a1812db1de8c014153d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the data of one block of one camera of all used boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a> to pdest.  <br /></td></tr>
+<tr class="separator:a0240a1ff00e6a1812db1de8c014153d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab1ce88810c206d78dbb2c90cd91448b" id="r_aab1ce88810c206d78dbb2c90cd91448b"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab1ce88810c206d78dbb2c90cd91448b">DLLGetAllDataPointer</a> (uint32_t drvno, uint16_t **pdest, size_t *bytes_to_end_of_buffer)</td></tr>
 <tr class="memdesc:aab1ce88810c206d78dbb2c90cd91448b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the address of the data buffer.     <br /></td></tr>
 <tr class="separator:aab1ce88810c206d78dbb2c90cd91448b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,25 +180,25 @@ Functions</h2></td></tr>
 <tr class="memdesc:a630ec738aa5a7afc8dd13230f5d31bdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read 1 byte of a register in S0 space.     <br /></td></tr>
 <tr class="separator:a630ec738aa5a7afc8dd13230f5d31bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b89787ad2cd25c2be8ab873317ef531" id="r_a9b89787ad2cd25c2be8ab873317ef531"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b89787ad2cd25c2be8ab873317ef531">DLLreadRegisterS0_8_multipleBoards</a> (uint8_t *data0, uint8_t *data1, uint8_t *data2, uint8_t *data3, uint8_t *data4, uint32_t address)</td></tr>
-<tr class="memdesc:a9b89787ad2cd25c2be8ab873317ef531"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read 1 byte of a register in S0 space of all boards selected by settings parameter board_sel.  <br /></td></tr>
+<tr class="memdesc:a9b89787ad2cd25c2be8ab873317ef531"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read 1 byte of a register in S0 space of all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
 <tr class="separator:a9b89787ad2cd25c2be8ab873317ef531"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e7c467734167f48d9294d1d42772257" id="r_a9e7c467734167f48d9294d1d42772257"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e7c467734167f48d9294d1d42772257">DLLwriteRegisterS0_8</a> (uint8_t data, uint32_t address)</td></tr>
-<tr class="memdesc:a9e7c467734167f48d9294d1d42772257"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the same 1 byte to a register in S0 space of all boards selected by settings parameter board_sel.  <br /></td></tr>
+<tr class="memdesc:a9e7c467734167f48d9294d1d42772257"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the same 1 byte to a register in S0 space of all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
 <tr class="separator:a9e7c467734167f48d9294d1d42772257"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a0017c630d5ebbac9910376665be75c" id="r_a5a0017c630d5ebbac9910376665be75c"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a0017c630d5ebbac9910376665be75c">DLLreadRegisterS0_32</a> (uint32_t drvno, uint32_t *data, uint32_t address)</td></tr>
 <tr class="memdesc:a5a0017c630d5ebbac9910376665be75c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read 4 bytes of a register in S0 space.     <br /></td></tr>
 <tr class="separator:a5a0017c630d5ebbac9910376665be75c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cec81b1e311b5f5b9d3dffcf1942017" id="r_a3cec81b1e311b5f5b9d3dffcf1942017"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cec81b1e311b5f5b9d3dffcf1942017">DLLreadRegisterS0_32_multipleBoards</a> (uint32_t *data0, uint32_t *data1, uint32_t *data2, uint32_t *data3, uint32_t *data4, uint32_t address)</td></tr>
-<tr class="memdesc:a3cec81b1e311b5f5b9d3dffcf1942017"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read 4 bytes of a register in S0 space of all boards selected by settings parameter board_sel.  <br /></td></tr>
+<tr class="memdesc:a3cec81b1e311b5f5b9d3dffcf1942017"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read 4 bytes of a register in S0 space of all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
 <tr class="separator:a3cec81b1e311b5f5b9d3dffcf1942017"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9343f871f011f9c68482265d261e42b4" id="r_a9343f871f011f9c68482265d261e42b4"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9343f871f011f9c68482265d261e42b4">DLLwriteRegisterS0_32</a> (uint32_t data, uint32_t address)</td></tr>
-<tr class="memdesc:a9343f871f011f9c68482265d261e42b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write 4 bytes of a register in S0 space for all boards selected by settings parameter board_sel.  <br /></td></tr>
+<tr class="memdesc:a9343f871f011f9c68482265d261e42b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write 4 bytes of a register in S0 space for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
 <tr class="separator:a9343f871f011f9c68482265d261e42b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea9806993d6ad1a114f38c4469fed6e2" id="r_aea9806993d6ad1a114f38c4469fed6e2"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea9806993d6ad1a114f38c4469fed6e2">DLLReadScanFrequencyBit</a> (uint32_t drvno, uint8_t *scanFrequencyTooHigh)</td></tr>
 <tr class="memdesc:aea9806993d6ad1a114f38c4469fed6e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the ScanFrequency bit and checks if its high or low.     <br /></td></tr>
 <tr class="separator:aea9806993d6ad1a114f38c4469fed6e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39461165e559c14783fbc337ced34108" id="r_a39461165e559c14783fbc337ced34108"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39461165e559c14783fbc337ced34108">DLLReadScanFrequencyBit_multipleBoards</a> (uint8_t *scanFrequencyTooHigh0, uint8_t *scanFrequencyTooHigh1, uint8_t *scanFrequencyTooHigh2, uint8_t *scanFrequencyTooHigh3, uint8_t *scanFrequencyTooHigh4)</td></tr>
-<tr class="memdesc:a39461165e559c14783fbc337ced34108"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the ScanFrequency bit and checks if its high or low for all boards selected by settings parameter board_sel.  <br /></td></tr>
+<tr class="memdesc:a39461165e559c14783fbc337ced34108"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the ScanFrequency bit and checks if its high or low for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
 <tr class="separator:a39461165e559c14783fbc337ced34108"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a401da1e8c7c9385969e9d6c9ced28c82" id="r_a401da1e8c7c9385969e9d6c9ced28c82"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a401da1e8c7c9385969e9d6c9ced28c82">DLLResetScanFrequencyBit</a> (uint32_t drvno)</td></tr>
 <tr class="memdesc:a401da1e8c7c9385969e9d6c9ced28c82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the ScanFrequency bit.     <br /></td></tr>
@@ -204,7 +210,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ab9eb838f2c2e3dcd96cc746eb3a16b08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the BlockFrequency bit and checks if its high or low.     <br /></td></tr>
 <tr class="separator:ab9eb838f2c2e3dcd96cc746eb3a16b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43789e3fa3b4f97b7f50cd1739b2cced" id="r_a43789e3fa3b4f97b7f50cd1739b2cced"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43789e3fa3b4f97b7f50cd1739b2cced">DLLReadBlockFrequencyBit_multipleBoards</a> (uint8_t *blockFrequencyTooHigh0, uint8_t *blockFrequencyTooHigh1, uint8_t *blockFrequencyTooHigh2, uint8_t *blockFrequencyTooHigh3, uint8_t *blockFrequencyTooHigh4)</td></tr>
-<tr class="memdesc:a43789e3fa3b4f97b7f50cd1739b2cced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the ScanFrequency bit and checks if its high or low for all boards selected by settings parameter board_sel.  <br /></td></tr>
+<tr class="memdesc:a43789e3fa3b4f97b7f50cd1739b2cced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the ScanFrequency bit and checks if its high or low for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
 <tr class="separator:a43789e3fa3b4f97b7f50cd1739b2cced"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e6c316cd7a66a061579176bb89621ad" id="r_a2e6c316cd7a66a061579176bb89621ad"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e6c316cd7a66a061579176bb89621ad">DLLResetBlockFrequencyBit</a> (uint32_t drvno)</td></tr>
 <tr class="memdesc:a2e6c316cd7a66a061579176bb89621ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the BlockFrequency bit.     <br /></td></tr>
@@ -300,25 +306,25 @@ Functions</h2></td></tr>
 <tr class="memdesc:aecec4dd743ab6f96a59c79b917d9c5a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the theoretical time needed for one measurement.     <br /></td></tr>
 <tr class="separator:aecec4dd743ab6f96a59c79b917d9c5a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ded55f6758d26085c1d4ecb514854d7" id="r_a3ded55f6758d26085c1d4ecb514854d7"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ded55f6758d26085c1d4ecb514854d7">DLLOutTrigHigh</a> ()</td></tr>
-<tr class="memdesc:a3ded55f6758d26085c1d4ecb514854d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set trigger out(Reg CtrlA:D3) for all boards selected by settings parameter board_sel. Can be used to control timing issues in software.  <br /></td></tr>
+<tr class="memdesc:a3ded55f6758d26085c1d4ecb514854d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set trigger out(Reg CtrlA:D3) for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. Can be used to control timing issues in software.  <br /></td></tr>
 <tr class="separator:a3ded55f6758d26085c1d4ecb514854d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35adfc755ec91ac276f02f9776cb2484" id="r_a35adfc755ec91ac276f02f9776cb2484"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35adfc755ec91ac276f02f9776cb2484">DLLOutTrigLow</a> ()</td></tr>
-<tr class="memdesc:a35adfc755ec91ac276f02f9776cb2484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset trigger out(Reg CtrlA:D3) for all boards selected by settings parameter board_sel. Can be used to control timing issues in software.  <br /></td></tr>
+<tr class="memdesc:a35adfc755ec91ac276f02f9776cb2484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset trigger out(Reg CtrlA:D3) for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. Can be used to control timing issues in software.  <br /></td></tr>
 <tr class="separator:a35adfc755ec91ac276f02f9776cb2484"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ee61184e72bfc07a0017495829216ad" id="r_a7ee61184e72bfc07a0017495829216ad"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ee61184e72bfc07a0017495829216ad">DLLOutTrigPulse</a> (int64_t pulseWidthInMicroseconds)</td></tr>
-<tr class="memdesc:a7ee61184e72bfc07a0017495829216ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pulses trigger out(Reg CtrlA:D3) for all boards selected by setings parameter board_sel. Can be used to control timing issues in software.  <br /></td></tr>
+<tr class="memdesc:a7ee61184e72bfc07a0017495829216ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pulses trigger out(Reg CtrlA:D3) for all boards selected by setings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. Can be used to control timing issues in software.  <br /></td></tr>
 <tr class="separator:a7ee61184e72bfc07a0017495829216ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abba9e520fb23e2d531bb8d2bcf06db67" id="r_abba9e520fb23e2d531bb8d2bcf06db67"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abba9e520fb23e2d531bb8d2bcf06db67">DLLOpenShutter</a> ()</td></tr>
-<tr class="memdesc:abba9e520fb23e2d531bb8d2bcf06db67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open shutter for sensors with EC (exposure control) / sets IFC signal = high for all boards selected by settings parameter board_sel.  <br /></td></tr>
+<tr class="memdesc:abba9e520fb23e2d531bb8d2bcf06db67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open shutter for sensors with EC (exposure control) / sets IFC signal = high for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
 <tr class="separator:abba9e520fb23e2d531bb8d2bcf06db67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a004a4a01857099e6e098580b7ca4bc9f" id="r_a004a4a01857099e6e098580b7ca4bc9f"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a004a4a01857099e6e098580b7ca4bc9f">DLLCloseShutter</a> ()</td></tr>
-<tr class="memdesc:a004a4a01857099e6e098580b7ca4bc9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the IFC bit of interface for sensors with shutter function for all boards set by settings parameter board_sel. IFC=low.  <br /></td></tr>
+<tr class="memdesc:a004a4a01857099e6e098580b7ca4bc9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the IFC bit of interface for sensors with shutter function for all boards set by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. IFC=low.  <br /></td></tr>
 <tr class="separator:a004a4a01857099e6e098580b7ca4bc9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a753a6fe50b5e1b4431e7c47fc06e0ab0" id="r_a753a6fe50b5e1b4431e7c47fc06e0ab0"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a753a6fe50b5e1b4431e7c47fc06e0ab0">DLLsetBitS0_32</a> (uint32_t bitnumber, uint16_t address)</td></tr>
-<tr class="memdesc:a753a6fe50b5e1b4431e7c47fc06e0ab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set bit to 1 in S0 register at memory address for all boards selected by settings parameter board_sel.  <br /></td></tr>
+<tr class="memdesc:a753a6fe50b5e1b4431e7c47fc06e0ab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set bit to 1 in S0 register at memory address for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
 <tr class="separator:a753a6fe50b5e1b4431e7c47fc06e0ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9642fe535e095fabd4d3dc53c4920479" id="r_a9642fe535e095fabd4d3dc53c4920479"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9642fe535e095fabd4d3dc53c4920479">DLLresetBitS0_32</a> (uint32_t bitnumber, uint16_t address)</td></tr>
-<tr class="memdesc:a9642fe535e095fabd4d3dc53c4920479"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set bit to 0 in register at memory address for all boards selected by settings parameter board_sel.  <br /></td></tr>
+<tr class="memdesc:a9642fe535e095fabd4d3dc53c4920479"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set bit to 0 in register at memory address for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
 <tr class="separator:a9642fe535e095fabd4d3dc53c4920479"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a299e9e2ccf376dc4fe50341d8de8d4ae" id="r_a299e9e2ccf376dc4fe50341d8de8d4ae"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a299e9e2ccf376dc4fe50341d8de8d4ae">DLLReadBitS0_32</a> (uint32_t drvno, uint16_t address, uint8_t bitnumber, uint8_t *isBitHigh)</td></tr>
 <tr class="memdesc:a299e9e2ccf376dc4fe50341d8de8d4ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read 1 bit of a 4 byte s0 register.     <br /></td></tr>
@@ -333,13 +339,13 @@ Functions</h2></td></tr>
 <tr class="memdesc:a013c83604ab38d834a380ab25792f558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read 1 bit of 1 byte of a s0 register for all boards.  <br /></td></tr>
 <tr class="separator:a013c83604ab38d834a380ab25792f558"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3bd49336fa211f7dffbbdccc99d2aec" id="r_ac3bd49336fa211f7dffbbdccc99d2aec"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3bd49336fa211f7dffbbdccc99d2aec">DLLSetTemp</a> (uint8_t level)</td></tr>
-<tr class="memdesc:ac3bd49336fa211f7dffbbdccc99d2aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set temperature level for cooled cameras for all boards selected by settings parameter board_sel.  <br /></td></tr>
+<tr class="memdesc:ac3bd49336fa211f7dffbbdccc99d2aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set temperature level for cooled cameras for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
 <tr class="separator:ac3bd49336fa211f7dffbbdccc99d2aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a741f0dae4f97390c9ef7208a277c275b" id="r_a741f0dae4f97390c9ef7208a277c275b"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a741f0dae4f97390c9ef7208a277c275b">DLLSetTORReg</a> (uint32_t drvno, uint8_t tor)</td></tr>
 <tr class="memdesc:a741f0dae4f97390c9ef7208a277c275b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set signal of output port of PCIe card.     <br /></td></tr>
 <tr class="separator:a741f0dae4f97390c9ef7208a277c275b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed4f26496627a42a99e7a829a6698470" id="r_aed4f26496627a42a99e7a829a6698470"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed4f26496627a42a99e7a829a6698470">DLLSetTORReg_multipleBoards</a> (uint8_t tor)</td></tr>
-<tr class="memdesc:aed4f26496627a42a99e7a829a6698470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set signal of output port of PCIe card for all boards selected by settings parameter board_sel.  <br /></td></tr>
+<tr class="memdesc:aed4f26496627a42a99e7a829a6698470"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set signal of output port of PCIe card for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
 <tr class="separator:aed4f26496627a42a99e7a829a6698470"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f20eb4e12dde90880fcf65fec705674" id="r_a8f20eb4e12dde90880fcf65fec705674"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f20eb4e12dde90880fcf65fec705674">DLLDAC8568_setAllOutputs</a> (uint32_t drvno, uint8_t location, uint8_t cameraPosition, uint32_t *output, uint8_t reorder_channels)</td></tr>
 <tr class="memdesc:a8f20eb4e12dde90880fcf65fec705674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all outputs of the DAC8568 in camera 3030 or on PCIe board.     <br /></td></tr>
@@ -354,13 +360,13 @@ Functions</h2></td></tr>
 <tr class="memdesc:ab8dc7586850246cfdf5fe68c8a180ec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if measure on bit is set.     <br /></td></tr>
 <tr class="separator:ab8dc7586850246cfdf5fe68c8a180ec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac42df2b3934f71403590c86548fe9cfd" id="r_ac42df2b3934f71403590c86548fe9cfd"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac42df2b3934f71403590c86548fe9cfd">DLLGetMeasureOn_multipleBoards</a> (uint8_t *measureOn0, uint8_t *measureOn1, uint8_t *measureOn2, uint8_t *measureOn3, uint8_t *measureOn4)</td></tr>
-<tr class="memdesc:ac42df2b3934f71403590c86548fe9cfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if measure on bit is set for all boards selected by settings parameter board_sel.  <br /></td></tr>
+<tr class="memdesc:ac42df2b3934f71403590c86548fe9cfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if measure on bit is set for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
 <tr class="separator:ac42df2b3934f71403590c86548fe9cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac520af0c8bbbd97ae2ac65e80ada8428" id="r_ac520af0c8bbbd97ae2ac65e80ada8428"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac520af0c8bbbd97ae2ac65e80ada8428">DLLWaitForMeasureDone</a> ()</td></tr>
-<tr class="memdesc:ac520af0c8bbbd97ae2ac65e80ada8428"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns when measure on bit is 0 in all boards selected by settings parameter board_sel.  <br /></td></tr>
+<tr class="memdesc:ac520af0c8bbbd97ae2ac65e80ada8428"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns when measure on bit is 0 in all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
 <tr class="separator:ac520af0c8bbbd97ae2ac65e80ada8428"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4e47687dc32a8a0752df2c77b0dad61" id="r_af4e47687dc32a8a0752df2c77b0dad61"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4e47687dc32a8a0752df2c77b0dad61">DLLWaitForBlockDone</a> ()</td></tr>
-<tr class="memdesc:af4e47687dc32a8a0752df2c77b0dad61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns when block on bit is 0 in all boards selected by settings parameter board_sel.  <br /></td></tr>
+<tr class="memdesc:af4e47687dc32a8a0752df2c77b0dad61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns when block on bit is 0 in all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
 <tr class="separator:af4e47687dc32a8a0752df2c77b0dad61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dee58ae8c79e5ae62469202cf9028ad" id="r_a1dee58ae8c79e5ae62469202cf9028ad"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dee58ae8c79e5ae62469202cf9028ad">DLLSetSTimer</a> (uint32_t drvno, uint32_t stime_in_microseconds)</td></tr>
 <tr class="memdesc:a1dee58ae8c79e5ae62469202cf9028ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets time for scan timer.     <br /></td></tr>
@@ -396,26 +402,28 @@ Functions</h2></td></tr>
 <tr class="memdesc:a9ff235b66c6ca068d623ff8c6ad4d280"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a es_status_codes to a human readable error message.     <br /></td></tr>
 <tr class="separator:a9ff235b66c6ca068d623ff8c6ad4d280"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d86863d3964728c00d3a276dff06de0" id="r_a5d86863d3964728c00d3a276dff06de0"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d86863d3964728c00d3a276dff06de0">DLLIOCtrl_setOutput</a> (uint32_t drvno, uint32_t number, uint16_t width_in_5ns, uint16_t delay_in_5ns)</td></tr>
+<tr class="memdesc:a5d86863d3964728c00d3a276dff06de0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set paramters of one pulse output of IOCTRL.     <br /></td></tr>
 <tr class="separator:a5d86863d3964728c00d3a276dff06de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a708c79598e2e40ac13f051b3407647b8" id="r_a708c79598e2e40ac13f051b3407647b8"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a708c79598e2e40ac13f051b3407647b8">DLLIOCtrl_setT0</a> (uint32_t drvno, uint32_t period_in_10ns)</td></tr>
+<tr class="memdesc:a708c79598e2e40ac13f051b3407647b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set period of IOCtrl pulse outputs base frequency T0.     <br /></td></tr>
 <tr class="separator:a708c79598e2e40ac13f051b3407647b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a866ab0ea4619c3d75b05233d534b5cdf" id="r_a866ab0ea4619c3d75b05233d534b5cdf"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a866ab0ea4619c3d75b05233d534b5cdf">DLLIOCtrl_setT0_multipleBoards</a> (uint32_t period_in_10ns)</td></tr>
-<tr class="memdesc:a866ab0ea4619c3d75b05233d534b5cdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set period of IOCtrl pulse outputs base frequency T0 for all boards selected by settings parameter board_sel.  <br /></td></tr>
+<tr class="memdesc:a866ab0ea4619c3d75b05233d534b5cdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set period of IOCtrl pulse outputs base frequency T0 for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
 <tr class="separator:a866ab0ea4619c3d75b05233d534b5cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa3828088db2b395fec8c75c0773ce61" id="r_aaa3828088db2b395fec8c75c0773ce61"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa3828088db2b395fec8c75c0773ce61">DLLIOCtrl_setAllOutputs</a> (uint32_t *width_in_5ns, uint32_t *delay_in_5ns)</td></tr>
-<tr class="memdesc:aaa3828088db2b395fec8c75c0773ce61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set parameters of all pulses outputs of IOCTRL for all boards selected by settings parameter board_sel.  <br /></td></tr>
+<tr class="memdesc:aaa3828088db2b395fec8c75c0773ce61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set parameters of all pulses outputs of IOCTRL for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
 <tr class="separator:aaa3828088db2b395fec8c75c0773ce61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79a1ea8d164b02336350f228840b1c02" id="r_a79a1ea8d164b02336350f228840b1c02"><td class="memItemLeft" align="right" valign="top">DllAccess void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79a1ea8d164b02336350f228840b1c02">DLLGetCurrentScanNumber</a> (uint32_t drvno, int64_t *sample, int64_t *block)</td></tr>
 <tr class="memdesc:a79a1ea8d164b02336350f228840b1c02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives scan and block number of the last scan written to userBuffer.     <br /></td></tr>
 <tr class="separator:a79a1ea8d164b02336350f228840b1c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe353a9293f63379dfbef70500b437e0" id="r_afe353a9293f63379dfbef70500b437e0"><td class="memItemLeft" align="right" valign="top">DllAccess void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe353a9293f63379dfbef70500b437e0">DLLGetCurrentScanNumber_multipleBoards</a> (int64_t *sample0, int64_t *block0, int64_t *sample1, int64_t *block1, int64_t *sample2, int64_t *block2, int64_t *sample3, int64_t *block3, int64_t *sample4, int64_t *block4)</td></tr>
-<tr class="memdesc:afe353a9293f63379dfbef70500b437e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives scan and block number of the last scan written to userBuffer for all boards selected by settings paramter board_sel.  <br /></td></tr>
+<tr class="memdesc:afe353a9293f63379dfbef70500b437e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives scan and block number of the last scan written to userBuffer for all boards selected by settings paramter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
 <tr class="separator:afe353a9293f63379dfbef70500b437e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a441cb3384907905658c40599df34aaad" id="r_a441cb3384907905658c40599df34aaad"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a441cb3384907905658c40599df34aaad">DLLGetIsTdc</a> (uint32_t drvno, uint8_t *isTdc)</td></tr>
 <tr class="memdesc:a441cb3384907905658c40599df34aaad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read TDC flag in PCIEFLAGS register.     <br /></td></tr>
 <tr class="separator:a441cb3384907905658c40599df34aaad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f5179344e337ffc154a18074bc832c0" id="r_a0f5179344e337ffc154a18074bc832c0"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f5179344e337ffc154a18074bc832c0">DLLGetIsTdc_multipleBoards</a> (uint8_t *isTdc0, uint8_t *isTdc1, uint8_t *isTdc2, uint8_t *isTdc3, uint8_t *isTdc4)</td></tr>
-<tr class="memdesc:a0f5179344e337ffc154a18074bc832c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read TDC flag in PCIEFLAGS register of all boards selected by settings parameter board_sel.  <br /></td></tr>
+<tr class="memdesc:a0f5179344e337ffc154a18074bc832c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read TDC flag in PCIEFLAGS register of all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
 <tr class="separator:a0f5179344e337ffc154a18074bc832c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af78eee15e7b7076bab6e7e2a4374268b" id="r_af78eee15e7b7076bab6e7e2a4374268b"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af78eee15e7b7076bab6e7e2a4374268b">DLLGetIsDsc</a> (uint32_t drvno, uint8_t *isDsc)</td></tr>
 <tr class="memdesc:af78eee15e7b7076bab6e7e2a4374268b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read DSC flag in PCIEFLAGS register.     <br /></td></tr>
@@ -427,22 +435,22 @@ Functions</h2></td></tr>
 <tr class="memdesc:af0bb6e237c9cac07db613730437cde48"><td class="mdescLeft">&#160;</td><td class="mdescRight">reset Delay Stage Counter     <br /></td></tr>
 <tr class="separator:af0bb6e237c9cac07db613730437cde48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a183424cf5822d7adf5377461cead38c1" id="r_a183424cf5822d7adf5377461cead38c1"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a183424cf5822d7adf5377461cead38c1">DLLResetDSC_multipleBoards</a> (uint8_t DSCNumber)</td></tr>
-<tr class="memdesc:a183424cf5822d7adf5377461cead38c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">reset Delay Stage Counter for all boards selected by settings parameter board_sel.  <br /></td></tr>
+<tr class="memdesc:a183424cf5822d7adf5377461cead38c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">reset Delay Stage Counter for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
 <tr class="separator:a183424cf5822d7adf5377461cead38c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab2c18eca8293f55d7ca7d082e0e5ccd" id="r_aab2c18eca8293f55d7ca7d082e0e5ccd"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab2c18eca8293f55d7ca7d082e0e5ccd">DLLSetDIRDSC</a> (uint32_t drvno, uint8_t DSCNumber, uint8_t dir)</td></tr>
 <tr class="memdesc:aab2c18eca8293f55d7ca7d082e0e5ccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">set direction of Delay Stage Counter     <br /></td></tr>
 <tr class="separator:aab2c18eca8293f55d7ca7d082e0e5ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac107d18d61b6b47c77b9fb7a68959c7c" id="r_ac107d18d61b6b47c77b9fb7a68959c7c"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac107d18d61b6b47c77b9fb7a68959c7c">DLLSetDIRDSC_multipleBoards</a> (uint8_t DSCNumber, uint8_t dir)</td></tr>
-<tr class="memdesc:ac107d18d61b6b47c77b9fb7a68959c7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">set direction of Delay Stage Counter for all boards selected by settings parameter board_sel.  <br /></td></tr>
+<tr class="memdesc:ac107d18d61b6b47c77b9fb7a68959c7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">set direction of Delay Stage Counter for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
 <tr class="separator:ac107d18d61b6b47c77b9fb7a68959c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff26d82ea5df6a2dd1a0a09709f3700f" id="r_aff26d82ea5df6a2dd1a0a09709f3700f"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff26d82ea5df6a2dd1a0a09709f3700f">DLLGetDSC</a> (uint32_t drvno, uint8_t DSCNumber, uint32_t *ADSC, uint32_t *LDSC)</td></tr>
 <tr class="memdesc:aff26d82ea5df6a2dd1a0a09709f3700f"><td class="mdescLeft">&#160;</td><td class="mdescRight">return all values of Delay Stage Counter     <br /></td></tr>
 <tr class="separator:aff26d82ea5df6a2dd1a0a09709f3700f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a703858807d136f7abd2991d17e103eb2" id="r_a703858807d136f7abd2991d17e103eb2"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a703858807d136f7abd2991d17e103eb2">DLLGetDSC_multipleBoards</a> (uint8_t DSCNumber, uint32_t *ADSC0, uint32_t *LDSC0, uint32_t *ADSC1, uint32_t *LDSC1, uint32_t *ADSC2, uint32_t *LDSC2, uint32_t *ADSC3, uint32_t *LDSC3, uint32_t *ADSC4, uint32_t *LDSC4)</td></tr>
-<tr class="memdesc:a703858807d136f7abd2991d17e103eb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">return all values of Delay Stage Counter for all boards selected by settings parameter board_sel  <br /></td></tr>
+<tr class="memdesc:a703858807d136f7abd2991d17e103eb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">return all values of Delay Stage Counter for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>  <br /></td></tr>
 <tr class="separator:a703858807d136f7abd2991d17e103eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6baedfe2513a683213db026bc4929975" id="r_a6baedfe2513a683213db026bc4929975"><td class="memItemLeft" align="right" valign="top">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6baedfe2513a683213db026bc4929975">DLLInitGPX</a> (uint32_t delay)</td></tr>
-<tr class="memdesc:a6baedfe2513a683213db026bc4929975"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the TDC-GPX chip for all boards selected by settings parameter board_sel. TDC: time delay counter option.  <br /></td></tr>
+<tr class="memdesc:a6baedfe2513a683213db026bc4929975"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the TDC-GPX chip for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. TDC: time delay counter option.  <br /></td></tr>
 <tr class="separator:a6baedfe2513a683213db026bc4929975"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa828f161568b989ed8dcc93ac348693" id="r_afa828f161568b989ed8dcc93ac348693"><td class="memItemLeft" align="right" valign="top">DllAccess void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa828f161568b989ed8dcc93ac348693">DLLSetContinuousMeasurement</a> (uint8_t on)</td></tr>
 <tr class="memdesc:afa828f161568b989ed8dcc93ac348693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control looping the measurement.     <br /></td></tr>
@@ -574,7 +582,7 @@ Variables</h2></td></tr>
 
 <p>Sets abortMeasurementFlag to true.    </p>
 <p>Use this function if the measurement is running and you want to stop it.</p>
-<dl class="section return"><dt>Returns</dt><dd>es_no_error    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -594,7 +602,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Display information about registers and settings in pop up windows.    </p>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -630,14 +638,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed</li>
-</ul>
-</dd></dl>
-<ul>
-<li>es_no_space0    </li>
-</ul>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 </li>
 </ul>
 
@@ -670,12 +671,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed</li>
-<li>es_register_write_failed    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -804,13 +800,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_parameter_out_of_range</li>
-<li>es_allocating_memory_failed</li>
-<li>es_memory_not_initialized    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -894,7 +884,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Calculate TRMS noise value of one pixel for all used boards. </p>
-<p>Calculates RMS of TRMS_pixel in the range of samples from firstSample to lastSample. Only calculates RMS from one block. Boards set by settings parameter board_sel are used. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Calculates RMS of TRMS_pixel in the range of samples from firstSample to lastSample. Only calculates RMS from one block. Boards set by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a> are used. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">firstSample</td><td>start sample to calculate RMS. 0...(nos-2). Typical value: 10, to skip overexposed first samples </td></tr>
     <tr><td class="paramname">lastSample</td><td>last sample to calculate RMS. firstSample+1...(nos-1). </td></tr>
@@ -913,13 +903,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes<ul>
-<li>es_no_error</li>
-<li>es_parameter_out_of_range</li>
-<li>es_allocating_memory_failed</li>
-<li>es_memory_not_initialized </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -950,11 +934,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -985,11 +965,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -1022,11 +998,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Is true (not 0) if overflow occurred (linecounter&gt;0). </dd>
 <dd>
-es_status_codes<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed    </li>
-</ul>
-</dd></dl>
+<a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -1057,11 +1029,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -1080,13 +1048,8 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the IFC bit of interface for sensors with shutter function for all boards set by settings parameter board_sel. IFC=low. </p>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed</li>
-<li>es_register_write_failed </li>
-</ul>
-</dd></dl>
+<p>Sets the IFC bit of interface for sensors with shutter function for all boards set by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. IFC=low. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -1143,7 +1106,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -1181,7 +1144,7 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Copies all pixel data to pdest for all used boards set in settings parameter board_sel. </p>
+<p>Copies all pixel data to pdest for all used boards set in settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pdest0</td><td>Address where data is written for board 0, should be a buffer with size: nos * nob * camcnt * pixel * sizeof( uint16_t ) </td></tr>
@@ -1192,12 +1155,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_parameter_out_of_range</li>
-<li>es_memory_not_initialized </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -1258,7 +1216,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -1295,7 +1253,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -1338,7 +1296,7 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Copies one block of pixel data of all used boards selected by settings parameter board_sel to pdest. </p>
+<p>Copies one block of pixel data of all used boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a> to pdest. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">block</td><td>Selects which block to copy. </td></tr>
@@ -1350,12 +1308,113 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_parameter_out_of_range</li>
-<li>es_memory_not_initialized </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="ae7e9a4510543253789fa331692dcff40" name="ae7e9a4510543253789fa331692dcff40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7e9a4510543253789fa331692dcff40">&#9670;&#160;</a></span>DLLCopyOneBlockOfOneCamera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLCopyOneBlockOfOneCamera </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>block</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>camera</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *</td>          <td class="paramname"><span class="paramname"><em>pdest</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy the data of one block of one camera to pdest.    </p>
+<p>If <a class="el" href="structcamera__settings.html#a4738ff8e4057123c2c7136a8ac585bea">camera_settings::camcnt</a> is 1, use CopyOneBlock instead. This function copies the data sample by sample because the data of one block of one camera is not stored in a contiguous memory block if camcnt is greater than 1.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">block</td><td>block number ( 0...(nob - 1) ) </td></tr>
+    <tr><td class="paramname">camera</td><td>camera number ( 0...(CAMCNT - 1) ) </td></tr>
+    <tr><td class="paramname">pdest</td><td>Pointer where the data will be written to. Make sure that the size of the buffer is &gt;= sizeof(uint16_t) * pixel * nos </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
+
+</div>
+</div>
+<a id="a0240a1ff00e6a1812db1de8c014153d9" name="a0240a1ff00e6a1812db1de8c014153d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0240a1ff00e6a1812db1de8c014153d9">&#9670;&#160;</a></span>DLLCopyOneBlockOfOneCamera_multipleBoards()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DllAccess <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLCopyOneBlockOfOneCamera_multipleBoards </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>block</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>camera</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *</td>          <td class="paramname"><span class="paramname"><em>pdest0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *</td>          <td class="paramname"><span class="paramname"><em>pdest1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *</td>          <td class="paramname"><span class="paramname"><em>pdest2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *</td>          <td class="paramname"><span class="paramname"><em>pdest3</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *</td>          <td class="paramname"><span class="paramname"><em>pdest4</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy the data of one block of one camera of all used boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a> to pdest. </p>
+<p>If <a class="el" href="structcamera__settings.html#a4738ff8e4057123c2c7136a8ac585bea">camera_settings::camcnt</a> is 1, use CopyOneBlock instead. This function copies the data sample by sample because the data of one block of one camera is not stored in a contiguous memory block if camcnt is greater than 1.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">block</td><td>block number ( 0...(nob - 1) ) </td></tr>
+    <tr><td class="paramname">camera</td><td>camera number ( 0...(CAMCNT - 1) ) </td></tr>
+    <tr><td class="paramname">pdest0</td><td>Pointer where the data will be written to for board 0. Make sure that the size of the buffer is &gt;= sizeof(uint16_t) * pixel * nos </td></tr>
+    <tr><td class="paramname">pdest1</td><td>Pointer where the data will be written to for board 1. Make sure that the size of the buffer is &gt;= sizeof(uint16_t) * pixel * nos </td></tr>
+    <tr><td class="paramname">pdest2</td><td>Pointer where the data will be written to for board 2. Make sure that the size of the buffer is &gt;= sizeof(uint16_t) * pixel * nos </td></tr>
+    <tr><td class="paramname">pdest3</td><td>Pointer where the data will be written to for board 3. Make sure that the size of the buffer is &gt;= sizeof(uint16_t) * pixel * nos </td></tr>
+    <tr><td class="paramname">pdest4</td><td>Pointer where the data will be written to for board 4. Make sure that the size of the buffer is &gt;= sizeof(uint16_t) * pixel * nos </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -1404,7 +1463,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -1457,7 +1516,7 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Get data of a single measurement for all boards selected by settings parameter board_sel. </p>
+<p>Get data of a single measurement for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sample</td><td>sample number ( 0...(nos - 1) ) </td></tr>
@@ -1471,13 +1530,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_invalid_driver_number</li>
-<li>es_invalid_driver_handle</li>
-<li>es_no_error</li>
-<li>es_parameter_out_of_range </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -1526,12 +1579,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes<ul>
-<li>es_no_error</li>
-<li>es_register_write_failed</li>
-<li>es_parameter_out_of_range    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -1598,12 +1646,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes<ul>
-<li>es_no_error</li>
-<li>es_register_write_failed</li>
-<li>es_parameter_out_of_range </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -1652,12 +1695,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes<ul>
-<li>es_no_error</li>
-<li>es_register_write_failed</li>
-<li>es_parameter_out_of_range    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -1707,7 +1745,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -1738,7 +1776,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -1769,7 +1807,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -1795,7 +1833,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -1826,11 +1864,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -1861,7 +1895,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -1892,7 +1926,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -1975,14 +2009,7 @@ es_status_codes<ul>
 </div><div class="memdoc">
 
 <p>Exit driver. Call this before exiting software for cleanup.    </p>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_invalid_driver_number</li>
-<li>es_invalid_driver_handle</li>
-<li>es_no_error</li>
-<li>es_unlocking_dma_failed</li>
-<li>es_parameter_out_of_range    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -2050,14 +2077,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed</li>
-</ul>
-</dd></dl>
-<ul>
-<li>es_camera_not_found    </li>
-</ul>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -2173,7 +2193,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -2223,13 +2243,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_invalid_driver_number</li>
-<li>es_invalid_driver_handle</li>
-<li>es_no_error</li>
-<li>es_parameter_out_of_range    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -2297,13 +2311,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_invalid_driver_number</li>
-<li>es_invalid_driver_handle</li>
-<li>es_no_error</li>
-<li>es_parameter_out_of_range </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -2353,13 +2361,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_invalid_driver_number</li>
-<li>es_invalid_driver_handle</li>
-<li>es_no_error</li>
-<li>es_parameter_out_of_range    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -2390,7 +2392,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -2439,7 +2441,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -2470,7 +2472,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -2519,7 +2521,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -2555,7 +2557,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -2607,7 +2609,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 </li>
 </ul>
 
@@ -2645,7 +2647,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -2697,7 +2699,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 </li>
 </ul>
 
@@ -2749,13 +2751,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_invalid_driver_number</li>
-<li>es_invalid_driver_handle</li>
-<li>es_no_error</li>
-<li>es_parameter_out_of_range    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -2823,13 +2819,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_invalid_driver_number</li>
-<li>es_invalid_driver_handle</li>
-<li>es_no_error</li>
-<li>es_parameter_out_of_range </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -2879,13 +2869,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_invalid_driver_number</li>
-<li>es_invalid_driver_handle</li>
-<li>es_no_error</li>
-<li>es_parameter_out_of_range    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -2953,13 +2937,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_invalid_driver_number</li>
-<li>es_invalid_driver_handle</li>
-<li>es_no_error</li>
-<li>es_parameter_out_of_range </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -2988,7 +2966,7 @@ es_status_codes<ul>
 </div><div class="memdoc">
 
 <p>Gives scan and block number of the last scan written to userBuffer.    </p>
-<p>When settings parameter camera_settings.user_software_polling is true this function converts scanCounterTotal to scan and block. This is necessary, because scanCounterTotal is just counting each scan not regarding camcnt and blocks. When camera_settings.user_software_polling is false the scan and block number of the last interrupt is given.</p>
+<p>When settings parameter <a class="el" href="structcamera__settings.html#a7d6d06fc3f59976df702bfda1e7bc0d1">camera_settings::use_software_polling</a> is true this function converts scanCounterTotal to scan and block. This is necessary, because scanCounterTotal is just counting each scan not regarding camcnt and blocks. When <a class="el" href="structcamera__settings.html#a7d6d06fc3f59976df702bfda1e7bc0d1">camera_settings::use_software_polling</a> is false the scan and block number of the last interrupt is given.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
@@ -3059,7 +3037,7 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Gives scan and block number of the last scan written to userBuffer for all boards selected by settings paramter board_sel. </p>
+<p>Gives scan and block number of the last scan written to userBuffer for all boards selected by settings paramter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
 <p>When settings parameter USE_SOFTWARE_POLLING is true this function converts scanCounterTotal to scan and block. This is necessary, because scanCounterTotal is just counting each scan not regarding camcnt and blocks. When USE_SOFTWARE_POLLING is false the scan and block number of the last interrupt is given.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3118,7 +3096,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -3186,7 +3164,7 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>return all values of Delay Stage Counter for all boards selected by settings parameter board_sel </p>
+<p>return all values of Delay Stage Counter for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a> </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">DSCNumber</td><td>1: DSC 1; 2: DSC 2 </td></tr>
@@ -3203,7 +3181,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -3291,13 +3269,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_invalid_driver_number</li>
-<li>es_invalid_driver_handle</li>
-<li>es_no_error</li>
-<li>es_parameter_out_of_range    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -3347,13 +3319,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_invalid_driver_number</li>
-<li>es_invalid_driver_handle</li>
-<li>es_no_error</li>
-<li>es_parameter_out_of_range    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -3384,11 +3350,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -3437,11 +3399,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -3492,11 +3450,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -3534,7 +3488,7 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Read TDC flag in PCIEFLAGS register of all boards selected by settings parameter board_sel. </p>
+<p>Read TDC flag in PCIEFLAGS register of all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">isTdc0</td><td>TDC flag of board 0. 1: TDC board detected, 0: no TDC board detected </td></tr>
@@ -3545,11 +3499,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -3580,11 +3530,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -3622,7 +3568,7 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Check if measure on bit is set for all boards selected by settings parameter board_sel. </p>
+<p>Check if measure on bit is set for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">measureOn0</td><td>True when measureon bit is set in board 0. </td></tr>
@@ -3633,11 +3579,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -3680,7 +3622,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -3735,7 +3677,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -3796,7 +3738,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -3865,13 +3807,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_invalid_driver_number</li>
-<li>es_invalid_driver_handle</li>
-<li>es_no_error</li>
-<li>es_parameter_out_of_range    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -3921,13 +3857,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_invalid_driver_number</li>
-<li>es_invalid_driver_handle</li>
-<li>es_no_error</li>
-<li>es_parameter_out_of_range    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -3977,13 +3907,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_invalid_driver_number</li>
-<li>es_invalid_driver_handle</li>
-<li>es_no_error</li>
-<li>es_parameter_out_of_range    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -4014,7 +3938,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -4063,7 +3987,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -4194,7 +4118,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -4246,7 +4170,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 </li>
 </ul>
 
@@ -4284,7 +4208,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -4336,7 +4260,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 </li>
 </ul>
 
@@ -4358,13 +4282,7 @@ es_status_codes<ul>
 </div><div class="memdoc">
 
 <p>Initializes the PCIe board.    </p>
-<p>Call this after InitDriver and before InitMeasurement. It is only needed to be called once. </p><dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_invalid_driver_number</li>
-<li>es_getting_device_info_failed</li>
-<li>es_open_device_failed    </li>
-</ul>
-</dd></dl>
+<p>Call this after InitDriver and before InitMeasurement. It is only needed to be called once. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -4384,14 +4302,7 @@ es_status_codes<ul>
 </div><div class="memdoc">
 
 <p>Initialize the driver.    </p>
-<p>Call this before any other action. It is only needed to be called once at startup. </p><dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_setting_driver_name_failed</li>
-<li>es_debug_init_failed</li>
-<li>es_driver_init_failed</li>
-<li>es_device_not_found</li>
-<li>es_no_error    </li>
-</ul>
-</dd></dl>
+<p>Call this before any other action. It is only needed to be called once at startup. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">_number_of_boards</td><td>Pointer for returning recognized number of PCIe boards. </td></tr>
@@ -4416,19 +4327,14 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize the TDC-GPX chip for all boards selected by settings parameter board_sel. TDC: time delay counter option. </p>
+<p>Initialize the TDC-GPX chip for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. TDC: time delay counter option. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">delay</td><td>GPX offset is used to increase accuracy. A counter value can be added, usually 1000. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed</li>
-<li>es_register_write_failed register dump with <a class="el" href="_board_8c.html#ab35ce8382a604942e534115e66b4c09e" title="Reads registers 0 to 12 of TDC-GPX chip. Time delay counter option.">_AboutGPX()</a> but with error status </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -4448,20 +4354,7 @@ es_status_codes<ul>
 </div><div class="memdoc">
 
 <p>Initialize measurement (using board select).    </p>
-<p>Call this every time you changed settings before starting the measurement. When you didn't change any settings, you can start the next measurement without calling InitMeasurement everytime. </p><dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_invalid_driver_number</li>
-<li>es_invalid_driver_handle</li>
-<li>es_no_error</li>
-<li>es_register_write_failed</li>
-<li>es_register_read_failed</li>
-<li>es_parameter_out_of_range</li>
-<li>es_allocating_memory_failed</li>
-<li>es_not_enough_ram</li>
-<li>es_getting_dma_buffer_failed</li>
-<li>es_enabling_interrupts_failed</li>
-<li>es_camera_not_found    </li>
-</ul>
-</dd></dl>
+<p>Call this every time you changed settings before starting the measurement. When you didn't change any settings, you can start the next measurement without calling InitMeasurement everytime. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -4509,7 +4402,7 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Set parameters of all pulses outputs of IOCTRL for all boards selected by settings parameter board_sel. </p>
+<p>Set parameters of all pulses outputs of IOCTRL for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">width_in_5ns</td><td>Set width of pulse in 5ns steps. Array with 7 entries. </td></tr>
@@ -4517,12 +4410,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_write_failed</li>
-<li>es_parameter_out_of_range </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -4555,7 +4443,17 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p></p>
+<p>Set paramters of one pulse output of IOCTRL.    </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">number</td><td>Number of output: 1 ... 7 </td></tr>
+    <tr><td class="paramname">width_in_5ns</td><td>Set width of pulse in 5ns steps. </td></tr>
+    <tr><td class="paramname">delay_in_5ns</td><td>Set delay of pulse in 5ns steps. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -4578,7 +4476,15 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p></p>
+<p>Set period of IOCtrl pulse outputs base frequency T0.    </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">period_in_10ns</td><td>Period of T0 in 10ns steps. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -4597,20 +4503,14 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Set period of IOCtrl pulse outputs base frequency T0 for all boards selected by settings parameter board_sel. </p>
+<p>Set period of IOCtrl pulse outputs base frequency T0 for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">period_in_10ns</td><td>Period of T0 in 10ns steps. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_write_failed</li>
-<li>es_register_read_failed</li>
-<li>es_camera_not_found </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -4629,13 +4529,8 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Open shutter for sensors with EC (exposure control) / sets IFC signal = high for all boards selected by settings parameter board_sel. </p>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed</li>
-<li>es_register_write_failed </li>
-</ul>
-</dd></dl>
+<p>Open shutter for sensors with EC (exposure control) / sets IFC signal = high for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -4654,13 +4549,8 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Set trigger out(Reg CtrlA:D3) for all boards selected by settings parameter board_sel. Can be used to control timing issues in software. </p>
-<p>The Reg TOR:D31 must have been set to 1 and D30:D27 to zero to see the signal -&gt; see manual. </p><dl class="section return"><dt>Returns</dt><dd>es_status_codes<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed</li>
-<li>es_register_write_failed </li>
-</ul>
-</dd></dl>
+<p>Set trigger out(Reg CtrlA:D3) for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. Can be used to control timing issues in software. </p>
+<p>The Reg TOR:D31 must have been set to 1 and D30:D27 to zero to see the signal -&gt; see manual. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -4679,13 +4569,8 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Reset trigger out(Reg CtrlA:D3) for all boards selected by settings parameter board_sel. Can be used to control timing issues in software. </p>
-<p>The Reg TOR:D31 must have been set to 1 and D30:D27 to zero to see the signal -&gt; see manual. </p><dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed</li>
-<li>es_register_write_failed </li>
-</ul>
-</dd></dl>
+<p>Reset trigger out(Reg CtrlA:D3) for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. Can be used to control timing issues in software. </p>
+<p>The Reg TOR:D31 must have been set to 1 and D30:D27 to zero to see the signal -&gt; see manual. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -4704,19 +4589,14 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Pulses trigger out(Reg CtrlA:D3) for all boards selected by setings parameter board_sel. Can be used to control timing issues in software. </p>
+<p>Pulses trigger out(Reg CtrlA:D3) for all boards selected by setings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. Can be used to control timing issues in software. </p>
 <p>The Reg TOR:D31 must have been set to 1 and D30:D27 to zero to see the signal -&gt; see manual </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pulseWidthInMicroseconds</td><td>duration of pulse in us </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed</li>
-<li>es_register_write_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -4759,11 +4639,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -4824,11 +4700,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -4871,11 +4743,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -4936,11 +4804,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -4971,11 +4835,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -5013,7 +4873,7 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Reads the ScanFrequency bit and checks if its high or low for all boards selected by settings parameter board_sel. </p>
+<p>Reads the ScanFrequency bit and checks if its high or low for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">blockFrequencyTooHigh0</td><td>True when block frequency too high bit is set for board 0 </td></tr>
@@ -5061,11 +4921,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -5108,7 +4964,7 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Read 4 bytes of a register in S0 space of all boards selected by settings parameter board_sel. </p>
+<p>Read 4 bytes of a register in S0 space of all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data0</td><td>Read buffer for board 0. </td></tr>
@@ -5120,11 +4976,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -5161,11 +5013,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -5208,7 +5056,7 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Read 1 byte of a register in S0 space of all boards selected by settings parameter board_sel. </p>
+<p>Read 1 byte of a register in S0 space of all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data0</td><td>Read buffer of board 0. </td></tr>
@@ -5220,11 +5068,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -5255,11 +5099,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -5297,7 +5137,7 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Reads the ScanFrequency bit and checks if its high or low for all boards selected by settings parameter board_sel. </p>
+<p>Reads the ScanFrequency bit and checks if its high or low for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scanFrequencyTooHigh0</td><td>True when scan frequency too high bit is set for board 0 </td></tr>
@@ -5331,7 +5171,7 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Set bit to 0 in register at memory address for all boards selected by settings parameter board_sel. </p>
+<p>Set bit to 0 in register at memory address for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bitnumber</td><td>0...31, 0 is LSB, 31 MSB </td></tr>
@@ -5339,12 +5179,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed</li>
-<li>es_register_write_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -5370,14 +5205,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed<ul>
-<li>es_register_write_failed    </li>
-</ul>
-</li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -5397,14 +5225,7 @@ es_status_codes<ul>
 </div><div class="memdoc">
 
 <p>Resets the BlockFrequency bit. </p>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed<ul>
-<li>es_register_write_failed </li>
-</ul>
-</li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -5430,7 +5251,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -5450,7 +5271,7 @@ es_status_codes<ul>
 </div><div class="memdoc">
 
 <p>Reset the bit <a class="el" href="enum__hardware_8h.html#a1d179386b40162fc96b96c12da077dd8aaeab6d26c9862015dde4fddfe2c1e3a1">PCIEFLAGS_bits_t::PCIEFLAGS_bit_block_trigger_detected</a>. </p>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -5481,7 +5302,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -5500,14 +5321,14 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>reset Delay Stage Counter for all boards selected by settings parameter board_sel. </p>
+<p>reset Delay Stage Counter for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">DSCNumber</td><td>1: DSC 1; 2: DSC 2 </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -5533,14 +5354,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed<ul>
-<li>es_register_write_failed    </li>
-</ul>
-</li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -5560,14 +5374,7 @@ es_status_codes<ul>
 </div><div class="memdoc">
 
 <p>Resets the ScanFrequency bit. </p>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed<ul>
-<li>es_register_write_failed </li>
-</ul>
-</li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -5593,7 +5400,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -5613,7 +5420,7 @@ es_status_codes<ul>
 </div><div class="memdoc">
 
 <p>Reset the bit <a class="el" href="enum__hardware_8h.html#a1d179386b40162fc96b96c12da077dd8a701390510b309f4ef826a5828883f658">PCIEFLAGS_bits_t::PCIEFLAGS_bit_scan_trigger_detected</a>. </p>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -5661,7 +5468,7 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Set bit to 1 in S0 register at memory address for all boards selected by settings parameter board_sel. </p>
+<p>Set bit to 1 in S0 register at memory address for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bitnumber</td><td>0...31, 0 is LSB, 31 MSB </td></tr>
@@ -5669,12 +5476,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed</li>
-<li>es_register_write_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -5755,11 +5557,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_write_failed    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -5821,7 +5619,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -5844,7 +5642,7 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>set direction of Delay Stage Counter for all boards selected by settings parameter board_sel. </p>
+<p>set direction of Delay Stage Counter for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">DSCNumber</td><td>1: DSC 1; 2: DSC 2 </td></tr>
@@ -5852,7 +5650,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -6043,12 +5841,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed</li>
-<li>es_register_write_failed    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -6067,20 +5860,14 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Set temperature level for cooled cameras for all boards selected by settings parameter board_sel. </p>
+<p>Set temperature level for cooled cameras for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">level</td><td>level 0..7 / 0=off, 7=min -&gt; see cooling manual </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_write_failed</li>
-<li>es_register_read_failed</li>
-<li>es_camera_not_found </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -6111,12 +5898,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed</li>
-<li>es_register_write_failed    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -6135,19 +5917,14 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Set signal of output port of PCIe card for all boards selected by settings parameter board_sel. </p>
+<p>Set signal of output port of PCIe card for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tor</td><td>select output signal. See <a class="el" href="enum__settings_8h.html#a34afd11285290b35c0f65d59c163fafa">enum tor_out_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed</li>
-<li>es_register_write_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -6264,16 +6041,7 @@ es_status_codes<ul>
 
 <p>This function is starting the measurement and returns when the measurement is done.    </p>
 <p>When there are multiple boards, all boards are starting the measurement. Create a new thread for calling this function, when you don't want to have a blocking call.</p>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed</li>
-<li>es_camera_not_found</li>
-<li>es_register_write_failed</li>
-<li>es_already_running</li>
-<li>es_parameter_out_of_range</li>
-<li>es_setting_thread_priority_failed    </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -6312,12 +6080,8 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Returns when block on bit is 0 in all boards selected by settings parameter board_sel. </p>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed </li>
-</ul>
-</dd></dl>
+<p>Returns when block on bit is 0 in all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -6336,12 +6100,8 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Returns when measure on bit is 0 in all boards selected by settings parameter board_sel. </p>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed </li>
-</ul>
-</dd></dl>
+<p>Returns when measure on bit is 0 in all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -6364,7 +6124,7 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Write 4 bytes of a register in S0 space for all boards selected by settings parameter board_sel. </p>
+<p>Write 4 bytes of a register in S0 space for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>Data to write. </td></tr>
@@ -6372,11 +6132,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -6399,7 +6155,7 @@ es_status_codes<ul>
       </table>
 </div><div class="memdoc">
 
-<p>Write the same 1 byte to a register in S0 space of all boards selected by settings parameter board_sel. </p>
+<p>Write the same 1 byte to a register in S0 space of all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>Data to write. </td></tr>
@@ -6407,11 +6163,7 @@ es_status_codes<ul>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>es_status_codes:<ul>
-<li>es_no_error</li>
-<li>es_register_read_failed </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
