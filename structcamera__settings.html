@@ -195,6 +195,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a12d482c6345afb2116315167cf04b42d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87e6684676f13947b082dd5e7ab225b5" id="r_a87e6684676f13947b082dd5e7ab225b5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87e6684676f13947b082dd5e7ab225b5">monitor</a></td></tr>
 <tr class="separator:a87e6684676f13947b082dd5e7ab225b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a108d24d1e3326657499f0c1ec387d005" id="r_a108d24d1e3326657499f0c1ec387d005"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a108d24d1e3326657499f0c1ec387d005">manipulate_data_mode</a></td></tr>
+<tr class="separator:a108d24d1e3326657499f0c1ec387d005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab98246d4ee9f663d7b468f71821d7632" id="r_ab98246d4ee9f663d7b468f71821d7632"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab98246d4ee9f663d7b468f71821d7632">manipulate_data_custom_factor</a></td></tr>
+<tr class="separator:ab98246d4ee9f663d7b468f71821d7632"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Individual settings for each PCIe board. </p>
@@ -249,7 +253,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>ADC mode controls the operating mode of the ADC. This option is intended for debugging purpose and only available for specific ADCs, e.g. in camera system 3030. See enum <a class="el" href="enum__settings_8h.html#a760a8dafdcddcfadfea0aa3e01159164">adc_mode_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. </p>
+<p>ADC mode controls the operating mode of the ADC. This option is intended for debugging purpose and only available for specific ADCs, e.g. in camera system 3030. See enum <a class="el" href="enum__settings_8h.html#a760a8dafdcddcfadfea0aa3e01159164">adc_mode_t</a> in <a class="el" href="enum__settings_8h.html" title="All settings options and software constants.">enum_settings.h</a> for options. </p>
 
 </div>
 </div>
@@ -304,7 +308,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Block trigger slope determines whether positive, negative or both slopes of a trigger are used. See enum <a class="el" href="enum__settings_8h.html#a6e2fb72f49966ca5028850e2e30dc586">bslope_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. This only applies to external triggers. </p>
+<p>Block trigger slope determines whether positive, negative or both slopes of a trigger are used. See enum <a class="el" href="enum__settings_8h.html#a6e2fb72f49966ca5028850e2e30dc586">bslope_t</a> in <a class="el" href="enum__settings_8h.html" title="All settings options and software constants.">enum_settings.h</a> for options. This only applies to external triggers. </p>
 
 </div>
 </div>
@@ -319,7 +323,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Block trigger input mode determines the signal, on which one block of readouts is started. See enum <a class="el" href="enum__settings_8h.html#a2fce6aa348483bc730e1693a39bc0e00">bti_mode_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. Further information on trigger signals can be found in the manual in chapter 6.3. </p>
+<p>Block trigger input mode determines the signal, on which one block of readouts is started. See enum <a class="el" href="enum__settings_8h.html#a2fce6aa348483bc730e1693a39bc0e00">bti_mode_t</a> in <a class="el" href="enum__settings_8h.html" title="All settings options and software constants.">enum_settings.h</a> for options. Further information on trigger signals can be found in the manual in chapter 6.3. </p>
 
 </div>
 </div>
@@ -390,7 +394,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Camera system should match the model number of your camera. See enum <a class="el" href="enum__settings_8h.html#a87d071078d7c7603069e44ced5c5ebfe">camera_system_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. </p>
+<p>Camera system should match the model number of your camera. See enum <a class="el" href="enum__settings_8h.html#a87d071078d7c7603069e44ced5c5ebfe">camera_system_t</a> in <a class="el" href="enum__settings_8h.html" title="All settings options and software constants.">enum_settings.h</a> for options. </p>
 
 </div>
 </div>
@@ -405,7 +409,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Channel select controls which channel of a camera control box is used for the camera readout. This feature is implemented in the camera version P230_6 and newer. See enum <a class="el" href="enum__settings_8h.html#a5baa77ee33be73547f4e348a68da6e3e">channel_select_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. </p>
+<p>Channel select controls which channel of a camera control box is used for the camera readout. This feature is implemented in the camera version P230_6 and newer. See enum <a class="el" href="enum__settings_8h.html#a5baa77ee33be73547f4e348a68da6e3e">channel_select_t</a> in <a class="el" href="enum__settings_8h.html" title="All settings options and software constants.">enum_settings.h</a> for options. </p>
 
 </div>
 </div>
@@ -470,7 +474,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>fft_mode controls the operating mode for FFT sensors. The vertical lines of a FFT sensor can either be summed up, read separately or summed up partially. See enum <a class="el" href="enum__settings_8h.html#a86f1e46308bfcaf8ceccb822f1d72c57">fft_mode_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. Further information about FFT modes can be found in the manual in chapter 4.5.1. </p>
+<p>fft_mode controls the operating mode for FFT sensors. The vertical lines of a FFT sensor can either be summed up, read separately or summed up partially. See enum <a class="el" href="enum__settings_8h.html#a86f1e46308bfcaf8ceccb822f1d72c57">fft_mode_t</a> in <a class="el" href="enum__settings_8h.html" title="All settings options and software constants.">enum_settings.h</a> for options. Further information about FFT modes can be found in the manual in chapter 4.5.1. </p>
 
 </div>
 </div>
@@ -660,6 +664,36 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ab98246d4ee9f663d7b468f71821d7632" name="ab98246d4ee9f663d7b468f71821d7632"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab98246d4ee9f663d7b468f71821d7632">&#9670;&#160;</a></span>manipulate_data_custom_factor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double camera_settings::manipulate_data_custom_factor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>manipulate_data_custom_factor is used when <a class="el" href="#a108d24d1e3326657499f0c1ec387d005">camera_settings::manipulate_data_mode</a> is set to <a class="el" href="enum__settings_8h.html#aa60c841e2b61535475ffa273b78015f1a18242fd8c0e441e4a93bd5a928f6a09e">manipulate_data_mode_t::manipulate_data_mode_custom_factor</a>. This factor is multiplied with the data of each pixel. </p>
+
+</div>
+</div>
+<a id="a108d24d1e3326657499f0c1ec387d005" name="a108d24d1e3326657499f0c1ec387d005"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a108d24d1e3326657499f0c1ec387d005">&#9670;&#160;</a></span>manipulate_data_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t camera_settings::manipulate_data_mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>With manipulate_data_mode you can activate / deactivate a built in data manipulation during the measurement. This is potentially used to linearize the sensor data for specific sensors. See <a class="el" href="enum__settings_8h.html#aa60c841e2b61535475ffa273b78015f1">manipulate_data_mode_t</a> in enum.h for options. </p>
+
+</div>
+</div>
 <a id="a87e6684676f13947b082dd5e7ab225b5" name="a87e6684676f13947b082dd5e7ab225b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a87e6684676f13947b082dd5e7ab225b5">&#9670;&#160;</a></span>monitor</h2>
 
@@ -671,7 +705,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>monitor is the output mode for the monitor output of the Camera Control. See enum <a class="el" href="enum__settings_8h.html#a31d89bc528102fe4010591054c2dc5d1">monitor_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. Further information about monitor can be found in the manual in chapter 3.3.1. </p>
+<p>monitor is the output mode for the monitor output of the Camera Control. See enum <a class="el" href="enum__settings_8h.html#a31d89bc528102fe4010591054c2dc5d1">monitor_t</a> in <a class="el" href="enum__settings_8h.html" title="All settings options and software constants.">enum_settings.h</a> for options. Further information about monitor can be found in the manual in chapter 3.3.1. </p>
 
 </div>
 </div>
@@ -858,7 +892,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sensor type should match the sensor type of your camera. See enum <a class="el" href="enum__settings_8h.html#a089f166159fb19f10d81c65c1d8793a2">sensor_type_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. </p>
+<p>Sensor type should match the sensor type of your camera. See enum <a class="el" href="enum__settings_8h.html#a089f166159fb19f10d81c65c1d8793a2">sensor_type_t</a> in <a class="el" href="enum__settings_8h.html" title="All settings options and software constants.">enum_settings.h</a> for options. </p>
 
 </div>
 </div>
@@ -891,7 +925,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Scan trigger slope determines whether positive, negative or both slopes of a trigger are used. See enum <a class="el" href="enum__settings_8h.html#a807bb0212417bc8c5b431aad2fbc2f00">sslope_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. This only applies to external triggers. </p>
+<p>Scan trigger slope determines whether positive, negative or both slopes of a trigger are used. See enum <a class="el" href="enum__settings_8h.html#a807bb0212417bc8c5b431aad2fbc2f00">sslope_t</a> in <a class="el" href="enum__settings_8h.html" title="All settings options and software constants.">enum_settings.h</a> for options. This only applies to external triggers. </p>
 
 </div>
 </div>
@@ -906,7 +940,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Scan trigger input mode determines the signal, on which one readout is started. See enum <a class="el" href="enum__settings_8h.html#a0bdcebe838e77385002ccc4077a6e743">sti_mode_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. Further information on trigger signals can be found in the manual in chapter 6.3. </p>
+<p>Scan trigger input mode determines the signal, on which one readout is started. See enum <a class="el" href="enum__settings_8h.html#a0bdcebe838e77385002ccc4077a6e743">sti_mode_t</a> in <a class="el" href="enum__settings_8h.html" title="All settings options and software constants.">enum_settings.h</a> for options. Further information on trigger signals can be found in the manual in chapter 6.3. </p>
 
 </div>
 </div>
@@ -1002,7 +1036,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Output mode for PCIe board output pin. See enum <a class="el" href="enum__settings_8h.html#a34afd11285290b35c0f65d59c163fafa">tor_out_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. Further information about tor can be found in the manual in chapter 6.2.4.12. </p>
+<p>Output mode for PCIe board output pin. See enum <a class="el" href="enum__settings_8h.html#a34afd11285290b35c0f65d59c163fafa">tor_out_t</a> in <a class="el" href="enum__settings_8h.html" title="All settings options and software constants.">enum_settings.h</a> for options. Further information about tor can be found in the manual in chapter 6.2.4.12. </p>
 
 </div>
 </div>
@@ -1017,7 +1051,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Trigger mode of the integrator in the camera control box. See enum <a class="el" href="enum__settings_8h.html#a6d33f21be3f0c5cf91c5d638e8aca086">trigger_mode_t</a> in <a class="el" href="enum__settings_8h.html">enum_settings.h</a> for options. Further information about the trigger modes can found in the manual in chapter 7.3.7. <br  />
+<p>Trigger mode of the integrator in the camera control box. See enum <a class="el" href="enum__settings_8h.html#a6d33f21be3f0c5cf91c5d638e8aca086">trigger_mode_t</a> in <a class="el" href="enum__settings_8h.html" title="All settings options and software constants.">enum_settings.h</a> for options. Further information about the trigger modes can found in the manual in chapter 7.3.7. <br  />
  </p>
 
 </div>

@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['pciecardversionisequal_0',['PcieCardVersionIsEqual',['../_board_8c.html#ad50fbf117f17cb4e7dcbb14b4adeafda',1,'Board.c']]],
-  ['pciecardversionisgreaterthan_1',['PcieCardVersionIsGreaterThan',['../_board_8c.html#a55689bed6eac9b0850a121212f3c9156',1,'Board.c']]],
-  ['pciecardversionissmallerthan_2',['PcieCardVersionIsSmallerThan',['../_board_8c.html#aaad9b7a44b567bd6125fa211ed76f02e',1,'Board.c']]],
-  ['polldmabuffertouserbuffer_3',['PollDmaBufferToUserBuffer',['../_board_8c.html#a6d992a63422fa1d74ad5f302204ffe6e',1,'Board.c']]],
-  ['pulsebits0_5f32_4',['pulseBitS0_32',['../_board_8c.html#a59f67db4ff3fa6071a8398998e646d5c',1,'Board.c']]],
-  ['pulsebits0_5f8_5',['pulseBitS0_8',['../_board_8c.html#a2fa23bad2b72d1f9419b31c52e7eed75',1,'Board.c']]]
+  ['openfile_0',['openFile',['../_board__ll_8c.html#acf99ecfb75e0b3bae34caded22ff5367',1,'openFile(uint32_t drvno):&#160;Board_ll.c'],['../_board__ll_8h.html#acf99ecfb75e0b3bae34caded22ff5367',1,'openFile(uint32_t drvno):&#160;Board_ll.c']]],
+  ['openshutter_1',['OpenShutter',['../_board_8c.html#aff3a95788b7373294b77102a9eb39d77',1,'OpenShutter(uint32_t drvno):&#160;Board.c'],['../_board_8h.html#aff3a95788b7373294b77102a9eb39d77',1,'OpenShutter(uint32_t drvno):&#160;Board.c']]],
+  ['outtrighigh_2',['OutTrigHigh',['../_board_8c.html#a17c3f95217ca811a23a37998a141db78',1,'OutTrigHigh(uint32_t drvno):&#160;Board.c'],['../_board_8h.html#a17c3f95217ca811a23a37998a141db78',1,'OutTrigHigh(uint32_t drvno):&#160;Board.c']]],
+  ['outtriglow_3',['OutTrigLow',['../_board_8c.html#a8cf2cbfa432ee37a742eae389648b39d',1,'OutTrigLow(uint32_t drvno):&#160;Board.c'],['../_board_8h.html#a8cf2cbfa432ee37a742eae389648b39d',1,'OutTrigLow(uint32_t drvno):&#160;Board.c']]],
+  ['outtrigpulse_4',['OutTrigPulse',['../_board_8c.html#a686b66f43b2b183ab0634e5cc331d25c',1,'OutTrigPulse(uint32_t drvno, int64_t pulseWidthInMicroseconds):&#160;Board.c'],['../_board_8h.html#a686b66f43b2b183ab0634e5cc331d25c',1,'OutTrigPulse(uint32_t drvno, int64_t pulseWidthInMicroseconds):&#160;Board.c']]]
 ];

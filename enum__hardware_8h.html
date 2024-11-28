@@ -96,6 +96,9 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
+<p>All constants and addresses given by the hardware.  
+<a href="#details">More...</a></p>
+
 <p><a href="enum__hardware_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
@@ -749,10 +752,12 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="#ab4e169cedf37f6a55251e0d15f33a2b1a6419ae442ae7b4c59b0d51067e68050b">pixel_camera_status</a> = 10
 , <a class="el" href="#ab4e169cedf37f6a55251e0d15f33a2b1a5c8505a043a6088fd145e8fcd5eaa120">pixel_fpga_ver</a> = 11
+, <a class="el" href="#ab4e169cedf37f6a55251e0d15f33a2b1aa68598a367c4c796f85d4d1d41963c03">pixel_first_sensor_pixel</a> = 12
 <br />
  }</td></tr>
 <tr class="separator:ab4e169cedf37f6a55251e0d15f33a2b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5345f9ae48237dce9cbde9e67b4a3aa" id="r_aa5345f9ae48237dce9cbde9e67b4a3aa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5345f9ae48237dce9cbde9e67b4a3aa">special_last_pixels_t</a> { <a class="el" href="#aa5345f9ae48237dce9cbde9e67b4a3aaab0e076ab28177d460363e8f9b2bbb2a9">pixel_scan_index2_high</a> = 1
+<tr class="memitem:aa5345f9ae48237dce9cbde9e67b4a3aa" id="r_aa5345f9ae48237dce9cbde9e67b4a3aa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5345f9ae48237dce9cbde9e67b4a3aa">special_last_pixels_t</a> { <a class="el" href="#aa5345f9ae48237dce9cbde9e67b4a3aaa2d54eef693d93844f694028b46e2fb83">pixel_last_sensor_pixel</a> = 2
+, <a class="el" href="#aa5345f9ae48237dce9cbde9e67b4a3aaab0e076ab28177d460363e8f9b2bbb2a9">pixel_scan_index2_high</a> = 1
 , <a class="el" href="#aa5345f9ae48237dce9cbde9e67b4a3aaa94be359d0861485628ae3f9d91d4fc1f">pixel_scan_index2_low</a> = 0
  }</td></tr>
 <tr class="separator:aa5345f9ae48237dce9cbde9e67b4a3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -922,7 +927,11 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="separator:a27c45d119d78ca12b7e38e47cb02907f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>All constants and addresses given by the hardware. </p>
+<dl class="section author"><dt>Author</dt><dd>Florian Hahn </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>23.10.2020 </dd></dl>
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ae3a1d79bd019f88d29eaeb6e2cecb314" name="ae3a1d79bd019f88d29eaeb6e2cecb314"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae3a1d79bd019f88d29eaeb6e2cecb314">&#9670;&#160;</a></span>adc_ads5294_messages_t</h2>
 
@@ -2260,7 +2269,8 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>This enum shows the meaning of the last special pixels. 0: last pixel, 1: last pixel - 1... </p>
 <table class="fieldtable">
-<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="aa5345f9ae48237dce9cbde9e67b4a3aaab0e076ab28177d460363e8f9b2bbb2a9" name="aa5345f9ae48237dce9cbde9e67b4a3aaab0e076ab28177d460363e8f9b2bbb2a9"></a>pixel_scan_index2_high&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"><p>Higher 16 bits of scan index counter. </p>
+<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="aa5345f9ae48237dce9cbde9e67b4a3aaa2d54eef693d93844f694028b46e2fb83" name="aa5345f9ae48237dce9cbde9e67b4a3aaa2d54eef693d93844f694028b46e2fb83"></a>pixel_last_sensor_pixel&#160;</td><td class="fieldinit">2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa5345f9ae48237dce9cbde9e67b4a3aaab0e076ab28177d460363e8f9b2bbb2a9" name="aa5345f9ae48237dce9cbde9e67b4a3aaab0e076ab28177d460363e8f9b2bbb2a9"></a>pixel_scan_index2_high&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"><p>Higher 16 bits of scan index counter. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aa5345f9ae48237dce9cbde9e67b4a3aaa94be359d0861485628ae3f9d91d4fc1f" name="aa5345f9ae48237dce9cbde9e67b4a3aaa94be359d0861485628ae3f9d91d4fc1f"></a>pixel_scan_index2_low&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"><p>Lower 16 bits of scan index counter. </p>
 </td></tr>
@@ -2301,6 +2311,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ab4e169cedf37f6a55251e0d15f33a2b1a5c8505a043a6088fd145e8fcd5eaa120" name="ab4e169cedf37f6a55251e0d15f33a2b1a5c8505a043a6088fd145e8fcd5eaa120"></a>pixel_fpga_ver&#160;</td><td class="fieldinit">11&#160;</td><td class="fielddoc"><p>Special pixel for fpga ver number. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="ab4e169cedf37f6a55251e0d15f33a2b1aa68598a367c4c796f85d4d1d41963c03" name="ab4e169cedf37f6a55251e0d15f33a2b1aa68598a367c4c796f85d4d1d41963c03"></a>pixel_first_sensor_pixel&#160;</td><td class="fieldinit">12&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

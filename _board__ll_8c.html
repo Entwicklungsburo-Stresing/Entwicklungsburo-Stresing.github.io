@@ -97,12 +97,12 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">Board_ll.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;../Board_ll.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_board__ll_8h_source.html">../Board_ll.h</a>&quot;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &quot;../Board.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_board_8h_source.html">../Board.h</a>&quot;</code><br />
 <code>#include &lt;process.h&gt;</code><br />
 <code>#include &lt;io.h&gt;</code><br />
-<code>#include &quot;../Direct2dViewer_c.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_direct2d_viewer__c_8h_source.html">../Direct2dViewer_c.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
@@ -130,24 +130,24 @@ Functions</h2></td></tr>
 <tr class="separator:a6ec4caef7ad99f1b19d973d7ff49fd3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a594144648ea640acff70bc7df70349f7" id="r_a594144648ea640acff70bc7df70349f7"><td class="memItemLeft" align="right" valign="top">void DLLCALLCONV&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a594144648ea640acff70bc7df70349f7">interrupt_handler4</a> ()</td></tr>
 <tr class="separator:a594144648ea640acff70bc7df70349f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13184ad12557c1157ba9aef8eb5fe5f6" id="r_a13184ad12557c1157ba9aef8eb5fe5f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13184ad12557c1157ba9aef8eb5fe5f6">readRegister_32</a> (uint32_t drvno, uint32_t *data, uint16_t address)</td></tr>
-<tr class="memdesc:a13184ad12557c1157ba9aef8eb5fe5f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads 4 bytes on DMA area.  <br /></td></tr>
-<tr class="separator:a13184ad12557c1157ba9aef8eb5fe5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a824cb6e0229450857fca2166228293" id="r_a2a824cb6e0229450857fca2166228293"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a824cb6e0229450857fca2166228293">readRegister_16</a> (uint32_t drvno, uint16_t *data, uint16_t address)</td></tr>
-<tr class="memdesc:a2a824cb6e0229450857fca2166228293"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads long on DMA area.  <br /></td></tr>
-<tr class="separator:a2a824cb6e0229450857fca2166228293"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1a2ea431f4dee8cb666447f7a9dfb12" id="r_ac1a2ea431f4dee8cb666447f7a9dfb12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1a2ea431f4dee8cb666447f7a9dfb12">readRegister_8</a> (uint32_t drvno, uint8_t *data, uint16_t address)</td></tr>
-<tr class="memdesc:ac1a2ea431f4dee8cb666447f7a9dfb12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read byte (8 bit) from register of PCIe board, except r10-r1f.  <br /></td></tr>
-<tr class="separator:ac1a2ea431f4dee8cb666447f7a9dfb12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05e06f7decfb688dd1bd3973780b1267" id="r_a05e06f7decfb688dd1bd3973780b1267"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05e06f7decfb688dd1bd3973780b1267">writeRegister_32</a> (uint32_t drvno, uint32_t data, uint16_t address)</td></tr>
-<tr class="memdesc:a05e06f7decfb688dd1bd3973780b1267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes 32 bits (4 bytes) to register.  <br /></td></tr>
-<tr class="separator:a05e06f7decfb688dd1bd3973780b1267"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a67af48123d25eece052a2c9503cf9a" id="r_a4a67af48123d25eece052a2c9503cf9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a67af48123d25eece052a2c9503cf9a">writeRegister_16</a> (uint32_t drvno, uint16_t data, uint16_t address)</td></tr>
-<tr class="memdesc:a4a67af48123d25eece052a2c9503cf9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes 16 bits (2 bytes) to register.  <br /></td></tr>
-<tr class="separator:a4a67af48123d25eece052a2c9503cf9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88d9ded31396c94d406939124933fd81" id="r_a88d9ded31396c94d406939124933fd81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88d9ded31396c94d406939124933fd81">writeRegister_8</a> (uint32_t drvno, uint8_t data, uint16_t address)</td></tr>
-<tr class="memdesc:a88d9ded31396c94d406939124933fd81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write byte (8 bit) to register in space0 of PCIe board, except r10-r1f.  <br /></td></tr>
-<tr class="separator:a88d9ded31396c94d406939124933fd81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2076b4f3cda1c0a964ddc8d560aa70c8" id="r_a2076b4f3cda1c0a964ddc8d560aa70c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2076b4f3cda1c0a964ddc8d560aa70c8">readRegister_32</a> (uint32_t drvno, uint32_t *data, uint32_t address)</td></tr>
+<tr class="memdesc:a2076b4f3cda1c0a964ddc8d560aa70c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads 4 bytes on DMA area.  <br /></td></tr>
+<tr class="separator:a2076b4f3cda1c0a964ddc8d560aa70c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2de88e2e19195715b674cc6d85c8b89" id="r_ae2de88e2e19195715b674cc6d85c8b89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2de88e2e19195715b674cc6d85c8b89">readRegister_16</a> (uint32_t drvno, uint16_t *data, uint32_t address)</td></tr>
+<tr class="memdesc:ae2de88e2e19195715b674cc6d85c8b89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads long on DMA area.  <br /></td></tr>
+<tr class="separator:ae2de88e2e19195715b674cc6d85c8b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eec02c3393d272bbdf56e10c67282b2" id="r_a8eec02c3393d272bbdf56e10c67282b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8eec02c3393d272bbdf56e10c67282b2">readRegister_8</a> (uint32_t drvno, uint8_t *data, uint32_t address)</td></tr>
+<tr class="memdesc:a8eec02c3393d272bbdf56e10c67282b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read byte (8 bit) from register of PCIe board, except r10-r1f.  <br /></td></tr>
+<tr class="separator:a8eec02c3393d272bbdf56e10c67282b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40cdae994270a2ec0830d0cc098d51ef" id="r_a40cdae994270a2ec0830d0cc098d51ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40cdae994270a2ec0830d0cc098d51ef">writeRegister_32</a> (uint32_t drvno, uint32_t data, uint32_t address)</td></tr>
+<tr class="memdesc:a40cdae994270a2ec0830d0cc098d51ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes 32 bits (4 bytes) to register.  <br /></td></tr>
+<tr class="separator:a40cdae994270a2ec0830d0cc098d51ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dfdcf9b3baecaacb12cb833830ae914" id="r_a2dfdcf9b3baecaacb12cb833830ae914"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2dfdcf9b3baecaacb12cb833830ae914">writeRegister_16</a> (uint32_t drvno, uint16_t data, uint32_t address)</td></tr>
+<tr class="memdesc:a2dfdcf9b3baecaacb12cb833830ae914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes 16 bits (2 bytes) to register.  <br /></td></tr>
+<tr class="separator:a2dfdcf9b3baecaacb12cb833830ae914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ca28ba5844666b70fbf4775274732d8" id="r_a6ca28ba5844666b70fbf4775274732d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ca28ba5844666b70fbf4775274732d8">writeRegister_8</a> (uint32_t drvno, uint8_t data, uint32_t address)</td></tr>
+<tr class="memdesc:a6ca28ba5844666b70fbf4775274732d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write byte (8 bit) to register in space0 of PCIe board, except r10-r1f.  <br /></td></tr>
+<tr class="separator:a6ca28ba5844666b70fbf4775274732d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ff452741c66bee1d8560669621389fa" id="r_a8ff452741c66bee1d8560669621389fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ff452741c66bee1d8560669621389fa">checkDriverHandle</a> (uint32_t drvno)</td></tr>
 <tr class="separator:a8ff452741c66bee1d8560669621389fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92c13300eb529521608fbd4c3eb26b50" id="r_a92c13300eb529521608fbd4c3eb26b50"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92c13300eb529521608fbd4c3eb26b50">getPhysicalDmaAddress</a> (uint32_t drvno)</td></tr>
@@ -178,12 +178,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a1b4d98404b2fd82fa5cfa2a08029c333" id="r_a1b4d98404b2fd82fa5cfa2a08029c333"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b4d98404b2fd82fa5cfa2a08029c333">_ExitDriver</a> ()</td></tr>
 <tr class="memdesc:a1b4d98404b2fd82fa5cfa2a08029c333"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit driver. Call this after Cleanup driver.  <br /></td></tr>
 <tr class="separator:a1b4d98404b2fd82fa5cfa2a08029c333"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a37c8fa3fa5136f1291dbbf759b3cc2" id="r_a7a37c8fa3fa5136f1291dbbf759b3cc2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a37c8fa3fa5136f1291dbbf759b3cc2">readConfig_32</a> (uint32_t drvno, uint32_t *data, uint16_t address)</td></tr>
-<tr class="memdesc:a7a37c8fa3fa5136f1291dbbf759b3cc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read long (32 bit) from runtime register of PCIe board.  <br /></td></tr>
-<tr class="separator:a7a37c8fa3fa5136f1291dbbf759b3cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2c336e7d6a8f5e00e90e793f564203a" id="r_aa2c336e7d6a8f5e00e90e793f564203a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2c336e7d6a8f5e00e90e793f564203a">writeConfig_32</a> (uint32_t drvno, uint32_t data, uint16_t address)</td></tr>
-<tr class="memdesc:aa2c336e7d6a8f5e00e90e793f564203a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write long (32 bit) to register in space0 of PCIe board.  <br /></td></tr>
-<tr class="separator:aa2c336e7d6a8f5e00e90e793f564203a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a063a411499df01e4ded1089c719382d4" id="r_a063a411499df01e4ded1089c719382d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a063a411499df01e4ded1089c719382d4">readConfig_32</a> (uint32_t drvno, uint32_t *data, uint32_t address)</td></tr>
+<tr class="memdesc:a063a411499df01e4ded1089c719382d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read long (32 bit) from runtime register of PCIe board.  <br /></td></tr>
+<tr class="separator:a063a411499df01e4ded1089c719382d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac60102ceeaa0ff9cf84ae05a4ff4023e" id="r_ac60102ceeaa0ff9cf84ae05a4ff4023e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac60102ceeaa0ff9cf84ae05a4ff4023e">writeConfig_32</a> (uint32_t drvno, uint32_t data, uint32_t address)</td></tr>
+<tr class="memdesc:ac60102ceeaa0ff9cf84ae05a4ff4023e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write long (32 bit) to register in space0 of PCIe board.  <br /></td></tr>
+<tr class="separator:ac60102ceeaa0ff9cf84ae05a4ff4023e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ca5cb3d669972e360d01e9091364e41" id="r_a3ca5cb3d669972e360d01e9091364e41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ca5cb3d669972e360d01e9091364e41">FreeMemInfo</a> (uint64_t *pmemory_all, uint64_t *pmemory_free)</td></tr>
 <tr class="memdesc:a3ca5cb3d669972e360d01e9091364e41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the free and installed memory info.  <br /></td></tr>
 <tr class="separator:a3ca5cb3d669972e360d01e9091364e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -330,8 +330,8 @@ Variables</h2></td></tr>
 <tr class="separator:ac40bdc1357c03d4fb2a969f94127d854"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf6c86edf618572620d64d6234a8f10c" id="r_acf6c86edf618572620d64d6234a8f10c"><td class="memItemLeft" align="right" valign="top">uint16_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf6c86edf618572620d64d6234a8f10c">greyscale_data</a> = NULL</td></tr>
 <tr class="separator:acf6c86edf618572620d64d6234a8f10c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25bc9ffc520087fa85805601e527aacb" id="r_a25bc9ffc520087fa85805601e527aacb"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25bc9ffc520087fa85805601e527aacb">interrupt_handler_array</a> [<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>] = { &amp;<a class="el" href="#ad58bec910138298cfd60d64513cd859f">interrupt_handler0</a>, &amp;<a class="el" href="#ac11903448e9ec9ec287522e600533b21">interrupt_handler1</a>, &amp;<a class="el" href="#a7fdcbda9f36efba388e15ceee255c94c">interrupt_handler2</a>, &amp;<a class="el" href="#a6ec4caef7ad99f1b19d973d7ff49fd3d">interrupt_handler3</a>, &amp;<a class="el" href="#a594144648ea640acff70bc7df70349f7">interrupt_handler4</a> }</td></tr>
-<tr class="separator:a25bc9ffc520087fa85805601e527aacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d38f3c4e2b778bd6977ceb64ddb5274" id="r_a1d38f3c4e2b778bd6977ceb64ddb5274"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d38f3c4e2b778bd6977ceb64ddb5274">interrupt_handler_array</a> [<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>])() = { &amp;<a class="el" href="#ad58bec910138298cfd60d64513cd859f">interrupt_handler0</a>, &amp;<a class="el" href="#ac11903448e9ec9ec287522e600533b21">interrupt_handler1</a>, &amp;<a class="el" href="#a7fdcbda9f36efba388e15ceee255c94c">interrupt_handler2</a>, &amp;<a class="el" href="#a6ec4caef7ad99f1b19d973d7ff49fd3d">interrupt_handler3</a>, &amp;<a class="el" href="#a594144648ea640acff70bc7df70349f7">interrupt_handler4</a> }</td></tr>
+<tr class="separator:a1d38f3c4e2b778bd6977ceb64ddb5274"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a8295e0aed07a8923d8363ce46c7b08e2" name="a8295e0aed07a8923d8363ce46c7b08e2"></a>
@@ -1302,8 +1302,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7a37c8fa3fa5136f1291dbbf759b3cc2" name="a7a37c8fa3fa5136f1291dbbf759b3cc2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a37c8fa3fa5136f1291dbbf759b3cc2">&#9670;&#160;</a></span>readConfig_32()</h2>
+<a id="a063a411499df01e4ded1089c719382d4" name="a063a411499df01e4ded1089c719382d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a063a411499df01e4ded1089c719382d4">&#9670;&#160;</a></span>readConfig_32()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1321,7 +1321,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>address</em></span>&#160;)</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>address</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1340,8 +1340,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a2a824cb6e0229450857fca2166228293" name="a2a824cb6e0229450857fca2166228293"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a824cb6e0229450857fca2166228293">&#9670;&#160;</a></span>readRegister_16()</h2>
+<a id="ae2de88e2e19195715b674cc6d85c8b89" name="ae2de88e2e19195715b674cc6d85c8b89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2de88e2e19195715b674cc6d85c8b89">&#9670;&#160;</a></span>readRegister_16()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1359,7 +1359,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>address</em></span>&#160;)</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>address</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1377,8 +1377,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a13184ad12557c1157ba9aef8eb5fe5f6" name="a13184ad12557c1157ba9aef8eb5fe5f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13184ad12557c1157ba9aef8eb5fe5f6">&#9670;&#160;</a></span>readRegister_32()</h2>
+<a id="a2076b4f3cda1c0a964ddc8d560aa70c8" name="a2076b4f3cda1c0a964ddc8d560aa70c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2076b4f3cda1c0a964ddc8d560aa70c8">&#9670;&#160;</a></span>readRegister_32()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1396,7 +1396,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>address</em></span>&#160;)</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>address</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1414,8 +1414,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac1a2ea431f4dee8cb666447f7a9dfb12" name="ac1a2ea431f4dee8cb666447f7a9dfb12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1a2ea431f4dee8cb666447f7a9dfb12">&#9670;&#160;</a></span>readRegister_8()</h2>
+<a id="a8eec02c3393d272bbdf56e10c67282b2" name="a8eec02c3393d272bbdf56e10c67282b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eec02c3393d272bbdf56e10c67282b2">&#9670;&#160;</a></span>readRegister_8()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1433,7 +1433,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>address</em></span>&#160;)</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>address</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1779,7 +1779,7 @@ Variables</h2></td></tr>
 <p>Check a file for its data consistency. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">vd</td><td>see struct <a class="el" href="structverify__data__parameter.html">verify_data_parameter</a> in <a class="el" href="globals_8h.html">globals.h</a> for details </td></tr>
+    <tr><td class="paramname">vd</td><td>see struct <a class="el" href="structverify__data__parameter.html">verify_data_parameter</a> in <a class="el" href="globals_8h.html" title="Global variables that are used in this library.">globals.h</a> for details </td></tr>
   </table>
   </dd>
 </dl>
@@ -1829,8 +1829,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aa2c336e7d6a8f5e00e90e793f564203a" name="aa2c336e7d6a8f5e00e90e793f564203a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2c336e7d6a8f5e00e90e793f564203a">&#9670;&#160;</a></span>writeConfig_32()</h2>
+<a id="ac60102ceeaa0ff9cf84ae05a4ff4023e" name="ac60102ceeaa0ff9cf84ae05a4ff4023e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac60102ceeaa0ff9cf84ae05a4ff4023e">&#9670;&#160;</a></span>writeConfig_32()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1848,7 +1848,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>address</em></span>&#160;)</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>address</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1896,8 +1896,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4a67af48123d25eece052a2c9503cf9a" name="a4a67af48123d25eece052a2c9503cf9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a67af48123d25eece052a2c9503cf9a">&#9670;&#160;</a></span>writeRegister_16()</h2>
+<a id="a2dfdcf9b3baecaacb12cb833830ae914" name="a2dfdcf9b3baecaacb12cb833830ae914"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dfdcf9b3baecaacb12cb833830ae914">&#9670;&#160;</a></span>writeRegister_16()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1915,7 +1915,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>address</em></span>&#160;)</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>address</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1933,8 +1933,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a05e06f7decfb688dd1bd3973780b1267" name="a05e06f7decfb688dd1bd3973780b1267"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05e06f7decfb688dd1bd3973780b1267">&#9670;&#160;</a></span>writeRegister_32()</h2>
+<a id="a40cdae994270a2ec0830d0cc098d51ef" name="a40cdae994270a2ec0830d0cc098d51ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40cdae994270a2ec0830d0cc098d51ef">&#9670;&#160;</a></span>writeRegister_32()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1952,7 +1952,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>address</em></span>&#160;)</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>address</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1970,8 +1970,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a88d9ded31396c94d406939124933fd81" name="a88d9ded31396c94d406939124933fd81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88d9ded31396c94d406939124933fd81">&#9670;&#160;</a></span>writeRegister_8()</h2>
+<a id="a6ca28ba5844666b70fbf4775274732d8" name="a6ca28ba5844666b70fbf4775274732d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ca28ba5844666b70fbf4775274732d8">&#9670;&#160;</a></span>writeRegister_8()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1989,7 +1989,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>address</em></span>&#160;)</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>address</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2193,14 +2193,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a25bc9ffc520087fa85805601e527aacb" name="a25bc9ffc520087fa85805601e527aacb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25bc9ffc520087fa85805601e527aacb">&#9670;&#160;</a></span>interrupt_handler_array</h2>
+<a id="a1d38f3c4e2b778bd6977ceb64ddb5274" name="a1d38f3c4e2b778bd6977ceb64ddb5274"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d38f3c4e2b778bd6977ceb64ddb5274">&#9670;&#160;</a></span>interrupt_handler_array</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void* interrupt_handler_array[<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>] = { &amp;<a class="el" href="#ad58bec910138298cfd60d64513cd859f">interrupt_handler0</a>, &amp;<a class="el" href="#ac11903448e9ec9ec287522e600533b21">interrupt_handler1</a>, &amp;<a class="el" href="#a7fdcbda9f36efba388e15ceee255c94c">interrupt_handler2</a>, &amp;<a class="el" href="#a6ec4caef7ad99f1b19d973d7ff49fd3d">interrupt_handler3</a>, &amp;<a class="el" href="#a594144648ea640acff70bc7df70349f7">interrupt_handler4</a> }</td>
+          <td class="memname">void(* interrupt_handler_array[<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>])() </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> = { &amp;<a class="el" href="#ad58bec910138298cfd60d64513cd859f">interrupt_handler0</a>, &amp;<a class="el" href="#ac11903448e9ec9ec287522e600533b21">interrupt_handler1</a>, &amp;<a class="el" href="#a7fdcbda9f36efba388e15ceee255c94c">interrupt_handler2</a>, &amp;<a class="el" href="#a6ec4caef7ad99f1b19d973d7ff49fd3d">interrupt_handler3</a>, &amp;<a class="el" href="#a594144648ea640acff70bc7df70349f7">interrupt_handler4</a> }</td>
         </tr>
       </table>
 </div><div class="memdoc">
