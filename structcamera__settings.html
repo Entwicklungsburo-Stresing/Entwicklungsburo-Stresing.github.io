@@ -199,6 +199,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a108d24d1e3326657499f0c1ec387d005"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab98246d4ee9f663d7b468f71821d7632" id="r_ab98246d4ee9f663d7b468f71821d7632"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab98246d4ee9f663d7b468f71821d7632">manipulate_data_custom_factor</a></td></tr>
 <tr class="separator:ab98246d4ee9f663d7b468f71821d7632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40bcfff32281c4c321aba130fb4c4f09" id="r_a40bcfff32281c4c321aba130fb4c4f09"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40bcfff32281c4c321aba130fb4c4f09">ec_legacy_mode</a></td></tr>
+<tr class="separator:a40bcfff32281c4c321aba130fb4c4f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Individual settings for each PCIe board. </p>
@@ -440,6 +442,25 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Size of the DMA buffer in scans. The default is 1000. This setting controls how often the interrupt is triggered to copy data from the DMA buffer to the user buffer. This setting only has an effect when <a class="el" href="#a7d6d06fc3f59976df702bfda1e7bc0d1">camera_settings::use_software_polling</a> is turned off. A lower number means more interrupts in a shorter time and so more recent data available. Which data is available is indicated by <a class="el" href="_e_s_l_s_c_d_l_l_8c.html#a79a1ea8d164b02336350f228840b1c02">DLLGetCurrentScanNumber</a>. Too many interrupts in a too short time can lead to errors. 60 is working with high speed (exposure time = 0,02ms). When this setting is 30, there could a wrong scan every 10000 scans. </p>
+
+</div>
+</div>
+<a id="a40bcfff32281c4c321aba130fb4c4f09" name="a40bcfff32281c4c321aba130fb4c4f09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40bcfff32281c4c321aba130fb4c4f09">&#9670;&#160;</a></span>ec_legacy_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t camera_settings::ec_legacy_mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ec_legacy_mode is a special mode for operating older high speed cameras, camera system 3030. The following camera versions need to be run in legacy mode:</p><ul>
+<li>209.12 and older</li>
+<li>= 0 off</li>
+<li>&gt; 0 ec legacy mode on </li>
+</ul>
 
 </div>
 </div>

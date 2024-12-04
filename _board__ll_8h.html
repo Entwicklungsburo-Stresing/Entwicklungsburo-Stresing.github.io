@@ -229,6 +229,12 @@ Functions</h2></td></tr>
 <tr class="separator:a387c70167bfc0b405eceea67c11b53fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1519f7ae8903dd9a7f9fddd789077576" id="r_a1519f7ae8903dd9a7f9fddd789077576"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1519f7ae8903dd9a7f9fddd789077576">UnlockHighLevelMutex</a> (uint32_t drvno)</td></tr>
 <tr class="separator:a1519f7ae8903dd9a7f9fddd789077576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a448c4b7633a0fbb56a8d61cc13efe0b6" id="r_a448c4b7633a0fbb56a8d61cc13efe0b6"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a448c4b7633a0fbb56a8d61cc13efe0b6">GetTimestampInMicroseconds</a> ()</td></tr>
+<tr class="separator:a448c4b7633a0fbb56a8d61cc13efe0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b51411fcecd9b57f1eb276d6ca6324c" id="r_a1b51411fcecd9b57f1eb276d6ca6324c"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b51411fcecd9b57f1eb276d6ca6324c">GetTimestampInMilliseconds</a> ()</td></tr>
+<tr class="separator:a1b51411fcecd9b57f1eb276d6ca6324c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a116d9d33e3062b9ea34008dd4d076f9b" id="r_a116d9d33e3062b9ea34008dd4d076f9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a116d9d33e3062b9ea34008dd4d076f9b">initPerformanceCounter</a> ()</td></tr>
+<tr class="separator:a116d9d33e3062b9ea34008dd4d076f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>All the low level platform specific implementations for interacting with the Stresing PCIe board. </p>
@@ -644,6 +650,40 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a448c4b7633a0fbb56a8d61cc13efe0b6" name="a448c4b7633a0fbb56a8d61cc13efe0b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a448c4b7633a0fbb56a8d61cc13efe0b6">&#9670;&#160;</a></span>GetTimestampInMicroseconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t GetTimestampInMicroseconds </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b51411fcecd9b57f1eb276d6ca6324c" name="a1b51411fcecd9b57f1eb276d6ca6324c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b51411fcecd9b57f1eb276d6ca6324c">&#9670;&#160;</a></span>GetTimestampInMilliseconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t GetTimestampInMilliseconds </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a46239bcacf764bc860faf531d74ce29e" name="a46239bcacf764bc860faf531d74ce29e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a46239bcacf764bc860faf531d74ce29e">&#9670;&#160;</a></span>getVirtualDmaAddress()</h2>
 
@@ -671,6 +711,23 @@ Functions</h2></td></tr>
           <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> InitMutex </td>
           <td>(</td>
           <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a116d9d33e3062b9ea34008dd4d076f9b" name="a116d9d33e3062b9ea34008dd4d076f9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a116d9d33e3062b9ea34008dd4d076f9b">&#9670;&#160;</a></span>initPerformanceCounter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initPerformanceCounter </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>

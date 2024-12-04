@@ -1140,7 +1140,7 @@ or use on e-lab test computer desktop LabView folder lv64hs (bool switch in 3030
 </div><div class="memdoc">
 
 <p>Sets the sensor reset length register in the camera, which controls the length of the ARG pulse. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>The behavior of this function is also controlled by <a class="el" href="structcamera__settings.html#a40bcfff32281c4c321aba130fb4c4f09">camera_settings::ec_legacy_mode</a>. When this is enabled, the function will the address of cam_adaddr_sensor_reset_length as IFC mode register. The IFC mode register was used to control the length of the ARG pulse in the camera. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sensor_reset_or_hsir_ec</td><td>See <a class="el" href="enum__hardware_8h.html#a9e3c451d5901d136d9fc1de5b1f1cda2ab0e3ec5266d037400d248de6e6bd1a81">camera_register_addresses_t::cam_adaddr_sensor_reset_length</a> for more information. </td></tr>
