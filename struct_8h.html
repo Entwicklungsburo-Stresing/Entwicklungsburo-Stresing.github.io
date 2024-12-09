@@ -107,10 +107,13 @@ $(function(){ initResizable(false); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcamera__settings.html">camera_settings</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Individual settings for each PCIe board.  <a href="structcamera__settings.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmeasurement__settings.html">measurement_settings</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">In this struct are settings, that are the same for all PCIe boards.  <a href="structmeasurement__settings.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmeasurement__settings__matlab.html">measurement_settings_matlab</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">In this struct are settings, that are the same for all PCIe boards.  <a href="structmeasurement__settings__matlab.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfile__header.html">file_header</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,14 +125,19 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a24b2f6d93c8807a6bd6c00c897eaeb59" id="r_a24b2f6d93c8807a6bd6c00c897eaeb59"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>&#160;&#160;&#160;5</td></tr>
+<tr class="memdesc:a24b2f6d93c8807a6bd6c00c897eaeb59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of PCIe cards.  <br /></td></tr>
 <tr class="separator:a24b2f6d93c8807a6bd6c00c897eaeb59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62afa1e27890bd027549e82cc4be5bd9" id="r_a62afa1e27890bd027549e82cc4be5bd9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62afa1e27890bd027549e82cc4be5bd9">MAXCAMCNT</a>&#160;&#160;&#160;8</td></tr>
+<tr class="memdesc:a62afa1e27890bd027549e82cc4be5bd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of cameras per PCIe card.  <br /></td></tr>
 <tr class="separator:a62afa1e27890bd027549e82cc4be5bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec6ccacce4c15681a97f2edc0521040e" id="r_aec6ccacce4c15681a97f2edc0521040e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec6ccacce4c15681a97f2edc0521040e">MAX_NUMBER_OF_REGIONS</a>&#160;&#160;&#160;8</td></tr>
+<tr class="memdesc:aec6ccacce4c15681a97f2edc0521040e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum for the setting <a class="el" href="structcamera__settings.html#aba505c7ed0e5a7488ea20f4caf52675b">camera_settings::number_of_regions</a>.  <br /></td></tr>
 <tr class="separator:aec6ccacce4c15681a97f2edc0521040e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a012d7c6bb56a23927e1068ab8857d1e2" id="r_a012d7c6bb56a23927e1068ab8857d1e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a012d7c6bb56a23927e1068ab8857d1e2">DACCOUNT</a>&#160;&#160;&#160;8</td></tr>
+<tr class="memdesc:a012d7c6bb56a23927e1068ab8857d1e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of DAC channels in the high speed camera.  <br /></td></tr>
 <tr class="separator:a012d7c6bb56a23927e1068ab8857d1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f13d93331834d5a48b2b252b3c4a578" id="r_a6f13d93331834d5a48b2b252b3c4a578"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f13d93331834d5a48b2b252b3c4a578">IOCTRL_OUTPUT_COUNT</a>&#160;&#160;&#160;8</td></tr>
+<tr class="memdesc:a6f13d93331834d5a48b2b252b3c4a578"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of output channels in the IOCTRL.  <br /></td></tr>
 <tr class="separator:a6f13d93331834d5a48b2b252b3c4a578"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -149,6 +157,8 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Number of DAC channels in the high speed camera. </p>
+
 </div>
 </div>
 <a id="a6f13d93331834d5a48b2b252b3c4a578" name="a6f13d93331834d5a48b2b252b3c4a578"></a>
@@ -162,6 +172,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Number of output channels in the IOCTRL. </p>
 
 </div>
 </div>
@@ -177,6 +189,9 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Maximum for the setting <a class="el" href="structcamera__settings.html#aba505c7ed0e5a7488ea20f4caf52675b">camera_settings::number_of_regions</a>. </p>
+<p>The actual maximum is 5, but we use 8 to ensure the correct memory layout. </p>
+
 </div>
 </div>
 <a id="a62afa1e27890bd027549e82cc4be5bd9" name="a62afa1e27890bd027549e82cc4be5bd9"></a>
@@ -191,6 +206,9 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Maximum number of cameras per PCIe card. </p>
+<p>Multiple cameras can be connected in line and measure simultaneously. </p>
+
 </div>
 </div>
 <a id="a24b2f6d93c8807a6bd6c00c897eaeb59" name="a24b2f6d93c8807a6bd6c00c897eaeb59"></a>
@@ -204,6 +222,9 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Maximum number of PCIe cards. </p>
+<p>If your mainboard allows you could us up to 5 PCIe cards and measure with all of them simultaneously. </p>
 
 </div>
 </div>

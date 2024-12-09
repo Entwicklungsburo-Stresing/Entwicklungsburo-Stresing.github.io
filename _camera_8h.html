@@ -692,7 +692,7 @@ Called by Cam3030_Init
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fkt</td><td>=0 reset to db=0, fkt=1 set to g1..g8 </td></tr>
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">g1</td><td>channel 1 </td></tr>
     <tr><td class="paramname">g2</td><td>channel 2 </td></tr>
     <tr><td class="paramname">g3</td><td>channel 3 </td></tr>
@@ -914,7 +914,7 @@ or use on e-lab test computer desktop LabView folder lv64hs (bool switch in 3030
 <p>Do this first in the camera initialisation routine.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -940,7 +940,7 @@ or use on e-lab test computer desktop LabView folder lv64hs (bool switch in 3030
 <p>Initialize camera registers. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -967,7 +967,7 @@ or use on e-lab test computer desktop LabView folder lv64hs (bool switch in 3030
 <p>Do this last in the camera initialisation routine.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -1014,7 +1014,7 @@ or use on e-lab test computer desktop LabView folder lv64hs (bool switch in 3030
 <li>all written to DB0 in Space0 = Long0</li>
 <li>for AD set maddr=01, adaddr address of reg <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">maddr</td><td>master address for specifying device (2 for ADC) </td></tr>
     <tr><td class="paramname">adaddr</td><td>register address </td></tr>
     <tr><td class="paramname">data</td><td>data </td></tr>
@@ -1112,7 +1112,7 @@ or use on e-lab test computer desktop LabView folder lv64hs (bool switch in 3030
 <p>When there are more cameras in line, the cameras are handing their positions one to another.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -1142,7 +1142,7 @@ or use on e-lab test computer desktop LabView folder lv64hs (bool switch in 3030
 <p>Sets the sensor reset length register in the camera, which controls the length of the ARG pulse. </p>
 <p>The behavior of this function is also controlled by <a class="el" href="structcamera__settings.html#a40bcfff32281c4c321aba130fb4c4f09">camera_settings::ec_legacy_mode</a>. When this is enabled, the function will the address of cam_adaddr_sensor_reset_length as IFC mode register. The IFC mode register was used to control the length of the ARG pulse in the camera. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sensor_reset_or_hsir_ec</td><td>See <a class="el" href="enum__hardware_8h.html#a9e3c451d5901d136d9fc1de5b1f1cda2ab0e3ec5266d037400d248de6e6bd1a81">camera_register_addresses_t::cam_adaddr_sensor_reset_length</a> for more information. </td></tr>
   </table>
   </dd>
@@ -1173,7 +1173,7 @@ or use on e-lab test computer desktop LabView folder lv64hs (bool switch in 3030
 <p>Set temperature level for cooled cameras. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">level</td><td>level 0..7 / 0=off, 7=min -&gt; see cooling manual </td></tr>
   </table>
   </dd>
@@ -1301,7 +1301,7 @@ or use on e-lab test computer desktop LabView folder lv64hs (bool switch in 3030
 <p>Set parameters of all pulses output of IOCTRL. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">width_in_5ns</td><td>Set width of pulse in 5ns steps. Array with 7 entries. </td></tr>
     <tr><td class="paramname">delay_in_5ns</td><td>Set delay of pulse in 5ns steps. Array with 7 entries. </td></tr>
   </table>
@@ -1333,7 +1333,7 @@ or use on e-lab test computer desktop LabView folder lv64hs (bool switch in 3030
 <p>Set the pixel where IOCtrl starts inserting its data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">startPixel</td><td>Position of IOCtrl data in pixel </td></tr>
   </table>
   </dd>
@@ -1374,7 +1374,7 @@ or use on e-lab test computer desktop LabView folder lv64hs (bool switch in 3030
 <p>Set paramters of one pulse output of IOCTRL. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">number</td><td>Number of output: 1 ... 7 </td></tr>
     <tr><td class="paramname">width_in_5ns</td><td>Set width of pulse in 5ns steps. </td></tr>
     <tr><td class="paramname">delay_in_5ns</td><td>Set delay of pulse in 5ns steps. </td></tr>
@@ -1407,7 +1407,7 @@ or use on e-lab test computer desktop LabView folder lv64hs (bool switch in 3030
 <p>Set period of IOCtrl pulse outputs base frequency T0. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">period_in_10ns</td><td>Period of T0 in 10ns steps. </td></tr>
   </table>
   </dd>

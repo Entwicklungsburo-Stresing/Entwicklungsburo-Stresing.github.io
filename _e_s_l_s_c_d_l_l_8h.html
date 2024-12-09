@@ -124,7 +124,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:af30938c7517f1a2aa31682ab0aac017e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the PCIe board.     <br /></td></tr>
 <tr class="separator:af30938c7517f1a2aa31682ab0aac017e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb719e4bf0a99b8055da655b3484fc27" id="r_abb719e4bf0a99b8055da655b3484fc27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb719e4bf0a99b8055da655b3484fc27">DLLInitSettingsStruct</a> (struct <a class="el" href="structmeasurement__settings.html">measurement_settings</a> *ms)</td></tr>
-<tr class="memdesc:abb719e4bf0a99b8055da655b3484fc27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this function to properly initialize the struct <a class="el" href="structmeasurement__settings.html">measurement_settings</a> to its default values.  <br /></td></tr>
+<tr class="memdesc:abb719e4bf0a99b8055da655b3484fc27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this function to properly initialize the struct <a class="el" href="structmeasurement__settings.html" title="In this struct are settings, that are the same for all PCIe boards.">measurement_settings</a> to its default values.  <br /></td></tr>
 <tr class="separator:abb719e4bf0a99b8055da655b3484fc27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf4289905c627bebf5c9d752c8d4dac4" id="r_acf4289905c627bebf5c9d752c8d4dac4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf4289905c627bebf5c9d752c8d4dac4">DLLSetGlobalSettings</a> (struct <a class="el" href="structmeasurement__settings.html">measurement_settings</a> settings)</td></tr>
 <tr class="memdesc:acf4289905c627bebf5c9d752c8d4dac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set global settings struct.     <br /></td></tr>
@@ -421,28 +421,28 @@ Functions</h2></td></tr>
 <tr class="memdesc:a4bddc88ef969ea44d3fd1da49285b443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets time for block timer.     <br /></td></tr>
 <tr class="separator:a4bddc88ef969ea44d3fd1da49285b443"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3438d12b8c983a532f7f1efc26b62e69" id="r_a3438d12b8c983a532f7f1efc26b62e69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3438d12b8c983a532f7f1efc26b62e69">DLLGetXckLength</a> (uint32_t drvno, uint32_t *xckLengthIn10ns)</td></tr>
-<tr class="memdesc:a3438d12b8c983a532f7f1efc26b62e69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the high time duration of XCK from the S0 register XCKLEN.     <br /></td></tr>
+<tr class="memdesc:a3438d12b8c983a532f7f1efc26b62e69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the high time duration of XCK from the S0 register <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15af31a289b718653a82f45b40c23d0f2e9">S0Addr_XCKLEN</a>.     <br /></td></tr>
 <tr class="separator:a3438d12b8c983a532f7f1efc26b62e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcafbe07df7ea6a2f84f8928d6d47aa9" id="r_adcafbe07df7ea6a2f84f8928d6d47aa9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcafbe07df7ea6a2f84f8928d6d47aa9">DLLGetXckPeriod</a> (uint32_t drvno, uint32_t *xckPeriodIn10ns)</td></tr>
-<tr class="memdesc:adcafbe07df7ea6a2f84f8928d6d47aa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pos edge to pos egde time of XCK time from the S0 register XCKPERIOD.     <br /></td></tr>
+<tr class="memdesc:adcafbe07df7ea6a2f84f8928d6d47aa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pos edge to pos egde time of XCK time from the S0 register <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15a4d98a1dbdae8477489c378937d6f0bc8">S0Addr_XCK_PERIOD</a>.     <br /></td></tr>
 <tr class="separator:adcafbe07df7ea6a2f84f8928d6d47aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9478aa2950e9c59c9cff74e4f5868afa" id="r_a9478aa2950e9c59c9cff74e4f5868afa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9478aa2950e9c59c9cff74e4f5868afa">DLLGetBonLength</a> (uint32_t drvno, uint32_t *bonLengthIn10ns)</td></tr>
-<tr class="memdesc:a9478aa2950e9c59c9cff74e4f5868afa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the high time duration of BON from the S0 register BONLEN.     <br /></td></tr>
+<tr class="memdesc:a9478aa2950e9c59c9cff74e4f5868afa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the high time duration of BON from the S0 register <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15a3b577d7674121c2ffb5b84b3006fb6ba">S0Addr_BONLEN</a>.     <br /></td></tr>
 <tr class="separator:a9478aa2950e9c59c9cff74e4f5868afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a611617ba1c1cf790fca683eb7751e4e5" id="r_a611617ba1c1cf790fca683eb7751e4e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a611617ba1c1cf790fca683eb7751e4e5">DLLGetBonPeriod</a> (uint32_t drvno, uint32_t *bonPeriodIn10ns)</td></tr>
-<tr class="memdesc:a611617ba1c1cf790fca683eb7751e4e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pos edge to pos edge time of BON from the S0 register BONPERIOD.     <br /></td></tr>
+<tr class="memdesc:a611617ba1c1cf790fca683eb7751e4e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pos edge to pos edge time of BON from the S0 register <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15acd31b7aeb84aa27442ad6376d7457d90">S0Addr_BON_PERIOD</a>.     <br /></td></tr>
 <tr class="separator:a611617ba1c1cf790fca683eb7751e4e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a413fd1a628e085ac17c644aee6c7acae" id="r_a413fd1a628e085ac17c644aee6c7acae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a413fd1a628e085ac17c644aee6c7acae">DLLGetXckLength_multipleBoards</a> (uint32_t *xckLengthIn10ns0, uint32_t *xckLengthIn10ns1, uint32_t *xckLengthIn10ns2, uint32_t *xckLengthIn10ns3, uint32_t *xckLengthIn10ns4)</td></tr>
-<tr class="memdesc:a413fd1a628e085ac17c644aee6c7acae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the high time duration of XCK from the S0 register XCKLEN.  <br /></td></tr>
+<tr class="memdesc:a413fd1a628e085ac17c644aee6c7acae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the high time duration of XCK from the S0 register <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15af31a289b718653a82f45b40c23d0f2e9">S0Addr_XCKLEN</a>.  <br /></td></tr>
 <tr class="separator:a413fd1a628e085ac17c644aee6c7acae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3860e17d0a04db71b8fe376a548ed1b" id="r_aa3860e17d0a04db71b8fe376a548ed1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3860e17d0a04db71b8fe376a548ed1b">DLLGetXckPeriod_multipleBoards</a> (uint32_t *xckPeriodIn10ns0, uint32_t *xckPeriodIn10ns1, uint32_t *xckPeriodIn10ns2, uint32_t *xckPeriodIn10ns3, uint32_t *xckPeriodIn10ns4)</td></tr>
-<tr class="memdesc:aa3860e17d0a04db71b8fe376a548ed1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pos edge to pos egde time of XCK time from the S0 register XCKPERIOD.  <br /></td></tr>
+<tr class="memdesc:aa3860e17d0a04db71b8fe376a548ed1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pos edge to pos edge time of XCK time from the S0 register <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15a4d98a1dbdae8477489c378937d6f0bc8">S0Addr_XCK_PERIOD</a>.  <br /></td></tr>
 <tr class="separator:aa3860e17d0a04db71b8fe376a548ed1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a986c12bd3e028607be06b18159d4f624" id="r_a986c12bd3e028607be06b18159d4f624"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a986c12bd3e028607be06b18159d4f624">DLLGetBonLength_multipleBoards</a> (uint32_t *bonLengthIn10ns0, uint32_t *bonLengthIn10ns1, uint32_t *bonLengthIn10ns2, uint32_t *bonLengthIn10ns3, uint32_t *bonLengthIn10ns4)</td></tr>
-<tr class="memdesc:a986c12bd3e028607be06b18159d4f624"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the high time duration of BON from the S0 register BONLEN.  <br /></td></tr>
+<tr class="memdesc:a986c12bd3e028607be06b18159d4f624"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the high time duration of BON from the S0 register <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15a3b577d7674121c2ffb5b84b3006fb6ba">S0Addr_BONLEN</a>.  <br /></td></tr>
 <tr class="separator:a986c12bd3e028607be06b18159d4f624"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f27394b5df2628ab4721aa9f40882d9" id="r_a4f27394b5df2628ab4721aa9f40882d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f27394b5df2628ab4721aa9f40882d9">DLLGetBonPeriod_multipleBoards</a> (uint32_t *bonPeriodIn10ns0, uint32_t *bonPeriodIn10ns1, uint32_t *bonPeriodIn10ns2, uint32_t *bonPeriodIn10ns3, uint32_t *bonPeriodIn10ns4)</td></tr>
-<tr class="memdesc:a4f27394b5df2628ab4721aa9f40882d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pos edge to pos edge time of BON from the S0 register BONPERIOD.  <br /></td></tr>
+<tr class="memdesc:a4f27394b5df2628ab4721aa9f40882d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the pos edge to pos edge time of BON from the S0 register <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15acd31b7aeb84aa27442ad6376d7457d90">S0Addr_BON_PERIOD</a>.  <br /></td></tr>
 <tr class="separator:a4f27394b5df2628ab4721aa9f40882d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72b5880c24aca4d29158656141753a81" id="r_a72b5880c24aca4d29158656141753a81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72b5880c24aca4d29158656141753a81">DLLGetScanTriggerDetected</a> (uint32_t drvno, uint8_t *detected)</td></tr>
 <tr class="memdesc:a72b5880c24aca4d29158656141753a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the bit <a class="el" href="enum__hardware_8h.html#a1d179386b40162fc96b96c12da077dd8a701390510b309f4ef826a5828883f658">PCIEFLAGS_bits_t::PCIEFLAGS_bit_scan_trigger_detected</a>.     <br /></td></tr>
@@ -661,7 +661,7 @@ Functions</h2></td></tr>
 <li>win4 : vendor ID = EBST</li>
 <li>win5 : PCI board version (same as label on PCI board) <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">stringPtr</td><td>string with driver information is given back here </td></tr>
   </table>
   </dd>
@@ -694,7 +694,7 @@ Functions</h2></td></tr>
 <p>Reads registers 0 to 12 of TDC-GPX chip. Time delay counter option.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">stringPtr</td><td></td></tr>
   </table>
   </dd>
@@ -818,7 +818,7 @@ Functions</h2></td></tr>
 <p>Calculate TRMS noise value of one pixel.    </p>
 <p>Calculates RMS of TRMS_pixel in the range of samples from firstSample to lastSample. Only calculates RMS from one block. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">firstSample</td><td>start sample to calculate RMS. 0...(nos-2). Typical value: 10, to skip overexposed first samples </td></tr>
     <tr><td class="paramname">lastSample</td><td>last sample to calculate RMS. firstSample+1...(nos-1). </td></tr>
     <tr><td class="paramname">TRMS_pixel</td><td>pixel for calculating noise (0...(PIXEL-1)) </td></tr>
@@ -957,7 +957,7 @@ Functions</h2></td></tr>
 <p>Check empty flag (FIFO empty).    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">empty</td><td></td></tr>
   </table>
   </dd>
@@ -988,7 +988,7 @@ Functions</h2></td></tr>
 <p>Check full flag (FIFO full).    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">full</td><td></td></tr>
   </table>
   </dd>
@@ -1019,7 +1019,7 @@ Functions</h2></td></tr>
 <p>Check ovl flag (overflow of FIFO).    </p>
 <p>If occurred stays active until a call of FFRS. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">overflow</td><td></td></tr>
   </table>
   </dd>
@@ -1052,7 +1052,7 @@ Functions</h2></td></tr>
 <p>Checks content of FIFO.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">valid</td><td>Is true (not 0) if FIFO keeps &gt;= 1 complete lines (linecounter&gt;0). </td></tr>
   </table>
   </dd>
@@ -1129,7 +1129,7 @@ Functions</h2></td></tr>
 <p>Copy the data of the complete measurement to pdest.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">pdest</td><td>Pointer where the data will be written to. Make sure that the size of the buffer is &gt;= sizeof(uint16_t) * pixel * nos * camcnt * nob </td></tr>
   </table>
   </dd>
@@ -1234,7 +1234,7 @@ Functions</h2></td></tr>
 <p>Copy the data of a custom length to pdest.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sample</td><td>sample number ( 0...(nos - 1) ) </td></tr>
     <tr><td class="paramname">block</td><td>block number ( 0...(nob - 1) ) </td></tr>
     <tr><td class="paramname">camera</td><td>camera number ( 0...(CAMCNT - 1) ) </td></tr>
@@ -1275,7 +1275,7 @@ Functions</h2></td></tr>
 <p>Copy the data of a single block to pdest.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">block</td><td>block number ( 0...(nob - 1) ) </td></tr>
     <tr><td class="paramname">pdest</td><td>Pointer where the data will be written to. Make sure that the size of the buffer is &gt;= sizeof(uint16_t) * pixel * nos * camcnt </td></tr>
   </table>
@@ -1373,7 +1373,7 @@ Functions</h2></td></tr>
 <p>If <a class="el" href="structcamera__settings.html#a4738ff8e4057123c2c7136a8ac585bea">camera_settings::camcnt</a> is 1, use CopyOneBlock instead. This function copies the data sample by sample because the data of one block of one camera is not stored in a contiguous memory block if camcnt is greater than 1.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">block</td><td>block number ( 0...(nob - 1) ) </td></tr>
     <tr><td class="paramname">camera</td><td>camera number ( 0...(CAMCNT - 1) ) </td></tr>
     <tr><td class="paramname">pdest</td><td>Pointer where the data will be written to. Make sure that the size of the buffer is &gt;= sizeof(uint16_t) * pixel * nos </td></tr>
@@ -1483,7 +1483,7 @@ Functions</h2></td></tr>
 <p>Copy the data of a single sample to pdest.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sample</td><td>sample number ( 0...(nos - 1) ) </td></tr>
     <tr><td class="paramname">block</td><td>block number ( 0...(nob - 1) ) </td></tr>
     <tr><td class="paramname">camera</td><td>camera number ( 0...(CAMCNT - 1) ) </td></tr>
@@ -1599,7 +1599,7 @@ Functions</h2></td></tr>
 <p>Sets all outputs of the DAC8568 in camera 3030 or on PCIe board.    </p>
 <p>Use this function to set the outputs, because it is resorting the channel numeration correctly. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">location</td><td>Switch for the different locations of DAC85689. See enum <a class="el" href="enum__settings_8h.html#a09974326d8346ab51cc2e499aabc55e8">DAC8568_location_t</a> in enum.h for details. </td></tr>
     <tr><td class="paramname">cameraPosition</td><td>This is describing the camera position when there are multiple cameras in line. Possible values: 0....8. This parameter is only used when location == DAC8568_camera. </td></tr>
     <tr><td class="paramname">output</td><td>all output values that will be converted to analog voltage (0 ... 0xFFFF) </td></tr>
@@ -1715,7 +1715,7 @@ Functions</h2></td></tr>
 <p>Sets the output of the DAC8568 on PCB 2189-7.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">location</td><td>Switch for the different locations of DAC85689. See enum <a class="el" href="enum__settings_8h.html#a09974326d8346ab51cc2e499aabc55e8">DAC8568_location_t</a> in <a class="el" href="enum__settings_8h.html" title="All settings options and software constants.">enum_settings.h</a> for details. </td></tr>
     <tr><td class="paramname">cameraPosition</td><td>This is describing the camera position when there are multiple cameras in line. Possible values: 0....8. This parameter is only used when location == DAC8568_camera. </td></tr>
     <tr><td class="paramname">channel</td><td>select one of eight output channel (0 ... 7) </td></tr>
@@ -2101,7 +2101,7 @@ Functions</h2></td></tr>
 <p>Test if SFP module is there and fiber is linked up.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -2215,7 +2215,7 @@ Functions</h2></td></tr>
 <p>Returns the address of the data buffer.    </p>
 <p>It is only safe to read as much data until the end of the buffer is reached. That is determined by bytes_to_end_of_buffer. For this function bytes_to_end_of_buffer equals the size of the complete buffer (= nos * nob * pixel * camcnt * 2). The address you get is valid until the next call of <a class="el" href="_board_8c.html#a690fcfefd2d5c8563f1e7b1573b749b2">InitMeasurement</a>. The data behind the address changes every measurement cycle when continuous mode is on or after each call of <a class="el" href="_board_8c.html#a22ee28be3add5b463773a9ae01c3ceab">StartMeasurement</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">pdest</td><td>Pointer to get the pointer of the data buffer. When NULL, this functions returns es_invalid_pointer. </td></tr>
     <tr><td class="paramname">bytes_to_end_of_buffer</td><td>Pointer to get the number of bytes to the end of the buffer. When NULL, this parameter is ignored. </td></tr>
   </table>
@@ -2263,7 +2263,7 @@ Functions</h2></td></tr>
 <p>The information impact signal 2 is given in the special pixels pixel_impact_signal_2_low and pixel_impact_signal_2_high. Impact signal 2 is either TDC 2 or DSC 2, depending on the PCIe daughter board.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sample</td><td>sample number (0 ... (nos-1)) </td></tr>
     <tr><td class="paramname">block</td><td>block number (0 ... (nob-1)) </td></tr>
     <tr><td class="paramname">camera_pos</td><td>camera position (0 ... (CAMCNT-1)) </td></tr>
@@ -2381,7 +2381,7 @@ Functions</h2></td></tr>
 <p>The information block index is given in the special pixels pixel_block_index_low and pixel_block_index_high_s1_s2.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sample</td><td>sample number (0 ... (nos-1)) </td></tr>
     <tr><td class="paramname">block</td><td>block number (0 ... (nob-1)) </td></tr>
     <tr><td class="paramname">camera_pos</td><td>camera position (0 ... (CAMCNT-1)) </td></tr>
@@ -2415,7 +2415,7 @@ Functions</h2></td></tr>
 <p>Get the block on bit from the PCIe flags register.    </p>
 <p>Since the block on bit position was change in 222.14 this function looks at a different bit depending on the firmware version. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">blockOn</td><td>Pointer to a bool, where the block on bit will be written. </td></tr>
   </table>
   </dd>
@@ -2495,7 +2495,7 @@ Functions</h2></td></tr>
 <p>Read the bit <a class="el" href="enum__hardware_8h.html#a1d179386b40162fc96b96c12da077dd8aaeab6d26c9862015dde4fddfe2c1e3a1">PCIEFLAGS_bits_t::PCIEFLAGS_bit_block_trigger_detected</a>.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">detected</td><td>Pointer to a bool, where the block trigger detected bit will be written. </td></tr>
   </table>
   </dd>
@@ -2572,10 +2572,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the high time duration of BON from the S0 register BONLEN.    </p>
+<p>Get the high time duration of BON from the S0 register <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15a3b577d7674121c2ffb5b84b3006fb6ba">S0Addr_BONLEN</a>.    </p>
 <p>The signal is measured once per measurement. The fist valid value can be read after the first completed BON. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">bonLengthIn10ns</td><td>pointer to uint32 where the BON length is returned<ul>
 <li>min: 0</li>
 <li>step: 1 =&gt; 10 ns</li>
@@ -2623,7 +2623,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the high time duration of BON from the S0 register BONLEN. </p>
+<p>Get the high time duration of BON from the S0 register <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15a3b577d7674121c2ffb5b84b3006fb6ba">S0Addr_BONLEN</a>. </p>
 <p>The signal is measured once per measurement. The fist valid value can be read after the first completed BON. The value range is:</p><ul>
 <li>min: 0</li>
 <li>step: 1 =&gt; 10 ns</li>
@@ -2662,10 +2662,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the pos edge to pos edge time of BON from the S0 register BONPERIOD.    </p>
+<p>Get the pos edge to pos edge time of BON from the S0 register <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15acd31b7aeb84aa27442ad6376d7457d90">S0Addr_BON_PERIOD</a>.    </p>
 <p>The signal is measured once per measurement. The fist valid value can be read after the start of the second BON. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">bonPeriodIn10ns</td><td>pointer to uint32 where the BON period is returned<ul>
 <li>min: 0</li>
 <li>step: 1 =&gt; 10 ns</li>
@@ -2713,7 +2713,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the pos edge to pos edge time of BON from the S0 register BONPERIOD. </p>
+<p>Get the pos edge to pos edge time of BON from the S0 register <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15acd31b7aeb84aa27442ad6376d7457d90">S0Addr_BON_PERIOD</a>. </p>
 <p>The signal is measured once per measurement. The fist valid value can be read after the start of the second BON. The value range is:</p><ul>
 <li>min: 0</li>
 <li>step: 1 =&gt; 10 ns</li>
@@ -2771,7 +2771,7 @@ Functions</h2></td></tr>
 <p>The information over temperature is given in the special pixel camera status (pixel_camera_status) in bit pixel_camera_status_bit_over_temp.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sample</td><td>sample number (0 ... (nos-1)) </td></tr>
     <tr><td class="paramname">block</td><td>block number (0 ... (nob-1)) </td></tr>
     <tr><td class="paramname">camera_pos</td><td>camera position (0 ... (CAMCNT-1)) </td></tr>
@@ -2889,7 +2889,7 @@ Functions</h2></td></tr>
 <p>The information temperature good is given in the special pixel camera status (pixel_camera_status) in bit pixel_camera_status_bit_temp_good. This bit is used only in cooled cameras.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sample</td><td>sample number (0 ... (nos-1)) </td></tr>
     <tr><td class="paramname">block</td><td>block number (0 ... (nob-1)) </td></tr>
     <tr><td class="paramname">camera_pos</td><td>camera position (0 ... (CAMCNT-1)) </td></tr>
@@ -2997,7 +2997,7 @@ Functions</h2></td></tr>
 <p>When settings parameter <a class="el" href="structcamera__settings.html#a7d6d06fc3f59976df702bfda1e7bc0d1">camera_settings::use_software_polling</a> is true this function converts scanCounterTotal to scan and block. This is necessary, because scanCounterTotal is just counting each scan not regarding camcnt and blocks. When <a class="el" href="structcamera__settings.html#a7d6d06fc3f59976df702bfda1e7bc0d1">camera_settings::use_software_polling</a> is false the scan and block number of the last interrupt is given.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sample</td><td>Scan number of the last scan in userBuffer. -1 when no scan has been written yet, otherwise 0...(nos-1) </td></tr>
     <tr><td class="paramname">block</td><td>Block number of the last scan in userBuffer. -1 when no scans has been written yet, otherwise 0...(nob-1)    </td></tr>
   </table>
@@ -3117,7 +3117,7 @@ Functions</h2></td></tr>
 <p>return all values of Delay Stage Counter    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">DSCNumber</td><td>1: DSC 1; 2: DSC 2 </td></tr>
     <tr><td class="paramname">ADSC</td><td>current DSC </td></tr>
     <tr><td class="paramname">LDSC</td><td>last DSC </td></tr>
@@ -3289,7 +3289,7 @@ Functions</h2></td></tr>
 <p>The information impact signal 1 is given in the special pixels pixel_impact_signal_1_low and pixel_impact_signal_1_high. Impact signal 1 is either TDC 1 or DSC 1, depending on the PCIe daughter board.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sample</td><td>sample number (0 ... (nos-1)) </td></tr>
     <tr><td class="paramname">block</td><td>block number (0 ... (nob-1)) </td></tr>
     <tr><td class="paramname">camera_pos</td><td>camera position (0 ... (CAMCNT-1)) </td></tr>
@@ -3339,7 +3339,7 @@ Functions</h2></td></tr>
 <p>The information impact signal 2 is given in the special pixels pixel_impact_signal_2_low and pixel_impact_signal_2_high. Impact signal 2 is either TDC 2 or DSC 2, depending on the PCIe daughter board.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sample</td><td>sample number (0 ... (nos-1)) </td></tr>
     <tr><td class="paramname">block</td><td>block number (0 ... (nob-1)) </td></tr>
     <tr><td class="paramname">camera_pos</td><td>camera position (0 ... (CAMCNT-1)) </td></tr>
@@ -3373,7 +3373,7 @@ Functions</h2></td></tr>
 <p>Read DSC flag in PCIEFLAGS register.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">isDsc</td><td>DSC flag is written to this bool*. TRUE: DSC board detected, FALSE: no DSC board detected </td></tr>
   </table>
   </dd>
@@ -3473,7 +3473,7 @@ Functions</h2></td></tr>
 <p>Read TDC flag in PCIEFLAGS register.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">isTdc</td><td>TDC flag is written to this bool*. TRUE: TDC board detected, FALSE: no TDC board detected </td></tr>
   </table>
   </dd>
@@ -3553,7 +3553,7 @@ Functions</h2></td></tr>
 <p>Check if measure on bit is set.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">measureOn</td><td>True when measureon bit is set. </td></tr>
   </table>
   </dd>
@@ -3643,7 +3643,7 @@ Functions</h2></td></tr>
 <p>Returns the address of a specific block.    </p>
 <p>It is only safe to read as much data until the end of the buffer is reached. That is determined by bytes_to_end_of_buffer. For this function bytes_to_end_of_buffer is at least the size of one block (= nos * pixel * camcnt * 2). The address you get is valid until the next call of <a class="el" href="_board_8c.html#a690fcfefd2d5c8563f1e7b1573b749b2">InitMeasurement</a>. The data behind the address changes every measurement cycle when continuous mode is on or after each call of <a class="el" href="_board_8c.html#a22ee28be3add5b463773a9ae01c3ceab">StartMeasurement</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">block</td><td>position in blocks (0...(nob-1)) </td></tr>
     <tr><td class="paramname">pdest</td><td>Pointer to get the pointer of the specific pixel. When NULL, this functions returns es_invalid_pointer. </td></tr>
     <tr><td class="paramname">bytes_to_end_of_buffer</td><td>Pointer to get the number of bytes to the end of the buffer. When NULL, this parameter is ignored. </td></tr>
@@ -3696,7 +3696,7 @@ Functions</h2></td></tr>
 <p>Returns the address of a specific sample.    </p>
 <p>It is only safe to read as much data until the end of the buffer is reached. That is determined by bytes_to_end_of_buffer. For this fuction bytes_to_end_of_buffer is a least the size of scan (= pixel * 2). The address you get is valid until the next call of <a class="el" href="_board_8c.html#a690fcfefd2d5c8563f1e7b1573b749b2">InitMeasurement</a>. The data behind the address changes every measurement cycle when continuous mode is on or after each call of <a class="el" href="_board_8c.html#a22ee28be3add5b463773a9ae01c3ceab">StartMeasurement</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sample</td><td>position in samples (0...(nos-1)) </td></tr>
     <tr><td class="paramname">block</td><td>position in blocks (0...(nob-1)) </td></tr>
     <tr><td class="paramname">camera</td><td>position in camera count (0...(CAMCNT-1)) </td></tr>
@@ -3756,7 +3756,7 @@ Functions</h2></td></tr>
 <p>Returns the address of a specific pixel.    </p>
 <p>It is only safe to read as much data until the end of the buffer is reached. That is determined by bytes_to_end_of_buffer. It is always safe to read 2 bytes. The address you get is valid until the next call of <a class="el" href="_board_8c.html#a690fcfefd2d5c8563f1e7b1573b749b2">InitMeasurement</a>. The data behind the address changes every measurement cycle when continuous mode is on or after each call of <a class="el" href="_board_8c.html#a22ee28be3add5b463773a9ae01c3ceab">StartMeasurement</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">pixel</td><td>position in one scan (0...(PIXEL-1)) </td></tr>
     <tr><td class="paramname">sample</td><td>position in samples (0...(nos-1)) </td></tr>
     <tr><td class="paramname">block</td><td>position in blocks (0...(nob-1)) </td></tr>
@@ -3827,7 +3827,7 @@ Functions</h2></td></tr>
 <p>The information S1 is given in the special pixel pixel_block_index_high_s1_s2 in bit pixel_block_index_high_s1_s2_bit_s1.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sample</td><td>sample number (0 ... (nos-1)) </td></tr>
     <tr><td class="paramname">block</td><td>block number (0 ... (nob-1)) </td></tr>
     <tr><td class="paramname">camera_pos</td><td>camera position (0 ... (CAMCNT-1)) </td></tr>
@@ -3877,7 +3877,7 @@ Functions</h2></td></tr>
 <p>The information S2 is given in the special pixel pixel_block_index_high_s1_s2 in bit pixel_block_index_high_s1_s2_bit_s2.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sample</td><td>sample number (0 ... (nos-1)) </td></tr>
     <tr><td class="paramname">block</td><td>block number (0 ... (nob-1)) </td></tr>
     <tr><td class="paramname">camera_pos</td><td>camera position (0 ... (CAMCNT-1)) </td></tr>
@@ -3927,7 +3927,7 @@ Functions</h2></td></tr>
 <p>The information block index is given in the special pixels pixel_scan_index_low and pixel_scan_index_high.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">sample</td><td>sample number (0 ... (nos-1)) </td></tr>
     <tr><td class="paramname">block</td><td>block number (0 ... (nob-1)) </td></tr>
     <tr><td class="paramname">camera_pos</td><td>camera position (0 ... (CAMCNT-1)) </td></tr>
@@ -3961,7 +3961,7 @@ Functions</h2></td></tr>
 <p>Read the bit <a class="el" href="enum__hardware_8h.html#a1d179386b40162fc96b96c12da077dd8a701390510b309f4ef826a5828883f658">PCIEFLAGS_bits_t::PCIEFLAGS_bit_scan_trigger_detected</a>.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">detected</td><td>Pointer to a bool, where the scan trigger detected bit will be written. </td></tr>
   </table>
   </dd>
@@ -4133,10 +4133,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the high time duration of XCK from the S0 register XCKLEN.    </p>
+<p>Get the high time duration of XCK from the S0 register <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15af31a289b718653a82f45b40c23d0f2e9">S0Addr_XCKLEN</a>.    </p>
 <p>The signal is measured once per measurement. The fist valid value can be read after the first completed XCK. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">xckLengthIn10ns</td><td>pointer to uint32 where the XCK length is returned<ul>
 <li>min: 0</li>
 <li>step: 1 =&gt; 10 ns</li>
@@ -4184,7 +4184,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the high time duration of XCK from the S0 register XCKLEN. </p>
+<p>Get the high time duration of XCK from the S0 register <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15af31a289b718653a82f45b40c23d0f2e9">S0Addr_XCKLEN</a>. </p>
 <p>The signal is measured once per measurement. The fist valid value can be read after the first completed XCK. The value range is:</p><ul>
 <li>min: 0</li>
 <li>step: 1 =&gt; 10 ns</li>
@@ -4223,10 +4223,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get pos edge to pos egde time of XCK time from the S0 register XCKPERIOD.    </p>
+<p>Get pos edge to pos egde time of XCK time from the S0 register <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15a4d98a1dbdae8477489c378937d6f0bc8">S0Addr_XCK_PERIOD</a>.    </p>
 <p>The signal is measured once per measurement. The fist valid value can be read after the start of the second XCK. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">xckPeriodIn10ns</td><td>pointer to uint32 where the XCK period is returned<ul>
 <li>min: 0</li>
 <li>step: 1 =&gt; 10 ns</li>
@@ -4274,7 +4274,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get pos edge to pos egde time of XCK time from the S0 register XCKPERIOD. </p>
+<p>Get pos edge to pos edge time of XCK time from the S0 register <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15a4d98a1dbdae8477489c378937d6f0bc8">S0Addr_XCK_PERIOD</a>. </p>
 <p>The signal is measured once per measurement. The fist valid value can be read after the start of the second XCK. The value range is:</p><ul>
 <li>min: 0</li>
 <li>step: 1 =&gt; 10 ns</li>
@@ -4401,10 +4401,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Use this function to properly initialize the struct <a class="el" href="structmeasurement__settings.html">measurement_settings</a> to its default values. </p>
+<p>Use this function to properly initialize the struct <a class="el" href="structmeasurement__settings.html" title="In this struct are settings, that are the same for all PCIe boards.">measurement_settings</a> to its default values. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ms</td><td>Pointer to the struct <a class="el" href="structmeasurement__settings.html">measurement_settings</a> that should be initialized. </td></tr>
+    <tr><td class="paramname">ms</td><td>Pointer to the struct <a class="el" href="structmeasurement__settings.html" title="In this struct are settings, that are the same for all PCIe boards.">measurement_settings</a> that should be initialized. </td></tr>
   </table>
   </dd>
 </dl>
@@ -4474,7 +4474,7 @@ Functions</h2></td></tr>
 <p>Set paramters of one pulse output of IOCTRL.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">number</td><td>Number of output: 1 ... 7 </td></tr>
     <tr><td class="paramname">width_in_5ns</td><td>Set width of pulse in 5ns steps. </td></tr>
     <tr><td class="paramname">delay_in_5ns</td><td>Set delay of pulse in 5ns steps. </td></tr>
@@ -4507,7 +4507,7 @@ Functions</h2></td></tr>
 <p>Set period of IOCtrl pulse outputs base frequency T0.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">period_in_10ns</td><td>Period of T0 in 10ns steps. </td></tr>
   </table>
   </dd>
@@ -4660,7 +4660,7 @@ Functions</h2></td></tr>
 <p>Read 1 bit of a 4 byte s0 register.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIE card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">address</td><td>Address of the register to read. </td></tr>
     <tr><td class="paramname">bitnumber</td><td>Address of the bit to read. </td></tr>
     <tr><td class="paramname">isBitHigh</td><td>Tells if bit is high or low. </td></tr>
@@ -4764,7 +4764,7 @@ Functions</h2></td></tr>
 <p>Read 1 bit of 1 byte of a s0 register.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIE card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">address</td><td>Address of the register to read. </td></tr>
     <tr><td class="paramname">bitnumber</td><td>Address of the bit to read. </td></tr>
     <tr><td class="paramname">isBitHigh</td><td>Tells if bit is high or low. </td></tr>
@@ -4858,7 +4858,7 @@ Functions</h2></td></tr>
 <p>Reads the BlockFrequency bit and checks if its high or low.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">blockFrequencyTooHigh</td><td>True when BlockFrequency bit is set. </td></tr>
   </table>
   </dd>
@@ -4943,7 +4943,7 @@ Functions</h2></td></tr>
 <p>Read 4 bytes of a register in S0 space.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">data</td><td>Read buffer. </td></tr>
     <tr><td class="paramname">address</td><td>Address of the register to read. </td></tr>
   </table>
@@ -5035,7 +5035,7 @@ Functions</h2></td></tr>
 <p>Read 1 byte of a register in S0 space.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">data</td><td>Read buffer. </td></tr>
     <tr><td class="paramname">address</td><td>Address of the register to read. </td></tr>
   </table>
@@ -5122,7 +5122,7 @@ Functions</h2></td></tr>
 <p>Reads the ScanFrequency bit and checks if its high or low.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">scanFrequencyTooHigh</td><td>True when scanFrequency bit is set </td></tr>
   </table>
   </dd>
@@ -5229,7 +5229,7 @@ Functions</h2></td></tr>
 <p>Resets the BlockFrequency bit.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -5275,7 +5275,7 @@ Functions</h2></td></tr>
 <p>Reset the bit <a class="el" href="enum__hardware_8h.html#a1d179386b40162fc96b96c12da077dd8aaeab6d26c9862015dde4fddfe2c1e3a1">PCIEFLAGS_bits_t::PCIEFLAGS_bit_block_trigger_detected</a> to 0.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -5325,7 +5325,7 @@ Functions</h2></td></tr>
 <p>reset Delay Stage Counter    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">DSCNumber</td><td>1: DSC 1; 2: DSC 2 </td></tr>
   </table>
   </dd>
@@ -5378,7 +5378,7 @@ Functions</h2></td></tr>
 <p>Resets the ScanFrequency bit.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -5424,7 +5424,7 @@ Functions</h2></td></tr>
 <p>Reset the bit <a class="el" href="enum__hardware_8h.html#a1d179386b40162fc96b96c12da077dd8a701390510b309f4ef826a5828883f658">PCIEFLAGS_bits_t::PCIEFLAGS_bit_scan_trigger_detected</a> to 0.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
   </table>
   </dd>
 </dl>
@@ -5580,7 +5580,7 @@ Functions</h2></td></tr>
 <p>Sets time for block timer.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">btime_in_microseconds</td><td>Block time in microseconds, 28 bit. Min: 1 us, Max: 268.435.455 us = 268,435.455 s </td></tr>
   </table>
   </dd>
@@ -5641,7 +5641,7 @@ Functions</h2></td></tr>
 <p>set direction of Delay Stage Counter    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">DSCNumber</td><td>1: DSC 1; 2: DSC 2 </td></tr>
     <tr><td class="paramname">dir</td><td>true: up; false: down </td></tr>
   </table>
@@ -5730,7 +5730,7 @@ Functions</h2></td></tr>
 <p>Set global settings struct.    </p>
 <p>Call this every time you changed settings before InitMeasurement. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">settings</td><td>struct <a class="el" href="structmeasurement__settings.html">measurement_settings</a>    </td></tr>
+    <tr><td class="paramname">settings</td><td>struct <a class="el" href="structmeasurement__settings.html" title="In this struct are settings, that are the same for all PCIe boards.">measurement_settings</a>    </td></tr>
   </table>
   </dd>
 </dl>
@@ -5864,7 +5864,7 @@ Functions</h2></td></tr>
 <p>Sets time for scan timer.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">stime_in_microseconds</td><td>Scan time in microseconds, 28 bit. Min: 1 us, Max: 268.435.455 us = 268,435.455 s </td></tr>
   </table>
   </dd>
@@ -5921,7 +5921,7 @@ Functions</h2></td></tr>
 <p>Set signal of output port of PCIe card.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... MAXPCIECARDS, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">tor</td><td>select output signal. See enum tor_out in enum.h for options. </td></tr>
   </table>
   </dd>
