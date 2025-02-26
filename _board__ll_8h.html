@@ -91,7 +91,9 @@ $(function(){ initResizable(false); });
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Board_ll.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -101,9 +103,17 @@ $(function(){ initResizable(false); });
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="globals_8h_source.html">globals.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="es__status__codes_8h_source.html">../shared_src/es_status_codes.h</a>&quot;</code><br />
+<code>#include &quot;lscpciej_lib.h&quot;</code><br />
 </div>
 <p><a href="_board__ll_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a904fcf37f78f2b3c0c48dd5c8eabb392" id="r_a904fcf37f78f2b3c0c48dd5c8eabb392"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a904fcf37f78f2b3c0c48dd5c8eabb392">ES_LOG</a>(...)</td></tr>
+<tr class="separator:a904fcf37f78f2b3c0c48dd5c8eabb392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbe7c54284ef9e3b656bf807d450fa1c" id="r_afbe7c54284ef9e3b656bf807d450fa1c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbe7c54284ef9e3b656bf807d450fa1c">ES_TRACE</a>(...)</td></tr>
+<tr class="separator:afbe7c54284ef9e3b656bf807d450fa1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a8ff452741c66bee1d8560669621389fa" id="r_a8ff452741c66bee1d8560669621389fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ff452741c66bee1d8560669621389fa">checkDriverHandle</a> (uint32_t drvno)</td></tr>
@@ -235,12 +245,92 @@ Functions</h2></td></tr>
 <tr class="separator:a1b51411fcecd9b57f1eb276d6ca6324c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a116d9d33e3062b9ea34008dd4d076f9b" id="r_a116d9d33e3062b9ea34008dd4d076f9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a116d9d33e3062b9ea34008dd4d076f9b">initPerformanceCounter</a> ()</td></tr>
 <tr class="separator:a116d9d33e3062b9ea34008dd4d076f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac07c7888590dc77ecaba1069585795b6" id="r_ac07c7888590dc77ecaba1069585795b6"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac07c7888590dc77ecaba1069585795b6">GetTimestampInTicks</a> ()</td></tr>
+<tr class="memdesc:ac07c7888590dc77ecaba1069585795b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads system timer.  <br /></td></tr>
+<tr class="separator:ac07c7888590dc77ecaba1069585795b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8e9a499c65feb42895a725c33adf23a" id="r_ad8e9a499c65feb42895a725c33adf23a"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8e9a499c65feb42895a725c33adf23a">ConvertTicksToMicroseconds</a> (int64_t ticks)</td></tr>
+<tr class="memdesc:ad8e9a499c65feb42895a725c33adf23a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate ticks to microseconds.  <br /></td></tr>
+<tr class="separator:ad8e9a499c65feb42895a725c33adf23a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69023e1b7220dc81de207b508d1d9c99" id="r_a69023e1b7220dc81de207b508d1d9c99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69023e1b7220dc81de207b508d1d9c99">About</a> (uint32_t board_sel)</td></tr>
+<tr class="memdesc:a69023e1b7220dc81de207b508d1d9c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display information about registers and settings in pop up windows.  <br /></td></tr>
+<tr class="separator:a69023e1b7220dc81de207b508d1d9c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accd5186f0586d8497a599012cf1716d9" id="r_accd5186f0586d8497a599012cf1716d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accd5186f0586d8497a599012cf1716d9">AboutDrv</a> (uint32_t drvno)</td></tr>
+<tr class="memdesc:accd5186f0586d8497a599012cf1716d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows window with infos about the PCIe board.  <br /></td></tr>
+<tr class="separator:accd5186f0586d8497a599012cf1716d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33e985500044252b7933a6c9969364ac" id="r_a33e985500044252b7933a6c9969364ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33e985500044252b7933a6c9969364ac">AboutGPX</a> (uint32_t drvno)</td></tr>
+<tr class="memdesc:a33e985500044252b7933a6c9969364ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads registers 0 to 12 of TDC-GPX chip. Time delay counter option.  <br /></td></tr>
+<tr class="separator:a33e985500044252b7933a6c9969364ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25e513a42416cdb56a01abea79399844" id="r_a25e513a42416cdb56a01abea79399844"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25e513a42416cdb56a01abea79399844">AboutS0</a> (uint32_t drvno)</td></tr>
+<tr class="memdesc:a25e513a42416cdb56a01abea79399844"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read registers of space0. Space0 are the control registers of the PCIe board.  <br /></td></tr>
+<tr class="separator:a25e513a42416cdb56a01abea79399844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06d198342f1983ab1d4310cff9b155c7" id="r_a06d198342f1983ab1d4310cff9b155c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06d198342f1983ab1d4310cff9b155c7">AboutTLPs</a> (uint32_t drvno)</td></tr>
+<tr class="separator:a06d198342f1983ab1d4310cff9b155c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bfed4321a2abe3d8d8374566f70e996" id="r_a4bfed4321a2abe3d8d8374566f70e996"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4bfed4321a2abe3d8d8374566f70e996">AboutPCI</a> (uint32_t drvno)</td></tr>
+<tr class="separator:a4bfed4321a2abe3d8d8374566f70e996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c06d0c89d7a19fefd6de1b609fdbeee" id="r_a5c06d0c89d7a19fefd6de1b609fdbeee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c06d0c89d7a19fefd6de1b609fdbeee">AboutMeasurementSettings</a> ()</td></tr>
+<tr class="separator:a5c06d0c89d7a19fefd6de1b609fdbeee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a279b3e30d855066c3b916f6a5d10e7c2" id="r_a279b3e30d855066c3b916f6a5d10e7c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a279b3e30d855066c3b916f6a5d10e7c2">AboutCameraSettings</a> (uint32_t drvno)</td></tr>
+<tr class="separator:a279b3e30d855066c3b916f6a5d10e7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28f92fa001dc71e32b9afa7a01f5471a" id="r_a28f92fa001dc71e32b9afa7a01f5471a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28f92fa001dc71e32b9afa7a01f5471a">ErrMsgBoxOn</a> ()</td></tr>
+<tr class="memdesc:a28f92fa001dc71e32b9afa7a01f5471a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switch on error message boxes of our software. Default is On.  <br /></td></tr>
+<tr class="separator:a28f92fa001dc71e32b9afa7a01f5471a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a122e78ae5bb9cc93a227d461075170c2" id="r_a122e78ae5bb9cc93a227d461075170c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a122e78ae5bb9cc93a227d461075170c2">ErrMsgBoxOff</a> ()</td></tr>
+<tr class="memdesc:a122e78ae5bb9cc93a227d461075170c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable error message boxes, if not needed.  <br /></td></tr>
+<tr class="separator:a122e78ae5bb9cc93a227d461075170c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d946ab1c24cd90b2106731df3ac6d0e" id="r_a7d946ab1c24cd90b2106731df3ac6d0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d946ab1c24cd90b2106731df3ac6d0e">ErrorMsg</a> (char ErrMsg[100])</td></tr>
+<tr class="memdesc:a7d946ab1c24cd90b2106731df3ac6d0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display error message. If ErrMsgBoxOn is set.  <br /></td></tr>
+<tr class="separator:a7d946ab1c24cd90b2106731df3ac6d0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a114f200536b78ce833eb1fc0e0231e94" id="r_a114f200536b78ce833eb1fc0e0231e94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a114f200536b78ce833eb1fc0e0231e94">ValMsg</a> (uint64_t val)</td></tr>
+<tr class="memdesc:a114f200536b78ce833eb1fc0e0231e94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple display of unsigned integer as error message for test purpose.  <br /></td></tr>
+<tr class="separator:a114f200536b78ce833eb1fc0e0231e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a95e5ce1ec04291b8f044ebb7f5fad961" id="r_a95e5ce1ec04291b8f044ebb7f5fad961"><td class="memItemLeft" align="right" valign="top">WDC_DEVICE_HANDLE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95e5ce1ec04291b8f044ebb7f5fad961">hDev</a></td></tr>
+<tr class="separator:a95e5ce1ec04291b8f044ebb7f5fad961"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39517006ca67f401ab40cf6660d5e182" id="r_a39517006ca67f401ab40cf6660d5e182"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39517006ca67f401ab40cf6660d5e182">_SHOW_MSG</a></td></tr>
+<tr class="separator:a39517006ca67f401ab40cf6660d5e182"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>All the low level platform specific implementations for interacting with the Stresing PCIe board. </p>
 <dl class="section author"><dt>Author</dt><dd>Florian Hahn </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>23.10.2020 </dd></dl>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a904fcf37f78f2b3c0c48dd5c8eabb392" name="a904fcf37f78f2b3c0c48dd5c8eabb392"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a904fcf37f78f2b3c0c48dd5c8eabb392">&#9670;&#160;</a></span>ES_LOG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ES_LOG</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em></em></span>...</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afbe7c54284ef9e3b656bf807d450fa1c" name="afbe7c54284ef9e3b656bf807d450fa1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbe7c54284ef9e3b656bf807d450fa1c">&#9670;&#160;</a></span>ES_TRACE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ES_TRACE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em></em></span>...</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a1b4d98404b2fd82fa5cfa2a08029c333" name="a1b4d98404b2fd82fa5cfa2a08029c333"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1b4d98404b2fd82fa5cfa2a08029c333">&#9670;&#160;</a></span>_ExitDriver()</h2>
 
@@ -303,6 +393,193 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Windows specific function for initializing driver. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="a69023e1b7220dc81de207b508d1d9c99" name="a69023e1b7220dc81de207b508d1d9c99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69023e1b7220dc81de207b508d1d9c99">&#9670;&#160;</a></span>About()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> About </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>board_sel</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Display information about registers and settings in pop up windows. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="a279b3e30d855066c3b916f6a5d10e7c2" name="a279b3e30d855066c3b916f6a5d10e7c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a279b3e30d855066c3b916f6a5d10e7c2">&#9670;&#160;</a></span>AboutCameraSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> AboutCameraSettings </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="accd5186f0586d8497a599012cf1716d9" name="accd5186f0586d8497a599012cf1716d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accd5186f0586d8497a599012cf1716d9">&#9670;&#160;</a></span>AboutDrv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> AboutDrv </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Shows window with infos about the PCIe board. </p>
+<ul>
+<li>version of driver</li>
+<li>ID = 53xx</li>
+<li>length of space0 BAR =0x3f</li>
+<li>vendor ID = EBST</li>
+<li>PCI board version (same as label on PCI board) <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a33e985500044252b7933a6c9969364ac" name="a33e985500044252b7933a6c9969364ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33e985500044252b7933a6c9969364ac">&#9670;&#160;</a></span>AboutGPX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> AboutGPX </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads registers 0 to 12 of TDC-GPX chip. Time delay counter option. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="a5c06d0c89d7a19fefd6de1b609fdbeee" name="a5c06d0c89d7a19fefd6de1b609fdbeee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c06d0c89d7a19fefd6de1b609fdbeee">&#9670;&#160;</a></span>AboutMeasurementSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> AboutMeasurementSettings </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4bfed4321a2abe3d8d8374566f70e996" name="a4bfed4321a2abe3d8d8374566f70e996"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bfed4321a2abe3d8d8374566f70e996">&#9670;&#160;</a></span>AboutPCI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> AboutPCI </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="a25e513a42416cdb56a01abea79399844" name="a25e513a42416cdb56a01abea79399844"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25e513a42416cdb56a01abea79399844">&#9670;&#160;</a></span>AboutS0()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> AboutS0 </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read registers of space0. Space0 are the control registers of the PCIe board. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="a06d198342f1983ab1d4310cff9b155c7" name="a06d198342f1983ab1d4310cff9b155c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06d198342f1983ab1d4310cff9b155c7">&#9670;&#160;</a></span>AboutTLPs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> AboutTLPs </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
@@ -409,6 +686,32 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad8e9a499c65feb42895a725c33adf23a" name="ad8e9a499c65feb42895a725c33adf23a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8e9a499c65feb42895a725c33adf23a">&#9670;&#160;</a></span>ConvertTicksToMicroseconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t ConvertTicksToMicroseconds </td>
+          <td>(</td>
+          <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>ticks</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Translate ticks to microseconds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ticks</td><td>ticks of system timer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>microseconds of ticks </dd></dl>
+
+</div>
+</div>
 <a id="a19a74d50b17830b71a1ab6d5d726649d" name="a19a74d50b17830b71a1ab6d5d726649d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a19a74d50b17830b71a1ab6d5d726649d">&#9670;&#160;</a></span>copyRestData()</h2>
 
@@ -498,6 +801,69 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a122e78ae5bb9cc93a227d461075170c2" name="a122e78ae5bb9cc93a227d461075170c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a122e78ae5bb9cc93a227d461075170c2">&#9670;&#160;</a></span>ErrMsgBoxOff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ErrMsgBoxOff </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disable error message boxes, if not needed. </p>
+
+</div>
+</div>
+<a id="a28f92fa001dc71e32b9afa7a01f5471a" name="a28f92fa001dc71e32b9afa7a01f5471a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28f92fa001dc71e32b9afa7a01f5471a">&#9670;&#160;</a></span>ErrMsgBoxOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ErrMsgBoxOn </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Switch on error message boxes of our software. Default is On. </p>
+
+</div>
+</div>
+<a id="a7d946ab1c24cd90b2106731df3ac6d0e" name="a7d946ab1c24cd90b2106731df3ac6d0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d946ab1c24cd90b2106731df3ac6d0e">&#9670;&#160;</a></span>ErrorMsg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ErrorMsg </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>ErrMsg</em></span>[100]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Display error message. If ErrMsgBoxOn is set. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ErrMsg</td><td>Message. Buffer size: 100. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -681,6 +1047,26 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac07c7888590dc77ecaba1069585795b6" name="ac07c7888590dc77ecaba1069585795b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac07c7888590dc77ecaba1069585795b6">&#9670;&#160;</a></span>GetTimestampInTicks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t GetTimestampInTicks </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads system timer. </p>
+<p>Read 2x ticks and calculate the difference between the calls in microseconds with DLLTickstous, init timer by calling DLLInitSysTimer before use. </p><dl class="section return"><dt>Returns</dt><dd>act ticks </dd></dl>
 
 </div>
 </div>
@@ -1203,6 +1589,31 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a114f200536b78ce833eb1fc0e0231e94" name="a114f200536b78ce833eb1fc0e0231e94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a114f200536b78ce833eb1fc0e0231e94">&#9670;&#160;</a></span>ValMsg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ValMsg </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>val</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Simple display of unsigned integer as error message for test purpose. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">val</td><td>unsigned integer 64 bit </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a47505a02ea693c2a8c7aeb342f8b4ff7" name="a47505a02ea693c2a8c7aeb342f8b4ff7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a47505a02ea693c2a8c7aeb342f8b4ff7">&#9670;&#160;</a></span>VerifyData()</h2>
 
@@ -1462,6 +1873,51 @@ Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a39517006ca67f401ab40cf6660d5e182" name="a39517006ca67f401ab40cf6660d5e182"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39517006ca67f401ab40cf6660d5e182">&#9670;&#160;</a></span>_SHOW_MSG</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool _SHOW_MSG</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a95e5ce1ec04291b8f044ebb7f5fad961" name="a95e5ce1ec04291b8f044ebb7f5fad961"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95e5ce1ec04291b8f044ebb7f5fad961">&#9670;&#160;</a></span>hDev</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WDC_DEVICE_HANDLE* hDev</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

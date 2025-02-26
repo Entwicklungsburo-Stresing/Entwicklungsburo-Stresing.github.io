@@ -588,6 +588,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a5edd99b739fb068476098402846c48f8" id="r_a5edd99b739fb068476098402846c48f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5edd99b739fb068476098402846c48f8">SetS1S2ReadDelay</a> (uint32_t drvno)</td></tr>
 <tr class="memdesc:a5edd99b739fb068476098402846c48f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This functions sets the register S1S2ReadDealy with the setting <a class="el" href="structcamera__settings.html#a725f47b587a2b425688fbd79586b989e">camera_settings::s1s2_read_delay_in_10ns</a>.  <br /></td></tr>
 <tr class="separator:a5edd99b739fb068476098402846c48f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd81863f9fd39e14cf69f0ae79a81639" id="r_acd81863f9fd39e14cf69f0ae79a81639"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd81863f9fd39e14cf69f0ae79a81639">ExportMeasurementHDF5</a> (const char *path, char *filename)</td></tr>
+<tr class="memdesc:acd81863f9fd39e14cf69f0ae79a81639"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports the measurement data to a HDF5 file.  <br /></td></tr>
+<tr class="separator:acd81863f9fd39e14cf69f0ae79a81639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91c7d2b275b3a0c3847ec1e79e9f51da" id="r_a91c7d2b275b3a0c3847ec1e79e9f51da"><td class="memItemLeft" align="right" valign="top">hid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91c7d2b275b3a0c3847ec1e79e9f51da">CreateNumericAttribute</a> (hid_t parent_object_id, char *attr_name, hid_t goal_type, hid_t dataspace, const void *data)</td></tr>
+<tr class="separator:a91c7d2b275b3a0c3847ec1e79e9f51da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76edee4da60358bb311e1c1bcf988a53" id="r_a76edee4da60358bb311e1c1bcf988a53"><td class="memItemLeft" align="right" valign="top">hid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76edee4da60358bb311e1c1bcf988a53">CreateStringAttribute</a> (hid_t parent_object_id, char *attr_name, hid_t dataspace, void *data)</td></tr>
+<tr class="separator:a76edee4da60358bb311e1c1bcf988a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f1b153582bb1089d261e1593344afed" id="r_a0f1b153582bb1089d261e1593344afed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f1b153582bb1089d261e1593344afed">CheckFirstMeasurementDone</a> (uint32_t drvno)</td></tr>
+<tr class="separator:a0f1b153582bb1089d261e1593344afed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdb7de754586d51dedd986f22463f3e9" id="r_acdb7de754586d51dedd986f22463f3e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acdb7de754586d51dedd986f22463f3e9">GetXckLength</a> (uint32_t drvno, uint32_t *xckLengthIn10ns)</td></tr>
 <tr class="memdesc:acdb7de754586d51dedd986f22463f3e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the high time duration of XCK from the S0 register <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15af31a289b718653a82f45b40c23d0f2e9">S0Addr_XCKLEN</a>.  <br /></td></tr>
 <tr class="separator:acdb7de754586d51dedd986f22463f3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1062,6 +1071,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a0f1b153582bb1089d261e1593344afed" name="a0f1b153582bb1089d261e1593344afed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f1b153582bb1089d261e1593344afed">&#9670;&#160;</a></span>CheckFirstMeasurementDone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> CheckFirstMeasurementDone </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a232b6673c9b4740eb158f8a360cd8372" name="a232b6673c9b4740eb158f8a360cd8372"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a232b6673c9b4740eb158f8a360cd8372">&#9670;&#160;</a></span>ClearAllUserRegs()</h2>
 
@@ -1359,6 +1385,73 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="a91c7d2b275b3a0c3847ec1e79e9f51da" name="a91c7d2b275b3a0c3847ec1e79e9f51da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91c7d2b275b3a0c3847ec1e79e9f51da">&#9670;&#160;</a></span>CreateNumericAttribute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">hid_t CreateNumericAttribute </td>
+          <td>(</td>
+          <td class="paramtype">hid_t</td>          <td class="paramname"><span class="paramname"><em>parent_object_id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>attr_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">hid_t</td>          <td class="paramname"><span class="paramname"><em>goal_type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">hid_t</td>          <td class="paramname"><span class="paramname"><em>dataspace</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76edee4da60358bb311e1c1bcf988a53" name="a76edee4da60358bb311e1c1bcf988a53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76edee4da60358bb311e1c1bcf988a53">&#9670;&#160;</a></span>CreateStringAttribute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">hid_t CreateStringAttribute </td>
+          <td>(</td>
+          <td class="paramtype">hid_t</td>          <td class="paramname"><span class="paramname"><em>parent_object_id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>attr_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">hid_t</td>          <td class="paramname"><span class="paramname"><em>dataspace</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1813,6 +1906,37 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Exit driver. Call this before exiting software for cleanup. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="acd81863f9fd39e14cf69f0ae79a81639" name="acd81863f9fd39e14cf69f0ae79a81639"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd81863f9fd39e14cf69f0ae79a81639">&#9670;&#160;</a></span>ExportMeasurementHDF5()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> ExportMeasurementHDF5 </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exports the measurement data to a HDF5 file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Chosen path to save the file. </td></tr>
+    <tr><td class="paramname">filename</td><td>Chosen filename. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>

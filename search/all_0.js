@@ -7,6 +7,6 @@ var searchData=
   ['_5finitboard_4',['_InitBoard',['../_board__ll_8c.html#ab17867083eae55fb351036dce8d1c09f',1,'_InitBoard(uint32_t drvno):&#160;Board_ll.c'],['../_board__ll_8h.html#ab17867083eae55fb351036dce8d1c09f',1,'_InitBoard(uint32_t drvno):&#160;Board_ll.c']]],
   ['_5finitdriver_5',['_InitDriver',['../_board__ll_8c.html#aaed588fc726287dd6060bfd638e299db',1,'_InitDriver():&#160;Board_ll.c'],['../_board__ll_8h.html#aaed588fc726287dd6060bfd638e299db',1,'_InitDriver():&#160;Board_ll.c']]],
   ['_5finitmeasurement_6',['_InitMeasurement',['../_board_8c.html#afe555808fa857389f272d134417c974a',1,'_InitMeasurement(uint32_t drvno):&#160;Board.c'],['../_board_8h.html#afe555808fa857389f272d134417c974a',1,'_InitMeasurement(uint32_t drvno):&#160;Board.c']]],
-  ['_5fshow_5fmsg_7',['_SHOW_MSG',['../_board__ll_8c.html#a39517006ca67f401ab40cf6660d5e182',1,'Board_ll.c']]],
+  ['_5fshow_5fmsg_7',['_SHOW_MSG',['../_board__ll_8c.html#a39517006ca67f401ab40cf6660d5e182',1,'_SHOW_MSG:&#160;Board_ll.c'],['../_board__ll_8h.html#a39517006ca67f401ab40cf6660d5e182',1,'_SHOW_MSG:&#160;Board_ll.c']]],
   ['_5fwin32_5fwinnt_8',['_WIN32_WINNT',['../_direct2d_viewer_8h.html#ac50762666aa00bd3a4308158510f1748',1,'Direct2dViewer.h']]]
 ];

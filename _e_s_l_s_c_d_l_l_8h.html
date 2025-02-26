@@ -112,7 +112,7 @@ $(function(){ initResizable(false); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aee7646fbb877d0d6cfcda7ff8cbf701d" id="r_aee7646fbb877d0d6cfcda7ff8cbf701d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a></td></tr>
+<tr class="memitem:aee7646fbb877d0d6cfcda7ff8cbf701d" id="r_aee7646fbb877d0d6cfcda7ff8cbf701d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a>&#160;&#160;&#160;__declspec( dllexport )</td></tr>
 <tr class="separator:aee7646fbb877d0d6cfcda7ff8cbf701d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -571,6 +571,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a01ec22454cbba97eb4056c4c5d071080"><td class="mdescLeft">&#160;</td><td class="mdescRight">return gamma value black        <br /></td></tr>
 <tr class="separator:a01ec22454cbba97eb4056c4c5d071080"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac897b10d6453138847b5b72aa996b7c6" id="r_ac897b10d6453138847b5b72aa996b7c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac897b10d6453138847b5b72aa996b7c6">DLLExportMeasurementHDF5</a> (const char *path, char *filename)</td></tr>
+<tr class="memdesc:ac897b10d6453138847b5b72aa996b7c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports the measurement data to a HDF5 file.     <br /></td></tr>
 <tr class="separator:ac897b10d6453138847b5b72aa996b7c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -585,7 +586,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DllAccess</td>
+          <td class="memname">#define DllAccess&#160;&#160;&#160;__declspec( dllexport )</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2060,7 +2061,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p></p>
+<p>Exports the measurement data to a HDF5 file.    </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Chosen path to save the file. </td></tr>
+    <tr><td class="paramname">filename</td><td>Chosen filename. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>

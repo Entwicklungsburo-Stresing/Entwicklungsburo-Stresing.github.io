@@ -98,9 +98,14 @@ $(function(){ initResizable(false); });
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_e_s_l_s_c_d_l_l_8h_source.html">ESLSCDLL.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_board_8h_source.html">Board.h</a>&quot;</code><br />
+<code>#include &lt;windows.h&gt;</code><br />
+<code>#include &lt;process.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a634c46ea1f78d5fd3ba097e15edd0700" id="r_a634c46ea1f78d5fd3ba097e15edd0700"><td class="memItemLeft" align="right" valign="top">BOOL WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a634c46ea1f78d5fd3ba097e15edd0700">DLLMain</a> (HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)</td></tr>
+<tr class="memdesc:a634c46ea1f78d5fd3ba097e15edd0700"><td class="mdescLeft">&#160;</td><td class="mdescRight">DllMain entry point.  <br /></td></tr>
+<tr class="separator:a634c46ea1f78d5fd3ba097e15edd0700"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82c8db212e9619147eb6c2a350b1a0bf" id="r_a82c8db212e9619147eb6c2a350b1a0bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82c8db212e9619147eb6c2a350b1a0bf">DLLInitDriver</a> (uint8_t *_number_of_boards)</td></tr>
 <tr class="memdesc:a82c8db212e9619147eb6c2a350b1a0bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the driver.     <br /></td></tr>
 <tr class="separator:a82c8db212e9619147eb6c2a350b1a0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,6 +127,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a462d2947ed8950c41026ea83f11ad5a3" id="r_a462d2947ed8950c41026ea83f11ad5a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a462d2947ed8950c41026ea83f11ad5a3">DLLStartMeasurement_blocking</a> ()</td></tr>
 <tr class="memdesc:a462d2947ed8950c41026ea83f11ad5a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is starting the measurement and returns when the measurement is done.     <br /></td></tr>
 <tr class="separator:a462d2947ed8950c41026ea83f11ad5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c41e2bf7ac40d3055e1833767b25310" id="r_a1c41e2bf7ac40d3055e1833767b25310"><td class="memItemLeft" align="right" valign="top">unsigned __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c41e2bf7ac40d3055e1833767b25310">StartMeasurementThread</a> (void *param)</td></tr>
+<tr class="separator:a1c41e2bf7ac40d3055e1833767b25310"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b92b1f99bc3e02d6029edbf0433afe8" id="r_a0b92b1f99bc3e02d6029edbf0433afe8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b92b1f99bc3e02d6029edbf0433afe8">DLLStartMeasurement_nonblocking</a> ()</td></tr>
 <tr class="memdesc:a0b92b1f99bc3e02d6029edbf0433afe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is starting the measurement and returns immediately.  <br /></td></tr>
 <tr class="separator:a0b92b1f99bc3e02d6029edbf0433afe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -501,6 +508,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a01ec22454cbba97eb4056c4c5d071080"><td class="mdescLeft">&#160;</td><td class="mdescRight">return gamma value black        <br /></td></tr>
 <tr class="separator:a01ec22454cbba97eb4056c4c5d071080"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac897b10d6453138847b5b72aa996b7c6" id="r_ac897b10d6453138847b5b72aa996b7c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac897b10d6453138847b5b72aa996b7c6">DLLExportMeasurementHDF5</a> (const char *path, char *filename)</td></tr>
+<tr class="memdesc:ac897b10d6453138847b5b72aa996b7c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports the measurement data to a HDF5 file.     <br /></td></tr>
 <tr class="separator:ac897b10d6453138847b5b72aa996b7c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72b5880c24aca4d29158656141753a81" id="r_a72b5880c24aca4d29158656141753a81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72b5880c24aca4d29158656141753a81">DLLGetScanTriggerDetected</a> (uint32_t drvno, uint8_t *detected)</td></tr>
 <tr class="memdesc:a72b5880c24aca4d29158656141753a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the bit <a class="el" href="enum__hardware_8h.html#a1d179386b40162fc96b96c12da077dd8a701390510b309f4ef826a5828883f658">PCIEFLAGS_bits_t::PCIEFLAGS_bit_scan_trigger_detected</a>.     <br /></td></tr>
@@ -2032,7 +2040,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p></p>
+<p>Exports the measurement data to a HDF5 file.    </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Chosen path to save the file. </td></tr>
+    <tr><td class="paramname">filename</td><td>Chosen filename. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -4514,6 +4530,49 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a634c46ea1f78d5fd3ba097e15edd0700" name="a634c46ea1f78d5fd3ba097e15edd0700"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a634c46ea1f78d5fd3ba097e15edd0700">&#9670;&#160;</a></span>DLLMain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL WINAPI DLLMain </td>
+          <td>(</td>
+          <td class="paramtype">HINSTANCE</td>          <td class="paramname"><span class="paramname"><em>hinstDLL</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DWORD</td>          <td class="paramname"><span class="paramname"><em>fdwReason</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPVOID</td>          <td class="paramname"><span class="paramname"><em>lpvReserved</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DllMain entry point. </p>
+<p>An optional entry point into a dynamic-link library (DLL). When the system starts or terminates a process or thread, it calls the entry-point function for each loaded DLL using the first thread of the process. The system also calls the entry-point function for a DLL when it is loaded or unloaded using the LoadLibrary and FreeLibrary functions. More information: <a href="https://docs.microsoft.com/en-us/windows/win32/dlls/dllmain">https://docs.microsoft.com/en-us/windows/win32/dlls/dllmain</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hinstDLL</td><td>A handle to the DLL module. The value is the base address of the DLL. The HINSTANCE of a DLL is the same as the HMODULE of the DLL, so hinstDLL can be used in calls to functions that require a module handle. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fdwReason</td><td>The reason code that indicates why the DLL entry-point function is being called. This parameter can be one of the following values:<ul>
+<li>DLL_PROCESS_ATTACH 1: The DLL is being loaded into the virtual address space of the current process as a result of the process starting up or as a result of a call to LoadLibrary. DLLs can use this opportunity to initialize any instance data or to use the TlsAlloc function to allocate a thread local storage (TLS) index. The lpReserved parameter indicates whether the DLL is being loaded statically or dynamically.</li>
+<li>DLL_PROCESS_DETACH 0: The DLL is being unloaded from the virtual address space of the calling process because it was loaded unsuccessfully or the reference count has reached zero (the processes has either terminated or called FreeLibrary one time for each time it called LoadLibrary). The lpReserved parameter indicates whether the DLL is being unloaded as a result of a FreeLibrary call, a failure to load, or process termination. The DLL can use this opportunity to call the TlsFree function to free any TLS indices allocated by using TlsAlloc and to free any thread local data. Note that the thread that receives the DLL_PROCESS_DETACH notification is not necessarily the same thread that received the DLL_PROCESS_ATTACH notification.</li>
+<li>DLL_THREAD_ATTACH 2: The current process is creating a new thread. When this occurs, the system calls the entry-point function of all DLLs currently attached to the process. The call is made in the context of the new thread. DLLs can use this opportunity to initialize a TLS slot for the thread. A thread calling the DLL entry-point function with DLL_PROCESS_ATTACH does not call the DLL entry-point function with DLL_THREAD_ATTACH. Note that a DLL's entry-point function is called with this value only by threads created after the DLL is loaded by the process. When a DLL is loaded using LoadLibrary, existing threads do not call the entry-point function of the newly loaded DLL.</li>
+<li>DLL_THREAD_DETACH 3: A thread is exiting cleanly. If the DLL has stored a pointer to allocated memory in a TLS slot, it should use this opportunity to free the memory. The system calls the entry-point function of all currently loaded DLLs with this value. The call is made in the context of the exiting thread. </li>
+</ul>
+</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lpvReserved</td><td>If fdwReason is DLL_PROCESS_ATTACH, lpvReserved is NULL for dynamic loads and non-NULL for static loads. If fdwReason is DLL_PROCESS_DETACH, lpvReserved is NULL if FreeLibrary has been called or the DLL load failed and non-NULL if the process is terminating. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>When the system calls the DllMain function with the DLL_PROCESS_ATTACH value, the function returns TRUE if it succeeds or FALSE if initialization fails. If the return value is FALSE when DllMain is called because the process uses the LoadLibrary function, LoadLibrary returns NULL. (The system immediately calls your entry-point function with DLL_PROCESS_DETACH and unloads the DLL.) If the return value is FALSE when DllMain is called during process initialization, the process terminates with an error. To get extended error information, call GetLastError. When the system calls the DllMain function with any value other than DLL_PROCESS_ATTACH, the return value is ignored. </dd></dl>
+
+</div>
+</div>
 <a id="abba9e520fb23e2d531bb8d2bcf06db67" name="abba9e520fb23e2d531bb8d2bcf06db67"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abba9e520fb23e2d531bb8d2bcf06db67">&#9670;&#160;</a></span>DLLOpenShutter()</h2>
 
@@ -6164,6 +6223,23 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="a1c41e2bf7ac40d3055e1833767b25310" name="a1c41e2bf7ac40d3055e1833767b25310"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c41e2bf7ac40d3055e1833767b25310">&#9670;&#160;</a></span>StartMeasurementThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned __stdcall StartMeasurementThread </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>param</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
