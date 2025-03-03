@@ -196,6 +196,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a364bfc62fe74551a58ef8af9a714d329" id="r_a364bfc62fe74551a58ef8af9a714d329"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a364bfc62fe74551a58ef8af9a714d329">WaitforTelapsed</a> (int64_t microseconds)</td></tr>
 <tr class="memdesc:a364bfc62fe74551a58ef8af9a714d329"><td class="mdescLeft">&#160;</td><td class="mdescRight">This functions returns after a time given in microseconds. The time is measured in CPU ticks. The function is escapable by pressing ESC.  <br /></td></tr>
 <tr class="separator:a364bfc62fe74551a58ef8af9a714d329"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34f17d7a3fcc28bdfe7df225e2019cba" id="r_a34f17d7a3fcc28bdfe7df225e2019cba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34f17d7a3fcc28bdfe7df225e2019cba">SaveMeasurementDataToFileBIN</a> (const char *path, char *filename)</td></tr>
+<tr class="memdesc:a34f17d7a3fcc28bdfe7df225e2019cba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the measurement data to a binary file.  <br /></td></tr>
+<tr class="separator:a34f17d7a3fcc28bdfe7df225e2019cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf99ecfb75e0b3bae34caded22ff5367" id="r_acf99ecfb75e0b3bae34caded22ff5367"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf99ecfb75e0b3bae34caded22ff5367">openFile</a> (uint32_t drvno)</td></tr>
 <tr class="separator:acf99ecfb75e0b3bae34caded22ff5367"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87d849f446e344dc16d127b9fef9e91e" id="r_a87d849f446e344dc16d127b9fef9e91e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87d849f446e344dc16d127b9fef9e91e">closeFile</a> (uint32_t drvno)</td></tr>
@@ -1345,6 +1348,37 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reset thread priority to normal. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="a34f17d7a3fcc28bdfe7df225e2019cba" name="a34f17d7a3fcc28bdfe7df225e2019cba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34f17d7a3fcc28bdfe7df225e2019cba">&#9670;&#160;</a></span>SaveMeasurementDataToFileBIN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> SaveMeasurementDataToFileBIN </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Export the measurement data to a binary file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Path to save the file. </td></tr>
+    <tr><td class="paramname">filename</td><td>Filename. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>

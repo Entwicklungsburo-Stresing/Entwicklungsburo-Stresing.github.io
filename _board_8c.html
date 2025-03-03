@@ -588,9 +588,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a5edd99b739fb068476098402846c48f8" id="r_a5edd99b739fb068476098402846c48f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5edd99b739fb068476098402846c48f8">SetS1S2ReadDelay</a> (uint32_t drvno)</td></tr>
 <tr class="memdesc:a5edd99b739fb068476098402846c48f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This functions sets the register S1S2ReadDealy with the setting <a class="el" href="structcamera__settings.html#a725f47b587a2b425688fbd79586b989e">camera_settings::s1s2_read_delay_in_10ns</a>.  <br /></td></tr>
 <tr class="separator:a5edd99b739fb068476098402846c48f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd81863f9fd39e14cf69f0ae79a81639" id="r_acd81863f9fd39e14cf69f0ae79a81639"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd81863f9fd39e14cf69f0ae79a81639">ExportMeasurementHDF5</a> (const char *path, char *filename)</td></tr>
-<tr class="memdesc:acd81863f9fd39e14cf69f0ae79a81639"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports the measurement data to a HDF5 file.  <br /></td></tr>
-<tr class="separator:acd81863f9fd39e14cf69f0ae79a81639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6169b8771b78f8b09e6534cc679fac7f" id="r_a6169b8771b78f8b09e6534cc679fac7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6169b8771b78f8b09e6534cc679fac7f">SaveMeasurementDataToFile</a> (const char *path, char *filename)</td></tr>
+<tr class="memdesc:a6169b8771b78f8b09e6534cc679fac7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the measurement data to a file.  <br /></td></tr>
+<tr class="separator:a6169b8771b78f8b09e6534cc679fac7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0efaf66d518146266ab281f9f4239472" id="r_a0efaf66d518146266ab281f9f4239472"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0efaf66d518146266ab281f9f4239472">SaveMeasurementDataToFileHDF5</a> (const char *path, char *filename)</td></tr>
+<tr class="memdesc:a0efaf66d518146266ab281f9f4239472"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports the measurement data to a HDF5 file.  <br /></td></tr>
+<tr class="separator:a0efaf66d518146266ab281f9f4239472"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91c7d2b275b3a0c3847ec1e79e9f51da" id="r_a91c7d2b275b3a0c3847ec1e79e9f51da"><td class="memItemLeft" align="right" valign="top">hid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91c7d2b275b3a0c3847ec1e79e9f51da">CreateNumericAttribute</a> (hid_t parent_object_id, char *attr_name, hid_t goal_type, hid_t dataspace, const void *data)</td></tr>
 <tr class="separator:a91c7d2b275b3a0c3847ec1e79e9f51da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76edee4da60358bb311e1c1bcf988a53" id="r_a76edee4da60358bb311e1c1bcf988a53"><td class="memItemLeft" align="right" valign="top">hid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76edee4da60358bb311e1c1bcf988a53">CreateStringAttribute</a> (hid_t parent_object_id, char *attr_name, hid_t dataspace, void *data)</td></tr>
@@ -1925,37 +1928,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Exit driver. Call this before exiting software for cleanup. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
-
-</div>
-</div>
-<a id="acd81863f9fd39e14cf69f0ae79a81639" name="acd81863f9fd39e14cf69f0ae79a81639"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd81863f9fd39e14cf69f0ae79a81639">&#9670;&#160;</a></span>ExportMeasurementHDF5()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> ExportMeasurementHDF5 </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Exports the measurement data to a HDF5 file. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">path</td><td>Chosen path to save the file. </td></tr>
-    <tr><td class="paramname">filename</td><td>Chosen filename. </td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
@@ -4670,6 +4642,69 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="a6169b8771b78f8b09e6534cc679fac7f" name="a6169b8771b78f8b09e6534cc679fac7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6169b8771b78f8b09e6534cc679fac7f">&#9670;&#160;</a></span>SaveMeasurementDataToFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> SaveMeasurementDataToFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Export the measurement data to a file. </p>
+<p>Depending on the file extension, the data is saved in a binary or HDF5 file.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Path to save the file. </td></tr>
+    <tr><td class="paramname">filename</td><td>Filename with either .bin or .h5 extension. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="a0efaf66d518146266ab281f9f4239472" name="a0efaf66d518146266ab281f9f4239472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0efaf66d518146266ab281f9f4239472">&#9670;&#160;</a></span>SaveMeasurementDataToFileHDF5()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> SaveMeasurementDataToFileHDF5 </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exports the measurement data to a HDF5 file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Chosen path to save the file. </td></tr>
+    <tr><td class="paramname">filename</td><td>Chosen filename. </td></tr>
   </table>
   </dd>
 </dl>

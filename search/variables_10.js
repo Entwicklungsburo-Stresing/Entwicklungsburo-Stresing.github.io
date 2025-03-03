@@ -15,10 +15,12 @@ var searchData=
   ['sensor_5ftype_12',['sensor_type',['../structcamera__settings.html#a3c95b63babcb2222a271e2cd42b6e057',1,'camera_settings']]],
   ['settings_5fstruct_13',['settings_struct',['../globals_8h.html#af3b701c44f042f5169109f69acbe8d01',1,'settings_struct:&#160;globals.c'],['../globals_8c.html#af3b701c44f042f5169109f69acbe8d01',1,'settings_struct:&#160;globals.c']]],
   ['shift_5fs1s2_5fto_5fnext_5fscan_14',['shift_s1s2_to_next_scan',['../structcamera__settings.html#a02fa99eaf64c0df8af0ffd6ce1b5497c',1,'camera_settings']]],
-  ['split_5fmode_15',['split_mode',['../structfile__header.html#ae0f4d820497a8b527703992eada5a83c',1,'file_header']]],
-  ['sslope_16',['sslope',['../structcamera__settings.html#a6f55940576ecb2bced3027d38676ea5c',1,'camera_settings']]],
-  ['start_5ftimestamp_17',['start_timestamp',['../globals_8h.html#ac4d084be9a8b4b7d84a8ba52be25e064',1,'start_timestamp:&#160;globals.c'],['../globals_8c.html#ac4d084be9a8b4b7d84a8ba52be25e064',1,'start_timestamp:&#160;globals.c']]],
-  ['sti_5fmode_18',['sti_mode',['../structcamera__settings.html#afeb4693c3f62bd567f9063c0412035b5',1,'camera_settings']]],
-  ['sticnt_19',['sticnt',['../structcamera__settings.html#a95629ef99d7173af90b835efd29b4eb9',1,'camera_settings']]],
-  ['stime_5fin_5fmicrosec_20',['stime_in_microsec',['../structcamera__settings.html#a7a10d3d25fafe652f0f6b349f9c2a5fb',1,'camera_settings']]]
+  ['software_5fversion_5fmajor_15',['software_version_major',['../structfile__header.html#a973c9593050fcebe113be3904e27a6ab',1,'file_header']]],
+  ['software_5fversion_5fminor_16',['software_version_minor',['../structfile__header.html#a25f71c307960a3a668c8e9b92663ac8b',1,'file_header']]],
+  ['software_5fversion_5fpcie_17',['software_version_pcie',['../structfile__header.html#abfedd405d9ead4569b79ec6410268691',1,'file_header']]],
+  ['sslope_18',['sslope',['../structcamera__settings.html#a6f55940576ecb2bced3027d38676ea5c',1,'camera_settings']]],
+  ['start_5ftimestamp_19',['start_timestamp',['../globals_8h.html#ac4d084be9a8b4b7d84a8ba52be25e064',1,'start_timestamp:&#160;globals.c'],['../globals_8c.html#ac4d084be9a8b4b7d84a8ba52be25e064',1,'start_timestamp:&#160;globals.c']]],
+  ['sti_5fmode_20',['sti_mode',['../structcamera__settings.html#afeb4693c3f62bd567f9063c0412035b5',1,'camera_settings']]],
+  ['sticnt_21',['sticnt',['../structcamera__settings.html#a95629ef99d7173af90b835efd29b4eb9',1,'camera_settings']]],
+  ['stime_5fin_5fmicrosec_22',['stime_in_microsec',['../structcamera__settings.html#a7a10d3d25fafe652f0f6b349f9c2a5fb',1,'camera_settings']]]
 ];

@@ -97,6 +97,14 @@ $(function(){ initResizable(false); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a973c9593050fcebe113be3904e27a6ab" id="r_a973c9593050fcebe113be3904e27a6ab"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a973c9593050fcebe113be3904e27a6ab">software_version_major</a></td></tr>
+<tr class="separator:a973c9593050fcebe113be3904e27a6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfedd405d9ead4569b79ec6410268691" id="r_abfedd405d9ead4569b79ec6410268691"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfedd405d9ead4569b79ec6410268691">software_version_pcie</a></td></tr>
+<tr class="separator:abfedd405d9ead4569b79ec6410268691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25f71c307960a3a668c8e9b92663ac8b" id="r_a25f71c307960a3a668c8e9b92663ac8b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25f71c307960a3a668c8e9b92663ac8b">software_version_minor</a></td></tr>
+<tr class="separator:a25f71c307960a3a668c8e9b92663ac8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c60c474f865908eba9719aa770766ad" id="r_a3c60c474f865908eba9719aa770766ad"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c60c474f865908eba9719aa770766ad">number_of_boards</a></td></tr>
+<tr class="separator:a3c60c474f865908eba9719aa770766ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fc3cc1a6cd9a92202ead8ab8eeee575" id="r_a6fc3cc1a6cd9a92202ead8ab8eeee575"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fc3cc1a6cd9a92202ead8ab8eeee575">drvno</a></td></tr>
 <tr class="separator:a6fc3cc1a6cd9a92202ead8ab8eeee575"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a684927e3d72f26bfc2f3f0fc4fe50e5a" id="r_a684927e3d72f26bfc2f3f0fc4fe50e5a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a684927e3d72f26bfc2f3f0fc4fe50e5a">pixel</a></td></tr>
@@ -111,10 +119,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a332c184227838eb171b0bca56490b709"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4a7ee4e4d986ebaf0376ea4c06843cc" id="r_ac4a7ee4e4d986ebaf0376ea4c06843cc"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4a7ee4e4d986ebaf0376ea4c06843cc">timestamp</a> [<a class="el" href="enum__settings_8h.html#a4ba27b32532ad58360b3aeec14e84897a70a8971f7acd1d1a63a4ecc42a1fbbd7">file_timestamp_size</a>]</td></tr>
 <tr class="separator:ac4a7ee4e4d986ebaf0376ea4c06843cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61669de7a550d9b249e3d0762425ada3" id="r_a61669de7a550d9b249e3d0762425ada3"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61669de7a550d9b249e3d0762425ada3">filename_full</a> [<a class="el" href="enum__settings_8h.html#a4ba27b32532ad58360b3aeec14e84897a0946dad68dcf9c861b933d4a7837133a">file_filename_full_size</a>]</td></tr>
-<tr class="separator:a61669de7a550d9b249e3d0762425ada3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0f4d820497a8b527703992eada5a83c" id="r_ae0f4d820497a8b527703992eada5a83c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0f4d820497a8b527703992eada5a83c">split_mode</a></td></tr>
-<tr class="separator:ae0f4d820497a8b527703992eada5a83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a3d59692428740a101a5faee4bd1ffef8" name="a3d59692428740a101a5faee4bd1ffef8"></a>
@@ -139,20 +143,6 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">uint32_t file_header::drvno</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a61669de7a550d9b249e3d0762425ada3" name="a61669de7a550d9b249e3d0762425ada3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61669de7a550d9b249e3d0762425ada3">&#9670;&#160;</a></span>filename_full</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char file_header::filename_full[<a class="el" href="enum__settings_8h.html#a4ba27b32532ad58360b3aeec14e84897a0946dad68dcf9c861b933d4a7837133a">file_filename_full_size</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -201,6 +191,20 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a3c60c474f865908eba9719aa770766ad" name="a3c60c474f865908eba9719aa770766ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c60c474f865908eba9719aa770766ad">&#9670;&#160;</a></span>number_of_boards</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t file_header::number_of_boards</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a684927e3d72f26bfc2f3f0fc4fe50e5a" name="a684927e3d72f26bfc2f3f0fc4fe50e5a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a684927e3d72f26bfc2f3f0fc4fe50e5a">&#9670;&#160;</a></span>pixel</h2>
 
@@ -215,14 +219,42 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ae0f4d820497a8b527703992eada5a83c" name="ae0f4d820497a8b527703992eada5a83c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0f4d820497a8b527703992eada5a83c">&#9670;&#160;</a></span>split_mode</h2>
+<a id="a973c9593050fcebe113be3904e27a6ab" name="a973c9593050fcebe113be3904e27a6ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a973c9593050fcebe113be3904e27a6ab">&#9670;&#160;</a></span>software_version_major</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t file_header::split_mode</td>
+          <td class="memname">uint32_t file_header::software_version_major</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a25f71c307960a3a668c8e9b92663ac8b" name="a25f71c307960a3a668c8e9b92663ac8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25f71c307960a3a668c8e9b92663ac8b">&#9670;&#160;</a></span>software_version_minor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t file_header::software_version_minor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abfedd405d9ead4569b79ec6410268691" name="abfedd405d9ead4569b79ec6410268691"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfedd405d9ead4569b79ec6410268691">&#9670;&#160;</a></span>software_version_pcie</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t file_header::software_version_pcie</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -507,9 +507,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a01ec22454cbba97eb4056c4c5d071080" id="r_a01ec22454cbba97eb4056c4c5d071080"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01ec22454cbba97eb4056c4c5d071080">DLLGetGammaBlack</a> ()</td></tr>
 <tr class="memdesc:a01ec22454cbba97eb4056c4c5d071080"><td class="mdescLeft">&#160;</td><td class="mdescRight">return gamma value black        <br /></td></tr>
 <tr class="separator:a01ec22454cbba97eb4056c4c5d071080"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac897b10d6453138847b5b72aa996b7c6" id="r_ac897b10d6453138847b5b72aa996b7c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac897b10d6453138847b5b72aa996b7c6">DLLExportMeasurementHDF5</a> (const char *path, char *filename)</td></tr>
-<tr class="memdesc:ac897b10d6453138847b5b72aa996b7c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports the measurement data to a HDF5 file.     <br /></td></tr>
-<tr class="separator:ac897b10d6453138847b5b72aa996b7c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95c77115b8d6a00d9bbffedcdf6830fb" id="r_a95c77115b8d6a00d9bbffedcdf6830fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95c77115b8d6a00d9bbffedcdf6830fb">DLLSaveMeasurementDataToFile</a> (const char *path, char *filename)</td></tr>
+<tr class="memdesc:a95c77115b8d6a00d9bbffedcdf6830fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the measurement data to a file.     <br /></td></tr>
+<tr class="separator:a95c77115b8d6a00d9bbffedcdf6830fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72b5880c24aca4d29158656141753a81" id="r_a72b5880c24aca4d29158656141753a81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72b5880c24aca4d29158656141753a81">DLLGetScanTriggerDetected</a> (uint32_t drvno, uint8_t *detected)</td></tr>
 <tr class="memdesc:a72b5880c24aca4d29158656141753a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the bit <a class="el" href="enum__hardware_8h.html#a1d179386b40162fc96b96c12da077dd8a701390510b309f4ef826a5828883f658">PCIEFLAGS_bits_t::PCIEFLAGS_bit_scan_trigger_detected</a>.     <br /></td></tr>
 <tr class="separator:a72b5880c24aca4d29158656141753a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2017,37 +2017,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Exit driver. Call this before exiting software for cleanup.    </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
-
-</div>
-</div>
-<a id="ac897b10d6453138847b5b72aa996b7c6" name="ac897b10d6453138847b5b72aa996b7c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac897b10d6453138847b5b72aa996b7c6">&#9670;&#160;</a></span>DLLExportMeasurementHDF5()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLExportMeasurementHDF5 </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Exports the measurement data to a HDF5 file.    </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">path</td><td>Chosen path to save the file. </td></tr>
-    <tr><td class="paramname">filename</td><td>Chosen filename. </td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
@@ -5480,6 +5449,38 @@ Variables</h2></td></tr>
 
 <p>Reset the bit <a class="el" href="enum__hardware_8h.html#a1d179386b40162fc96b96c12da077dd8a701390510b309f4ef826a5828883f658">PCIEFLAGS_bits_t::PCIEFLAGS_bit_scan_trigger_detected</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="a95c77115b8d6a00d9bbffedcdf6830fb" name="a95c77115b8d6a00d9bbffedcdf6830fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95c77115b8d6a00d9bbffedcdf6830fb">&#9670;&#160;</a></span>DLLSaveMeasurementDataToFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLSaveMeasurementDataToFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Export the measurement data to a file.    </p>
+<p>Depending on the file extension, the data is saved in a binary or HDF5 file.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Path to save the file. </td></tr>
+    <tr><td class="paramname">filename</td><td>Filename with either .bin or .h5 extension. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
