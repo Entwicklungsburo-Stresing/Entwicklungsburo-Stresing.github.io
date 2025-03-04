@@ -599,8 +599,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a0efaf66d518146266ab281f9f4239472" id="r_a0efaf66d518146266ab281f9f4239472"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0efaf66d518146266ab281f9f4239472">SaveMeasurementDataToFileHDF5</a> (const char *path, char *filename)</td></tr>
 <tr class="memdesc:a0efaf66d518146266ab281f9f4239472"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports the measurement data to a HDF5 file.  <br /></td></tr>
 <tr class="separator:a0efaf66d518146266ab281f9f4239472"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91c7d2b275b3a0c3847ec1e79e9f51da" id="r_a91c7d2b275b3a0c3847ec1e79e9f51da"><td class="memItemLeft" align="right" valign="top">hid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91c7d2b275b3a0c3847ec1e79e9f51da">CreateNumericAttribute</a> (hid_t parent_object_id, char *attr_name, hid_t goal_type, hid_t dataspace, const void *data)</td></tr>
-<tr class="separator:a91c7d2b275b3a0c3847ec1e79e9f51da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0ab888f283ab47de45f983b45f7b1c4" id="r_aa0ab888f283ab47de45f983b45f7b1c4"><td class="memItemLeft" align="right" valign="top">hid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0ab888f283ab47de45f983b45f7b1c4">CreateNumericAttribute</a> (hid_t parent_object_id, char *attr_name, hid_t goal_type, hid_t dataspace, void *data)</td></tr>
+<tr class="separator:aa0ab888f283ab47de45f983b45f7b1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76edee4da60358bb311e1c1bcf988a53" id="r_a76edee4da60358bb311e1c1bcf988a53"><td class="memItemLeft" align="right" valign="top">hid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76edee4da60358bb311e1c1bcf988a53">CreateStringAttribute</a> (hid_t parent_object_id, char *attr_name, hid_t dataspace, void *data)</td></tr>
 <tr class="separator:a76edee4da60358bb311e1c1bcf988a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdb7de754586d51dedd986f22463f3e9" id="r_acdb7de754586d51dedd986f22463f3e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acdb7de754586d51dedd986f22463f3e9">GetXckLength</a> (uint32_t drvno, uint32_t *xckLengthIn10ns)</td></tr>
@@ -1396,8 +1396,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a91c7d2b275b3a0c3847ec1e79e9f51da" name="a91c7d2b275b3a0c3847ec1e79e9f51da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91c7d2b275b3a0c3847ec1e79e9f51da">&#9670;&#160;</a></span>CreateNumericAttribute()</h2>
+<a id="aa0ab888f283ab47de45f983b45f7b1c4" name="aa0ab888f283ab47de45f983b45f7b1c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0ab888f283ab47de45f983b45f7b1c4">&#9670;&#160;</a></span>CreateNumericAttribute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1425,7 +1425,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
