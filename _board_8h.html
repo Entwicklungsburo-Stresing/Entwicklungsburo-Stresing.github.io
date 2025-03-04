@@ -159,6 +159,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ac82bfa2c1dada573145ec331d493cd92" id="r_ac82bfa2c1dada573145ec331d493cd92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac82bfa2c1dada573145ec331d493cd92">ExitDriver</a> ()</td></tr>
 <tr class="memdesc:ac82bfa2c1dada573145ec331d493cd92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit driver. Call this before exiting software for cleanup.  <br /></td></tr>
 <tr class="separator:ac82bfa2c1dada573145ec331d493cd92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acca5c9f806db4be37a93fbd3909909c7" id="r_acca5c9f806db4be37a93fbd3909909c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acca5c9f806db4be37a93fbd3909909c7">ImportMeasurementDataFromFile</a> (const char *filename)</td></tr>
+<tr class="separator:acca5c9f806db4be37a93fbd3909909c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeb58bc15c02eef3d59610e376e4aa50" id="r_aeeb58bc15c02eef3d59610e376e4aa50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeeb58bc15c02eef3d59610e376e4aa50">ImportMeasurementDataFromFileBIN</a> (const char *filename)</td></tr>
+<tr class="separator:aeeb58bc15c02eef3d59610e376e4aa50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc0bb8f2058df16be0d0259a62188dc7" id="r_abc0bb8f2058df16be0d0259a62188dc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc0bb8f2058df16be0d0259a62188dc7">setBlockEn</a> (uint32_t drvno)</td></tr>
 <tr class="memdesc:abc0bb8f2058df16be0d0259a62188dc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets BlockOn bit in PCIEFLAGS and notifies UI about it.  <br /></td></tr>
 <tr class="separator:abc0bb8f2058df16be0d0259a62188dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -531,8 +535,6 @@ Functions</h2></td></tr>
 <tr class="separator:aa0ab888f283ab47de45f983b45f7b1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76edee4da60358bb311e1c1bcf988a53" id="r_a76edee4da60358bb311e1c1bcf988a53"><td class="memItemLeft" align="right" valign="top">hid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76edee4da60358bb311e1c1bcf988a53">CreateStringAttribute</a> (hid_t parent_object_id, char *attr_name, hid_t dataspace, void *data)</td></tr>
 <tr class="separator:a76edee4da60358bb311e1c1bcf988a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f1b153582bb1089d261e1593344afed" id="r_a0f1b153582bb1089d261e1593344afed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f1b153582bb1089d261e1593344afed">CheckFirstMeasurementDone</a> (uint32_t drvno)</td></tr>
-<tr class="separator:a0f1b153582bb1089d261e1593344afed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec5474020221a82531e503f7fcd1ee38" id="r_aec5474020221a82531e503f7fcd1ee38"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec5474020221a82531e503f7fcd1ee38">CalcMeasureTimeInSeconds</a> (uint32_t nos, uint32_t nob, double exposure_time_in_ms)</td></tr>
 <tr class="memdesc:aec5474020221a82531e503f7fcd1ee38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the theoretical time needed for one measurement.  <br /></td></tr>
 <tr class="separator:aec5474020221a82531e503f7fcd1ee38"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1029,23 +1031,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
-
-</div>
-</div>
-<a id="a0f1b153582bb1089d261e1593344afed" name="a0f1b153582bb1089d261e1593344afed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f1b153582bb1089d261e1593344afed">&#9670;&#160;</a></span>CheckFirstMeasurementDone()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> CheckFirstMeasurementDone </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -3214,6 +3199,40 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="acca5c9f806db4be37a93fbd3909909c7" name="acca5c9f806db4be37a93fbd3909909c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acca5c9f806db4be37a93fbd3909909c7">&#9670;&#160;</a></span>ImportMeasurementDataFromFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> ImportMeasurementDataFromFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeeb58bc15c02eef3d59610e376e4aa50" name="aeeb58bc15c02eef3d59610e376e4aa50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeb58bc15c02eef3d59610e376e4aa50">&#9670;&#160;</a></span>ImportMeasurementDataFromFileBIN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> ImportMeasurementDataFromFileBIN </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
