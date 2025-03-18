@@ -96,218 +96,219 @@ $(function(){ initResizable(false); });
 <a href="_direct2d_viewer_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*****************************************************************/</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifndef MINIMAL_BUILD</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// Modify the following defines if you have to target a platform prior to the ones specified below.</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// Refer to MSDN for the latest info on corresponding values for different platforms.</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifndef WINVER              </span><span class="comment">// Allow use of features specific to Windows 7 or later.</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="_direct2d_viewer_8h.html#a966cd377b9f3fdeb1432460c33352af1">   18</a></span><span class="preprocessor">#define WINVER 0x0700       </span><span class="comment">// Change this to the appropriate value to target other versions of Windows.</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#ifndef _WIN32_WINNT        </span><span class="comment">// Allow use of features specific to Windows 7 or later.</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="_direct2d_viewer_8h.html#ac50762666aa00bd3a4308158510f1748">   22</a></span><span class="preprocessor">#define _WIN32_WINNT 0x0A00 </span><span class="comment">// Change this to the appropriate value to target other versions of Windows.</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#ifndef UNICODE</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="_direct2d_viewer_8h.html#a09ecca53f2cd1b8d1c566bedb245e141">   26</a></span><span class="preprocessor">#define UNICODE</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="_direct2d_viewer_8h.html#ac7bef5d85e3dcd73eef56ad39ffc84a9">   29</a></span><span class="preprocessor">#define WIN32_LEAN_AND_MEAN     </span><span class="comment">// Exclude rarely-used stuff from Windows headers</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">// Windows Header Files:</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;Windows.h&gt;</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;Windowsx.h&gt;</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">// C RunTime Header Files</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;malloc.h&gt;</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;memory.h&gt;</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &lt;wchar.h&gt;</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &lt;math.h&gt;</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#include &lt;d2d1.h&gt;</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#include &lt;d2d1helper.h&gt;</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#include &lt;dwrite.h&gt;</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#include &lt;wincodec.h&gt;</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#include &lt;d2d1_1.h&gt;</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">/******************************************************************</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">*                                                                 *</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">*  Macros                                                         *</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">*                                                                 *</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">******************************************************************/</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> Interface&gt;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">inline</span> <span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="_direct2d_viewer_8h.html#a5372b6d9be095d35b1ce2b8e6cbcb982">   55</a></span><a class="code hl_function" href="_direct2d_viewer_8h.html#a5372b6d9be095d35b1ce2b8e6cbcb982">SafeRelease</a>(</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    Interface **ppInterfaceToRelease</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>)</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>{</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">if</span> (*ppInterfaceToRelease != NULL)</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    {</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        (*ppInterfaceToRelease)-&gt;Release();</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        (*ppInterfaceToRelease) = NULL;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifndef MINIMAL_BUILD</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// Modify the following defines if you have to target a platform prior to the ones specified below.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// Refer to MSDN for the latest info on corresponding values for different platforms.</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#ifndef WINVER              </span><span class="comment">// Allow use of features specific to Windows 7 or later.</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="_direct2d_viewer_8h.html#a966cd377b9f3fdeb1432460c33352af1">   19</a></span><span class="preprocessor">#define WINVER 0x0700       </span><span class="comment">// Change this to the appropriate value to target other versions of Windows.</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#ifndef _WIN32_WINNT        </span><span class="comment">// Allow use of features specific to Windows 7 or later.</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="_direct2d_viewer_8h.html#ac50762666aa00bd3a4308158510f1748">   23</a></span><span class="preprocessor">#define _WIN32_WINNT 0x0A00 </span><span class="comment">// Change this to the appropriate value to target other versions of Windows.</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#ifndef UNICODE</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="_direct2d_viewer_8h.html#a09ecca53f2cd1b8d1c566bedb245e141">   27</a></span><span class="preprocessor">#define UNICODE</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="_direct2d_viewer_8h.html#ac7bef5d85e3dcd73eef56ad39ffc84a9">   30</a></span><span class="preprocessor">#define WIN32_LEAN_AND_MEAN     </span><span class="comment">// Exclude rarely-used stuff from Windows headers</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// Windows Header Files:</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;Windows.h&gt;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;Windowsx.h&gt;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">// C RunTime Header Files</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;malloc.h&gt;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &lt;memory.h&gt;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &lt;wchar.h&gt;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &lt;math.h&gt;</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#include &lt;d2d1.h&gt;</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#include &lt;d2d1helper.h&gt;</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#include &lt;dwrite.h&gt;</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#include &lt;wincodec.h&gt;</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#include &lt;d2d1_1.h&gt;</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">/******************************************************************</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">*                                                                 *</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">*  Macros                                                         *</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">*                                                                 *</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">******************************************************************/</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> Interface&gt;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">inline</span> <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00056" data-start="{" data-end="}">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="_direct2d_viewer_8h.html#a5372b6d9be095d35b1ce2b8e6cbcb982">   56</a></span><a class="code hl_function" href="_direct2d_viewer_8h.html#a5372b6d9be095d35b1ce2b8e6cbcb982">SafeRelease</a>(</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    Interface **ppInterfaceToRelease</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>)</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>{</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">if</span> (*ppInterfaceToRelease != NULL)</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        (*ppInterfaceToRelease)-&gt;Release();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        (*ppInterfaceToRelease) = NULL;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
 </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#ifndef Assert</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#if defined( DEBUG ) || defined( _DEBUG )</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#define Assert(b) do {if (!(b)) {OutputDebugStringA(&quot;Assert: &quot; #b &quot;\n&quot;);}} while(0)</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="_direct2d_viewer_8h.html#a65b2d8df471769bc63eb180f240b144d">   71</a></span><span class="preprocessor">#define Assert(b)</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#endif </span><span class="comment">//DEBUG || _DEBUG</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#ifndef Assert</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#if defined( DEBUG ) || defined( _DEBUG )</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#define Assert(b) do {if (!(b)) {OutputDebugStringA(&quot;Assert: &quot; #b &quot;\n&quot;);}} while(0)</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="_direct2d_viewer_8h.html#a65b2d8df471769bc63eb180f240b144d">   72</a></span><span class="preprocessor">#define Assert(b)</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#endif </span><span class="comment">//DEBUG || _DEBUG</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="preprocessor">#ifndef HINST_THISCOMPONENT</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="_direct2d_viewer_8h.html#aa18247f58cfcd71b4b5e6e8463122029">   77</a></span>EXTERN_C IMAGE_DOS_HEADER <a class="code hl_variable" href="_direct2d_viewer_8h.html#aa18247f58cfcd71b4b5e6e8463122029">__ImageBase</a>;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="_direct2d_viewer_8h.html#a53cf7ffb5ff6b778335db18cdfa0f691">   78</a></span><span class="preprocessor">#define HINST_THISCOMPONENT ((HINSTANCE)&amp;__ImageBase)</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="_direct2d_viewer_8h.html#a227784ca9e7da70cab65ba13d19a484b">   81</a></span><span class="preprocessor">#define WM_2DVIEWER_CLOSED (WM_USER + 0x0001)</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">/******************************************************************</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">*                                                                 *</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">*  Direct2dViewer                                                 *</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">*                                                                 *</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">******************************************************************/</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="foldopen" id="foldopen00088" data-start="{" data-end="};">
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_direct2d_viewer.html">   88</a></span><span class="keyword">class </span><a class="code hl_function" href="class_direct2d_viewer.html#a7a9bc8a513c180eaab64d8602f9acc37">Direct2dViewer</a></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>{</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <a class="code hl_function" href="class_direct2d_viewer.html#a7a9bc8a513c180eaab64d8602f9acc37">Direct2dViewer</a>();</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <a class="code hl_function" href="class_direct2d_viewer.html#a58f53d762f0bbddda8abae6927d86023">~Direct2dViewer</a>();</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    HRESULT <a class="code hl_function" href="class_direct2d_viewer.html#a94630501e36d47f3bcd1de86e1cce2b0">start2dViewer</a></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    (</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        HWND hWndParent,</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="keywordtype">void</span> *bitmapAddr,</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        UINT width,</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        UINT height</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    );</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_direct2d_viewer.html#a3153e9960bb0922a1da59357db43f2ee">showNewBitmap</a></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    (</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordtype">void</span> *addr,</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        UINT width,</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        UINT height</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    );</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_direct2d_viewer.html#ab1e069e1a726164ef7f8c836f0d13e31">repaintWindow</a>();</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    HWND <a class="code hl_function" href="class_direct2d_viewer.html#a80b76d2c3f1cb0b01be97f1b28827f43">getWindowHandler</a>();</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_direct2d_viewer.html#ad2ef844312178335205f9b1e705e39ce">SetGammaValue</a></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    (</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        UINT16 white,</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        UINT16 black</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    );</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    UINT16 <a class="code hl_function" href="class_direct2d_viewer.html#aa4e00912b4c1dfc82cc0919bd611ec5d">GetGammaWhite</a>();</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    UINT16 <a class="code hl_function" href="class_direct2d_viewer.html#a85de5b74a95a40dd71d9ffd44bb394bf">GetGammaBlack</a>();</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    HRESULT Initialize( HWND hWndParent );</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keywordtype">void</span> setBitmapSource</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    (</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        <span class="keywordtype">void</span> *addr,</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        UINT width,</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        UINT height</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    );</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    HRESULT loadBitmap();</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    HRESULT CreateDeviceIndependentResources();</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    HRESULT CreateDeviceResources();</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keywordtype">void</span> DiscardDeviceResources();</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    HRESULT OnRender();</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordtype">void</span> OnResize(</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        UINT width,</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        UINT height</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    );</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keyword">static</span> LRESULT CALLBACK WndProc(</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        HWND hWnd,</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        UINT message,</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        WPARAM wParam,</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        LPARAM lParam</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    );</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keywordtype">void</span> CalcCursorPos();</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <span class="keywordtype">void</span> DrawScale();</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keywordtype">void</span> DrawVerticalLine(</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        D2D1_POINT_2F startPoint,</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        FLOAT length,</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        FLOAT strokeWidth</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    );</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keywordtype">void</span> DrawHorizontalLine(</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        D2D1_POINT_2F startPoint,</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        FLOAT length,</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        FLOAT strokeWidth</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    );</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keywordtype">void</span> DrawNumber(</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        D2D1_POINT_2F location,</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        <span class="keywordtype">int</span> number</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    );</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <span class="keywordtype">void</span> Scale_setSkipLines(</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <span class="keywordtype">int</span> x,</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="keywordtype">int</span> y</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    );</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    HWND m_hwnd;</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    ID2D1Factory *m_pD2DFactory;</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    IWICImagingFactory *m_pWICFactory;</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    IDWriteFactory *m_pDWriteFactory;</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    ID2D1HwndRenderTarget *m_pRenderTarget;</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    IDWriteTextFormat *m_pTextFormat;</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    IDWriteTextFormat *m_pTextFormat_scale;</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    ID2D1SolidColorBrush *m_pBlackBrush;</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    ID2D1Bitmap *m_pBitmap;</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="keyword">struct </span>_Scale</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    {</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        FLOAT length = 12;</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        FLOAT width = 1;</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        FLOAT distance_x = 10;</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        FLOAT distance_y = 10;</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        <span class="keywordtype">int</span> skip_x = 25;</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        <span class="keywordtype">int</span> skip_y = 5;</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    } _scale;</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <span class="keyword">struct </span>_Gamma</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    {</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        FLOAT amplitude = 1;</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        INT32 offset = 0;</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        UINT16 white = 0xFFFF;</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        UINT16 black = 0;</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    } _gamma;</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <span class="keyword">const</span> <span class="keyword">struct </span>_Margin</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    {</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        FLOAT top = 0;</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        FLOAT left = 35;</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        FLOAT bottom = 50;</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        FLOAT right = 0;</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    } _margin;</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="keyword">struct </span>_CursorPos</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    {</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        <span class="comment">// relative position to upper left corner of direct2d window</span></div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        <span class="keywordtype">int</span> x = 0;</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        <span class="keywordtype">int</span> y = 0;</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        <span class="comment">// position in camera data</span></div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        <span class="keywordtype">int</span> pixel = 0;</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        <span class="keywordtype">int</span> line = 0;</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    } _cursorPos;</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <span class="keyword">struct </span>_BitmapSource</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    {</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        <span class="keywordtype">void</span>    *addr;</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        UINT    width;</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        UINT    height;</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    } _bitmapSource;</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>};</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#ifndef HINST_THISCOMPONENT</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="_direct2d_viewer_8h.html#aa18247f58cfcd71b4b5e6e8463122029">   78</a></span>EXTERN_C IMAGE_DOS_HEADER <a class="code hl_variable" href="_direct2d_viewer_8h.html#aa18247f58cfcd71b4b5e6e8463122029">__ImageBase</a>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="_direct2d_viewer_8h.html#a53cf7ffb5ff6b778335db18cdfa0f691">   79</a></span><span class="preprocessor">#define HINST_THISCOMPONENT ((HINSTANCE)&amp;__ImageBase)</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="_direct2d_viewer_8h.html#a227784ca9e7da70cab65ba13d19a484b">   82</a></span><span class="preprocessor">#define WM_2DVIEWER_CLOSED (WM_USER + 0x0001)</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">/******************************************************************</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">*                                                                 *</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">*  Direct2dViewer                                                 *</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">*                                                                 *</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">******************************************************************/</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="foldopen" id="foldopen00089" data-start="{" data-end="};">
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="class_direct2d_viewer.html">   89</a></span><span class="keyword">class </span><a class="code hl_function" href="class_direct2d_viewer.html#a7a9bc8a513c180eaab64d8602f9acc37">Direct2dViewer</a></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>{</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <a class="code hl_function" href="class_direct2d_viewer.html#a7a9bc8a513c180eaab64d8602f9acc37">Direct2dViewer</a>();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <a class="code hl_function" href="class_direct2d_viewer.html#a58f53d762f0bbddda8abae6927d86023">~Direct2dViewer</a>();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    HRESULT <a class="code hl_function" href="class_direct2d_viewer.html#a94630501e36d47f3bcd1de86e1cce2b0">start2dViewer</a></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    (</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        HWND hWndParent,</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="keywordtype">void</span> *bitmapAddr,</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        UINT width,</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        UINT height</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    );</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_direct2d_viewer.html#a3153e9960bb0922a1da59357db43f2ee">showNewBitmap</a></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    (</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="keywordtype">void</span> *addr,</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        UINT width,</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        UINT height</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    );</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_direct2d_viewer.html#ab1e069e1a726164ef7f8c836f0d13e31">repaintWindow</a>();</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    HWND <a class="code hl_function" href="class_direct2d_viewer.html#a80b76d2c3f1cb0b01be97f1b28827f43">getWindowHandler</a>();</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_direct2d_viewer.html#ad2ef844312178335205f9b1e705e39ce">SetGammaValue</a></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    (</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        UINT16 white,</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        UINT16 black</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    );</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    UINT16 <a class="code hl_function" href="class_direct2d_viewer.html#aa4e00912b4c1dfc82cc0919bd611ec5d">GetGammaWhite</a>();</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    UINT16 <a class="code hl_function" href="class_direct2d_viewer.html#a85de5b74a95a40dd71d9ffd44bb394bf">GetGammaBlack</a>();</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    HRESULT Initialize( HWND hWndParent );</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordtype">void</span> setBitmapSource</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    (</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keywordtype">void</span> *addr,</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        UINT width,</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        UINT height</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    );</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    HRESULT loadBitmap();</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    HRESULT CreateDeviceIndependentResources();</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    HRESULT CreateDeviceResources();</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keywordtype">void</span> DiscardDeviceResources();</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    HRESULT OnRender();</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordtype">void</span> OnResize(</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        UINT width,</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        UINT height</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    );</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keyword">static</span> LRESULT CALLBACK WndProc(</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        HWND hWnd,</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        UINT message,</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        WPARAM wParam,</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        LPARAM lParam</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    );</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <span class="keywordtype">void</span> CalcCursorPos();</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keywordtype">void</span> DrawScale();</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keywordtype">void</span> DrawVerticalLine(</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        D2D1_POINT_2F startPoint,</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        FLOAT length,</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        FLOAT strokeWidth</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    );</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keywordtype">void</span> DrawHorizontalLine(</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        D2D1_POINT_2F startPoint,</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        FLOAT length,</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        FLOAT strokeWidth</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    );</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="keywordtype">void</span> DrawNumber(</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        D2D1_POINT_2F location,</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <span class="keywordtype">int</span> number</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    );</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <span class="keywordtype">void</span> Scale_setSkipLines(</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="keywordtype">int</span> x,</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        <span class="keywordtype">int</span> y</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    );</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    HWND m_hwnd;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    ID2D1Factory *m_pD2DFactory;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    IWICImagingFactory *m_pWICFactory;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    IDWriteFactory *m_pDWriteFactory;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    ID2D1HwndRenderTarget *m_pRenderTarget;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    IDWriteTextFormat *m_pTextFormat;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    IDWriteTextFormat *m_pTextFormat_scale;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    ID2D1SolidColorBrush *m_pBlackBrush;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    ID2D1Bitmap *m_pBitmap;</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keyword">struct </span>_Scale</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    {</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        FLOAT length = 12;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        FLOAT width = 1;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        FLOAT distance_x = 10;</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        FLOAT distance_y = 10;</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        <span class="keywordtype">int</span> skip_x = 25;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        <span class="keywordtype">int</span> skip_y = 5;</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    } _scale;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <span class="keyword">struct </span>_Gamma</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    {</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        FLOAT amplitude = 1;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        INT32 offset = 0;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        UINT16 white = 0xFFFF;</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        UINT16 black = 0;</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    } _gamma;</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <span class="keyword">const</span> <span class="keyword">struct </span>_Margin</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    {</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        FLOAT top = 0;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        FLOAT left = 35;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        FLOAT bottom = 50;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        FLOAT right = 0;</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    } _margin;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keyword">struct </span>_CursorPos</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    {</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        <span class="comment">// relative position to upper left corner of direct2d window</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        <span class="keywordtype">int</span> x = 0;</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        <span class="keywordtype">int</span> y = 0;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        <span class="comment">// position in camera data</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        <span class="keywordtype">int</span> pixel = 0;</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        <span class="keywordtype">int</span> line = 0;</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    } _cursorPos;</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keyword">struct </span>_BitmapSource</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    {</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        <span class="keywordtype">void</span>    *addr;</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        UINT    width;</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        UINT    height;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    } _bitmapSource;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>};</div>
 </div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="a_direct2d_viewer_8h_html_a5372b6d9be095d35b1ce2b8e6cbcb982"><div class="ttname"><a href="_direct2d_viewer_8h.html#a5372b6d9be095d35b1ce2b8e6cbcb982">SafeRelease</a></div><div class="ttdeci">void SafeRelease(Interface **ppInterfaceToRelease)</div><div class="ttdef"><b>Definition</b> Direct2dViewer.h:55</div></div>
-<div class="ttc" id="a_direct2d_viewer_8h_html_aa18247f58cfcd71b4b5e6e8463122029"><div class="ttname"><a href="_direct2d_viewer_8h.html#aa18247f58cfcd71b4b5e6e8463122029">__ImageBase</a></div><div class="ttdeci">EXTERN_C IMAGE_DOS_HEADER __ImageBase</div><div class="ttdef"><b>Definition</b> Direct2dViewer.h:77</div></div>
-<div class="ttc" id="aclass_direct2d_viewer_html_a3153e9960bb0922a1da59357db43f2ee"><div class="ttname"><a href="class_direct2d_viewer.html#a3153e9960bb0922a1da59357db43f2ee">Direct2dViewer::showNewBitmap</a></div><div class="ttdeci">void showNewBitmap(void *addr, UINT width, UINT height)</div><div class="ttdoc">Show a new bitmap in 2d viewer.</div><div class="ttdef"><b>Definition</b> Direct2dViewer.cpp:579</div></div>
-<div class="ttc" id="aclass_direct2d_viewer_html_a58f53d762f0bbddda8abae6927d86023"><div class="ttname"><a href="class_direct2d_viewer.html#a58f53d762f0bbddda8abae6927d86023">Direct2dViewer::~Direct2dViewer</a></div><div class="ttdeci">~Direct2dViewer()</div><div class="ttdoc">Release resources.</div><div class="ttdef"><b>Definition</b> Direct2dViewer.cpp:43</div></div>
-<div class="ttc" id="aclass_direct2d_viewer_html_a7a9bc8a513c180eaab64d8602f9acc37"><div class="ttname"><a href="class_direct2d_viewer.html#a7a9bc8a513c180eaab64d8602f9acc37">Direct2dViewer::Direct2dViewer</a></div><div class="ttdeci">Direct2dViewer()</div><div class="ttdoc">Initialize members.</div><div class="ttdef"><b>Definition</b> Direct2dViewer.cpp:27</div></div>
-<div class="ttc" id="aclass_direct2d_viewer_html_a80b76d2c3f1cb0b01be97f1b28827f43"><div class="ttname"><a href="class_direct2d_viewer.html#a80b76d2c3f1cb0b01be97f1b28827f43">Direct2dViewer::getWindowHandler</a></div><div class="ttdeci">HWND getWindowHandler()</div><div class="ttdoc">Returns the window handler of 2d viewer.</div><div class="ttdef"><b>Definition</b> Direct2dViewer.cpp:520</div></div>
-<div class="ttc" id="aclass_direct2d_viewer_html_a85de5b74a95a40dd71d9ffd44bb394bf"><div class="ttname"><a href="class_direct2d_viewer.html#a85de5b74a95a40dd71d9ffd44bb394bf">Direct2dViewer::GetGammaBlack</a></div><div class="ttdeci">UINT16 GetGammaBlack()</div><div class="ttdoc">return gamma value black</div><div class="ttdef"><b>Definition</b> Direct2dViewer.cpp:551</div></div>
-<div class="ttc" id="aclass_direct2d_viewer_html_a94630501e36d47f3bcd1de86e1cce2b0"><div class="ttname"><a href="class_direct2d_viewer.html#a94630501e36d47f3bcd1de86e1cce2b0">Direct2dViewer::start2dViewer</a></div><div class="ttdeci">HRESULT start2dViewer(HWND hWndParent, void *bitmapAddr, UINT width, UINT height)</div><div class="ttdoc">Starts 2d viewer with a initial bitmap. Use this to start 2d viewer. Call constructor before.</div><div class="ttdef"><b>Definition</b> Direct2dViewer.cpp:564</div></div>
-<div class="ttc" id="aclass_direct2d_viewer_html_aa4e00912b4c1dfc82cc0919bd611ec5d"><div class="ttname"><a href="class_direct2d_viewer.html#aa4e00912b4c1dfc82cc0919bd611ec5d">Direct2dViewer::GetGammaWhite</a></div><div class="ttdeci">UINT16 GetGammaWhite()</div><div class="ttdoc">return gamma value white</div><div class="ttdef"><b>Definition</b> Direct2dViewer.cpp:543</div></div>
-<div class="ttc" id="aclass_direct2d_viewer_html_ab1e069e1a726164ef7f8c836f0d13e31"><div class="ttname"><a href="class_direct2d_viewer.html#ab1e069e1a726164ef7f8c836f0d13e31">Direct2dViewer::repaintWindow</a></div><div class="ttdeci">void repaintWindow()</div><div class="ttdoc">Reload the displayed bitmap in 2d viewer.</div><div class="ttdef"><b>Definition</b> Direct2dViewer.cpp:591</div></div>
-<div class="ttc" id="aclass_direct2d_viewer_html_ad2ef844312178335205f9b1e705e39ce"><div class="ttname"><a href="class_direct2d_viewer.html#ad2ef844312178335205f9b1e705e39ce">Direct2dViewer::SetGammaValue</a></div><div class="ttdeci">void SetGammaValue(UINT16 white, UINT16 black)</div><div class="ttdoc">Set gamma value.</div><div class="ttdef"><b>Definition</b> Direct2dViewer.cpp:530</div></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_direct2d_viewer_8h_html_a5372b6d9be095d35b1ce2b8e6cbcb982"><div class="ttname"><a href="_direct2d_viewer_8h.html#a5372b6d9be095d35b1ce2b8e6cbcb982">SafeRelease</a></div><div class="ttdeci">void SafeRelease(Interface **ppInterfaceToRelease)</div><div class="ttdef"><b>Definition</b> Direct2dViewer.h:56</div></div>
+<div class="ttc" id="a_direct2d_viewer_8h_html_aa18247f58cfcd71b4b5e6e8463122029"><div class="ttname"><a href="_direct2d_viewer_8h.html#aa18247f58cfcd71b4b5e6e8463122029">__ImageBase</a></div><div class="ttdeci">EXTERN_C IMAGE_DOS_HEADER __ImageBase</div><div class="ttdef"><b>Definition</b> Direct2dViewer.h:78</div></div>
+<div class="ttc" id="aclass_direct2d_viewer_html_a3153e9960bb0922a1da59357db43f2ee"><div class="ttname"><a href="class_direct2d_viewer.html#a3153e9960bb0922a1da59357db43f2ee">Direct2dViewer::showNewBitmap</a></div><div class="ttdeci">void showNewBitmap(void *addr, UINT width, UINT height)</div><div class="ttdoc">Show a new bitmap in 2d viewer.</div><div class="ttdef"><b>Definition</b> Direct2dViewer.cpp:565</div></div>
+<div class="ttc" id="aclass_direct2d_viewer_html_a58f53d762f0bbddda8abae6927d86023"><div class="ttname"><a href="class_direct2d_viewer.html#a58f53d762f0bbddda8abae6927d86023">Direct2dViewer::~Direct2dViewer</a></div><div class="ttdeci">~Direct2dViewer()</div><div class="ttdoc">Release resources.</div><div class="ttdef"><b>Definition</b> Direct2dViewer.cpp:29</div></div>
+<div class="ttc" id="aclass_direct2d_viewer_html_a7a9bc8a513c180eaab64d8602f9acc37"><div class="ttname"><a href="class_direct2d_viewer.html#a7a9bc8a513c180eaab64d8602f9acc37">Direct2dViewer::Direct2dViewer</a></div><div class="ttdeci">Direct2dViewer()</div><div class="ttdoc">Initialize members.</div><div class="ttdef"><b>Definition</b> Direct2dViewer.cpp:13</div></div>
+<div class="ttc" id="aclass_direct2d_viewer_html_a80b76d2c3f1cb0b01be97f1b28827f43"><div class="ttname"><a href="class_direct2d_viewer.html#a80b76d2c3f1cb0b01be97f1b28827f43">Direct2dViewer::getWindowHandler</a></div><div class="ttdeci">HWND getWindowHandler()</div><div class="ttdoc">Returns the window handler of 2d viewer.</div><div class="ttdef"><b>Definition</b> Direct2dViewer.cpp:506</div></div>
+<div class="ttc" id="aclass_direct2d_viewer_html_a85de5b74a95a40dd71d9ffd44bb394bf"><div class="ttname"><a href="class_direct2d_viewer.html#a85de5b74a95a40dd71d9ffd44bb394bf">Direct2dViewer::GetGammaBlack</a></div><div class="ttdeci">UINT16 GetGammaBlack()</div><div class="ttdoc">return gamma value black</div><div class="ttdef"><b>Definition</b> Direct2dViewer.cpp:537</div></div>
+<div class="ttc" id="aclass_direct2d_viewer_html_a94630501e36d47f3bcd1de86e1cce2b0"><div class="ttname"><a href="class_direct2d_viewer.html#a94630501e36d47f3bcd1de86e1cce2b0">Direct2dViewer::start2dViewer</a></div><div class="ttdeci">HRESULT start2dViewer(HWND hWndParent, void *bitmapAddr, UINT width, UINT height)</div><div class="ttdoc">Starts 2d viewer with a initial bitmap. Use this to start 2d viewer. Call constructor before.</div><div class="ttdef"><b>Definition</b> Direct2dViewer.cpp:550</div></div>
+<div class="ttc" id="aclass_direct2d_viewer_html_aa4e00912b4c1dfc82cc0919bd611ec5d"><div class="ttname"><a href="class_direct2d_viewer.html#aa4e00912b4c1dfc82cc0919bd611ec5d">Direct2dViewer::GetGammaWhite</a></div><div class="ttdeci">UINT16 GetGammaWhite()</div><div class="ttdoc">return gamma value white</div><div class="ttdef"><b>Definition</b> Direct2dViewer.cpp:529</div></div>
+<div class="ttc" id="aclass_direct2d_viewer_html_ab1e069e1a726164ef7f8c836f0d13e31"><div class="ttname"><a href="class_direct2d_viewer.html#ab1e069e1a726164ef7f8c836f0d13e31">Direct2dViewer::repaintWindow</a></div><div class="ttdeci">void repaintWindow()</div><div class="ttdoc">Reload the displayed bitmap in 2d viewer.</div><div class="ttdef"><b>Definition</b> Direct2dViewer.cpp:577</div></div>
+<div class="ttc" id="aclass_direct2d_viewer_html_ad2ef844312178335205f9b1e705e39ce"><div class="ttname"><a href="class_direct2d_viewer.html#ad2ef844312178335205f9b1e705e39ce">Direct2dViewer::SetGammaValue</a></div><div class="ttdeci">void SetGammaValue(UINT16 white, UINT16 black)</div><div class="ttdoc">Set gamma value.</div><div class="ttdef"><b>Definition</b> Direct2dViewer.cpp:516</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

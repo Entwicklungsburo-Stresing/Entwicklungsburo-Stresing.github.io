@@ -243,9 +243,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a5278979fb4afa78543c910e6f0c9df60" id="r_a5278979fb4afa78543c910e6f0c9df60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5278979fb4afa78543c910e6f0c9df60">SetBTI</a> (uint32_t drvno, uint8_t bti_mode)</td></tr>
 <tr class="memdesc:a5278979fb4afa78543c910e6f0c9df60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Chooses trigger input for block trigger input (BTI)  <br /></td></tr>
 <tr class="separator:a5278979fb4afa78543c910e6f0c9df60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab706daa24061993b9b2019a28f6851cb" id="r_ab706daa24061993b9b2019a28f6851cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab706daa24061993b9b2019a28f6851cb">SetSTimer</a> (uint32_t drvno, uint32_t stime_in_microseconds)</td></tr>
-<tr class="memdesc:ab706daa24061993b9b2019a28f6851cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets time for scan timer.  <br /></td></tr>
-<tr class="separator:ab706daa24061993b9b2019a28f6851cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae876bc909e21408695a5adeb6c1fafb6" id="r_ae876bc909e21408695a5adeb6c1fafb6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae876bc909e21408695a5adeb6c1fafb6">SetSTimer</a> (uint32_t drvno, uint32_t stime, uint8_t resolution_mode)</td></tr>
+<tr class="memdesc:ae876bc909e21408695a5adeb6c1fafb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets time for scan timer.  <br /></td></tr>
+<tr class="separator:ae876bc909e21408695a5adeb6c1fafb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a588df64ca43eadc51318f07e3338c9b6" id="r_a588df64ca43eadc51318f07e3338c9b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a588df64ca43eadc51318f07e3338c9b6">SetBTimer</a> (uint32_t drvno, uint32_t btime_in_microseconds)</td></tr>
 <tr class="memdesc:a588df64ca43eadc51318f07e3338c9b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets time for block timer.  <br /></td></tr>
 <tr class="separator:a588df64ca43eadc51318f07e3338c9b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5770,8 +5770,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab706daa24061993b9b2019a28f6851cb" name="ab706daa24061993b9b2019a28f6851cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab706daa24061993b9b2019a28f6851cb">&#9670;&#160;</a></span>SetSTimer()</h2>
+<a id="ae876bc909e21408695a5adeb6c1fafb6" name="ae876bc909e21408695a5adeb6c1fafb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae876bc909e21408695a5adeb6c1fafb6">&#9670;&#160;</a></span>SetSTimer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5784,7 +5784,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>stime_in_microseconds</em></span>&#160;)</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>stime</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>resolution_mode</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5793,7 +5798,8 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
-    <tr><td class="paramname">stime_in_microseconds</td><td>Scan time in microseconds, 28 bit. Min: 1 us, Max: 268.435.455 us = 268,435.455 s </td></tr>
+    <tr><td class="paramname">stime</td><td>Trigger time. The resolution of the time depends on resolution_mode. 28 bit. </td></tr>
+    <tr><td class="paramname">resolution_mode</td><td>Resolution of the time. See <a class="el" href="enum__settings_8h.html#a8538a9295cd91432bef17fd4afbd73d6">stimer_resolution_t</a> in enum.h for options. </td></tr>
   </table>
   </dd>
 </dl>
