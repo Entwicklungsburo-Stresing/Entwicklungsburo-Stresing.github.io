@@ -506,6 +506,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aef2ccf29ff0c11f6c94a05ebdce6b91e" id="r_aef2ccf29ff0c11f6c94a05ebdce6b91e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef2ccf29ff0c11f6c94a05ebdce6b91e">DLLSetGeneralOutput</a> (uint32_t drvno, uint8_t output, uint8_t state)</td></tr>
 <tr class="memdesc:aef2ccf29ff0c11f6c94a05ebdce6b91e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control the general outputs of the PCIe card addition board.     <br /></td></tr>
 <tr class="separator:aef2ccf29ff0c11f6c94a05ebdce6b91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a627b5b5562bbe8e28a836a18ef652b66" id="r_a627b5b5562bbe8e28a836a18ef652b66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a627b5b5562bbe8e28a836a18ef652b66">DLLSetShutterStates</a> (uint32_t drvno, uint16_t shutter_states)</td></tr>
+<tr class="memdesc:a627b5b5562bbe8e28a836a18ef652b66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all shutter states in one call.     <br /></td></tr>
+<tr class="separator:a627b5b5562bbe8e28a836a18ef652b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a630ec738aa5a7afc8dd13230f5d31bdf" id="r_a630ec738aa5a7afc8dd13230f5d31bdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a630ec738aa5a7afc8dd13230f5d31bdf">DLLreadRegisterS0_8</a> (uint32_t drvno, uint8_t *data, uint32_t address)</td></tr>
 <tr class="memdesc:a630ec738aa5a7afc8dd13230f5d31bdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read 1 byte of a register in S0 space.     <br /></td></tr>
 <tr class="separator:a630ec738aa5a7afc8dd13230f5d31bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5919,6 +5922,43 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a627b5b5562bbe8e28a836a18ef652b66" name="a627b5b5562bbe8e28a836a18ef652b66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a627b5b5562bbe8e28a836a18ef652b66">&#9670;&#160;</a></span>DLLSetShutterStates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLSetShutterStates </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>shutter_states</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets all shutter states in one call.    </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">shutter_states</td><td>16 bit value where each bit of the lower 4 represents the state of one shutter.<ul>
+<li>bit 0: shutter 1, 0: closed, 1: open</li>
+<li>bit 1: shutter 2, 0: closed, 1: open</li>
+<li>bit 2: shutter 3, 0: closed, 1: open</li>
+<li>bit 3: shutter 4, 0: closed, 1: open </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
