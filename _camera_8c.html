@@ -169,7 +169,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:acf3863c9c35b4a373ed6de2cb5b13ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set temperature level for cooled cameras.  <br /></td></tr>
 <tr class="separator:acf3863c9c35b4a373ed6de2cb5b13ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad072d7d6745064b0b25411fc5ada72a4" id="r_ad072d7d6745064b0b25411fc5ada72a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad072d7d6745064b0b25411fc5ada72a4">Cam_SendData</a> (uint32_t drvno, uint8_t maddr, uint8_t adaddr, uint16_t data)</td></tr>
-<tr class="memdesc:ad072d7d6745064b0b25411fc5ada72a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends data via fiber link, e.g. used for sending data to ADC (ADS5294).  <br /></td></tr>
+<tr class="memdesc:ad072d7d6745064b0b25411fc5ada72a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends data via the fiber link to the camera.  <br /></td></tr>
 <tr class="separator:ad072d7d6745064b0b25411fc5ada72a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a816e2458714ffec2e777c26a73c33d2e" id="r_a816e2458714ffec2e777c26a73c33d2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a816e2458714ffec2e777c26a73c33d2e">Cam_SetVfreqRegister</a> (uint32_t drvno)</td></tr>
 <tr class="memdesc:a816e2458714ffec2e777c26a73c33d2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is basically the old vclk register (cam_adaddr_vclk). Sets:  <br /></td></tr>
@@ -209,7 +209,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Functions for interacting with the camera.    </p>
-<p>In this file are all the functions that are interacting with the camera. Interaction with the camera always includes <a class="el" href="_camera_8h.html#ad072d7d6745064b0b25411fc5ada72a4" title="Sends data via fiber link, e.g. used for sending data to ADC (ADS5294).">Cam_SendData()</a>, so all functions here call this function. </p><dl class="section author"><dt>Author</dt><dd>Florian Hahn </dd></dl>
+<p>In this file are all the functions that are interacting with the camera. Interaction with the camera always includes <a class="el" href="_camera_8h.html#ad072d7d6745064b0b25411fc5ada72a4" title="Sends data via the fiber link to the camera.">Cam_SendData()</a>, so all functions here call this function. </p><dl class="section author"><dt>Author</dt><dd>Florian Hahn </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>18.11.2024 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright Entwicklungsbuero Stresing. This software is release under the LPGL-3.0.    </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
@@ -1004,26 +1004,17 @@ or use on e-lab test computer desktop LabView folder lv64hs (bool switch in 3030
       </table>
 </div><div class="memdoc">
 
-<p>Sends data via fiber link, e.g. used for sending data to ADC (ADS5294). </p>
-<p>Send setup:</p><ul>
-<li>d0:d15 = data for AD-Reg ADS5294</li>
-<li>d16:d23 = ADR of AD-Reg</li>
-<li>d24 = ADDR0 AD=1</li>
-<li>d25 = ADDR1 AD=0</li>
-<li>d26 makes load pulse</li>
-<li>all written to DB0 in Space0 = Long0</li>
-<li>for AD set maddr=01, adaddr address of reg <dl class="params"><dt>Parameters</dt><dd>
+<p>Sends data via the fiber link to the camera. </p>
+<p>The register <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15a1764a5bd788f2f8bc3593155676bc729">S0Addr_DBR</a> is used for sending data via the fiber link. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
-    <tr><td class="paramname">maddr</td><td>master address for specifying device (2 for ADC) </td></tr>
-    <tr><td class="paramname">adaddr</td><td>register address </td></tr>
-    <tr><td class="paramname">data</td><td>data </td></tr>
+    <tr><td class="paramname">maddr</td><td>master address for specifying which address space is used. See <a class="el" href="enum__hardware_8h.html#ac15c184c7c063b832a1b29ab80beda15">master_address_t</a> for options. </td></tr>
+    <tr><td class="paramname">adaddr</td><td>register address. Which register is written to depends on the address space which is defined maddr. It is either <a class="el" href="enum__hardware_8h.html#a9e3c451d5901d136d9fc1de5b1f1cda2">camera_register_addresses_t</a>, <a class="el" href="enum__hardware_8h.html#aa553213a284f79b43b3f2b37ce432d63">adc_ltc2271_register_adress_t</a>, <a class="el" href="enum__hardware_8h.html#ac75bdd85df17576b95c1b0c0453876fa">adc_ads5294_register_adress_t</a>, <a class="el" href="enum__hardware_8h.html#a57dd656066257660e8a347df5680e80f">ioctrl_register_address_t</a> or <a class="el" href="enum__hardware_8h.html#a4f248f174f6a6ad94a112e607b78fd57">dac_register_addresses_t</a>. </td></tr>
+    <tr><td class="paramname">data</td><td>16 bit data to send </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
-</li>
-</ul>
 
 </div>
 </div>
