@@ -51,7 +51,7 @@ var searchData=
   ['bticnt_5fbitindex_5fbticnt_5fen_48',['BTICNT_bitindex_BTICNT_EN',['../enum__hardware_8h.html#a8a6c6335d54916a3852707ff81dea9e3a83da938babf2b47401f290fe3bc6d9e7',1,'enum_hardware.h']]],
   ['bticnt_5fbits_5fbticnt_49',['BTICNT_bits_BTICNT',['../enum__hardware_8h.html#a8a6c6335d54916a3852707ff81dea9e3a1a90d39ae4c2b780a95e60a22d845da4',1,'enum_hardware.h']]],
   ['bticnt_5fbits_5ft_50',['BTICNT_bits_t',['../enum__hardware_8h.html#a8a6c6335d54916a3852707ff81dea9e3',1,'enum_hardware.h']]],
-  ['btime_5fin_5fmicrosec_51',['btime_in_microsec',['../structcamera__settings.html#a2c83fba5f72159010fc146c2c52209de',1,'camera_settings']]],
+  ['btime_51',['btime',['../structcamera__settings.html#a0f6f87c7fca887ea0bc1f5f16ff90f94',1,'camera_settings']]],
   ['btimer_5fbits_52',['BTIMER_bits',['../enum__hardware_8h.html#a7d739707ceb5ec9f28a9da898735cbe8a47c6cd3c204d55980ee05af1bf2f445f',1,'enum_hardware.h']]],
   ['btimer_5fbits_5ft_53',['BTIMER_bits_t',['../enum__hardware_8h.html#a7d739707ceb5ec9f28a9da898735cbe8',1,'enum_hardware.h']]],
   ['buffer_5fsize_54',['BUFFER_SIZE',['../es__status__codes_8c.html#a6b20d41d6252e9871430c242cb1a56e7',1,'es_status_codes.c']]],

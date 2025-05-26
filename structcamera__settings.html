@@ -108,8 +108,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a6578f775f4bbad6da1ec2d85323a8458"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10e94844da7b9228d8ba9c2bd14310cb" id="r_a10e94844da7b9228d8ba9c2bd14310cb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10e94844da7b9228d8ba9c2bd14310cb">stime</a></td></tr>
 <tr class="separator:a10e94844da7b9228d8ba9c2bd14310cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c83fba5f72159010fc146c2c52209de" id="r_a2c83fba5f72159010fc146c2c52209de"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c83fba5f72159010fc146c2c52209de">btime_in_microsec</a></td></tr>
-<tr class="separator:a2c83fba5f72159010fc146c2c52209de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f6f87c7fca887ea0bc1f5f16ff90f94" id="r_a0f6f87c7fca887ea0bc1f5f16ff90f94"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f6f87c7fca887ea0bc1f5f16ff90f94">btime</a></td></tr>
+<tr class="separator:a0f6f87c7fca887ea0bc1f5f16ff90f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdbb58aa78c6d9d9210c244507de9c68" id="r_afdbb58aa78c6d9d9210c244507de9c68"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdbb58aa78c6d9d9210c244507de9c68">sdat_in_10ns</a></td></tr>
 <tr class="separator:afdbb58aa78c6d9d9210c244507de9c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2139e71363af04fb3558bbc94057bbb" id="r_ad2139e71363af04fb3558bbc94057bbb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2139e71363af04fb3558bbc94057bbb">bdat_in_10ns</a></td></tr>
@@ -204,8 +204,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ab98246d4ee9f663d7b468f71821d7632"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40bcfff32281c4c321aba130fb4c4f09" id="r_a40bcfff32281c4c321aba130fb4c4f09"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40bcfff32281c4c321aba130fb4c4f09">ec_legacy_mode</a></td></tr>
 <tr class="separator:a40bcfff32281c4c321aba130fb4c4f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b8005be852d897db8b287c7acf0c84e" id="r_a0b8005be852d897db8b287c7acf0c84e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b8005be852d897db8b287c7acf0c84e">stime_resolution_mode</a></td></tr>
-<tr class="separator:a0b8005be852d897db8b287c7acf0c84e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bb5552267c411cc54baf8b800967ead" id="r_a8bb5552267c411cc54baf8b800967ead"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bb5552267c411cc54baf8b800967ead">timer_resolution_mode</a></td></tr>
+<tr class="separator:a8bb5552267c411cc54baf8b800967ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Individual settings for each PCIe board. </p>
@@ -353,22 +353,18 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a2c83fba5f72159010fc146c2c52209de" name="a2c83fba5f72159010fc146c2c52209de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c83fba5f72159010fc146c2c52209de">&#9670;&#160;</a></span>btime_in_microsec</h2>
+<a id="a0f6f87c7fca887ea0bc1f5f16ff90f94" name="a0f6f87c7fca887ea0bc1f5f16ff90f94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f6f87c7fca887ea0bc1f5f16ff90f94">&#9670;&#160;</a></span>btime</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t camera_settings::btime_in_microsec</td>
+          <td class="memname">uint32_t camera_settings::btime</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Block timer in microseconds is the time between the start of two blocks of readouts. This time is used when bti mode is btimer. Btime is a 28 bit unsigned integer. Further information about the timer can be found in the manual in chapter 6.4.4.</p><ul>
-<li>min: 1 µs</li>
-<li>step: 1 µs</li>
-<li>max: 268,435,455 µs = 268.435455 s </li>
-</ul>
+<p>Block time is the time between the start of two blocks of readouts. This time is used when <a class="el" href="#a6578f775f4bbad6da1ec2d85323a8458">camera_settings::bti_mode</a> is set to <a class="el" href="enum__settings_8h.html#a2fce6aa348483bc730e1693a39bc0e00aa80f3bc2af101fdd46dee4793eb0d906">bti_mode_t::bti_BTimer</a>. The resolution of this timer depends on the setting <a class="el" href="#a8bb5552267c411cc54baf8b800967ead">camera_settings::timer_resolution_mode</a>. Btime is a 28 bit unsigned integer. Further information about the timer can be found in the manual in chapter 6.4.4. </p>
 
 </div>
 </div>
@@ -1000,22 +996,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Stime is the time between the start of two readouts. This time is used when <a class="el" href="#afeb4693c3f62bd567f9063c0412035b5">camera_settings::sti_mode</a> is set to <a class="el" href="enum__settings_8h.html#a0bdcebe838e77385002ccc4077a6e743a8ef1e8da5911430f6487c240f981d735">sti_mode_t::sti_STimer</a>. The resolution of this timer depends on the setting <a class="el" href="#a0b8005be852d897db8b287c7acf0c84e">camera_settings::stime_resolution_mode</a>. Stime is a 28 bit unsigned integer. Further information about the timer can be found in the manual in chapter 6.4.4. </p>
-
-</div>
-</div>
-<a id="a0b8005be852d897db8b287c7acf0c84e" name="a0b8005be852d897db8b287c7acf0c84e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b8005be852d897db8b287c7acf0c84e">&#9670;&#160;</a></span>stime_resolution_mode</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t camera_settings::stime_resolution_mode</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>stime_resolution_mode determines the resolution of the timer controlled by <a class="el" href="#a10e94844da7b9228d8ba9c2bd14310cb">camera_settings::stime</a>. See <a class="el" href="enum__settings_8h.html#a8538a9295cd91432bef17fd4afbd73d6">stimer_resolution_t</a> in <a class="el" href="enum__settings_8h.html" title="All settings options and software constants.">enum_settings.h</a> for options. </p>
+<p>Stime is the time between the start of two readouts. This time is used when <a class="el" href="#afeb4693c3f62bd567f9063c0412035b5">camera_settings::sti_mode</a> is set to <a class="el" href="enum__settings_8h.html#a0bdcebe838e77385002ccc4077a6e743a8ef1e8da5911430f6487c240f981d735">sti_mode_t::sti_STimer</a>. The resolution of this timer depends on the setting <a class="el" href="#a8bb5552267c411cc54baf8b800967ead">camera_settings::timer_resolution_mode</a>. Stime is a 28 bit unsigned integer. Further information about the timer can be found in the manual in chapter 6.4.4. </p>
 
 </div>
 </div>
@@ -1040,6 +1021,21 @@ Public Attributes</h2></td></tr>
 <li>6: -40 °C</li>
 <li>7: min °C </li>
 </ul>
+
+</div>
+</div>
+<a id="a8bb5552267c411cc54baf8b800967ead" name="a8bb5552267c411cc54baf8b800967ead"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bb5552267c411cc54baf8b800967ead">&#9670;&#160;</a></span>timer_resolution_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t camera_settings::timer_resolution_mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>timer_resolution_mode determines the resolution of the timer controlled by <a class="el" href="#a10e94844da7b9228d8ba9c2bd14310cb">camera_settings::stime</a> and <a class="el" href="#a0f6f87c7fca887ea0bc1f5f16ff90f94">camera_settings::btime</a>. See <a class="el" href="enum__settings_8h.html#ac3d3af5007ef448a128969d75f2a398f">timer_resolution_t</a> in <a class="el" href="enum__settings_8h.html" title="All settings options and software constants.">enum_settings.h</a> for options. </p>
 
 </div>
 </div>

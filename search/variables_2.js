@@ -10,5 +10,5 @@ var searchData=
   ['bslope_7',['bslope',['../structcamera__settings.html#aad2f5116d777038bcb58543db3caf877',1,'camera_settings']]],
   ['bti_5fmode_8',['bti_mode',['../structcamera__settings.html#a6578f775f4bbad6da1ec2d85323a8458',1,'camera_settings']]],
   ['bticnt_9',['bticnt',['../structcamera__settings.html#a9a526f3452aa41931041f6bb05166f08',1,'camera_settings']]],
-  ['btime_5fin_5fmicrosec_10',['btime_in_microsec',['../structcamera__settings.html#a2c83fba5f72159010fc146c2c52209de',1,'camera_settings']]]
+  ['btime_10',['btime',['../structcamera__settings.html#a0f6f87c7fca887ea0bc1f5f16ff90f94',1,'camera_settings']]]
 ];
