@@ -274,12 +274,12 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbbaeab83a971a1b447f73efdf8edd7a0f63">XCK_bitindex_stimer</a> = 0
 , <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba35c892387f6d148bc503e6c034e60c0a">XCK_bitindex_res_ns</a> = 28
 , <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba4117a6cf5b27885522b08861bdab34ba">XCK_bitindex_res_ms</a> = 29
-, <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba35abbf6ebc01f34a1ba8e4cdcaf34cfe">XCK_bitindex_stimer_on</a> = 30
+, <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbbab5b1e246f500e53a01c077e22bfa5afa">XCK_bitindex_arm_scan_trigger</a> = 30
 , <br />
 &#160;&#160;<a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba2e3e8258a6718c38ae3aca937df981de">XCK_bits_stimer</a> = 0x0FFFFFFF
 , <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba4409994ceb22261d6e96493b467a7d6a">XCK_bit_res_ns</a> = 0x10000000
 , <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbbabd957433809b3fee7a1f4db45adc53ca">XCK_bit_res_ms</a> = 0x20000000
-, <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbba16cf3d1cfb4707d29f261ade7386b5a3">XCK_bit_stimer_on</a> = 0x40000000
+, <a class="el" href="#a1dc06a244ac6282e55991ad6c6356dbbae4f400e7ac95fe8dd8ec423427a7a4c0">XCK_bit_arm_scan_trigger</a> = 0x40000000
 <br />
  }</td></tr>
 <tr class="separator:a1dc06a244ac6282e55991ad6c6356dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -627,10 +627,32 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#af1f3aee94473361f396c43f6eb5db0f1a3c89df8f9a49d73dd59ff52552b77e10">camera_type_camera_system_bits</a> = 0xFFFF0000
  }</td></tr>
 <tr class="separator:af1f3aee94473361f396c43f6eb5db0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfbeaa023f01b83044e3a91330bb1ffc" id="r_adfbeaa023f01b83044e3a91330bb1ffc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfbeaa023f01b83044e3a91330bb1ffc">STATECTRL_bits_t</a> { <a class="el" href="#adfbeaa023f01b83044e3a91330bb1ffca8e3a1ce131df7f1ea3d5960f8c679a7e">statectrl_bits_trigger_select</a> = 0x000F
-, <a class="el" href="#adfbeaa023f01b83044e3a91330bb1ffca7d5ce147081eab61b487dd5bed0dbb85">statectrl_bit_manual_mode</a> = 0x0010
+<tr class="memitem:adfbeaa023f01b83044e3a91330bb1ffc" id="r_adfbeaa023f01b83044e3a91330bb1ffc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfbeaa023f01b83044e3a91330bb1ffc">STATECTRL_bits_t</a> { <br />
+&#160;&#160;<a class="el" href="#adfbeaa023f01b83044e3a91330bb1ffca8e3a1ce131df7f1ea3d5960f8c679a7e">statectrl_bits_trigger_select</a> = 0x000F
+, <a class="el" href="#adfbeaa023f01b83044e3a91330bb1ffcae3a2c46f2abe6a7e6335d250ae55076c">statectrl_bit_manual_trigger</a> = 0x0010
 , <a class="el" href="#adfbeaa023f01b83044e3a91330bb1ffca5afa5d6c0c58e62dfaae954a35feb80e">statectrl_bitindex_trigger_select</a> = 0
-, <a class="el" href="#adfbeaa023f01b83044e3a91330bb1ffcae363bf4985a57f4b8bf1b9555184e7e6">statectrl_bitindex_manual_mode</a> = 8
+, <a class="el" href="#adfbeaa023f01b83044e3a91330bb1ffca293bda85d3445c883d63579b056c6466">statectrl_bitindex_manual_trigger</a> = 8
+, <br />
+&#160;&#160;<a class="el" href="#adfbeaa023f01b83044e3a91330bb1ffca7795197b621ab5fdd82149c6415e9fa5">statectrl_trigger_select_manual</a> = 0
+, <a class="el" href="#adfbeaa023f01b83044e3a91330bb1ffca663b6fb85f1f6e955858d5fe5d55dd8c">statectrl_trigger_select_sti</a> = 1
+, <a class="el" href="#adfbeaa023f01b83044e3a91330bb1ffca87f394bb6a2fc5449c21d6439fc0e0db">statectrl_trigger_select_sslope</a> = 2
+, <a class="el" href="#adfbeaa023f01b83044e3a91330bb1ffcaed930fb5a07f9a4bb9f10588e48a460f">statectrl_trigger_select_scan_gated</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="#adfbeaa023f01b83044e3a91330bb1ffca2780945376b8903509c7f679e5400688">statectrl_trigger_select_sticnt</a> = 4
+, <a class="el" href="#adfbeaa023f01b83044e3a91330bb1ffca82abcd00030ef65c7248b4372d53ddc5">statectrl_trigger_select_sdat</a> = 5
+, <a class="el" href="#adfbeaa023f01b83044e3a91330bb1ffca440dea6bb00bd580291e503ead1914e9">statectrl_trigger_select_sec</a> = 6
+, <a class="el" href="#adfbeaa023f01b83044e3a91330bb1ffca81d9c7441fd69452364c64f843e334af">statectrl_trigger_select_xck</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="#adfbeaa023f01b83044e3a91330bb1ffca1ed3afc08ac50d7447929cec11be4591">statectrl_trigger_select_bti</a> = 8
+, <a class="el" href="#adfbeaa023f01b83044e3a91330bb1ffca26c096d9f1674e85e730fbc4c5699e1e">statectrl_trigger_select_bslope</a> = 9
+, <a class="el" href="#adfbeaa023f01b83044e3a91330bb1ffcae99a75e2b3af38455aa5f15f948a6f3f">statectrl_trigger_select_bticnt</a> = 10
+, <a class="el" href="#adfbeaa023f01b83044e3a91330bb1ffca63529fd870dc757747210fb6aba3fc6e">statectrl_trigger_select_bdat</a> = 11
+, <br />
+&#160;&#160;<a class="el" href="#adfbeaa023f01b83044e3a91330bb1ffca381d8186374043361a61b0f10f90f4d0">statectrl_trigger_select_bec</a> = 12
+, <a class="el" href="#adfbeaa023f01b83044e3a91330bb1ffca4df4f4296e59e064445c0e35f45d4794">statectrl_trigger_select_block_on</a> = 13
+, <a class="el" href="#adfbeaa023f01b83044e3a91330bb1ffcadffb47c4f740a22ee71b139f675ff939">statectrl_trigger_select_block_on_synced</a> = 14
+, <a class="el" href="#adfbeaa023f01b83044e3a91330bb1ffca1a56950d9b7cf23ec45f4ddc338320f2">statectrl_trigger_select_unused</a> = 15
+<br />
  }</td></tr>
 <tr class="separator:adfbeaa023f01b83044e3a91330bb1ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac15c184c7c063b832a1b29ab80beda15" id="r_ac15c184c7c063b832a1b29ab80beda15"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac15c184c7c063b832a1b29ab80beda15">master_address_t</a> { <a class="el" href="#ac15c184c7c063b832a1b29ab80beda15a5e032812bb6af56e16fc96f0671a074c">maddr_cam</a> = 0x0
@@ -2365,13 +2387,13 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a0694822028f927970ffbd57a0c8a6705" name="a1532e8504727e103db7ec69af3330f15a0694822028f927970ffbd57a0c8a6705"></a>S0Addr_CAMERA_TYPE&#160;</td><td class="fieldinit">0xB8&#160;</td><td class="fielddoc"><p>See <a class="el" href="#af1f3aee94473361f396c43f6eb5db0f1">camera_type_bits_t</a> for details. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15acd31b7aeb84aa27442ad6376d7457d90" name="a1532e8504727e103db7ec69af3330f15acd31b7aeb84aa27442ad6376d7457d90"></a>S0Addr_BON_PERIOD&#160;</td><td class="fieldinit">0xBC&#160;</td><td class="fielddoc"><p>BON PERIOD is a 32 bit unsigned integer, which shows the period time of the first BON period (BON high slope to high slope) of one measurement in a 10 ns resolution. Read only.Introduced in PCIe card version 222_12.</p><ul>
+<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15acd31b7aeb84aa27442ad6376d7457d90" name="a1532e8504727e103db7ec69af3330f15acd31b7aeb84aa27442ad6376d7457d90"></a>S0Addr_BON_PERIOD&#160;</td><td class="fieldinit">0xBC&#160;</td><td class="fielddoc"><p>BON PERIOD is a 32 bit unsigned integer, which shows the period time of the first BON period (BON high slope to high slope) of one measurement in a 10 ns resolution. Read only. Introduced in PCIe card version 222_12.</p><ul>
 <li>min: 0</li>
 <li>step: 1 =&gt; 10 ns</li>
 <li>max: 0xFFFFFFFF = 4,294,967,295 =&gt; 42,949,672,950 ns </li>
 </ul>
 </td></tr>
-<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a630264fecafa6924a9e137c49659655a" name="a1532e8504727e103db7ec69af3330f15a630264fecafa6924a9e137c49659655a"></a>S0Addr_STATECTRL&#160;</td><td class="fieldinit">0xC0&#160;</td><td class="fielddoc"><p>See <a class="el" href="#adfbeaa023f01b83044e3a91330bb1ffc">STATECTRL_bits_t</a> for details. </p>
+<tr><td class="fieldname"><a id="a1532e8504727e103db7ec69af3330f15a630264fecafa6924a9e137c49659655a" name="a1532e8504727e103db7ec69af3330f15a630264fecafa6924a9e137c49659655a"></a>S0Addr_STATECTRL&#160;</td><td class="fieldinit">0xC0&#160;</td><td class="fielddoc"><p>See <a class="el" href="#adfbeaa023f01b83044e3a91330bb1ffc">STATECTRL_bits_t</a> for details. Added in PCIe card version 222_18. </p>
 </td></tr>
 </table>
 
@@ -2494,7 +2516,7 @@ Enumerations</h2></td></tr>
 <p>These are the bits of <a class="el" href="#a1532e8504727e103db7ec69af3330f15a630264fecafa6924a9e137c49659655a">S0Addr_STATECTRL</a>. </p>
 <table class="fieldtable">
 <tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="adfbeaa023f01b83044e3a91330bb1ffca8e3a1ce131df7f1ea3d5960f8c679a7e" name="adfbeaa023f01b83044e3a91330bb1ffca8e3a1ce131df7f1ea3d5960f8c679a7e"></a>statectrl_bits_trigger_select&#160;</td><td class="fieldinit">0x000F&#160;</td><td class="fielddoc"><p>These bits select the trigger source for the sequence.</p><ul>
-<li>0: manual</li>
+<li>0: manual mode</li>
 <li>1: STI, Scan trigger input, controlled by <a class="el" href="structcamera__settings.html#afeb4693c3f62bd567f9063c0412035b5">camera_settings::sti_mode</a></li>
 <li>2: SSLOPE, scan trigger with <a class="el" href="structcamera__settings.html#a6f55940576ecb2bced3027d38676ea5c">camera_settings::sslope</a> applied</li>
 <li>3: SCAN_GATED, scan trigger gated by block on</li>
@@ -2512,9 +2534,25 @@ Enumerations</h2></td></tr>
 <li>15: unused </li>
 </ul>
 </td></tr>
-<tr><td class="fieldname"><a id="adfbeaa023f01b83044e3a91330bb1ffca7d5ce147081eab61b487dd5bed0dbb85" name="adfbeaa023f01b83044e3a91330bb1ffca7d5ce147081eab61b487dd5bed0dbb85"></a>statectrl_bit_manual_mode&#160;</td><td class="fieldinit">0x0010&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfbeaa023f01b83044e3a91330bb1ffcae3a2c46f2abe6a7e6335d250ae55076c" name="adfbeaa023f01b83044e3a91330bb1ffcae3a2c46f2abe6a7e6335d250ae55076c"></a>statectrl_bit_manual_trigger&#160;</td><td class="fieldinit">0x0010&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="adfbeaa023f01b83044e3a91330bb1ffca5afa5d6c0c58e62dfaae954a35feb80e" name="adfbeaa023f01b83044e3a91330bb1ffca5afa5d6c0c58e62dfaae954a35feb80e"></a>statectrl_bitindex_trigger_select&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="adfbeaa023f01b83044e3a91330bb1ffcae363bf4985a57f4b8bf1b9555184e7e6" name="adfbeaa023f01b83044e3a91330bb1ffcae363bf4985a57f4b8bf1b9555184e7e6"></a>statectrl_bitindex_manual_mode&#160;</td><td class="fieldinit">8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfbeaa023f01b83044e3a91330bb1ffca293bda85d3445c883d63579b056c6466" name="adfbeaa023f01b83044e3a91330bb1ffca293bda85d3445c883d63579b056c6466"></a>statectrl_bitindex_manual_trigger&#160;</td><td class="fieldinit">8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfbeaa023f01b83044e3a91330bb1ffca7795197b621ab5fdd82149c6415e9fa5" name="adfbeaa023f01b83044e3a91330bb1ffca7795197b621ab5fdd82149c6415e9fa5"></a>statectrl_trigger_select_manual&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfbeaa023f01b83044e3a91330bb1ffca663b6fb85f1f6e955858d5fe5d55dd8c" name="adfbeaa023f01b83044e3a91330bb1ffca663b6fb85f1f6e955858d5fe5d55dd8c"></a>statectrl_trigger_select_sti&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfbeaa023f01b83044e3a91330bb1ffca87f394bb6a2fc5449c21d6439fc0e0db" name="adfbeaa023f01b83044e3a91330bb1ffca87f394bb6a2fc5449c21d6439fc0e0db"></a>statectrl_trigger_select_sslope&#160;</td><td class="fieldinit">2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfbeaa023f01b83044e3a91330bb1ffcaed930fb5a07f9a4bb9f10588e48a460f" name="adfbeaa023f01b83044e3a91330bb1ffcaed930fb5a07f9a4bb9f10588e48a460f"></a>statectrl_trigger_select_scan_gated&#160;</td><td class="fieldinit">3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfbeaa023f01b83044e3a91330bb1ffca2780945376b8903509c7f679e5400688" name="adfbeaa023f01b83044e3a91330bb1ffca2780945376b8903509c7f679e5400688"></a>statectrl_trigger_select_sticnt&#160;</td><td class="fieldinit">4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfbeaa023f01b83044e3a91330bb1ffca82abcd00030ef65c7248b4372d53ddc5" name="adfbeaa023f01b83044e3a91330bb1ffca82abcd00030ef65c7248b4372d53ddc5"></a>statectrl_trigger_select_sdat&#160;</td><td class="fieldinit">5&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfbeaa023f01b83044e3a91330bb1ffca440dea6bb00bd580291e503ead1914e9" name="adfbeaa023f01b83044e3a91330bb1ffca440dea6bb00bd580291e503ead1914e9"></a>statectrl_trigger_select_sec&#160;</td><td class="fieldinit">6&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfbeaa023f01b83044e3a91330bb1ffca81d9c7441fd69452364c64f843e334af" name="adfbeaa023f01b83044e3a91330bb1ffca81d9c7441fd69452364c64f843e334af"></a>statectrl_trigger_select_xck&#160;</td><td class="fieldinit">7&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfbeaa023f01b83044e3a91330bb1ffca1ed3afc08ac50d7447929cec11be4591" name="adfbeaa023f01b83044e3a91330bb1ffca1ed3afc08ac50d7447929cec11be4591"></a>statectrl_trigger_select_bti&#160;</td><td class="fieldinit">8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfbeaa023f01b83044e3a91330bb1ffca26c096d9f1674e85e730fbc4c5699e1e" name="adfbeaa023f01b83044e3a91330bb1ffca26c096d9f1674e85e730fbc4c5699e1e"></a>statectrl_trigger_select_bslope&#160;</td><td class="fieldinit">9&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfbeaa023f01b83044e3a91330bb1ffcae99a75e2b3af38455aa5f15f948a6f3f" name="adfbeaa023f01b83044e3a91330bb1ffcae99a75e2b3af38455aa5f15f948a6f3f"></a>statectrl_trigger_select_bticnt&#160;</td><td class="fieldinit">10&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfbeaa023f01b83044e3a91330bb1ffca63529fd870dc757747210fb6aba3fc6e" name="adfbeaa023f01b83044e3a91330bb1ffca63529fd870dc757747210fb6aba3fc6e"></a>statectrl_trigger_select_bdat&#160;</td><td class="fieldinit">11&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfbeaa023f01b83044e3a91330bb1ffca381d8186374043361a61b0f10f90f4d0" name="adfbeaa023f01b83044e3a91330bb1ffca381d8186374043361a61b0f10f90f4d0"></a>statectrl_trigger_select_bec&#160;</td><td class="fieldinit">12&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfbeaa023f01b83044e3a91330bb1ffca4df4f4296e59e064445c0e35f45d4794" name="adfbeaa023f01b83044e3a91330bb1ffca4df4f4296e59e064445c0e35f45d4794"></a>statectrl_trigger_select_block_on&#160;</td><td class="fieldinit">13&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfbeaa023f01b83044e3a91330bb1ffcadffb47c4f740a22ee71b139f675ff939" name="adfbeaa023f01b83044e3a91330bb1ffcadffb47c4f740a22ee71b139f675ff939"></a>statectrl_trigger_select_block_on_synced&#160;</td><td class="fieldinit">14&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfbeaa023f01b83044e3a91330bb1ffca1a56950d9b7cf23ec45f4ddc338320f2" name="adfbeaa023f01b83044e3a91330bb1ffca1a56950d9b7cf23ec45f4ddc338320f2"></a>statectrl_trigger_select_unused&#160;</td><td class="fieldinit">15&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -2636,11 +2674,11 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a1dc06a244ac6282e55991ad6c6356dbba4117a6cf5b27885522b08861bdab34ba" name="a1dc06a244ac6282e55991ad6c6356dbba4117a6cf5b27885522b08861bdab34ba"></a>XCK_bitindex_res_ms&#160;</td><td class="fieldinit">29&#160;</td><td class="fielddoc"><p>divide time base resolution by 1000: 0: 1us, 1: 1ms, or when reset_ns = 1: 0: 100ns, 1: 100us </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a1dc06a244ac6282e55991ad6c6356dbba35abbf6ebc01f34a1ba8e4cdcaf34cfe" name="a1dc06a244ac6282e55991ad6c6356dbba35abbf6ebc01f34a1ba8e4cdcaf34cfe"></a>XCK_bitindex_stimer_on&#160;</td><td class="fieldinit">30&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1dc06a244ac6282e55991ad6c6356dbbab5b1e246f500e53a01c077e22bfa5afa" name="a1dc06a244ac6282e55991ad6c6356dbbab5b1e246f500e53a01c077e22bfa5afa"></a>XCK_bitindex_arm_scan_trigger&#160;</td><td class="fieldinit">30&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1dc06a244ac6282e55991ad6c6356dbba2e3e8258a6718c38ae3aca937df981de" name="a1dc06a244ac6282e55991ad6c6356dbba2e3e8258a6718c38ae3aca937df981de"></a>XCK_bits_stimer&#160;</td><td class="fieldinit">0x0FFFFFFF&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1dc06a244ac6282e55991ad6c6356dbba4409994ceb22261d6e96493b467a7d6a" name="a1dc06a244ac6282e55991ad6c6356dbba4409994ceb22261d6e96493b467a7d6a"></a>XCK_bit_res_ns&#160;</td><td class="fieldinit">0x10000000&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a1dc06a244ac6282e55991ad6c6356dbbabd957433809b3fee7a1f4db45adc53ca" name="a1dc06a244ac6282e55991ad6c6356dbbabd957433809b3fee7a1f4db45adc53ca"></a>XCK_bit_res_ms&#160;</td><td class="fieldinit">0x20000000&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1dc06a244ac6282e55991ad6c6356dbba16cf3d1cfb4707d29f261ade7386b5a3" name="a1dc06a244ac6282e55991ad6c6356dbba16cf3d1cfb4707d29f261ade7386b5a3"></a>XCK_bit_stimer_on&#160;</td><td class="fieldinit">0x40000000&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1dc06a244ac6282e55991ad6c6356dbbae4f400e7ac95fe8dd8ec423427a7a4c0" name="a1dc06a244ac6282e55991ad6c6356dbbae4f400e7ac95fe8dd8ec423427a7a4c0"></a>XCK_bit_arm_scan_trigger&#160;</td><td class="fieldinit">0x40000000&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

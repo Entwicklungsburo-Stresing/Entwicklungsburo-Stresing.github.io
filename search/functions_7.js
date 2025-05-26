@@ -15,6 +15,5 @@ var searchData=
   ['interrupt_5fhandler2_12',['interrupt_handler2',['../_board__ll_8c.html#a7fdcbda9f36efba388e15ceee255c94c',1,'Board_ll.c']]],
   ['interrupt_5fhandler3_13',['interrupt_handler3',['../_board__ll_8c.html#a6ec4caef7ad99f1b19d973d7ff49fd3d',1,'Board_ll.c']]],
   ['interrupt_5fhandler4_14',['interrupt_handler4',['../_board__ll_8c.html#a594144648ea640acff70bc7df70349f7',1,'Board_ll.c']]],
-  ['isr_15',['isr',['../_board__ll_8c.html#ab13902e201d7091aeb300faa035523d4',1,'Board_ll.c']]],
-  ['istimeron_16',['IsTimerOn',['../_board_8c.html#a345eb42e31fba376d7ae59c50df2ae69',1,'IsTimerOn(uint32_t drvno, bool *on):&#160;Board.c'],['../_board_8h.html#a345eb42e31fba376d7ae59c50df2ae69',1,'IsTimerOn(uint32_t drvno, bool *on):&#160;Board.c']]]
+  ['isr_15',['isr',['../_board__ll_8c.html#ab13902e201d7091aeb300faa035523d4',1,'Board_ll.c']]]
 ];

@@ -9,5 +9,6 @@ var searchData=
   ['aboutpci_6',['AboutPCI',['../_board__ll_8c.html#a4bfed4321a2abe3d8d8374566f70e996',1,'AboutPCI(uint32_t drvno):&#160;Board_ll.c'],['../_board__ll_8h.html#a4bfed4321a2abe3d8d8374566f70e996',1,'AboutPCI(uint32_t drvno):&#160;Board_ll.c']]],
   ['abouts0_7',['AboutS0',['../_board__ll_8c.html#a25e513a42416cdb56a01abea79399844',1,'AboutS0(uint32_t drvno):&#160;Board_ll.c'],['../_board__ll_8h.html#a25e513a42416cdb56a01abea79399844',1,'AboutS0(uint32_t drvno):&#160;Board_ll.c']]],
   ['abouttlps_8',['AboutTLPs',['../_board__ll_8c.html#a06d198342f1983ab1d4310cff9b155c7',1,'AboutTLPs(uint32_t drvno):&#160;Board_ll.c'],['../_board__ll_8h.html#a06d198342f1983ab1d4310cff9b155c7',1,'AboutTLPs(uint32_t drvno):&#160;Board_ll.c']]],
-  ['allocateusermemory_9',['allocateUserMemory',['../_board_8c.html#aa8172691bc3e992910f5ff610f7d6055',1,'allocateUserMemory(uint32_t drvno):&#160;Board.c'],['../_board_8h.html#aa8172691bc3e992910f5ff610f7d6055',1,'allocateUserMemory(uint32_t drvno):&#160;Board.c']]]
+  ['allocateusermemory_9',['allocateUserMemory',['../_board_8c.html#aa8172691bc3e992910f5ff610f7d6055',1,'allocateUserMemory(uint32_t drvno):&#160;Board.c'],['../_board_8h.html#aa8172691bc3e992910f5ff610f7d6055',1,'allocateUserMemory(uint32_t drvno):&#160;Board.c']]],
+  ['armscantrigger_10',['ArmScanTrigger',['../_board_8c.html#aeccd3858115deb4bf8b5f37fe5bfb7c0',1,'ArmScanTrigger(uint32_t drvno):&#160;Board.c'],['../_board_8h.html#aeccd3858115deb4bf8b5f37fe5bfb7c0',1,'ArmScanTrigger(uint32_t drvno):&#160;Board.c']]]
 ];
