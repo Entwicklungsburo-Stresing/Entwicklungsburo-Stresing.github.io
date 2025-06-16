@@ -2071,7 +2071,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">pdest</td><td>Pointer to get the pointer of the data buffer. When NULL, this functions returns es_invalid_pointer. </td></tr>
-    <tr><td class="paramname">bytes_to_end_of_buffer</td><td>Pointer to get the number of bytes to the end of the buffer. When NULL, this parameter is ignored. </td></tr>
+    <tr><td class="paramname">bytes_to_end_of_buffer</td><td>Pointer to get the number of bytes to the end of the buffer. This is the size in bytes of the whole measurement data memory for one board. When NULL, this parameter is ignored. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2833,7 +2833,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">block</td><td>position in blocks (0...(nob-1)) </td></tr>
     <tr><td class="paramname">pdest</td><td>Pointer to get the pointer of the specific pixel. When NULL, this functions returns es_invalid_pointer. </td></tr>
-    <tr><td class="paramname">bytes_to_end_of_buffer</td><td>Pointer to get the number of bytes to the end of the buffer. When NULL, this parameter is ignored. </td></tr>
+    <tr><td class="paramname">bytes_to_end_of_buffer</td><td>Pointer to get the number of bytes to the end of the buffer. This is the size in bytes of the buffer from the position you are asking for and the end of the buffer. When NULL, this parameter is ignored. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2888,7 +2888,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">block</td><td>position in blocks (0...(nob-1)) </td></tr>
     <tr><td class="paramname">camera</td><td>position in camera count (0...(CAMCNT-1)) </td></tr>
     <tr><td class="paramname">pdest</td><td>Pointer to get the pointer of the specific pixel. When NULL, this functions returns es_invalid_pointer. </td></tr>
-    <tr><td class="paramname">bytes_to_end_of_buffer</td><td>Pointer to get the number of bytes to the end of the buffer. When NULL, this parameter is ignored. </td></tr>
+    <tr><td class="paramname">bytes_to_end_of_buffer</td><td>Pointer to get the number of bytes to the end of the buffer. This is the size in bytes of the buffer from the position you are asking for and the end of the buffer. When NULL, this parameter is ignored. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2986,7 +2986,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">block</td><td>position in blocks (0...(nob-1)) </td></tr>
     <tr><td class="paramname">camera</td><td>position in camera count (0...(CAMCNT-1)) </td></tr>
     <tr><td class="paramname">pdest</td><td>Pointer to get the pointer of the specific pixel. When NULL, this functions returns es_invalid_pointer. </td></tr>
-    <tr><td class="paramname">bytes_to_end_of_buffer</td><td>Pointer to get the number of bytes to the end of the buffer. When NULL, this parameter is ignored. </td></tr>
+    <tr><td class="paramname">bytes_to_end_of_buffer</td><td>Pointer to get the number of bytes to the end of the buffer. This is the size in bytes of the buffer from the position you are asking for and the end of the buffer. When NULL, this parameter is ignored. </td></tr>
   </table>
   </dd>
 </dl>

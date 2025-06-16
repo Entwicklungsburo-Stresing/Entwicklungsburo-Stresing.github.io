@@ -2230,7 +2230,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">pdest</td><td>Pointer to get the pointer of the data buffer. When NULL, this functions returns es_invalid_pointer. </td></tr>
-    <tr><td class="paramname">bytes_to_end_of_buffer</td><td>Pointer to get the number of bytes to the end of the buffer. When NULL, this parameter is ignored. </td></tr>
+    <tr><td class="paramname">bytes_to_end_of_buffer</td><td>Pointer to get the number of bytes to the end of the buffer. This is the size in bytes of the whole measurement data memory for one board. When NULL, this parameter is ignored. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3659,7 +3659,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramname">block</td><td>position in blocks (0...(nob-1)) </td></tr>
     <tr><td class="paramname">pdest</td><td>Pointer to get the pointer of the specific pixel. When NULL, this functions returns es_invalid_pointer. </td></tr>
-    <tr><td class="paramname">bytes_to_end_of_buffer</td><td>Pointer to get the number of bytes to the end of the buffer. When NULL, this parameter is ignored. </td></tr>
+    <tr><td class="paramname">bytes_to_end_of_buffer</td><td>Pointer to get the number of bytes to the end of the buffer. This is the size in bytes of the buffer from the position you are asking for and the end of the buffer. When NULL, this parameter is ignored. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3714,7 +3714,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">block</td><td>position in blocks (0...(nob-1)) </td></tr>
     <tr><td class="paramname">camera</td><td>position in camera count (0...(CAMCNT-1)) </td></tr>
     <tr><td class="paramname">pdest</td><td>Pointer to get the pointer of the specific pixel. When NULL, this functions returns es_invalid_pointer. </td></tr>
-    <tr><td class="paramname">bytes_to_end_of_buffer</td><td>Pointer to get the number of bytes to the end of the buffer. When NULL, this parameter is ignored. </td></tr>
+    <tr><td class="paramname">bytes_to_end_of_buffer</td><td>Pointer to get the number of bytes to the end of the buffer. This is the size in bytes of the buffer from the position you are asking for and the end of the buffer. When NULL, this parameter is ignored. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3775,7 +3775,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">block</td><td>position in blocks (0...(nob-1)) </td></tr>
     <tr><td class="paramname">camera</td><td>position in camera count (0...(CAMCNT-1)) </td></tr>
     <tr><td class="paramname">pdest</td><td>Pointer to get the pointer of the specific pixel. When NULL, this functions returns es_invalid_pointer. </td></tr>
-    <tr><td class="paramname">bytes_to_end_of_buffer</td><td>Pointer to get the number of bytes to the end of the buffer. When NULL, this parameter is ignored. </td></tr>
+    <tr><td class="paramname">bytes_to_end_of_buffer</td><td>Pointer to get the number of bytes to the end of the buffer. This is the size in bytes of the buffer from the position you are asking for and the end of the buffer. When NULL, this parameter is ignored. </td></tr>
   </table>
   </dd>
 </dl>
@@ -5892,7 +5892,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set a function which will be executed every time when a measurement ends. </p>
-<p>Regardless of <a class="el" href="structmeasurement__settings.html#aac0f1237e7da13512c25448ddc6fe852">measurement_settings::continuous_measurement</a> this hook is call only one time at the end of the measurement. When <a class="el" href="structmeasurement__settings.html#aac0f1237e7da13512c25448ddc6fe852">measurement_settings::continuous_measurement</a> is enabled, is is called after the loop is disabled. The hook is called after the pause set by <a class="el" href="structmeasurement__settings.html#a6b38daf0440f5d5ac2609a56f9314e96">measurement_settings::cont_pause_in_microseconds</a>. When this hook is called all data is available, so <a class="el" href="_e_s_l_s_c_d_l_l_8c.html#a79a1ea8d164b02336350f228840b1c02">DLLGetCurrentScanNumber</a> should return sample = nos-1 and block = nob-1. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Regardless of <a class="el" href="structmeasurement__settings.html#aac0f1237e7da13512c25448ddc6fe852">measurement_settings::continuous_measurement</a> this hook is call only one time at the end of the measurement. When <a class="el" href="structmeasurement__settings.html#aac0f1237e7da13512c25448ddc6fe852">measurement_settings::continuous_measurement</a> is enabled, it is called after the loop is disabled. The hook is called after the pause set by <a class="el" href="structmeasurement__settings.html#a6b38daf0440f5d5ac2609a56f9314e96">measurement_settings::cont_pause_in_microseconds</a>. When this hook is called all data is available, so <a class="el" href="_e_s_l_s_c_d_l_l_8c.html#a79a1ea8d164b02336350f228840b1c02">DLLGetCurrentScanNumber</a> should return sample = nos-1 and block = nob-1. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hook</td><td>Pointer to the function which will be executed. </td></tr>
   </table>
@@ -6210,7 +6210,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This function is starting the measurement and returns immediately. </p>
-<p>StartMeasurement is run a new thread. When there are multiple boards, all boards are starting the measurement. You can check the status of the measurement with DllisMeasureOn and DllisBlockOn or create a blocking call with DLLWaitForMeasureDone and DLLWaitForBlockDone. </p>
+<p>StartMeasurement is run a new thread. When there are multiple boards, all boards are starting the measurement. You can check the status of the measurement with <a class="el" href="_e_s_l_s_c_d_l_l_8c.html#ab8dc7586850246cfdf5fe68c8a180ec9">DLLGetMeasureOn</a> and <a class="el" href="_e_s_l_s_c_d_l_l_8c.html#ae502c44b6bdbb68fdb005f09d60b2358">DLLGetBlockOn</a> or create a blocking call with <a class="el" href="_e_s_l_s_c_d_l_l_8c.html#ac520af0c8bbbd97ae2ac65e80ada8428">DLLWaitForMeasureDone</a> and <a class="el" href="_e_s_l_s_c_d_l_l_8c.html#af4e47687dc32a8a0752df2c77b0dad61">DLLWaitForBlockDone</a>. </p>
 
 </div>
 </div>
