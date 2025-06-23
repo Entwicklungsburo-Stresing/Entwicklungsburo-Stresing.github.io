@@ -967,7 +967,7 @@ Variables</h2></td></tr>
 <p>Display error message. If ErrMsgBoxOn is set. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ErrMsg</td><td>Message. Buffer size: 100. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ErrMsg</td><td>Message. Buffer size: 100. </td></tr>
   </table>
   </dd>
 </dl>
@@ -996,8 +996,8 @@ Variables</h2></td></tr>
 <p>Get the free and installed memory info. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pmemory_all</td><td>how much is installed </td></tr>
-    <tr><td class="paramname">pmemory_free</td><td>how much is free </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pmemory_all</td><td>how much is installed </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pmemory_free</td><td>how much is free </td></tr>
   </table>
   </dd>
 </dl>
@@ -1615,8 +1615,8 @@ Variables</h2></td></tr>
 <p>Set gamma value.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">white</td><td>set value for maximum brightness. Default: 0xFFFF (16 bit), 0x3FFF (14 bit) </td></tr>
-    <tr><td class="paramname">black</td><td>set value for minimum brightness. Default: 0    </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">white</td><td>set value for maximum brightness. Default: 0xFFFF (16 bit), 0x3FFF (14 bit) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">black</td><td>set value for minimum brightness. Default: 0    </td></tr>
   </table>
   </dd>
 </dl>
@@ -1723,11 +1723,11 @@ Variables</h2></td></tr>
 <p>Update the displayed bitmap. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number </td></tr>
-    <tr><td class="paramname">block</td><td>current number of blocks </td></tr>
-    <tr><td class="paramname">camera</td><td>which camera to display (when camcnt is &gt;1) </td></tr>
-    <tr><td class="paramname">pixel</td><td>count of pixel of one line </td></tr>
-    <tr><td class="paramname">nos</td><td>samples in one block </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>board number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>current number of blocks </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">camera</td><td>which camera to display (when camcnt is &gt;1) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pixel</td><td>count of pixel of one line </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nos</td><td>samples in one block </td></tr>
   </table>
   </dd>
 </dl>
@@ -1771,11 +1771,11 @@ Variables</h2></td></tr>
 <p>Start 2d viewer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number </td></tr>
-    <tr><td class="paramname">block</td><td>current number of block </td></tr>
-    <tr><td class="paramname">camera</td><td>which camera to display (when camcnt is &gt;1) </td></tr>
-    <tr><td class="paramname">pixel</td><td>count of pixel of one line </td></tr>
-    <tr><td class="paramname">nos</td><td>samples in one block </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>board number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">block</td><td>current number of block </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">camera</td><td>which camera to display (when camcnt is &gt;1) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pixel</td><td>count of pixel of one line </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nos</td><td>samples in one block </td></tr>
   </table>
   </dd>
 </dl>
