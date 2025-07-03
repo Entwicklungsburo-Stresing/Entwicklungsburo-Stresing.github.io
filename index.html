@@ -92,10 +92,13 @@ $(function(){ initResizable(false); });
 <div class="textblock"><p><a class="anchor" id="md_mainpage"></a></p>
 <p>This documentation is about the <a href="https://github.com/Entwicklungsburo-Stresing">software</a> for operating the specialized line scan cameras of <a href="https://stresing.de">Entwicklungsbuero Stresing</a>. For instructions about compiling have a look at the readme in the <a href="https://github.com/Entwicklungsburo-Stresing/EBST_CAM">EBST_CAM</a> repository. For more detailed information about your camera refer to your given manual FLbook.pdf.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
+Software versions</h1>
+<p>The <a href="https://entwicklungsburo-stresing.github.io">online version</a> of this documentation always describes the latest software version of the <a href="https://github.com/Entwicklungsburo-Stresing/EBST_CAM">EBST_CAM</a> repository. If you are looking for a older version of the documentation, you can find it <a href="https://github.com/Entwicklungsburo-Stresing/Entwicklungsburo-Stresing.github.io/tags">here</a>. Changes between the versions are documented in the <a href="https://github.com/Entwicklungsburo-Stresing/EBST_CAM/blob/master/CHANGELOG.md">changlog</a> and the <a href="https://github.com/Entwicklungsburo-Stresing/EBST_CAM/releases">release notes</a>.</p>
+<h1><a class="anchor" id="autotoc_md2"></a>
 How to use Stresing software</h1>
 <p>Use the compiled library ESLSCDLL.dll or libESLSCDLL.so and operate the camera from your software with DLL calls. There are several examples available that are operating the camera with the DLL for <a href="https://github.com/Entwicklungsburo-Stresing/lv64">LabVIEW</a>, <a href="https://github.com/Entwicklungsburo-Stresing/stresing_python">Python</a>, <a href="https://github.com/Entwicklungsburo-Stresing/stresing_matlab">Matlab</a> and C. Additionally there is a fully featured GUI called Escam, written in C++ with Qt. Escam and the C example CsimpleExample are located in the <a href="https://github.com/Entwicklungsburo-Stresing/EBST_CAM">EBST_CAM</a> repository.</p>
 <p>Have a look at the block diagrams at the bottom of this page to get an overview of the software structure.</p>
-<h1><a class="anchor" id="autotoc_md2"></a>
+<h1><a class="anchor" id="autotoc_md3"></a>
 How to operate Stresing cameras</h1>
 <p>For a simple measurement the following DLL calls should be used. For a complete API documentation go to the DLL documentation <a href="_e_s_l_s_c_d_l_l_8c.html">page</a>.</p>
 <ol type="1">
@@ -106,9 +109,9 @@ How to operate Stresing cameras</h1>
 <li><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#a6e2b491be2b5ecf87d8480b31b8273b7">DLLCopyOneSample</a>, <a class="el" href="_e_s_l_s_c_d_l_l_8c.html#af67177e123797d9f7f14c7dd62b701d3">DLLCopyAllData</a>, or <a class="el" href="_e_s_l_s_c_d_l_l_8c.html#aac6298fa489dc27dfed3ac452b693cfa">DLLCopyOneBlock</a>: Get the data with one of the following 3 calls. Call it how many times you want.</li>
 <li><a class="el" href="_e_s_l_s_c_d_l_l_8c.html#a6de4e38fbc35ee4e86547eee9a9b8169">DLLExitDriver</a>: Before exiting your software, use this call for cleanup.</li>
 </ol>
-<h1><a class="anchor" id="autotoc_md3"></a>
+<h1><a class="anchor" id="autotoc_md4"></a>
 How to use escam</h1>
-<h2><a class="anchor" id="autotoc_md4"></a>
+<h2><a class="anchor" id="autotoc_md5"></a>
 Setting up escam</h2>
 <p>After opening the program, you will be greeted by the main page. To configure the settings for the camera, open the 'Settings' tab at the top and choose 'Edit' and the 'General' tab of the settings will open. The first time you start the program on your PC, the initial values have to be imported. We have saved your setup in a config.ini file. So import this file at the first start. These values are stored then in windows (registry) and you do not need to import it again. For many elements in Escam there are additional information available through tooltips and context help. Especially in the settings dialog you can find a detailed description for every parameter in the context help. A tooltip appears after hovering with the cursor over a specific element for some seconds.</p>
 <p><img src="tooltip.png" alt="" width="500" class="inline"/></p>
@@ -120,10 +123,10 @@ Setting up escam</h2>
 </ul>
 <p>A small pop up window will appear with a detailed explanation.</p>
 <p><img src="whatsThis-rightclick.png" alt="" width="500" class="inline"/> <img src="whatsThis-helpButton.png" alt="" width="500" class="inline"/> <img src="whatsThis-ContextHelp.png" alt="" width="500" class="inline"/> <img src="whatsThis.png" alt="" width="500" class="inline"/></p>
-<h1><a class="anchor" id="autotoc_md5"></a>
+<h1><a class="anchor" id="autotoc_md6"></a>
 Software structure</h1>
 <p><img src="software_structure.drawio.svg" alt="" style="pointer-events: none;" class="inline" title="software structure as block diagram"/>    </p>
-<h1><a class="anchor" id="autotoc_md6"></a>
+<h1><a class="anchor" id="autotoc_md7"></a>
 Software structure of Escam</h1>
 <div class="image">
 <object type="image/svg+xml" data="escam.drawio.svg" style="pointer-events: none;"></object>
