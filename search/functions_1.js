@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['abortmeasurement_0',['AbortMeasurement',['../_board_8c.html#ab1726423e49ca9a7ee45925dae825275',1,'AbortMeasurement():&#160;Board.c'],['../_board_8h.html#ab1726423e49ca9a7ee45925dae825275',1,'AbortMeasurement():&#160;Board.c']]],
+  ['abortmeasurement_0',['AbortMeasurement',['../_board_8c.html#a58c9bf604dd52dec4b0d1df670c5b390',1,'AbortMeasurement(uint32_t block_index):&#160;Board.c'],['../_board_8h.html#a58c9bf604dd52dec4b0d1df670c5b390',1,'AbortMeasurement(uint32_t block_index):&#160;Board.c']]],
   ['about_1',['About',['../_board__ll_8c.html#a69023e1b7220dc81de207b508d1d9c99',1,'About(uint32_t board_sel):&#160;Board_ll.c'],['../_board__ll_8h.html#a69023e1b7220dc81de207b508d1d9c99',1,'About(uint32_t board_sel):&#160;Board_ll.c']]],
   ['aboutcamerasettings_2',['AboutCameraSettings',['../_board__ll_8c.html#a279b3e30d855066c3b916f6a5d10e7c2',1,'AboutCameraSettings(uint32_t drvno):&#160;Board_ll.c'],['../_board__ll_8h.html#a279b3e30d855066c3b916f6a5d10e7c2',1,'AboutCameraSettings(uint32_t drvno):&#160;Board_ll.c']]],
   ['aboutdrv_3',['AboutDrv',['../_board__ll_8c.html#accd5186f0586d8497a599012cf1716d9',1,'AboutDrv(uint32_t drvno):&#160;Board_ll.c'],['../_board__ll_8h.html#accd5186f0586d8497a599012cf1716d9',1,'AboutDrv(uint32_t drvno):&#160;Board_ll.c']]],

@@ -495,15 +495,15 @@ Functions</h2></td></tr>
 <tr class="memitem:adf3cdb3ec337018bf2d548c9b86558cf" id="r_adf3cdb3ec337018bf2d548c9b86558cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf3cdb3ec337018bf2d548c9b86558cf">DLLSetMeasureDoneHook</a> (void(*hook)())</td></tr>
 <tr class="memdesc:adf3cdb3ec337018bf2d548c9b86558cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a function which will be executed every time when a measurement ends.  <br /></td></tr>
 <tr class="separator:adf3cdb3ec337018bf2d548c9b86558cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac480f87bd218b3bcc60b1adb5628cc2d" id="r_ac480f87bd218b3bcc60b1adb5628cc2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac480f87bd218b3bcc60b1adb5628cc2d">DLLSetBlockStartHook</a> (void(*hook)())</td></tr>
-<tr class="memdesc:ac480f87bd218b3bcc60b1adb5628cc2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a function which will be executed every time when a block starts.  <br /></td></tr>
-<tr class="separator:ac480f87bd218b3bcc60b1adb5628cc2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bbca475208cb5f3fdfc72927d6f6e95" id="r_a2bbca475208cb5f3fdfc72927d6f6e95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bbca475208cb5f3fdfc72927d6f6e95">DLLSetBlockDoneHook</a> (void(*hook)())</td></tr>
-<tr class="memdesc:a2bbca475208cb5f3fdfc72927d6f6e95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a function which will be executed every time when a block ends.  <br /></td></tr>
-<tr class="separator:a2bbca475208cb5f3fdfc72927d6f6e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d99a13568b5384f207e5cc5924085bb" id="r_a6d99a13568b5384f207e5cc5924085bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d99a13568b5384f207e5cc5924085bb">DLLSetAllBlocksDoneHook</a> (void(*hook)())</td></tr>
-<tr class="memdesc:a6d99a13568b5384f207e5cc5924085bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a function which will be executed every time when all blocks are done.  <br /></td></tr>
-<tr class="separator:a6d99a13568b5384f207e5cc5924085bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac83488020788aea5450425a5ccdca19c" id="r_ac83488020788aea5450425a5ccdca19c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac83488020788aea5450425a5ccdca19c">DLLSetBlockStartHook</a> (void(*hook)(uint32_t))</td></tr>
+<tr class="memdesc:ac83488020788aea5450425a5ccdca19c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a function which will be executed every time when a block starts.  <br /></td></tr>
+<tr class="separator:ac83488020788aea5450425a5ccdca19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b209f80b5b192d4a4cdda013cfe44d4" id="r_a0b209f80b5b192d4a4cdda013cfe44d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b209f80b5b192d4a4cdda013cfe44d4">DLLSetBlockDoneHook</a> (void(*hook)(uint32_t))</td></tr>
+<tr class="memdesc:a0b209f80b5b192d4a4cdda013cfe44d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a function which will be executed every time when a block ends.  <br /></td></tr>
+<tr class="separator:a0b209f80b5b192d4a4cdda013cfe44d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a958b4c48c3019480c8241cd9988a60e3" id="r_a958b4c48c3019480c8241cd9988a60e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a958b4c48c3019480c8241cd9988a60e3">DLLSetAllBlocksDoneHook</a> (void(*hook)(uint64_t))</td></tr>
+<tr class="memdesc:a958b4c48c3019480c8241cd9988a60e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a function which will be executed every time when all blocks are done.  <br /></td></tr>
+<tr class="separator:a958b4c48c3019480c8241cd9988a60e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef2ccf29ff0c11f6c94a05ebdce6b91e" id="r_aef2ccf29ff0c11f6c94a05ebdce6b91e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef2ccf29ff0c11f6c94a05ebdce6b91e">DLLSetGeneralOutput</a> (uint32_t drvno, uint8_t output, uint8_t state)</td></tr>
 <tr class="memdesc:aef2ccf29ff0c11f6c94a05ebdce6b91e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control the general outputs of the PCIe card addition board.     <br /></td></tr>
 <tr class="separator:aef2ccf29ff0c11f6c94a05ebdce6b91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5585,8 +5585,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6d99a13568b5384f207e5cc5924085bb" name="a6d99a13568b5384f207e5cc5924085bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d99a13568b5384f207e5cc5924085bb">&#9670;&#160;</a></span>DLLSetAllBlocksDoneHook()</h2>
+<a id="a958b4c48c3019480c8241cd9988a60e3" name="a958b4c48c3019480c8241cd9988a60e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a958b4c48c3019480c8241cd9988a60e3">&#9670;&#160;</a></span>DLLSetAllBlocksDoneHook()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5594,7 +5594,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> void DLLSetAllBlocksDoneHook </td>
           <td>(</td>
-          <td class="paramtype">void(*</td>          <td class="paramname"><span class="paramname"><em>hook&#160;</em></span>)()</td><td>)</td>
+          <td class="paramtype">void(*</td>          <td class="paramname"><span class="paramname"><em>hook&#160;</em></span>)(uint64_t)</td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -5603,7 +5603,7 @@ Functions</h2></td></tr>
 <p>Set a function which will be executed every time when all blocks are done. </p>
 <p>When <a class="el" href="structmeasurement__settings.html#aac0f1237e7da13512c25448ddc6fe852">measurement_settings::continuous_measurement</a> is disabled, it is called one time at the end of the measurement. When <a class="el" href="structmeasurement__settings.html#aac0f1237e7da13512c25448ddc6fe852">measurement_settings::continuous_measurement</a> is enabled, it is called one time at the end of each measurement cycle. The hook is called before the pause set by <a class="el" href="structmeasurement__settings.html#a6b38daf0440f5d5ac2609a56f9314e96">measurement_settings::cont_pause_in_microseconds</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">hook</td><td>Pointer to the function which will be executed. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hook</td><td>Pointer to the function which will be executed. The function should accept a single parameter of type uint64_t, which is the number of measurement cycles done when <a class="el" href="structmeasurement__settings.html#aac0f1237e7da13512c25448ddc6fe852">measurement_settings::continuous_measurement</a> is enabled. </td></tr>
   </table>
   </dd>
 </dl>
@@ -5641,8 +5641,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2bbca475208cb5f3fdfc72927d6f6e95" name="a2bbca475208cb5f3fdfc72927d6f6e95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bbca475208cb5f3fdfc72927d6f6e95">&#9670;&#160;</a></span>DLLSetBlockDoneHook()</h2>
+<a id="a0b209f80b5b192d4a4cdda013cfe44d4" name="a0b209f80b5b192d4a4cdda013cfe44d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b209f80b5b192d4a4cdda013cfe44d4">&#9670;&#160;</a></span>DLLSetBlockDoneHook()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5650,7 +5650,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> void DLLSetBlockDoneHook </td>
           <td>(</td>
-          <td class="paramtype">void(*</td>          <td class="paramname"><span class="paramname"><em>hook&#160;</em></span>)()</td><td>)</td>
+          <td class="paramtype">void(*</td>          <td class="paramname"><span class="paramname"><em>hook&#160;</em></span>)(uint32_t)</td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -5659,15 +5659,15 @@ Functions</h2></td></tr>
 <p>Set a function which will be executed every time when a block ends. </p>
 <p>The end of a block doesn't indicate the availability of the data. Which data is available to copy is indicated by <a class="el" href="_e_s_l_s_c_d_l_l_8c.html#a79a1ea8d164b02336350f228840b1c02">DLLGetCurrentScanNumber</a>. The copy method is controlled by <a class="el" href="structcamera__settings.html#a7d6d06fc3f59976df702bfda1e7bc0d1">camera_settings::use_software_polling</a>. When the block size is not aligned to <a class="el" href="structcamera__settings.html#a8f2833d2036671abc6382415794d6032">camera_settings::dma_buffer_size_in_scans</a> and <a class="el" href="structcamera__settings.html#a7d6d06fc3f59976df702bfda1e7bc0d1">camera_settings::use_software_polling</a> is turned off, there will be no interrupt at the end of a block and so the data won't be available in this moment. Turn <a class="el" href="structcamera__settings.html#a7d6d06fc3f59976df702bfda1e7bc0d1">camera_settings::use_software_polling</a> on to avoid this. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">hook</td><td>Pointer to the function which will be executed. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hook</td><td>Pointer to the function which will be executed. The function should accept a single parameter of type uint32_t, which is the block index (0...nob-1). </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ac480f87bd218b3bcc60b1adb5628cc2d" name="ac480f87bd218b3bcc60b1adb5628cc2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac480f87bd218b3bcc60b1adb5628cc2d">&#9670;&#160;</a></span>DLLSetBlockStartHook()</h2>
+<a id="ac83488020788aea5450425a5ccdca19c" name="ac83488020788aea5450425a5ccdca19c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac83488020788aea5450425a5ccdca19c">&#9670;&#160;</a></span>DLLSetBlockStartHook()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5675,7 +5675,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> void DLLSetBlockStartHook </td>
           <td>(</td>
-          <td class="paramtype">void(*</td>          <td class="paramname"><span class="paramname"><em>hook&#160;</em></span>)()</td><td>)</td>
+          <td class="paramtype">void(*</td>          <td class="paramname"><span class="paramname"><em>hook&#160;</em></span>)(uint32_t)</td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -5684,7 +5684,7 @@ Functions</h2></td></tr>
 <p>Set a function which will be executed every time when a block starts. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">hook</td><td>Pointer to the function which will be executed. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hook</td><td>Pointer to the function which will be executed. The function should accept a single parameter of type uint32_t, which is the block index (0...nob-1). </td></tr>
   </table>
   </dd>
 </dl>

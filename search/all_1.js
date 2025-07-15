@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['abortmeasurement_0',['AbortMeasurement',['../_board_8c.html#ab1726423e49ca9a7ee45925dae825275',1,'AbortMeasurement():&#160;Board.c'],['../_board_8h.html#ab1726423e49ca9a7ee45925dae825275',1,'AbortMeasurement():&#160;Board.c']]],
+  ['abortmeasurement_0',['AbortMeasurement',['../_board_8c.html#a58c9bf604dd52dec4b0d1df670c5b390',1,'AbortMeasurement(uint32_t block_index):&#160;Board.c'],['../_board_8h.html#a58c9bf604dd52dec4b0d1df670c5b390',1,'AbortMeasurement(uint32_t block_index):&#160;Board.c']]],
   ['abortmeasurementflag_1',['abortMeasurementFlag',['../globals_8h.html#a56a0b51ce8cb739bbe004304d2f11417',1,'abortMeasurementFlag:&#160;globals.c'],['../globals_8c.html#a56a0b51ce8cb739bbe004304d2f11417',1,'abortMeasurementFlag:&#160;globals.c']]],
   ['about_2',['About',['../_board__ll_8c.html#a69023e1b7220dc81de207b508d1d9c99',1,'About(uint32_t board_sel):&#160;Board_ll.c'],['../_board__ll_8h.html#a69023e1b7220dc81de207b508d1d9c99',1,'About(uint32_t board_sel):&#160;Board_ll.c']]],
   ['aboutcamerasettings_3',['AboutCameraSettings',['../_board__ll_8c.html#a279b3e30d855066c3b916f6a5d10e7c2',1,'AboutCameraSettings(uint32_t drvno):&#160;Board_ll.c'],['../_board__ll_8h.html#a279b3e30d855066c3b916f6a5d10e7c2',1,'AboutCameraSettings(uint32_t drvno):&#160;Board_ll.c']]],
@@ -57,7 +57,7 @@ var searchData=
   ['adc_5fltc2271_5fregister_5fadress_5ft_54',['adc_ltc2271_register_adress_t',['../enum__hardware_8h.html#aa553213a284f79b43b3f2b37ce432d63',1,'enum_hardware.h']]],
   ['adc_5fmode_55',['adc_mode',['../structcamera__settings.html#af7e1f7b31ae0973dc8a3ca8579f851aa',1,'camera_settings']]],
   ['adc_5fmode_5ft_56',['adc_mode_t',['../enum__settings_8h.html#a760a8dafdcddcfadfea0aa3e01159164',1,'enum_settings.h']]],
-  ['allblocksdonehook_57',['allBlocksDoneHook',['../globals_8h.html#acc0b85c1e1b641cc9259bfc1e5b27b9b',1,'allBlocksDoneHook:&#160;globals.c'],['../globals_8c.html#acc0b85c1e1b641cc9259bfc1e5b27b9b',1,'allBlocksDoneHook:&#160;globals.c']]],
+  ['allblocksdonehook_57',['allBlocksDoneHook',['../globals_8h.html#acc19a571e34f913663d98a8b4c2a69f7',1,'allBlocksDoneHook:&#160;globals.c'],['../globals_8c.html#acc19a571e34f913663d98a8b4c2a69f7',1,'allBlocksDoneHook:&#160;globals.c']]],
   ['allinterruptsdone_58',['allInterruptsDone',['../globals_8h.html#a320d646e3cfd31abf1269fcd3bc6d1b9',1,'allInterruptsDone:&#160;globals.c'],['../globals_8c.html#a320d646e3cfd31abf1269fcd3bc6d1b9',1,'allInterruptsDone:&#160;globals.c']]],
   ['allocateusermemory_59',['allocateUserMemory',['../_board_8c.html#aa8172691bc3e992910f5ff610f7d6055',1,'allocateUserMemory(uint32_t drvno):&#160;Board.c'],['../_board_8h.html#aa8172691bc3e992910f5ff610f7d6055',1,'allocateUserMemory(uint32_t drvno):&#160;Board.c']]],
   ['area_5fmode_60',['area_mode',['../enum__settings_8h.html#a86f1e46308bfcaf8ceccb822f1d72c57a322132ec60ef92afd82ebd8b5833ffe9',1,'enum_settings.h']]],
