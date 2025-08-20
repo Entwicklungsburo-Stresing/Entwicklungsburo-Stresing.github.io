@@ -1,14 +1,10 @@
 var searchData=
 [
-  ['impactsignal1_0',['impactSignal1',['../structspecial__pixels.html#a331198ce6cdab680c94dc36593bc7cbd',1,'special_pixels']]],
-  ['impactsignal2_1',['impactSignal2',['../structspecial__pixels.html#ab2fc4e80c10508d1e4a0f90a93e010d3',1,'special_pixels']]],
-  ['interrupt_5fhandler_5farray_2',['interrupt_handler_array',['../_board__ll_8c.html#a1d38f3c4e2b778bd6977ceb64ddb5274',1,'Board_ll.c']]],
-  ['ioctrl_5fimpact_5fstart_5fpixel_3',['ioctrl_impact_start_pixel',['../structcamera__settings.html#a9da76423332a875434a8524c0aeb652d',1,'camera_settings']]],
-  ['ioctrl_5foutput_5fdelay_5fin_5f5ns_4',['ioctrl_output_delay_in_5ns',['../structcamera__settings.html#abcde4b0ee2cb3c896e99b599d5c4d46b',1,'camera_settings']]],
-  ['ioctrl_5foutput_5fwidth_5fin_5f5ns_5',['ioctrl_output_width_in_5ns',['../structcamera__settings.html#a16029e5a3e58705e7af44c9b268d7015',1,'camera_settings']]],
-  ['ioctrl_5ft0_5fperiod_5fin_5f10ns_6',['ioctrl_T0_period_in_10ns',['../structcamera__settings.html#a7884cc77b6263bfaea25f24215bfe83e',1,'camera_settings']]],
-  ['is_5fcooled_5fcamera_5flegacy_5fmode_7',['is_cooled_camera_legacy_mode',['../structcamera__settings.html#a12d482c6345afb2116315167cf04b42d',1,'camera_settings']]],
-  ['is_5ffft_5flegacy_8',['is_fft_legacy',['../structcamera__settings.html#a3b126accc9d7980b594d7256f767e1cb',1,'camera_settings']]],
-  ['isrcounter_9',['IsrCounter',['../_board__ll_8c.html#a97c6372fd53170dcc8673120117fffa3',1,'Board_ll.c']]],
-  ['isrunning_10',['isRunning',['../globals_8h.html#a35e1fbda907c4c69651e7ffed1543106',1,'isRunning:&#160;globals.c'],['../globals_8c.html#a35e1fbda907c4c69651e7ffed1543106',1,'isRunning:&#160;globals.c']]]
+  ['last_5fblock_0',['last_block',['../structverify__data__parameter.html#acfb5fad2872226ff8f4dc24cc3bb0f7c',1,'verify_data_parameter']]],
+  ['last_5fblock_5fbefore_5ferror_1',['last_block_before_error',['../structverify__data__parameter.html#a7049152d41d5554e15d006bc73ccd890',1,'verify_data_parameter']]],
+  ['last_5fmeasurement_5fbefore_5ferror_2',['last_measurement_before_error',['../structverify__data__parameter.html#a5cb31e408a760242c0a0a9691c695bcb',1,'verify_data_parameter']]],
+  ['last_5fsample_3',['last_sample',['../structverify__data__parameter.html#a99ae05364b74c467f2209e69dd54d485',1,'verify_data_parameter']]],
+  ['last_5fsample_5fbefore_5ferror_4',['last_sample_before_error',['../structverify__data__parameter.html#aa5548bae329e8ccf3ba8d5072abe3e59',1,'verify_data_parameter']]],
+  ['led_5foff_5',['led_off',['../structcamera__settings.html#a1b70539f225998b06fe9af05148e6fc3',1,'camera_settings']]],
+  ['lines_5fbinning_6',['lines_binning',['../structcamera__settings.html#a11b33889efd68e6ad8216c48d2941a8e',1,'camera_settings']]]
 ];

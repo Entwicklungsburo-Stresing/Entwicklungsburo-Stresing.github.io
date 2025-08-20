@@ -8,6 +8,5 @@ var searchData=
   ['led_5foff_5',['led_off',['../structcamera__settings.html#a1b70539f225998b06fe9af05148e6fc3',1,'camera_settings']]],
   ['legacy_5f202_5f14_5ftlpcnt_6',['LEGACY_202_14_TLPCNT',['../globals_8h.html#a0f18a8d7d8b21ec30bca032e881a2ee9',1,'globals.h']]],
   ['lines_5fbinning_7',['lines_binning',['../structcamera__settings.html#a11b33889efd68e6ad8216c48d2941a8e',1,'camera_settings']]],
-  ['lockhighlevelmutex_8',['LockHighLevelMutex',['../_board__ll_8c.html#a387c70167bfc0b405eceea67c11b53fc',1,'LockHighLevelMutex(uint32_t drvno):&#160;Board_ll.c'],['../_board__ll_8h.html#a387c70167bfc0b405eceea67c11b53fc',1,'LockHighLevelMutex(uint32_t drvno):&#160;Board_ll.c']]],
-  ['lscpciej_5fstresing_5fdriver_5fname_9',['LSCPCIEJ_STRESING_DRIVER_NAME',['../_board__ll_8c.html#a0129113144790654cc32a2dd83ab6e9c',1,'Board_ll.c']]]
+  ['lockhighlevelmutex_8',['LockHighLevelMutex',['../_board__ll_8c.html#a387c70167bfc0b405eceea67c11b53fc',1,'LockHighLevelMutex(uint32_t drvno):&#160;Board_ll.c'],['../_board__ll_8h.html#a387c70167bfc0b405eceea67c11b53fc',1,'LockHighLevelMutex(uint32_t drvno):&#160;Board_ll.c']]]
 ];

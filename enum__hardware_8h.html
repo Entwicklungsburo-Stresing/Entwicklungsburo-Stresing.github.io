@@ -845,18 +845,20 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="separator:ad0266b7b413403e4bfb667d9f666a910"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38de1923679a344eb82558f5de572d65" id="r_a38de1923679a344eb82558f5de572d65"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38de1923679a344eb82558f5de572d65">pixel_camera_status_bits_t</a> { <br />
-&#160;&#160;<a class="el" href="#a38de1923679a344eb82558f5de572d65a290e5c087071e7e55e851727129c71c1">pixel_camera_status_bitindex_over_temp</a> = 0
-, <a class="el" href="#a38de1923679a344eb82558f5de572d65afcb494a215e6cca1ce0c1546fd36fad2">pixel_camera_status_bitindex_temp_good</a> = 1
-, <a class="el" href="#a38de1923679a344eb82558f5de572d65ac1c17bb83e0d69b1f116a00c2a346989">pixel_camera_status_bitindex_3001</a> = 11
-, <a class="el" href="#a38de1923679a344eb82558f5de572d65a7d8b435c065177f27693c4e4143894a1">pixel_camera_status_bitindex_3010</a> = 12
-, <br />
-&#160;&#160;<a class="el" href="#a38de1923679a344eb82558f5de572d65a58d490a4a3a3d421b1393700eda594f0">pixel_camera_status_bitindex_3030</a> = 13
-, <a class="el" href="#a38de1923679a344eb82558f5de572d65a7d8bcfc0908c54a469cfc80e618cf4a8">pixel_camera_status_bit_over_temp</a> = 0x1
+&#160;&#160;<a class="el" href="#a38de1923679a344eb82558f5de572d65a7d8bcfc0908c54a469cfc80e618cf4a8">pixel_camera_status_bit_over_temp</a> = 0x1
 , <a class="el" href="#a38de1923679a344eb82558f5de572d65a10e1847218a16ac5ae69b172f66d55de">pixel_camera_status_bit_temp_good</a> = 0x2
+, <a class="el" href="#a38de1923679a344eb82558f5de572d65acbd7f2ddf9b5c64c6ad63fd34453894d">pixel_camera_status_bits_campos</a> = 0x01C
 , <a class="el" href="#a38de1923679a344eb82558f5de572d65a651dac359517c49fdd073ee532b464e1">pixel_camera_status_bit_3001</a> = 0x0800
 , <br />
 &#160;&#160;<a class="el" href="#a38de1923679a344eb82558f5de572d65ab8953e631a50b69462caf30f71c287be">pixel_camera_status_bit_3010</a> = 0x1000
 , <a class="el" href="#a38de1923679a344eb82558f5de572d65a5a3082c0a424dcbb65558c93788658c3">pixel_camera_status_bit_3030</a> = 0x2000
+, <a class="el" href="#a38de1923679a344eb82558f5de572d65a290e5c087071e7e55e851727129c71c1">pixel_camera_status_bitindex_over_temp</a> = 0
+, <a class="el" href="#a38de1923679a344eb82558f5de572d65afcb494a215e6cca1ce0c1546fd36fad2">pixel_camera_status_bitindex_temp_good</a> = 1
+, <br />
+&#160;&#160;<a class="el" href="#a38de1923679a344eb82558f5de572d65a536bd4e9337cae1aa449cc2cd9469630">pixel_camera_status_bitindex_campos</a> = 2
+, <a class="el" href="#a38de1923679a344eb82558f5de572d65ac1c17bb83e0d69b1f116a00c2a346989">pixel_camera_status_bitindex_3001</a> = 11
+, <a class="el" href="#a38de1923679a344eb82558f5de572d65a7d8b435c065177f27693c4e4143894a1">pixel_camera_status_bitindex_3010</a> = 12
+, <a class="el" href="#a38de1923679a344eb82558f5de572d65a58d490a4a3a3d421b1393700eda594f0">pixel_camera_status_bitindex_3030</a> = 13
 <br />
  }</td></tr>
 <tr class="separator:a38de1923679a344eb82558f5de572d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2129,21 +2131,24 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>This enum shows the meaning of the bits of the pixel camera status. </p>
 <table class="fieldtable">
-<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="a38de1923679a344eb82558f5de572d65a290e5c087071e7e55e851727129c71c1" name="a38de1923679a344eb82558f5de572d65a290e5c087071e7e55e851727129c71c1"></a>pixel_camera_status_bitindex_over_temp&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"><p>Over temperature. 1: over temperature detected, 0: temperature normal </p>
+<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="a38de1923679a344eb82558f5de572d65a7d8bcfc0908c54a469cfc80e618cf4a8" name="a38de1923679a344eb82558f5de572d65a7d8bcfc0908c54a469cfc80e618cf4a8"></a>pixel_camera_status_bit_over_temp&#160;</td><td class="fieldinit">0x1&#160;</td><td class="fielddoc"><p>Over temperature. 1: over temperature detected, 0: temperature normal </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a38de1923679a344eb82558f5de572d65afcb494a215e6cca1ce0c1546fd36fad2" name="a38de1923679a344eb82558f5de572d65afcb494a215e6cca1ce0c1546fd36fad2"></a>pixel_camera_status_bitindex_temp_good&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"><p>Temperature good. Only for cooled cameras. 1: target cooling temperature reached, 0: target temperature not reached </p>
+<tr><td class="fieldname"><a id="a38de1923679a344eb82558f5de572d65a10e1847218a16ac5ae69b172f66d55de" name="a38de1923679a344eb82558f5de572d65a10e1847218a16ac5ae69b172f66d55de"></a>pixel_camera_status_bit_temp_good&#160;</td><td class="fieldinit">0x2&#160;</td><td class="fielddoc"><p>Temperature good. Only for cooled cameras. 1: target cooling temperature reached, 0: target temperature not reached </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a38de1923679a344eb82558f5de572d65ac1c17bb83e0d69b1f116a00c2a346989" name="a38de1923679a344eb82558f5de572d65ac1c17bb83e0d69b1f116a00c2a346989"></a>pixel_camera_status_bitindex_3001&#160;</td><td class="fieldinit">11&#160;</td><td class="fielddoc"><p>1: Connected camera is system 3001. </p>
+<tr><td class="fieldname"><a id="a38de1923679a344eb82558f5de572d65acbd7f2ddf9b5c64c6ad63fd34453894d" name="a38de1923679a344eb82558f5de572d65acbd7f2ddf9b5c64c6ad63fd34453894d"></a>pixel_camera_status_bits_campos&#160;</td><td class="fieldinit">0x01C&#160;</td><td class="fielddoc"><p>Camera position is the index of the camera when multiple cameras are connected to the same PCIe card. 0 : first camera, 1: second camera, 7: eighth camera. Added in P209.19, P230.09. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a38de1923679a344eb82558f5de572d65a7d8b435c065177f27693c4e4143894a1" name="a38de1923679a344eb82558f5de572d65a7d8b435c065177f27693c4e4143894a1"></a>pixel_camera_status_bitindex_3010&#160;</td><td class="fieldinit">12&#160;</td><td class="fielddoc"><p>1: Connected camera is system 3010. </p>
+<tr><td class="fieldname"><a id="a38de1923679a344eb82558f5de572d65a651dac359517c49fdd073ee532b464e1" name="a38de1923679a344eb82558f5de572d65a651dac359517c49fdd073ee532b464e1"></a>pixel_camera_status_bit_3001&#160;</td><td class="fieldinit">0x0800&#160;</td><td class="fielddoc"><p>1: Connected camera is system 3001. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a38de1923679a344eb82558f5de572d65a58d490a4a3a3d421b1393700eda594f0" name="a38de1923679a344eb82558f5de572d65a58d490a4a3a3d421b1393700eda594f0"></a>pixel_camera_status_bitindex_3030&#160;</td><td class="fieldinit">13&#160;</td><td class="fielddoc"><p>1: Connected camera is system 3030. </p>
+<tr><td class="fieldname"><a id="a38de1923679a344eb82558f5de572d65ab8953e631a50b69462caf30f71c287be" name="a38de1923679a344eb82558f5de572d65ab8953e631a50b69462caf30f71c287be"></a>pixel_camera_status_bit_3010&#160;</td><td class="fieldinit">0x1000&#160;</td><td class="fielddoc"><p>1: Connected camera is system 3010. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a38de1923679a344eb82558f5de572d65a7d8bcfc0908c54a469cfc80e618cf4a8" name="a38de1923679a344eb82558f5de572d65a7d8bcfc0908c54a469cfc80e618cf4a8"></a>pixel_camera_status_bit_over_temp&#160;</td><td class="fieldinit">0x1&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a38de1923679a344eb82558f5de572d65a10e1847218a16ac5ae69b172f66d55de" name="a38de1923679a344eb82558f5de572d65a10e1847218a16ac5ae69b172f66d55de"></a>pixel_camera_status_bit_temp_good&#160;</td><td class="fieldinit">0x2&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a38de1923679a344eb82558f5de572d65a651dac359517c49fdd073ee532b464e1" name="a38de1923679a344eb82558f5de572d65a651dac359517c49fdd073ee532b464e1"></a>pixel_camera_status_bit_3001&#160;</td><td class="fieldinit">0x0800&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a38de1923679a344eb82558f5de572d65ab8953e631a50b69462caf30f71c287be" name="a38de1923679a344eb82558f5de572d65ab8953e631a50b69462caf30f71c287be"></a>pixel_camera_status_bit_3010&#160;</td><td class="fieldinit">0x1000&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a38de1923679a344eb82558f5de572d65a5a3082c0a424dcbb65558c93788658c3" name="a38de1923679a344eb82558f5de572d65a5a3082c0a424dcbb65558c93788658c3"></a>pixel_camera_status_bit_3030&#160;</td><td class="fieldinit">0x2000&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a38de1923679a344eb82558f5de572d65a5a3082c0a424dcbb65558c93788658c3" name="a38de1923679a344eb82558f5de572d65a5a3082c0a424dcbb65558c93788658c3"></a>pixel_camera_status_bit_3030&#160;</td><td class="fieldinit">0x2000&#160;</td><td class="fielddoc"><p>1: Connected camera is system 3030. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a38de1923679a344eb82558f5de572d65a290e5c087071e7e55e851727129c71c1" name="a38de1923679a344eb82558f5de572d65a290e5c087071e7e55e851727129c71c1"></a>pixel_camera_status_bitindex_over_temp&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a38de1923679a344eb82558f5de572d65afcb494a215e6cca1ce0c1546fd36fad2" name="a38de1923679a344eb82558f5de572d65afcb494a215e6cca1ce0c1546fd36fad2"></a>pixel_camera_status_bitindex_temp_good&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a38de1923679a344eb82558f5de572d65a536bd4e9337cae1aa449cc2cd9469630" name="a38de1923679a344eb82558f5de572d65a536bd4e9337cae1aa449cc2cd9469630"></a>pixel_camera_status_bitindex_campos&#160;</td><td class="fieldinit">2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a38de1923679a344eb82558f5de572d65ac1c17bb83e0d69b1f116a00c2a346989" name="a38de1923679a344eb82558f5de572d65ac1c17bb83e0d69b1f116a00c2a346989"></a>pixel_camera_status_bitindex_3001&#160;</td><td class="fieldinit">11&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a38de1923679a344eb82558f5de572d65a7d8b435c065177f27693c4e4143894a1" name="a38de1923679a344eb82558f5de572d65a7d8b435c065177f27693c4e4143894a1"></a>pixel_camera_status_bitindex_3010&#160;</td><td class="fieldinit">12&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a38de1923679a344eb82558f5de572d65a58d490a4a3a3d421b1393700eda594f0" name="a38de1923679a344eb82558f5de572d65a58d490a4a3a3d421b1393700eda594f0"></a>pixel_camera_status_bitindex_3030&#160;</td><td class="fieldinit">13&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

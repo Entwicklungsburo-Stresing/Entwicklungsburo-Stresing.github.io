@@ -546,6 +546,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae26d103f7c8e5e20f0fefa69d81c2085" id="r_ae26d103f7c8e5e20f0fefa69d81c2085"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae26d103f7c8e5e20f0fefa69d81c2085">DLLReadBitS0_8_multipleBoards</a> (uint32_t address, uint8_t bitnumber, uint8_t *isBitHigh0, uint8_t *isBitHigh1, uint8_t *isBitHigh2, uint8_t *isBitHigh3, uint8_t *isBitHigh4)</td></tr>
 <tr class="memdesc:ae26d103f7c8e5e20f0fefa69d81c2085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read 1 bit of 1 byte of a s0 register for all boards.  <br /></td></tr>
 <tr class="separator:ae26d103f7c8e5e20f0fefa69d81c2085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af97c07ec380e37ec0de49910b8aa8ab8" id="r_af97c07ec380e37ec0de49910b8aa8ab8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af97c07ec380e37ec0de49910b8aa8ab8">DLLCam_SendData</a> (uint32_t drvno, uint8_t maddr, uint8_t adaddr, uint16_t data)</td></tr>
+<tr class="memdesc:af97c07ec380e37ec0de49910b8aa8ab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends data via the fiber link to the camera.     <br /></td></tr>
+<tr class="separator:af97c07ec380e37ec0de49910b8aa8ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b707ab15c8d37c31d726efe34026165" id="r_a1b707ab15c8d37c31d726efe34026165"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b707ab15c8d37c31d726efe34026165">DLLCalcTrms</a> (uint32_t drvno, uint32_t firstSample, uint32_t lastSample, uint32_t TRMS_pixel, uint16_t CAMpos, double *mwf, double *trms)</td></tr>
 <tr class="memdesc:a1b707ab15c8d37c31d726efe34026165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate TRMS noise value of one pixel.     <br /></td></tr>
 <tr class="separator:a1b707ab15c8d37c31d726efe34026165"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -943,6 +946,49 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="af97c07ec380e37ec0de49910b8aa8ab8" name="af97c07ec380e37ec0de49910b8aa8ab8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af97c07ec380e37ec0de49910b8aa8ab8">&#9670;&#160;</a></span>DLLCam_SendData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLCam_SendData </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>maddr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>adaddr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sends data via the fiber link to the camera.    </p>
+<p>The register <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15a1764a5bd788f2f8bc3593155676bc729">S0Addr_DBR</a> is used for sending data via the fiber link. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">maddr</td><td>master address for specifying which address space is used. See <a class="el" href="enum__hardware_8h.html#ac15c184c7c063b832a1b29ab80beda15">master_address_t</a> for options. </td></tr>
+    <tr><td class="paramname">adaddr</td><td>register address. Which register is written to depends on the address space which is defined maddr. It is either <a class="el" href="enum__hardware_8h.html#a9e3c451d5901d136d9fc1de5b1f1cda2">camera_register_addresses_t</a>, <a class="el" href="enum__hardware_8h.html#aa553213a284f79b43b3f2b37ce432d63">adc_ltc2271_register_adress_t</a>, <a class="el" href="enum__hardware_8h.html#ac75bdd85df17576b95c1b0c0453876fa">adc_ads5294_register_adress_t</a>, <a class="el" href="enum__hardware_8h.html#a57dd656066257660e8a347df5680e80f">ioctrl_register_address_t</a> or <a class="el" href="enum__hardware_8h.html#a4f248f174f6a6ad94a112e607b78fd57">dac_register_addresses_t</a>. </td></tr>
+    <tr><td class="paramname">data</td><td>16 bit data to send </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>

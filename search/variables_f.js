@@ -1,6 +1,25 @@
 var searchData=
 [
-  ['region_5fsize_0',['region_size',['../structcamera__settings.html#a3fa31e4964a41c592d24ce74e4b7ce41',1,'camera_settings']]],
-  ['registerreadwritemutex_1',['registerReadWriteMutex',['../_board__ll_8c.html#a26145422a5ca9e70556dbd2d090165cc',1,'Board_ll.c']]],
-  ['registerreadwritemutexhighlevel_2',['registerReadWriteMutexHighLevel',['../_board__ll_8c.html#a6f70f78f41cd87c4f07bf794d096960e',1,'Board_ll.c']]]
+  ['s1s2_5fread_5fdelay_5fin_5f10ns_0',['s1s2_read_delay_in_10ns',['../structcamera__settings.html#a725f47b587a2b425688fbd79586b989e',1,'camera_settings']]],
+  ['s1state_1',['s1State',['../structspecial__pixels.html#a107cbb65ce4e3db6931d281b1e46e0ae',1,'special_pixels']]],
+  ['s2state_2',['s2State',['../structspecial__pixels.html#a36f918f4356fddac50f5358de8f422ec',1,'special_pixels']]],
+  ['sample_5fcnt_3',['sample_cnt',['../structverify__data__parameter.html#aa802f0aca4cdf2eb1acd39a6a8a7dbb8',1,'verify_data_parameter']]],
+  ['scancountertotal_4',['scanCounterTotal',['../globals_8h.html#aeb4ab164f87614736d4e4b13c33c9bd4',1,'scanCounterTotal:&#160;globals.c'],['../globals_8c.html#aeb4ab164f87614736d4e4b13c33c9bd4',1,'scanCounterTotal:&#160;globals.c']]],
+  ['scanindex_5',['scanIndex',['../structspecial__pixels.html#a35130c9065643e294fc050e9bd077987',1,'special_pixels']]],
+  ['scanindex2_6',['scanIndex2',['../structspecial__pixels.html#aaa555cb3040f43aeca746d0d6b5f4bec',1,'special_pixels']]],
+  ['sdat_5fin_5f10ns_7',['sdat_in_10ns',['../structcamera__settings.html#afdbb58aa78c6d9d9210c244507de9c68',1,'camera_settings']]],
+  ['sec_5fin_5f10ns_8',['sec_in_10ns',['../structcamera__settings.html#adef56c9e33dc855c930fd7d44588cbcd',1,'camera_settings']]],
+  ['sensor_5fgain_9',['sensor_gain',['../structcamera__settings.html#ac7aefaf11767a16726f85379d288895b',1,'camera_settings']]],
+  ['sensor_5freset_5for_5fhsir_5fec_10',['sensor_reset_or_hsir_ec',['../structcamera__settings.html#a2e848de09b699a99f976b67297acbd15',1,'camera_settings']]],
+  ['sensor_5ftype_11',['sensor_type',['../structcamera__settings.html#a3c95b63babcb2222a271e2cd42b6e057',1,'camera_settings']]],
+  ['settings_5fstruct_12',['settings_struct',['../globals_8h.html#af3b701c44f042f5169109f69acbe8d01',1,'settings_struct:&#160;globals.c'],['../globals_8c.html#af3b701c44f042f5169109f69acbe8d01',1,'settings_struct:&#160;globals.c']]],
+  ['shift_5fs1s2_5fto_5fnext_5fscan_13',['shift_s1s2_to_next_scan',['../structcamera__settings.html#a02fa99eaf64c0df8af0ffd6ce1b5497c',1,'camera_settings']]],
+  ['software_5fversion_5fmajor_14',['software_version_major',['../structfile__header.html#a973c9593050fcebe113be3904e27a6ab',1,'file_header']]],
+  ['software_5fversion_5fminor_15',['software_version_minor',['../structfile__header.html#a25f71c307960a3a668c8e9b92663ac8b',1,'file_header']]],
+  ['software_5fversion_5fpcie_16',['software_version_pcie',['../structfile__header.html#abfedd405d9ead4569b79ec6410268691',1,'file_header']]],
+  ['sslope_17',['sslope',['../structcamera__settings.html#a6f55940576ecb2bced3027d38676ea5c',1,'camera_settings']]],
+  ['start_5ftimestamp_18',['start_timestamp',['../globals_8h.html#ac4d084be9a8b4b7d84a8ba52be25e064',1,'start_timestamp:&#160;globals.c'],['../globals_8c.html#ac4d084be9a8b4b7d84a8ba52be25e064',1,'start_timestamp:&#160;globals.c']]],
+  ['sti_5fmode_19',['sti_mode',['../structcamera__settings.html#afeb4693c3f62bd567f9063c0412035b5',1,'camera_settings']]],
+  ['sticnt_20',['sticnt',['../structcamera__settings.html#a95629ef99d7173af90b835efd29b4eb9',1,'camera_settings']]],
+  ['stime_21',['stime',['../structcamera__settings.html#a10e94844da7b9228d8ba9c2bd14310cb',1,'camera_settings']]]
 ];

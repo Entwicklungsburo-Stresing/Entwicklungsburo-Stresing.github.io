@@ -110,8 +110,6 @@ $(function(){ initResizable(false); });
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a0129113144790654cc32a2dd83ab6e9c" id="r_a0129113144790654cc32a2dd83ab6e9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0129113144790654cc32a2dd83ab6e9c">LSCPCIEJ_STRESING_DRIVER_NAME</a>&#160;&#160;&#160;&quot;lscpciej&quot;</td></tr>
-<tr class="separator:a0129113144790654cc32a2dd83ab6e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8295e0aed07a8923d8363ce46c7b08e2" id="r_a8295e0aed07a8923d8363ce46c7b08e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8295e0aed07a8923d8363ce46c7b08e2">DIV</a>&#160;&#160;&#160;1024</td></tr>
 <tr class="separator:a8295e0aed07a8923d8363ce46c7b08e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a241aeeb764887ae5e3de58b98f04b16d" id="r_a241aeeb764887ae5e3de58b98f04b16d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a241aeeb764887ae5e3de58b98f04b16d">WIDTH</a>&#160;&#160;&#160;7</td></tr>
@@ -124,16 +122,16 @@ Functions</h2></td></tr>
 <tr class="memitem:ab13902e201d7091aeb300faa035523d4" id="r_ab13902e201d7091aeb300faa035523d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab13902e201d7091aeb300faa035523d4">isr</a> (uint32_t drvno)</td></tr>
 <tr class="memdesc:ab13902e201d7091aeb300faa035523d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interrupt routine copies data from the DMA buffer to the user buffer. If write to disk is true, the data is also written to disc.  <br /></td></tr>
 <tr class="separator:ab13902e201d7091aeb300faa035523d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad58bec910138298cfd60d64513cd859f" id="r_ad58bec910138298cfd60d64513cd859f"><td class="memItemLeft" align="right" valign="top">void DLLCALLCONV&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad58bec910138298cfd60d64513cd859f">interrupt_handler0</a> ()</td></tr>
-<tr class="separator:ad58bec910138298cfd60d64513cd859f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac11903448e9ec9ec287522e600533b21" id="r_ac11903448e9ec9ec287522e600533b21"><td class="memItemLeft" align="right" valign="top">void DLLCALLCONV&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac11903448e9ec9ec287522e600533b21">interrupt_handler1</a> ()</td></tr>
-<tr class="separator:ac11903448e9ec9ec287522e600533b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fdcbda9f36efba388e15ceee255c94c" id="r_a7fdcbda9f36efba388e15ceee255c94c"><td class="memItemLeft" align="right" valign="top">void DLLCALLCONV&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fdcbda9f36efba388e15ceee255c94c">interrupt_handler2</a> ()</td></tr>
-<tr class="separator:a7fdcbda9f36efba388e15ceee255c94c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ec4caef7ad99f1b19d973d7ff49fd3d" id="r_a6ec4caef7ad99f1b19d973d7ff49fd3d"><td class="memItemLeft" align="right" valign="top">void DLLCALLCONV&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ec4caef7ad99f1b19d973d7ff49fd3d">interrupt_handler3</a> ()</td></tr>
-<tr class="separator:a6ec4caef7ad99f1b19d973d7ff49fd3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a594144648ea640acff70bc7df70349f7" id="r_a594144648ea640acff70bc7df70349f7"><td class="memItemLeft" align="right" valign="top">void DLLCALLCONV&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a594144648ea640acff70bc7df70349f7">interrupt_handler4</a> ()</td></tr>
-<tr class="separator:a594144648ea640acff70bc7df70349f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef97cb8f6c53662d92d776aa0b65a955" id="r_aef97cb8f6c53662d92d776aa0b65a955"><td class="memItemLeft" align="right" valign="top">void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef97cb8f6c53662d92d776aa0b65a955">interrupt_handler0</a> (void)</td></tr>
+<tr class="separator:aef97cb8f6c53662d92d776aa0b65a955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad770d359198ff5d409d8c271f9debf71" id="r_ad770d359198ff5d409d8c271f9debf71"><td class="memItemLeft" align="right" valign="top">void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad770d359198ff5d409d8c271f9debf71">interrupt_handler1</a> (void)</td></tr>
+<tr class="separator:ad770d359198ff5d409d8c271f9debf71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99b64fe1ceb3e3fb3ded545fd25e339d" id="r_a99b64fe1ceb3e3fb3ded545fd25e339d"><td class="memItemLeft" align="right" valign="top">void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99b64fe1ceb3e3fb3ded545fd25e339d">interrupt_handler2</a> (void)</td></tr>
+<tr class="separator:a99b64fe1ceb3e3fb3ded545fd25e339d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48afea9f7be6075334b34166ecc22aa0" id="r_a48afea9f7be6075334b34166ecc22aa0"><td class="memItemLeft" align="right" valign="top">void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48afea9f7be6075334b34166ecc22aa0">interrupt_handler3</a> (void)</td></tr>
+<tr class="separator:a48afea9f7be6075334b34166ecc22aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55d9340251bfbbdc6f926a8e0d75bca8" id="r_a55d9340251bfbbdc6f926a8e0d75bca8"><td class="memItemLeft" align="right" valign="top">void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55d9340251bfbbdc6f926a8e0d75bca8">interrupt_handler4</a> (void)</td></tr>
+<tr class="separator:a55d9340251bfbbdc6f926a8e0d75bca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2076b4f3cda1c0a964ddc8d560aa70c8" id="r_a2076b4f3cda1c0a964ddc8d560aa70c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2076b4f3cda1c0a964ddc8d560aa70c8">readRegister_32</a> (uint32_t drvno, uint32_t *data, uint32_t address)</td></tr>
 <tr class="memdesc:a2076b4f3cda1c0a964ddc8d560aa70c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads 4 bytes on DMA area.  <br /></td></tr>
 <tr class="separator:a2076b4f3cda1c0a964ddc8d560aa70c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -309,10 +307,6 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:af1596c04862a8b8ceb69e28cbbfc7b8b" id="r_af1596c04862a8b8ceb69e28cbbfc7b8b"><td class="memItemLeft" align="right" valign="top">WDC_DEVICE_HANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1596c04862a8b8ceb69e28cbbfc7b8b">hDev_tmp</a> [<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>]</td></tr>
-<tr class="separator:af1596c04862a8b8ceb69e28cbbfc7b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95e5ce1ec04291b8f044ebb7f5fad961" id="r_a95e5ce1ec04291b8f044ebb7f5fad961"><td class="memItemLeft" align="right" valign="top">WDC_DEVICE_HANDLE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95e5ce1ec04291b8f044ebb7f5fad961">hDev</a> = (WDC_DEVICE_HANDLE *)&amp;<a class="el" href="#af1596c04862a8b8ceb69e28cbbfc7b8b">hDev_tmp</a></td></tr>
-<tr class="separator:a95e5ce1ec04291b8f044ebb7f5fad961"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46ac00793481ea345e649b9066468fec" id="r_a46ac00793481ea345e649b9066468fec"><td class="memItemLeft" align="right" valign="top">volatile DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46ac00793481ea345e649b9066468fec">dmaBufferSizeInBytes</a> [<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>] = { 0, 0, 0, 0, 0 }</td></tr>
 <tr class="separator:a46ac00793481ea345e649b9066468fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89d8ef47d0ad2e33114c9d1e04af4c93" id="r_a89d8ef47d0ad2e33114c9d1e04af4c93"><td class="memItemLeft" align="right" valign="top">uint16_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89d8ef47d0ad2e33114c9d1e04af4c93">dmaBuffer</a> [<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>] = { NULL, NULL, NULL, NULL, NULL }</td></tr>
@@ -321,12 +315,6 @@ Variables</h2></td></tr>
 <tr class="separator:a97c6372fd53170dcc8673120117fffa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20f213ff470a10da9e3fc5e02a5e3fcb" id="r_a20f213ff470a10da9e3fc5e02a5e3fcb"><td class="memItemLeft" align="right" valign="top">volatile UINT8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20f213ff470a10da9e3fc5e02a5e3fcb">dmaBufferPartReadPos</a> [<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>] = { 0, 0, 0, 0, 0 }</td></tr>
 <tr class="separator:a20f213ff470a10da9e3fc5e02a5e3fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac22a4b779b386fc06959b0425df967d" id="r_aac22a4b779b386fc06959b0425df967d"><td class="memItemLeft" align="right" valign="top">WD_DMA *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac22a4b779b386fc06959b0425df967d">dmaBufferInfos</a> [<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>] = { NULL, NULL, NULL, NULL, NULL }</td></tr>
-<tr class="separator:aac22a4b779b386fc06959b0425df967d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ed5330abf4660f88020dcc1ce7926c1" id="r_a6ed5330abf4660f88020dcc1ce7926c1"><td class="memItemLeft" align="right" valign="top">WDC_PCI_SCAN_RESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ed5330abf4660f88020dcc1ce7926c1">scanResult</a></td></tr>
-<tr class="separator:a6ed5330abf4660f88020dcc1ce7926c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0838b4d9733238be143a515e9ef87eb" id="r_ac0838b4d9733238be143a515e9ef87eb"><td class="memItemLeft" align="right" valign="top">WD_PCI_CARD_INFO&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0838b4d9733238be143a515e9ef87eb">deviceInfo</a> [<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>]</td></tr>
-<tr class="separator:ac0838b4d9733238be143a515e9ef87eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39517006ca67f401ab40cf6660d5e182" id="r_a39517006ca67f401ab40cf6660d5e182"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39517006ca67f401ab40cf6660d5e182">_SHOW_MSG</a> = TRUE</td></tr>
 <tr class="separator:a39517006ca67f401ab40cf6660d5e182"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c5994d155a9550cec19ba7091b41775" id="r_a1c5994d155a9550cec19ba7091b41775"><td class="memItemLeft" align="right" valign="top">HANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c5994d155a9550cec19ba7091b41775">ghMutex</a> [<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>] = { NULL, NULL, NULL, NULL, NULL }</td></tr>
@@ -345,8 +333,8 @@ Variables</h2></td></tr>
 <tr class="separator:acf6c86edf618572620d64d6234a8f10c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac09a2d712d4aeaa6cd6c588ba092a39c" id="r_ac09a2d712d4aeaa6cd6c588ba092a39c"><td class="memItemLeft" align="right" valign="top">LARGE_INTEGER&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac09a2d712d4aeaa6cd6c588ba092a39c">freq</a></td></tr>
 <tr class="separator:ac09a2d712d4aeaa6cd6c588ba092a39c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d38f3c4e2b778bd6977ceb64ddb5274" id="r_a1d38f3c4e2b778bd6977ceb64ddb5274"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d38f3c4e2b778bd6977ceb64ddb5274">interrupt_handler_array</a> [<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>])() = { &amp;<a class="el" href="#ad58bec910138298cfd60d64513cd859f">interrupt_handler0</a>, &amp;<a class="el" href="#ac11903448e9ec9ec287522e600533b21">interrupt_handler1</a>, &amp;<a class="el" href="#a7fdcbda9f36efba388e15ceee255c94c">interrupt_handler2</a>, &amp;<a class="el" href="#a6ec4caef7ad99f1b19d973d7ff49fd3d">interrupt_handler3</a>, &amp;<a class="el" href="#a594144648ea640acff70bc7df70349f7">interrupt_handler4</a> }</td></tr>
-<tr class="separator:a1d38f3c4e2b778bd6977ceb64ddb5274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab12411f0d9555d4e4f0fac2e8b89f88f" id="r_ab12411f0d9555d4e4f0fac2e8b89f88f"><td class="memItemLeft" align="right" valign="top">LSCPCIEJ_INT_HANDLER_STUB&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab12411f0d9555d4e4f0fac2e8b89f88f">interrupt_handler_array</a> [<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>] = { &amp;<a class="el" href="#aef97cb8f6c53662d92d776aa0b65a955">interrupt_handler0</a>, &amp;<a class="el" href="#ad770d359198ff5d409d8c271f9debf71">interrupt_handler1</a>, &amp;<a class="el" href="#a99b64fe1ceb3e3fb3ded545fd25e339d">interrupt_handler2</a>, &amp;<a class="el" href="#a48afea9f7be6075334b34166ecc22aa0">interrupt_handler3</a>, &amp;<a class="el" href="#a55d9340251bfbbdc6f926a8e0d75bca8">interrupt_handler4</a> }</td></tr>
+<tr class="separator:ab12411f0d9555d4e4f0fac2e8b89f88f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>All the low level platform specific implementations for interacting with the Stresing PCIe board.    </p>
@@ -362,20 +350,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define DIV&#160;&#160;&#160;1024</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0129113144790654cc32a2dd83ab6e9c" name="a0129113144790654cc32a2dd83ab6e9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0129113144790654cc32a2dd83ab6e9c">&#9670;&#160;</a></span>LSCPCIEJ_STRESING_DRIVER_NAME</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define LSCPCIEJ_STRESING_DRIVER_NAME&#160;&#160;&#160;&quot;lscpciej&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1228,16 +1202,16 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad58bec910138298cfd60d64513cd859f" name="ad58bec910138298cfd60d64513cd859f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad58bec910138298cfd60d64513cd859f">&#9670;&#160;</a></span>interrupt_handler0()</h2>
+<a id="aef97cb8f6c53662d92d776aa0b65a955" name="aef97cb8f6c53662d92d776aa0b65a955"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef97cb8f6c53662d92d776aa0b65a955">&#9670;&#160;</a></span>interrupt_handler0()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DLLCALLCONV interrupt_handler0 </td>
+          <td class="memname">void __stdcall interrupt_handler0 </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1245,16 +1219,16 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac11903448e9ec9ec287522e600533b21" name="ac11903448e9ec9ec287522e600533b21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac11903448e9ec9ec287522e600533b21">&#9670;&#160;</a></span>interrupt_handler1()</h2>
+<a id="ad770d359198ff5d409d8c271f9debf71" name="ad770d359198ff5d409d8c271f9debf71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad770d359198ff5d409d8c271f9debf71">&#9670;&#160;</a></span>interrupt_handler1()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DLLCALLCONV interrupt_handler1 </td>
+          <td class="memname">void __stdcall interrupt_handler1 </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1262,16 +1236,16 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7fdcbda9f36efba388e15ceee255c94c" name="a7fdcbda9f36efba388e15ceee255c94c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7fdcbda9f36efba388e15ceee255c94c">&#9670;&#160;</a></span>interrupt_handler2()</h2>
+<a id="a99b64fe1ceb3e3fb3ded545fd25e339d" name="a99b64fe1ceb3e3fb3ded545fd25e339d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99b64fe1ceb3e3fb3ded545fd25e339d">&#9670;&#160;</a></span>interrupt_handler2()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DLLCALLCONV interrupt_handler2 </td>
+          <td class="memname">void __stdcall interrupt_handler2 </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1279,16 +1253,16 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a6ec4caef7ad99f1b19d973d7ff49fd3d" name="a6ec4caef7ad99f1b19d973d7ff49fd3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ec4caef7ad99f1b19d973d7ff49fd3d">&#9670;&#160;</a></span>interrupt_handler3()</h2>
+<a id="a48afea9f7be6075334b34166ecc22aa0" name="a48afea9f7be6075334b34166ecc22aa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48afea9f7be6075334b34166ecc22aa0">&#9670;&#160;</a></span>interrupt_handler3()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DLLCALLCONV interrupt_handler3 </td>
+          <td class="memname">void __stdcall interrupt_handler3 </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1296,16 +1270,16 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a594144648ea640acff70bc7df70349f7" name="a594144648ea640acff70bc7df70349f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a594144648ea640acff70bc7df70349f7">&#9670;&#160;</a></span>interrupt_handler4()</h2>
+<a id="a55d9340251bfbbdc6f926a8e0d75bca8" name="a55d9340251bfbbdc6f926a8e0d75bca8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55d9340251bfbbdc6f926a8e0d75bca8">&#9670;&#160;</a></span>interrupt_handler4()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DLLCALLCONV interrupt_handler4 </td>
+          <td class="memname">void __stdcall interrupt_handler4 </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1512,7 +1486,7 @@ Variables</h2></td></tr>
 <p>Read byte (8 bit) from register of PCIe board, except r10-r1f. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramname">drvno</td><td>board number (=0 if one PCI board) </td></tr>
     <tr><td class="paramname">data</td><td>pointer to where data is stored </td></tr>
     <tr><td class="paramname">address</td><td>offset of register from base address (count in bytes) </td></tr>
   </table>
@@ -2131,20 +2105,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac0838b4d9733238be143a515e9ef87eb" name="ac0838b4d9733238be143a515e9ef87eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0838b4d9733238be143a515e9ef87eb">&#9670;&#160;</a></span>deviceInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">WD_PCI_CARD_INFO deviceInfo[<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ac40bdc1357c03d4fb2a969f94127d854" name="ac40bdc1357c03d4fb2a969f94127d854"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac40bdc1357c03d4fb2a969f94127d854">&#9670;&#160;</a></span>Direct2dViewer</h2>
 
@@ -2167,20 +2127,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">uint16_t* dmaBuffer[<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>] = { NULL, NULL, NULL, NULL, NULL }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aac22a4b779b386fc06959b0425df967d" name="aac22a4b779b386fc06959b0425df967d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac22a4b779b386fc06959b0425df967d">&#9670;&#160;</a></span>dmaBufferInfos</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">WD_DMA* dmaBufferInfos[<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>] = { NULL, NULL, NULL, NULL, NULL }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2271,45 +2217,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a95e5ce1ec04291b8f044ebb7f5fad961" name="a95e5ce1ec04291b8f044ebb7f5fad961"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95e5ce1ec04291b8f044ebb7f5fad961">&#9670;&#160;</a></span>hDev</h2>
+<a id="ab12411f0d9555d4e4f0fac2e8b89f88f" name="ab12411f0d9555d4e4f0fac2e8b89f88f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab12411f0d9555d4e4f0fac2e8b89f88f">&#9670;&#160;</a></span>interrupt_handler_array</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">WDC_DEVICE_HANDLE* hDev = (WDC_DEVICE_HANDLE *)&amp;<a class="el" href="#af1596c04862a8b8ceb69e28cbbfc7b8b">hDev_tmp</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af1596c04862a8b8ceb69e28cbbfc7b8b" name="af1596c04862a8b8ceb69e28cbbfc7b8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1596c04862a8b8ceb69e28cbbfc7b8b">&#9670;&#160;</a></span>hDev_tmp</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">WDC_DEVICE_HANDLE hDev_tmp[<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1d38f3c4e2b778bd6977ceb64ddb5274" name="a1d38f3c4e2b778bd6977ceb64ddb5274"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d38f3c4e2b778bd6977ceb64ddb5274">&#9670;&#160;</a></span>interrupt_handler_array</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void(* interrupt_handler_array[<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>])() </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> = { &amp;<a class="el" href="#ad58bec910138298cfd60d64513cd859f">interrupt_handler0</a>, &amp;<a class="el" href="#ac11903448e9ec9ec287522e600533b21">interrupt_handler1</a>, &amp;<a class="el" href="#a7fdcbda9f36efba388e15ceee255c94c">interrupt_handler2</a>, &amp;<a class="el" href="#a6ec4caef7ad99f1b19d973d7ff49fd3d">interrupt_handler3</a>, &amp;<a class="el" href="#a594144648ea640acff70bc7df70349f7">interrupt_handler4</a> }</td>
+          <td class="memname">LSCPCIEJ_INT_HANDLER_STUB interrupt_handler_array[<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>] = { &amp;<a class="el" href="#aef97cb8f6c53662d92d776aa0b65a955">interrupt_handler0</a>, &amp;<a class="el" href="#ad770d359198ff5d409d8c271f9debf71">interrupt_handler1</a>, &amp;<a class="el" href="#a99b64fe1ceb3e3fb3ded545fd25e339d">interrupt_handler2</a>, &amp;<a class="el" href="#a48afea9f7be6075334b34166ecc22aa0">interrupt_handler3</a>, &amp;<a class="el" href="#a55d9340251bfbbdc6f926a8e0d75bca8">interrupt_handler4</a> }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2366,20 +2281,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">HANDLE registerReadWriteMutexHighLevel[<a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>] = { NULL, NULL, NULL, NULL, NULL }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6ed5330abf4660f88020dcc1ce7926c1" name="a6ed5330abf4660f88020dcc1ce7926c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ed5330abf4660f88020dcc1ce7926c1">&#9670;&#160;</a></span>scanResult</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">WDC_PCI_SCAN_RESULT scanResult</td>
         </tr>
       </table>
 </div><div class="memdoc">

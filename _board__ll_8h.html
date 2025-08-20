@@ -103,7 +103,7 @@ $(function(){ initResizable(false); });
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="globals_8h_source.html">globals.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="es__status__codes_8h_source.html">../shared_src/es_status_codes.h</a>&quot;</code><br />
-<code>#include &quot;lscpciej_lib.h&quot;</code><br />
+<code>#include &quot;lscpciej/lscpciej.h&quot;</code><br />
 </div>
 <p><a href="_board__ll_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -291,8 +291,6 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a95e5ce1ec04291b8f044ebb7f5fad961" id="r_a95e5ce1ec04291b8f044ebb7f5fad961"><td class="memItemLeft" align="right" valign="top">WDC_DEVICE_HANDLE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95e5ce1ec04291b8f044ebb7f5fad961">hDev</a></td></tr>
-<tr class="separator:a95e5ce1ec04291b8f044ebb7f5fad961"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39517006ca67f401ab40cf6660d5e182" id="r_a39517006ca67f401ab40cf6660d5e182"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39517006ca67f401ab40cf6660d5e182">_SHOW_MSG</a></td></tr>
 <tr class="separator:a39517006ca67f401ab40cf6660d5e182"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -1317,7 +1315,7 @@ Variables</h2></td></tr>
 <p>Read byte (8 bit) from register of PCIe board, except r10-r1f. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramname">drvno</td><td>board number (=0 if one PCI board) </td></tr>
     <tr><td class="paramname">data</td><td>pointer to where data is stored </td></tr>
     <tr><td class="paramname">address</td><td>offset of register from base address (count in bytes) </td></tr>
   </table>
@@ -1933,28 +1931,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">bool _SHOW_MSG</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a95e5ce1ec04291b8f044ebb7f5fad961" name="a95e5ce1ec04291b8f044ebb7f5fad961"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95e5ce1ec04291b8f044ebb7f5fad961">&#9670;&#160;</a></span>hDev</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">WDC_DEVICE_HANDLE* hDev</td>
         </tr>
       </table>
   </td>

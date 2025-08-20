@@ -412,7 +412,11 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Channel select controls which channel of a camera control box is used for the camera readout. This feature is implemented in the camera version P230_6 and newer. See enum <a class="el" href="enum__settings_8h.html#a5baa77ee33be73547f4e348a68da6e3e">channel_select_t</a> in <a class="el" href="enum__settings_8h.html" title="All settings options and software constants.">enum_settings.h</a> for options. </p>
+<p>Channel select controls which channel of a camera control box is used for the camera readout. This feature is implemented in the camera version P230_6 and newer. See enum <a class="el" href="enum__settings_8h.html#a5baa77ee33be73547f4e348a68da6e3e">channel_select_t</a> in <a class="el" href="enum__settings_8h.html" title="All settings options and software constants.">enum_settings.h</a> for options.</p>
+<p>Examples:</p><ul>
+<li>1 camera control with 2 channels and <a class="el" href="enum__settings_8h.html#a5baa77ee33be73547f4e348a68da6e3eac9b905306698f7f1f09243db66a463be">channel_select_t::channel_select_A_B</a> is used: <a class="el" href="#a4738ff8e4057123c2c7136a8ac585bea">camera_settings::camcnt</a> = 2.</li>
+<li>1 camera control with 2 channels and <a class="el" href="enum__settings_8h.html#a5baa77ee33be73547f4e348a68da6e3ea00a00abe32363827f0bcb7eb9f188aca">channel_select_t::channel_select_A</a> or <a class="el" href="enum__settings_8h.html#a5baa77ee33be73547f4e348a68da6e3ead5fa4505652d22b1c927e6ff918826e6">channel_select_t::channel_select_B</a> is used: <a class="el" href="#a4738ff8e4057123c2c7136a8ac585bea">camera_settings::camcnt</a> = 1. </li>
+</ul>
 
 </div>
 </div>
