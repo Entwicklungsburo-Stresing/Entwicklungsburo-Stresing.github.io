@@ -112,9 +112,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a82c8db212e9619147eb6c2a350b1a0bf" id="r_a82c8db212e9619147eb6c2a350b1a0bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82c8db212e9619147eb6c2a350b1a0bf">DLLInitDriver</a> (uint8_t *_number_of_boards)</td></tr>
 <tr class="memdesc:a82c8db212e9619147eb6c2a350b1a0bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the driver.     <br /></td></tr>
 <tr class="separator:a82c8db212e9619147eb6c2a350b1a0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb719e4bf0a99b8055da655b3484fc27" id="r_abb719e4bf0a99b8055da655b3484fc27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb719e4bf0a99b8055da655b3484fc27">DLLInitSettingsStruct</a> (struct <a class="el" href="structmeasurement__settings.html">measurement_settings</a> *ms)</td></tr>
-<tr class="memdesc:abb719e4bf0a99b8055da655b3484fc27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this function to properly initialize the struct <a class="el" href="structmeasurement__settings.html" title="In this struct are settings, that are the same for all PCIe boards.">measurement_settings</a> to its default values.  <br /></td></tr>
-<tr class="separator:abb719e4bf0a99b8055da655b3484fc27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a464871a734100883d04fb3a0a2527307" id="r_a464871a734100883d04fb3a0a2527307"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a464871a734100883d04fb3a0a2527307">DLLInitSettingsStruct</a> (struct <a class="el" href="structmeasurement__settings.html">measurement_settings</a> *ms)</td></tr>
+<tr class="memdesc:a464871a734100883d04fb3a0a2527307"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this function to properly initialize the struct <a class="el" href="structmeasurement__settings.html" title="In this struct are settings, that are the same for all PCIe boards.">measurement_settings</a> to its default values.  <br /></td></tr>
+<tr class="separator:a464871a734100883d04fb3a0a2527307"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ee9c13f5d03b540a477864ca926cccf" id="r_a4ee9c13f5d03b540a477864ca926cccf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ee9c13f5d03b540a477864ca926cccf">DLLInitMeasurement</a> (struct <a class="el" href="structmeasurement__settings.html">measurement_settings</a> settings)</td></tr>
 <tr class="memdesc:a4ee9c13f5d03b540a477864ca926cccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize measurement (using board select).     <br /></td></tr>
 <tr class="separator:a4ee9c13f5d03b540a477864ca926cccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,18 +187,24 @@ Functions</h2></td></tr>
 <tr class="memitem:a9b89787ad2cd25c2be8ab873317ef531" id="r_a9b89787ad2cd25c2be8ab873317ef531"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b89787ad2cd25c2be8ab873317ef531">DLLreadRegisterS0_8_multipleBoards</a> (uint8_t *data0, uint8_t *data1, uint8_t *data2, uint8_t *data3, uint8_t *data4, uint32_t address)</td></tr>
 <tr class="memdesc:a9b89787ad2cd25c2be8ab873317ef531"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read 1 byte of a register in S0 space of all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
 <tr class="separator:a9b89787ad2cd25c2be8ab873317ef531"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e7c467734167f48d9294d1d42772257" id="r_a9e7c467734167f48d9294d1d42772257"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e7c467734167f48d9294d1d42772257">DLLwriteRegisterS0_8</a> (uint8_t data, uint32_t address)</td></tr>
-<tr class="memdesc:a9e7c467734167f48d9294d1d42772257"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the same 1 byte to a register in S0 space of all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
-<tr class="separator:a9e7c467734167f48d9294d1d42772257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eea13095a5155ce119adb3e8db37bc9" id="r_a4eea13095a5155ce119adb3e8db37bc9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4eea13095a5155ce119adb3e8db37bc9">DLLwriteRegisterS0_8</a> (uint32_t drvno, uint8_t data, uint32_t address)</td></tr>
+<tr class="memdesc:a4eea13095a5155ce119adb3e8db37bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write 1 byte of a register in S0 space.     <br /></td></tr>
+<tr class="separator:a4eea13095a5155ce119adb3e8db37bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab36030bb443973a884f88ea7e550895e" id="r_ab36030bb443973a884f88ea7e550895e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab36030bb443973a884f88ea7e550895e">DLLwriteRegisterS0_8_multipleBoards</a> (uint8_t data, uint32_t address)</td></tr>
+<tr class="memdesc:ab36030bb443973a884f88ea7e550895e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the same 1 byte to a register in S0 space of all boards.     <br /></td></tr>
+<tr class="separator:ab36030bb443973a884f88ea7e550895e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a0017c630d5ebbac9910376665be75c" id="r_a5a0017c630d5ebbac9910376665be75c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a0017c630d5ebbac9910376665be75c">DLLreadRegisterS0_32</a> (uint32_t drvno, uint32_t *data, uint32_t address)</td></tr>
 <tr class="memdesc:a5a0017c630d5ebbac9910376665be75c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read 4 bytes of a register in S0 space.     <br /></td></tr>
 <tr class="separator:a5a0017c630d5ebbac9910376665be75c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cec81b1e311b5f5b9d3dffcf1942017" id="r_a3cec81b1e311b5f5b9d3dffcf1942017"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cec81b1e311b5f5b9d3dffcf1942017">DLLreadRegisterS0_32_multipleBoards</a> (uint32_t *data0, uint32_t *data1, uint32_t *data2, uint32_t *data3, uint32_t *data4, uint32_t address)</td></tr>
 <tr class="memdesc:a3cec81b1e311b5f5b9d3dffcf1942017"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read 4 bytes of a register in S0 space of all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
 <tr class="separator:a3cec81b1e311b5f5b9d3dffcf1942017"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9343f871f011f9c68482265d261e42b4" id="r_a9343f871f011f9c68482265d261e42b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9343f871f011f9c68482265d261e42b4">DLLwriteRegisterS0_32</a> (uint32_t data, uint32_t address)</td></tr>
-<tr class="memdesc:a9343f871f011f9c68482265d261e42b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write 4 bytes of a register in S0 space for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
-<tr class="separator:a9343f871f011f9c68482265d261e42b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b72c0637f1306018f6c17a9b572c7e5" id="r_a6b72c0637f1306018f6c17a9b572c7e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b72c0637f1306018f6c17a9b572c7e5">DLLwriteRegisterS0_32</a> (uint32_t drvno, uint32_t data, uint32_t address)</td></tr>
+<tr class="memdesc:a6b72c0637f1306018f6c17a9b572c7e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write 4 byte of a register in S0 space.     <br /></td></tr>
+<tr class="separator:a6b72c0637f1306018f6c17a9b572c7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfc1541b09fa9d6d23dc8519e29f4303" id="r_acfc1541b09fa9d6d23dc8519e29f4303"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfc1541b09fa9d6d23dc8519e29f4303">DLLwriteRegisterS0_32_multipleBoards</a> (uint32_t data, uint32_t address)</td></tr>
+<tr class="memdesc:acfc1541b09fa9d6d23dc8519e29f4303"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write 4 bytes of a register in S0 space.     <br /></td></tr>
+<tr class="separator:acfc1541b09fa9d6d23dc8519e29f4303"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea9806993d6ad1a114f38c4469fed6e2" id="r_aea9806993d6ad1a114f38c4469fed6e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea9806993d6ad1a114f38c4469fed6e2">DLLReadScanFrequencyBit</a> (uint32_t drvno, uint8_t *scanFrequencyTooHigh)</td></tr>
 <tr class="memdesc:aea9806993d6ad1a114f38c4469fed6e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the ScanFrequency bit and checks if its high or low.     <br /></td></tr>
 <tr class="separator:aea9806993d6ad1a114f38c4469fed6e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -310,15 +316,24 @@ Functions</h2></td></tr>
 <tr class="memitem:aecec4dd743ab6f96a59c79b917d9c5a1" id="r_aecec4dd743ab6f96a59c79b917d9c5a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecec4dd743ab6f96a59c79b917d9c5a1">DLLCalcMeasureTimeInSeconds</a> (uint32_t nos, uint32_t nob, double exposure_time_in_ms)</td></tr>
 <tr class="memdesc:aecec4dd743ab6f96a59c79b917d9c5a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the theoretical time needed for one measurement.     <br /></td></tr>
 <tr class="separator:aecec4dd743ab6f96a59c79b917d9c5a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ded55f6758d26085c1d4ecb514854d7" id="r_a3ded55f6758d26085c1d4ecb514854d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ded55f6758d26085c1d4ecb514854d7">DLLOutTrigHigh</a> ()</td></tr>
-<tr class="memdesc:a3ded55f6758d26085c1d4ecb514854d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set trigger out(Reg CtrlA:D3) for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. Can be used to control timing issues in software.  <br /></td></tr>
-<tr class="separator:a3ded55f6758d26085c1d4ecb514854d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35adfc755ec91ac276f02f9776cb2484" id="r_a35adfc755ec91ac276f02f9776cb2484"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35adfc755ec91ac276f02f9776cb2484">DLLOutTrigLow</a> ()</td></tr>
-<tr class="memdesc:a35adfc755ec91ac276f02f9776cb2484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset trigger out(Reg CtrlA:D3) for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. Can be used to control timing issues in software.  <br /></td></tr>
-<tr class="separator:a35adfc755ec91ac276f02f9776cb2484"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ee61184e72bfc07a0017495829216ad" id="r_a7ee61184e72bfc07a0017495829216ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ee61184e72bfc07a0017495829216ad">DLLOutTrigPulse</a> (int64_t pulseWidthInMicroseconds)</td></tr>
-<tr class="memdesc:a7ee61184e72bfc07a0017495829216ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pulses trigger out(Reg CtrlA:D3) for all boards selected by setings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. Can be used to control timing issues in software.  <br /></td></tr>
-<tr class="separator:a7ee61184e72bfc07a0017495829216ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fa397755b0aaeb11146136852bf0c9e" id="r_a3fa397755b0aaeb11146136852bf0c9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fa397755b0aaeb11146136852bf0c9e">DLLOutTrigHigh</a> (uint32_t drvno)</td></tr>
+<tr class="memdesc:a3fa397755b0aaeb11146136852bf0c9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set trigger out(Reg CtrlA:D3) of PCIe board.     <br /></td></tr>
+<tr class="separator:a3fa397755b0aaeb11146136852bf0c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64b9190815eac46f622b5f80551605e9" id="r_a64b9190815eac46f622b5f80551605e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64b9190815eac46f622b5f80551605e9">DLLOutTrigHigh_multipleBoards</a> ()</td></tr>
+<tr class="memdesc:a64b9190815eac46f622b5f80551605e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set trigger out(Reg CtrlA:D3) for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
+<tr class="separator:a64b9190815eac46f622b5f80551605e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedc99801bb7b3ac6e91f2d1a1bd66734" id="r_aedc99801bb7b3ac6e91f2d1a1bd66734"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedc99801bb7b3ac6e91f2d1a1bd66734">DLLOutTrigLow</a> (uint32_t drvno)</td></tr>
+<tr class="memdesc:aedc99801bb7b3ac6e91f2d1a1bd66734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset trigger out(Reg CtrlA:D3) of PCI board.     <br /></td></tr>
+<tr class="separator:aedc99801bb7b3ac6e91f2d1a1bd66734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afed6642cbe87ee3c3103decfbc0532c6" id="r_afed6642cbe87ee3c3103decfbc0532c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afed6642cbe87ee3c3103decfbc0532c6">DLLOutTrigLow_multipleBoards</a> ()</td></tr>
+<tr class="memdesc:afed6642cbe87ee3c3103decfbc0532c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset trigger out(Reg CtrlA:D3) for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
+<tr class="separator:afed6642cbe87ee3c3103decfbc0532c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a870d15543e2f9fcf77e7526ff0919f42" id="r_a870d15543e2f9fcf77e7526ff0919f42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a870d15543e2f9fcf77e7526ff0919f42">DLLOutTrigPulse</a> (uint32_t drvno, int64_t pulseWidthInMicroseconds)</td></tr>
+<tr class="memdesc:a870d15543e2f9fcf77e7526ff0919f42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pulses trigger out(Reg CtrlA:D3) of PCI board.     <br /></td></tr>
+<tr class="separator:a870d15543e2f9fcf77e7526ff0919f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2971b0ab9626a0859d0c6f82e80de59d" id="r_a2971b0ab9626a0859d0c6f82e80de59d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2971b0ab9626a0859d0c6f82e80de59d">DLLOutTrigPulse_multipleBoards</a> (int64_t pulseWidthInMicroseconds)</td></tr>
+<tr class="memdesc:a2971b0ab9626a0859d0c6f82e80de59d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pulses trigger out(Reg CtrlA:D3) for all boards selected by setings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
+<tr class="separator:a2971b0ab9626a0859d0c6f82e80de59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16cd3816d8769344096f2bbeaa61f173" id="r_a16cd3816d8769344096f2bbeaa61f173"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16cd3816d8769344096f2bbeaa61f173">DLLOpenShutter</a> (uint32_t drvno)</td></tr>
 <tr class="memdesc:a16cd3816d8769344096f2bbeaa61f173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open shutter for sensors with EC (exposure control) / sets IFC signal = high.     <br /></td></tr>
 <tr class="separator:a16cd3816d8769344096f2bbeaa61f173"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -331,12 +346,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a8774dc4b587e78a9cb34c49ecce99d42" id="r_a8774dc4b587e78a9cb34c49ecce99d42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8774dc4b587e78a9cb34c49ecce99d42">DLLCloseShutter_multipleBoards</a> ()</td></tr>
 <tr class="memdesc:a8774dc4b587e78a9cb34c49ecce99d42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the IFC bit of interface for sensors with shutter function for all boards set by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. IFC=low.  <br /></td></tr>
 <tr class="separator:a8774dc4b587e78a9cb34c49ecce99d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d95a5cce49ee0e5009e763849df0006" id="r_a8d95a5cce49ee0e5009e763849df0006"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d95a5cce49ee0e5009e763849df0006">DLLsetBitS0_32</a> (uint32_t bitnumber, uint32_t address)</td></tr>
-<tr class="memdesc:a8d95a5cce49ee0e5009e763849df0006"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set bit to 1 in S0 register at memory address for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
-<tr class="separator:a8d95a5cce49ee0e5009e763849df0006"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c4ee72e4199f9d9bffcc46ce44fbf2b" id="r_a5c4ee72e4199f9d9bffcc46ce44fbf2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c4ee72e4199f9d9bffcc46ce44fbf2b">DLLresetBitS0_32</a> (uint32_t bitnumber, uint32_t address)</td></tr>
-<tr class="memdesc:a5c4ee72e4199f9d9bffcc46ce44fbf2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set bit to 0 in register at memory address for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
-<tr class="separator:a5c4ee72e4199f9d9bffcc46ce44fbf2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac833627fe73c01f556c6a2a5a1bba1b" id="r_aac833627fe73c01f556c6a2a5a1bba1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac833627fe73c01f556c6a2a5a1bba1b">DLLsetBitS0_32</a> (uint32_t drvno, uint32_t bitnumber, uint32_t address)</td></tr>
+<tr class="memdesc:aac833627fe73c01f556c6a2a5a1bba1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set bit to 1 in S0 register at memory address.     <br /></td></tr>
+<tr class="separator:aac833627fe73c01f556c6a2a5a1bba1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a062969150c3650ce31f43e86b9d85ab6" id="r_a062969150c3650ce31f43e86b9d85ab6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a062969150c3650ce31f43e86b9d85ab6">DLLsetBitS0_32_multipleBoards</a> (uint32_t bitnumber, uint32_t address)</td></tr>
+<tr class="memdesc:a062969150c3650ce31f43e86b9d85ab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set bit to 1 in S0 register at memory address.     <br /></td></tr>
+<tr class="separator:a062969150c3650ce31f43e86b9d85ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b4598a480399dadc862ea6ba6c415cd" id="r_a4b4598a480399dadc862ea6ba6c415cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b4598a480399dadc862ea6ba6c415cd">DLLresetBitS0_32</a> (uint32_t drvno, uint32_t bitnumber, uint32_t address)</td></tr>
+<tr class="memdesc:a4b4598a480399dadc862ea6ba6c415cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set bit to 0 in register at memory address.     <br /></td></tr>
+<tr class="separator:a4b4598a480399dadc862ea6ba6c415cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a442bfe6d40f73b32ed85637a75b36be1" id="r_a442bfe6d40f73b32ed85637a75b36be1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a442bfe6d40f73b32ed85637a75b36be1">DLLresetBitS0_32_multipleBoards</a> (uint32_t bitnumber, uint32_t address)</td></tr>
+<tr class="memdesc:a442bfe6d40f73b32ed85637a75b36be1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set bit to 0 in register at memory address.     <br /></td></tr>
+<tr class="separator:a442bfe6d40f73b32ed85637a75b36be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac58715fa7c048539747510a189ecaed" id="r_aac58715fa7c048539747510a189ecaed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac58715fa7c048539747510a189ecaed">DLLReadBitS0_32</a> (uint32_t drvno, uint32_t address, uint8_t bitnumber, uint8_t *isBitHigh)</td></tr>
 <tr class="memdesc:aac58715fa7c048539747510a189ecaed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read 1 bit of a 4 byte s0 register.     <br /></td></tr>
 <tr class="separator:aac58715fa7c048539747510a189ecaed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -352,9 +373,12 @@ Functions</h2></td></tr>
 <tr class="memitem:af97c07ec380e37ec0de49910b8aa8ab8" id="r_af97c07ec380e37ec0de49910b8aa8ab8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af97c07ec380e37ec0de49910b8aa8ab8">DLLCam_SendData</a> (uint32_t drvno, uint8_t maddr, uint8_t adaddr, uint16_t data)</td></tr>
 <tr class="memdesc:af97c07ec380e37ec0de49910b8aa8ab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends data via the fiber link to the camera.     <br /></td></tr>
 <tr class="separator:af97c07ec380e37ec0de49910b8aa8ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3bd49336fa211f7dffbbdccc99d2aec" id="r_ac3bd49336fa211f7dffbbdccc99d2aec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3bd49336fa211f7dffbbdccc99d2aec">DLLSetTemp</a> (uint8_t level)</td></tr>
-<tr class="memdesc:ac3bd49336fa211f7dffbbdccc99d2aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set temperature level for cooled cameras for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
-<tr class="separator:ac3bd49336fa211f7dffbbdccc99d2aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0d99d4d80fa354fe9ee954d76b89334" id="r_ab0d99d4d80fa354fe9ee954d76b89334"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0d99d4d80fa354fe9ee954d76b89334">DLLSetTemp</a> (uint32_t drvno, uint8_t level)</td></tr>
+<tr class="memdesc:ab0d99d4d80fa354fe9ee954d76b89334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set temperature level for cooled cameras.     <br /></td></tr>
+<tr class="separator:ab0d99d4d80fa354fe9ee954d76b89334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a005411f24d73b78239f10d14f5d89859" id="r_a005411f24d73b78239f10d14f5d89859"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a005411f24d73b78239f10d14f5d89859">DLLSetTemp_multipleBoards</a> (uint8_t level)</td></tr>
+<tr class="memdesc:a005411f24d73b78239f10d14f5d89859"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set temperature level for cooled cameras for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
+<tr class="separator:a005411f24d73b78239f10d14f5d89859"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a741f0dae4f97390c9ef7208a277c275b" id="r_a741f0dae4f97390c9ef7208a277c275b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a741f0dae4f97390c9ef7208a277c275b">DLLSetTORReg</a> (uint32_t drvno, uint8_t tor)</td></tr>
 <tr class="memdesc:a741f0dae4f97390c9ef7208a277c275b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set signal of output port of PCIe card.     <br /></td></tr>
 <tr class="separator:a741f0dae4f97390c9ef7208a277c275b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -367,9 +391,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a248e44c8edaaf1afe94066b90ff9547a" id="r_a248e44c8edaaf1afe94066b90ff9547a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a248e44c8edaaf1afe94066b90ff9547a">DLLDAC8568_setAllOutputs_multipleBoards</a> (uint8_t location, uint8_t cameraPosition, uint32_t *output0, uint32_t *output1, uint32_t *output2, uint32_t *output3, uint32_t *output4, uint8_t reorder_channels)</td></tr>
 <tr class="memdesc:a248e44c8edaaf1afe94066b90ff9547a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all outputs of the DAC8568 in camera 3030 or on PCIe board for all PCIe boards.  <br /></td></tr>
 <tr class="separator:a248e44c8edaaf1afe94066b90ff9547a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac51f480d3fee094a707439c40f148f49" id="r_ac51f480d3fee094a707439c40f148f49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac51f480d3fee094a707439c40f148f49">DLLFreeMemInfo</a> (uint64_t *pmemory_all, uint64_t *pmemory_free)</td></tr>
-<tr class="memdesc:ac51f480d3fee094a707439c40f148f49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the free and installed memory info.     <br /></td></tr>
-<tr class="separator:ac51f480d3fee094a707439c40f148f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29ed8bb1887deb4a075c3735cd72342d" id="r_a29ed8bb1887deb4a075c3735cd72342d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29ed8bb1887deb4a075c3735cd72342d">DLLFreeMemInfo</a> (uint64_t *pmemory_all, uint64_t *pmemory_free)</td></tr>
+<tr class="memdesc:a29ed8bb1887deb4a075c3735cd72342d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the free and installed memory info.     <br /></td></tr>
+<tr class="separator:a29ed8bb1887deb4a075c3735cd72342d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8dc7586850246cfdf5fe68c8a180ec9" id="r_ab8dc7586850246cfdf5fe68c8a180ec9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8dc7586850246cfdf5fe68c8a180ec9">DLLGetMeasureOn</a> (uint32_t drvno, uint8_t *measureOn)</td></tr>
 <tr class="memdesc:ab8dc7586850246cfdf5fe68c8a180ec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if measure on bit is set.     <br /></td></tr>
 <tr class="separator:ab8dc7586850246cfdf5fe68c8a180ec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -427,12 +451,12 @@ Functions</h2></td></tr>
 <tr class="memitem:aaa3828088db2b395fec8c75c0773ce61" id="r_aaa3828088db2b395fec8c75c0773ce61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa3828088db2b395fec8c75c0773ce61">DLLIOCtrl_setAllOutputs</a> (uint32_t *width_in_5ns, uint32_t *delay_in_5ns)</td></tr>
 <tr class="memdesc:aaa3828088db2b395fec8c75c0773ce61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set parameters of all pulses outputs of IOCTRL for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
 <tr class="separator:aaa3828088db2b395fec8c75c0773ce61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79a1ea8d164b02336350f228840b1c02" id="r_a79a1ea8d164b02336350f228840b1c02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79a1ea8d164b02336350f228840b1c02">DLLGetCurrentScanNumber</a> (uint32_t drvno, int64_t *sample, int64_t *block)</td></tr>
-<tr class="memdesc:a79a1ea8d164b02336350f228840b1c02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives scan and block number of the last scan written to userBuffer.     <br /></td></tr>
-<tr class="separator:a79a1ea8d164b02336350f228840b1c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe353a9293f63379dfbef70500b437e0" id="r_afe353a9293f63379dfbef70500b437e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe353a9293f63379dfbef70500b437e0">DLLGetCurrentScanNumber_multipleBoards</a> (int64_t *sample0, int64_t *block0, int64_t *sample1, int64_t *block1, int64_t *sample2, int64_t *block2, int64_t *sample3, int64_t *block3, int64_t *sample4, int64_t *block4)</td></tr>
-<tr class="memdesc:afe353a9293f63379dfbef70500b437e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives scan and block number of the last scan written to userBuffer for all boards selected by settings paramter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
-<tr class="separator:afe353a9293f63379dfbef70500b437e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a000b888dee453dc89c98a13a7f49be62" id="r_a000b888dee453dc89c98a13a7f49be62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a000b888dee453dc89c98a13a7f49be62">DLLGetCurrentScanNumber</a> (uint32_t drvno, int64_t *sample, int64_t *block)</td></tr>
+<tr class="memdesc:a000b888dee453dc89c98a13a7f49be62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives scan and block number of the last scan written to userBuffer.     <br /></td></tr>
+<tr class="separator:a000b888dee453dc89c98a13a7f49be62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42958c51d7cc0bbfde2afdcd9877ddea" id="r_a42958c51d7cc0bbfde2afdcd9877ddea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42958c51d7cc0bbfde2afdcd9877ddea">DLLGetCurrentScanNumber_multipleBoards</a> (int64_t *sample0, int64_t *block0, int64_t *sample1, int64_t *block1, int64_t *sample2, int64_t *block2, int64_t *sample3, int64_t *block3, int64_t *sample4, int64_t *block4)</td></tr>
+<tr class="memdesc:a42958c51d7cc0bbfde2afdcd9877ddea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives scan and block number of the last scan written to userBuffer for all boards selected by settings paramter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>.  <br /></td></tr>
+<tr class="separator:a42958c51d7cc0bbfde2afdcd9877ddea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a441cb3384907905658c40599df34aaad" id="r_a441cb3384907905658c40599df34aaad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a441cb3384907905658c40599df34aaad">DLLGetIsTdc</a> (uint32_t drvno, uint8_t *isTdc)</td></tr>
 <tr class="memdesc:a441cb3384907905658c40599df34aaad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read TDC flag in PCIEFLAGS register.     <br /></td></tr>
 <tr class="separator:a441cb3384907905658c40599df34aaad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -463,9 +487,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a703858807d136f7abd2991d17e103eb2" id="r_a703858807d136f7abd2991d17e103eb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a703858807d136f7abd2991d17e103eb2">DLLGetDSC_multipleBoards</a> (uint8_t DSCNumber, uint32_t *ADSC0, uint32_t *LDSC0, uint32_t *ADSC1, uint32_t *LDSC1, uint32_t *ADSC2, uint32_t *LDSC2, uint32_t *ADSC3, uint32_t *LDSC3, uint32_t *ADSC4, uint32_t *LDSC4)</td></tr>
 <tr class="memdesc:a703858807d136f7abd2991d17e103eb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">return all values of Delay Stage Counter for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>  <br /></td></tr>
 <tr class="separator:a703858807d136f7abd2991d17e103eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6baedfe2513a683213db026bc4929975" id="r_a6baedfe2513a683213db026bc4929975"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6baedfe2513a683213db026bc4929975">DLLInitGPX</a> (uint32_t delay)</td></tr>
-<tr class="memdesc:a6baedfe2513a683213db026bc4929975"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the TDC-GPX chip for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. TDC: time delay counter option.  <br /></td></tr>
-<tr class="separator:a6baedfe2513a683213db026bc4929975"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa828f161568b989ed8dcc93ac348693" id="r_afa828f161568b989ed8dcc93ac348693"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa828f161568b989ed8dcc93ac348693">DLLSetContinuousMeasurement</a> (uint8_t on)</td></tr>
 <tr class="memdesc:afa828f161568b989ed8dcc93ac348693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control looping the measurement.     <br /></td></tr>
 <tr class="separator:afa828f161568b989ed8dcc93ac348693"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -970,10 +991,10 @@ Variables</h2></td></tr>
 <p>Sends data via the fiber link to the camera.    </p>
 <p>The register <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15a1764a5bd788f2f8bc3593155676bc729">S0Addr_DBR</a> is used for sending data via the fiber link. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
-    <tr><td class="paramname">maddr</td><td>master address for specifying which address space is used. See <a class="el" href="enum__hardware_8h.html#ac15c184c7c063b832a1b29ab80beda15">master_address_t</a> for options. </td></tr>
-    <tr><td class="paramname">adaddr</td><td>register address. Which register is written to depends on the address space which is defined maddr. It is either <a class="el" href="enum__hardware_8h.html#a9e3c451d5901d136d9fc1de5b1f1cda2">camera_register_addresses_t</a>, <a class="el" href="enum__hardware_8h.html#aa553213a284f79b43b3f2b37ce432d63">adc_ltc2271_register_adress_t</a>, <a class="el" href="enum__hardware_8h.html#ac75bdd85df17576b95c1b0c0453876fa">adc_ads5294_register_adress_t</a>, <a class="el" href="enum__hardware_8h.html#a57dd656066257660e8a347df5680e80f">ioctrl_register_address_t</a> or <a class="el" href="enum__hardware_8h.html#a4f248f174f6a6ad94a112e607b78fd57">dac_register_addresses_t</a>. </td></tr>
-    <tr><td class="paramname">data</td><td>16 bit data to send </td></tr>
+    <tr><td class="paramname">drvno[in]</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">maddr[in]</td><td>master address for specifying which address space is used. See <a class="el" href="enum__hardware_8h.html#ac15c184c7c063b832a1b29ab80beda15">master_address_t</a> for options. </td></tr>
+    <tr><td class="paramname">adaddr[in]</td><td>register address. Which register is written to depends on the address space which is defined maddr. It is either <a class="el" href="enum__hardware_8h.html#a9e3c451d5901d136d9fc1de5b1f1cda2">camera_register_addresses_t</a>, <a class="el" href="enum__hardware_8h.html#aa553213a284f79b43b3f2b37ce432d63">adc_ltc2271_register_adress_t</a>, <a class="el" href="enum__hardware_8h.html#ac75bdd85df17576b95c1b0c0453876fa">adc_ads5294_register_adress_t</a>, <a class="el" href="enum__hardware_8h.html#a57dd656066257660e8a347df5680e80f">ioctrl_register_address_t</a> or <a class="el" href="enum__hardware_8h.html#a4f248f174f6a6ad94a112e607b78fd57">dac_register_addresses_t</a>. </td></tr>
+    <tr><td class="paramname">data[in]</td><td>16 bit data to send </td></tr>
   </table>
   </dd>
 </dl>
@@ -2205,14 +2226,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac51f480d3fee094a707439c40f148f49" name="ac51f480d3fee094a707439c40f148f49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac51f480d3fee094a707439c40f148f49">&#9670;&#160;</a></span>DLLFreeMemInfo()</h2>
+<a id="a29ed8bb1887deb4a075c3735cd72342d" name="a29ed8bb1887deb4a075c3735cd72342d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29ed8bb1887deb4a075c3735cd72342d">&#9670;&#160;</a></span>DLLFreeMemInfo()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> void DLLFreeMemInfo </td>
+          <td class="memname"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLFreeMemInfo </td>
           <td>(</td>
           <td class="paramtype">uint64_t *</td>          <td class="paramname"><span class="paramname"><em>pmemory_all</em></span>, </td>
         </tr>
@@ -2228,10 +2249,11 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">pmemory_all</td><td>how much is installed </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">pmemory_free</td><td>how much is free    </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pmemory_free</td><td>how much is free </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -3016,14 +3038,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a79a1ea8d164b02336350f228840b1c02" name="a79a1ea8d164b02336350f228840b1c02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79a1ea8d164b02336350f228840b1c02">&#9670;&#160;</a></span>DLLGetCurrentScanNumber()</h2>
+<a id="a000b888dee453dc89c98a13a7f49be62" name="a000b888dee453dc89c98a13a7f49be62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a000b888dee453dc89c98a13a7f49be62">&#9670;&#160;</a></span>DLLGetCurrentScanNumber()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> void DLLGetCurrentScanNumber </td>
+          <td class="memname"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLGetCurrentScanNumber </td>
           <td>(</td>
           <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
         </tr>
@@ -3046,21 +3068,22 @@ Variables</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">sample</td><td>Scan number of the last scan in userBuffer. -1 when no scan has been written yet, otherwise 0...(nos-1) </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">block</td><td>Block number of the last scan in userBuffer. -1 when no scans has been written yet, otherwise 0...(nob-1)    </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">block</td><td>Block number of the last scan in userBuffer. -1 when no scans has been written yet, otherwise 0...(nob-1) </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
-<a id="afe353a9293f63379dfbef70500b437e0" name="afe353a9293f63379dfbef70500b437e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe353a9293f63379dfbef70500b437e0">&#9670;&#160;</a></span>DLLGetCurrentScanNumber_multipleBoards()</h2>
+<a id="a42958c51d7cc0bbfde2afdcd9877ddea" name="a42958c51d7cc0bbfde2afdcd9877ddea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42958c51d7cc0bbfde2afdcd9877ddea">&#9670;&#160;</a></span>DLLGetCurrentScanNumber_multipleBoards()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> void DLLGetCurrentScanNumber_multipleBoards </td>
+          <td class="memname"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLGetCurrentScanNumber_multipleBoards </td>
           <td>(</td>
           <td class="paramtype">int64_t *</td>          <td class="paramname"><span class="paramname"><em>sample0</em></span>, </td>
         </tr>
@@ -3129,6 +3152,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -4393,32 +4417,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a6baedfe2513a683213db026bc4929975" name="a6baedfe2513a683213db026bc4929975"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6baedfe2513a683213db026bc4929975">&#9670;&#160;</a></span>DLLInitGPX()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLInitGPX </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>delay</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize the TDC-GPX chip for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. TDC: time delay counter option. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">delay</td><td>GPX offset is used to increase accuracy. A counter value can be added, usually 1000. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
-
-</div>
-</div>
 <a id="a4ee9c13f5d03b540a477864ca926cccf" name="a4ee9c13f5d03b540a477864ca926cccf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4ee9c13f5d03b540a477864ca926cccf">&#9670;&#160;</a></span>DLLInitMeasurement()</h2>
 
@@ -4442,6 +4440,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -4501,14 +4500,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="abb719e4bf0a99b8055da655b3484fc27" name="abb719e4bf0a99b8055da655b3484fc27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb719e4bf0a99b8055da655b3484fc27">&#9670;&#160;</a></span>DLLInitSettingsStruct()</h2>
+<a id="a464871a734100883d04fb3a0a2527307" name="a464871a734100883d04fb3a0a2527307"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a464871a734100883d04fb3a0a2527307">&#9670;&#160;</a></span>DLLInitSettingsStruct()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> void DLLInitSettingsStruct </td>
+          <td class="memname"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLInitSettingsStruct </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structmeasurement__settings.html">measurement_settings</a> *</td>          <td class="paramname"><span class="paramname"><em>ms</em></span></td><td>)</td>
           <td></td>
@@ -4523,6 +4522,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -4746,8 +4746,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a3ded55f6758d26085c1d4ecb514854d7" name="a3ded55f6758d26085c1d4ecb514854d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ded55f6758d26085c1d4ecb514854d7">&#9670;&#160;</a></span>DLLOutTrigHigh()</h2>
+<a id="a3fa397755b0aaeb11146136852bf0c9e" name="a3fa397755b0aaeb11146136852bf0c9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fa397755b0aaeb11146136852bf0c9e">&#9670;&#160;</a></span>DLLOutTrigHigh()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4755,19 +4755,45 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLOutTrigHigh </td>
           <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set trigger out(Reg CtrlA:D3) of PCIe board.    </p>
+<p>The Reg TOR:D31 must have been set to 1 and D30:D27 to zero to see the signal -&gt; see manual. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
+
+</div>
+</div>
+<a id="a64b9190815eac46f622b5f80551605e9" name="a64b9190815eac46f622b5f80551605e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64b9190815eac46f622b5f80551605e9">&#9670;&#160;</a></span>DLLOutTrigHigh_multipleBoards()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLOutTrigHigh_multipleBoards </td>
+          <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set trigger out(Reg CtrlA:D3) for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. Can be used to control timing issues in software. </p>
+<p>Set trigger out(Reg CtrlA:D3) for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
 <p>The Reg TOR:D31 must have been set to 1 and D30:D27 to zero to see the signal -&gt; see manual. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
-<a id="a35adfc755ec91ac276f02f9776cb2484" name="a35adfc755ec91ac276f02f9776cb2484"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35adfc755ec91ac276f02f9776cb2484">&#9670;&#160;</a></span>DLLOutTrigLow()</h2>
+<a id="aedc99801bb7b3ac6e91f2d1a1bd66734" name="aedc99801bb7b3ac6e91f2d1a1bd66734"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedc99801bb7b3ac6e91f2d1a1bd66734">&#9670;&#160;</a></span>DLLOutTrigLow()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4775,19 +4801,45 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLOutTrigLow </td>
           <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reset trigger out(Reg CtrlA:D3) of PCI board.    </p>
+<p>The Reg TOR:D31 must have been set to 1 and D30:D27 to zero to see the signal -&gt; see manual. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
+
+</div>
+</div>
+<a id="afed6642cbe87ee3c3103decfbc0532c6" name="afed6642cbe87ee3c3103decfbc0532c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afed6642cbe87ee3c3103decfbc0532c6">&#9670;&#160;</a></span>DLLOutTrigLow_multipleBoards()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLOutTrigLow_multipleBoards </td>
+          <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Reset trigger out(Reg CtrlA:D3) for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. Can be used to control timing issues in software. </p>
+<p>Reset trigger out(Reg CtrlA:D3) for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
 <p>The Reg TOR:D31 must have been set to 1 and D30:D27 to zero to see the signal -&gt; see manual. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
-<a id="a7ee61184e72bfc07a0017495829216ad" name="a7ee61184e72bfc07a0017495829216ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ee61184e72bfc07a0017495829216ad">&#9670;&#160;</a></span>DLLOutTrigPulse()</h2>
+<a id="a870d15543e2f9fcf77e7526ff0919f42" name="a870d15543e2f9fcf77e7526ff0919f42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a870d15543e2f9fcf77e7526ff0919f42">&#9670;&#160;</a></span>DLLOutTrigPulse()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4795,13 +4847,44 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLOutTrigPulse </td>
           <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>pulseWidthInMicroseconds</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pulses trigger out(Reg CtrlA:D3) of PCI board.    </p>
+<p>The Reg TOR:D31 must have been set to 1 and D30:D27 to zero to see the signal -&gt; see manual </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">pulseWidthInMicroseconds[in]</td><td>duration of pulse in us </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
+
+</div>
+</div>
+<a id="a2971b0ab9626a0859d0c6f82e80de59d" name="a2971b0ab9626a0859d0c6f82e80de59d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2971b0ab9626a0859d0c6f82e80de59d">&#9670;&#160;</a></span>DLLOutTrigPulse_multipleBoards()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLOutTrigPulse_multipleBoards </td>
+          <td>(</td>
           <td class="paramtype">int64_t</td>          <td class="paramname"><span class="paramname"><em>pulseWidthInMicroseconds</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Pulses trigger out(Reg CtrlA:D3) for all boards selected by setings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. Can be used to control timing issues in software. </p>
+<p>Pulses trigger out(Reg CtrlA:D3) for all boards selected by setings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
 <p>The Reg TOR:D31 must have been set to 1 and D30:D27 to zero to see the signal -&gt; see manual </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pulseWidthInMicroseconds</td><td>duration of pulse in us </td></tr>
@@ -4845,8 +4928,8 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Address of the register to read. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bitnumber</td><td>Address of the bit to read. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Address of the register to read. All available addresses are listed in enum <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15">s0_addresses_t</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bitnumber</td><td>Address of the bit to read. 0...31 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">isBitHigh</td><td>Tells if bit is high or low. </td></tr>
   </table>
   </dd>
@@ -4902,8 +4985,8 @@ Variables</h2></td></tr>
 <p>Read 1 bit of a 4 bytes s0 register for all boards. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Address of the register to read. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bitnumber</td><td>Address of the bit to read. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Address of the register to read. All available addresses are listed in enum <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15">s0_addresses_t</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bitnumber</td><td>Address of the bit to read. 0...31 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">isBitHigh0</td><td>board 0: Tells if bit is 1 or 0. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">isBitHigh1</td><td>board 1: Tells if bit is 1 or 0. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">isBitHigh2</td><td>board 2: Tells if bit is 1 or 0. </td></tr>
@@ -4949,8 +5032,8 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Address of the register to read. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bitnumber</td><td>Address of the bit to read. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Address of the register to read. All available addresses are listed in enum <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15">s0_addresses_t</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bitnumber</td><td>Address of the bit to read. 0...7 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">isBitHigh</td><td>Tells if bit is high or low. </td></tr>
   </table>
   </dd>
@@ -5006,8 +5089,8 @@ Variables</h2></td></tr>
 <p>Read 1 bit of 1 byte of a s0 register for all boards. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Address of the register to read. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bitnumber</td><td>Address of the bit to read. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Address of the register to read. All available addresses are listed in enum <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15">s0_addresses_t</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bitnumber</td><td>Address of the bit to read. 0...7 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">isBitHigh0</td><td>Tells if bit is high or low. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">isBitHigh1</td><td>Tells if bit is high or low. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">isBitHigh2</td><td>Tells if bit is high or low. </td></tr>
@@ -5129,7 +5212,7 @@ Variables</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>Read buffer. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Address of the register to read. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Address of the register to read. All available addresses are listed in enum <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15">s0_addresses_t</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -5184,7 +5267,7 @@ Variables</h2></td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">data2</td><td>Read buffer for board 2. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">data3</td><td>Read buffer for board 3. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">data4</td><td>Read buffer for board 4. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Address of the register to read. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Address of the register to read. All available addresses are listed in enum <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15">s0_addresses_t</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -5221,7 +5304,7 @@ Variables</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>Read buffer. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Address of the register to read. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Address of the register to read. All available addresses are listed in enum <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15">s0_addresses_t</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -5276,7 +5359,7 @@ Variables</h2></td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">data2</td><td>Read buffer of board 2. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">data3</td><td>Read buffer of board 3. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">data4</td><td>Read buffer of board 4. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Address of the register to read. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Address of the register to read. All available addresses are listed in enum <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15">s0_addresses_t</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -5364,14 +5447,51 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5c4ee72e4199f9d9bffcc46ce44fbf2b" name="a5c4ee72e4199f9d9bffcc46ce44fbf2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c4ee72e4199f9d9bffcc46ce44fbf2b">&#9670;&#160;</a></span>DLLresetBitS0_32()</h2>
+<a id="a4b4598a480399dadc862ea6ba6c415cd" name="a4b4598a480399dadc862ea6ba6c415cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b4598a480399dadc862ea6ba6c415cd">&#9670;&#160;</a></span>DLLresetBitS0_32()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLresetBitS0_32 </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>bitnumber</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>address</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set bit to 0 in register at memory address.    </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bitnumber</td><td>0...31, 0 is LSB, 31 MSB </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>register address. Only 4 byte steps are valid. All available addresses are listed in enum <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15">s0_addresses_t</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
+
+</div>
+</div>
+<a id="a442bfe6d40f73b32ed85637a75b36be1" name="a442bfe6d40f73b32ed85637a75b36be1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a442bfe6d40f73b32ed85637a75b36be1">&#9670;&#160;</a></span>DLLresetBitS0_32_multipleBoards()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLresetBitS0_32_multipleBoards </td>
           <td>(</td>
           <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>bitnumber</em></span>, </td>
         </tr>
@@ -5383,15 +5503,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set bit to 0 in register at memory address for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
+<p>Set bit to 0 in register at memory address.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">bitnumber</td><td>0...31, 0 is LSB, 31 MSB </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>register address. Only 4 byte steps are valid. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>register address. Only 4 byte steps are valid. All available addresses are listed in enum <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15">s0_addresses_t</a>. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -5688,14 +5808,51 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a8d95a5cce49ee0e5009e763849df0006" name="a8d95a5cce49ee0e5009e763849df0006"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d95a5cce49ee0e5009e763849df0006">&#9670;&#160;</a></span>DLLsetBitS0_32()</h2>
+<a id="aac833627fe73c01f556c6a2a5a1bba1b" name="aac833627fe73c01f556c6a2a5a1bba1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac833627fe73c01f556c6a2a5a1bba1b">&#9670;&#160;</a></span>DLLsetBitS0_32()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLsetBitS0_32 </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>bitnumber</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>address</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set bit to 1 in S0 register at memory address.    </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bitnumber</td><td>0...31, 0 is LSB, 31 MSB </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>register address. Only 4 byte steps are valid. All available addresses are listed in enum <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15">s0_addresses_t</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
+
+</div>
+</div>
+<a id="a062969150c3650ce31f43e86b9d85ab6" name="a062969150c3650ce31f43e86b9d85ab6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a062969150c3650ce31f43e86b9d85ab6">&#9670;&#160;</a></span>DLLsetBitS0_32_multipleBoards()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLsetBitS0_32_multipleBoards </td>
           <td>(</td>
           <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>bitnumber</em></span>, </td>
         </tr>
@@ -5707,15 +5864,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set bit to 1 in S0 register at memory address for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
+<p>Set bit to 1 in S0 register at memory address.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">bitnumber</td><td>0...31, 0 is LSB, 31 MSB </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>register address. Only 4 byte steps are valid. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>register address. Only 4 byte steps are valid. All available addresses are listed in enum <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15">s0_addresses_t</a>. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -5735,7 +5892,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set a function which will be executed every time when a block ends. </p>
-<p>The end of a block doesn't indicate the availability of the data. Which data is available to copy is indicated by <a class="el" href="#a79a1ea8d164b02336350f228840b1c02">DLLGetCurrentScanNumber</a>. The copy method is controlled by <a class="el" href="structcamera__settings.html#a7d6d06fc3f59976df702bfda1e7bc0d1">camera_settings::use_software_polling</a>. When the block size is not aligned to <a class="el" href="structcamera__settings.html#a8f2833d2036671abc6382415794d6032">camera_settings::dma_buffer_size_in_scans</a> and <a class="el" href="structcamera__settings.html#a7d6d06fc3f59976df702bfda1e7bc0d1">camera_settings::use_software_polling</a> is turned off, there will be no interrupt at the end of a block and so the data won't be available in this moment. Turn <a class="el" href="structcamera__settings.html#a7d6d06fc3f59976df702bfda1e7bc0d1">camera_settings::use_software_polling</a> on to avoid this. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The end of a block doesn't indicate the availability of the data. Which data is available to copy is indicated by <a class="el" href="#a000b888dee453dc89c98a13a7f49be62">DLLGetCurrentScanNumber</a>. The copy method is controlled by <a class="el" href="structcamera__settings.html#a7d6d06fc3f59976df702bfda1e7bc0d1">camera_settings::use_software_polling</a>. When the block size is not aligned to <a class="el" href="structcamera__settings.html#a8f2833d2036671abc6382415794d6032">camera_settings::dma_buffer_size_in_scans</a> and <a class="el" href="structcamera__settings.html#a7d6d06fc3f59976df702bfda1e7bc0d1">camera_settings::use_software_polling</a> is turned off, there will be no interrupt at the end of a block and so the data won't be available in this moment. Turn <a class="el" href="structcamera__settings.html#a7d6d06fc3f59976df702bfda1e7bc0d1">camera_settings::use_software_polling</a> on to avoid this. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">hook</td><td>Pointer to the function which will be executed. The function should accept a single parameter of type uint32_t, which is the block index (0...nob-1). </td></tr>
   </table>
@@ -5976,7 +6133,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set a function which will be executed every time when a measurement ends. </p>
-<p>Regardless of <a class="el" href="structmeasurement__settings.html#aac0f1237e7da13512c25448ddc6fe852">measurement_settings::continuous_measurement</a> this hook is call only one time at the end of the measurement. When <a class="el" href="structmeasurement__settings.html#aac0f1237e7da13512c25448ddc6fe852">measurement_settings::continuous_measurement</a> is enabled, it is called after the loop is disabled. The hook is called after the pause set by <a class="el" href="structmeasurement__settings.html#a6b38daf0440f5d5ac2609a56f9314e96">measurement_settings::cont_pause_in_microseconds</a>. When this hook is called all data is available, so <a class="el" href="#a79a1ea8d164b02336350f228840b1c02">DLLGetCurrentScanNumber</a> should return sample = nos-1 and block = nob-1. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Regardless of <a class="el" href="structmeasurement__settings.html#aac0f1237e7da13512c25448ddc6fe852">measurement_settings::continuous_measurement</a> this hook is call only one time at the end of the measurement. When <a class="el" href="structmeasurement__settings.html#aac0f1237e7da13512c25448ddc6fe852">measurement_settings::continuous_measurement</a> is enabled, it is called after the loop is disabled. The hook is called after the pause set by <a class="el" href="structmeasurement__settings.html#a6b38daf0440f5d5ac2609a56f9314e96">measurement_settings::cont_pause_in_microseconds</a>. When this hook is called all data is available, so <a class="el" href="#a000b888dee453dc89c98a13a7f49be62">DLLGetCurrentScanNumber</a> should return sample = nos-1 and block = nob-1. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">hook</td><td>Pointer to the function which will be executed. </td></tr>
   </table>
@@ -6078,14 +6235,45 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac3bd49336fa211f7dffbbdccc99d2aec" name="ac3bd49336fa211f7dffbbdccc99d2aec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3bd49336fa211f7dffbbdccc99d2aec">&#9670;&#160;</a></span>DLLSetTemp()</h2>
+<a id="ab0d99d4d80fa354fe9ee954d76b89334" name="ab0d99d4d80fa354fe9ee954d76b89334"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0d99d4d80fa354fe9ee954d76b89334">&#9670;&#160;</a></span>DLLSetTemp()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLSetTemp </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>level</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set temperature level for cooled cameras.    </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno[in]</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">level[in]</td><td>level 0..7 / 0=off, 7=min -&gt; see cooling manual </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
+
+</div>
+</div>
+<a id="a005411f24d73b78239f10d14f5d89859" name="a005411f24d73b78239f10d14f5d89859"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a005411f24d73b78239f10d14f5d89859">&#9670;&#160;</a></span>DLLSetTemp_multipleBoards()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLSetTemp_multipleBoards </td>
           <td>(</td>
           <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>level</em></span></td><td>)</td>
           <td></td>
@@ -6338,14 +6526,51 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a9343f871f011f9c68482265d261e42b4" name="a9343f871f011f9c68482265d261e42b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9343f871f011f9c68482265d261e42b4">&#9670;&#160;</a></span>DLLwriteRegisterS0_32()</h2>
+<a id="a6b72c0637f1306018f6c17a9b572c7e5" name="a6b72c0637f1306018f6c17a9b572c7e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b72c0637f1306018f6c17a9b572c7e5">&#9670;&#160;</a></span>DLLwriteRegisterS0_32()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLwriteRegisterS0_32 </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>address</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write 4 byte of a register in S0 space.    </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Data to write. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Address of the register to read. All available addresses are listed in enum <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15">s0_addresses_t</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
+
+</div>
+</div>
+<a id="acfc1541b09fa9d6d23dc8519e29f4303" name="acfc1541b09fa9d6d23dc8519e29f4303"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfc1541b09fa9d6d23dc8519e29f4303">&#9670;&#160;</a></span>DLLwriteRegisterS0_32_multipleBoards()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLwriteRegisterS0_32_multipleBoards </td>
           <td>(</td>
           <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
         </tr>
@@ -6357,26 +6582,63 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Write 4 bytes of a register in S0 space for all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
+<p>Write 4 bytes of a register in S0 space.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Data to write. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Address of the register to read. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Address of the register to read. All available addresses are listed in enum <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15">s0_addresses_t</a>. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
-<a id="a9e7c467734167f48d9294d1d42772257" name="a9e7c467734167f48d9294d1d42772257"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e7c467734167f48d9294d1d42772257">&#9670;&#160;</a></span>DLLwriteRegisterS0_8()</h2>
+<a id="a4eea13095a5155ce119adb3e8db37bc9" name="a4eea13095a5155ce119adb3e8db37bc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4eea13095a5155ce119adb3e8db37bc9">&#9670;&#160;</a></span>DLLwriteRegisterS0_8()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLwriteRegisterS0_8 </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>address</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write 1 byte of a register in S0 space.    </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">data</td><td>Data to write. </td></tr>
+    <tr><td class="paramname">address</td><td>Address of the register to read. All available addresses are listed in enum <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15">s0_addresses_t</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
+
+</div>
+</div>
+<a id="ab36030bb443973a884f88ea7e550895e" name="ab36030bb443973a884f88ea7e550895e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab36030bb443973a884f88ea7e550895e">&#9670;&#160;</a></span>DLLwriteRegisterS0_8_multipleBoards()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_e_s_l_s_c_d_l_l_8h.html#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> DLLwriteRegisterS0_8_multipleBoards </td>
           <td>(</td>
           <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
         </tr>
@@ -6388,15 +6650,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Write the same 1 byte to a register in S0 space of all boards selected by settings parameter <a class="el" href="structmeasurement__settings.html#a51e928b5e7194d8011abed67c4bd4fdb">measurement_settings::board_sel</a>. </p>
+<p>Write the same 1 byte to a register in S0 space of all boards.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Data to write. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Address of the register to write. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">data[in]</td><td>Data to write. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Address of the register to write. All available addresses are listed in enum <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15">s0_addresses_t</a>. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>

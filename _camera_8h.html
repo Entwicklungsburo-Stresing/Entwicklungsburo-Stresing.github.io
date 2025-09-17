@@ -1008,10 +1008,10 @@ or use on e-lab test computer desktop LabView folder lv64hs (bool switch in 3030
 <p>Sends data via the fiber link to the camera. </p>
 <p>The register <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15a1764a5bd788f2f8bc3593155676bc729">S0Addr_DBR</a> is used for sending data via the fiber link. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
-    <tr><td class="paramname">maddr</td><td>master address for specifying which address space is used. See <a class="el" href="enum__hardware_8h.html#ac15c184c7c063b832a1b29ab80beda15">master_address_t</a> for options. </td></tr>
-    <tr><td class="paramname">adaddr</td><td>register address. Which register is written to depends on the address space which is defined maddr. It is either <a class="el" href="enum__hardware_8h.html#a9e3c451d5901d136d9fc1de5b1f1cda2">camera_register_addresses_t</a>, <a class="el" href="enum__hardware_8h.html#aa553213a284f79b43b3f2b37ce432d63">adc_ltc2271_register_adress_t</a>, <a class="el" href="enum__hardware_8h.html#ac75bdd85df17576b95c1b0c0453876fa">adc_ads5294_register_adress_t</a>, <a class="el" href="enum__hardware_8h.html#a57dd656066257660e8a347df5680e80f">ioctrl_register_address_t</a> or <a class="el" href="enum__hardware_8h.html#a4f248f174f6a6ad94a112e607b78fd57">dac_register_addresses_t</a>. </td></tr>
-    <tr><td class="paramname">data</td><td>16 bit data to send </td></tr>
+    <tr><td class="paramname">drvno[in]</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">maddr[in]</td><td>master address for specifying which address space is used. See <a class="el" href="enum__hardware_8h.html#ac15c184c7c063b832a1b29ab80beda15">master_address_t</a> for options. </td></tr>
+    <tr><td class="paramname">adaddr[in]</td><td>register address. Which register is written to depends on the address space which is defined maddr. It is either <a class="el" href="enum__hardware_8h.html#a9e3c451d5901d136d9fc1de5b1f1cda2">camera_register_addresses_t</a>, <a class="el" href="enum__hardware_8h.html#aa553213a284f79b43b3f2b37ce432d63">adc_ltc2271_register_adress_t</a>, <a class="el" href="enum__hardware_8h.html#ac75bdd85df17576b95c1b0c0453876fa">adc_ads5294_register_adress_t</a>, <a class="el" href="enum__hardware_8h.html#a57dd656066257660e8a347df5680e80f">ioctrl_register_address_t</a> or <a class="el" href="enum__hardware_8h.html#a4f248f174f6a6ad94a112e607b78fd57">dac_register_addresses_t</a>. </td></tr>
+    <tr><td class="paramname">data[in]</td><td>16 bit data to send </td></tr>
   </table>
   </dd>
 </dl>
@@ -1165,8 +1165,8 @@ or use on e-lab test computer desktop LabView folder lv64hs (bool switch in 3030
 <p>Set temperature level for cooled cameras. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
-    <tr><td class="paramname">level</td><td>level 0..7 / 0=off, 7=min -&gt; see cooling manual </td></tr>
+    <tr><td class="paramname">drvno[in]</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramname">level[in]</td><td>level 0..7 / 0=off, 7=min -&gt; see cooling manual </td></tr>
   </table>
   </dd>
 </dl>

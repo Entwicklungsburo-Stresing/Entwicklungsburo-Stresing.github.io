@@ -446,7 +446,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Size of the DMA buffer in scans. The default is 1000. This setting controls how often the interrupt is triggered to copy data from the DMA buffer to the user buffer. This setting only has an effect when <a class="el" href="#a7d6d06fc3f59976df702bfda1e7bc0d1">camera_settings::use_software_polling</a> is turned off. A lower number means more interrupts in a shorter time and so more recent data available. Which data is available is indicated by <a class="el" href="_e_s_l_s_c_d_l_l_8c.html#a79a1ea8d164b02336350f228840b1c02">DLLGetCurrentScanNumber</a>. Too many interrupts in a too short time can lead to errors. 60 is working with high speed (exposure time = 0,02ms). When this setting is 30, there could a wrong scan every 10000 scans. </p>
+<p>Size of the DMA buffer in scans. The default is 1000. This setting controls how often the interrupt is triggered to copy data from the DMA buffer to the user buffer. This setting only has an effect when <a class="el" href="#a7d6d06fc3f59976df702bfda1e7bc0d1">camera_settings::use_software_polling</a> is turned off. A lower number means more interrupts in a shorter time and so more recent data available. Which data is available is indicated by <a class="el" href="_e_s_l_s_c_d_l_l_8c.html#a000b888dee453dc89c98a13a7f49be62">DLLGetCurrentScanNumber</a>. Too many interrupts in a too short time can lead to errors. 60 is working with high speed (exposure time = 0,02ms). When this setting is 30, there could a wrong scan every 10000 scans. </p>
 
 </div>
 </div>
@@ -1104,7 +1104,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>use_software_polling determines which method is used to copy data from DMA to user buffer.</p><ul>
-<li>&gt;0: Use software polling. When there is new available data in the DMA buffer, a thread copies the data one scan at a time to the user buffer. Since the PCIe card firmware version P222_2 this method is reliable up to about 100kHz. It generates as expected a higher CPU load than the interrupt method. With this option you can get more recent scans from <a class="el" href="_e_s_l_s_c_d_l_l_8c.html#a79a1ea8d164b02336350f228840b1c02">DLLGetCurrentScanNumber</a>, especially at lower frequencies.</li>
+<li>&gt;0: Use software polling. When there is new available data in the DMA buffer, a thread copies the data one scan at a time to the user buffer. Since the PCIe card firmware version P222_2 this method is reliable up to about 100kHz. It generates as expected a higher CPU load than the interrupt method. With this option you can get more recent scans from <a class="el" href="_e_s_l_s_c_d_l_l_8c.html#a000b888dee453dc89c98a13a7f49be62">DLLGetCurrentScanNumber</a>, especially at lower frequencies.</li>
 <li>=0: Use interrupt. Every <a class="el" href="#a8f2833d2036671abc6382415794d6032">camera_settings::dma_buffer_size_in_scans</a> /2 scan the interrupt starts a copy process, which copies dma_buffer_size_in_scans/2 scans to the user buffer. 1000 is our default value for <a class="el" href="#a8f2833d2036671abc6382415794d6032">camera_settings::dma_buffer_size_in_scans</a>, so the interrupt is triggered every 500 scans.</li>
 </ul>
 <p>Further information about software polling can be found in the manual in chapter 5.4.8. </p>
