@@ -184,7 +184,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a6de4e38fbc35ee4e86547eee9a9b8169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit driver. Call this before exiting software for cleanup.     <br /></td></tr>
 <tr class="separator:a6de4e38fbc35ee4e86547eee9a9b8169"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcb5298e49deb624fa14d0b39f2525e2" id="r_adcb5298e49deb624fa14d0b39f2525e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcb5298e49deb624fa14d0b39f2525e2">DLLImportMeasurementDataFromFile</a> (const char *filename)</td></tr>
-<tr class="memdesc:adcb5298e49deb624fa14d0b39f2525e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO. missing documentation.     <br /></td></tr>
+<tr class="memdesc:adcb5298e49deb624fa14d0b39f2525e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Import measurement data from a file.     <br /></td></tr>
 <tr class="separator:adcb5298e49deb624fa14d0b39f2525e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29ed8bb1887deb4a075c3735cd72342d" id="r_a29ed8bb1887deb4a075c3735cd72342d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29ed8bb1887deb4a075c3735cd72342d">DLLFreeMemInfo</a> (uint64_t *pmemory_all, uint64_t *pmemory_free)</td></tr>
 <tr class="memdesc:a29ed8bb1887deb4a075c3735cd72342d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the free and installed memory info.     <br /></td></tr>
@@ -4391,14 +4391,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>TODO. missing documentation.    </p>
+<p>Import measurement data from a file.    </p>
+<p>This function is deciding by the file extentension how the data is imported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Complete absolute path + filename </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 
 </div>
 </div>
@@ -4418,7 +4419,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initialize the driver.    </p>
-<p>Call this before any other action. It is only needed to be called once at startup. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
+<p>Call this before any other action. It is only needed to be called once at startup. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">_number_of_boards</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>    </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">_number_of_boards</td><td>Pointer for returning recognized number of PCIe boards. </td></tr>
@@ -4829,7 +4836,7 @@ Functions</h2></td></tr>
 <p>The Reg TOR:D31 must have been set to 1 and D30:D27 to zero to see the signal -&gt; see manual </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">pulseWidthInMicroseconds[in]</td><td>duration of pulse in us </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pulseWidthInMicroseconds</td><td>duration of pulse in us </td></tr>
   </table>
   </dd>
 </dl>
@@ -6589,9 +6596,9 @@ Functions</h2></td></tr>
 <p>Write 1 byte of a register in S0 space.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
-    <tr><td class="paramname">data</td><td>Data to write. </td></tr>
-    <tr><td class="paramname">address</td><td>Address of the register to read. All available addresses are listed in enum <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15">s0_addresses_t</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Data to write. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Address of the register to read. All available addresses are listed in enum <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15">s0_addresses_t</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -6621,7 +6628,7 @@ Functions</h2></td></tr>
 <p>Write the same 1 byte to a register in S0 space of all boards.    </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir"></td><td class="paramname">data[in]</td><td>Data to write. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Data to write. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Address of the register to write. All available addresses are listed in enum <a class="el" href="enum__hardware_8h.html#a1532e8504727e103db7ec69af3330f15">s0_addresses_t</a>. </td></tr>
   </table>
   </dd>
