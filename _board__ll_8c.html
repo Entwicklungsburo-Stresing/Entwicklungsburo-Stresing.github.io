@@ -118,6 +118,7 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:acd24b30183d82710c9f5b7ddc6ac7c36" id="r_acd24b30183d82710c9f5b7ddc6ac7c36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd24b30183d82710c9f5b7ddc6ac7c36">CleanupDma</a> (uint32_t drvno)</td></tr>
+<tr class="memdesc:acd24b30183d82710c9f5b7ddc6ac7c36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleanup DMA buffer.  <br /></td></tr>
 <tr class="separator:acd24b30183d82710c9f5b7ddc6ac7c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab13902e201d7091aeb300faa035523d4" id="r_ab13902e201d7091aeb300faa035523d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab13902e201d7091aeb300faa035523d4">isr</a> (uint32_t drvno)</td></tr>
 <tr class="memdesc:ab13902e201d7091aeb300faa035523d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interrupt routine copies data from the DMA buffer to the user buffer. If write to disk is true, the data is also written to disc.  <br /></td></tr>
@@ -158,6 +159,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a9039d41ad6df416fc5e92a33a9bcbaa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate DMA buffer - should only be called once.  <br /></td></tr>
 <tr class="separator:a9039d41ad6df416fc5e92a33a9bcbaa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a783e37a93bc6fe6457ced5b0908c8329" id="r_a783e37a93bc6fe6457ced5b0908c8329"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a783e37a93bc6fe6457ced5b0908c8329">enableInterrupt</a> (uint32_t drvno)</td></tr>
+<tr class="memdesc:a783e37a93bc6fe6457ced5b0908c8329"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable interrupt.  <br /></td></tr>
 <tr class="separator:a783e37a93bc6fe6457ced5b0908c8329"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30d3c22ef8e8cdbb5a27d145cc53af63" id="r_a30d3c22ef8e8cdbb5a27d145cc53af63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30d3c22ef8e8cdbb5a27d145cc53af63">disableInterrupt</a> (uint32_t drvno)</td></tr>
 <tr class="memdesc:a30d3c22ef8e8cdbb5a27d145cc53af63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable interrupt.  <br /></td></tr>
@@ -190,17 +192,22 @@ Functions</h2></td></tr>
 <tr class="memdesc:a01709881ae4943c32b231f3b19221f31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the free and installed memory info.  <br /></td></tr>
 <tr class="separator:a01709881ae4943c32b231f3b19221f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73ccf418b65829378357ee2badbadb69" id="r_a73ccf418b65829378357ee2badbadb69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73ccf418b65829378357ee2badbadb69">StartCopyDataToUserBufferThread</a> (uint32_t drvno)</td></tr>
+<tr class="memdesc:a73ccf418b65829378357ee2badbadb69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start thread which polls DMA buffer to user buffer when software polling is used.  <br /></td></tr>
 <tr class="separator:a73ccf418b65829378357ee2badbadb69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44abdeb7e380b09aa933fcd27c7b6694" id="r_a44abdeb7e380b09aa933fcd27c7b6694"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44abdeb7e380b09aa933fcd27c7b6694">InitMutex</a> (uint32_t drvno)</td></tr>
+<tr class="memdesc:a44abdeb7e380b09aa933fcd27c7b6694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize mutexes for register read/write.  <br /></td></tr>
 <tr class="separator:a44abdeb7e380b09aa933fcd27c7b6694"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a116d9d33e3062b9ea34008dd4d076f9b" id="r_a116d9d33e3062b9ea34008dd4d076f9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a116d9d33e3062b9ea34008dd4d076f9b">initPerformanceCounter</a> ()</td></tr>
+<tr class="memdesc:a116d9d33e3062b9ea34008dd4d076f9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize performance counter for high resolution timing.  <br /></td></tr>
 <tr class="separator:a116d9d33e3062b9ea34008dd4d076f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac07c7888590dc77ecaba1069585795b6" id="r_ac07c7888590dc77ecaba1069585795b6"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac07c7888590dc77ecaba1069585795b6">GetTimestampInTicks</a> ()</td></tr>
-<tr class="memdesc:ac07c7888590dc77ecaba1069585795b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads system timer.  <br /></td></tr>
+<tr class="memdesc:ac07c7888590dc77ecaba1069585795b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current timestamp in ticks.  <br /></td></tr>
 <tr class="separator:ac07c7888590dc77ecaba1069585795b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a448c4b7633a0fbb56a8d61cc13efe0b6" id="r_a448c4b7633a0fbb56a8d61cc13efe0b6"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a448c4b7633a0fbb56a8d61cc13efe0b6">GetTimestampInMicroseconds</a> ()</td></tr>
+<tr class="memdesc:a448c4b7633a0fbb56a8d61cc13efe0b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current timestamp in microseconds.  <br /></td></tr>
 <tr class="separator:a448c4b7633a0fbb56a8d61cc13efe0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b51411fcecd9b57f1eb276d6ca6324c" id="r_a1b51411fcecd9b57f1eb276d6ca6324c"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b51411fcecd9b57f1eb276d6ca6324c">GetTimestampInMilliseconds</a> ()</td></tr>
+<tr class="memdesc:a1b51411fcecd9b57f1eb276d6ca6324c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current timestamp in milliseconds.  <br /></td></tr>
 <tr class="separator:a1b51411fcecd9b57f1eb276d6ca6324c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8e9a499c65feb42895a725c33adf23a" id="r_ad8e9a499c65feb42895a725c33adf23a"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8e9a499c65feb42895a725c33adf23a">ConvertTicksToMicroseconds</a> (int64_t ticks)</td></tr>
 <tr class="memdesc:ad8e9a499c65feb42895a725c33adf23a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate ticks to microseconds.  <br /></td></tr>
@@ -209,8 +216,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:a364bfc62fe74551a58ef8af9a714d329"><td class="mdescLeft">&#160;</td><td class="mdescRight">This functions returns after a time given in microseconds. The time is measured in CPU ticks. The function is escapable by pressing ESC.  <br /></td></tr>
 <tr class="separator:a364bfc62fe74551a58ef8af9a714d329"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01679920cd63a7360486c1a1b9d70644" id="r_a01679920cd63a7360486c1a1b9d70644"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01679920cd63a7360486c1a1b9d70644">checkEscapeKeyState</a> ()</td></tr>
+<tr class="memdesc:a01679920cd63a7360486c1a1b9d70644"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if escape key was pressed.  <br /></td></tr>
 <tr class="separator:a01679920cd63a7360486c1a1b9d70644"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5decd9522e1a35770a23375724a3604" id="r_aa5decd9522e1a35770a23375724a3604"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5decd9522e1a35770a23375724a3604">checkSpaceKeyState</a> ()</td></tr>
+<tr class="memdesc:aa5decd9522e1a35770a23375724a3604"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if space key was pressed.  <br /></td></tr>
 <tr class="separator:aa5decd9522e1a35770a23375724a3604"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a528525c2907fd30ddee35895ec5270ba" id="r_a528525c2907fd30ddee35895ec5270ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a528525c2907fd30ddee35895ec5270ba">SetPriority</a> ()</td></tr>
 <tr class="memdesc:a528525c2907fd30ddee35895ec5270ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set thread to high priority level.  <br /></td></tr>
@@ -219,28 +228,37 @@ Functions</h2></td></tr>
 <tr class="memdesc:a6d1fe7b2ee38ccba3c5cd1c4577fb857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset thread priority to normal.  <br /></td></tr>
 <tr class="separator:a6d1fe7b2ee38ccba3c5cd1c4577fb857"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46239bcacf764bc860faf531d74ce29e" id="r_a46239bcacf764bc860faf531d74ce29e"><td class="memItemLeft" align="right" valign="top">uint16_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46239bcacf764bc860faf531d74ce29e">getVirtualDmaAddress</a> (uint32_t drvno)</td></tr>
+<tr class="memdesc:a46239bcacf764bc860faf531d74ce29e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the virtual address of the DMA buffer.  <br /></td></tr>
 <tr class="separator:a46239bcacf764bc860faf531d74ce29e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7e4308fafab91ed6faedaa92a935f67" id="r_aa7e4308fafab91ed6faedaa92a935f67"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7e4308fafab91ed6faedaa92a935f67">getDmaBufferSizeInBytes</a> (uint32_t drvno)</td></tr>
+<tr class="memdesc:aa7e4308fafab91ed6faedaa92a935f67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of the DMA buffer in bytes.  <br /></td></tr>
 <tr class="separator:aa7e4308fafab91ed6faedaa92a935f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b00685a835c31720975bc80ef9a98fd" id="r_a6b00685a835c31720975bc80ef9a98fd"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b00685a835c31720975bc80ef9a98fd">getCurrentInterruptCounter</a> (uint32_t drvno)</td></tr>
+<tr class="memdesc:a6b00685a835c31720975bc80ef9a98fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current interrupt counter.  <br /></td></tr>
 <tr class="separator:a6b00685a835c31720975bc80ef9a98fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c83cc01dfac9db26e14cc0f7dafdc53" id="r_a4c83cc01dfac9db26e14cc0f7dafdc53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c83cc01dfac9db26e14cc0f7dafdc53">SaveMeasurementDataToFileBIN</a> (const char *filename)</td></tr>
 <tr class="memdesc:a4c83cc01dfac9db26e14cc0f7dafdc53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the measurement data to a binary file.  <br /></td></tr>
 <tr class="separator:a4c83cc01dfac9db26e14cc0f7dafdc53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c2a265cb0548489ba9803db99e8d129" id="r_a7c2a265cb0548489ba9803db99e8d129"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c2a265cb0548489ba9803db99e8d129">CopyFromFileToUserBufferBIN</a> (const char *filename)</td></tr>
+<tr class="memdesc:a7c2a265cb0548489ba9803db99e8d129"><td class="mdescLeft">&#160;</td><td class="mdescRight">Import measurement data from binary file to user buffer.  <br /></td></tr>
 <tr class="separator:a7c2a265cb0548489ba9803db99e8d129"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf99ecfb75e0b3bae34caded22ff5367" id="r_acf99ecfb75e0b3bae34caded22ff5367"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf99ecfb75e0b3bae34caded22ff5367">openFile</a> (uint32_t drvno)</td></tr>
+<tr class="memdesc:acf99ecfb75e0b3bae34caded22ff5367"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a file or create it for writing measurement data.  <br /></td></tr>
 <tr class="separator:acf99ecfb75e0b3bae34caded22ff5367"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87d849f446e344dc16d127b9fef9e91e" id="r_a87d849f446e344dc16d127b9fef9e91e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87d849f446e344dc16d127b9fef9e91e">closeFile</a> (uint32_t drvno)</td></tr>
+<tr class="memdesc:a87d849f446e344dc16d127b9fef9e91e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the file.  <br /></td></tr>
 <tr class="separator:a87d849f446e344dc16d127b9fef9e91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e9819a8fa478afaff43fcf38c1d731b" id="r_a9e9819a8fa478afaff43fcf38c1d731b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e9819a8fa478afaff43fcf38c1d731b">setTimestamp</a> ()</td></tr>
+<tr class="memdesc:a9e9819a8fa478afaff43fcf38c1d731b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the start timestamp that is used for file name and file header.  <br /></td></tr>
 <tr class="separator:a9e9819a8fa478afaff43fcf38c1d731b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fcd4f87f168422c1360d6951341d507" id="r_a6fcd4f87f168422c1360d6951341d507"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fcd4f87f168422c1360d6951341d507">writeFileHeaderToFile</a> (uint32_t drvno)</td></tr>
 <tr class="memdesc:a6fcd4f87f168422c1360d6951341d507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a file at filename_full and writes struct <a class="el" href="structfile__header.html">file_header</a> to it.  <br /></td></tr>
 <tr class="separator:a6fcd4f87f168422c1360d6951341d507"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a6910fd50ec166147739bb1d4ada3f2" id="r_a6a6910fd50ec166147739bb1d4ada3f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a6910fd50ec166147739bb1d4ada3f2">writeToDisc</a> (uint32_t *drvno_ptr)</td></tr>
+<tr class="memdesc:a6a6910fd50ec166147739bb1d4ada3f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread function which writes data from user buffer to disc.  <br /></td></tr>
 <tr class="separator:a6a6910fd50ec166147739bb1d4ada3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9790c7db1935afd95f6cc2e67481741" id="r_af9790c7db1935afd95f6cc2e67481741"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9790c7db1935afd95f6cc2e67481741">startWriteToDiscThead</a> (uint32_t drvno)</td></tr>
+<tr class="memdesc:af9790c7db1935afd95f6cc2e67481741"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start thread which writes data from user buffer to disc.  <br /></td></tr>
 <tr class="separator:af9790c7db1935afd95f6cc2e67481741"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47505a02ea693c2a8c7aeb342f8b4ff7" id="r_a47505a02ea693c2a8c7aeb342f8b4ff7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47505a02ea693c2a8c7aeb342f8b4ff7">VerifyData</a> (struct <a class="el" href="structverify__data__parameter.html">verify_data_parameter</a> *vd)</td></tr>
 <tr class="memdesc:a47505a02ea693c2a8c7aeb342f8b4ff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check a file for its data consistency.  <br /></td></tr>
@@ -249,6 +267,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a6f8ff0717b580a3f03bb351adca94da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open the file at filename_full and write the header to fh.  <br /></td></tr>
 <tr class="separator:a6f8ff0717b580a3f03bb351adca94da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cdd211a5d3c2cd5c651f1577c356d28" id="r_a0cdd211a5d3c2cd5c651f1577c356d28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cdd211a5d3c2cd5c651f1577c356d28">WaitForAllInterruptsDone</a> ()</td></tr>
+<tr class="memdesc:a0cdd211a5d3c2cd5c651f1577c356d28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait until all interrupts are done or timeout occurs.  <br /></td></tr>
 <tr class="separator:a0cdd211a5d3c2cd5c651f1577c356d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69023e1b7220dc81de207b508d1d9c99" id="r_a69023e1b7220dc81de207b508d1d9c99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69023e1b7220dc81de207b508d1d9c99">About</a> (uint32_t board_sel)</td></tr>
 <tr class="memdesc:a69023e1b7220dc81de207b508d1d9c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display information about registers and settings in pop up windows.  <br /></td></tr>
@@ -265,10 +284,13 @@ Functions</h2></td></tr>
 <tr class="memitem:a06d198342f1983ab1d4310cff9b155c7" id="r_a06d198342f1983ab1d4310cff9b155c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06d198342f1983ab1d4310cff9b155c7">AboutTLPs</a> (uint32_t drvno)</td></tr>
 <tr class="separator:a06d198342f1983ab1d4310cff9b155c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bfed4321a2abe3d8d8374566f70e996" id="r_a4bfed4321a2abe3d8d8374566f70e996"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4bfed4321a2abe3d8d8374566f70e996">AboutPCI</a> (uint32_t drvno)</td></tr>
+<tr class="memdesc:a4bfed4321a2abe3d8d8374566f70e996"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read registers of PCIe config space.  <br /></td></tr>
 <tr class="separator:a4bfed4321a2abe3d8d8374566f70e996"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c06d0c89d7a19fefd6de1b609fdbeee" id="r_a5c06d0c89d7a19fefd6de1b609fdbeee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c06d0c89d7a19fefd6de1b609fdbeee">AboutMeasurementSettings</a> ()</td></tr>
+<tr class="memdesc:a5c06d0c89d7a19fefd6de1b609fdbeee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show measurement settings in a message box.  <br /></td></tr>
 <tr class="separator:a5c06d0c89d7a19fefd6de1b609fdbeee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a279b3e30d855066c3b916f6a5d10e7c2" id="r_a279b3e30d855066c3b916f6a5d10e7c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a279b3e30d855066c3b916f6a5d10e7c2">AboutCameraSettings</a> (uint32_t drvno)</td></tr>
+<tr class="memdesc:a279b3e30d855066c3b916f6a5d10e7c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show camera settings in a message box.  <br /></td></tr>
 <tr class="separator:a279b3e30d855066c3b916f6a5d10e7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28f92fa001dc71e32b9afa7a01f5471a" id="r_a28f92fa001dc71e32b9afa7a01f5471a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28f92fa001dc71e32b9afa7a01f5471a">ErrMsgBoxOn</a> ()</td></tr>
 <tr class="memdesc:a28f92fa001dc71e32b9afa7a01f5471a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switch on error message boxes of our software. Default is On.  <br /></td></tr>
@@ -301,8 +323,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:a0df90d52ea90499ce5eb2486c8eefe57"><td class="mdescLeft">&#160;</td><td class="mdescRight">return gamma value black     <br /></td></tr>
 <tr class="separator:a0df90d52ea90499ce5eb2486c8eefe57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a387c70167bfc0b405eceea67c11b53fc" id="r_a387c70167bfc0b405eceea67c11b53fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a387c70167bfc0b405eceea67c11b53fc">LockHighLevelMutex</a> (uint32_t drvno)</td></tr>
+<tr class="memdesc:a387c70167bfc0b405eceea67c11b53fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock the mutex for register read/write.  <br /></td></tr>
 <tr class="separator:a387c70167bfc0b405eceea67c11b53fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1519f7ae8903dd9a7f9fddd789077576" id="r_a1519f7ae8903dd9a7f9fddd789077576"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1519f7ae8903dd9a7f9fddd789077576">UnlockHighLevelMutex</a> (uint32_t drvno)</td></tr>
+<tr class="memdesc:a1519f7ae8903dd9a7f9fddd789077576"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock the mutex for register read/write.  <br /></td></tr>
 <tr class="separator:a1519f7ae8903dd9a7f9fddd789077576"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -409,7 +433,7 @@ Variables</h2></td></tr>
 <p>Initializes PCIe board on a platform specific way. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
   </table>
   </dd>
 </dl>
@@ -433,6 +457,12 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Windows specific function for initializing driver. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">_number_of_boards</td><td>Pointer to number of boards found. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
@@ -471,6 +501,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Show camera settings in a message box. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -548,6 +587,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Show measurement settings in a message box. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
+
 </div>
 </div>
 <a id="a4bfed4321a2abe3d8d8374566f70e996" name="a4bfed4321a2abe3d8d8374566f70e996"></a>
@@ -564,9 +606,11 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Read registers of PCIe config space. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
   </table>
   </dd>
 </dl>
@@ -616,7 +660,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
   </table>
   </dd>
 </dl>
@@ -641,7 +685,7 @@ Variables</h2></td></tr>
 <p>Check drvno for being legit</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>driver number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>driver number </td></tr>
   </table>
   </dd>
 </dl>
@@ -664,6 +708,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Check if escape key was pressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>non zero if escape key was pressed </dd></dl>
+
 </div>
 </div>
 <a id="aa5decd9522e1a35770a23375724a3604" name="aa5decd9522e1a35770a23375724a3604"></a>
@@ -681,6 +728,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Check if space key was pressed. </p>
+<dl class="section return"><dt>Returns</dt><dd>non zero if space key was pressed </dd></dl>
+
 </div>
 </div>
 <a id="acd24b30183d82710c9f5b7ddc6ac7c36" name="acd24b30183d82710c9f5b7ddc6ac7c36"></a>
@@ -697,9 +747,11 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Cleanup DMA buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
   </table>
   </dd>
 </dl>
@@ -725,7 +777,7 @@ Variables</h2></td></tr>
 <p>Cleanup driver. Call this before Exit driver. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
   </table>
   </dd>
 </dl>
@@ -748,6 +800,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Close the file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ad8e9a499c65feb42895a725c33adf23a" name="ad8e9a499c65feb42895a725c33adf23a"></a>
@@ -768,7 +828,7 @@ Variables</h2></td></tr>
 <p>Translate ticks to microseconds. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ticks</td><td>ticks of system timer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ticks</td><td>ticks of system timer </td></tr>
   </table>
   </dd>
 </dl>
@@ -790,6 +850,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Import measurement data from binary file to user buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Filename with complete absolute path. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -815,8 +884,8 @@ Variables</h2></td></tr>
 <p>DMA copies in blocks of dmaBufferSizeInWords/DMA_BUFFER_PARTS - the rest is copied here. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
-    <tr><td class="paramname">rest_in_bytes</td><td>bytes which were not copied by INTR. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">rest_in_bytes</td><td>bytes which were not copied by INTR. </td></tr>
   </table>
   </dd>
 </dl>
@@ -860,7 +929,7 @@ Variables</h2></td></tr>
 <p>Disable interrupt. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
   </table>
   </dd>
 </dl>
@@ -882,6 +951,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Enable interrupt. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
 
 </div>
 </div>
@@ -994,6 +1072,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get the current interrupt counter. </p>
+<p>When measurement_cnt is greater than 1, that means measurement is running in a loop, return number of interrupts, because the last interrupt was the maximum number of interrupts, when the IsrCounter is 0.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>current interrupt counter </dd></dl>
+
 </div>
 </div>
 <a id="aa7e4308fafab91ed6faedaa92a935f67" name="aa7e4308fafab91ed6faedaa92a935f67"></a>
@@ -1010,6 +1098,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the size of the DMA buffer in bytes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>size of DMA buffer in bytes </dd></dl>
 
 </div>
 </div>
@@ -1113,6 +1210,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get the current timestamp in microseconds. </p>
+<dl class="section return"><dt>Returns</dt><dd>microseconds of system timer </dd></dl>
+
 </div>
 </div>
 <a id="a1b51411fcecd9b57f1eb276d6ca6324c" name="a1b51411fcecd9b57f1eb276d6ca6324c"></a>
@@ -1129,6 +1229,9 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the current timestamp in milliseconds. </p>
+<dl class="section return"><dt>Returns</dt><dd>milliseconds of system timer </dd></dl>
 
 </div>
 </div>
@@ -1147,8 +1250,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Reads system timer. </p>
-<p>Read 2x ticks and calculate the difference between the calls in microseconds with DLLTickstous, init timer by calling DLLInitSysTimer before use. </p><dl class="section return"><dt>Returns</dt><dd>act ticks </dd></dl>
+<p>Get the current timestamp in ticks. </p>
+<dl class="section return"><dt>Returns</dt><dd>ticks of system timer </dd></dl>
 
 </div>
 </div>
@@ -1167,6 +1270,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get the virtual address of the DMA buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to DMA buffer </dd></dl>
+
 </div>
 </div>
 <a id="a44abdeb7e380b09aa933fcd27c7b6694" name="a44abdeb7e380b09aa933fcd27c7b6694"></a>
@@ -1184,6 +1296,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Initialize mutexes for register read/write. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
+
 </div>
 </div>
 <a id="a116d9d33e3062b9ea34008dd4d076f9b" name="a116d9d33e3062b9ea34008dd4d076f9b"></a>
@@ -1200,6 +1321,9 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initialize performance counter for high resolution timing. </p>
+<p>This function must be called once before using GetTimestampInTicks. </p>
 
 </div>
 </div>
@@ -1307,7 +1431,7 @@ Variables</h2></td></tr>
 <p>This routine is called every DMASPERINTR=500 scans. The size of a drivers contiguous memory is limited, so we must copy the data from a small buffer to a bigger buffer. The copy process is split in lower/upper half blocks.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1329,6 +1453,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Lock the mutex for register read/write. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="acf99ecfb75e0b3bae34caded22ff5367" name="acf99ecfb75e0b3bae34caded22ff5367"></a>
@@ -1345,6 +1477,14 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Open a file or create it for writing measurement data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1376,9 +1516,9 @@ Variables</h2></td></tr>
 <p>This function reads the memory mapped data , not the I/O Data. Reads data from PCIe config space.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
-    <tr><td class="paramname">data</td><td>pointer to where data is stored </td></tr>
-    <tr><td class="paramname">address</td><td>offset of register (count in bytes) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>pointer to where data is stored </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>offset of register (count in bytes) </td></tr>
   </table>
   </dd>
 </dl>
@@ -1413,9 +1553,9 @@ Variables</h2></td></tr>
 <p>Reads long on DMA area. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
-    <tr><td class="paramname">data</td><td>buffer for data </td></tr>
-    <tr><td class="paramname">address</td><td>Offset from BaseAdress - in Bytes ! 0..3= Regs of Board. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>buffer for data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Offset from BaseAdress - in Bytes ! 0..3= Regs of Board. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1450,9 +1590,9 @@ Variables</h2></td></tr>
 <p>Reads 4 bytes on DMA area. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
-    <tr><td class="paramname">data</td><td>buffer for data </td></tr>
-    <tr><td class="paramname">address</td><td>Offset from BaseAdress - in Bytes ! 0..3= Regs of Board. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>PCIe board identifier </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>buffer for data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Offset from BaseAdress - in Bytes ! 0..3= Regs of Board. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1487,9 +1627,9 @@ Variables</h2></td></tr>
 <p>Read byte (8 bit) from register of PCIe board, except r10-r1f. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=0 if one PCI board) </td></tr>
-    <tr><td class="paramname">data</td><td>pointer to where data is stored </td></tr>
-    <tr><td class="paramname">address</td><td>offset of register from base address (count in bytes) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>board number (=0 if one PCI board) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>pointer to where data is stored </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>offset of register from base address (count in bytes) </td></tr>
   </table>
   </dd>
 </dl>
@@ -1515,7 +1655,7 @@ Variables</h2></td></tr>
 <p>Reset the buffer write pointers and software ISR counter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1560,7 +1700,7 @@ Variables</h2></td></tr>
 <p>Export the measurement data to a binary file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>Filename with complete absolute path. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>Filename with complete absolute path. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1633,6 +1773,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Set the start timestamp that is used for file name and file header. </p>
+
 </div>
 </div>
 <a id="a9039d41ad6df416fc5e92a33a9bcbaa3" name="a9039d41ad6df416fc5e92a33a9bcbaa3"></a>
@@ -1653,7 +1795,7 @@ Variables</h2></td></tr>
 <p>Allocate DMA buffer - should only be called once. </p>
 <p>Gets address of DMASubBuf from driver and copy it later to our pDMABigBuf. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1772,6 +1914,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Start thread which polls DMA buffer to user buffer when software polling is used. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
+
 </div>
 </div>
 <a id="af9790c7db1935afd95f6cc2e67481741" name="af9790c7db1935afd95f6cc2e67481741"></a>
@@ -1789,6 +1940,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Start thread which writes data from user buffer to disc. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a1519f7ae8903dd9a7f9fddd789077576" name="a1519f7ae8903dd9a7f9fddd789077576"></a>
@@ -1805,6 +1964,14 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Unlock the mutex for register read/write. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1826,7 +1993,7 @@ Variables</h2></td></tr>
 <p>Simple display of unsigned integer as error message for test purpose. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">val</td><td>unsigned integer 64 bit </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">val</td><td>unsigned integer 64 bit </td></tr>
   </table>
   </dd>
 </dl>
@@ -1873,6 +2040,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Wait until all interrupts are done or timeout occurs. </p>
+
 </div>
 </div>
 <a id="a364bfc62fe74551a58ef8af9a714d329" name="a364bfc62fe74551a58ef8af9a714d329"></a>
@@ -1893,7 +2062,7 @@ Variables</h2></td></tr>
 <p>This functions returns after a time given in microseconds. The time is measured in CPU ticks. The function is escapable by pressing ESC. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">microseconds</td><td>Time to wait in microseconds. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">microseconds</td><td>Time to wait in microseconds. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1928,9 +2097,9 @@ Variables</h2></td></tr>
 <p>Write long (32 bit) to register in space0 of PCIe board. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
-    <tr><td class="paramname">data</td><td>long value to write </td></tr>
-    <tr><td class="paramname">address</td><td>offset from base address of register (count in bytes) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>long value to write </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>offset from base address of register (count in bytes) </td></tr>
   </table>
   </dd>
 </dl>
@@ -1956,7 +2125,7 @@ Variables</h2></td></tr>
 <p>Creates a file at filename_full and writes struct <a class="el" href="structfile__header.html">file_header</a> to it. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1990,9 +2159,9 @@ Variables</h2></td></tr>
 <p>Writes 16 bits (2 bytes) to register. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
-    <tr><td class="paramname">data</td><td>data to write </td></tr>
-    <tr><td class="paramname">address</td><td>Register offset from BaseAdress - in bytes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>data to write </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Register offset from BaseAdress - in bytes </td></tr>
   </table>
   </dd>
 </dl>
@@ -2027,9 +2196,9 @@ Variables</h2></td></tr>
 <p>Writes 32 bits (4 bytes) to register. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
-    <tr><td class="paramname">data</td><td>data to write </td></tr>
-    <tr><td class="paramname">address</td><td>Register offset from BaseAdress - in bytes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>PCIe board identifier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>data to write </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Register offset from BaseAdress - in bytes </td></tr>
   </table>
   </dd>
 </dl>
@@ -2064,9 +2233,9 @@ Variables</h2></td></tr>
 <p>Write byte (8 bit) to register in space0 of PCIe board, except r10-r1f. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
-    <tr><td class="paramname">data</td><td>byte value to write </td></tr>
-    <tr><td class="paramname">address</td><td>Offset from BaseAdress of register (count in bytes) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>board number (=1 if one PCI board) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>byte value to write </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>Offset from BaseAdress of register (count in bytes) </td></tr>
   </table>
   </dd>
 </dl>
@@ -2088,6 +2257,14 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Thread function which writes data from user buffer to disc. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno_ptr</td><td>Pointer to PCIe board identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
