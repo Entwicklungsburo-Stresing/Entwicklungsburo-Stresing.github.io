@@ -680,12 +680,14 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2a425e5c70a280aa6ddf59053bbc090312">cam_adaddr_vclks_amount4</a> = 0x0C
 , <a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2ad7009cbedf2e0a27419ddef26f27125e">cam_adaddr_vclks_amount5</a> = 0x0D
 , <a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2af45fdd0d3cc9da57da0c08d07dc8a4eb">cam_adaddr_sen_tg_1st_half_length</a> = 0x0F
-, <a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2a14a07759a9f24684dfea20996c384bb2">cam_adaddr_sen_tg_2nd_half_length</a> = 0x10
+, <a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2ae2cd3b91bf727e1150c147bf7085671d">cam_adaddr_camera_init</a> = 0x10
 , <br />
 &#160;&#160;<a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2ad5f5dec8959cd11805ab89a98e7ebe74">cam_adaddr_sen_p1h_ovr_length</a> = 0x11
-, <a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2ae2cd3b91bf727e1150c147bf7085671d">cam_adaddr_camera_init</a> = 0x10
+, <a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2a14a07759a9f24684dfea20996c384bb2">cam_adaddr_sen_tg_2nd_half_length</a> = 0x12
+, <a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2a2a146153126ebcbe2d40a0f53b13bac3">cam_adaddr_fan_ctrl</a> = 0x13
 , <a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2a6e98f5617cbc63611ed94b8dc73f8b09">cam_adaddr_software_reset</a> = 0x7E
-, <a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2a3bc012fcd77b1777124473b1b265a3af">cam_adaddr_camera_position</a> = 0x7F
+, <br />
+&#160;&#160;<a class="el" href="#a9e3c451d5901d136d9fc1de5b1f1cda2a3bc012fcd77b1777124473b1b265a3af">cam_adaddr_camera_position</a> = 0x7F
 <br />
  }</td></tr>
 <tr class="separator:a9e3c451d5901d136d9fc1de5b1f1cda2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1480,21 +1482,7 @@ Enumerations</h2></td></tr>
 </li>
 </ul>
 </td></tr>
-<tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2a14a07759a9f24684dfea20996c384bb2" name="a9e3c451d5901d136d9fc1de5b1f1cda2a14a07759a9f24684dfea20996c384bb2"></a>cam_adaddr_sen_tg_2nd_half_length&#160;</td><td class="fieldinit">0x10&#160;</td><td class="fielddoc"><p>sen_tg_2nd_half_length controls the length of the second part of the transfer gate (TG) pulse of the high speed camera. The second part is when TG is 1 and P1H is 1. The register is a 16 bit value. The step size depends on the CLK_SEL setting of the hardware switch. The default of this register is 0, which produces the default length of the TG pulse. Added in P209.20.</p><ul>
-<li><code>length = x * period of SEN_CLK</code> <table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">CLK_SEL   </th><th class="markdownTableHeadNone">SEN_CLK   </th><th class="markdownTableHeadNone">min = 1   </th><th class="markdownTableHeadNone">max = 0xFFFF    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">11   </td><td class="markdownTableBodyNone">25 MHz   </td><td class="markdownTableBodyNone">40 ns   </td><td class="markdownTableBodyNone">2.621.400 ns    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">10   </td><td class="markdownTableBodyNone">18,75 MHz   </td><td class="markdownTableBodyNone">53.3 ns   </td><td class="markdownTableBodyNone">3.493.015,5 ns    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">01   </td><td class="markdownTableBodyNone">12,5 MHz   </td><td class="markdownTableBodyNone">80 ns   </td><td class="markdownTableBodyNone">5.242.800 ns    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">00   </td><td class="markdownTableBodyNone">6,25 MHz   </td><td class="markdownTableBodyNone">160 ns   </td><td class="markdownTableBodyNone">10.485.600 ns   </td></tr>
-</table>
-</li>
-</ul>
+<tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2ae2cd3b91bf727e1150c147bf7085671d" name="a9e3c451d5901d136d9fc1de5b1f1cda2ae2cd3b91bf727e1150c147bf7085671d"></a>cam_adaddr_camera_init&#160;</td><td class="fieldinit">0x10&#160;</td><td class="fielddoc"><p>Send any data to this address to initialize the camera. This should be done last in the initialization routine, after reset and after writing all other registers. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2ad5f5dec8959cd11805ab89a98e7ebe74" name="a9e3c451d5901d136d9fc1de5b1f1cda2ad5f5dec8959cd11805ab89a98e7ebe74"></a>cam_adaddr_sen_p1h_ovr_length&#160;</td><td class="fieldinit">0x11&#160;</td><td class="fielddoc"><p>sen_p1h_ovr_lengt controls the length of first P1H pulse of the high speed camera. The register is a 16 bit value. The step size depends on the CLK_SEL setting of the hardware switch. The default of this register is 0, which produces the default length of the P1H pulse. Added in P209.20.</p><ul>
 <li><code>length = x * period of SEN_CLK</code> <table class="markdownTable">
@@ -1512,8 +1500,23 @@ Enumerations</h2></td></tr>
 </li>
 </ul>
 </td></tr>
-<tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2ae2cd3b91bf727e1150c147bf7085671d" name="a9e3c451d5901d136d9fc1de5b1f1cda2ae2cd3b91bf727e1150c147bf7085671d"></a>cam_adaddr_camera_init&#160;</td><td class="fieldinit">0x10&#160;</td><td class="fielddoc"><p>Send any data to this address to initialize the camera. This should be done last in the initialization routine, after reset and after writing all other registers. </p>
+<tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2a14a07759a9f24684dfea20996c384bb2" name="a9e3c451d5901d136d9fc1de5b1f1cda2a14a07759a9f24684dfea20996c384bb2"></a>cam_adaddr_sen_tg_2nd_half_length&#160;</td><td class="fieldinit">0x12&#160;</td><td class="fielddoc"><p>sen_tg_2nd_half_length controls the length of the second part of the transfer gate (TG) pulse of the high speed camera. The second part is when TG is 1 and P1H is 1. The register is a 16 bit value. The step size depends on the CLK_SEL setting of the hardware switch. The default of this register is 0, which produces the default length of the TG pulse. Added in P209.20.</p><ul>
+<li><code>length = x * period of SEN_CLK</code> <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">CLK_SEL   </th><th class="markdownTableHeadNone">SEN_CLK   </th><th class="markdownTableHeadNone">min = 1   </th><th class="markdownTableHeadNone">max = 0xFFFF    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">11   </td><td class="markdownTableBodyNone">25 MHz   </td><td class="markdownTableBodyNone">40 ns   </td><td class="markdownTableBodyNone">2.621.400 ns    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">10   </td><td class="markdownTableBodyNone">18,75 MHz   </td><td class="markdownTableBodyNone">53.3 ns   </td><td class="markdownTableBodyNone">3.493.015,5 ns    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">01   </td><td class="markdownTableBodyNone">12,5 MHz   </td><td class="markdownTableBodyNone">80 ns   </td><td class="markdownTableBodyNone">5.242.800 ns    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">00   </td><td class="markdownTableBodyNone">6,25 MHz   </td><td class="markdownTableBodyNone">160 ns   </td><td class="markdownTableBodyNone">10.485.600 ns   </td></tr>
+</table>
+</li>
+</ul>
 </td></tr>
+<tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2a2a146153126ebcbe2d40a0f53b13bac3" name="a9e3c451d5901d136d9fc1de5b1f1cda2a2a146153126ebcbe2d40a0f53b13bac3"></a>cam_adaddr_fan_ctrl&#160;</td><td class="fieldinit">0x13&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2a6e98f5617cbc63611ed94b8dc73f8b09" name="a9e3c451d5901d136d9fc1de5b1f1cda2a6e98f5617cbc63611ed94b8dc73f8b09"></a>cam_adaddr_software_reset&#160;</td><td class="fieldinit">0x7E&#160;</td><td class="fielddoc"><p>Send any data to this address to do a software reset. This should be done first in the initialization routine. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a9e3c451d5901d136d9fc1de5b1f1cda2a3bc012fcd77b1777124473b1b265a3af" name="a9e3c451d5901d136d9fc1de5b1f1cda2a3bc012fcd77b1777124473b1b265a3af"></a>cam_adaddr_camera_position&#160;</td><td class="fieldinit">0x7F&#160;</td><td class="fielddoc"><p>This is a register for the camera position for multiple cameras in line. The software always sets the first camera to 0 and the cameras are handing their positions one to another. </p>
