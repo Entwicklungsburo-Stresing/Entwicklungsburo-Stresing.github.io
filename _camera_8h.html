@@ -213,6 +213,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a1faf1243b9a7d735bab099e3534454a5" id="r_a1faf1243b9a7d735bab099e3534454a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1faf1243b9a7d735bab099e3534454a5">CamIOCtrl_setT0</a> (uint32_t drvno, uint32_t period_in_10ns)</td></tr>
 <tr class="memdesc:a1faf1243b9a7d735bab099e3534454a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set period of IOCtrl pulse outputs base frequency T0.  <br /></td></tr>
 <tr class="separator:a1faf1243b9a7d735bab099e3534454a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaceffd0f711f3fd054675ec047c72c76" id="r_aaceffd0f711f3fd054675ec047c72c76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaceffd0f711f3fd054675ec047c72c76">CamIOCtrl_setSequenceLength</a> (uint32_t drvno, uint8_t channel, uint8_t sequence_length)</td></tr>
+<tr class="memdesc:aaceffd0f711f3fd054675ec047c72c76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the sequence length for one IOCtrl channel.  <br /></td></tr>
+<tr class="separator:aaceffd0f711f3fd054675ec047c72c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f66738a4590b98790f364510b3087f2" id="r_a8f66738a4590b98790f364510b3087f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f66738a4590b98790f364510b3087f2">CamIOCtrl_setSequence</a> (uint32_t drvno, uint8_t channel, uint16_t *sequence)</td></tr>
+<tr class="memdesc:a8f66738a4590b98790f364510b3087f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the sequence for one IOCtrl channel.  <br /></td></tr>
+<tr class="separator:a8f66738a4590b98790f364510b3087f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada03a5e101d6a78d41b2445b4b8d20c7" id="r_ada03a5e101d6a78d41b2445b4b8d20c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada03a5e101d6a78d41b2445b4b8d20c7">CamIOCtrl_setPulseDelay</a> (uint32_t drvno, uint8_t channel, uint32_t pulse_delay_in_1ns)</td></tr>
+<tr class="memdesc:ada03a5e101d6a78d41b2445b4b8d20c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the delay of one IOCtrl channel pulse.  <br /></td></tr>
+<tr class="separator:ada03a5e101d6a78d41b2445b4b8d20c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe53aaddf3f1db02434bd25a46d4854c" id="r_abe53aaddf3f1db02434bd25a46d4854c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe53aaddf3f1db02434bd25a46d4854c">CamIOCtrl_setPulseWidth</a> (uint32_t drvno, uint8_t channel, uint32_t pulse_width_in_1ns)</td></tr>
+<tr class="memdesc:abe53aaddf3f1db02434bd25a46d4854c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the width of one IOCtrl channel pulse.  <br /></td></tr>
+<tr class="separator:abe53aaddf3f1db02434bd25a46d4854c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4a7a1ba8a42807d218acf5ea1a19e51" id="r_ad4a7a1ba8a42807d218acf5ea1a19e51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4a7a1ba8a42807d218acf5ea1a19e51">Cam_DAC8568_sendData</a> (uint32_t drvno, uint32_t data, uint8_t cameraPosition)</td></tr>
 <tr class="memdesc:ad4a7a1ba8a42807d218acf5ea1a19e51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send 32 bit data to DAC8568.  <br /></td></tr>
 <tr class="separator:ad4a7a1ba8a42807d218acf5ea1a19e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1435,6 +1447,164 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">number</td><td>Number of output: 1 ... 7 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">width_in_5ns</td><td>Set width of pulse in 5ns steps. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">delay_in_5ns</td><td>Set delay of pulse in 5ns steps. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="ada03a5e101d6a78d41b2445b4b8d20c7" name="ada03a5e101d6a78d41b2445b4b8d20c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada03a5e101d6a78d41b2445b4b8d20c7">&#9670;&#160;</a></span>CamIOCtrl_setPulseDelay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> CamIOCtrl_setPulseDelay </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>pulse_delay_in_1ns</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the delay of one IOCtrl channel pulse. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">channel</td><td>1...8 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pulse_delay_in_1ns</td><td>Delay of IOCtrl pulse of one channel.<ul>
+<li>Min: 0 ns</li>
+<li>Step: 32 ns (Values between are rounded down to the next valid step)</li>
+<li>Max: 2.097.120 ns (which is 65.535 * 32 ns) </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="abe53aaddf3f1db02434bd25a46d4854c" name="abe53aaddf3f1db02434bd25a46d4854c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe53aaddf3f1db02434bd25a46d4854c">&#9670;&#160;</a></span>CamIOCtrl_setPulseWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> CamIOCtrl_setPulseWidth </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>pulse_width_in_1ns</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the width of one IOCtrl channel pulse. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">channel</td><td>1...8 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pulse_width_in_1ns</td><td>Width of IOCtrl pulse of one channel.<ul>
+<li>Min: 0 ns</li>
+<li>Step: 32 ns (Values between are rounded down to the next valid step)</li>
+<li>Max: 2.097.120 ns (which is 65.535 * 32 ns) </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8f66738a4590b98790f364510b3087f2" name="a8f66738a4590b98790f364510b3087f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f66738a4590b98790f364510b3087f2">&#9670;&#160;</a></span>CamIOCtrl_setSequence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> CamIOCtrl_setSequence </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *</td>          <td class="paramname"><span class="paramname"><em>sequence</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the sequence for one IOCtrl channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">channel</td><td>1...8 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sequence</td><td>Sequence is a array with 128 bits passed as a uint16_t array with 8 elements. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="aaceffd0f711f3fd054675ec047c72c76" name="aaceffd0f711f3fd054675ec047c72c76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaceffd0f711f3fd054675ec047c72c76">&#9670;&#160;</a></span>CamIOCtrl_setSequenceLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> CamIOCtrl_setSequenceLength </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>drvno</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>sequence_length</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the sequence length for one IOCtrl channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">drvno</td><td>identifier of PCIe card, 0 ... <a class="el" href="struct_8h.html#a24b2f6d93c8807a6bd6c00c897eaeb59">MAXPCIECARDS</a>, when there is only one PCIe board: always 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">channel</td><td>1...8 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sequence_length</td><td>Length of sequence 1...128 </td></tr>
   </table>
   </dd>
 </dl>

@@ -34,7 +34,7 @@ var searchData=
   ['monitor_31',['monitor',['../structcamera__settings.html#a87e6684676f13947b082dd5e7ab225b5',1,'camera_settings']]],
   ['monitor_5fadc_5fclk_32',['monitor_adc_clk',['../enum__settings_8h.html#a31d89bc528102fe4010591054c2dc5d1a5aab4ecfc8e51248449363c5ce873693',1,'enum_settings.h']]],
   ['monitor_5ft_33',['monitor_t',['../enum__settings_8h.html#a31d89bc528102fe4010591054c2dc5d1',1,'enum_settings.h']]],
-  ['monitor_5fvin_34',['monitor_Vin',['../enum__settings_8h.html#a31d89bc528102fe4010591054c2dc5d1a21ac70da643da0f94135a364ca21a6d9',1,'enum_settings.h']]],
+  ['monitor_5fvin_5ffan_5fcontrol_34',['monitor_Vin_Fan_control',['../enum__settings_8h.html#a31d89bc528102fe4010591054c2dc5d1ad0743af9123f23eb84c226ced84a9595',1,'enum_settings.h']]],
   ['monitor_5fwin_35',['monitor_win',['../enum__settings_8h.html#a31d89bc528102fe4010591054c2dc5d1a5fc858ece2c0329506c05e030823f1d6',1,'enum_settings.h']]],
   ['monitor_5fxck_36',['monitor_xck',['../enum__settings_8h.html#a31d89bc528102fe4010591054c2dc5d1a3dbd90c2527f419e021b9cabbd7e181e',1,'enum_settings.h']]],
   ['mutexuserbuffer_37',['mutexUserBuffer',['../_board__ll_8c.html#a865f453b860d97ada49b6509ad61bded',1,'Board_ll.c']]]

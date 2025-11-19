@@ -104,5 +104,22 @@ var searchData=
   ['tor_5fvon_101',['tor_von',['../enum__settings_8h.html#a34afd11285290b35c0f65d59c163fafaa2d419ba318dc5b5f9448de0bbbce1ff3',1,'enum_settings.h']]],
   ['tor_5fxck_102',['tor_xck',['../enum__settings_8h.html#a34afd11285290b35c0f65d59c163fafaa0d6cce4d48bfa7c8e815fee3645b243a',1,'enum_settings.h']]],
   ['trigger_5fmode_5fintegrator_103',['trigger_mode_integrator',['../structcamera__settings.html#a81d92a0475fbf332ef99de9748d6b197',1,'camera_settings']]],
-  ['trigger_5fmode_5ft_104',['trigger_mode_t',['../enum__settings_8h.html#a6d33f21be3f0c5cf91c5d638e8aca086',1,'enum_settings.h']]]
+  ['trigger_5fmode_5ft_104',['trigger_mode_t',['../enum__settings_8h.html#a6d33f21be3f0c5cf91c5d638e8aca086',1,'enum_settings.h']]],
+  ['trigger_5fsource_5fbdat_105',['trigger_source_bdat',['../enum__settings_8h.html#a1999dce000d663b1b9e9359d7ec0a7fba53f9fc8be652b41e50bf3280d38bd336',1,'enum_settings.h']]],
+  ['trigger_5fsource_5fbec_106',['trigger_source_bec',['../enum__settings_8h.html#a1999dce000d663b1b9e9359d7ec0a7fbadb413f07bb024b65758193c772b170f1',1,'enum_settings.h']]],
+  ['trigger_5fsource_5fblock_5fon_107',['trigger_source_block_on',['../enum__settings_8h.html#a1999dce000d663b1b9e9359d7ec0a7fbab67256c067b0bbec4d9b142bfc95a8ac',1,'enum_settings.h']]],
+  ['trigger_5fsource_5fblock_5fon_5fsynced_108',['trigger_source_block_on_synced',['../enum__settings_8h.html#a1999dce000d663b1b9e9359d7ec0a7fba43574b5d44825277a8268b5453a92bb3',1,'enum_settings.h']]],
+  ['trigger_5fsource_5fbslope_109',['trigger_source_bslope',['../enum__settings_8h.html#a1999dce000d663b1b9e9359d7ec0a7fba6c395a8f31e5f9c84517b1d5e28d78de',1,'enum_settings.h']]],
+  ['trigger_5fsource_5fbti_110',['trigger_source_bti',['../enum__settings_8h.html#a1999dce000d663b1b9e9359d7ec0a7fbaa0b16b541fab9714431863af94ca9a68',1,'enum_settings.h']]],
+  ['trigger_5fsource_5fbticnt_111',['trigger_source_bticnt',['../enum__settings_8h.html#a1999dce000d663b1b9e9359d7ec0a7fba70457840cad0fd846af9cf5c0e9c9f27',1,'enum_settings.h']]],
+  ['trigger_5fsource_5fmanual_112',['trigger_source_manual',['../enum__settings_8h.html#a1999dce000d663b1b9e9359d7ec0a7fba34af509310c97ae4696d5b33c5716ba7',1,'enum_settings.h']]],
+  ['trigger_5fsource_5fscan_5fgated_113',['trigger_source_scan_gated',['../enum__settings_8h.html#a1999dce000d663b1b9e9359d7ec0a7fbaa0c56b4dc51e5be2cd4eaabdb2e22e89',1,'enum_settings.h']]],
+  ['trigger_5fsource_5fsdat_114',['trigger_source_sdat',['../enum__settings_8h.html#a1999dce000d663b1b9e9359d7ec0a7fbabee6eced90dbeb391836419ab4b4db98',1,'enum_settings.h']]],
+  ['trigger_5fsource_5fsec_115',['trigger_source_sec',['../enum__settings_8h.html#a1999dce000d663b1b9e9359d7ec0a7fbaa2368310543cfa47d01d568a76fbb5de',1,'enum_settings.h']]],
+  ['trigger_5fsource_5fsslope_116',['trigger_source_sslope',['../enum__settings_8h.html#a1999dce000d663b1b9e9359d7ec0a7fba80348ce2de4daf40d8c50ce3af8f1dfe',1,'enum_settings.h']]],
+  ['trigger_5fsource_5fsti_117',['trigger_source_sti',['../enum__settings_8h.html#a1999dce000d663b1b9e9359d7ec0a7fbadf24753c8c33578d41222ac38490c4d4',1,'enum_settings.h']]],
+  ['trigger_5fsource_5fsticnt_118',['trigger_source_sticnt',['../enum__settings_8h.html#a1999dce000d663b1b9e9359d7ec0a7fbafcaf749b1d0121d091395fe164f8ad7a',1,'enum_settings.h']]],
+  ['trigger_5fsource_5ft_119',['trigger_source_t',['../enum__settings_8h.html#a1999dce000d663b1b9e9359d7ec0a7fb',1,'enum_settings.h']]],
+  ['trigger_5fsource_5fxck_120',['trigger_source_xck',['../enum__settings_8h.html#a1999dce000d663b1b9e9359d7ec0a7fba1230b9c75b274232c7dfd2bbdf5c7671',1,'enum_settings.h']]],
+  ['triggerstatecontrolmanually_121',['TriggerStateControlManually',['../_board_8c.html#a11230066fbab743e18fac477929e0f32',1,'TriggerStateControlManually(uint32_t drvno):&#160;Board.c'],['../_board_8h.html#a11230066fbab743e18fac477929e0f32',1,'TriggerStateControlManually(uint32_t drvno):&#160;Board.c']]]
 ];

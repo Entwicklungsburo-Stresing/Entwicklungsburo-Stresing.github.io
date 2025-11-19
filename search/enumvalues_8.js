@@ -16,7 +16,7 @@ var searchData=
   ['maxpaxloadsize_5freserved1_13',['maxPaxloadSize_reserved1',['../enum__hardware_8h.html#a69d30493bcf4f3a83a16ce1ee7558889a4e4c9abeb91367941d1e0ccf4549b42a',1,'enum_hardware.h']]],
   ['maxpaxloadsize_5freserved2_14',['maxPaxloadSize_reserved2',['../enum__hardware_8h.html#a69d30493bcf4f3a83a16ce1ee7558889a0fd3d34608d2b7c74748555fcacba0db',1,'enum_hardware.h']]],
   ['monitor_5fadc_5fclk_15',['monitor_adc_clk',['../enum__settings_8h.html#a31d89bc528102fe4010591054c2dc5d1a5aab4ecfc8e51248449363c5ce873693',1,'enum_settings.h']]],
-  ['monitor_5fvin_16',['monitor_Vin',['../enum__settings_8h.html#a31d89bc528102fe4010591054c2dc5d1a21ac70da643da0f94135a364ca21a6d9',1,'enum_settings.h']]],
+  ['monitor_5fvin_5ffan_5fcontrol_16',['monitor_Vin_Fan_control',['../enum__settings_8h.html#a31d89bc528102fe4010591054c2dc5d1ad0743af9123f23eb84c226ced84a9595',1,'enum_settings.h']]],
   ['monitor_5fwin_17',['monitor_win',['../enum__settings_8h.html#a31d89bc528102fe4010591054c2dc5d1a5fc858ece2c0329506c05e030823f1d6',1,'enum_settings.h']]],
   ['monitor_5fxck_18',['monitor_xck',['../enum__settings_8h.html#a31d89bc528102fe4010591054c2dc5d1a3dbd90c2527f419e021b9cabbd7e181e',1,'enum_settings.h']]]
 ];

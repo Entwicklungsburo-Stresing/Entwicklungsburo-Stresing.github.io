@@ -219,7 +219,7 @@ Enumerations</h2></td></tr>
 <tr class="memitem:a31d89bc528102fe4010591054c2dc5d1" id="r_a31d89bc528102fe4010591054c2dc5d1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31d89bc528102fe4010591054c2dc5d1">monitor_t</a> { <a class="el" href="#a31d89bc528102fe4010591054c2dc5d1a3dbd90c2527f419e021b9cabbd7e181e">monitor_xck</a> = 0
 , <a class="el" href="#a31d89bc528102fe4010591054c2dc5d1a5fc858ece2c0329506c05e030823f1d6">monitor_win</a> = 1
 , <a class="el" href="#a31d89bc528102fe4010591054c2dc5d1a5aab4ecfc8e51248449363c5ce873693">monitor_adc_clk</a> = 2
-, <a class="el" href="#a31d89bc528102fe4010591054c2dc5d1a21ac70da643da0f94135a364ca21a6d9">monitor_Vin</a> = 3
+, <a class="el" href="#a31d89bc528102fe4010591054c2dc5d1ad0743af9123f23eb84c226ced84a9595">monitor_Vin_Fan_control</a> = 3
  }</td></tr>
 <tr class="separator:a31d89bc528102fe4010591054c2dc5d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa60c841e2b61535475ffa273b78015f1" id="r_aa60c841e2b61535475ffa273b78015f1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa60c841e2b61535475ffa273b78015f1">manipulate_data_mode_t</a> { <a class="el" href="#aa60c841e2b61535475ffa273b78015f1aa31877aa53261cc0ec26b2aee1efe1fc">manipulate_data_mode_none</a> = 0
@@ -246,6 +246,28 @@ Enumerations</h2></td></tr>
 , <a class="el" href="#ac3d3af5007ef448a128969d75f2a398fa13f3728af502bb1acdcd3fa25d02e119">timer_resolution_100ns</a> = 3
  }</td></tr>
 <tr class="separator:ac3d3af5007ef448a128969d75f2a398f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1999dce000d663b1b9e9359d7ec0a7fb" id="r_a1999dce000d663b1b9e9359d7ec0a7fb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1999dce000d663b1b9e9359d7ec0a7fb">trigger_source_t</a> { <br />
+&#160;&#160;<a class="el" href="#a1999dce000d663b1b9e9359d7ec0a7fba34af509310c97ae4696d5b33c5716ba7">trigger_source_manual</a> = 0
+, <a class="el" href="#a1999dce000d663b1b9e9359d7ec0a7fbadf24753c8c33578d41222ac38490c4d4">trigger_source_sti</a> = 1
+, <a class="el" href="#a1999dce000d663b1b9e9359d7ec0a7fba80348ce2de4daf40d8c50ce3af8f1dfe">trigger_source_sslope</a> = 2
+, <a class="el" href="#a1999dce000d663b1b9e9359d7ec0a7fbaa0c56b4dc51e5be2cd4eaabdb2e22e89">trigger_source_scan_gated</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="#a1999dce000d663b1b9e9359d7ec0a7fbafcaf749b1d0121d091395fe164f8ad7a">trigger_source_sticnt</a> = 4
+, <a class="el" href="#a1999dce000d663b1b9e9359d7ec0a7fbabee6eced90dbeb391836419ab4b4db98">trigger_source_sdat</a> = 5
+, <a class="el" href="#a1999dce000d663b1b9e9359d7ec0a7fbaa2368310543cfa47d01d568a76fbb5de">trigger_source_sec</a> = 6
+, <a class="el" href="#a1999dce000d663b1b9e9359d7ec0a7fba1230b9c75b274232c7dfd2bbdf5c7671">trigger_source_xck</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="#a1999dce000d663b1b9e9359d7ec0a7fbaa0b16b541fab9714431863af94ca9a68">trigger_source_bti</a> = 8
+, <a class="el" href="#a1999dce000d663b1b9e9359d7ec0a7fba6c395a8f31e5f9c84517b1d5e28d78de">trigger_source_bslope</a> = 9
+, <a class="el" href="#a1999dce000d663b1b9e9359d7ec0a7fba70457840cad0fd846af9cf5c0e9c9f27">trigger_source_bticnt</a> = 10
+, <a class="el" href="#a1999dce000d663b1b9e9359d7ec0a7fba53f9fc8be652b41e50bf3280d38bd336">trigger_source_bdat</a> = 11
+, <br />
+&#160;&#160;<a class="el" href="#a1999dce000d663b1b9e9359d7ec0a7fbadb413f07bb024b65758193c772b170f1">trigger_source_bec</a> = 12
+, <a class="el" href="#a1999dce000d663b1b9e9359d7ec0a7fbab67256c067b0bbec4d9b142bfc95a8ac">trigger_source_block_on</a> = 13
+, <a class="el" href="#a1999dce000d663b1b9e9359d7ec0a7fba43574b5d44825277a8268b5453a92bb3">trigger_source_block_on_synced</a> = 14
+<br />
+ }</td></tr>
+<tr class="separator:a1999dce000d663b1b9e9359d7ec0a7fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>All settings options and software constants. </p>
@@ -518,7 +540,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a31d89bc528102fe4010591054c2dc5d1a5aab4ecfc8e51248449363c5ce873693" name="a31d89bc528102fe4010591054c2dc5d1a5aab4ecfc8e51248449363c5ce873693"></a>monitor_adc_clk&#160;</td><td class="fieldinit">2&#160;</td><td class="fielddoc"><p>The option ADC CLK sets the output to the ADC clock. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a31d89bc528102fe4010591054c2dc5d1a21ac70da643da0f94135a364ca21a6d9" name="a31d89bc528102fe4010591054c2dc5d1a21ac70da643da0f94135a364ca21a6d9"></a>monitor_Vin&#160;</td><td class="fieldinit">3&#160;</td><td class="fielddoc"><p>Vin is high when the voltage input is sampled. </p>
+<tr><td class="fieldname"><a id="a31d89bc528102fe4010591054c2dc5d1ad0743af9123f23eb84c226ced84a9595" name="a31d89bc528102fe4010591054c2dc5d1ad0743af9123f23eb84c226ced84a9595"></a>monitor_Vin_Fan_control&#160;</td><td class="fieldinit">3&#160;</td><td class="fielddoc"><p>Vin is high when the voltage input is sampled. </p>
 </td></tr>
 </table>
 
@@ -788,6 +810,37 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="a6d33f21be3f0c5cf91c5d638e8aca086ac2fd29f1a5a7209a6a6f1f242d1ed16c" name="a6d33f21be3f0c5cf91c5d638e8aca086ac2fd29f1a5a7209a6a6f1f242d1ed16c"></a>dat&#160;</td><td class="fieldinit">2&#160;</td><td class="fielddoc"><p>Trigger the integrator with the input Ext. Trig but with an additional delay. </p>
 </td></tr>
+</table>
+
+</div>
+</div>
+<a id="a1999dce000d663b1b9e9359d7ec0a7fb" name="a1999dce000d663b1b9e9359d7ec0a7fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1999dce000d663b1b9e9359d7ec0a7fb">&#9670;&#160;</a></span>trigger_source_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a1999dce000d663b1b9e9359d7ec0a7fb">trigger_source_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="3">Enumerator</th></tr><tr><td class="fieldname"><a id="a1999dce000d663b1b9e9359d7ec0a7fba34af509310c97ae4696d5b33c5716ba7" name="a1999dce000d663b1b9e9359d7ec0a7fba34af509310c97ae4696d5b33c5716ba7"></a>trigger_source_manual&#160;</td><td class="fieldinit">0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1999dce000d663b1b9e9359d7ec0a7fbadf24753c8c33578d41222ac38490c4d4" name="a1999dce000d663b1b9e9359d7ec0a7fbadf24753c8c33578d41222ac38490c4d4"></a>trigger_source_sti&#160;</td><td class="fieldinit">1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1999dce000d663b1b9e9359d7ec0a7fba80348ce2de4daf40d8c50ce3af8f1dfe" name="a1999dce000d663b1b9e9359d7ec0a7fba80348ce2de4daf40d8c50ce3af8f1dfe"></a>trigger_source_sslope&#160;</td><td class="fieldinit">2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1999dce000d663b1b9e9359d7ec0a7fbaa0c56b4dc51e5be2cd4eaabdb2e22e89" name="a1999dce000d663b1b9e9359d7ec0a7fbaa0c56b4dc51e5be2cd4eaabdb2e22e89"></a>trigger_source_scan_gated&#160;</td><td class="fieldinit">3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1999dce000d663b1b9e9359d7ec0a7fbafcaf749b1d0121d091395fe164f8ad7a" name="a1999dce000d663b1b9e9359d7ec0a7fbafcaf749b1d0121d091395fe164f8ad7a"></a>trigger_source_sticnt&#160;</td><td class="fieldinit">4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1999dce000d663b1b9e9359d7ec0a7fbabee6eced90dbeb391836419ab4b4db98" name="a1999dce000d663b1b9e9359d7ec0a7fbabee6eced90dbeb391836419ab4b4db98"></a>trigger_source_sdat&#160;</td><td class="fieldinit">5&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1999dce000d663b1b9e9359d7ec0a7fbaa2368310543cfa47d01d568a76fbb5de" name="a1999dce000d663b1b9e9359d7ec0a7fbaa2368310543cfa47d01d568a76fbb5de"></a>trigger_source_sec&#160;</td><td class="fieldinit">6&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1999dce000d663b1b9e9359d7ec0a7fba1230b9c75b274232c7dfd2bbdf5c7671" name="a1999dce000d663b1b9e9359d7ec0a7fba1230b9c75b274232c7dfd2bbdf5c7671"></a>trigger_source_xck&#160;</td><td class="fieldinit">7&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1999dce000d663b1b9e9359d7ec0a7fbaa0b16b541fab9714431863af94ca9a68" name="a1999dce000d663b1b9e9359d7ec0a7fbaa0b16b541fab9714431863af94ca9a68"></a>trigger_source_bti&#160;</td><td class="fieldinit">8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1999dce000d663b1b9e9359d7ec0a7fba6c395a8f31e5f9c84517b1d5e28d78de" name="a1999dce000d663b1b9e9359d7ec0a7fba6c395a8f31e5f9c84517b1d5e28d78de"></a>trigger_source_bslope&#160;</td><td class="fieldinit">9&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1999dce000d663b1b9e9359d7ec0a7fba70457840cad0fd846af9cf5c0e9c9f27" name="a1999dce000d663b1b9e9359d7ec0a7fba70457840cad0fd846af9cf5c0e9c9f27"></a>trigger_source_bticnt&#160;</td><td class="fieldinit">10&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1999dce000d663b1b9e9359d7ec0a7fba53f9fc8be652b41e50bf3280d38bd336" name="a1999dce000d663b1b9e9359d7ec0a7fba53f9fc8be652b41e50bf3280d38bd336"></a>trigger_source_bdat&#160;</td><td class="fieldinit">11&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1999dce000d663b1b9e9359d7ec0a7fbadb413f07bb024b65758193c772b170f1" name="a1999dce000d663b1b9e9359d7ec0a7fbadb413f07bb024b65758193c772b170f1"></a>trigger_source_bec&#160;</td><td class="fieldinit">12&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1999dce000d663b1b9e9359d7ec0a7fbab67256c067b0bbec4d9b142bfc95a8ac" name="a1999dce000d663b1b9e9359d7ec0a7fbab67256c067b0bbec4d9b142bfc95a8ac"></a>trigger_source_block_on&#160;</td><td class="fieldinit">13&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1999dce000d663b1b9e9359d7ec0a7fba43574b5d44825277a8268b5453a92bb3" name="a1999dce000d663b1b9e9359d7ec0a7fba43574b5d44825277a8268b5453a92bb3"></a>trigger_source_block_on_synced&#160;</td><td class="fieldinit">14&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
