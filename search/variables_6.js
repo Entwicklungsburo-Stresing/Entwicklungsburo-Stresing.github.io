@@ -8,5 +8,6 @@ var searchData=
   ['filename_5ffull_5',['filename_full',['../structverify__data__parameter.html#a000614deae5018b41e7a6d026dee71fa',1,'verify_data_parameter']]],
   ['fpgavermajor_6',['fpgaVerMajor',['../structspecial__pixels.html#a56a0f793cb1916802a4e742e05a63bbd',1,'special_pixels']]],
   ['fpgaverminor_7',['fpgaVerMinor',['../structspecial__pixels.html#a7a225780affc44f5eddb049efe94ffa9',1,'special_pixels']]],
-  ['freq_8',['freq',['../_board__ll_8c.html#ac09a2d712d4aeaa6cd6c588ba092a39c',1,'Board_ll.c']]]
+  ['fpgaverpatch_8',['fpgaVerPatch',['../structspecial__pixels.html#a13a3631ae75c53d3511173bbd88aa4d1',1,'special_pixels']]],
+  ['freq_9',['freq',['../_board__ll_8c.html#ac09a2d712d4aeaa6cd6c588ba092a39c',1,'Board_ll.c']]]
 ];
