@@ -41,9 +41,11 @@ var searchData=
   ['findcam_38',['FindCam',['../_board_8c.html#ae4a6ff0a9eb8955d655dbea2140fff87',1,'FindCam(uint32_t drvno):&#160;Board.c'],['../_board_8h.html#ae4a6ff0a9eb8955d655dbea2140fff87',1,'FindCam(uint32_t drvno):&#160;Board.c']]],
   ['forcetlps128_39',['FORCETLPS128',['../globals_8h.html#a58c545ee0fe778c422da561d4629a2a7',1,'globals.h']]],
   ['fpgavermajor_40',['fpgaVerMajor',['../structspecial__pixels.html#a56a0f793cb1916802a4e742e05a63bbd',1,'special_pixels']]],
-  ['fpgaverminor_41',['fpgaVerMinor',['../structspecial__pixels.html#a7a225780affc44f5eddb049efe94ffa9',1,'special_pixels']]],
-  ['fpgaverpatch_42',['fpgaVerPatch',['../structspecial__pixels.html#a13a3631ae75c53d3511173bbd88aa4d1',1,'special_pixels']]],
-  ['freememinfo_43',['FreeMemInfo',['../_board__ll_8c.html#a01709881ae4943c32b231f3b19221f31',1,'FreeMemInfo(uint64_t *pmemory_all, uint64_t *pmemory_free):&#160;Board_ll.c'],['../_board__ll_8h.html#a01709881ae4943c32b231f3b19221f31',1,'FreeMemInfo(uint64_t *pmemory_all, uint64_t *pmemory_free):&#160;Board_ll.c']]],
-  ['freq_44',['freq',['../_board__ll_8c.html#ac09a2d712d4aeaa6cd6c588ba092a39c',1,'Board_ll.c']]],
-  ['full_5fbinning_45',['full_binning',['../enum__settings_8h.html#a86f1e46308bfcaf8ceccb822f1d72c57a522dfda85484dd49420f6b436a9e2d9a',1,'enum_settings.h']]]
+  ['fpgavermajorlegacy_41',['fpgaVerMajorLegacy',['../structspecial__pixels.html#a8e33241a7c338ed1e3e385d44cb05cdb',1,'special_pixels']]],
+  ['fpgaverminor_42',['fpgaVerMinor',['../structspecial__pixels.html#a7a225780affc44f5eddb049efe94ffa9',1,'special_pixels']]],
+  ['fpgaverminorlegacy_43',['fpgaVerMinorLegacy',['../structspecial__pixels.html#a59e6d7f317ef53dc67e19c0386099dcb',1,'special_pixels']]],
+  ['fpgaverpatch_44',['fpgaVerPatch',['../structspecial__pixels.html#a13a3631ae75c53d3511173bbd88aa4d1',1,'special_pixels']]],
+  ['freememinfo_45',['FreeMemInfo',['../_board__ll_8c.html#a01709881ae4943c32b231f3b19221f31',1,'FreeMemInfo(uint64_t *pmemory_all, uint64_t *pmemory_free):&#160;Board_ll.c'],['../_board__ll_8h.html#a01709881ae4943c32b231f3b19221f31',1,'FreeMemInfo(uint64_t *pmemory_all, uint64_t *pmemory_free):&#160;Board_ll.c']]],
+  ['freq_46',['freq',['../_board__ll_8c.html#ac09a2d712d4aeaa6cd6c588ba092a39c',1,'Board_ll.c']]],
+  ['full_5fbinning_47',['full_binning',['../enum__settings_8h.html#a86f1e46308bfcaf8ceccb822f1d72c57a522dfda85484dd49420f6b436a9e2d9a',1,'enum_settings.h']]]
 ];

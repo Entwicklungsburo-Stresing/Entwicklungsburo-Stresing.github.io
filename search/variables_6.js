@@ -7,7 +7,9 @@ var searchData=
   ['file_5fstream_4',['file_stream',['../_board__ll_8c.html#a3c1045a39e6a4dcc8a929d06912d3b26',1,'Board_ll.c']]],
   ['filename_5ffull_5',['filename_full',['../structverify__data__parameter.html#a000614deae5018b41e7a6d026dee71fa',1,'verify_data_parameter']]],
   ['fpgavermajor_6',['fpgaVerMajor',['../structspecial__pixels.html#a56a0f793cb1916802a4e742e05a63bbd',1,'special_pixels']]],
-  ['fpgaverminor_7',['fpgaVerMinor',['../structspecial__pixels.html#a7a225780affc44f5eddb049efe94ffa9',1,'special_pixels']]],
-  ['fpgaverpatch_8',['fpgaVerPatch',['../structspecial__pixels.html#a13a3631ae75c53d3511173bbd88aa4d1',1,'special_pixels']]],
-  ['freq_9',['freq',['../_board__ll_8c.html#ac09a2d712d4aeaa6cd6c588ba092a39c',1,'Board_ll.c']]]
+  ['fpgavermajorlegacy_7',['fpgaVerMajorLegacy',['../structspecial__pixels.html#a8e33241a7c338ed1e3e385d44cb05cdb',1,'special_pixels']]],
+  ['fpgaverminor_8',['fpgaVerMinor',['../structspecial__pixels.html#a7a225780affc44f5eddb049efe94ffa9',1,'special_pixels']]],
+  ['fpgaverminorlegacy_9',['fpgaVerMinorLegacy',['../structspecial__pixels.html#a59e6d7f317ef53dc67e19c0386099dcb',1,'special_pixels']]],
+  ['fpgaverpatch_10',['fpgaVerPatch',['../structspecial__pixels.html#a13a3631ae75c53d3511173bbd88aa4d1',1,'special_pixels']]],
+  ['freq_11',['freq',['../_board__ll_8c.html#ac09a2d712d4aeaa6cd6c588ba092a39c',1,'Board_ll.c']]]
 ];
