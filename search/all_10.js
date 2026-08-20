@@ -152,7 +152,7 @@ var searchData=
   ['software_20versions_149',['Software versions',['../index.html#autotoc_md1',1,'']]],
   ['software_5fversion_5fmajor_150',['software_version_major',['../structfile__header.html#a973c9593050fcebe113be3904e27a6ab',1,'file_header']]],
   ['software_5fversion_5fminor_151',['software_version_minor',['../structfile__header.html#a25f71c307960a3a668c8e9b92663ac8b',1,'file_header']]],
-  ['software_5fversion_5fpcie_152',['software_version_pcie',['../structfile__header.html#abfedd405d9ead4569b79ec6410268691',1,'file_header']]],
+  ['software_5fversion_5fpatch_152',['software_version_patch',['../structfile__header.html#a3c98efb739f9bf383c0199f9b834b8c6',1,'file_header']]],
   ['special_5flast_5fpixels_5ft_153',['special_last_pixels_t',['../enum__hardware_8h.html#aa5345f9ae48237dce9cbde9e67b4a3aa',1,'enum_hardware.h']]],
   ['special_5fpixels_154',['special_pixels',['../structspecial__pixels.html',1,'']]],
   ['special_5fpixels_5fenum_5ft_155',['special_pixels_enum_t',['../enum__hardware_8h.html#ab4e169cedf37f6a55251e0d15f33a2b1',1,'enum_hardware.h']]],
