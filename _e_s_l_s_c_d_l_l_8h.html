@@ -101,7 +101,9 @@ document.addEventListener('DOMContentLoaded', codefold.init);
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">ESLSCDLL.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -122,6 +124,10 @@ document.addEventListener('DOMContentLoaded', codefold.init);
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:aee7646fbb877d0d6cfcda7ff8cbf701d" id="r_aee7646fbb877d0d6cfcda7ff8cbf701d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a>&#160;&#160;&#160;__declspec( dllexport )</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a4b8c86d16aefc38181f7f7bc3de5fb86" id="r_a4b8c86d16aefc38181f7f7bc3de5fb86"><td class="memItemLeft">typedef uint32_t&#160;</td><td class="memItemRight"><a class="el" href="#a4b8c86d16aefc38181f7f7bc3de5fb86">LVUserEventRef</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -183,6 +189,8 @@ Functions</h2></td></tr>
 <tr class="memdesc:aecec4dd743ab6f96a59c79b917d9c5a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the theoretical time needed for one measurement.     <br /></td></tr>
 <tr class="memitem:afa828f161568b989ed8dcc93ac348693" id="r_afa828f161568b989ed8dcc93ac348693"><td class="memItemLeft"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> void&#160;</td><td class="memItemRight"><a class="el" href="#afa828f161568b989ed8dcc93ac348693">DLLSetContinuousMeasurement</a> (uint8_t on)</td></tr>
 <tr class="memdesc:afa828f161568b989ed8dcc93ac348693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control looping the measurement.     <br /></td></tr>
+<tr class="memitem:a55674f1a53bfcec19fcc8ad9357a94e0" id="r_a55674f1a53bfcec19fcc8ad9357a94e0"><td class="memItemLeft"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> void&#160;</td><td class="memItemRight"><a class="el" href="#a55674f1a53bfcec19fcc8ad9357a94e0">DLLRegisterLVEvents</a> (<a class="el" href="#a4b8c86d16aefc38181f7f7bc3de5fb86">LVUserEventRef</a> *measureStartEvent, <a class="el" href="#a4b8c86d16aefc38181f7f7bc3de5fb86">LVUserEventRef</a> *measureDoneEvent, <a class="el" href="#a4b8c86d16aefc38181f7f7bc3de5fb86">LVUserEventRef</a> *blockStartEvent, <a class="el" href="#a4b8c86d16aefc38181f7f7bc3de5fb86">LVUserEventRef</a> *blockDoneEvent, <a class="el" href="#a4b8c86d16aefc38181f7f7bc3de5fb86">LVUserEventRef</a> *allBlocksDoneEvent)</td></tr>
+<tr class="memdesc:a55674f1a53bfcec19fcc8ad9357a94e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the user event handlers created by LabVIEW. Call this before using the event structure.  <br /></td></tr>
 <tr class="memitem:a9ff235b66c6ca068d623ff8c6ad4d280" id="r_a9ff235b66c6ca068d623ff8c6ad4d280"><td class="memItemLeft"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> char *&#160;</td><td class="memItemRight"><a class="el" href="#a9ff235b66c6ca068d623ff8c6ad4d280">DLLConvertErrorCodeToMsg</a> (<a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> status)</td></tr>
 <tr class="memdesc:a9ff235b66c6ca068d623ff8c6ad4d280"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da">es_status_codes</a> to a human readable error message.     <br /></td></tr>
 <tr class="memitem:ad537695a309eb016b3d8b59528a7abb9" id="r_ad537695a309eb016b3d8b59528a7abb9"><td class="memItemLeft"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> void&#160;</td><td class="memItemRight"><a class="el" href="#ad537695a309eb016b3d8b59528a7abb9">DLLFillUserBufferWithDummyData</a> ()</td></tr>
@@ -483,6 +491,14 @@ Functions</h2></td></tr>
 <tr class="memdesc:a7bf982f4e4d9c1972dc4998f355bfe0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">return gamma value white        <br /></td></tr>
 <tr class="memitem:a01ec22454cbba97eb4056c4c5d071080" id="r_a01ec22454cbba97eb4056c4c5d071080"><td class="memItemLeft"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> uint16_t&#160;</td><td class="memItemRight"><a class="el" href="#a01ec22454cbba97eb4056c4c5d071080">DLLGetGammaBlack</a> ()</td></tr>
 <tr class="memdesc:a01ec22454cbba97eb4056c4c5d071080"><td class="mdescLeft">&#160;</td><td class="mdescRight">return gamma value black        <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ab691b44ce782b7aa82cf9d3a0a129204" id="r_ab691b44ce782b7aa82cf9d3a0a129204"><td class="memItemLeft"><a class="el" href="#a4b8c86d16aefc38181f7f7bc3de5fb86">LVUserEventRef</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab691b44ce782b7aa82cf9d3a0a129204">measureStartLVEvent</a></td></tr>
+<tr class="memitem:aea3d2e0644e7a351c8053c13c028b6b2" id="r_aea3d2e0644e7a351c8053c13c028b6b2"><td class="memItemLeft"><a class="el" href="#a4b8c86d16aefc38181f7f7bc3de5fb86">LVUserEventRef</a>&#160;</td><td class="memItemRight"><a class="el" href="#aea3d2e0644e7a351c8053c13c028b6b2">measureDoneLVEvent</a></td></tr>
+<tr class="memitem:ae71c0dd31bf0bd47526b57d0a435350d" id="r_ae71c0dd31bf0bd47526b57d0a435350d"><td class="memItemLeft"><a class="el" href="#a4b8c86d16aefc38181f7f7bc3de5fb86">LVUserEventRef</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae71c0dd31bf0bd47526b57d0a435350d">blockStartLVEvent</a></td></tr>
+<tr class="memitem:af4824761340f4b5e0f0d8a7a56022a1e" id="r_af4824761340f4b5e0f0d8a7a56022a1e"><td class="memItemLeft"><a class="el" href="#a4b8c86d16aefc38181f7f7bc3de5fb86">LVUserEventRef</a>&#160;</td><td class="memItemRight"><a class="el" href="#af4824761340f4b5e0f0d8a7a56022a1e">blockDoneLVEvent</a></td></tr>
+<tr class="memitem:a811558ae4f5b375460889294319d8e4a" id="r_a811558ae4f5b375460889294319d8e4a"><td class="memItemLeft"><a class="el" href="#a4b8c86d16aefc38181f7f7bc3de5fb86">LVUserEventRef</a>&#160;</td><td class="memItemRight"><a class="el" href="#a811558ae4f5b375460889294319d8e4a">allBlocksDoneLVEvent</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Library ESLSCDLL for operating Stresing cameras. </p>
@@ -498,6 +514,21 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define DllAccess&#160;&#160;&#160;__declspec( dllexport )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Typedef Documentation</h2>
+<a id="a4b8c86d16aefc38181f7f7bc3de5fb86" name="a4b8c86d16aefc38181f7f7bc3de5fb86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b8c86d16aefc38181f7f7bc3de5fb86">&#9670;&#160;</a></span>LVUserEventRef</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef uint32_t <a class="el" href="#a4b8c86d16aefc38181f7f7bc3de5fb86">LVUserEventRef</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5785,6 +5816,55 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a55674f1a53bfcec19fcc8ad9357a94e0" name="a55674f1a53bfcec19fcc8ad9357a94e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55674f1a53bfcec19fcc8ad9357a94e0">&#9670;&#160;</a></span>DLLRegisterLVEvents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#aee7646fbb877d0d6cfcda7ff8cbf701d">DllAccess</a> void DLLRegisterLVEvents </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a4b8c86d16aefc38181f7f7bc3de5fb86">LVUserEventRef</a> *</td>          <td class="paramname"><span class="paramname"><em>measureStartEvent</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a4b8c86d16aefc38181f7f7bc3de5fb86">LVUserEventRef</a> *</td>          <td class="paramname"><span class="paramname"><em>measureDoneEvent</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a4b8c86d16aefc38181f7f7bc3de5fb86">LVUserEventRef</a> *</td>          <td class="paramname"><span class="paramname"><em>blockStartEvent</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a4b8c86d16aefc38181f7f7bc3de5fb86">LVUserEventRef</a> *</td>          <td class="paramname"><span class="paramname"><em>blockDoneEvent</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a4b8c86d16aefc38181f7f7bc3de5fb86">LVUserEventRef</a> *</td>          <td class="paramname"><span class="paramname"><em>allBlocksDoneEvent</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Save the user event handlers created by LabVIEW. Call this before using the event structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">measureStartEvent</td><td>Event handler for the event measure start. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">measureDoneEvent</td><td>Event handler for the event measure done. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockStartEvent</td><td>Event handler for the event block start. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">blockDoneEvent</td><td>Event handler for the event block done. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">allBlocksDoneEvent</td><td>Event handler for the event all blocks done. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>none </dd></dl>
+
+</div>
+</div>
 <a id="a4b4598a480399dadc862ea6ba6c415cd" name="a4b4598a480399dadc862ea6ba6c415cd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4b4598a480399dadc862ea6ba6c415cd">&#9670;&#160;</a></span>DLLresetBitS0_32()</h2>
 
@@ -7090,6 +7170,117 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="es__status__codes_8h.html#a6b176d8ae4ea11170148a19befea14da" title="es_status_codes">es_status_codes</a>    </dd></dl>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="a811558ae4f5b375460889294319d8e4a" name="a811558ae4f5b375460889294319d8e4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a811558ae4f5b375460889294319d8e4a">&#9670;&#160;</a></span>allBlocksDoneLVEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a4b8c86d16aefc38181f7f7bc3de5fb86">LVUserEventRef</a> allBlocksDoneLVEvent</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af4824761340f4b5e0f0d8a7a56022a1e" name="af4824761340f4b5e0f0d8a7a56022a1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4824761340f4b5e0f0d8a7a56022a1e">&#9670;&#160;</a></span>blockDoneLVEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a4b8c86d16aefc38181f7f7bc3de5fb86">LVUserEventRef</a> blockDoneLVEvent</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae71c0dd31bf0bd47526b57d0a435350d" name="ae71c0dd31bf0bd47526b57d0a435350d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae71c0dd31bf0bd47526b57d0a435350d">&#9670;&#160;</a></span>blockStartLVEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a4b8c86d16aefc38181f7f7bc3de5fb86">LVUserEventRef</a> blockStartLVEvent</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea3d2e0644e7a351c8053c13c028b6b2" name="aea3d2e0644e7a351c8053c13c028b6b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea3d2e0644e7a351c8053c13c028b6b2">&#9670;&#160;</a></span>measureDoneLVEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a4b8c86d16aefc38181f7f7bc3de5fb86">LVUserEventRef</a> measureDoneLVEvent</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab691b44ce782b7aa82cf9d3a0a129204" name="ab691b44ce782b7aa82cf9d3a0a129204"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab691b44ce782b7aa82cf9d3a0a129204">&#9670;&#160;</a></span>measureStartLVEvent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a4b8c86d16aefc38181f7f7bc3de5fb86">LVUserEventRef</a> measureStartLVEvent</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
